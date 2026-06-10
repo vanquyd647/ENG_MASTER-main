@@ -112,6 +112,17 @@ const toStoredProgress = (uid: string, wordId: string, item: ProgressItem) =>
     }).filter(([, value]) => value !== undefined),
   ) as ProgressItem & { userId: string; wordId: string };
 
+const getStartedWordCount = (progress: UserProgress) =>
+  VOCABULARY.reduce((count, word) => count + (progress[word.id] ? 1 : 0), 0);
+
+const getRemainingNewWordCount = (progress: UserProgress) =>
+  Math.max(VOCABULARY.length - getStartedWordCount(progress), 0);
+
+const normalizeProfileWordCount = (profile: UserProfile, progress: UserProgress): UserProfile => ({
+  ...profile,
+  totalWordsLearned: getStartedWordCount(progress),
+});
+
 // --- Components ---
 
 const Modal = ({ isOpen, onClose, title, children }: { isOpen: boolean; onClose: () => void; title: string; children: React.ReactNode }) => (
@@ -246,10 +257,13 @@ export default function App() {
     // Check for existing guest session
     const savedGuestProfile = localStorage.getItem('guest_profile');
     if (savedGuestProfile) {
-      setIsGuest(true);
-      setProfile(JSON.parse(savedGuestProfile));
       const savedProgress = localStorage.getItem('guest_progress');
-      if (savedProgress) setProgress(JSON.parse(savedProgress));
+      const parsedProgress = savedProgress ? JSON.parse(savedProgress) : {};
+      const normalizedProfile = normalizeProfileWordCount(JSON.parse(savedGuestProfile), parsedProgress);
+      setIsGuest(true);
+      setProfile(normalizedProfile);
+      setProgress(parsedProgress);
+      localStorage.setItem('guest_profile', JSON.stringify(normalizedProfile));
       setLoading(false);
       return;
     }
@@ -272,9 +286,10 @@ export default function App() {
     try {
       const profileRef = doc(db, 'users', uid);
       const profileDoc = await getDoc(profileRef);
+      let profileData: UserProfile;
       
       if (profileDoc.exists()) {
-        setProfile(profileDoc.data() as UserProfile);
+        profileData = profileDoc.data() as UserProfile;
       } else {
         const newProfile: UserProfile = {
           uid,
@@ -286,7 +301,7 @@ export default function App() {
           dailyGoal: 15,
         };
         await setDoc(profileRef, newProfile);
-        setProfile(newProfile);
+        profileData = newProfile;
       }
 
       const progressSnap = await getDocs(collection(db, `users/${uid}/progress`));
@@ -294,6 +309,13 @@ export default function App() {
       progressSnap.forEach((d) => {
         progressData[d.id] = d.data() as any;
       });
+
+      const normalizedProfile = normalizeProfileWordCount(profileData, progressData);
+      if (normalizedProfile.totalWordsLearned !== profileData.totalWordsLearned) {
+        await updateDoc(profileRef, { totalWordsLearned: normalizedProfile.totalWordsLearned });
+      }
+
+      setProfile(normalizedProfile);
       setProgress(progressData);
     } catch (err: any) {
       console.error('Error fetching data:', err);
@@ -333,13 +355,13 @@ export default function App() {
       dailyGoal: 15,
     };
     setIsGuest(true);
-    setProfile(guestProfile);
-    localStorage.setItem('guest_profile', JSON.stringify(guestProfile));
     
     const savedProgress = localStorage.getItem('guest_progress');
-    if (savedProgress) {
-      setProgress(JSON.parse(savedProgress));
-    }
+    const parsedProgress = savedProgress ? JSON.parse(savedProgress) : {};
+    const normalizedProfile = normalizeProfileWordCount(guestProfile, parsedProgress);
+    setProfile(normalizedProfile);
+    localStorage.setItem('guest_profile', JSON.stringify(normalizedProfile));
+    setProgress(parsedProgress);
     toast.success('Đã vào chế độ Khách (Offline)');
   };
 
@@ -513,7 +535,8 @@ export default function App() {
         exportDate: new Date().toLocaleDateString(),
         stats: {
           totalWords: VOCABULARY.length,
-          learned: profile?.totalWordsLearned,
+          learned: getStartedWordCount(progress),
+          remainingNew: getRemainingNewWordCount(progress),
           mastered: masteredWords.length
         },
         masteredList: masteredWords.map(w => ({ word: w.word, meaning: w.meaning }))
@@ -806,14 +829,25 @@ export default function App() {
                 };
 
                 setProgress(updatedProgress);
+                const updatedProfile = profile ? normalizeProfileWordCount(profile, updatedProgress) : null;
                 if (isGuest) {
                   localStorage.setItem('guest_progress', JSON.stringify(updatedProgress));
+                  if (updatedProfile) {
+                    setProfile(updatedProfile);
+                    localStorage.setItem('guest_profile', JSON.stringify(updatedProfile));
+                  }
                 } else if (profile) {
                   try {
                     await setDoc(
                       doc(db, `users/${profile.uid}/progress`, wordId),
                       toStoredProgress(profile.uid, wordId, updatedItem)
                     );
+                    if (updatedProfile) {
+                      await updateDoc(doc(db, 'users', profile.uid), {
+                        totalWordsLearned: updatedProfile.totalWordsLearned
+                      });
+                      setProfile(updatedProfile);
+                    }
                   } catch (err) {
                     console.error("Failed to update progress for quiz word in DB", err);
                     setProgress(progress);
@@ -842,14 +876,25 @@ export default function App() {
                   }
                 };
                 setProgress(updatedProgress);
+                const updatedProfile = profile ? normalizeProfileWordCount(profile, updatedProgress) : null;
                 if (isGuest) {
                   localStorage.setItem('guest_progress', JSON.stringify(updatedProgress));
+                  if (updatedProfile) {
+                    setProfile(updatedProfile);
+                    localStorage.setItem('guest_profile', JSON.stringify(updatedProfile));
+                  }
                 } else if (profile) {
                   try {
                     await setDoc(
                       doc(db, `users/${profile.uid}/progress`, wordId),
                       toStoredProgress(profile.uid, wordId, updatedProgress[wordId])
                     );
+                    if (updatedProfile) {
+                      await updateDoc(doc(db, 'users', profile.uid), {
+                        totalWordsLearned: updatedProfile.totalWordsLearned
+                      });
+                      setProfile(updatedProfile);
+                    }
                   } catch (err) {
                      console.error("Failed to update progress in DB", err);
                      setProgress(progress);
@@ -868,22 +913,25 @@ export default function App() {
               onImportBackup={async (backup) => {
                 const importedProgress = backup.progress || {};
                 const importedProfile = backup.profile ? { ...profile, ...backup.profile } : profile;
+                const normalizedImportedProfile = importedProfile
+                  ? normalizeProfileWordCount(importedProfile, importedProgress)
+                  : null;
 
                 if (isGuest) {
                   setProgress(importedProgress);
-                  if (importedProfile) {
-                    setProfile(importedProfile);
-                    localStorage.setItem('guest_profile', JSON.stringify(importedProfile));
+                  if (normalizedImportedProfile) {
+                    setProfile(normalizedImportedProfile);
+                    localStorage.setItem('guest_profile', JSON.stringify(normalizedImportedProfile));
                   }
                   localStorage.setItem('guest_progress', JSON.stringify(importedProgress));
                   return;
                 }
 
-                if (user && importedProfile) {
+                if (user && normalizedImportedProfile) {
                   const cloudProfile = {
-                    ...importedProfile,
+                    ...normalizedImportedProfile,
                     uid: user.uid,
-                    email: user.email || importedProfile.email,
+                    email: user.email || normalizedImportedProfile.email,
                   };
                   const batch = writeBatch(db);
                   batch.set(doc(db, 'users', user.uid), cloudProfile);
@@ -1034,6 +1082,8 @@ function Dashboard({
     .sort((a, b) => (progress[b.id]?.wrongCount || 0) - (progress[a.id]?.wrongCount || 0))
     .slice(0, 5);
   const syncDisabled = syncingAction !== null || isGuest;
+  const startedWordCount = getStartedWordCount(progress);
+  const remainingNewWordCount = getRemainingNewWordCount(progress);
 
   return (
     <motion.div 
@@ -1164,7 +1214,7 @@ function Dashboard({
             <div className="w-12 h-12 sm:w-14 sm:h-14 bg-emerald-500/10 rounded-[18px] sm:rounded-[22px] flex items-center justify-center mb-4 border border-emerald-500/20">
               <CheckCircle2 className="text-emerald-500 w-6 h-6 sm:w-7 sm:h-7" />
             </div>
-            <div className="text-4xl sm:text-5xl font-black text-white">{profile?.totalWordsLearned || 0}</div>
+            <div className="text-4xl sm:text-5xl font-black text-white">{startedWordCount}</div>
             <div className="text-zinc-500 font-black uppercase text-[10px] tracking-[0.2em] mt-2">Từ đã học</div>
           </Card>
         </div>
@@ -1254,13 +1304,12 @@ function Dashboard({
           ].map((item, i) => {
             const counts = Object.values(progress).filter(p => {
               if (i === 0) return false;
-              if (i === 1) return p.repetitions > 0 && p.repetitions < 3;
+              if (i === 1) return p.repetitions < 3;
               if (i === 2) return p.repetitions >= 3 && p.repetitions < 7;
               return p.repetitions >= 7;
             }).length;
             
-            const totalWords = VOCABULARY.length;
-            const finalCount = i === 0 ? totalWords - Object.keys(progress).length : counts;
+            const finalCount = i === 0 ? remainingNewWordCount : counts;
 
             return (
               <Card key={item.label} className="p-4 sm:p-6 flex flex-col gap-2 border-zinc-800/50 bg-[#0c0c0e]/50 hover:border-zinc-700 transition-colors">
@@ -2208,19 +2257,16 @@ function ReviewSession({
     };
 
     setNewProgress(updatedProgress);
+    const updatedProfile = profile ? normalizeProfileWordCount(profile, updatedProgress) : null;
 
     // Save to Local/Cloud
     try {
       if (isGuest) {
         localStorage.setItem('guest_progress', JSON.stringify(updatedProgress));
-        
-        if (quality >= 3 && (!progress[word.id] || progress[word.id].repetitions === 0)) {
-          const newProfile = {
-            ...profile!,
-            totalWordsLearned: (profile?.totalWordsLearned || 0) + 1
-          };
-          setProfile(newProfile);
-          localStorage.setItem('guest_profile', JSON.stringify(newProfile));
+
+        if (updatedProfile) {
+          setProfile(updatedProfile);
+          localStorage.setItem('guest_profile', JSON.stringify(updatedProfile));
         }
       } else {
         const uid = auth.currentUser?.uid;
@@ -2229,20 +2275,12 @@ function ReviewSession({
             doc(db, `users/${uid}/progress`, word.id),
             toStoredProgress(uid, word.id, updatedProgress[word.id])
           );
-          
-          // If it's a first repetition and quality is good, update totalWordsLearned
-          if (quality >= 3 && (!progress[word.id] || progress[word.id].repetitions === 0)) {
-             const profileRef = doc(db, 'users', uid);
-             const pSnap = await getDoc(profileRef);
-             if(pSnap.exists()) {
-                await updateDoc(profileRef, {
-                  totalWordsLearned: (pSnap.data().totalWordsLearned || 0) + 1
-                });
-                setProfile({
-                   ...profile!,
-                   totalWordsLearned: (pSnap.data().totalWordsLearned || 0) + 1
-                });
-             }
+
+          if (updatedProfile) {
+            await updateDoc(doc(db, 'users', uid), {
+              totalWordsLearned: updatedProfile.totalWordsLearned
+            });
+            setProfile(updatedProfile);
           }
         }
       }

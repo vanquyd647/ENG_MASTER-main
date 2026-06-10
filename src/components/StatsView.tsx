@@ -53,16 +53,16 @@ export function StatsView({ progress, onBack }: StatsViewProps) {
   const useSampleData = false;
   // --- Real Stats Calculation ---
   const totalWords = VOCABULARY.length;
-  const progressList = Object.values(progress);
+  const progressList = VOCABULARY.map((word) => progress[word.id]).filter(Boolean);
   const startedWordsCount = progressList.length;
 
   // 1. Learned vs In Progress vs New
-  // "New": Not in progress or repetitions === 0
-  // "In Progress": repetitions > 0 && repetitions < 5
+  // "New": Not in progress
+  // "In Progress": Progress exists but repetitions < 5
   // "Learned": repetitions >= 5
   const learnedCount = progressList.filter(p => p.repetitions >= 5).length;
-  const inProgressCount = progressList.filter(p => p.repetitions > 0 && p.repetitions < 5).length;
-  const newCount = totalWords - (learnedCount + inProgressCount);
+  const inProgressCount = progressList.filter(p => p.repetitions < 5).length;
+  const newCount = Math.max(totalWords - startedWordsCount, 0);
 
   // 2. Interval distribution
   const intervalRanges = {
