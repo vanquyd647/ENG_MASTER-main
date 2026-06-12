@@ -1,9 +1,11 @@
-import { VOCABULARY, Word } from "../src/data/vocabulary.ts";
+import { VOCABULARY, type Word } from "../src/data/vocabulary.ts";
+import { lookupIpa } from "./ipa-dictionary.ts";
 
 const requiredFields: Array<keyof Word> = [
   "id",
   "topic",
   "word",
+  "phonetic",
   "pos",
   "meaning",
   "example",
@@ -11,64 +13,73 @@ const requiredFields: Array<keyof Word> = [
 ];
 
 const errors: string[] = [];
-const warnings: string[] = [];
 const ids = new Set<string>();
-const normalizedKeys = new Set<string>();
-const suspiciousEncoding = /(?:Ã|Â|â|Ä|á»|Ë|É|Ê|Å)/;
+const headwords = new Set<string>();
+const mojibake =
+  /(?:Ã©|Ã¨|Ãª|Ã´|Ã¡|Ã³|Ãº|Ã­|Ã½|â€|á»|áº|�)/u;
+const ligature = /[ﬁﬂﬀﬃﬄ]/u;
+const abnormalOcr = /(?:\/A\d{3,}|\p{L}\d+\p{L}|\s+[,.!?])/u;
+
+if (VOCABULARY.length !== 905) {
+  errors.push(`Expected 905 entries, received ${VOCABULARY.length}`);
+}
 
 VOCABULARY.forEach((entry, index) => {
+  const row = `Row ${index + 1} (${entry.id || "missing id"})`;
   for (const field of requiredFields) {
     const value = entry[field];
     if (typeof value !== "string" || value.trim().length === 0) {
-      errors.push(`Row ${index + 1}: missing ${field}`);
+      errors.push(`${row}: missing ${field}`);
     }
   }
 
-  if (ids.has(entry.id)) {
-    errors.push(`Duplicate id: ${entry.id}`);
-  }
+  if (ids.has(entry.id)) errors.push(`Duplicate id: ${entry.id}`);
   ids.add(entry.id);
 
-  if (typeof entry.phonetic !== "string" || entry.phonetic.trim().length === 0) {
-    warnings.push(`Missing phonetic in ${entry.id} (${entry.word})`);
+  const normalizedHeadword = entry.word.trim().toLowerCase();
+  if (headwords.has(normalizedHeadword)) {
+    errors.push(`Duplicate headword: ${entry.word}`);
+  }
+  headwords.add(normalizedHeadword);
+
+  if (!lookupIpa(normalizedHeadword)) {
+    errors.push(`${row}: headword is absent from the IPA reference data`);
+  }
+  if (!/^\/.+\/$/.test(entry.phonetic.trim())) {
+    errors.push(`${row}: invalid phonetic format`);
   }
 
-  const normalizedKey = `${entry.topic.trim().toLowerCase()}::${entry.word.trim().toLowerCase()}`;
-  if (normalizedKeys.has(normalizedKey)) {
-    errors.push(`Duplicate topic+word: ${entry.topic} / ${entry.word}`);
+  const searchableText = JSON.stringify(entry);
+  if (mojibake.test(searchableText)) errors.push(`${row}: mojibake detected`);
+  if (ligature.test(searchableText)) errors.push(`${row}: ligature detected`);
+  if (abnormalOcr.test(searchableText)) {
+    errors.push(`${row}: suspicious OCR pattern detected`);
   }
-  normalizedKeys.add(normalizedKey);
 
-  const searchableText = [
-    entry.phonetic,
-    entry.meaning,
-    entry.exampleTranslation,
-    entry.translations?.vi,
-  ]
-    .filter(Boolean)
-    .join(" ");
-
-  if (suspiciousEncoding.test(searchableText)) {
-    warnings.push(`Possible encoding/OCR issue in ${entry.id} (${entry.word})`);
+  const example = entry.example.trim();
+  const words = example.match(/[A-Za-z]+(?:['’-][A-Za-z]+)*/g) || [];
+  if (words.length < 4 || !/[.!?]["']?$/.test(example)) {
+    errors.push(`${row}: example is incomplete or not a sentence`);
+  }
+  const uppercaseLetters = (example.match(/[A-Z]/g) || []).length;
+  const lowercaseLetters = (example.match(/[a-z]/g) || []).length;
+  if (
+    uppercaseLetters > 10 &&
+    uppercaseLetters > lowercaseLetters * 1.5
+  ) {
+    errors.push(`${row}: example appears to be uncleaned uppercase OCR`);
   }
 });
 
-if (warnings.length > 0) {
-  console.warn(`[vocabulary] ${warnings.length} possible encoding/OCR issues detected.`);
-  for (const warning of warnings.slice(0, 20)) {
-    console.warn(`- ${warning}`);
-  }
-  if (warnings.length > 20) {
-    console.warn(`- ...and ${warnings.length - 20} more`);
-  }
-}
-
 if (errors.length > 0) {
-  console.error(`[vocabulary] ${errors.length} validation errors found.`);
-  for (const error of errors) {
-    console.error(`- ${error}`);
+  console.error(`[vocabulary] ${errors.length} quality-gate errors found.`);
+  for (const error of errors.slice(0, 100)) console.error(`- ${error}`);
+  if (errors.length > 100) {
+    console.error(`- ...and ${errors.length - 100} more`);
   }
   process.exit(1);
 }
 
-console.log(`[vocabulary] ${VOCABULARY.length} entries validated.`);
+console.log(
+  `[vocabulary] ${VOCABULARY.length} entries passed with no warnings.`,
+);

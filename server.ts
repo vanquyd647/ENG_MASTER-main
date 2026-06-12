@@ -2,7 +2,8 @@ import express from "express";
 import path from "path";
 import { createServer as createViteServer } from "vite";
 import dotenv from "dotenv";
-import { checkRateLimit, cleanupRateLimit, explainWord, generateAvatar, generateMistakeReview, generateQuiz } from "./src/server/gemini";
+import { explainWord, generateAvatar, generateMistakeReview, generateQuiz } from "./src/server/gemini";
+import { handleGeminiApi } from "./src/server/vercelGeminiHandler";
 
 dotenv.config({ path: ".env.local" });
 dotenv.config();
@@ -16,32 +17,35 @@ async function startServer() {
 
   app.use(express.json({ limit: "64kb" }));
 
-  app.use("/api/gemini", (req, res, next) => {
-    const limited = checkRateLimit(req.ip || req.socket.remoteAddress || "unknown");
-    if (limited) return res.status(limited.status).json(limited.body);
-    next();
+  app.all("/api/gemini/explain", (req, res) =>
+    handleGeminiApi(req, res, explainWord, "explain"),
+  );
+  app.all("/api/gemini/generate-avatar", (req, res) =>
+    handleGeminiApi(req, res, generateAvatar, "generate-avatar"),
+  );
+  app.all("/api/gemini/quiz", (req, res) =>
+    handleGeminiApi(req, res, generateQuiz, "quiz"),
+  );
+  app.all("/api/gemini/mistake-review", (req, res) =>
+    handleGeminiApi(req, res, generateMistakeReview, "mistake-review"),
+  );
+  app.use("/api/gemini", (_req, res) => {
+    res.status(404).json({ error: "AI endpoint not found.", code: "not_found" });
   });
-
-  setInterval(cleanupRateLimit, Number(process.env.API_RATE_LIMIT_WINDOW_MS || 60_000)).unref();
-
-  app.post("/api/gemini/explain", async (req, res) => {
-    const result = await explainWord(req.body);
-    res.status(result.status).json(result.body);
-  });
-
-  app.post("/api/gemini/generate-avatar", async (req, res) => {
-    const result = await generateAvatar(req.body);
-    res.status(result.status).json(result.body);
-  });
-
-  app.post("/api/gemini/quiz", async (req, res) => {
-    const result = await generateQuiz(req.body);
-    res.status(result.status).json(result.body);
-  });
-
-  app.post("/api/gemini/mistake-review", async (req, res) => {
-    const result = await generateMistakeReview(req.body);
-    res.status(result.status).json(result.body);
+  app.use((error: unknown, _req: express.Request, res: express.Response, next: express.NextFunction) => {
+    if (
+      typeof error === "object" &&
+      error !== null &&
+      "type" in error &&
+      error.type === "entity.too.large"
+    ) {
+      res.status(413).json({
+        error: "Request body exceeds the 64 KB limit.",
+        code: "payload_too_large",
+      });
+      return;
+    }
+    next(error);
   });
 
   // Vite middleware for development

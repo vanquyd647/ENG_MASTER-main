@@ -46,6 +46,18 @@
         "status": { "type": "string", "enum": ["new", "learning", "learned", "mastered"] }
       },
       "required": ["userId", "wordId", "nextReviewDate"]
+    },
+    "dailyActivity": {
+      "title": "Daily Activity",
+      "description": "Unique vocabulary words studied by a user on a local date",
+      "type": "object",
+      "properties": {
+        "dateKey": { "type": "string", "format": "date" },
+        "timeZone": { "type": "string" },
+        "wordIds": { "type": "array", "items": { "type": "string" }, "maxItems": 905 },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["dateKey", "timeZone", "wordIds", "updatedAt"]
     }
   },
   "firestore": {
@@ -60,6 +72,13 @@
     "/users/{userId}/progress/{wordId}": {
       "schema": "userWordProgress",
       "description": "User-specific learning progress for each word"
+    },
+    "/users/{userId}/dailyActivity/{dateKey}": {
+      "schema": "dailyActivity",
+      "description": "Owner-only unique daily learning activity"
+    },
+    "/_systemRateLimits/{documentId}": {
+      "description": "Server-only Firebase Admin rate limit counters"
     }
   }
 }

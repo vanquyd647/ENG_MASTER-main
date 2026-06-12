@@ -3,16 +3,6 @@ export interface ApiResult {
   body: unknown;
 }
 
-type RateEntry = {
-  count: number;
-  resetAt: number;
-};
-
-const limiter = new Map<string, RateEntry>();
-
-const rateLimitWindowMs = Number(process.env.API_RATE_LIMIT_WINDOW_MS || 60_000);
-const rateLimitMax = Number(process.env.API_RATE_LIMIT_MAX || 20);
-
 const getGeminiApiKey = () => process.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY2;
 
 const textModels = () =>
@@ -39,33 +29,6 @@ const createAiClient = async () => {
     },
   });
 };
-
-export function checkRateLimit(key: string): ApiResult | null {
-  const now = Date.now();
-  const current = limiter.get(key);
-
-  if (!current || current.resetAt <= now) {
-    limiter.set(key, { count: 1, resetAt: now + rateLimitWindowMs });
-    return null;
-  }
-
-  current.count += 1;
-  if (current.count > rateLimitMax) {
-    return {
-      status: 429,
-      body: { error: "Too many AI requests. Please try again later.", code: "rate_limited" },
-    };
-  }
-
-  return null;
-}
-
-export function cleanupRateLimit() {
-  const now = Date.now();
-  for (const [key, value] of limiter.entries()) {
-    if (value.resetAt <= now) limiter.delete(key);
-  }
-}
 
 const normalizeGeminiError = (error: unknown): ApiResult => {
   const message = error instanceof Error ? error.message : String(error);

@@ -4,11 +4,10 @@
 <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
 
-# Run and deploy your AI Studio app
+# Run and deploy ENG_MASTER
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/275a7681-7e36-4e15-a8f4-c80d80c5e16e
+ENG_MASTER is a vocabulary learning app with offline guest study, Firebase
+sync, spaced repetition, and authenticated Gemini learning tools.
 
 ## Run Locally
 
@@ -17,7 +16,8 @@ View your app in AI Studio: https://ai.studio/apps/275a7681-7e36-4e15-a8f4-c80d8
 
 1. Install dependencies:
    `npm install`
-2. Copy [.env.example](.env.example) to `.env`, then fill `GEMINI_API_KEY` and the `VITE_FIREBASE_*` values.
+2. Copy [.env.example](.env.example) to `.env`, then fill the Gemini,
+   Firebase Admin, and `VITE_FIREBASE_*` values.
 3. Run the app:
    `npm run dev`
 
@@ -26,6 +26,9 @@ View your app in AI Studio: https://ai.studio/apps/275a7681-7e36-4e15-a8f4-c80d8
 Add these environment variables in Vercel Project Settings before deploying:
 
 - `GEMINI_API_KEY`
+- `FIREBASE_PROJECT_ID`
+- `FIREBASE_CLIENT_EMAIL`
+- `FIREBASE_PRIVATE_KEY`
 - `APP_URL`
 - `VITE_FIREBASE_API_KEY`
 - `VITE_FIREBASE_AUTH_DOMAIN`
@@ -36,6 +39,23 @@ Add these environment variables in Vercel Project Settings before deploying:
 - `VITE_FIREBASE_MEASUREMENT_ID`
 
 The app pins Vercel to Node.js `22.x` through `package.json` because the Gemini SDK requires Node 20 or newer.
+
+All `/api/gemini/*` endpoints require a Firebase ID token. The Admin
+credentials verify that token and maintain server-only Firestore rate limits.
+For `FIREBASE_PRIVATE_KEY`, paste the service-account private key with escaped
+newlines (`\n`) in local and Vercel environment variables.
+
+## Verification
+
+Run the release gates before deployment:
+
+```bash
+npm run typecheck
+npm test
+npm run validate:vocab
+npm run build
+npm audit --audit-level=high
+```
 
 For Google login, Firebase Authentication must allow the deployed domain:
 

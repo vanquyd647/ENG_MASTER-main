@@ -3,5 +3,5 @@ import { generateMistakeReview } from "../../src/server/gemini";
 import { handleGeminiApi } from "../../src/server/vercelGeminiHandler";
 
 export default async function handler(req: IncomingMessage & { body?: unknown }, res: ServerResponse) {
-  await handleGeminiApi(req, res, generateMistakeReview);
+  await handleGeminiApi(req, res, generateMistakeReview, "mistake-review");
 }

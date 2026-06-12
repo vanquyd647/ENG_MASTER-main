@@ -30,19 +30,9 @@ import {
   Sparkles,
   Calendar
 } from 'lucide-react';
-import { VOCABULARY, Word } from '../data/vocabulary';
-
-// --- Types ---
-interface UserProgress {
-  [wordId: string]: {
-    easiness: number;
-    interval: number;
-    repetitions: number;
-    nextReviewDate: string;
-    lastReviewDate?: string;
-    wrongCount?: number;
-  };
-}
+import { VOCABULARY } from '../data/vocabulary';
+import { getLearningStatus } from '../lib/learning';
+import type { UserProgress } from '../types';
 
 interface StatsViewProps {
   progress: UserProgress;
@@ -58,10 +48,12 @@ export function StatsView({ progress, onBack }: StatsViewProps) {
 
   // 1. Learned vs In Progress vs New
   // "New": Not in progress
-  // "In Progress": Progress exists but repetitions < 5
-  // "Learned": repetitions >= 5
-  const learnedCount = progressList.filter(p => p.repetitions >= 5).length;
-  const inProgressCount = progressList.filter(p => p.repetitions < 5).length;
+  const learnedCount = progressList.filter(
+    (item) => getLearningStatus(item) === 'learned' || getLearningStatus(item) === 'mastered',
+  ).length;
+  const inProgressCount = progressList.filter(
+    (item) => getLearningStatus(item) === 'learning',
+  ).length;
   const newCount = Math.max(totalWords - startedWordsCount, 0);
 
   // 2. Interval distribution
