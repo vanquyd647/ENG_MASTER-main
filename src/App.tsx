@@ -102,6 +102,7 @@ interface UserProfile {
 }
 
 type ProgressItem = UserProgress[string];
+const REVIEW_SESSION_SIZE = 15;
 
 const toStoredProgress = (uid: string, wordId: string, item: ProgressItem) =>
   Object.fromEntries(
@@ -117,6 +118,12 @@ const getStartedWordCount = (progress: UserProgress) =>
 
 const getRemainingNewWordCount = (progress: UserProgress) =>
   Math.max(VOCABULARY.length - getStartedWordCount(progress), 0);
+
+const getReviewQueue = (progress: UserProgress, now = new Date()) =>
+  VOCABULARY.filter((word) => {
+    const item = progress[word.id];
+    return !item || new Date(item.nextReviewDate) <= now;
+  });
 
 const normalizeProfileWordCount = (profile: UserProfile, progress: UserProgress): UserProfile => ({
   ...profile,
@@ -1053,11 +1060,7 @@ function Dashboard({
   isGuest: boolean;
   onViewStats: () => void;
 }) {
-  const reviewCount = VOCABULARY.filter(w => {
-    const p = progress[w.id];
-    if (!p) return true; // New words
-    return new Date(p.nextReviewDate) <= new Date();
-  }).length;
+  const reviewCount = Math.min(getReviewQueue(progress).length, REVIEW_SESSION_SIZE);
   const dailyGoal = profile?.dailyGoal || 15;
   const todayKey = new Date().toLocaleDateString();
   const todayStudiedCount = profile?.history
@@ -2213,11 +2216,7 @@ function ReviewSession({
   const [newProgress, setNewProgress] = useState<UserProgress>({ ...progress });
 
   useEffect(() => {
-    const wordsToReview = VOCABULARY.filter(w => {
-      const p = progress[w.id];
-      if (!p) return true;
-      return new Date(p.nextReviewDate) <= new Date();
-    }).slice(0, 15); // Limit session size
+    const wordsToReview = getReviewQueue(progress).slice(0, REVIEW_SESSION_SIZE);
     
     // Shuffle
     const shuffled = [...wordsToReview].sort(() => Math.random() - 0.5);

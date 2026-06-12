@@ -14,7 +14,7 @@ const sendJson = (res: ServerResponse, status: number, body: unknown) => {
   res.end(JSON.stringify(body));
 };
 
-const parseBodyValue = (body: unknown) => {
+const parseBodyValue = (body: unknown): unknown => {
   if (typeof body === "string") {
     return body.trim() ? JSON.parse(body) : {};
   }
@@ -25,7 +25,7 @@ const parseBodyValue = (body: unknown) => {
   return body ?? {};
 };
 
-const readBody = async (req: VercelRequest) => {
+const readBody = async (req: VercelRequest): Promise<unknown> => {
   if (req.body !== undefined) return parseBodyValue(req.body);
 
   const chunks: Buffer[] = [];
