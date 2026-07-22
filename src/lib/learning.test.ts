@@ -2,11 +2,14 @@ import { describe, expect, it } from "vitest";
 import {
   calculateNextStreak,
   createDailyActivity,
+  getDueReviewQueue,
   getLearningStatus,
   getLocalDateKey,
+  getNewWordQueue,
   getSessionCorrectPercentage,
   getSessionStudiedCount,
 } from "./learning";
+import { VOCABULARY } from "../data/vocabulary";
 
 const progress = (repetitions: number) => ({
   easiness: 2.5,
@@ -23,6 +26,28 @@ describe("learning status", () => {
     expect(getLearningStatus(progress(3))).toBe("learned");
     expect(getLearningStatus(progress(6))).toBe("learned");
     expect(getLearningStatus(progress(7))).toBe("mastered");
+  });
+});
+
+describe("study queues", () => {
+  it("keeps new words separate from due reviews", () => {
+    const now = new Date("2026-07-22T12:00:00.000Z");
+    const dueWord = VOCABULARY[0];
+    const futureWord = VOCABULARY[1];
+    const userProgress = {
+      [dueWord.id]: {
+        ...progress(1),
+        nextReviewDate: "2026-07-21T12:00:00.000Z",
+      },
+      [futureWord.id]: {
+        ...progress(1),
+        nextReviewDate: "2026-07-23T12:00:00.000Z",
+      },
+    };
+
+    expect(getDueReviewQueue(userProgress, now).map((word) => word.id)).toEqual([dueWord.id]);
+    expect(getNewWordQueue(userProgress).some((word) => word.id === dueWord.id)).toBe(false);
+    expect(getNewWordQueue(userProgress).some((word) => word.id === futureWord.id)).toBe(false);
   });
 });
 

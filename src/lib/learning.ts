@@ -40,11 +40,17 @@ export const getStartedWordCount = (progress: UserProgress) =>
 export const getRemainingNewWordCount = (progress: UserProgress) =>
   Math.max(VOCABULARY.length - getStartedWordCount(progress), 0);
 
-export const getReviewQueue = (progress: UserProgress, now = new Date()) =>
+export const getNewWordQueue = (progress: UserProgress) =>
+  VOCABULARY.filter((word) => !progress[word.id]);
+
+export const getDueReviewQueue = (progress: UserProgress, now = new Date()) =>
   VOCABULARY.filter((word) => {
     const item = progress[word.id];
-    return !item || new Date(item.nextReviewDate) <= now;
+    return Boolean(item) && new Date(item.nextReviewDate) <= now;
   });
+
+export const getReviewQueue = (progress: UserProgress, now = new Date()) =>
+  [...getDueReviewQueue(progress, now), ...getNewWordQueue(progress)];
 
 export const normalizeProfileWordCount = (
   profile: UserProfile,

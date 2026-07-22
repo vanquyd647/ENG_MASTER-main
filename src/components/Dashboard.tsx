@@ -12,8 +12,8 @@ import { VOCABULARY, type Word } from "../data/vocabulary";
 import { callAiApi } from "../lib/apiClient";
 import { createBackup, normalizeBackup } from "../lib/backup";
 import {
-  getLearningStatus, getLearningStatusLabel, getRemainingNewWordCount,
-  getLocalDateKey, getReviewQueue, getSessionCorrectPercentage, getSessionStudiedCount,
+  getDueReviewQueue, getLearningStatus, getLearningStatusLabel, getRemainingNewWordCount,
+  getLocalDateKey, getSessionCorrectPercentage, getSessionStudiedCount,
   getStartedWordCount, REVIEW_SESSION_SIZE,
 } from "../lib/learning";
 import { calculateNextReview, initialSRS } from "../lib/srs";
@@ -49,6 +49,7 @@ export function Dashboard({
   profile, 
   progress, 
   todayActivity,
+  onStartNewWords,
   onStartReview,
   onStartQuiz,
   onStartPractice,
@@ -62,6 +63,7 @@ export function Dashboard({
   profile: UserProfile | null; 
   progress: UserProgress;
   todayActivity: DailyActivity | null;
+  onStartNewWords: () => void;
   onStartReview: () => void;
   onStartQuiz: () => void;
   onStartPractice: () => void;
@@ -72,7 +74,7 @@ export function Dashboard({
   isGuest: boolean;
   onViewStats: () => void;
 }) {
-  const reviewCount = Math.min(getReviewQueue(progress).length, REVIEW_SESSION_SIZE);
+  const reviewCount = Math.min(getDueReviewQueue(progress).length, REVIEW_SESSION_SIZE);
   const dailyGoal = profile?.dailyGoal || 15;
   const todayStudiedCount =
     todayActivity?.dateKey === getLocalDateKey()
@@ -96,6 +98,7 @@ export function Dashboard({
   const syncDisabled = syncingAction !== null || isGuest;
   const startedWordCount = getStartedWordCount(progress);
   const remainingNewWordCount = getRemainingNewWordCount(progress);
+  const newWordSessionCount = Math.min(remainingNewWordCount, REVIEW_SESSION_SIZE);
 
   return (
     <motion.div 
@@ -151,17 +154,21 @@ export function Dashboard({
             <h2 className="text-3xl sm:text-5xl font-bold tracking-tighter leading-tight break-words">Chào mừng,<br />{profile?.displayName}!</h2>
           </div>
           <div className="relative z-10 mt-8 space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <Button onClick={onStartReview} className="w-full bg-white text-black hover:bg-zinc-100 px-4 py-4 rounded-[20px] text-base font-bold shadow-2xl whitespace-nowrap">
-              Ôn bài ({reviewCount})
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+            <Button onClick={onStartNewWords} disabled={newWordSessionCount === 0} className="w-full bg-white text-black hover:bg-zinc-100 px-3 py-4 rounded-[20px] text-sm sm:text-base font-bold shadow-2xl whitespace-nowrap">
+              Học từ mới ({newWordSessionCount})
               <ChevronRight className="w-5 h-5" />
             </Button>
-            <Button onClick={onStartQuiz} variant="secondary" className="w-full px-4 py-4 rounded-[20px] text-base font-bold border border-zinc-800 whitespace-nowrap">
+            <Button onClick={onStartReview} disabled={reviewCount === 0} variant="secondary" className="w-full px-3 py-4 rounded-[20px] text-sm sm:text-base font-bold border border-zinc-800 text-indigo-300 whitespace-nowrap">
+              Ôn tập ({reviewCount})
+              <RotateCcw className="w-5 h-5" />
+            </Button>
+            <Button onClick={onStartQuiz} variant="secondary" className="w-full px-3 py-4 rounded-[20px] text-sm sm:text-base font-bold border border-zinc-800 whitespace-nowrap">
               Kiểm tra
               <CheckSquare className="w-5 h-5" />
             </Button>
-            <Button onClick={onStartPractice} variant="secondary" className="w-full px-4 py-4 rounded-[20px] text-base font-bold border border-zinc-800 text-indigo-400 hover:text-indigo-300 whitespace-nowrap">
-              Luyện tập tự do
+            <Button onClick={onStartPractice} variant="secondary" className="w-full px-3 py-4 rounded-[20px] text-sm sm:text-base font-bold border border-zinc-800 text-indigo-400 hover:text-indigo-300 whitespace-nowrap">
+              Luyện tự do
               <Target className="w-5 h-5" />
             </Button>
             </div>

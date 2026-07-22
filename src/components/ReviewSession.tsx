@@ -12,8 +12,8 @@ import { VOCABULARY, type Word } from "../data/vocabulary";
 import { callAiApi } from "../lib/apiClient";
 import { createBackup, normalizeBackup } from "../lib/backup";
 import {
-  getLearningStatus, getLearningStatusLabel, getRemainingNewWordCount,
-  getReviewQueue, getSessionCorrectPercentage, getSessionStudiedCount,
+  getDueReviewQueue, getLearningStatus, getLearningStatusLabel, getNewWordQueue,
+  getRemainingNewWordCount, getSessionCorrectPercentage, getSessionStudiedCount,
   getStartedWordCount, REVIEW_SESSION_SIZE,
 } from "../lib/learning";
 import { calculateNextReview, initialSRS } from "../lib/srs";
@@ -47,12 +47,14 @@ const clearStudyReminder = () => {
 
 export function ReviewSession({ 
   progress, 
+  mode,
   onSaveProgress,
   onFinish,
   onCancel,
   onLearnMore
 }: { 
   progress: UserProgress;
+  mode: 'new' | 'review';
   onSaveProgress: (wordId: string, item: ProgressItem) => Promise<UserProgress>;
   onFinish: (p: UserProgress, wordIds: string[]) => void;
   onCancel: () => void;
@@ -64,12 +66,15 @@ export function ReviewSession({
   const [newProgress, setNewProgress] = useState<UserProgress>({ ...progress });
 
   useEffect(() => {
-    const wordsToReview = getReviewQueue(progress).slice(0, REVIEW_SESSION_SIZE);
+    const wordsToReview = (mode === 'new'
+      ? getNewWordQueue(progress)
+      : getDueReviewQueue(progress)
+    ).slice(0, REVIEW_SESSION_SIZE);
     
     // Shuffle
     const shuffled = [...wordsToReview].sort(() => Math.random() - 0.5);
     setSessionWords(shuffled);
-  }, []);
+  }, [mode]);
 
   const handleRate = async (quality: number) => {
     const word = sessionWords[currentIndex];
@@ -115,7 +120,7 @@ export function ReviewSession({
       setIsFlipped(false);
       setTimeout(() => setCurrentIndex(prev => Math.min(prev + 1, sessionWords.length - 1)), 150);
     } else {
-      toast.success('Review session finished!');
+      toast.success(mode === 'new' ? 'Đã hoàn thành phiên học từ mới!' : 'Đã hoàn thành phiên ôn tập!');
       onFinish(updatedProgress, sessionWords.map((sessionWord) => sessionWord.id));
     }
   };
@@ -144,8 +149,14 @@ export function ReviewSession({
           <BookOpen className="w-12 h-12 text-indigo-400 relative z-10" />
         </div>
         <div className="space-y-3">
-          <h3 className="text-3xl font-bold text-white tracking-tighter">Học xong rồi!</h3>
-          <p className="text-zinc-500 font-medium">Bạn đã hoàn thành tất cả các từ cần ôn tập trong hôm nay. Thật tuyệt vời!</p>
+          <h3 className="text-3xl font-bold text-white tracking-tighter">
+            {mode === 'new' ? 'Không còn từ mới!' : 'Ôn tập hoàn tất!'}
+          </h3>
+          <p className="text-zinc-500 font-medium">
+            {mode === 'new'
+              ? 'Bạn đã bắt đầu học toàn bộ từ vựng hiện có.'
+              : 'Bạn không còn từ nào đến hạn ôn tập trong hôm nay.'}
+          </p>
         </div>
         <Button onClick={onCancel} variant="primary" className="w-full py-4 rounded-2xl">Quay lại Dashboard</Button>
       </div>
@@ -157,7 +168,7 @@ export function ReviewSession({
       {/* Progress Bar */}
       <div className="space-y-3">
         <div className="flex justify-between text-[11px] font-black uppercase tracking-[0.2em] text-zinc-500">
-          <span className="text-white">Session Progress</span>
+          <span className="text-white">{mode === 'new' ? 'Học từ mới' : 'Ôn tập'}</span>
           <span className="text-indigo-400">{currentIndex + 1} / {sessionWords.length}</span>
         </div>
         <div className="h-2 bg-zinc-900 border border-zinc-800 rounded-full overflow-hidden p-0.5">

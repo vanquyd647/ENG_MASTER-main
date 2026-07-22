@@ -150,6 +150,7 @@ export default function App() {
   const progressRef = useRef<UserProgress>({});
   const [todayActivity, setTodayActivity] = useState<DailyActivity | null>(null);
   const [currentView, setCurrentView] = useState<'dashboard' | 'review' | 'browse' | 'quiz' | 'practice' | 'settings' | 'stats'>('dashboard');
+  const [studyMode, setStudyMode] = useState<'new' | 'review'>('new');
   const [loading, setLoading] = useState(true);
   const [explainingWord, setExplainingWord] = useState<{ word: string; meaning: string; content: string } | null>(null);
   const [isExplaining, setIsExplaining] = useState(false);
@@ -751,7 +752,14 @@ export default function App() {
                 profile={profile} 
                 progress={progress} 
                 todayActivity={todayActivity}
-                onStartReview={() => setCurrentView('review')}
+                onStartNewWords={() => {
+                  setStudyMode('new');
+                  setCurrentView('review');
+                }}
+                onStartReview={() => {
+                  setStudyMode('review');
+                  setCurrentView('review');
+                }}
                 onStartQuiz={() => setCurrentView('quiz')}
                 onStartPractice={() => setCurrentView('practice')}
                 onSyncTasks={() => syncToGoogleTasks()}
@@ -772,8 +780,9 @@ export default function App() {
           )}
           {currentView === 'review' && (
             <ReviewSession 
-              key="review" 
+              key={`review-${studyMode}`}
               progress={progress} 
+              mode={studyMode}
               onSaveProgress={persistProgressItem}
               onFinish={(newProgress, wordIds) => {
                 setProgress(newProgress);
@@ -781,7 +790,9 @@ export default function App() {
                 void logSessionHistory({
                   type: 'review',
                   score: `${wordIds.length} từ`,
-                  details: `Hoàn thành ôn tập từ vựng (${wordIds.length} thẻ)`,
+                  details: studyMode === 'new'
+                    ? `Hoàn thành học từ mới (${wordIds.length} thẻ)`
+                    : `Hoàn thành ôn tập từ vựng (${wordIds.length} thẻ)`,
                   wordIds,
                 });
                 setCurrentView('dashboard');
