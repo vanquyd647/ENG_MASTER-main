@@ -18,7 +18,8 @@ import {
   setDoc, 
   collection, 
   getDocs,
-  updateDoc
+  updateDoc,
+  deleteDoc,
 } from 'firebase/firestore';
 import { auth, db } from './lib/firebase';
 import { VOCABULARY, Word } from './data/vocabulary';
@@ -95,6 +96,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Toaster, toast } from 'react-hot-toast';
 import ReactMarkdown from 'react-markdown';
 import { cn } from './lib/utils';
+import { completeOnboarding, hydrateCustomVocabulary, isOnboardingComplete } from './lib/productPreferences';
 import { Button, Modal } from "./components/ui";
 
 const StatsView = lazy(() =>
@@ -120,6 +122,8 @@ const SettingsView = lazy(() =>
 );
 
 type SyncAction = 'tasks' | 'calendar' | 'drive';
+
+hydrateCustomVocabulary();
 
 // --- Main App ---
 
@@ -155,6 +159,8 @@ export default function App() {
   const [explainingWord, setExplainingWord] = useState<{ word: string; meaning: string; content: string } | null>(null);
   const [isExplaining, setIsExplaining] = useState(false);
   const [syncingAction, setSyncingAction] = useState<SyncAction | null>(null);
+  const [showOnboarding, setShowOnboarding] = useState(() => !isOnboardingComplete());
+  const [isOnline, setIsOnline] = useState(() => navigator.onLine);
 
   useEffect(() => {
     profileRef.current = profile;
@@ -167,6 +173,16 @@ export default function App() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
   }, [currentView]);
+
+  useEffect(() => {
+    const updateOnlineStatus = () => setIsOnline(navigator.onLine);
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+    return () => {
+      window.removeEventListener('online', updateOnlineStatus);
+      window.removeEventListener('offline', updateOnlineStatus);
+    };
+  }, []);
 
   // --- Auth & Data Fetching ---
   useEffect(() => {
@@ -542,6 +558,38 @@ export default function App() {
     return updatedProgress;
   };
 
+  const resetWordProgress = async (wordId: string) => {
+    const nextProgress = { ...progressRef.current };
+    delete nextProgress[wordId];
+    progressRef.current = nextProgress;
+    setProgress(nextProgress);
+    const currentProfile = profileRef.current;
+    if (currentProfile) {
+      const nextProfile = normalizeProfileWordCount(currentProfile, nextProgress);
+      profileRef.current = nextProfile;
+      setProfile(nextProfile);
+      if (isGuest) {
+        saveGuestProgress(nextProgress);
+        saveGuestProfile(nextProfile);
+      } else {
+        await Promise.all([
+          deleteDoc(doc(db, `users/${currentProfile.uid}/progress`, wordId)),
+          updateDoc(doc(db, 'users', currentProfile.uid), { totalWordsLearned: nextProfile.totalWordsLearned }),
+        ]);
+      }
+    }
+    toast.success('Đã đặt lại tiến độ của từ.');
+  };
+
+  const delayWordReview = async (wordId: string) => {
+    const item = progressRef.current[wordId];
+    if (!item) return;
+    const nextDate = new Date();
+    nextDate.setDate(nextDate.getDate() + 1);
+    await persistProgressItem(wordId, { ...item, nextReviewDate: nextDate.toISOString() });
+    toast.success('Đã hoãn từ sang ngày mai.');
+  };
+
   const logSessionHistory = async ({
     type,
     score,
@@ -720,7 +768,7 @@ export default function App() {
 
           <div className="hidden md:flex items-center gap-3">
             <div className="hidden sm:flex flex-col items-end mr-2">
-              <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest">Premium</span>
+              <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest">Tài khoản</span>
               <span className="text-sm font-bold text-white">{profile?.displayName}</span>
             </div>
             <button aria-label="Mở cài đặt" onClick={() => setCurrentView('settings')} className="p-3 rounded-xl border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 transition-all text-zinc-500 shadow-lg hover:text-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">
@@ -767,6 +815,7 @@ export default function App() {
                 onExportDrive={exportToGoogleDrive}
                 syncingAction={syncingAction}
                 isGuest={isGuest}
+                syncStatus={isGuest ? 'Lưu trên thiết bị' : isOnline ? 'Đã kết nối Cloud' : 'Mất kết nối'}
                 onViewStats={() => setCurrentView('stats')}
               />
             </div>
@@ -776,6 +825,8 @@ export default function App() {
               progress={progress} 
               onLearnMore={handleLearnMore} 
               onSyncTask={syncToGoogleTasks}
+              onResetWord={resetWordProgress}
+              onDelayWord={delayWordReview}
             />
           )}
           {currentView === 'review' && (
@@ -803,6 +854,7 @@ export default function App() {
           )}
           {currentView === 'quiz' && (
             <QuizSession 
+              progress={progress}
               onCancel={() => setCurrentView('dashboard')}
               onFinish={(score, total, wordIds) => {
                 void logSessionHistory({
@@ -997,6 +1049,29 @@ export default function App() {
           ) : (
             <ReactMarkdown>{explainingWord?.content || ''}</ReactMarkdown>
           )}
+        </Modal>
+        <Modal
+          isOpen={showOnboarding && Boolean(user || isGuest)}
+          onClose={() => {
+            completeOnboarding();
+            setShowOnboarding(false);
+          }}
+          title="Bắt đầu học với ENG_MASTER"
+        >
+          <div className="space-y-4 text-sm">
+            <p><strong>Học từ mới</strong> dành cho những từ bạn chưa bắt đầu.</p>
+            <p><strong>Ôn tập</strong> chỉ hiện các từ đã đến hạn theo lịch SRS.</p>
+            <p>Trong flashcard, hãy lật thẻ rồi chọn <strong>Học lại / Khó / Tốt / Dễ</strong> để lên lịch lần ôn tiếp theo.</p>
+            <Button
+              onClick={() => {
+                completeOnboarding();
+                setShowOnboarding(false);
+              }}
+              className="w-full py-3"
+            >
+              Bắt đầu
+            </Button>
+          </div>
         </Modal>
       </main>
     </div>

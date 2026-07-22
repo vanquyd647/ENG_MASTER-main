@@ -45,7 +45,7 @@ const clearStudyReminder = () => {
   studyReminderTimer = null;
 };
 
-export function QuizSession({ onCancel, onFinish, onWordResult }: { onCancel: () => void, onFinish?: (score: number, total: number, wordIds: string[]) => void, onWordResult?: (wordId: string, isCorrect: boolean) => void }) {
+export function QuizSession({ progress, onCancel, onFinish, onWordResult }: { progress: UserProgress; onCancel: () => void, onFinish?: (score: number, total: number, wordIds: string[]) => void, onWordResult?: (wordId: string, isCorrect: boolean) => void }) {
   const [quizMode, setQuizMode] = useState<'standard' | 'ai' | null>(null);
   const [questions, setQuestions] = useState<{ word: Word; questionText: string; options: string[]; answer: string; type: 'mcq' | 'fill'; hint?: string; translation?: string; explanation?: string; isAi?: boolean }[]>([]);
   const [missedAnswers, setMissedAnswers] = useState<{ word: Word; userAnswer: string; correctAnswer: string }[]>([]);
@@ -59,6 +59,9 @@ export function QuizSession({ onCancel, onFinish, onWordResult }: { onCancel: ()
   const [showAnswer, setShowAnswer] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [questionCount, setQuestionCount] = useState(10);
+  const [quizScope, setQuizScope] = useState<'all' | 'studied' | 'mistakes'>('all');
+  const [quizTopic, setQuizTopic] = useState('Tất cả');
 
   const startQuiz = async (mode: 'standard' | 'ai') => {
     setQuizMode(mode);
@@ -73,11 +76,24 @@ export function QuizSession({ onCancel, onFinish, onWordResult }: { onCancel: ()
     setMissedAnswers([]);
     setMistakeReview(null);
 
+    const candidateWords = VOCABULARY.filter((word) => {
+      if (quizTopic !== 'Tất cả' && word.topic !== quizTopic) return false;
+      if (quizScope === 'studied' && !progress[word.id]) return false;
+      if (quizScope === 'mistakes' && !(progress[word.id]?.wrongCount && progress[word.id].wrongCount! > 0)) return false;
+      return true;
+    });
+    if (candidateWords.length === 0) {
+      toast.error('Không có từ phù hợp với bộ lọc quiz.');
+      setIsLoading(false);
+      setQuizMode(null);
+      return;
+    }
+
     if (mode === 'standard') {
       try {
-        const selectedWords = [...VOCABULARY]
+        const selectedWords = [...candidateWords]
           .sort(() => Math.random() - 0.5)
-          .slice(0, 10);
+          .slice(0, questionCount);
 
         const localQuestions = selectedWords.map(word => {
           const distractors = VOCABULARY
@@ -116,9 +132,9 @@ export function QuizSession({ onCancel, onFinish, onWordResult }: { onCancel: ()
       }
     } else {
       try {
-        const selectedWords = [...VOCABULARY]
+        const selectedWords = [...candidateWords]
           .sort(() => Math.random() - 0.5)
-          .slice(0, 10);
+          .slice(0, questionCount);
 
         const data = await callAiApi<{ questions: any[] }>('quiz', {
           words: selectedWords.map(w => ({
@@ -179,7 +195,7 @@ export function QuizSession({ onCancel, onFinish, onWordResult }: { onCancel: ()
         console.error(err);
         toast.error(err instanceof Error ? `AI quiz: ${err.message}. Đang dùng quiz offline.` : 'Không thể tạo AI quiz, đang dùng quiz offline.');
         // Fallback local quiz
-        const selectedWords = [...VOCABULARY].sort(() => Math.random() - 0.5).slice(0, 10);
+        const selectedWords = [...candidateWords].sort(() => Math.random() - 0.5).slice(0, questionCount);
         setQuestions(selectedWords.map(word => {
           const distractors = VOCABULARY.filter(w => w.id !== word.id).sort(() => Math.random() - 0.5).slice(0, 3).map(w => w.meaning);
           const type = (Math.random() > 0.5 ? 'mcq' : 'fill') as 'mcq' | 'fill';
@@ -290,6 +306,30 @@ export function QuizSession({ onCancel, onFinish, onWordResult }: { onCancel: ()
           <p className="text-zinc-400 max-w-xl mx-auto font-medium">
             Chọn cách bạn muốn kiểm tra từ vựng. Trắc nghiệm offline nhanh chóng hoặc tối ưu ngữ cảnh bằng AI thông minh bổ trợ.
           </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left rounded-3xl border border-zinc-800 bg-zinc-900/40 p-4">
+          <label>
+            <span className="text-[10px] font-black uppercase text-zinc-500 block mb-2">Số câu</span>
+            <select value={questionCount} onChange={(event) => setQuestionCount(Number(event.target.value))} className="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3 py-2.5 text-white">
+              {[5, 10, 20].map((value) => <option key={value} value={value}>{value} câu</option>)}
+            </select>
+          </label>
+          <label>
+            <span className="text-[10px] font-black uppercase text-zinc-500 block mb-2">Phạm vi</span>
+            <select value={quizScope} onChange={(event) => setQuizScope(event.target.value as typeof quizScope)} className="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3 py-2.5 text-white">
+              <option value="all">Tất cả từ</option>
+              <option value="studied">Từ đã học</option>
+              <option value="mistakes">Từ hay sai</option>
+            </select>
+          </label>
+          <label>
+            <span className="text-[10px] font-black uppercase text-zinc-500 block mb-2">Chủ đề</span>
+            <select value={quizTopic} onChange={(event) => setQuizTopic(event.target.value)} className="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3 py-2.5 text-white">
+              <option>Tất cả</option>
+              {Array.from(new Set(VOCABULARY.map((word) => word.topic))).map((topic) => <option key={topic}>{topic}</option>)}
+            </select>
+          </label>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   BarChart, 
   Bar, 
@@ -33,6 +33,7 @@ import {
 import { VOCABULARY } from '../data/vocabulary';
 import { getLearningStatus } from '../lib/learning';
 import type { UserProgress } from '../types';
+import { cn } from '../lib/utils';
 
 interface StatsViewProps {
   progress: UserProgress;
@@ -40,6 +41,7 @@ interface StatsViewProps {
 }
 
 export function StatsView({ progress, onBack }: StatsViewProps) {
+  const [periodDays, setPeriodDays] = useState<7 | 30 | 90>(30);
   const useSampleData = false;
   // --- Real Stats Calculation ---
   const totalWords = VOCABULARY.length;
@@ -75,7 +77,10 @@ export function StatsView({ progress, onBack }: StatsViewProps) {
 
   // 3. Easiness over time
   const getCalculatedEasinessOverTime = () => {
-    const records = Object.values(progress).filter(p => p.lastReviewDate);
+    const cutoff = Date.now() - periodDays * 86_400_000;
+    const records = Object.values(progress).filter(
+      (item) => item.lastReviewDate && new Date(item.lastReviewDate).getTime() >= cutoff,
+    );
     if (records.length === 0) return [];
 
     // Sort alphabetically/chronologically by lastReviewDate
@@ -194,6 +199,22 @@ export function StatsView({ progress, onBack }: StatsViewProps) {
           <p className="text-sm text-zinc-400 font-medium">
             Phân tích chi tiết tiến trình ghi nhớ từ vựng qua thuật toán lặp khoảng cách SuperMemo (SM-2).
           </p>
+        </div>
+
+        <div className="flex rounded-xl border border-zinc-800 bg-zinc-900 p-1" aria-label="Khoảng thời gian thống kê">
+          {[7, 30, 90].map((days) => (
+            <button
+              key={days}
+              type="button"
+              onClick={() => setPeriodDays(days as 7 | 30 | 90)}
+              className={cn(
+                'rounded-lg px-3 py-2 text-xs font-bold',
+                periodDays === days ? 'bg-indigo-600 text-white' : 'text-zinc-400 hover:text-white',
+              )}
+            >
+              {days} ngày
+            </button>
+          ))}
         </div>
 
       </div>

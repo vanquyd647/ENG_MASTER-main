@@ -18,6 +18,7 @@ import {
 } from "../lib/learning";
 import { calculateNextReview, initialSRS } from "../lib/srs";
 import { cn } from "../lib/utils";
+import { getStudySessionSize } from "../lib/productPreferences";
 import type {
   BackupV2, DailyActivity, ProgressItem, UserProfile, UserProgress,
 } from "../types";
@@ -69,7 +70,7 @@ export function ReviewSession({
     const wordsToReview = (mode === 'new'
       ? getNewWordQueue(progress)
       : getDueReviewQueue(progress)
-    ).slice(0, REVIEW_SESSION_SIZE);
+    ).slice(0, getStudySessionSize());
     
     // Shuffle
     const shuffled = [...wordsToReview].sort(() => Math.random() - 0.5);
@@ -251,10 +252,10 @@ export function ReviewSession({
             
             <div className="w-full grid grid-cols-4 gap-2 sm:gap-3 mt-5 sm:mt-10">
               {[
-                { q: 1, label: 'Again', color: 'border-rose-900/50 bg-rose-950/20 text-rose-400 hover:bg-rose-950/40' },
-                { q: 3, label: 'Hard', color: 'border-orange-900/50 bg-orange-950/20 text-orange-400 hover:bg-orange-950/40' },
-                { q: 4, label: 'Good', color: 'border-emerald-900/50 bg-emerald-950/20 text-emerald-400 hover:bg-emerald-950/40' },
-                { q: 5, label: 'Easy', color: 'border-indigo-900/50 bg-indigo-950/20 text-indigo-400 hover:bg-indigo-950/40' },
+                { q: 1, label: 'Học lại', color: 'border-rose-900/50 bg-rose-950/20 text-rose-400 hover:bg-rose-950/40' },
+                { q: 3, label: 'Khó', color: 'border-orange-900/50 bg-orange-950/20 text-orange-400 hover:bg-orange-950/40' },
+                { q: 4, label: 'Tốt', color: 'border-emerald-900/50 bg-emerald-950/20 text-emerald-400 hover:bg-emerald-950/40' },
+                { q: 5, label: 'Dễ', color: 'border-indigo-900/50 bg-indigo-950/20 text-indigo-400 hover:bg-indigo-950/40' },
               ].map(btn => (
                 <button
                   key={btn.q}

@@ -1,0 +1,10 @@
+{
+  "name": "ENG_MASTER - Học từ vựng tiếng Anh",
+  "short_name": "ENG_MASTER",
+  "description": "Học từ vựng tiếng Anh với SRS, quiz và luyện tập ngoại tuyến.",
+  "lang": "vi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#4f46e5"
+}

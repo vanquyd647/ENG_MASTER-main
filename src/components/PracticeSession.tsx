@@ -195,7 +195,7 @@ export function PracticeSession({
               <CheckCircle2 className="w-8 h-8" />
             </div>
             <div className="text-left">
-              <h3 className="font-bold text-white text-xl">Dễ (Easy)</h3>
+              <h3 className="font-bold text-white text-xl">Dễ</h3>
               <p className="text-zinc-500 text-sm mt-1">Ôn tập các từ bạn đã quen thuộc (Easiness cao)</p>
             </div>
           </Card>
@@ -215,7 +215,7 @@ export function PracticeSession({
               <AlertCircle className="w-8 h-8" />
             </div>
             <div className="text-left">
-               <h3 className="font-bold text-white text-xl">Khó (Hard)</h3>
+               <h3 className="font-bold text-white text-xl">Khó</h3>
               <p className="text-zinc-500 text-sm mt-1">Các từ hay sai hoặc từ mới chưa từng học</p>
             </div>
           </Card>
@@ -248,9 +248,9 @@ export function PracticeSession({
 
   const currentWord = practiceWords[currentIndex];
   
-  const modeLabel = mode === 'hard' ? 'Khó (Hard)' : 
+  const modeLabel = mode === 'hard' ? 'Khó' : 
                     mode === 'medium' ? 'Vừa (Medium)' : 
-                    mode === 'easy' ? 'Dễ (Easy)' : 
+                    mode === 'easy' ? 'Dễ' : 
                     mode === 'mistakes' ? 'Trọng tâm từ sai (Weaknesses)' : 'Luyện tập';
 
   return (
@@ -351,10 +351,10 @@ export function PracticeSession({
         <p className="text-center text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-4">Đánh giá độ khó để cập nhật tiến độ (SRS)</p>
         <div className="grid grid-cols-4 gap-2 md:gap-3">
           {[
-            { q: 1, label: 'Again', color: 'border-rose-900/50 bg-rose-950/20 text-rose-400 hover:bg-rose-950/40' },
-            { q: 3, label: 'Hard', color: 'border-amber-900/50 bg-amber-950/20 text-amber-400 hover:bg-amber-950/40' },
-            { q: 4, label: 'Good', color: 'border-emerald-900/50 bg-emerald-950/20 text-emerald-400 hover:bg-emerald-950/40' },
-            { q: 5, label: 'Easy', color: 'border-indigo-900/50 bg-indigo-950/20 text-indigo-400 hover:bg-indigo-950/40' },
+            { q: 1, label: 'Học lại', color: 'border-rose-900/50 bg-rose-950/20 text-rose-400 hover:bg-rose-950/40' },
+            { q: 3, label: 'Khó', color: 'border-amber-900/50 bg-amber-950/20 text-amber-400 hover:bg-amber-950/40' },
+            { q: 4, label: 'Tốt', color: 'border-emerald-900/50 bg-emerald-950/20 text-emerald-400 hover:bg-emerald-950/40' },
+            { q: 5, label: 'Dễ', color: 'border-indigo-900/50 bg-indigo-950/20 text-indigo-400 hover:bg-indigo-950/40' },
           ].map(btn => (
             <button
               key={btn.q}

@@ -18,6 +18,12 @@ import {
 } from "../lib/learning";
 import { calculateNextReview, initialSRS } from "../lib/srs";
 import { cn } from "../lib/utils";
+import {
+  getReminderHour,
+  getStudySessionSize,
+  setReminderHour as persistReminderHour,
+  setStudySessionSize as persistStudySessionSize,
+} from "../lib/productPreferences";
 import type {
   BackupV2, DailyActivity, ProgressItem, UserProfile, UserProgress,
 } from "../types";
@@ -26,11 +32,11 @@ import { Button, Card } from "./ui";
 type SyncAction = "tasks" | "calendar" | "drive";
 
 let studyReminderTimer: number | null = null;
-const scheduleStudyReminder = () => {
+const scheduleStudyReminder = (hour = getReminderHour()) => {
   if (!("Notification" in window) || Notification.permission !== "granted") return;
   if (studyReminderTimer) window.clearTimeout(studyReminderTimer);
   const nextReminder = new Date();
-  nextReminder.setHours(20, 0, 0, 0);
+  nextReminder.setHours(hour, 0, 0, 0);
   if (nextReminder.getTime() <= Date.now()) nextReminder.setDate(nextReminder.getDate() + 1);
   studyReminderTimer = window.setTimeout(() => {
     new Notification("ENG_MASTER", {
@@ -72,12 +78,14 @@ export function SettingsView({
   const [editName, setEditName] = useState(profile?.displayName || '');
   const [goalInput, setGoalInput] = useState(String(profile?.dailyGoal || 15));
   const [isGeneratingAvatar, setIsGeneratingAvatar] = useState(false);
+  const [sessionSize, setSessionSize] = useState(getStudySessionSize);
+  const [reminderHour, setReminderHour] = useState(getReminderHour);
 
   useEffect(() => {
     if (notifications && 'Notification' in window && Notification.permission === 'granted') {
-      scheduleStudyReminder();
+      scheduleStudyReminder(reminderHour);
     }
-  }, [notifications]);
+  }, [notifications, reminderHour]);
 
   const handleGenerateAvatar = async () => {
     if (isGuest) {
@@ -176,6 +184,43 @@ export function SettingsView({
     } catch (err) {
       console.error(err);
       toast.error('File backup không hợp lệ.');
+    } finally {
+      event.target.value = '';
+    }
+  };
+
+  const importCsv = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    try {
+      const lines = (await file.text()).split(/\r?\n/).filter(Boolean);
+      const progressFromCsv: UserProgress = {};
+      for (const line of lines.slice(1)) {
+        const cells = line.match(/(?:^|,)("(?:[^"]|"")*"|[^,]*)/g)?.map((cell) =>
+          cell.replace(/^,/, '').replace(/^"|"$/g, '').replace(/""/g, '"'),
+        );
+        if (!cells || cells.length < 5) continue;
+        const [wordId, easiness, interval, repetitions, nextReviewDate, lastReviewDate, wrongCount] = cells;
+        if (!VOCABULARY.some((word) => word.id === wordId)) continue;
+        progressFromCsv[wordId] = {
+          easiness: Number(easiness),
+          interval: Number(interval),
+          repetitions: Number(repetitions),
+          nextReviewDate,
+          lastReviewDate: lastReviewDate || undefined,
+          wrongCount: Number(wrongCount || 0),
+        };
+      }
+      await onImportBackup({
+        version: 2,
+        exportedAt: new Date().toISOString(),
+        profile,
+        progress: progressFromCsv,
+      });
+      toast.success(`Đã nhập ${Object.keys(progressFromCsv).length} từ từ CSV.`);
+    } catch (error) {
+      console.error(error);
+      toast.error('File CSV không hợp lệ.');
     } finally {
       event.target.value = '';
     }
@@ -311,7 +356,7 @@ export function SettingsView({
         <Card className="bg-[#0c0c0e] border-zinc-800 p-0 overflow-hidden">
           <div className="p-6 border-b border-zinc-800">
             <h3 className="font-bold text-lg text-white mb-1">Mục tiêu học tập</h3>
-            <p className="text-sm text-zinc-500">Đặt số từ cần hoàn thành mỗi ngày trên dashboard.</p>
+            <p className="text-sm text-zinc-500">Đặt mục tiêu và số lượng thẻ trong mỗi phiên học.</p>
           </div>
           <div className="p-6 flex flex-col sm:flex-row gap-4 sm:items-end">
             <label className="flex-1">
@@ -328,6 +373,22 @@ export function SettingsView({
             <Button onClick={handleSaveGoal} className="py-3 px-6">
               Lưu mục tiêu
             </Button>
+          </div>
+          <div className="px-6 pb-6">
+            <label>
+              <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500 block mb-2">Số thẻ mỗi phiên</span>
+              <select
+                value={sessionSize}
+                onChange={(event) => {
+                  const value = Number(event.target.value);
+                  setSessionSize(value);
+                  persistStudySessionSize(value);
+                }}
+                className="bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-white font-bold w-full"
+              >
+                {[5, 10, 15, 20].map((value) => <option key={value} value={value}>{value} thẻ</option>)}
+              </select>
+            </label>
           </div>
         </Card>
 
@@ -359,6 +420,21 @@ export function SettingsView({
                 <div className="absolute top-1 left-1 w-4 h-4 bg-white/50 rounded-full translate-x-6"></div>
               </button>
             </div>
+            <label className="block border-t border-zinc-800 pt-5">
+              <span className="text-sm font-bold text-slate-300 block mb-2">Giờ nhắc học</span>
+              <select
+                value={reminderHour}
+                onChange={(event) => {
+                  const value = Number(event.target.value);
+                  setReminderHour(value);
+                  persistReminderHour(value);
+                  if (notifications) scheduleStudyReminder(value);
+                }}
+                className="bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-white font-bold w-full"
+              >
+                {Array.from({ length: 24 }, (_, hour) => <option key={hour} value={hour}>{String(hour).padStart(2, '0')}:00</option>)}
+              </select>
+            </label>
 
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
@@ -423,16 +499,20 @@ export function SettingsView({
             <h3 className="font-bold text-lg text-white mb-1">Sao lưu dữ liệu</h3>
             <p className="text-sm text-zinc-500">Xuất hoặc nhập lại tiến độ học tập ngoài Firebase.</p>
           </div>
-          <div className="p-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
             <Button onClick={exportBackup} variant="outline" className="py-3">
-              JSON Backup
+              Xuất JSON
             </Button>
             <Button onClick={exportCsv} variant="outline" className="py-3">
-              CSV Export
+              Xuất CSV
             </Button>
             <label className="px-4 py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2 cursor-pointer border border-zinc-700 text-slate-300 hover:bg-zinc-800 hover:text-white">
-              Import JSON
+              Nhập JSON
               <input type="file" accept="application/json,.json" onChange={importBackup} className="sr-only" />
+            </label>
+            <label className="px-4 py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2 cursor-pointer border border-zinc-700 text-slate-300 hover:bg-zinc-800 hover:text-white">
+              Nhập CSV
+              <input type="file" accept="text/csv,.csv" onChange={importCsv} className="sr-only" />
             </label>
           </div>
         </Card>
@@ -452,7 +532,7 @@ export function SettingsView({
                  <p className="text-xs text-zinc-500 mt-1 max-w-sm">Hành động này sẽ thiết lập lại toàn bộ tiến độ, SRS, lịch sử và chuỗi ngày học của bạn.</p>
               </div>
               <Button onClick={onResetProgress} variant="outline" className="border-rose-500/50 text-rose-500 hover:bg-rose-500 hover:text-white transition-colors shrink-0">
-                Reset Data
+                Xóa tiến độ
               </Button>
             </div>
           </div>

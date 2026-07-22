@@ -24,10 +24,10 @@ export const getLearningStatusLabel = (
 ) => {
   const status = getLearningStatus(item);
   return {
-    new: "New",
-    learning: "Learning",
-    learned: "Learned",
-    mastered: "Mastered",
+    new: "Chưa học",
+    learning: "Đang học",
+    learned: "Đã thuộc",
+    mastered: "Thành thạo",
   }[status];
 };
 

@@ -18,6 +18,7 @@ import {
 } from "../lib/learning";
 import { calculateNextReview, initialSRS } from "../lib/srs";
 import { cn } from "../lib/utils";
+import { getStudySessionSize } from "../lib/productPreferences";
 import type {
   BackupV2, DailyActivity, ProgressItem, UserProfile, UserProgress,
 } from "../types";
@@ -58,6 +59,7 @@ export function Dashboard({
   onExportDrive,
   syncingAction,
   isGuest,
+  syncStatus,
   onViewStats
 }: { 
   profile: UserProfile | null; 
@@ -72,9 +74,11 @@ export function Dashboard({
   onExportDrive: () => void;
   syncingAction: SyncAction | null;
   isGuest: boolean;
+  syncStatus: string;
   onViewStats: () => void;
 }) {
-  const reviewCount = Math.min(getDueReviewQueue(progress).length, REVIEW_SESSION_SIZE);
+  const sessionSize = getStudySessionSize();
+  const reviewCount = Math.min(getDueReviewQueue(progress).length, sessionSize);
   const dailyGoal = profile?.dailyGoal || 15;
   const todayStudiedCount =
     todayActivity?.dateKey === getLocalDateKey()
@@ -98,7 +102,7 @@ export function Dashboard({
   const syncDisabled = syncingAction !== null || isGuest;
   const startedWordCount = getStartedWordCount(progress);
   const remainingNewWordCount = getRemainingNewWordCount(progress);
-  const newWordSessionCount = Math.min(remainingNewWordCount, REVIEW_SESSION_SIZE);
+  const newWordSessionCount = Math.min(remainingNewWordCount, sessionSize);
 
   return (
     <motion.div 
@@ -119,7 +123,7 @@ export function Dashboard({
                   : "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
               )}>
                 <Sparkles className="w-3 h-3" />
-                {isGuest ? "Offline guest" : "Google connected"}
+                {syncStatus}
               </div>
               <div className="grid grid-cols-3 gap-2 sm:flex">
                 <Button 
@@ -271,7 +275,7 @@ export function Dashboard({
                       ? "bg-amber-500/10 text-amber-400 border-amber-500/20"
                       : "bg-indigo-500/10 text-indigo-400 border-indigo-500/20"
                 )}>
-                  {item?.wrongCount ? "weak" : item ? "due" : "new"}
+                  {item?.wrongCount ? "Từ yếu" : item ? "Đến hạn" : "Từ mới"}
                 </span>
               </div>
             ))}
@@ -281,7 +285,7 @@ export function Dashboard({
         <Card className="border-zinc-800/50 bg-[#0c0c0e]/50">
           <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-5">
             <Brain className="w-5 h-5 text-rose-400" />
-            Weak Words
+            Từ cần luyện thêm
           </h3>
           {weakWords.length > 0 ? (
             <div className="space-y-3">
