@@ -163,6 +163,10 @@ export default function App() {
     progressRef.current = progress;
   }, [progress]);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [currentView]);
+
   // --- Auth & Data Fetching ---
   useEffect(() => {
     // Check for existing guest session
@@ -701,6 +705,7 @@ export default function App() {
               <button
                 key={item.id}
                 onClick={() => setCurrentView(item.id as any)}
+                aria-current={currentView === item.id ? 'page' : undefined}
                 className={cn(
                   'min-w-0 flex flex-col items-center gap-1 px-1.5 py-2 rounded-xl transition-all md:flex-row md:px-5 md:py-2.5',
                   currentView === item.id ? 'text-indigo-400 bg-indigo-500/10' : 'text-zinc-500 hover:text-slate-300'
@@ -717,10 +722,10 @@ export default function App() {
               <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest">Premium</span>
               <span className="text-sm font-bold text-white">{profile?.displayName}</span>
             </div>
-            <button onClick={() => setCurrentView('settings')} className="p-3 rounded-xl border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 transition-all text-zinc-500 shadow-lg hover:text-slate-300">
+            <button aria-label="Mở cài đặt" onClick={() => setCurrentView('settings')} className="p-3 rounded-xl border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 transition-all text-zinc-500 shadow-lg hover:text-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">
               <Settings className="w-5 h-5" />
             </button>
-            <button onClick={logout} className="p-3 rounded-xl border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 transition-all text-zinc-500 shadow-lg hover:text-rose-500">
+            <button aria-label="Đăng xuất" onClick={logout} className="p-3 rounded-xl border border-zinc-800 bg-zinc-900 hover:bg-zinc-800 transition-all text-zinc-500 shadow-lg hover:text-rose-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">
               <LogOut className="w-5 h-5" />
             </button>
           </div>
@@ -728,10 +733,10 @@ export default function App() {
       </nav>
 
       <div className="fixed right-3 top-3 z-40 flex gap-2 md:hidden">
-        <button onClick={() => setCurrentView('settings')} className="p-2.5 rounded-xl border border-zinc-800 bg-zinc-950/90 backdrop-blur-xl text-zinc-400 shadow-lg active:scale-95">
+        <button aria-label="Mở cài đặt" onClick={() => setCurrentView('settings')} className="p-2.5 rounded-xl border border-zinc-800 bg-zinc-950/90 backdrop-blur-xl text-zinc-400 shadow-lg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">
           <Settings className="w-5 h-5" />
         </button>
-        <button onClick={logout} className="p-2.5 rounded-xl border border-zinc-800 bg-zinc-950/90 backdrop-blur-xl text-zinc-400 shadow-lg active:scale-95">
+        <button aria-label="Đăng xuất" onClick={logout} className="p-2.5 rounded-xl border border-zinc-800 bg-zinc-950/90 backdrop-blur-xl text-zinc-400 shadow-lg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">
           <LogOut className="w-5 h-5" />
         </button>
       </div>

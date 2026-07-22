@@ -104,8 +104,8 @@ export function Dashboard({
       exit={{ opacity: 0, y: -20 }}
       className="space-y-8"
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Card className="md:col-span-2 bg-[#0c0c0e] text-white border-zinc-800 shadow-2xl flex flex-col justify-between min-h-[auto] sm:min-h-[320px] relative overflow-hidden group">
+      <div className="grid grid-cols-1 gap-6">
+        <Card className="bg-[#0c0c0e] text-white border-zinc-800 shadow-2xl flex flex-col justify-between min-h-[auto] sm:min-h-[280px] relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-indigo-600/10 blur-[100px] -mr-32 -mt-32" />
           <div className="relative z-10 space-y-3">
             <div className="flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-start">
@@ -150,20 +150,22 @@ export function Dashboard({
             </div>
             <h2 className="text-3xl sm:text-5xl font-bold tracking-tighter leading-tight break-words">Chào mừng,<br />{profile?.displayName}!</h2>
           </div>
-          <div className="relative z-10 flex flex-col sm:flex-row gap-4 mt-8">
-            <Button onClick={onStartReview} className="w-full sm:w-auto bg-white text-black hover:bg-zinc-100 px-5 sm:px-10 py-4 sm:py-5 rounded-[20px] text-base sm:text-lg font-bold shadow-2xl">
+          <div className="relative z-10 mt-8 space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <Button onClick={onStartReview} className="w-full bg-white text-black hover:bg-zinc-100 px-4 py-4 rounded-[20px] text-base font-bold shadow-2xl whitespace-nowrap">
               Ôn bài ({reviewCount})
               <ChevronRight className="w-5 h-5" />
             </Button>
-            <Button onClick={onStartQuiz} variant="secondary" className="w-full sm:w-auto px-5 sm:px-8 py-4 sm:py-5 rounded-[20px] text-base sm:text-lg font-bold border border-zinc-800">
+            <Button onClick={onStartQuiz} variant="secondary" className="w-full px-4 py-4 rounded-[20px] text-base font-bold border border-zinc-800 whitespace-nowrap">
               Kiểm tra
               <CheckSquare className="w-5 h-5" />
             </Button>
-            <Button onClick={onStartPractice} variant="secondary" className="w-full sm:w-auto px-5 sm:px-8 py-4 sm:py-5 rounded-[20px] text-base sm:text-lg font-bold border border-zinc-800 text-indigo-400 hover:text-indigo-300">
+            <Button onClick={onStartPractice} variant="secondary" className="w-full px-4 py-4 rounded-[20px] text-base font-bold border border-zinc-800 text-indigo-400 hover:text-indigo-300 whitespace-nowrap">
               Luyện tập tự do
               <Target className="w-5 h-5" />
             </Button>
-            <div className="flex gap-3 sm:gap-4 items-center pl-0 sm:pl-2">
+            </div>
+            <div className="flex gap-3 sm:gap-4 items-center">
               <div className="flex -space-x-3">
                 {[1,2,3].map(i => <div key={i} className="w-10 h-10 rounded-full border-2 border-[#0c0c0e] bg-zinc-800 shadow-lg" />)}
               </div>
@@ -172,7 +174,7 @@ export function Dashboard({
           </div>
         </Card>
 
-        <div className="grid grid-cols-2 gap-4 md:block md:space-y-6">
+        <div className="grid grid-cols-2 gap-4 sm:gap-6">
           <Card className="flex flex-col items-center justify-center text-center p-4 sm:p-6 border-zinc-800/50 bg-[#0c0c0e]/50 relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-b from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="w-12 h-12 sm:w-14 sm:h-14 bg-orange-500/10 rounded-[18px] sm:rounded-[22px] flex items-center justify-center mb-4 border border-orange-500/20 relative">

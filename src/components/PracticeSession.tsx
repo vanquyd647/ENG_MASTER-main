@@ -164,6 +164,13 @@ export function PracticeSession({
     window.speechSynthesis.speak(utterance);
   };
 
+  const flipCard = () => {
+    if (!isFlipped && localStorage.getItem('app_sound') !== 'false') {
+      speak(null, currentWord?.word);
+    }
+    setIsFlipped((flipped) => !flipped);
+  };
+
   if (!mode) {
     const mistakeWordsCount = Object.values(progress).filter(p => p.wrongCount && p.wrongCount > 0).length;
 
@@ -183,7 +190,7 @@ export function PracticeSession({
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Card onClick={() => startPractice('easy')} className="p-5 sm:p-8 cursor-pointer hover:border-emerald-500 hover:bg-emerald-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl">
+          <Card ariaLabel="Bắt đầu luyện tập mức dễ" onClick={() => startPractice('easy')} className="p-5 sm:p-8 cursor-pointer hover:border-emerald-500 hover:bg-emerald-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl">
             <div className="w-16 h-16 shrink-0 rounded-[20px] bg-emerald-500/10 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-500 group-hover:text-white transition-colors border border-emerald-500/20">
               <CheckCircle2 className="w-8 h-8" />
             </div>
@@ -193,7 +200,7 @@ export function PracticeSession({
             </div>
           </Card>
           
-          <Card onClick={() => startPractice('medium')} className="p-5 sm:p-8 cursor-pointer hover:border-indigo-500 hover:bg-indigo-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl">
+          <Card ariaLabel="Bắt đầu luyện tập mức vừa" onClick={() => startPractice('medium')} className="p-5 sm:p-8 cursor-pointer hover:border-indigo-500 hover:bg-indigo-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl">
             <div className="w-16 h-16 shrink-0 rounded-[20px] bg-indigo-500/10 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-colors border border-indigo-500/20">
               <Brain className="w-8 h-8" />
             </div>
@@ -203,7 +210,7 @@ export function PracticeSession({
             </div>
           </Card>
           
-          <Card onClick={() => startPractice('hard')} className="p-5 sm:p-8 cursor-pointer hover:border-orange-500 hover:bg-orange-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl">
+          <Card ariaLabel="Bắt đầu luyện tập mức khó" onClick={() => startPractice('hard')} className="p-5 sm:p-8 cursor-pointer hover:border-orange-500 hover:bg-orange-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl">
             <div className="w-16 h-16 shrink-0 rounded-[20px] bg-orange-500/10 flex items-center justify-center text-orange-400 group-hover:bg-orange-500 group-hover:text-white transition-colors border border-orange-500/20">
               <AlertCircle className="w-8 h-8" />
             </div>
@@ -213,7 +220,7 @@ export function PracticeSession({
             </div>
           </Card>
 
-          <Card onClick={() => startPractice('mistakes')} className="p-5 sm:p-8 cursor-pointer hover:border-rose-500 hover:bg-rose-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl relative overflow-hidden">
+          <Card ariaLabel="Bắt đầu luyện lại các từ hay sai" onClick={() => startPractice('mistakes')} className="p-5 sm:p-8 cursor-pointer hover:border-rose-500 hover:bg-rose-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl relative overflow-hidden">
             <div className="w-16 h-16 shrink-0 rounded-[20px] bg-rose-500/10 flex items-center justify-center text-rose-500 group-hover:bg-rose-500 group-hover:text-white transition-colors border border-rose-500/20">
               <Flame className="w-8 h-8 animate-pulse" />
             </div>
@@ -266,15 +273,20 @@ export function PracticeSession({
 
       <div className="perspective-1000 w-full h-[min(420px,62vh)] sm:h-[450px]">
         <motion.div
-            className="w-full h-full relative cursor-pointer"
+            className="w-full h-full relative cursor-pointer rounded-[28px] sm:rounded-[32px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-4 focus-visible:ring-offset-zinc-950"
+           role="button"
+           tabIndex={0}
+           aria-pressed={isFlipped}
+           aria-label={isFlipped ? "Mặt sau thẻ từ. Nhấn để xem từ vựng" : "Mặt trước thẻ từ. Nhấn để xem nghĩa"}
            animate={{ rotateY: isFlipped ? 180 : 0 }}
            transition={{ type: 'spring', stiffness: 260, damping: 20 }}
            style={{ transformStyle: 'preserve-3d' }}
-           onClick={() => {
-             if (!isFlipped && localStorage.getItem('app_sound') !== 'false') {
-               speak(null, currentWord?.word);
+           onClick={flipCard}
+           onKeyDown={(event) => {
+             if (event.key === 'Enter' || event.key === ' ') {
+               event.preventDefault();
+               flipCard();
              }
-             setIsFlipped(!isFlipped);
            }}
         >
           {/* Front */}

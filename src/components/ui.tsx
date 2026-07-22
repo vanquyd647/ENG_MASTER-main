@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
-import { LogOut } from "lucide-react";
+import { useEffect, useId, useRef, type ReactNode } from "react";
+import { X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { cn } from "../lib/utils";
 
@@ -13,30 +13,83 @@ export const Modal = ({
   onClose: () => void;
   title: string;
   children: ReactNode;
-}) => (
-  <AnimatePresence>
-    {isOpen && (
-      <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6">
+}) => {
+  const titleId = useId();
+  const dialogRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const previousFocus = document.activeElement as HTMLElement | null;
+    const dialog = dialogRef.current;
+    const focusableSelector =
+      'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    const focusable = dialog?.querySelectorAll<HTMLElement>(focusableSelector);
+    (focusable?.[0] || dialog)?.focus();
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        onClose();
+        return;
+      }
+      if (event.key !== "Tab" || !dialog) return;
+
+      const controls = Array.from(dialog.querySelectorAll<HTMLElement>(focusableSelector));
+      if (controls.length === 0) {
+        event.preventDefault();
+        dialog.focus();
+        return;
+      }
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      previousFocus?.focus();
+    };
+  }, [isOpen, onClose]);
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
+          aria-hidden="true"
           className="absolute inset-0 bg-black/60 backdrop-blur-md"
         />
         <motion.div
+          ref={dialogRef}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={titleId}
+          tabIndex={-1}
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
           className="relative bg-zinc-900 border border-zinc-800 w-full max-w-xl max-h-[calc(100dvh-2rem)] overflow-y-auto rounded-2xl sm:rounded-[32px] shadow-2xl p-5 sm:p-8 space-y-6"
         >
           <div className="flex justify-between items-center text-white">
-            <h3 className="text-xl sm:text-2xl font-bold tracking-tight">{title}</h3>
+            <h3 id={titleId} className="text-xl sm:text-2xl font-bold tracking-tight">{title}</h3>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-zinc-800 rounded-full transition-all"
+              aria-label="Đóng hộp thoại"
+              className="p-2 hover:bg-zinc-800 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
             >
-              <LogOut className="w-5 h-5 rotate-180 text-zinc-500" />
+              <X className="w-5 h-5 text-zinc-400" />
             </button>
           </div>
           <div className="prose prose-invert max-w-none prose-p:leading-relaxed prose-li:my-1 prose-h3:text-lg prose-h3:font-bold prose-h3:mt-4 text-slate-300">
@@ -44,9 +97,10 @@ export const Modal = ({
           </div>
         </motion.div>
       </div>
-    )}
-  </AnimatePresence>
-);
+      )}
+    </AnimatePresence>
+  );
+};
 
 export const Button = ({
   children,
@@ -85,7 +139,7 @@ export const Button = ({
       disabled={disabled}
       onClick={onClick}
       className={cn(
-        "px-4 py-2 rounded-xl font-medium transition-all active:scale-95 disabled:opacity-50 disabled:active:scale-100 flex items-center justify-center gap-2 cursor-pointer",
+        "px-4 py-2 rounded-xl font-medium transition-all active:scale-95 disabled:opacity-50 disabled:active:scale-100 flex items-center justify-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
         variants[variant],
         className,
       )}
@@ -100,20 +154,27 @@ export const Card = ({
   className,
   id,
   onClick,
+  ariaLabel,
 }: {
   children: ReactNode;
   className?: string;
   id?: string;
   onClick?: () => void;
-}) => (
-  <div
-    id={id}
-    onClick={onClick}
-    className={cn(
-      "bg-zinc-900 border border-zinc-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-xl shadow-black/10",
-      className,
-    )}
-  >
-    {children}
-  </div>
-);
+  ariaLabel?: string;
+}) => {
+  const classes = cn(
+    "bg-zinc-900 border border-zinc-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-xl shadow-black/10",
+    onClick && "w-full text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
+    className,
+  );
+
+  if (onClick) {
+    return (
+      <button id={id} type="button" onClick={onClick} aria-label={ariaLabel} className={classes}>
+        {children}
+      </button>
+    );
+  }
+
+  return <div id={id} className={classes}>{children}</div>;
+};

@@ -182,7 +182,7 @@ export function StatsView({ progress, onBack }: StatsViewProps) {
               onClick={onBack} 
               className="p-2 -ml-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white transition-all shadow-md"
               title="Quay lại Dashboard"
-              aria-label="Back button"
+              aria-label="Quay lại Dashboard"
             >
               <ArrowLeft className="w-4 h-4" />
             </button>
@@ -196,46 +196,29 @@ export function StatsView({ progress, onBack }: StatsViewProps) {
           </p>
         </div>
 
-        {/* Filter Toggle */}
-        <div className="flex items-center gap-2 sm:gap-3 bg-zinc-900 border border-zinc-800 p-1.5 rounded-2xl w-full sm:w-fit">
-          <button
-            onClick={() => undefined}
-            disabled={Object.keys(progress).length === 0}
-            className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-              !useSampleData 
-                ? 'bg-indigo-600 text-white shadow-md' 
-                : 'text-zinc-400 hover:text-slate-300 disabled:opacity-50 disabled:cursor-not-allowed'
-            }`}
-          >
-            Dữ liệu của bạn
-          </button>
-          <button
-            onClick={() => undefined}
-            className={`hidden px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-              useSampleData 
-                ? 'bg-indigo-600 text-white shadow-md' 
-                : 'text-zinc-400 hover:text-slate-300'
-            }`}
-          >
-            Dữ liệu mẫu
-          </button>
-        </div>
       </div>
 
-      {Object.keys(progress).length === 0 && !useSampleData && (
-        <div className="bg-amber-500/10 border border-amber-500/20 text-amber-200 rounded-3xl p-6 flex items-start gap-4">
+      {startedWordsCount === 0 ? (
+        <div className="bg-amber-500/10 border border-amber-500/20 text-amber-100 rounded-3xl p-6 sm:p-8 flex items-start gap-4">
           <Info className="w-6 h-6 shrink-0 text-amber-400" />
-          <div className="space-y-1">
-            <p className="text-xs text-amber-300/80 leading-relaxed font-medium">
-              Ban chua co tien trinh hoc that. Hay quay lai Dashboard de hoc hoac lam quiz, thong ke se tu dong cap nhat tu du lieu cua ban.
-            </p>
-            <h4 className="font-bold text-sm">Chưa có dữ liệu học tập!</h4>
-            <p className="hidden text-xs text-amber-300/80 leading-relaxed font-medium">
-              Bạn chưa học từ vựng nào bằng phương pháp lặp khoảng cách (SRS). Hãy bấm "Dữ liệu mẫu" ở trên để xem bản thử trước hoặc bắt đầu ôn từ tại Dashboard để tạo tiến trình thật!
-            </p>
+          <div className="space-y-4">
+            <div className="space-y-1">
+              <h3 className="font-bold text-lg">Chưa có dữ liệu học tập</h3>
+              <p className="text-sm text-amber-200/80 leading-relaxed font-medium">
+                Hãy hoàn thành một lượt ôn tập hoặc bài kiểm tra. Thống kê sẽ xuất hiện khi ứng dụng có dữ liệu thật của bạn.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={onBack}
+              className="rounded-xl bg-amber-400 px-4 py-2.5 text-sm font-bold text-zinc-950 hover:bg-amber-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-200"
+            >
+              Bắt đầu học
+            </button>
           </div>
         </div>
-      )}
+      ) : (
+        <>
 
       {/* Grid of Metric Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -298,7 +281,7 @@ export function StatsView({ progress, onBack }: StatsViewProps) {
           </div>
           
           <div className="relative flex items-center justify-center h-48">
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={1}>
               <PieChart>
                 <Pie
                   data={statusData}
@@ -358,7 +341,7 @@ export function StatsView({ progress, onBack }: StatsViewProps) {
           </div>
 
           <div className="h-64 mt-2">
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={1}>
               <BarChart data={intervalData} margin={{ top: 10, right: 10, left: -25, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#27272a" vertical={false} />
                 <XAxis 
@@ -427,12 +410,12 @@ export function StatsView({ progress, onBack }: StatsViewProps) {
             <div className="w-3 h-3">
               <Sparkles className="w-4 h-4 text-indigo-400 animate-pulse" />
             </div>
-            <span className="text-[10px] font-black uppercase tracking-wider text-slate-300">Xu Hướng: Ghi Nhớ Tốt</span>
+            <span className="text-[10px] font-black uppercase tracking-wider text-slate-300">Xu hướng độ dễ ghi nhớ</span>
           </div>
         </div>
 
         <div className="h-72 mt-6">
-          <ResponsiveContainer width="100%" height="100%">
+          <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={1}>
             <AreaChart data={easinessData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
               <defs>
                 <linearGradient id="colorEasiness" x1="0" y1="0" x2="0" y2="1">
@@ -480,6 +463,8 @@ export function StatsView({ progress, onBack }: StatsViewProps) {
           </ResponsiveContainer>
         </div>
       </div>
+        </>
+      )}
     </motion.div>
   );
 }

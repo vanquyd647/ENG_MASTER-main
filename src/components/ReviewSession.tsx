@@ -129,6 +129,13 @@ export function ReviewSession({
     window.speechSynthesis.speak(utterance);
   };
 
+  const flipCard = () => {
+    if (!isFlipped && localStorage.getItem('app_sound') !== 'false') {
+      speak(null, currentWord?.word);
+    }
+    setIsFlipped((flipped) => !flipped);
+  };
+
   if (sessionWords.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[500px] text-center space-y-8 max-w-md mx-auto">
@@ -165,15 +172,20 @@ export function ReviewSession({
       {/* Flashcard */}
       <div className="flex-grow flex items-center justify-center py-4 sm:py-10 perspective-1000">
         <motion.div
-           onClick={() => {
-             if (!isFlipped && localStorage.getItem('app_sound') !== 'false') {
-               speak(null, currentWord?.word);
+           role="button"
+           tabIndex={0}
+           aria-pressed={isFlipped}
+           aria-label={isFlipped ? "Mặt sau thẻ từ. Nhấn để xem từ vựng" : "Mặt trước thẻ từ. Nhấn để xem nghĩa"}
+           onClick={flipCard}
+           onKeyDown={(event) => {
+             if (event.key === 'Enter' || event.key === ' ') {
+               event.preventDefault();
+               flipCard();
              }
-             setIsFlipped(!isFlipped);
            }}
            animate={{ rotateY: isFlipped ? 180 : 0 }}
            transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-           className="relative w-full max-w-[440px] h-[min(420px,62vh)] sm:h-[480px] preserve-3d cursor-pointer shadow-2xl shadow-black/50 rounded-[32px] sm:rounded-[48px]"
+           className="relative w-full max-w-[440px] h-[min(420px,62vh)] sm:h-[480px] preserve-3d cursor-pointer shadow-2xl shadow-black/50 rounded-[32px] sm:rounded-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-4 focus-visible:ring-offset-zinc-950"
         >
           {/* Front */}
           <div className={cn(

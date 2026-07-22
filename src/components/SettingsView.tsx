@@ -348,7 +348,12 @@ export function SettingsView({
                 </div>
               </div>
               <button 
-                onClick={() => toast('Phiên bản Lite hiện tại chỉ hỗ trợ giao diện tối.', { icon: '🌙' })}
+                type="button"
+                disabled
+                role="switch"
+                aria-checked="true"
+                aria-label="Giao diện tối, hiện không thể thay đổi"
+                title="Phiên bản hiện tại chỉ hỗ trợ giao diện tối"
                 className="w-12 h-6 bg-indigo-500/50 rounded-full relative cursor-not-allowed opacity-50"
               >
                 <div className="absolute top-1 left-1 w-4 h-4 bg-white/50 rounded-full translate-x-6"></div>
@@ -366,7 +371,11 @@ export function SettingsView({
                 </div>
               </div>
               <button 
+                type="button"
                 onClick={toggleSound}
+                role="switch"
+                aria-checked={sound}
+                aria-label="Bật hoặc tắt âm thanh phát âm"
                 className={cn(
                   "w-12 h-6 rounded-full relative transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-zinc-900",
                   sound ? "bg-indigo-500" : "bg-zinc-700"
@@ -390,7 +399,11 @@ export function SettingsView({
                 </div>
               </div>
               <button 
+                type="button"
                 onClick={toggleNotifications}
+                role="switch"
+                aria-checked={notifications}
+                aria-label="Bật hoặc tắt thông báo nhắc nhở"
                 className={cn(
                   "w-12 h-6 rounded-full relative transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-zinc-900",
                   notifications ? "bg-indigo-500" : "bg-zinc-700"
@@ -419,7 +432,7 @@ export function SettingsView({
             </Button>
             <label className="px-4 py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2 cursor-pointer border border-zinc-700 text-slate-300 hover:bg-zinc-800 hover:text-white">
               Import JSON
-              <input type="file" accept="application/json,.json" onChange={importBackup} className="hidden" />
+              <input type="file" accept="application/json,.json" onChange={importBackup} className="sr-only" />
             </label>
           </div>
         </Card>

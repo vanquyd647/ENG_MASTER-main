@@ -293,7 +293,7 @@ export function QuizSession({ onCancel, onFinish, onWordResult }: { onCancel: ()
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-          <Card onClick={() => startQuiz('standard')} className="p-5 sm:p-8 cursor-pointer hover:border-emerald-500 hover:bg-emerald-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl relative overflow-hidden">
+          <Card ariaLabel="Bắt đầu kiểm tra tiêu chuẩn" onClick={() => startQuiz('standard')} className="p-5 sm:p-8 cursor-pointer hover:border-emerald-500 hover:bg-emerald-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl relative overflow-hidden">
             <div className="w-16 h-16 shrink-0 rounded-[20px] bg-emerald-500/10 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-500 group-hover:text-white transition-colors border border-emerald-500/20">
               <CheckSquare className="w-8 h-8" />
             </div>
@@ -303,7 +303,7 @@ export function QuizSession({ onCancel, onFinish, onWordResult }: { onCancel: ()
             </div>
           </Card>
           
-          <Card onClick={() => startQuiz('ai')} className="p-5 sm:p-8 cursor-pointer hover:border-indigo-500 hover:bg-indigo-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl relative overflow-hidden">
+          <Card ariaLabel="Bắt đầu thử thách ngữ cảnh AI" onClick={() => startQuiz('ai')} className="p-5 sm:p-8 cursor-pointer hover:border-indigo-500 hover:bg-indigo-500/5 transition-all border-zinc-800 bg-[#0c0c0e] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 group hover:scale-[1.02] shadow-2xl relative overflow-hidden">
             <div className="w-16 h-16 shrink-0 rounded-[20px] bg-indigo-500/10 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-colors border border-indigo-500/20">
               <Sparkles className="w-8 h-8 animate-pulse" />
             </div>
@@ -512,7 +512,11 @@ export function QuizSession({ onCancel, onFinish, onWordResult }: { onCancel: ()
         ) : (
           <div className="pt-4 max-w-md mx-auto w-full">
             <form onSubmit={handleFillSubmit} className="space-y-4">
+              <label htmlFor="quiz-answer" className="sr-only">
+                Nhập đáp án tiếng Anh
+              </label>
               <input 
+                id="quiz-answer"
                 type="text"
                 autoFocus
                 placeholder={isAiScenario ? "Nhập từ tiếng Anh còn thiếu..." : "Nhập từ tiếng Anh tương ứng..."}
