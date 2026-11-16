@@ -8,7 +8,7 @@ import { StudyCard } from "../features/study/StudyCard";
 import { RatingControls } from "../features/study/RatingControls";
 import { useActiveTime } from "../features/study/useActiveTime";
 import type { StudyEvidence } from "../types";
-import { speakEnglish } from "../services/speech";
+import { speakEnglish, stopSpeech } from "../services/speech";
 import React, { useRef, useState } from "react";
 import { motion } from "motion/react";
 import { toast } from "react-hot-toast";
@@ -34,6 +34,7 @@ export function PracticeSession({
   onUpdateProgress: (wordId: string, nextSRS: ReturnType<typeof calculateNextReview> & { wrongCount: number }, operationId: string, evidence?: StudyEvidence) => Promise<unknown>;
 }) {
   useCatalog();
+  useEffect(() => () => stopSpeech(), []);
   const [mode, setMode] = useState<'easy' | 'medium' | 'hard' | 'mistakes' | null>(null);
   const [practiceWords, setPracticeWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -114,6 +115,7 @@ export function PracticeSession({
   const finishEarly=async()=>{if(saving.current || !window.confirm('Kết thúc và ghi nhận các từ đã chấm?'))return;saving.current=true;setIsSaving(true);try{const ids=practiceWords.filter(word=>progress[word.id]?.lastOperationId===sessionId.current+':'+word.id).map(word=>word.id);if(ids.length)await onFinish(mode || 'practice',ids,sessionId.current);else onCancel();await draft.finish('practice');}catch(error){toast.error((error as Error).message);}finally{saving.current=false;setIsSaving(false);}};
   const handleRate = async (quality: number) => {
     if (saving.current || !isFlipped) return;
+    stopSpeech();
     saving.current = true;
     setIsSaving(true);
     const word = practiceWords[currentIndex];
@@ -159,6 +161,7 @@ export function PracticeSession({
 
   const flipCard = () => {
     if (saving.current) return;
+    if (isFlipped) stopSpeech();
     if (!isFlipped && localStorage.getItem('app_sound') !== 'false') {
       speak(null, currentWord?.word);
     }

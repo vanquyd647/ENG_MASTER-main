@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-16 — Thống nhất giọng đọc từ vựng và hội thoại
+
+- 1.575 từ dùng audio Kokoro/Michael đóng gói chung cho thẻ học, Thư viện, luyện tự do và quiz. Tám hội thoại có giọng cố định theo nhân vật; nghe riêng câu giữ đúng giọng. Audio đề thi cũ giữ nguyên.
+- Từ cá nhân chưa có audio dùng giọng thiết bị được ghi rõ trong Cài đặt. Chờ giọng tải trễ, giữ lựa chọn ổn định, không tự đổi giọng khi lỗi. Dừng audio/yêu cầu chờ khi đổi tài khoản, chuyển màn hình hoặc ra nền; giữ tốc độ qua các lần đổi nguồn MP3.
+- 40 pack chứa 1.592 đoạn, thêm 29 MB vào gói offline; kiểm tra hash/cue bắt buộc khi build. Catalog và 72 file audio Listening cũ giữ nguyên. Xem docs/CONSISTENT_VOICE.md và output/verification/voice-release.json cho bằng chứng/phát hành.
+
 ## 2026-11-16 — Sửa bố cục mặt sau thẻ học
 
 - Tách nghĩa/ví dụ dài vào một vùng cuộn; nút giải thích AI và hàng đánh giá có vùng riêng không co, không chồng lên nhau. Điều chỉnh chiều cao thẻ theo màn hình và cỡ chữ nghĩa trên desktop.

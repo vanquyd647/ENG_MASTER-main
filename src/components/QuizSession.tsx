@@ -10,7 +10,7 @@ import { normalizeAnswer, shuffle } from "../domain/random";
 import { getWordById } from "../domain/catalog";
 import { useActiveTime } from "../features/study/useActiveTime";
 import type { StudyEvidence } from "../types";
-import { speakEnglish } from "../services/speech";
+import { speakEnglish, stopSpeech } from "../services/speech";
 import React, { useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { toast } from "react-hot-toast";
@@ -37,6 +37,7 @@ export function QuizSession({ progress, initialWordIds = [], initialMistake, res
   const [mistakeReviewError, setMistakeReviewError] = useState<string | null>(null);
   const [isReviewingMistakes, setIsReviewingMistakes] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => () => stopSpeech(), [currentIndex]);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [typedAnswer, setTypedAnswer] = useState('');
   const [, setScore] = useState(0);
@@ -77,7 +78,6 @@ export function QuizSession({ progress, initialWordIds = [], initialMistake, res
   const [isSaving, setIsSaving] = useState(false);
 
   const startQuiz = async (mode: QuizMode) => {
-    if (mode === "listening" && !("speechSynthesis" in window)) {toast.error("Thiết bị chưa hỗ trợ giọng đọc. Hãy chọn điền từ.");return;}
     if((initialWordIds.length || initialMistake) && "indexedDB" in globalThis && await getDraft("quiz") && !window.confirm("Bắt đầu bài ôn mới sẽ thay phiên quiz đang dở. Các câu đã chấm vẫn được giữ. Tiếp tục?"))return;
     aiRequest.current?.abort();const request=new AbortController();aiRequest.current=request;
     takeActiveSeconds();
@@ -271,7 +271,7 @@ export function QuizSession({ progress, initialWordIds = [], initialMistake, res
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Card ariaLabel="Bắt đầu điền từ trong câu" onClick={() => void startQuiz("cloze")}><h3 className="font-bold text-lg">Điền từ trong câu</h3><p className="text-sm text-zinc-400">Luyện ngữ cảnh và cụm từ từ ví dụ đã rà soát.</p></Card>
-          <Card ariaLabel="Bắt đầu nghe và gõ" onClick={() => void startQuiz("listening")}><h3 className="font-bold text-lg">Nghe và gõ</h3><p className="text-sm text-zinc-400">Nghe giọng tiếng Anh trên thiết bị, gõ lại từ/cụm từ.</p></Card>
+          <Card ariaLabel="Bắt đầu nghe và gõ" onClick={() => void startQuiz("listening")}><h3 className="font-bold text-lg">Nghe và gõ</h3><p className="text-sm text-zinc-400">Nghe phát âm và gõ lại từ/cụm từ. Bộ từ có sẵn dùng audio giọng cố định.</p></Card>
         </div>
         <div className="flex justify-center mt-10">
           <Button onClick={onCancel} variant="ghost" className="text-zinc-500 hover:text-white uppercase tracking-widest text-xs font-black">

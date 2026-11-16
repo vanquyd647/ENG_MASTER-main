@@ -1,0 +1,287 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "manifestSha256": "113298d8d4506d79a8624e6af6ee0b3b14a155228c8c6dd33fffb45bcf2eb23d",
+  "utterances": 1592,
+  "packs": [
+    {
+      "file": "pack-00.mp3",
+      "bytes": 719469,
+      "sha256": "88c4743ade94622d616cc4d3519f52b1dbaa3af668633b47c73318e497943ed0",
+      "duration": 89.85,
+      "entries": 40
+    },
+    {
+      "file": "pack-01.mp3",
+      "bytes": 708333,
+      "sha256": "ce590002e7379e8ba3645d23cf37c045a5931afc68c37cef4d691dda95553d93",
+      "duration": 88.45,
+      "entries": 40
+    },
+    {
+      "file": "pack-02.mp3",
+      "bytes": 720429,
+      "sha256": "add1307aedd19034d334ef73e834975e1084fe6b4f70927bda956af1e8374057",
+      "duration": 89.975,
+      "entries": 40
+    },
+    {
+      "file": "pack-03.mp3",
+      "bytes": 720045,
+      "sha256": "5232cac2e7a0de9957ed3f5a3869e68f8cc16c62fb93167b5d502ab969074b2e",
+      "duration": 89.925,
+      "entries": 40
+    },
+    {
+      "file": "pack-04.mp3",
+      "bytes": 699501,
+      "sha256": "c450ca9874cc6c4281bb33b89d8c88f6bf90528425a63b7e6c7ac27e0cee169a",
+      "duration": 87.35,
+      "entries": 40
+    },
+    {
+      "file": "pack-05.mp3",
+      "bytes": 715629,
+      "sha256": "b26ef2debce4f1eaacc2718aa931b8433f2d81225154aff93d84a019d93545cc",
+      "duration": 89.375,
+      "entries": 40
+    },
+    {
+      "file": "pack-06.mp3",
+      "bytes": 718317,
+      "sha256": "2458beea3c1812ab9931c11fdecbc55fbcee221264015d69601127cebcc70adf",
+      "duration": 89.7,
+      "entries": 40
+    },
+    {
+      "file": "pack-07.mp3",
+      "bytes": 707949,
+      "sha256": "0cdd492dda87aca8f67f2499dec2bd069118142b1fa4a32bf4efb65da0c3d44a",
+      "duration": 88.4,
+      "entries": 40
+    },
+    {
+      "file": "pack-08.mp3",
+      "bytes": 716589,
+      "sha256": "5851011717f57018ac7f4ef7686faabc49c8e0ff3e6d9c4f9d060a13caab3783",
+      "duration": 89.475,
+      "entries": 40
+    },
+    {
+      "file": "pack-09.mp3",
+      "bytes": 719469,
+      "sha256": "3e31a7fee3244a007e978aa47453c14eefa9830be86f9c6364d5b3ed71735d1a",
+      "duration": 89.85,
+      "entries": 40
+    },
+    {
+      "file": "pack-10.mp3",
+      "bytes": 722157,
+      "sha256": "50dbde23740ae886253b2d05b1f8677dbb77ea381180ca39b984333155a7e486",
+      "duration": 90.175,
+      "entries": 40
+    },
+    {
+      "file": "pack-11.mp3",
+      "bytes": 709293,
+      "sha256": "77a113722554a79f53e95befa5bcb9c21c1704e0231b96f1fbf30c27e2fdd787",
+      "duration": 88.575,
+      "entries": 40
+    },
+    {
+      "file": "pack-12.mp3",
+      "bytes": 690285,
+      "sha256": "4c5c7aa005f550ebc18a6c9b52ddb811b5fa49770e2808490f75b793bc7176d7",
+      "duration": 86.2,
+      "entries": 40
+    },
+    {
+      "file": "pack-13.mp3",
+      "bytes": 699501,
+      "sha256": "697a49da6acb0899e263c3cb2845bed0796569bc38d12f9e2c72c30b359ac7e9",
+      "duration": 87.35,
+      "entries": 40
+    },
+    {
+      "file": "pack-14.mp3",
+      "bytes": 701229,
+      "sha256": "4831acdd3ccee22d80dd3edc451a76aef67913c3134179ae62344d6cfde3e372",
+      "duration": 87.575,
+      "entries": 40
+    },
+    {
+      "file": "pack-15.mp3",
+      "bytes": 711021,
+      "sha256": "6ab43203bffc6cdb90ce77a557a9b278c03cc44247fa6d3c9023d1af32b2f209",
+      "duration": 88.8,
+      "entries": 40
+    },
+    {
+      "file": "pack-16.mp3",
+      "bytes": 701805,
+      "sha256": "421133b0f8118b10aa4f4cfe5e19d9fbf76cc0aa66586e6ff3cb9b6f49a0f9b3",
+      "duration": 87.625,
+      "entries": 40
+    },
+    {
+      "file": "pack-17.mp3",
+      "bytes": 708717,
+      "sha256": "e19a776c5def2fa06096a24297b317dbe0a39d0c248e68117fa365a448eaac94",
+      "duration": 88.5,
+      "entries": 40
+    },
+    {
+      "file": "pack-18.mp3",
+      "bytes": 719661,
+      "sha256": "84e641bc2f4d1c22087c8e55fa3c1715fb905af4c21a87cfd5a35cd6b99003e1",
+      "duration": 89.875,
+      "entries": 40
+    },
+    {
+      "file": "pack-19.mp3",
+      "bytes": 705453,
+      "sha256": "4a0b6b3a1e1d50bf877433ca2c6d06cef4f2180d993804de02becbc06c4a1935",
+      "duration": 88.1,
+      "entries": 40
+    },
+    {
+      "file": "pack-20.mp3",
+      "bytes": 704301,
+      "sha256": "9459ee9d482e80a2ca70ab5ce5145af1ec6a447fbd3d28ef74be406777cd1f61",
+      "duration": 87.95,
+      "entries": 40
+    },
+    {
+      "file": "pack-21.mp3",
+      "bytes": 719085,
+      "sha256": "72237d5143f0a8fbf916a5fac92873e491f41dd07c2223acadef81672316fdca",
+      "duration": 89.8,
+      "entries": 40
+    },
+    {
+      "file": "pack-22.mp3",
+      "bytes": 730029,
+      "sha256": "c6ed832c49c8d0347e43afe6c8e68cfb6bbf8614faec848978b7b443652e1a3c",
+      "duration": 91.175,
+      "entries": 40
+    },
+    {
+      "file": "pack-23.mp3",
+      "bytes": 724653,
+      "sha256": "3c5fd46221911f417261eb8fa82e446a70220ce7f721fc1dab6d3b43e7da12fc",
+      "duration": 90.5,
+      "entries": 40
+    },
+    {
+      "file": "pack-24.mp3",
+      "bytes": 698157,
+      "sha256": "a798e39022e03c9c20de57a8d7965b1b555f2bd71b000f98d5d6f183c9059639",
+      "duration": 87.175,
+      "entries": 40
+    },
+    {
+      "file": "pack-25.mp3",
+      "bytes": 726765,
+      "sha256": "ad05890605b72517de347e6d2f4f2ebb50b9ece60ce1fd37da3432e2374f3156",
+      "duration": 90.75,
+      "entries": 40
+    },
+    {
+      "file": "pack-26.mp3",
+      "bytes": 702189,
+      "sha256": "41cf96cfe72e84d1a6cf1fd3c64350c4eaad4e42bb3d0257c6eda77f1c06031e",
+      "duration": 87.675,
+      "entries": 40
+    },
+    {
+      "file": "pack-27.mp3",
+      "bytes": 719853,
+      "sha256": "760e2ef200b21050ddbb0f60fe14fce6da1685f6ef06f66e291182bacc991336",
+      "duration": 89.9,
+      "entries": 40
+    },
+    {
+      "file": "pack-28.mp3",
+      "bytes": 732717,
+      "sha256": "0d947cd3aa138796b365f8a09c8b0f7063f498e8375a5e4d649cb71b8f675bef",
+      "duration": 91.5,
+      "entries": 40
+    },
+    {
+      "file": "pack-29.mp3",
+      "bytes": 681453,
+      "sha256": "5f63a50748d39616c12c5c0f52fd0f28e9be8070b8d9459fb534f98ac9f3a61c",
+      "duration": 85.1,
+      "entries": 40
+    },
+    {
+      "file": "pack-30.mp3",
+      "bytes": 721773,
+      "sha256": "f4abf1da8224528bfb190d01b2593f7dae15f6c90f6023d136767b0c093bc32a",
+      "duration": 90.125,
+      "entries": 40
+    },
+    {
+      "file": "pack-31.mp3",
+      "bytes": 680493,
+      "sha256": "70124df41b66926800eac57bd3facb94b8fc4e57743fe22f51e1ea65562007c4",
+      "duration": 84.975,
+      "entries": 40
+    },
+    {
+      "file": "pack-32.mp3",
+      "bytes": 719661,
+      "sha256": "648607ed589cc883dff5bf3256faa22e7e5031bf7320b644bcc0cd3755b7af9f",
+      "duration": 89.875,
+      "entries": 40
+    },
+    {
+      "file": "pack-33.mp3",
+      "bytes": 693165,
+      "sha256": "ccb15fac264ba77bd9a8ed17db9c9eba14cf6a2b907d41ec59391e872f8d9c74",
+      "duration": 86.55,
+      "entries": 40
+    },
+    {
+      "file": "pack-34.mp3",
+      "bytes": 725997,
+      "sha256": "087b70c345f6e182052777539790637711c83d4d23a646256dc3f01c745a9d6a",
+      "duration": 90.65,
+      "entries": 40
+    },
+    {
+      "file": "pack-35.mp3",
+      "bytes": 724461,
+      "sha256": "31046ed5477b67ac594ede37fa78f497a1c6b3a7805449f61899572d2b92d077",
+      "duration": 90.475,
+      "entries": 40
+    },
+    {
+      "file": "pack-36.mp3",
+      "bytes": 700845,
+      "sha256": "8b992a3c54892f83cb446427809059c0a465944d0ebf29045b1383049853a1ef",
+      "duration": 87.525,
+      "entries": 40
+    },
+    {
+      "file": "pack-37.mp3",
+      "bytes": 691245,
+      "sha256": "b3597c281056aa3656d1f8d7ebfc7e8a239031019c983f665520be913a8e0ab2",
+      "duration": 86.325,
+      "entries": 40
+    },
+    {
+      "file": "pack-38.mp3",
+      "bytes": 710061,
+      "sha256": "c41fcb0058748ab56469fea7478755d5a38f30d55c7595d5a9c3889722cab23d",
+      "duration": 88.675,
+      "entries": 40
+    },
+    {
+      "file": "pack-39.mp3",
+      "bytes": 1314093,
+      "sha256": "01f3f7db3e9684a41a8a72fc041d1fff75935190e4322968ca45bd9161d9500d",
+      "duration": 164.175,
+      "entries": 32
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Original ENG_MASTER vocabulary/workplace content. Synthetic English audio generated locally with hexgrad/Kokoro-82M (Apache-2.0), voices am_michael, af_heart, bf_emma. https://huggingface.co/hexgrad/Kokoro-82M

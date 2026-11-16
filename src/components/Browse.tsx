@@ -1,5 +1,5 @@
 import { subscribeOwner } from "../repositories/ownerStorage";
-import { speakEnglish } from "../services/speech";
+import { speakEnglish, stopSpeech } from "../services/speech";
 import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { toast } from "react-hot-toast";
@@ -32,6 +32,7 @@ export function Browse({
   onDelayWord: (wordId: string) => Promise<void>;
 }) {
   useCatalog();
+  useEffect(() => () => stopSpeech(), []);
   const [vocabularyVersion, setVocabularyVersion] = useState(0);
   const topics = ['Tất cả', ...Array.from(new Set(getVocabulary().map(w => w.topic)))];
   const initialFilter = new URLSearchParams(location.hash.split('?')[1] || '');

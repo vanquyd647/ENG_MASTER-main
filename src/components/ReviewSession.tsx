@@ -5,7 +5,7 @@ import { StudyCard } from "../features/study/StudyCard";
 import { RatingControls } from "../features/study/RatingControls";
 import { useActiveTime } from "../features/study/useActiveTime";
 import type { StudyEvidence } from "../types";
-import { speakEnglish } from "../services/speech";
+import { speakEnglish, stopSpeech } from "../services/speech";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { toast } from "react-hot-toast";
@@ -41,6 +41,7 @@ export function ReviewSession({
   onLearnMore: (word: string, meaning: string) => void;
 }) {
   useCatalog();
+  useEffect(() => () => stopSpeech(), []);
   const [sessionWords, setSessionWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -72,6 +73,7 @@ export function ReviewSession({
 
   const handleRate = async (quality: number) => {
     if (saving.current || !isFlipped) return;
+    stopSpeech();
     saving.current = true;
     setIsSaving(true);
     const word = sessionWords[currentIndex];
@@ -141,6 +143,7 @@ export function ReviewSession({
 
   const flipCard = () => {
     if (saving.current) return;
+    if (isFlipped) stopSpeech();
     if (!isFlipped && localStorage.getItem('app_sound') !== 'false') {
       speak(null, currentWord?.word);
     }
