@@ -1,0 +1,16 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "checkedAt": "2026-10-13T07:58:00.441Z",
+  "explanation": {
+    "status": 200,
+    "characters": 1313
+  },
+  "quiz": {
+    "status": 200,
+    "count": 2,
+    "ids": [
+      "w001",
+      "w002"
+    ]
+  }
+}

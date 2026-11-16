@@ -1,0 +1,7 @@
+{
+  "checkedAt": "2026-10-13T12:29:37.363Z",
+  "transport": "direct REST, no SDK server timeout header",
+  "status": 200,
+  "latencyMs": 29172,
+  "text": "OK."
+}

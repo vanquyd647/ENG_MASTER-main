@@ -1,0 +1,12 @@
+{
+  "recordedAt": "2026-10-16T16:18:31.793Z",
+  "failedGate": "Initial offline-pack readiness wait (30 seconds)",
+  "observed": {
+    "serviceWorker": "installing",
+    "cacheEntriesInitially": 0,
+    "cacheEntriesAfterCompletion": 122,
+    "offlineReadyAfterCompletion": true
+  },
+  "disposition": "Retain failed run. Increase QA network wait to 120 seconds while keeping the same all-assets-ready/offline/playback assertions; rerun every suite in a fresh profile.",
+  "runtimeChanged": false
+}

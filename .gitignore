@@ -2,7 +2,13 @@ node_modules/
 build/
 dist/
 coverage/
+.playwright-cli/
+__pycache__/
 .DS_Store
 *.log
 .env*
 !.env.example
+.secrets/
+*firebase-adminsdk*.json
+*service-account*.json
+.vercel

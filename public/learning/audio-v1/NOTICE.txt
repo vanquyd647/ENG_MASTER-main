@@ -1,0 +1,1 @@
+ENG_MASTER original learning scripts. Synthetic English voices generated locally with hexgrad/Kokoro-82M (Apache-2.0). Voices am_michael, af_heart and bf_emma. Not official ETS recordings. https://huggingface.co/hexgrad/Kokoro-82M

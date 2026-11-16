@@ -1,0 +1,57 @@
+{
+  "verifiedOn": "2026-10-13",
+  "node": "v26.5.0",
+  "phase": 1,
+  "completedTasks": [
+    "U01",
+    "U02",
+    "U03",
+    "U04",
+    "U05",
+    "U06"
+  ],
+  "tests": {
+    "passed": 55,
+    "files": 14,
+    "emulatorTests": 3,
+    "skippedWhenEmulatorEnabled": 0
+  },
+  "gates": {
+    "typecheck": "passed",
+    "vocabulary": "1575 entries, no warnings",
+    "build": "passed"
+  },
+  "firestore": {
+    "kind": "local emulator",
+    "projectId": "demo-eng-master",
+    "version": "1.22.0",
+    "actualSdkAndRules": true,
+    "tests": [
+      "optional history fields omitted",
+      "stable session idempotency",
+      "other owner denied",
+      "rollback after 400 imported writes"
+    ]
+  },
+  "browser": {
+    "session": "eng-master-phase1",
+    "guestOnly": true,
+    "checks": [
+      "five-card review persists progress/history/streak",
+      "invalid CSV preserves progress",
+      "preview and cancellation preserve progress",
+      "merge retains 5 existing + 1 custom progress",
+      "exported v3 restored on clean localStorage",
+      "custom definition/favorites/settings/history survive reload",
+      "390x844 preview fits viewport"
+    ]
+  },
+  "vocabularyHashesUnchanged": true,
+  "vocabularyHashes": {
+    "src/data/vocabulary.ts": "a3d6a89214fa682552664dfedb6644ef984de9aed5c215bb8b072c7127f80598",
+    "src/data/toeic-pdf.ts": "f3f6db312ce9fdcc1bc52e887a30ab76df51a3bbd8adcc303e46f9efa314bb2b",
+    "new/vocabulary-reviewed.json": "32a0060b1c67c8b85db3f0c2e6af02c1e71a794c860167764102897950e6afac"
+  },
+  "deployed": false,
+  "productionServicesTested": false
+}

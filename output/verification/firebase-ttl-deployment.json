@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-13T11:51:57.274Z",
+  "project": "engai-2c7fe",
+  "field": "projects/engai-2c7fe/databases/(default)/collectionGroups/_systemRateLimits/fields/expiresAt",
+  "status": 403,
+  "done": false,
+  "error": {
+    "code": "PERMISSION_DENIED",
+    "message": "The caller does not have permission"
+  },
+  "nativeTtlEnabled": false,
+  "userConsoleError": "Project billing disabled",
+  "billingChanged": false,
+  "fallback": "src/server/quotaMaintenance.ts: hourly lease, up to 100 expired quota docs per sweep after authenticated AI activity"
+}

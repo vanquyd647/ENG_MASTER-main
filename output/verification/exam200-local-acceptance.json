@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-16T07:19:23.193Z",
+  "deployment": false,
+  "productionUnchanged": "learning.7",
+  "questions": 277,
+  "examQuestions": 200,
+  "contentReview": {
+    "path": "output/verification/bank-review-adjudicated.json",
+    "reviewed": 277,
+    "hashValid": true,
+    "bankSha256": "01129308ac5f7137f1ce192d42224bcc4af33ded7d5098c9ba2f3a21524da5d4",
+    "audioAccepted": false
+  },
+  "verification": {
+    "unit": 204,
+    "emulator": 15,
+    "nativeApiImports": 4,
+    "typecheck": true,
+    "lintAndVocabulary": true,
+    "build": true,
+    "browser": [
+      {
+        "name": "exam",
+        "path": "output/verification/exam200-browser.json",
+        "checks": 8,
+        "checkedAt": "2026-10-16T07:18:03.095Z",
+        "sha256": "0ca6c361ebbc1709dab74afe6600de072c460053d71bf050e91ff8e1eb74bdd6"
+      },
+      {
+        "name": "content",
+        "path": "output/verification/browser-learning-content.json",
+        "checks": 9,
+        "checkedAt": "2026-10-16T07:15:46.786Z",
+        "sha256": "7e40f0f6221e59b50d7c01efb2dd184e0279a58517fcd607afc9ea074c1a224a"
+      },
+      {
+        "name": "listening",
+        "path": "output/verification/listening-v1-browser.json",
+        "checks": 9,
+        "checkedAt": "2026-10-16T07:11:07.680Z",
+        "sha256": "54917f1d2b1885024fa924edd6da34e98c8df0855887878115933e588a6193c5"
+      }
+    ]
+  },
+  "artifact": {
+    "offlineRevision": "4b5426ace375bb63",
+    "offlineAssets": 50,
+    "initialGzip": 399402,
+    "serverSecretsAbsent": true,
+    "catalogUnchanged": true
+  },
+  "overall95Ready": false,
+  "overallPercent": null,
+  "remaining": [
+    {
+      "id": "exam-audio-acceptance",
+      "status": "pending",
+      "detail": "Có đủ số câu và engine 200 câu; giọng thiết bị cho phép phát lại, chưa có track nghe chuẩn hóa hoặc nghiệm thu audio toàn đề."
+    },
+    {
+      "id": "ai-200-output-benchmark",
+      "status": "pending",
+      "detail": "Bộ 45 mục chưa đạt mẫu số ít nhất 200 đầu ra; rà soát ngân hàng câu hỏi không thay thế đánh giá phản hồi AI."
+    },
+    {
+      "id": "exam-content-calibration",
+      "status": "pending",
+      "detail": "Đã rà soát đáp án/văn bản/ảnh bởi Codex và checker mù; chưa chuẩn hóa tiểu dạng, độ dài/độ khó và nghiệm thu audio toàn đề. Codex chịu trách nhiệm, không chờ tìm giáo viên."
+    },
+    {
+      "id": "six-area-release-acceptance",
+      "status": "pending",
+      "detail": "Chưa chốt đủ bằng chứng của sáu nhóm cho cùng bản ứng viên và production; không suy ngưỡng từ tổng số tests."
+    }
+  ]
+}

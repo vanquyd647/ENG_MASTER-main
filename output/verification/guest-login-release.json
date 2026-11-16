@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-14T12:37:06.368Z",
+  "release": "2026.10.14-upgrade.2",
+  "purpose": "Guest sign-in entry and safe popup cancellation",
+  "node": "22.23.3",
+  "typecheck": "passed",
+  "lint": "passed",
+  "vocabulary": {
+    "entries": 1575,
+    "unchanged": true
+  },
+  "unit": {
+    "passed": 74,
+    "emulatorNotRerun": 7
+  },
+  "apiNativeRuntime": 4,
+  "build": "passed",
+  "initialReferencedGzip": 378774,
+  "browserGuest": "passed local and public production: responsive CTA, Google popup opens, cancellation preserves profile/progress/draft",
+  "browserMerge": "passed local and public production with real Firestore and temporary custom-token identities; account progress preserved, guest-only word added, guest copy retained; QA cleaned",
+  "deployment": {
+    "published": true,
+    "domain": "https://eng-master-main2.vercel.app",
+    "id": "dpl_91LU7ikA2e8N5aSr25MpNFY6DK5h",
+    "rollback": "dpl_9B7x4Z4AQhRdzcZ6ca7nA8YBZGTv"
+  },
+  "stagedDeployment": "eng-master-main2-845frq3za-quys-projects-d07a5005.vercel.app",
+  "stagedDeploymentId": "dpl_91LU7ikA2e8N5aSr25MpNFY6DK5h",
+  "completedAt": "2026-10-14T12:44:21.320Z",
+  "googleConsent": "not authenticated with a real Google account"
+}

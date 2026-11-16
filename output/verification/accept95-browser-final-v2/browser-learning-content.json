@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-10-16T12:21:14.589Z",
+  "origin": "http://localhost:3121",
+  "checks": [
+    {
+      "name": "guest and complete offline pack",
+      "result": {
+        "guest": true,
+        "offlineReady": true
+      }
+    },
+    {
+      "name": "grammar lesson, actual applications and independent storage",
+      "result": {
+        "lessonApplications": 3,
+        "correct": 1,
+        "blanks": 2,
+        "legacyHistoryUntouched": true
+      }
+    },
+    {
+      "name": "practice-only backup v4 accepted, previewed and merged once",
+      "result": {
+        "practiceOnlyAccepted": true,
+        "mergeDeduplicated": true
+      }
+    },
+    {
+      "name": "Part 6 complete passage group, deadline and reload",
+      "result": {
+        "passageQuestions": 4,
+        "correct": 4,
+        "deadlineSeconds": 360,
+        "reload": true
+      }
+    },
+    {
+      "name": "Part 7 multi-document comprehension and notebook exact retry",
+      "result": {
+        "multipleDocuments": true,
+        "exactQuestionResolved": true
+      }
+    },
+    {
+      "name": "topic recommendations open a matching reading practice",
+      "result": {
+        "topicRecommendation": true,
+        "kind": "part7"
+      }
+    },
+    {
+      "name": "new passage reload offline and mobile layout",
+      "result": {
+        "offlineReading": true,
+        "widths": [
+          360,
+          390,
+          768,
+          1280
+        ],
+        "noOverflow": true
+      }
+    },
+    {
+      "name": "clean browser guest",
+      "result": {
+        "guest": true,
+        "offlineReady": true
+      }
+    },
+    {
+      "name": "restore v4 into a clean browser without fabricating vocabulary progress",
+      "result": {
+        "restoredResults": 4,
+        "mistakesRestored": true
+      }
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p2-v1-7",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Option A directly answers the preference question regarding seat types.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-8",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Option C directly responds to whether the budget review is finished by indicating it is not yet done.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-9",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Option B answers the 'How much' price question.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-10",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Option A provides a valid reason ('thirty guests') for reserving the larger conference room.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-11",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Option C answers a yes/no question about the supervisor's presence.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-12",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Option B identifies which folder ('The one labeled April') contains the invoices.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-13",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Option A ('That works for me') responds affirmatively to rescheduling a meeting.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-14",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Option C ('Ask the receptionist') directly answers where to get a visitor badge.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-15",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Option B accepts the suggestion to order lunch.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-16",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Option A ('About forty minutes') answers the duration question 'How long'.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

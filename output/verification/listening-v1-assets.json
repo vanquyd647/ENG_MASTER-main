@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-16T05:57:21.102Z",
+  "images": [
+    {
+      "id": "forklift",
+      "source": "https://commons.wikimedia.org/wiki/File:Heftruck_in_actie.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Heftruck_in_actie.JPG/1280px-Heftruck_in_actie.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "license": "CC0-1.0",
+      "localPath": "public/learning/listening-v1/forklift.jpg",
+      "bytes": 110570,
+      "sha256": "4ced15788140bea8859381cf872cdc93807807034bbb5cb05c3fb60accf210a7"
+    },
+    {
+      "id": "desk",
+      "source": "https://commons.wikimedia.org/wiki/File:Desk_with_objects_for_editathon.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Desk_with_objects_for_editathon.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "license": "CC0-1.0",
+      "localPath": "public/learning/listening-v1/desk.jpg",
+      "bytes": 97249,
+      "sha256": "8d63ed425d8b7b2af149d4da0b2e0c0b35185510e823d5d33d5ddeaa5d6fa88d"
+    },
+    {
+      "id": "home-office",
+      "source": "https://commons.wikimedia.org/wiki/File:Home-office-336377.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Home-office-336377.jpg/1280px-Home-office-336377.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "license": "CC0-1.0",
+      "localPath": "public/learning/listening-v1/home-office.jpg",
+      "bytes": 65670,
+      "sha256": "dea5aa06db92eede6dbc854d4b644a5041d4c0e7750a6a3ecc8dee1d03975a5e"
+    },
+    {
+      "id": "conference",
+      "source": "https://commons.wikimedia.org/wiki/File:Neat_conference_room_(Unsplash).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Neat_conference_room_%28Unsplash%29.jpg/1280px-Neat_conference_room_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "license": "CC0-1.0",
+      "localPath": "public/learning/listening-v1/conference.jpg",
+      "bytes": 108115,
+      "sha256": "47b8c08197eb901742497dd8a6c4cebcdc5f5607db83d70e8cb5a6f1eec3f239"
+    },
+    {
+      "id": "bicycle",
+      "source": "https://commons.wikimedia.org/wiki/File:White_bicycle.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/White_bicycle.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "license": "CC0-1.0",
+      "localPath": "public/learning/listening-v1/bicycle.jpg",
+      "bytes": 233437,
+      "sha256": "29644422561df6a9fdb1648185ec53a6feff6b96223f7a5fef933bc99c89bf12"
+    },
+    {
+      "id": "cyclist",
+      "source": "https://commons.wikimedia.org/wiki/File:Lonely_man_on_a_bicycle.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Lonely_man_on_a_bicycle.jpg/960px-Lonely_man_on_a_bicycle.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "license": "CC0-1.0",
+      "localPath": "public/learning/listening-v1/cyclist.jpg",
+      "bytes": 264120,
+      "sha256": "70f6ca489f6ee7b1521944d31010e7eb90353cbc17f7b6026b4e2b2d62ea628e"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-13T13:01:08.158Z",
+  "stage": "production",
+  "deployment": "https://eng-master-main2.vercel.app",
+  "project": "engai-2c7fe",
+  "authMethod": "temporary custom-token account",
+  "checks": [
+    {
+      "endpoint": "explain",
+      "status": 502,
+      "characters": 0,
+      "code": "ai_failed"
+    }
+  ],
+  "cleanup": {
+    "auth": true,
+    "quota": true
+  },
+  "retries": [
+    {
+      "endpoint": "explain",
+      "status": 502,
+      "code": "ai_failed",
+      "attempt": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "explanation": "Chào em, thầy là giáo viên TOEIC của em đây. Hôm nay chúng ta sẽ học từ **agreement** nhé.\n\n### 1. Ý nghĩa\n* **agreement** (n): sự thỏa thuận, hợp đồng.\n* *Cách dùng:* Dùng để chỉ việc hai hay nhiều người/công ty đạt được tiếng nói chung hoặc ký kết một giấy tờ pháp lý.\n\n---\n\n### 2. Ba Collocations (Cụm từ hay đi cùng)\n1. **reach an agreement**: đạt được thỏa thuận\n   * *Ví dụ:* Both companies finally **reached an agreement** after a long meeting.\n2. **sign an agreement**: ký hợp đồng / thỏa thuận\n   * *Ví dụ:* The manager will **sign an agreement** tomorrow.\n3. **written agreement**: thỏa thuận bằng văn bản\n   * *Ví dụ:* We need a **written agreement** before starting the project.\n\n---\n\n### 3. Ví dụ trong công việc\n* **English:** \"Please review the **agreement** before our meeting this afternoon.\"\n* **Tiếng Việt:** \"Vui lòng xem lại bản **hợp đồng** trước cuộc họp chiều nay của chúng ta.\"\n\n---\n\n### 4. Mẹo tránh nhầm lẫn (TOEIC Tip)\n* **Nhầm lẫn phổ biến:** Thí sinh hay nhầm **agreement** (danh từ: sự thỏa thuận) với động từ gốc của nó là **agree** (đồng ý).\n* **Mẹo nhớ:** Đuôi **-ment** thường biến động từ thành **danh từ** (tên gọi của sự việc). Khi thấy từ này trong bài đọc TOEIC (Part 7) hoặc nghe (Part 3, 4), nó thường ám chỉ một hợp đồng kinh doanh hoặc một quyết định chung của công ty.",
+  "questions": [
+    {
+      "wordId": "w001",
+      "type": "mcq",
+      "questionText": "The two companies finally signed the _____ after weeks of intensive negotiations.",
+      "options": [
+        "agreement",
+        "invoice",
+        "schedule",
+        "department"
+      ],
+      "answer": "agreement",
+      "hint": "Chọn từ có nghĩa là sự thống nhất giữa các bên.",
+      "translation": "Hai công ty cuối cùng đã ký kết bản thỏa thuận sau nhiều tuần đàm phán căng thẳng.",
+      "explanation": "Agreement phù hợp nhất với ngữ cảnh ký kết hợp đồng hoặc thỏa thuận kinh doanh."
+    },
+    {
+      "wordId": "w002",
+      "type": "fill",
+      "questionText": "Please make sure to review the _____ before transferring the payment to the vendor.",
+      "options": [],
+      "answer": "invoice",
+      "hint": "Từ này chỉ danh sách liệt kê các mặt hàng và số tiền cần thanh toán.",
+      "translation": "Hãy nhớ kiểm tra hóa đơn trước khi chuyển khoản thanh toán cho nhà cung cấp.",
+      "explanation": "Invoice là từ chính xác dùng để chỉ hóa đơn yêu cầu thanh toán tiền hàng hoặc dịch vụ."
+    }
+  ]
+}

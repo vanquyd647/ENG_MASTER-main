@@ -1,0 +1,83 @@
+{
+  "startedAt": "2026-10-16T12:08:51.858Z",
+  "origin": "http://localhost:3121",
+  "planSha256": "437fad1b0dafb3d0792cd378db7eb7abc99398732241849b80b2882162d2c05d",
+  "offlineRevision": "a9296a6242904c85",
+  "serverBundleSha256": "df2e276c132c4fed4fd67eaa40a3b31e69c3a02575edb4b5fcdfd4776bfbdaac",
+  "checks": [
+    {
+      "script": "scripts/browser-full-exam.mjs",
+      "scriptSha256": "65d195e65fa5e1b4f6d8e22beeba84ad767fea89670ca3443255b1c81e7f0e05",
+      "file": "exam200-browser.json",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 8,
+      "artifactSha256": "2e3ee3d5cb7e6a40a476f10e1c646cd9cd747010272e0d2bdd012d160465bf80"
+    },
+    {
+      "script": "scripts/browser-listening-pilot.mjs",
+      "scriptSha256": "162c4b8002fd54aa8d03148dd5f0ef1ce6f930ca2f291e56b009157b32485061",
+      "file": "listening-v1-browser.json",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 9,
+      "artifactSha256": "85c65a103d4bf230c8cd5d3d7c3163e4018a83403e35f08e1320436396ddb59a"
+    },
+    {
+      "script": "scripts/browser-learning-content.mjs",
+      "scriptSha256": "64d5cca02f2e6a2695623c6dddb69138b150244124b0109af1654cba815a7b72",
+      "file": "browser-learning-content.json",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 9,
+      "artifactSha256": "7b916147af5dce8a191ea59d40a7ed9dde5d9535a39845cc450768fcc600abc1"
+    },
+    {
+      "script": "scripts/browser-ai-layout.mjs",
+      "scriptSha256": "66888e5447955e047732bd5a1ebcfb65b5db7128fcc23535977c7a182b80e381",
+      "file": "browser-ai-layout.json",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 13,
+      "artifactSha256": "9806a04739b3d986a6e9a3e1ff52df6df323b650c05506e9886f8cf0d36f9dc4"
+    },
+    {
+      "script": "scripts/browser-cloud-acceptance.mjs",
+      "scriptSha256": "4f477549e8cde8f5a1c2d95a37ece9d805694536329b8fa13f80a2059b4680e7",
+      "file": "browser-cloud-acceptance.json",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 4,
+      "artifactSha256": "716788a744dbfedce959e8dce3e3172979628316e5cd69088d814a868a181fe7"
+    },
+    {
+      "script": "scripts/browser-guest-merge.mjs",
+      "scriptSha256": "b0545efcec332ab30337eee7af0b87af4b204c4aeb982090a5b8af722b617cae",
+      "file": "browser-guest-merge.json",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 2,
+      "artifactSha256": "64f88993dd0b55b42cd40b66252e44cc876d40d43f0b5463dc30d274b883be50"
+    },
+    {
+      "script": "scripts/browser-dataset-acceptance.mjs",
+      "scriptSha256": "802f485ded1e63a47e0c3880e229fdc15cd93bbcb377ac26607388ed60de595d",
+      "file": "browser-dataset-acceptance.json",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 5,
+      "artifactSha256": "ab4240424fe98d8869d949a1ae564f2319ccdeb3f928e88222447bb665de8596"
+    },
+    {
+      "script": "scripts/browser-pwa-update.mjs",
+      "scriptSha256": "0de83cceea60790a3024ae47f1379bce58a32bee4e6e168bc5f0c268a2433f68",
+      "file": "browser-pwa-update.json",
+      "exitCode": 0,
+      "passed": true,
+      "checks": 4,
+      "artifactSha256": "608941d8da40758d64a2e617c7ea9446f45ae780ce7192c55606ffb04c3db013"
+    }
+  ],
+  "passed": true,
+  "finishedAt": "2026-10-16T12:12:51.867Z"
+}

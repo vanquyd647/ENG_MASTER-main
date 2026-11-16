@@ -1,0 +1,334 @@
+{
+  "version": 3,
+  "catalogVersion": "toeic-1575-v1",
+  "exportedAt": "2026-10-14T16:34:26.933Z",
+  "profile": {
+    "displayName": "Khách (Guest)",
+    "studyTimeMinutes": 0,
+    "studyTimeSeconds": 0,
+    "streak": 1,
+    "dailyGoal": 15,
+    "lastStudyDate": "2026-10-14",
+    "history": [
+      {
+        "id": "fca21e25-7330-478f-8d85-b783208c2b63",
+        "date": "2026-10-14T16:22:07.269Z",
+        "type": "quiz",
+        "details": "Hoàn thành bài kiểm tra (0%)",
+        "score": "0/1",
+        "wordIds": [
+          "pdf-toeic-0907"
+        ],
+        "studiedCount": 1,
+        "correctCount": 0,
+        "totalQuestions": 1,
+        "durationSeconds": 0
+      }
+    ]
+  },
+  "progress": {
+    "pdf-toeic-0907": {
+      "easiness": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "nextReviewDate": "2026-10-14T16:22:06.985Z",
+      "lastReviewDate": "2026-10-14T16:22:06.985Z",
+      "wrongCount": 1,
+      "lastOperationId": "fca21e25-7330-478f-8d85-b783208c2b63:pdf-toeic-0907",
+      "revision": 1
+    }
+  },
+  "practiceRecords": [
+    {
+      "id": "a7025789-a01e-4113-8a70-80fab6d18cc2",
+      "bankVersion": 1,
+      "kind": "part5",
+      "startedAt": "2026-10-14T16:22:16.317Z",
+      "finishedAt": "2026-10-14T16:34:16.419Z",
+      "durationSeconds": 720,
+      "answers": [
+        {
+          "questionId": "p5-v1-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-5",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-6",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-7",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-8",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-9",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-10",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-11",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-12",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-13",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-14",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-15",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-16",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-17",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-18",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-19",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-20",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-21",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-22",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-23",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-24",
+          "selectedIndex": null
+        }
+      ]
+    },
+    {
+      "id": "9672dc98-e025-410e-a882-a06f79f707b6",
+      "bankVersion": 1,
+      "kind": "part5",
+      "startedAt": "2026-10-14T16:22:13.250Z",
+      "finishedAt": "2026-10-14T16:22:13.333Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p5-v1-1",
+          "selectedIndex": 0
+        },
+        {
+          "questionId": "p5-v1-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-5",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-6",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-7",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-8",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-9",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-10",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-11",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-12",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-13",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-14",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-15",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-16",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-17",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-18",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-19",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-20",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-21",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-22",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-23",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-24",
+          "selectedIndex": null
+        }
+      ]
+    }
+  ],
+  "roadmap": {
+    "version": 1,
+    "examDate": "2026-11-14",
+    "targetScore": 650,
+    "minutesPerDay": 30,
+    "targetWords": 1575
+  },
+  "customWords": [
+    {
+      "id": "custom-a8df5924-c794-42c7-a9c8-3c6eeb08bfee",
+      "word": "qa_document_term",
+      "meaning": "nghĩa từ tài liệu",
+      "topic": "Từ tài liệu cá nhân",
+      "phonetic": "",
+      "pos": "phrase",
+      "example": "",
+      "exampleTranslation": ""
+    }
+  ],
+  "favorites": [],
+  "preferences": {
+    "sound": false,
+    "notifications": false,
+    "studySessionSize": 15,
+    "reminderHour": 20
+  },
+  "decks": [
+    {
+      "id": "deck-c0e3ddab-3d5a-468f-9ec3-0c16c2310b79",
+      "name": "QA document deck",
+      "wordIds": [
+        "custom-a8df5924-c794-42c7-a9c8-3c6eeb08bfee"
+      ]
+    }
+  ],
+  "dailyActivity": {
+    "2026-10-14": {
+      "dateKey": "2026-10-14",
+      "timeZone": "Asia/Saigon",
+      "updatedAt": "2026-10-14T16:22:07.274Z",
+      "wordIds": [
+        "pdf-toeic-0907"
+      ]
+    }
+  },
+  "events": [
+    {
+      "id": "fca21e25-7330-478f-8d85-b783208c2b63:pdf-toeic-0907",
+      "wordId": "pdf-toeic-0907",
+      "sessionId": "fca21e25-7330-478f-8d85-b783208c2b63",
+      "occurredAt": "2026-10-14T16:22:06.985Z",
+      "timeZone": "Asia/Saigon",
+      "mode": "cloze",
+      "durationSeconds": 0,
+      "before": null,
+      "after": {
+        "easiness": 2.5,
+        "interval": 0,
+        "repetitions": 0,
+        "nextReviewDate": "2026-10-14T16:22:06.985Z",
+        "lastReviewDate": "2026-10-14T16:22:06.985Z",
+        "wrongCount": 1,
+        "lastOperationId": "fca21e25-7330-478f-8d85-b783208c2b63:pdf-toeic-0907",
+        "revision": 1
+      },
+      "correct": false,
+      "attempt": {
+        "questionId": "pdf-toeic-0907:cloze:ee47323cd0d11372",
+        "questionType": "fill",
+        "questionText": "The _____ answered our questions.",
+        "userAnswer": "qa_wrong_answer",
+        "correctAnswer": "supporter",
+        "options": [],
+        "explanation": "",
+        "word": "supporter",
+        "meaning": "người trợ giúp"
+      }
+    }
+  ]
+}

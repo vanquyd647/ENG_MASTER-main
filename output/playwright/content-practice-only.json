@@ -1,0 +1,49 @@
+{
+  "version": 4,
+  "extendedPracticeRecords": [
+    {
+      "id": "09af086a-7e19-4049-ab90-8c2adee54d12",
+      "bankVersion": 2,
+      "kind": "grammar",
+      "startedAt": "2026-10-16T16:20:22.658Z",
+      "finishedAt": "2026-10-16T16:20:22.699Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "grammar-v2-passive-3",
+          "selectedIndex": 2
+        },
+        {
+          "questionId": "grammar-v2-passive-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "grammar-v2-passive-1",
+          "selectedIndex": null
+        }
+      ]
+    }
+  ],
+  "catalogVersion": "toeic-1575-v1",
+  "exportedAt": "2026-10-16T16:20:25.024Z",
+  "profile": {
+    "displayName": "Khách (Guest)",
+    "studyTimeMinutes": 0,
+    "streak": 0,
+    "dailyGoal": 15
+  },
+  "progress": {},
+  "practiceRecords": [],
+  "roadmap": null,
+  "customWords": [],
+  "favorites": [],
+  "preferences": {
+    "sound": false,
+    "notifications": false,
+    "studySessionSize": 15,
+    "reminderHour": 20
+  },
+  "decks": [],
+  "dailyActivity": {},
+  "events": []
+}

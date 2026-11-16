@@ -1,0 +1,14 @@
+{
+ "version":1,
+ "release":"2026.10.16-learning.8",
+ "threshold":95,
+ "aggregation":"Minimum per area; no averaging; every critical gate must pass",
+ "content":{"answerItems":311,"answersRequiredPercent":100,"examItems":200,"audioClips":71,"audioMinimumPercent":95,"criteria":["hash-bound answer/text/photo review","source/answer uniqueness","7-Part blueprint, 29/25 Part 7, 2 double/3 triple groups, third speaker, graphic","reading length profile with uncalibrated difficulty disclosed","all listening assets mapped and hashed","segment ASR checked on actual MP3, all flags retained"]},
+ "ai":{"fixture":"scripts/fixtures/learning-quality-200-v2.json","outputs":200,"minimumSemanticPercent":95,"minimumGeneratedSubsetPercent":95,"maximumUnblockedCriticalErrors":0,"failurePolicy":"Retain original service failures and rejected outputs. Checker unavailability requires Codex reading. Guard-only changes may replay the same recorded content through current handlers; this is not a new live model run and cannot convert a failed generation to success."},
+ "data-sync":{"suites":{"cloud-release-client-sdk.json":7,"browser-cloud-acceptance.json":4,"browser-guest-merge.json":2,"browser-dataset-acceptance.json":5},"allCritical":true},
+ "offline-resume":{"suites":{"exam200-browser.json":8,"listening-v1-browser.json":9,"browser-pwa-update.json":4},"allCritical":true,"assetRequirement":"Every MP3 and core asset in offline pack, actual offline media-range requests and playback"},
+ "ui-accessibility":{"suites":{"exam200-browser.json":8,"listening-v1-browser.json":9,"browser-learning-content.json":9,"browser-ai-layout.json":13},"allCritical":true,"widths":[360,390,768,1280],"criteria":["no horizontal overflow","core controls operable","keyboard Enter and dialog focus restoration","saved answers and separate AI loading/error/retry UI"],"notClaimed":"Full WCAG certification or every browser/platform"},
+ "security-release":{"criteria":["15 real Emulator tests","4 native Node API imports reject anonymous requests","public secrets scan, immutable catalog hashes and gzip budget","dependency audit zero high/critical vulnerabilities","12 hosted API/auth/quota regressions","production smoke on promoted candidate","known prior deployment retained as rollback target"],"allCritical":true},
+ "excludedByUser":["AI avatar","native Firestore TTL","billing upgrade"],
+ "notClaimed":["95% future model accuracy on all 1575 words","learner score gains","official TOEIC certification or empirical score equivalence","human listening certification"]
+}

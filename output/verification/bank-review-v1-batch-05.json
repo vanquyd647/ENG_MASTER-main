@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "context-v1-shipping-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Standard question on future delivery timing.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-hiring-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Standard recruitment question.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-hiring-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Standard interview scheduling question.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-hiring-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Standard applicant inquiry.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-maintenance-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Standard office equipment malfunction question.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-maintenance-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Standard technician dispatch schedule.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-maintenance-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Standard alternative equipment instruction.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-payment-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Standard billing discrepancy question.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-payment-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Standard document correction timeline.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-payment-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Standard payment terms question.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

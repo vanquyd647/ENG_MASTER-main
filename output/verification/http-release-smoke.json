@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-13T11:18:27.753Z",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "/server.cjs",
+      "status": 404,
+      "type": null
+    },
+    {
+      "path": "/server.cjs.map",
+      "status": 404,
+      "type": null
+    },
+    {
+      "path": "/assets/missing.js",
+      "status": 404,
+      "type": null
+    },
+    {
+      "path": "/api/gemini/not-found",
+      "status": 404,
+      "type": "application/json; charset=utf-8"
+    },
+    {
+      "path": "/api/gemini/explain",
+      "status": 401,
+      "type": "application/json"
+    }
+  ]
+}

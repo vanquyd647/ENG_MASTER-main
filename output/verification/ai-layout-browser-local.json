@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-15T05:58:11.400Z",
+  "origin": "http://localhost:3110",
+  "fixture": "deterministic Markdown HTTP responses; real temporary Firebase identity; no Gemini requests",
+  "checks": [
+    {
+      "name": "temporary authenticated browser and intercepted AI fixtures",
+      "result": {
+        "auth": true,
+        "geminiCalls": 0
+      }
+    },
+    {
+      "name": "actual quiz result and separate AI failure/retry feedback",
+      "result": {
+        "tones": [
+          "correct",
+          "mistake",
+          "explanation",
+          "example",
+          "practice"
+        ],
+        "errorSeparate": true,
+        "retry": true
+      }
+    },
+    {
+      "name": "review typography, distinct colors and responsive layout",
+      "result": {
+        "widths": [
+          360,
+          390,
+          768,
+          1280
+        ],
+        "noOverflow": true,
+        "colors": {
+          "correct": "rgb(110, 231, 183)",
+          "mistake": "rgb(253, 164, 175)",
+          "explanation": "rgb(165, 180, 252)",
+          "example": "rgb(125, 211, 252)",
+          "practice": "rgb(252, 211, 77)"
+        }
+      }
+    },
+    {
+      "name": "shared rendering in inline library explanation",
+      "result": {
+        "sharedRenderer": true,
+        "headingsAndLists": true
+      }
+    },
+    {
+      "name": "shared rendering in study modal, mobile scroll and focus",
+      "result": {
+        "modal": true,
+        "noOverflow": true
+      }
+    }
+  ],
+  "passed": true,
+  "cleanup": true
+}

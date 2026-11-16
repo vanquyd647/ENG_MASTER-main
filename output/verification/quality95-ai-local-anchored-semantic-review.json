@@ -1,0 +1,245 @@
+{
+  "checkedAt": "2026-10-15T13:32:17.236Z",
+  "reviewer": "Codex content inspection; not independent teacher validation",
+  "scope": "Known AI failures and daily vocabulary learning. Not full TOEIC coverage or a learning-effectiveness estimate.",
+  "outputSha256": "3bee4fcae47947c46d8623c2103cb8d93648176407ef054b6fea8ff189254f27",
+  "rubric": [
+    "Bám nghĩa/ngữ cảnh đã chọn",
+    "Quy tắc ngữ pháp đúng chiều/cấu trúc",
+    "Tiếng Việt rõ, có dấu, dịch giữ nghĩa",
+    "Không kết luận quá phạm vi",
+    "Đáp án đúng từ mục tiêu, không chấm distractor AI chưa duyệt",
+    "Nhận xét người học chỉ dựa dữ liệu câu trả lời"
+  ],
+  "items": [
+    {
+      "id": "explain-opening",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "explain-meet",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "explain-qualified",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "explain-invoice",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "explain-dependence",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "simplify-opening",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "simplify-meet",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "simplify-qualified",
+      "passed": false,
+      "note": "Bản dịch ví dụ tiếng Việt hoàn toàn không dấu."
+    },
+    {
+      "id": "simplify-invoice",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "simplify-dependence",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "examples-opening",
+      "passed": false,
+      "note": "Opening opportunities là cách kết hợp từ không tự nhiên; nghĩa tuyển dụng cần job openings."
+    },
+    {
+      "id": "examples-meet",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "examples-qualified",
+      "passed": false,
+      "note": "Ba bản dịch ví dụ tiếng Việt không dấu."
+    },
+    {
+      "id": "examples-invoice",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "examples-dependence",
+      "passed": false,
+      "note": "Các bản dịch không dấu; hạ thực sự phụ thuộc dịch sai/không tự nhiên."
+    },
+    {
+      "id": "practice-opening",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "practice-meet",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "practice-qualified",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "practice-invoice",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "practice-dependence",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "compare-opening-vacancy",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "compare-applicant-application",
+      "passed": false,
+      "note": "Ghi chú tuyển dụng chưa neo vào nghĩa ứng dụng/sự áp dụng trong catalog đang chọn."
+    },
+    {
+      "id": "compare-dependence-independence",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "compare-invoice-receipt",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "compare-calculation-correspondence",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "quiz-10-targets:pdf-toeic-0043",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "quiz-10-targets:tra-19",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "quiz-10-targets:rec-01",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "quiz-10-targets:rec-03",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "quiz-10-targets:rec-04",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "quiz-10-targets:rec-02",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "quiz-10-targets:pdf-toeic-0280",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "quiz-10-targets:sho-22",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "quiz-10-targets:acc-11",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "quiz-10-targets:ttp-30",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "review-batch-1:invoice",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "review-batch-1:receipt",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "review-batch-1:qualified",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "review-batch-1:meet",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "review-batch-1:dependence",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "review-batch-2:calculation",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "review-batch-2:applicant",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "review-batch-2:opening",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "review-batch-2:agreement",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    },
+    {
+      "id": "review-batch-2:correspondence",
+      "passed": true,
+      "note": "Nội dung hiển thị trong mẫu đã đọc dùng được trong phạm vi nghĩa/câu hỏi; không chứng minh độ bao phủ toàn hệ thống."
+    }
+  ],
+  "passed": 40,
+  "total": 45,
+  "percent": 88.88888888888889,
+  "thresholdMet": false
+}

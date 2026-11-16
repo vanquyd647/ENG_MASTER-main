@@ -1,0 +1,16 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import zlib from 'node:zlib';import {parse} from 'dotenv';
+const origin='https://eng-master-main2.vercel.app';const expected=process.argv[2]||'2026.10.14-upgrade.4';
+const report={checkedAt:new Date().toISOString(),origin,release:expected,checks:[]};
+const get=async(path)=>{const response=await fetch(origin+path);if(response.status!==200)throw Error(path+' HTTP '+response.status);return response;};
+const html=await(await get('/')).text();const worker=await(await get('/sw.js')).text();const pack=await(await get('/offline-pack.json')).json();await get('/manifest.webmanifest');
+if(!worker.includes(pack.revision))throw Error('Worker revision mismatch');if(!pack.files.some(path=>path.endsWith('.mjs')&&path.includes('pdf.worker')))throw Error('PDF worker is missing from offline pack');
+const environment=parse(fs.readFileSync('.env.local','utf8'));const secrets=[environment.GEMINI_API_KEY,...(environment.FIREBASE_PRIVATE_KEY||'').replaceAll('\\n','\n').split('\n').filter(line=>line.length>60)].filter(Boolean);
+const assets=[];for(let i=0;i<pack.files.length;i+=6){const batch=await Promise.all(pack.files.slice(i,i+6).map(async path=>{const buffer=Buffer.from(await(await get(path)).arrayBuffer());if(/\.(js|mjs|css|html)$/.test(path)&&secrets.some(secret=>buffer.includes(secret)))throw Error('Server secret in public build');return{path,buffer};}));assets.push(...batch);}
+const audio=JSON.parse(fs.readFileSync('src/data/listeningAudioManifest.json','utf8'));
+for(const clip of [...Object.values(audio.clips),audio.exam]){const remote=assets.find(a=>a.path===clip.src);if(!remote||remote.buffer.length!==clip.bytes||crypto.createHash('sha256').update(remote.buffer).digest('hex')!==clip.sha256)throw Error('Remote audio mismatch '+clip.src);}
+report.audioAssetsVerified=Object.keys(audio.clips).length+1;
+const refs=[...new Set([...html.matchAll(/(?:src|href)="(\/assets\/[^\"]+)"/g)].map(match=>match[1]))];const initial=assets.filter(asset=>refs.includes(asset.path));const gzip=initial.reduce((sum,asset)=>sum+zlib.gzipSync(asset.buffer).length,0);if(gzip>=420000)throw Error('Remote initial gzip over budget');
+if(!assets.some(asset=>asset.path.endsWith('.js')&&asset.buffer.includes(expected)))throw Error('Release label not found in deployed build');
+const missing=await fetch(origin+'/assets/does-not-exist-release-check.js');if(missing.status!==404)throw Error('Missing JS must return 404');const unauthorized=await fetch(origin+'/api/gemini/explain',{method:'POST',headers:{'content-type':'application/json'},body:'{}'});if(unauthorized.status!==401)throw Error('API missing token must return 401');
+report.checks=['HTML/worker/manifest/offline-pack 200','all offline assets 200 including PDF worker','all public assets scanned; server secrets absent','release label matches','missing JS 404','unauthenticated AI 401'];report.initialReferencedGzip=gzip;report.offlineAssets=pack.files.length;report.offlineRevision=pack.revision;report.initialAssets=initial.map(({path,buffer})=>({path,sha256:crypto.createHash('sha256').update(buffer).digest('hex')}));report.passed=true;
+fs.mkdirSync('output/verification',{recursive:true});fs.writeFileSync('output/verification/public-build-release.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

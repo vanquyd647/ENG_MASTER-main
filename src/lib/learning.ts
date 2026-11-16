@@ -1,4 +1,4 @@
-import { VOCABULARY } from "../data/vocabulary";
+import { getVocabulary } from "../domain/catalog";
 import type {
   DailyActivity,
   LearningStatus,
@@ -32,22 +32,22 @@ export const getLearningStatusLabel = (
 };
 
 export const getStartedWordCount = (progress: UserProgress) =>
-  VOCABULARY.reduce(
+  getVocabulary().reduce(
     (count, word) => count + (progress[word.id] ? 1 : 0),
     0,
   );
 
 export const getRemainingNewWordCount = (progress: UserProgress) =>
-  Math.max(VOCABULARY.length - getStartedWordCount(progress), 0);
+  Math.max(getVocabulary().length - getStartedWordCount(progress), 0);
 
 export const getNewWordQueue = (progress: UserProgress) =>
-  VOCABULARY.filter((word) => !progress[word.id]);
+  getVocabulary().filter((word) => !progress[word.id]);
 
 export const getDueReviewQueue = (progress: UserProgress, now = new Date()) =>
-  VOCABULARY.filter((word) => {
+  getVocabulary().filter((word) => {
     const item = progress[word.id];
     return Boolean(item) && new Date(item.nextReviewDate) <= now;
-  });
+  }).sort((a, b) => Date.parse(progress[a.id].nextReviewDate) - Date.parse(progress[b.id].nextReviewDate) || (progress[b.id].wrongCount || 0) - (progress[a.id].wrongCount || 0));
 
 export const getReviewQueue = (progress: UserProgress, now = new Date()) =>
   [...getDueReviewQueue(progress, now), ...getNewWordQueue(progress)];

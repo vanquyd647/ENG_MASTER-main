@@ -14,6 +14,7 @@ export class AiApiError extends Error {
 export const callAiApi = async <T>(
   endpoint: "explain" | "quiz" | "mistake-review" | "generate-avatar",
   body: unknown,
+  options: { signal?: AbortSignal; timeoutMs?: number } = {},
 ): Promise<T> => {
   const user = auth.currentUser;
   if (!user) {
@@ -29,6 +30,7 @@ export const callAiApi = async <T>(
     try {
       const token = await user.getIdToken(attempt > 0);
       const response = await fetch(`/api/gemini/${endpoint}`, {
+        signal: options.signal ? AbortSignal.any([options.signal, AbortSignal.timeout(options.timeoutMs || 55_000)]) : AbortSignal.timeout(options.timeoutMs || 55_000),
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -45,14 +47,15 @@ export const callAiApi = async <T>(
         response.status,
         payload?.code,
       );
-      if (attempt === 0 && [502, 503, 504].includes(response.status)) {
+      if (attempt === 0 && response.status === 401) {
         lastError = error;
         await new Promise((resolve) => window.setTimeout(resolve, 300));
         continue;
       }
       throw error;
     } catch (error) {
-      if (error instanceof AiApiError || attempt > 0) throw error;
+      if (error instanceof AiApiError || attempt > 0 || options.signal?.aborted) throw error;
+      if (error instanceof Error && ["TimeoutError", "AbortError"].includes(error.name)) throw new AiApiError("AI phản hồi quá chậm hoặc đã hủy.",504,"ai_timeout");
       lastError = error;
       await new Promise((resolve) => window.setTimeout(resolve, 300));
     }

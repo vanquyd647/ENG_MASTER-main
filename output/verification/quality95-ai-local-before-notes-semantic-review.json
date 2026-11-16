@@ -1,0 +1,245 @@
+{
+  "checkedAt": "2026-10-15T13:20:02.112Z",
+  "reviewer": "Codex content inspection; not independent teacher validation",
+  "scope": "Known AI failures and daily vocabulary learning. Not full TOEIC coverage or a learning-effectiveness estimate.",
+  "outputSha256": "d5ccfe2734058da384281c2011adfbd463263d33f6eb3c76597ef6ac12656f63",
+  "rubric": [
+    "Bám nghĩa/ngữ cảnh đã chọn",
+    "Quy tắc ngữ pháp đúng chiều/cấu trúc",
+    "Tiếng Việt rõ, có dấu, dịch giữ nghĩa",
+    "Không kết luận quá phạm vi",
+    "Đáp án đúng từ mục tiêu, không chấm distractor AI chưa duyệt",
+    "Nhận xét người học chỉ dựa dữ liệu câu trả lời"
+  ],
+  "items": [
+    {
+      "id": "explain-opening",
+      "passed": false,
+      "note": "Collocation grand opening chuyển khỏi nghĩa tuyển dụng đang học."
+    },
+    {
+      "id": "explain-meet",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "explain-qualified",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "explain-invoice",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "explain-dependence",
+      "passed": false,
+      "note": "Usage nói dependence đứng sau on/upon; trong dependence on, giới từ đứng sau danh từ."
+    },
+    {
+      "id": "simplify-opening",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "simplify-meet",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "simplify-qualified",
+      "passed": false,
+      "note": "Nhiều trường tiếng Việt không dấu, chưa đạt tiêu chí đọc rõ."
+    },
+    {
+      "id": "simplify-invoice",
+      "passed": false,
+      "note": "Hạn chế sử dụng trong giao tiếp thông thường không có căn cứ."
+    },
+    {
+      "id": "simplify-dependence",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "examples-opening",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "examples-meet",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "examples-qualified",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "examples-invoice",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "examples-dependence",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "practice-opening",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "practice-meet",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "practice-qualified",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "practice-invoice",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "practice-dependence",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "compare-opening-vacancy",
+      "passed": false,
+      "note": "Từ chuyên chỉ giới hạn vacancy quá mức; vacancy còn dùng cho phòng/chỗ trống."
+    },
+    {
+      "id": "compare-applicant-application",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "compare-dependence-independence",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "compare-invoice-receipt",
+      "passed": false,
+      "note": "Các trường tiếng Việt không dấu."
+    },
+    {
+      "id": "compare-calculation-correspondence",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "quiz-10-targets:pdf-toeic-0043",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "quiz-10-targets:tra-19",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "quiz-10-targets:rec-01",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "quiz-10-targets:rec-03",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "quiz-10-targets:rec-04",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "quiz-10-targets:rec-02",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "quiz-10-targets:pdf-toeic-0280",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "quiz-10-targets:sho-22",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "quiz-10-targets:acc-11",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "quiz-10-targets:ttp-30",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "review-batch-1:invoice",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "review-batch-1:receipt",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "review-batch-1:qualified",
+      "passed": false,
+      "note": "Dịch highly qualified thành rất đủ trình độ không tự nhiên."
+    },
+    {
+      "id": "review-batch-1:meet",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "review-batch-1:dependence",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "review-batch-2:calculation",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "review-batch-2:applicant",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "review-batch-2:opening",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "review-batch-2:agreement",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    },
+    {
+      "id": "review-batch-2:correspondence",
+      "passed": true,
+      "note": "Trong mẫu đã đọc: nghĩa, cấu trúc, câu ví dụ/bản dịch và đối chiếu đáp án dùng được trong phạm vi đề bài."
+    }
+  ],
+  "passed": 38,
+  "total": 45,
+  "percent": 84.44444444444444,
+  "thresholdMet": false
+}

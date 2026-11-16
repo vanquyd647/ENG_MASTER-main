@@ -1,56 +1,28 @@
-import React, { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
-import { toast } from "react-hot-toast";
-import ReactMarkdown from "react-markdown";
-import {
-  AlertCircle, Bell, BookOpen, Brain, Calendar, CalendarDays, CheckCircle2,
-  CheckSquare, ChevronRight, ClipboardList, ExternalLink, FileDown, Flame,
-  GraduationCap, History, Moon, RotateCcw, Settings, Sparkles, Sun, Target,
-  Trash2, TrendingUp, Trophy, User as UserIcon, Volume2,
-} from "lucide-react";
-import { VOCABULARY, type Word } from "../data/vocabulary";
-import { callAiApi } from "../lib/apiClient";
-import { createBackup, normalizeBackup } from "../lib/backup";
-import {
-  getDueReviewQueue, getLearningStatus, getLearningStatusLabel, getRemainingNewWordCount,
-  getLocalDateKey, getSessionCorrectPercentage, getSessionStudiedCount,
-  getStartedWordCount, REVIEW_SESSION_SIZE,
-} from "../lib/learning";
-import { calculateNextReview, initialSRS } from "../lib/srs";
+import { buildDailyPlan } from "../domain/planner";
+import type { StudyEvent } from "../types";
+
+import { motion } from "motion/react";
+
+import { Brain, Calendar, CheckCircle2, CheckSquare, ChevronRight, ClipboardList, FileDown, Flame, History, RotateCcw, Sparkles, Target, TrendingUp } from "lucide-react";
+import { getVocabulary } from "../domain/catalog";
+import { useCatalog } from "../domain/useCatalog";
+
+import { getDueReviewQueue, getRemainingNewWordCount, getLocalDateKey, getSessionCorrectPercentage, getSessionStudiedCount, getStartedWordCount } from "../lib/learning";
+
 import { cn } from "../lib/utils";
 import { getStudySessionSize } from "../lib/productPreferences";
-import type {
-  BackupV2, DailyActivity, ProgressItem, UserProfile, UserProgress,
-} from "../types";
+import type { DailyActivity, UserProfile, UserProgress } from "../types";
 import { Button, Card } from "./ui";
 
 type SyncAction = "tasks" | "calendar" | "drive";
-
-let studyReminderTimer: number | null = null;
-const scheduleStudyReminder = () => {
-  if (!("Notification" in window) || Notification.permission !== "granted") return;
-  if (studyReminderTimer) window.clearTimeout(studyReminderTimer);
-  const nextReminder = new Date();
-  nextReminder.setHours(20, 0, 0, 0);
-  if (nextReminder.getTime() <= Date.now()) nextReminder.setDate(nextReminder.getDate() + 1);
-  studyReminderTimer = window.setTimeout(() => {
-    new Notification("ENG_MASTER", {
-      body: "Đến giờ ôn lại kế hoạch từ vựng hôm nay.",
-      icon: "/favicon.ico",
-    });
-    scheduleStudyReminder();
-  }, nextReminder.getTime() - Date.now());
-};
-const clearStudyReminder = () => {
-  if (studyReminderTimer) window.clearTimeout(studyReminderTimer);
-  studyReminderTimer = null;
-};
 
 export function Dashboard({ 
   profile, 
   progress, 
   todayActivity,
   onStartNewWords,
+  onStartPlan,
+  dailyActivities = {},
   onStartReview,
   onStartQuiz,
   onStartPractice,
@@ -60,9 +32,16 @@ export function Dashboard({
   syncingAction,
   isGuest,
   syncStatus,
-  onViewStats
+  onViewStats,
+  onViewToday,
+  onViewMistakes,
+  onViewRoadmap,
+  onViewWorkplace,
+  events = [],
 }: { 
-  profile: UserProfile | null; 
+  profile: UserProfile | null;
+  onStartPlan: (ids: string[]) => void;
+  dailyActivities?: Record<string, DailyActivity>;
   progress: UserProgress;
   todayActivity: DailyActivity | null;
   onStartNewWords: () => void;
@@ -76,26 +55,19 @@ export function Dashboard({
   isGuest: boolean;
   syncStatus: string;
   onViewStats: () => void;
+  onViewToday?: () => void;
+  onViewMistakes?: () => void;
+  onViewRoadmap?: () => void;
+  onViewWorkplace?: () => void;
+  events?: StudyEvent[];
 }) {
+  useCatalog();
   const sessionSize = getStudySessionSize();
   const reviewCount = Math.min(getDueReviewQueue(progress).length, sessionSize);
   const dailyGoal = profile?.dailyGoal || 15;
-  const todayStudiedCount =
-    todayActivity?.dateKey === getLocalDateKey()
-      ? todayActivity.wordIds.length
-      : 0;
-  const dailyPlan = VOCABULARY
-    .map((word) => ({ word, progress: progress[word.id] }))
-    .sort((a, b) => {
-      const aWrong = a.progress?.wrongCount || 0;
-      const bWrong = b.progress?.wrongCount || 0;
-      if (aWrong !== bWrong) return bWrong - aWrong;
-      const aDue = a.progress ? new Date(a.progress.nextReviewDate).getTime() : 0;
-      const bDue = b.progress ? new Date(b.progress.nextReviewDate).getTime() : 0;
-      return aDue - bDue;
-    })
-    .slice(0, Math.min(20, dailyGoal));
-  const weakWords = VOCABULARY
+  const todayStudiedCount = new Set([...(todayActivity?.dateKey === getLocalDateKey() ? todayActivity.wordIds : []), ...events.filter((event) => getLocalDateKey(new Date(event.occurredAt), event.timeZone) === getLocalDateKey()).map((event) => event.wordId)]).size;
+  const dailyPlan = buildDailyPlan(progress, dailyGoal).map((word) => ({ word, progress: progress[word.id] }));
+  const weakWords = getVocabulary()
     .filter((word) => (progress[word.id]?.wrongCount || 0) > 0)
     .sort((a, b) => (progress[b.id]?.wrongCount || 0) - (progress[a.id]?.wrongCount || 0))
     .slice(0, 5);
@@ -111,6 +83,9 @@ export function Dashboard({
       exit={{ opacity: 0, y: -20 }}
       className="space-y-8"
     >
+      {onViewToday&&<Card className="space-y-3 border-indigo-500/30"><h2 className="text-xl font-bold">Học hôm nay</h2><p className="text-sm text-zinc-400">Ôn đến hạn → chữa lỗi → học mới → bài áp dụng. Tiếp tục phiên ngắn đang dở trên thiết bị.</p><Button onClick={onViewToday}>Mở Học hôm nay</Button></Card>}
+      {onViewWorkplace&&<Button onClick={onViewWorkplace}>Bài học · Ngữ pháp · Part 1–7</Button>}
+      {(onViewMistakes||onViewRoadmap)&&<div className="grid gap-3 sm:grid-cols-2">{onViewMistakes&&<Button variant="outline" onClick={onViewMistakes}>Sổ lỗi sai · ôn câu đã làm</Button>}{onViewRoadmap&&<Button variant="outline" onClick={onViewRoadmap}>Lộ trình theo ngày thi</Button>}</div>}
       <div className="grid grid-cols-1 gap-6">
         <Card className="bg-[#0c0c0e] text-white border-zinc-800 shadow-2xl flex flex-col justify-between min-h-[auto] sm:min-h-[280px] relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-indigo-600/10 blur-[100px] -mr-32 -mt-32" />
@@ -212,10 +187,9 @@ export function Dashboard({
                 // A better approach: 
                 const date = new Date();
                 date.setDate(date.getDate() - (6 - i));
-                const dateStr = date.toLocaleDateString();
                 
                 // Let's accurately see if there's history for this day.
-                const hasStudied = profile?.history?.some(h => new Date(h.date).toLocaleDateString() === dateStr);
+                const hasStudied = Boolean(dailyActivities[getLocalDateKey(date)]?.wordIds.length) || events.some((event) => getLocalDateKey(new Date(event.occurredAt), event.timeZone) === getLocalDateKey(date));
                 
                 return (
                   <div key={i} className="flex flex-col items-center gap-1.5">
@@ -240,7 +214,7 @@ export function Dashboard({
               <CheckCircle2 className="text-emerald-500 w-6 h-6 sm:w-7 sm:h-7" />
             </div>
             <div className="text-4xl sm:text-5xl font-black text-white">{startedWordCount}</div>
-            <div className="text-zinc-500 font-black uppercase text-[10px] tracking-[0.2em] mt-2">Từ đã học</div>
+            <div className="text-zinc-500 font-black uppercase text-[10px] tracking-[0.2em] mt-2">Từ đã bắt đầu</div>
           </Card>
         </div>
       </div>
@@ -254,6 +228,7 @@ export function Dashboard({
                 Kế hoạch hôm nay
               </h3>
               <p className="text-sm text-zinc-500 mt-1">Ưu tiên từ đến hạn, từ sai nhiều và từ mới.</p>
+              <Button onClick={()=>onStartPlan(dailyPlan.map(item=>item.word.id))} disabled={!dailyPlan.length} variant="outline" className="mt-3">Học theo kế hoạch</Button>
             </div>
             <div className="text-right">
               <div className="text-2xl font-black text-indigo-400">{Math.min(todayStudiedCount, dailyGoal)} / {dailyGoal}</div>
@@ -275,7 +250,7 @@ export function Dashboard({
                       ? "bg-amber-500/10 text-amber-400 border-amber-500/20"
                       : "bg-indigo-500/10 text-indigo-400 border-indigo-500/20"
                 )}>
-                  {item?.wrongCount ? "Từ yếu" : item ? "Đến hạn" : "Từ mới"}
+                  {item && Date.parse(item.nextReviewDate)<=Date.now() ? "Đến hạn" : item?.wrongCount ? "Từ yếu · ôn thêm" : item ? "Ôn trước hạn" : "Từ mới"}
                 </span>
               </div>
             ))}

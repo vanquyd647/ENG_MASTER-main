@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "p5-v1-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "\"by\" is used with deadlines to mean not later than a certain time.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "An adverb (\"efficiently\") is required to modify the verb \"works\".",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Modal verb \"must\" is followed by the base form of the verb (\"register\").",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-4",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "\"since\" is used with the present perfect tense to indicate a starting point in time.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-5",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The noun \"discount\" follows the indefinite article \"a\".",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-6",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "\"because\" introduces a clause explaining the reason for the postponement.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-7",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The verb \"encourage\" in the passive structure takes an infinitive with \"to\".",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-8",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The possessive determiner \"our\" is followed by a plural noun (\"requirements\").",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-9",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "First conditional sentence uses present simple in the if-clause and future simple (\"will inspect\") in the main clause.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-10",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Past time marker \"yesterday\" combined with passive voice requires \"were reviewed\".",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-11",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The verb \"contact\" requires an object pronoun (\"me\").",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-12",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "\"near\" functions as a preposition meaning close to.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-13",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The phrasal prepositional phrase \"look forward to\" is followed by a gerund (\"seeing\").",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-14",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "An adverb (\"carefully\") modifies the past participle \"checked\".",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-15",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "\"by\" indicates the amount or degree of change (\"increased by ten percent\").",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-16",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Superlative form \"fastest\" is required after \"the\" when comparing routes.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-17",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "\"for\" is used with a period of time (\"two years\").",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-18",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Subject \"Every applicant\" is singular and takes a singular verb in the present tense (\"needs\").",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-19",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "\"in case\" means as a precaution against a possible event or situation.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-20",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Past participle \"damaged\" functions as an adjective modifying the noun \"component\".",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

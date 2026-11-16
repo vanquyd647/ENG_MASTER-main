@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-10-13T11:47:37.222Z",
+  "project": "eng-master-main2",
+  "domain": "https://eng-master-main2.vercel.app",
+  "firebaseProject": "engai-2c7fe",
+  "release": "2026.10.13-upgrade.1",
+  "explicitUserApproval": true,
+  "variables": [
+    {
+      "key": "GEMINI_API_KEY",
+      "type": "sensitive",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "GEMINI_TEXT_MODELS",
+      "type": "plain",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "RELEASE_VERSION",
+      "type": "plain",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "FIREBASE_PROJECT_ID",
+      "type": "plain",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "FIREBASE_CLIENT_EMAIL",
+      "type": "sensitive",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "FIREBASE_PRIVATE_KEY",
+      "type": "sensitive",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "APP_URL",
+      "type": "sensitive",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "VITE_FIREBASE_API_KEY",
+      "type": "sensitive",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "VITE_FIREBASE_AUTH_DOMAIN",
+      "type": "sensitive",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "VITE_FIREBASE_PROJECT_ID",
+      "type": "sensitive",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "VITE_FIREBASE_STORAGE_BUCKET",
+      "type": "sensitive",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "VITE_FIREBASE_MESSAGING_SENDER_ID",
+      "type": "sensitive",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "VITE_FIREBASE_APP_ID",
+      "type": "sensitive",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "VITE_FIREBASE_MEASUREMENT_ID",
+      "type": "sensitive",
+      "target": [
+        "preview",
+        "production"
+      ]
+    },
+    {
+      "key": "VITE_RELEASE_VERSION",
+      "type": "plain",
+      "target": [
+        "preview",
+        "production"
+      ]
+    }
+  ]
+}

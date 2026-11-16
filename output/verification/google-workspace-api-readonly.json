@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-13T13:01:06.160Z",
+  "project": "engai-2c7fe",
+  "readOnly": true,
+  "services": [
+    {
+      "service": "calendar-json.googleapis.com",
+      "status": 403,
+      "state": "unknown",
+      "error": "PERMISSION_DENIED"
+    },
+    {
+      "service": "tasks.googleapis.com",
+      "status": 403,
+      "state": "unknown",
+      "error": "PERMISSION_DENIED"
+    },
+    {
+      "service": "drive.googleapis.com",
+      "status": 403,
+      "state": "unknown",
+      "error": "PERMISSION_DENIED"
+    }
+  ]
+}

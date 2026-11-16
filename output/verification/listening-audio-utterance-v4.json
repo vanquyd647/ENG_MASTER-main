@@ -1,0 +1,4131 @@
+{
+  "method": "Segment-wise ASR of actual MP3 using source-mapped utterance timing; preserves grouped ASR disagreements",
+  "prior": "output/verification/listening-audio-asr.json",
+  "inputSha256": "c0ef9237649f54378485dd484ba2e9ed78dac7fb83e03cb9338e473a7e44ee4e",
+  "items": [
+    {
+      "id": "p2-v1-1",
+      "sha256": "e1f18e18b0036b02a86997a814a9fd682189103b5a0c476cc58251e317d8e2f8",
+      "expected": "When will the replacement parts arrive? Option A. On Thursday morning. Option B. They are on the shelf. Option C. Yes, they fit well.",
+      "transcript": " When will the replacement parts arrive?  Option A  on Thursday morning.  Option B  They are on the shelf.  Option C  Yes, they fit well.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 21,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.1,
+      "peak": 0.8074368834495544,
+      "rms": 0.09082911908626556,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "When will the replacement parts arrive?",
+          "transcript": " When will the replacement parts arrive?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "On Thursday morning.",
+          "transcript": " on Thursday morning.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "They are on the shelf.",
+          "transcript": " They are on the shelf.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes, they fit well.",
+          "transcript": " Yes, they fit well.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-2",
+      "sha256": "1912ee293691e13cde55cf03bd8c7fb1fa7c15e380266af2a0397fcf6cf07427",
+      "expected": "Where did you put the signed contract? Option A. I signed it yesterday. Option B. It expires next month. Option C. In the top drawer.",
+      "transcript": " Where did you put the signed contract?  Option A  I signed it yesterday.  option B  It expires next month.  Option C  in the top drawer.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 22,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.075,
+      "peak": 0.8175835609436035,
+      "rms": 0.08848780393600464,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Where did you put the signed contract?",
+          "transcript": " Where did you put the signed contract?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I signed it yesterday.",
+          "transcript": " I signed it yesterday.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It expires next month.",
+          "transcript": " It expires next month.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "In the top drawer.",
+          "transcript": " in the top drawer.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-3",
+      "sha256": "995f8be5beaaca190c706c167815f6699d4710491ac909cbf0f20030d3304c53",
+      "expected": "Who is leading the safety workshop? Option A. In the main hall. Option B. The operations manager. Option C. It starts at nine.",
+      "transcript": " Who is leading the safety workshop?  Option A  in the main hall.  Option B  the Operations Manager.  Option C  It starts at 9.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 20,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.05,
+      "peak": 0.8030213713645935,
+      "rms": 0.09036286920309067,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Who is leading the safety workshop?",
+          "transcript": " Who is leading the safety workshop?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "In the main hall.",
+          "transcript": " in the main hall.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The operations manager.",
+          "transcript": " the Operations Manager.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It starts at nine.",
+          "transcript": " It starts at 9.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-4",
+      "sha256": "94d42f6faf2754794ac726914ed07be3b208a0b179fcd9283df985acb80e45e3",
+      "expected": "Could you send me the updated schedule? Option A. Certainly, I will email it now. Option B. It was last month. Option C. The office is upstairs.",
+      "transcript": " Could you send me the updated schedule?  Option A  Certainly, I will email it now.  Option B  It was last month.  Option C  The office is upstairs.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 24,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.925,
+      "peak": 0.8058500289916992,
+      "rms": 0.0868154838681221,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Could you send me the updated schedule?",
+          "transcript": " Could you send me the updated schedule?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Certainly, I will email it now.",
+          "transcript": " Certainly, I will email it now.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It was last month.",
+          "transcript": " It was last month.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The office is upstairs.",
+          "transcript": " The office is upstairs.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-5",
+      "sha256": "e50693811c36a3199a1d8eae3c23867b7a781a2fe15b9e9793ed4c7f17f842b0",
+      "expected": "Why was the shipment delayed? Option A. At the loading dock. Option B. About twenty boxes. Option C. Because the road was closed.",
+      "transcript": " Why was the shipment delayed?  Option A  at the loading dock.  Option B  About 20 boxes.  Option C  because the road was closed.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 20,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.025,
+      "peak": 0.8003436326980591,
+      "rms": 0.09010757505893707,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Why was the shipment delayed?",
+          "transcript": " Why was the shipment delayed?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "At the loading dock.",
+          "transcript": " at the loading dock.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "About twenty boxes.",
+          "transcript": " About 20 boxes.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Because the road was closed.",
+          "transcript": " because the road was closed.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-6",
+      "sha256": "f9338e975a0e7f8f4caa3caffcc25946ef4f54c3c1008f233e57344340742a57",
+      "expected": "How often do you inspect the equipment? Option A. By the entrance. Option B. Once a month. Option C. For the new office.",
+      "transcript": " How often do you inspect the equipment?  Option A  by the entrance.  Option B  once a month.  Option C  for the new office.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 20,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 19.45,
+      "peak": 0.8077988028526306,
+      "rms": 0.08811498433351517,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "How often do you inspect the equipment?",
+          "transcript": " How often do you inspect the equipment?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "By the entrance.",
+          "transcript": " by the entrance.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Once a month.",
+          "transcript": " once a month.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "For the new office.",
+          "transcript": " for the new office.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-7",
+      "sha256": "3241553037fb3703c81bc8685f1c6ffd51e6afeec29a405ab20bd015fc2929ba",
+      "expected": "Would you prefer a window seat or an aisle seat? Option A. An aisle seat, please. Option B. The flight is late. Option C. I arrived yesterday.",
+      "transcript": " Would you prefer a window seat or an aisle seat?  Option A  An aisle seat please.  Option B  The flight is late.  Option C  I arrived yesterday.",
+      "wordErrorRate": 0.5833333333333334,
+      "expectedWords": 24,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.35,
+      "peak": 0.8018239736557007,
+      "rms": 0.0869130790233612,
+      "flagged": true,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Would you prefer a window seat or an aisle seat?",
+          "transcript": " Would you prefer a window seat or an aisle seat?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "An aisle seat, please.",
+          "transcript": " An aisle seat please.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The flight is late.",
+          "transcript": " The flight is late.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I arrived yesterday.",
+          "transcript": " I arrived yesterday.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-8",
+      "sha256": "a33a9fa03b9b9e34cab0d8d88467e3499f6db8d1390bd62c6a966c91fe1f3f11",
+      "expected": "Have you finished reviewing the budget? Option A. It is next to the door. Option B. Yes, the room is large. Option C. Not yet, I need another hour.",
+      "transcript": " Have you finished reviewing the budget?  Option A  It is next to the door.  Option B  Yes, the room is large.  Option C  Not yet, I need another hour.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 26,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.0,
+      "peak": 0.8187515735626221,
+      "rms": 0.0901668444275856,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Have you finished reviewing the budget?",
+          "transcript": " Have you finished reviewing the budget?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It is next to the door.",
+          "transcript": " It is next to the door.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes, the room is large.",
+          "transcript": " Yes, the room is large.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Not yet, I need another hour.",
+          "transcript": " Not yet, I need another hour.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-9",
+      "sha256": "7764be8da453696cb9ce7044976ebd503337e5a8c4d9cf0b9854cf1b808fb8a3",
+      "expected": "How much does the delivery service cost? Option A. At the front desk. Option B. Twelve dollars per order. Option C. Three times a week.",
+      "transcript": " How much does the delivery service cost?  Option A  at the front desk.  Option B  $12 per order.  Option C  three times a week.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 21,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.325,
+      "peak": 0.8001970648765564,
+      "rms": 0.0906742662191391,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "How much does the delivery service cost?",
+          "transcript": " How much does the delivery service cost?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "At the front desk.",
+          "transcript": " at the front desk.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Twelve dollars per order.",
+          "transcript": " $12 per order.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Three times a week.",
+          "transcript": " three times a week.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-10",
+      "sha256": "75b8a7905480caddaa96ffdfc7575761a0843c44b4271316aae2f76368d9448e",
+      "expected": "Should we reserve the larger conference room? Option A. Yes, we are expecting thirty guests. Option B. It is on the third floor. Option C. I reserved a table yesterday.",
+      "transcript": " Should we reserve the larger conference room?  Option A  Yes, we are expecting 30 guests.  option B  It is on the third floor.  Option C  I reserved a table yesterday.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 27,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 22.275,
+      "peak": 0.810689389705658,
+      "rms": 0.08955997973680496,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Should we reserve the larger conference room?",
+          "transcript": " Should we reserve the larger conference room?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes, we are expecting thirty guests.",
+          "transcript": " Yes, we are expecting 30 guests.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It is on the third floor.",
+          "transcript": " It is on the third floor.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I reserved a table yesterday.",
+          "transcript": " I reserved a table yesterday.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-11",
+      "sha256": "0a09688b2f2da4b417c73113b64577f3a24934fca8b7a3fd6e364494dde3f2f0",
+      "expected": "Is the supervisor in the office today? Option A. At half past two. Option B. The office is newly painted. Option C. No, she is visiting a client.",
+      "transcript": " Is the supervisor in the office today?  Option A  at half past two.  Option B  The office is newly painted.  Option C  No, she is visiting a client.",
+      "wordErrorRate": 0.72,
+      "expectedWords": 25,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.225,
+      "peak": 0.8097528219223022,
+      "rms": 0.08865538984537125,
+      "flagged": true,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Is the supervisor in the office today?",
+          "transcript": " Is the supervisor in the office today?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "At half past two.",
+          "transcript": " at half past two.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The office is newly painted.",
+          "transcript": " The office is newly painted.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "No, she is visiting a client.",
+          "transcript": " No, she is visiting a client.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-12",
+      "sha256": "aa216f85c876afcb088f6674c5788ee1a37769d5622ee11c42d21585fff03571",
+      "expected": "Which folder contains the invoice copies? Option A. Please sign the invoice. Option B. The one labeled April. Option C. We copied them twice.",
+      "transcript": " which folder contains the invoice copies.  Option A  Please sign the invoice.  option B  the one labeled April.  Option C  We copied them twice.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 21,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.7,
+      "peak": 0.8114344477653503,
+      "rms": 0.08952521532773972,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Which folder contains the invoice copies?",
+          "transcript": " which folder contains the invoice copies.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Please sign the invoice.",
+          "transcript": " Please sign the invoice.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The one labeled April.",
+          "transcript": " the one labeled April.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "We copied them twice.",
+          "transcript": " We copied them twice.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-13",
+      "sha256": "8f816efccf481334c4f359438225c2cc554616f9f462dfbc7b88553d7cd8bb86",
+      "expected": "Can we move the meeting to two o’clock? Option A. That works for me. Option B. It was two kilometers away. Option C. There are two chairs.",
+      "transcript": " Can we move the meeting to 2 o'clock?  Option A  That works for me.  option B  It was two kilometers away.  Option C  There are two chairs.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 24,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.2,
+      "peak": 0.8034366369247437,
+      "rms": 0.08915155380964279,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Can we move the meeting to two o’clock?",
+          "transcript": " Can we move the meeting to 2 o'clock?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "That works for me.",
+          "transcript": " That works for me.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It was two kilometers away.",
+          "transcript": " It was two kilometers away.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "There are two chairs.",
+          "transcript": " There are two chairs.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-14",
+      "sha256": "0eb95a2725789bb1f4f4ce05dc939eea3ded83691e7b8f979679636d86054f0d",
+      "expected": "Where can I get a visitor badge? Option A. It is a useful visit. Option B. The visitors left early. Option C. Ask the receptionist.",
+      "transcript": " Where can I get a visitor badge?  Option A  It is a useful visit.  option B  The visitors left early.  Option C  Ask the Receptionist.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 22,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.15,
+      "peak": 0.8049319386482239,
+      "rms": 0.09186694025993347,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Where can I get a visitor badge?",
+          "transcript": " Where can I get a visitor badge?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It is a useful visit.",
+          "transcript": " It is a useful visit.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The visitors left early.",
+          "transcript": " The visitors left early.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Ask the receptionist.",
+          "transcript": " Ask the Receptionist.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-15",
+      "sha256": "94bae94dd3965eaa46072ba23ed87d64f6ee58701f34cc1a1322b00d5047d74f",
+      "expected": "Why don’t we order lunch for the team? Option A. The team is on page two. Option B. Good idea, I will check the menu. Option C. Because lunch was delicious.",
+      "transcript": " Why don't we order lunch for the team?  Option A  The team is on page 2.  option B  Good idea, I will check the menu.  Option C  because lunch was delicious.",
+      "wordErrorRate": 0.10344827586206896,
+      "expectedWords": 29,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.3,
+      "peak": 0.8072086572647095,
+      "rms": 0.09076348692178726,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Why don’t we order lunch for the team?",
+          "transcript": " Why don't we order lunch for the team?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The team is on page two.",
+          "transcript": " The team is on page 2.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Good idea, I will check the menu.",
+          "transcript": " Good idea, I will check the menu.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Because lunch was delicious.",
+          "transcript": " because lunch was delicious.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-16",
+      "sha256": "d276d5c9f5b7831e59f4482e470daf10710f0e7d2d3d0f91c337a82197753d97",
+      "expected": "How long does the installation take? Option A. About forty minutes. Option B. At the service counter. Option C. It costs forty dollars.",
+      "transcript": " How long does the installation take?  Option A  About 40 minutes.  option B  at the service counter.  Option C  It costs $40.",
+      "wordErrorRate": 0.6842105263157895,
+      "expectedWords": 19,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.15,
+      "peak": 0.8085785508155823,
+      "rms": 0.08909928053617477,
+      "flagged": true,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "How long does the installation take?",
+          "transcript": " How long does the installation take?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "About forty minutes.",
+          "transcript": " About 40 minutes.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "At the service counter.",
+          "transcript": " at the service counter.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It costs forty dollars.",
+          "transcript": " It costs $40.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-17",
+      "sha256": "23d414111674fdb5b75ce4013ff3e31fda553363de3b7bc12da1d09664e4a2fc",
+      "expected": "You have already booked the hotel, haven’t you? Option A. The hotel has five floors. Option B. I work at the restaurant. Option C. Yes, I received the confirmation.",
+      "transcript": " You have already booked the hotel, haven't you?  Option A  The hotel has five floors.  Option B  I work at the restaurant.  Option C  Yes, I received the confirmation.",
+      "wordErrorRate": 0.7407407407407407,
+      "expectedWords": 27,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.8,
+      "peak": 0.8107104301452637,
+      "rms": 0.08773257583379745,
+      "flagged": true,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "You have already booked the hotel, haven’t you?",
+          "transcript": " You have already booked the hotel, haven't you?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The hotel has five floors.",
+          "transcript": " The hotel has five floors.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I work at the restaurant.",
+          "transcript": " I work at the restaurant.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes, I received the confirmation.",
+          "transcript": " Yes, I received the confirmation.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v1-18",
+      "sha256": "792afa24939afc4d32fdecf6c13ee54e35ea03f7ec71a98fe25cf25a3d2aeae6",
+      "expected": "Would you mind closing the door? Option A. That is the door number. Option B. Of course not, I will close it. Option C. It closes at six.",
+      "transcript": " Would you mind closing the door?  Option A  That is the door number.  option B  Of course not, I will close it.  Option C  It closes at six.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 25,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.4,
+      "peak": 0.8088070750236511,
+      "rms": 0.09202157706022263,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Would you mind closing the door?",
+          "transcript": " Would you mind closing the door?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "That is the door number.",
+          "transcript": " That is the door number.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Of course not, I will close it.",
+          "transcript": " Of course not, I will close it.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It closes at six.",
+          "transcript": " It closes at six.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-where-1",
+      "sha256": "49f311aec8e8d695721a66b9b7ac08a345f1367318b0258620689414dde5521a",
+      "expected": "Where is the nearest photocopier? Option A. At half past ten. Option B. Beside the reception desk. Option C. I printed three copies.",
+      "transcript": " Where is the nearest photocopier?  Option A  At half past ten.  option B  Beside the reception desk.  Option C  I printed three copies.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 20,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.5,
+      "peak": 0.7987486720085144,
+      "rms": 0.09047075361013412,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Where is the nearest photocopier?",
+          "transcript": " Where is the nearest photocopier?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "At half past ten.",
+          "transcript": " At half past ten.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Beside the reception desk.",
+          "transcript": " Beside the reception desk.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I printed three copies.",
+          "transcript": " I printed three copies.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-where-2",
+      "sha256": "344296aecc2d46adf1d8fa67e6e5847e0e214bd22faf8c3a25e1fd589c368f3d",
+      "expected": "Where will the training session take place? Option A. In the second-floor conference room. Option B. For two hours. Option C. The trainers arrived early.",
+      "transcript": " Where will the training session take place?  Option A  in the second floor conference room.  Option B  for two hours.  Option C  The trainers arrived early.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 23,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.125,
+      "peak": 0.8039377927780151,
+      "rms": 0.08999602496623993,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Where will the training session take place?",
+          "transcript": " Where will the training session take place?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "In the second-floor conference room.",
+          "transcript": " in the second floor conference room.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "For two hours.",
+          "transcript": " for two hours.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The trainers arrived early.",
+          "transcript": " The trainers arrived early.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-where-3",
+      "sha256": "d7e21bffb4e770739d4272f4be96d7c494aa4bfa4fc2b26e0fd8a0149186b62e",
+      "expected": "Where should I leave these signed forms? Option A. They need your signature. Option B. Before the deadline. Option C. In the tray marked Human Resources.",
+      "transcript": " Where should I leave these signed forms?  Option A  They need your signature.  option B  before the deadline.  Option C  in the tray marked human resources.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 23,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.125,
+      "peak": 0.8093434572219849,
+      "rms": 0.09089328348636627,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Where should I leave these signed forms?",
+          "transcript": " Where should I leave these signed forms?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "They need your signature.",
+          "transcript": " They need your signature.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Before the deadline.",
+          "transcript": " before the deadline.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "In the tray marked Human Resources.",
+          "transcript": " in the tray marked human resources.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-where-4",
+      "sha256": "cc0c9de6430e10857dd512714c73f29a7a4da07bbb7100839df47babf4c23203",
+      "expected": "Where did you park the company van? Option A. In the underground garage. Option B. It needs new tires. Option C. The company has two vans.",
+      "transcript": " Where did you park the company van?  Option A  in the underground garage.  Option B  It needs new tires.  Option C  The company has two vans.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 23,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.75,
+      "peak": 0.8504281640052795,
+      "rms": 0.08927538245916367,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Where did you park the company van?",
+          "transcript": " Where did you park the company van?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "In the underground garage.",
+          "transcript": " in the underground garage.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It needs new tires.",
+          "transcript": " It needs new tires.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The company has two vans.",
+          "transcript": " The company has two vans.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-where-5",
+      "sha256": "253b20f86d62387e457672aada4dd641b9eb0c13c3387a6e243a9791bcb5ed31",
+      "expected": "Where can visitors pick up a temporary badge? Option A. They are visiting tomorrow. Option B. At the security counter. Option C. The badges are blue.",
+      "transcript": " Where can visitors pick up a temporary badge?  Option A  They are visiting tomorrow.  Option B  at the security counter.  Option C  The badges are blue.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 23,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.975,
+      "peak": 0.800870418548584,
+      "rms": 0.09058765321969986,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Where can visitors pick up a temporary badge?",
+          "transcript": " Where can visitors pick up a temporary badge?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "They are visiting tomorrow.",
+          "transcript": " They are visiting tomorrow.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "At the security counter.",
+          "transcript": " at the security counter.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The badges are blue.",
+          "transcript": " The badges are blue.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-where-6",
+      "sha256": "2b913f4d63374b6713a3709c454482ac099d9d2d8ae36dd7858af04a0c1b5ae5",
+      "expected": "Where will the new branch be located? Option A. It opened last month. Option B. About twenty employees. Option C. Across from the central station.",
+      "transcript": " Where will the new branch be located?  Option A  It opened last month.  Option B  About 20 employees.  Option C  across from the central station.",
+      "wordErrorRate": 0.6818181818181818,
+      "expectedWords": 22,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.05,
+      "peak": 0.8050592541694641,
+      "rms": 0.09035735577344894,
+      "flagged": true,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Where will the new branch be located?",
+          "transcript": " Where will the new branch be located?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It opened last month.",
+          "transcript": " It opened last month.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "About twenty employees.",
+          "transcript": " About 20 employees.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Across from the central station.",
+          "transcript": " across from the central station.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-when-1",
+      "sha256": "6192d248f6410b5fbda865410ce4371189bbd68dedb96167f8f91caf7949476b",
+      "expected": "When is the revised budget due? Option A. By noon on Thursday. Option B. It is under budget. Option C. The finance department.",
+      "transcript": " When is the revised budget due?  Option A  by noon on Thursday.  Option B  It is under budget.  Option C  The Finance Department.",
+      "wordErrorRate": 0.7,
+      "expectedWords": 20,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.3,
+      "peak": 0.8214439153671265,
+      "rms": 0.08791761845350266,
+      "flagged": true,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "When is the revised budget due?",
+          "transcript": " When is the revised budget due?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "By noon on Thursday.",
+          "transcript": " by noon on Thursday.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It is under budget.",
+          "transcript": " It is under budget.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The finance department.",
+          "transcript": " The Finance Department.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-when-2",
+      "sha256": "1b7538931a501e0f8459a075e7541575ae22732b0b306f62dab2102a7b471b03",
+      "expected": "When does the visitor center close? Option A. A map of the center. Option B. At six in the evening. Option C. Near the east entrance.",
+      "transcript": " When does the visitor center close?  Option A  A map of the center.  option B  at 6 in the evening.  Option C  near the east entrance.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 23,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.3,
+      "peak": 0.809260904788971,
+      "rms": 0.09155330061912537,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "When does the visitor center close?",
+          "transcript": " When does the visitor center close?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A map of the center.",
+          "transcript": " A map of the center.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "At six in the evening.",
+          "transcript": " at 6 in the evening.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Near the east entrance.",
+          "transcript": " near the east entrance.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-when-3",
+      "sha256": "30b9201df6f32bad3454cd97c25b3ce4718a770c86fbf93d4a27bb84ed3ae667",
+      "expected": "When will the replacement printer arrive? Option A. The old one is broken. Option B. We ordered two cartridges. Option C. It is scheduled for Monday morning.",
+      "transcript": " When will the replacement printer arrive?  Option A  The old one is broken.  Option B  We ordered two cartridges.  Option C  It is scheduled for Monday morning.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 24,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.525,
+      "peak": 0.8041725158691406,
+      "rms": 0.09074079990386963,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "When will the replacement printer arrive?",
+          "transcript": " When will the replacement printer arrive?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The old one is broken.",
+          "transcript": " The old one is broken.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "We ordered two cartridges.",
+          "transcript": " We ordered two cartridges.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It is scheduled for Monday morning.",
+          "transcript": " It is scheduled for Monday morning.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-when-4",
+      "sha256": "d907b0646c71848d7b67568bc6975203b4dc39b19e93624d9c6bf2a52b501889",
+      "expected": "When did you last update the contact list? Option A. Yesterday afternoon. Option B. There are fifty contacts. Option C. The new office number.",
+      "transcript": " When did you last update the contact list?  Option A  Yesterday afternoon.  Option B  There are 50 contacts.  Option C  The new office number.",
+      "wordErrorRate": 0.09523809523809523,
+      "expectedWords": 21,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.025,
+      "peak": 0.8001883029937744,
+      "rms": 0.09007247537374496,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "When did you last update the contact list?",
+          "transcript": " When did you last update the contact list?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yesterday afternoon.",
+          "transcript": " Yesterday afternoon.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "There are fifty contacts.",
+          "transcript": " There are 50 contacts.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The new office number.",
+          "transcript": " The new office number.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-when-5",
+      "sha256": "4e22bd85eef75ada05775370b14c54d8517427020c72f75121910cbabb804c8e",
+      "expected": "When can we discuss the proposal? Option A. It proposes a new service. Option B. I have some time after lunch. Option C. The document is six pages long.",
+      "transcript": " When can we discuss the proposal?  Option A  It proposes a new service.  Option B  I have some time after lunch.  Option C  The document is six pages long.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 26,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.8,
+      "peak": 0.8143765330314636,
+      "rms": 0.08888401091098785,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "When can we discuss the proposal?",
+          "transcript": " When can we discuss the proposal?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It proposes a new service.",
+          "transcript": " It proposes a new service.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I have some time after lunch.",
+          "transcript": " I have some time after lunch.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The document is six pages long.",
+          "transcript": " The document is six pages long.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-when-6",
+      "sha256": "10aea23db430a82d4e0cce259a56661fb9acba17c1a4e066f9c28d3f6d699495",
+      "expected": "When should I confirm my attendance? Option A. The seminar is popular. Option B. The attendance sheet is full. Option C. No later than Friday.",
+      "transcript": " When should I confirm my attendance?  Option A  The seminar is popular.  Option B  The attendance sheet is full.  Option C  No later than Friday.",
+      "wordErrorRate": 0.045454545454545456,
+      "expectedWords": 22,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.825,
+      "peak": 0.8051948547363281,
+      "rms": 0.09148826450109482,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "When should I confirm my attendance?",
+          "transcript": " When should I confirm my attendance?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The seminar is popular.",
+          "transcript": " The seminar is popular.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The attendance sheet is full.",
+          "transcript": " The attendance sheet is full.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "No later than Friday.",
+          "transcript": " No later than Friday.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-request-1",
+      "sha256": "d86455681b95bd1c62b6f80095b4cbe66dc6ded6e8cf511408518c378ee389e6",
+      "expected": "Could you email me the updated price list? Option A. The prices increased recently. Option B. Certainly, I will send it now. Option C. I bought it last week.",
+      "transcript": " Could you email me the updated price list?  Option A  The prices increased recently.  option B  Certainly, I will send it now.  Option C  I bought it last week.",
+      "wordErrorRate": 0.6923076923076923,
+      "expectedWords": 26,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.675,
+      "peak": 0.8220258951187134,
+      "rms": 0.08718127012252808,
+      "flagged": true,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Could you email me the updated price list?",
+          "transcript": " Could you email me the updated price list?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The prices increased recently.",
+          "transcript": " The prices increased recently.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Certainly, I will send it now.",
+          "transcript": " Certainly, I will send it now.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I bought it last week.",
+          "transcript": " I bought it last week.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-request-2",
+      "sha256": "e8a1ba12d1eeb1825de2efcb823d553e7fcd30ef38cd8899eceb46fe26e0dd77",
+      "expected": "Would you like me to reserve a taxi? Option A. Yes, that would be helpful. Option B. The taxi was yellow. Option C. It is a reserved parking space.",
+      "transcript": " Would you like me to reserve a taxi?  Option A  Yes, that would be helpful.  Option B  The taxi was yellow.  Option C  It is a reserved parking space.",
+      "wordErrorRate": 0.07692307692307693,
+      "expectedWords": 26,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.975,
+      "peak": 0.801923394203186,
+      "rms": 0.08923403918743134,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Would you like me to reserve a taxi?",
+          "transcript": " Would you like me to reserve a taxi?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes, that would be helpful.",
+          "transcript": " Yes, that would be helpful.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The taxi was yellow.",
+          "transcript": " The taxi was yellow.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It is a reserved parking space.",
+          "transcript": " It is a reserved parking space.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-request-3",
+      "sha256": "0c4301be30de3868f78583c3febd36bc8175c42beeca3524edc82d72d2c537f7",
+      "expected": "Shall we review the contract together? Option A. The review was favorable. Option B. It is a large conference. Option C. Yes, let us meet at three.",
+      "transcript": " Shall we review the contract together?  Option A  The review was favorable.  Option B  It is a large conference.  Option C  Yes, let us meet at three.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 24,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.925,
+      "peak": 0.8172409534454346,
+      "rms": 0.09054058790206909,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Shall we review the contract together?",
+          "transcript": " Shall we review the contract together?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The review was favorable.",
+          "transcript": " The review was favorable.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It is a large conference.",
+          "transcript": " It is a large conference.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes, let us meet at three.",
+          "transcript": " Yes, let us meet at three.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-request-4",
+      "sha256": "6ed9f9992aa9c5f1016fd9e49d8a64f5a8df2aeae86c2b2229a17dd3303b0c02",
+      "expected": "Could you hold the elevator for a moment? Option A. The moment has passed. Option B. Of course, take your time. Option C. It is on the maintenance schedule.",
+      "transcript": " Could you hold the elevator for a moment?  Option A  The moment has passed.  option B  Of course, take your time.  Option C  It is on the maintenance schedule.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 26,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 20.8,
+      "peak": 0.8141927123069763,
+      "rms": 0.09135940670967102,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Could you hold the elevator for a moment?",
+          "transcript": " Could you hold the elevator for a moment?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The moment has passed.",
+          "transcript": " The moment has passed.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Of course, take your time.",
+          "transcript": " Of course, take your time.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It is on the maintenance schedule.",
+          "transcript": " It is on the maintenance schedule.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-request-5",
+      "sha256": "b5643e606b5f2165335ddc560d79dfcfc2ff97aebc03739caae7f5f0da2753a8",
+      "expected": "Would you mind checking these figures? Option A. Not at all. Let me take a look. Option B. There are four figures in the report. Option C. I checked in yesterday.",
+      "transcript": " Would you mind checking these figures?  Option A  Not at all. Let me take a look.  Option B  There are four figures in the report.  Option C  I checked in yesterday.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 28,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.575,
+      "peak": 0.807018518447876,
+      "rms": 0.0905972495675087,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Would you mind checking these figures?",
+          "transcript": " Would you mind checking these figures?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Not at all. Let me take a look.",
+          "transcript": " Not at all. Let me take a look.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "There are four figures in the report.",
+          "transcript": " There are four figures in the report.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I checked in yesterday.",
+          "transcript": " I checked in yesterday.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-request-6",
+      "sha256": "cdbb670d0821a19703323f8515cf962dc9073538cd494983759d2c1dde47e028",
+      "expected": "Can someone cover my shift on Saturday? Option A. Saturday is my favorite day. Option B. The cover is missing. Option C. I can, if it is the morning shift.",
+      "transcript": " Can someone cover my shift on Saturday?  Option A  Saturday is my favorite day.  option B  The cover is missing.  Option C  I can if it is the morning shift.",
+      "wordErrorRate": 0.07407407407407407,
+      "expectedWords": 27,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.85,
+      "peak": 0.8031818866729736,
+      "rms": 0.0877954512834549,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Can someone cover my shift on Saturday?",
+          "transcript": " Can someone cover my shift on Saturday?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Saturday is my favorite day.",
+          "transcript": " Saturday is my favorite day.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The cover is missing.",
+          "transcript": " The cover is missing.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I can, if it is the morning shift.",
+          "transcript": " I can if it is the morning shift.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-indirect-1",
+      "sha256": "740cd710094ba7b74cb27651e971a65f8e55129329171ac46f6bc63fc5d2953b",
+      "expected": "Who is responsible for arranging the shipment? Option A. Ask Ms. Chen in logistics. Option B. The shipment weighs twenty kilos. Option C. It arrived yesterday.",
+      "transcript": " Who is responsible for arranging the shipment?  Option A  Ask Ms. Chan in logistics.  option B  The shipment weighs 20 kilos.  Option C  It arrived yesterday.",
+      "wordErrorRate": 0.6956521739130435,
+      "expectedWords": 23,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.5,
+      "peak": 0.8180004358291626,
+      "rms": 0.08773404359817505,
+      "flagged": true,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Who is responsible for arranging the shipment?",
+          "transcript": " Who is responsible for arranging the shipment?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Ask Ms. Chen in logistics.",
+          "transcript": " Ask Ms. Chan in logistics.",
+          "similarity": 0.8,
+          "flagged": true
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The shipment weighs twenty kilos.",
+          "transcript": " The shipment weighs 20 kilos.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It arrived yesterday.",
+          "transcript": " It arrived yesterday.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 1
+    },
+    {
+      "id": "p2-v2-indirect-2",
+      "sha256": "5914d4a0bceb0299bfd3c76af6ae88017e946cfdd8840538949d26b9abf7dda8",
+      "expected": "Why has the presentation been postponed? Option A. The presenter is from Boston. Option B. The client requested more time to review the data. Option C. At the downtown hotel.",
+      "transcript": " Why has the presentation been postponed?  Option A  The presenter is from Boston.  option B  The client requested more time to review the data.  Option C  at the downtown hotel.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 27,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 23.35,
+      "peak": 0.8069830536842346,
+      "rms": 0.08998192846775055,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Why has the presentation been postponed?",
+          "transcript": " Why has the presentation been postponed?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The presenter is from Boston.",
+          "transcript": " The presenter is from Boston.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The client requested more time to review the data.",
+          "transcript": " The client requested more time to review the data.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "At the downtown hotel.",
+          "transcript": " at the downtown hotel.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-indirect-3",
+      "sha256": "69953962e5f06e6a0483fca144119dfc71d0d300fcda81b2dfaa6123b059b402",
+      "expected": "Do we need to print more brochures? Option A. A colorful brochure. Option B. The printer is on the third floor. Option C. There are still several boxes in storage.",
+      "transcript": " Do we need to print more brochures?  Option A  A colorful brochure.  Option B  The printer is on the third floor.  Option C  There are still several boxes in storage.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 27,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.825,
+      "peak": 0.8046298623085022,
+      "rms": 0.0926099345088005,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Do we need to print more brochures?",
+          "transcript": " Do we need to print more brochures?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A colorful brochure.",
+          "transcript": " A colorful brochure.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The printer is on the third floor.",
+          "transcript": " The printer is on the third floor.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "There are still several boxes in storage.",
+          "transcript": " There are still several boxes in storage.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-indirect-4",
+      "sha256": "3e05f0397323fe80bd9f56e67ea20b8675501326d1e7fc34370d25006cef07cd",
+      "expected": "Has the conference room been booked? Option A. Let me check the reservation calendar. Option B. The book is on the table. Option C. For twelve participants.",
+      "transcript": " Has the conference room been booked?  Option A  Let me check the reservation calendar.  Option B  The book is on the table.  Option C  for 12 participants.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 24,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.3,
+      "peak": 0.8099694848060608,
+      "rms": 0.09026391059160233,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Has the conference room been booked?",
+          "transcript": " Has the conference room been booked?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Let me check the reservation calendar.",
+          "transcript": " Let me check the reservation calendar.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The book is on the table.",
+          "transcript": " The book is on the table.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "For twelve participants.",
+          "transcript": " for 12 participants.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-indirect-5",
+      "sha256": "f5e65e6f6e39e048dd1918db9ba15a40122eb72450e5cb9be468fae54d241dd9",
+      "expected": "How will you get to the trade fair? Option A. It runs for three days. Option B. A colleague offered me a ride. Option C. The tickets were reasonably priced.",
+      "transcript": " How will you get to the trade fair?  Option A  It runs for three days.  option B  A colleague offered me a ride.  Option C  The tickets were reasonably priced.",
+      "wordErrorRate": 0.7037037037037037,
+      "expectedWords": 27,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 21.325,
+      "peak": 0.8207971453666687,
+      "rms": 0.08987900614738464,
+      "flagged": true,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "How will you get to the trade fair?",
+          "transcript": " How will you get to the trade fair?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "It runs for three days.",
+          "transcript": " It runs for three days.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A colleague offered me a ride.",
+          "transcript": " A colleague offered me a ride.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The tickets were reasonably priced.",
+          "transcript": " The tickets were reasonably priced.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p2-v2-indirect-6",
+      "sha256": "95dce9d805cbf4bdffcb5a1152b9c74387147245bb0278130217364900b5629b",
+      "expected": "Is the application form available online? Option A. The applicant starts next week. Option B. A line at the information desk. Option C. The website is being updated; I can give you a paper copy.",
+      "transcript": " is the application form available online.  Option A  The applicant starts next week.  Option B  Align at the Information Desk.  Option C  The website is being updated. I can give you a paper copy.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 32,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 24.1,
+      "peak": 0.8107197284698486,
+      "rms": 0.08814959973096848,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Is the application form available online?",
+          "transcript": " is the application form available online.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The applicant starts next week.",
+          "transcript": " The applicant starts next week.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A line at the information desk.",
+          "transcript": " Align at the Information Desk.",
+          "similarity": 0.7272727272727273,
+          "flagged": true
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "The website is being updated; I can give you a paper copy.",
+          "transcript": " The website is being updated. I can give you a paper copy.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 1
+    },
+    {
+      "id": "p1-listening-v1-forklift",
+      "sha256": "31a368bb52a60375094d0f4ebc5c1aac09d55c7c74aabc0807103f16295c2fd6",
+      "expected": "Option A. Several people are boarding a bus. Option B. A forklift is positioned beside a truck. Option C. A man is washing a car. Option D. Boxes are floating on water.",
+      "transcript": " Option A  Several people are boarding a bus.  option B  A forklift is positioned beside a truck.  Option C  A man is washing a car.  Option D  Boxes are floating on water.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 28,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 25.0,
+      "peak": 0.8271149396896362,
+      "rms": 0.09034259617328644,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Several people are boarding a bus.",
+          "transcript": " Several people are boarding a bus.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A forklift is positioned beside a truck.",
+          "transcript": " A forklift is positioned beside a truck.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A man is washing a car.",
+          "transcript": " A man is washing a car.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option D.",
+          "transcript": " Option D",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Boxes are floating on water.",
+          "transcript": " Boxes are floating on water.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p1-listening-v1-desk",
+      "sha256": "ceb2a756167d2b2ba3dce70cba3e7580171970d8608ce82afd48af9d09520ce3",
+      "expected": "Option A. A woman is typing at a keyboard. Option B. Some dishes are stacked in a sink. Option C. A man is opening a suitcase. Option D. A small bust is displayed in front of the windows.",
+      "transcript": " Option A  A woman is typing at a keyboard.  Option B  Some dishes are stacked in a sink.  Option C  A man is opening a suitcase.  Option D  A small bust is displayed in front of the windows.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 34,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 25.475,
+      "peak": 0.8082469701766968,
+      "rms": 0.08841223269701004,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A woman is typing at a keyboard.",
+          "transcript": " A woman is typing at a keyboard.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Some dishes are stacked in a sink.",
+          "transcript": " Some dishes are stacked in a sink.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A man is opening a suitcase.",
+          "transcript": " A man is opening a suitcase.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option D.",
+          "transcript": " Option D",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A small bust is displayed in front of the windows.",
+          "transcript": " A small bust is displayed in front of the windows.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p1-listening-v1-home-office",
+      "sha256": "1af79c38f56feb10136bfe80eec4004995a4ff7d514bc979163bf160c65aaade",
+      "expected": "Option A. An open laptop is sitting on a wooden table. Option B. A worker is carrying a ladder. Option C. Several chairs are stacked against a wall. Option D. A printer is underneath a desk.",
+      "transcript": " Option A  An open laptop is sitting on a wooden table.  Option B  A worker is carrying a ladder.  Option C  Several chairs are stacked against a wall.  Option D  A printer is underneath a desk.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 32,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 25.825,
+      "peak": 0.8140436410903931,
+      "rms": 0.09010608494281769,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "An open laptop is sitting on a wooden table.",
+          "transcript": " An open laptop is sitting on a wooden table.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A worker is carrying a ladder.",
+          "transcript": " A worker is carrying a ladder.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Several chairs are stacked against a wall.",
+          "transcript": " Several chairs are stacked against a wall.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option D.",
+          "transcript": " Option D",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A printer is underneath a desk.",
+          "transcript": " A printer is underneath a desk.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p1-listening-v1-conference",
+      "sha256": "9398dcfd7c7c2d7d5469c59322c0cd9589a011b5b4c8120d170f81e92056ed88",
+      "expected": "Option A. Several people are attending a meeting. Option B. A waiter is serving food. Option C. Chairs are arranged around a white table. Option D. A man is repairing a window.",
+      "transcript": " Option A  Several people are attending a meeting.  Option B  A waiter is serving food.  Option C  Chairs are arranged around a white table.  Option D  A man is repairing a window.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 28,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 24.925,
+      "peak": 0.8118152022361755,
+      "rms": 0.08442948758602142,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Several people are attending a meeting.",
+          "transcript": " Several people are attending a meeting.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A waiter is serving food.",
+          "transcript": " A waiter is serving food.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Chairs are arranged around a white table.",
+          "transcript": " Chairs are arranged around a white table.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option D.",
+          "transcript": " Option D",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A man is repairing a window.",
+          "transcript": " A man is repairing a window.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p1-listening-v1-bicycle",
+      "sha256": "b61ae895432ceb535a05922116f9ddc99936b31654fcb1e8d72846ecbb5bc8ff",
+      "expected": "Option A. A man is riding a motorcycle. Option B. A bicycle is standing beside a blue wall. Option C. A mechanic is replacing a wheel. Option D. Two bicycles are hanging from the ceiling.",
+      "transcript": " Option A  A man is riding a motorcycle.  Option B  A bicycle is standing beside a blue wall.  Option C  A mechanic is replacing a wheel.  Option D  Two bicycles are hanging from the ceiling.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 31,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 25.975,
+      "peak": 0.8271092176437378,
+      "rms": 0.08805111050605774,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A man is riding a motorcycle.",
+          "transcript": " A man is riding a motorcycle.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A bicycle is standing beside a blue wall.",
+          "transcript": " A bicycle is standing beside a blue wall.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A mechanic is replacing a wheel.",
+          "transcript": " A mechanic is replacing a wheel.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option D.",
+          "transcript": " Option D",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Two bicycles are hanging from the ceiling.",
+          "transcript": " Two bicycles are hanging from the ceiling.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p1-listening-v1-cyclist",
+      "sha256": "f692eda3ef3dc10f3bd6e14b0de6f86cd3d810eba982fafb998c09c03a680587",
+      "expected": "Option A. A person is riding a bicycle along a path. Option B. A person is carrying a bicycle upstairs. Option C. Several people are waiting at a counter. Option D. A person is rowing a boat.",
+      "transcript": " Option A  A person is riding a bicycle along a path.  Option B  A person is carrying a bicycle upstairs.  Option C  Several people are waiting at a counter.  Option D  A person is rowing a boat.",
+      "wordErrorRate": 0.0,
+      "expectedWords": 33,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 26.15,
+      "peak": 0.8119200468063354,
+      "rms": 0.09092546999454498,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Option A.",
+          "transcript": " Option A",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A person is riding a bicycle along a path.",
+          "transcript": " A person is riding a bicycle along a path.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option B.",
+          "transcript": " Option B",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A person is carrying a bicycle upstairs.",
+          "transcript": " A person is carrying a bicycle upstairs.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option C.",
+          "transcript": " Option C",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Several people are waiting at a counter.",
+          "transcript": " Several people are waiting at a counter.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Option D.",
+          "transcript": " Option D",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A person is rowing a boat.",
+          "transcript": " A person is rowing a boat.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-listening-v1-meeting",
+      "sha256": "823d18b6ccc8782f2986e16cdd40133a990f8491af7862c5fd87c883ae0d910d",
+      "expected": "Hi Ben, this is Maya. Our client meeting starts at eleven, but the projector in room three hundred four has stopped working. Room two hundred eighteen is available. Its projector was tested this morning. Shall we move the meeting there? Yes. I will email everyone the new room number now. Could you ask the technical team to repair the other projector? Of course. I will call them as soon as we finish talking. Why are the speakers moving the meeting? Where will the meeting take place? What will Maya do next?",
+      "transcript": " Hi Ben, this is Maya. Our client meeting starts at 11, but the projector in room 304 has stopped working.  Room 218 is available. Its projector was tested this morning. Shall we move the meeting there?  Yes, I will email everyone the new room number now. Could you ask the technical team to repair the other projector?  Of course, I will call them as soon as we finish talking.  Why are the speakers moving the meeting?  Where will the meeting take place?  What will Maya do next?",
+      "wordErrorRate": 0.04597701149425287,
+      "expectedWords": 87,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 62.15,
+      "peak": 0.8685775399208069,
+      "rms": 0.07985945791006088,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Hi Ben, this is Maya. Our client meeting starts at eleven, but the projector in room three hundred four has stopped working.",
+          "transcript": " Hi Ben, this is Maya. Our client meeting starts at 11, but the projector in room 304 has stopped working.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Room two hundred eighteen is available. Its projector was tested this morning. Shall we move the meeting there?",
+          "transcript": " Room 218 is available. Its projector was tested this morning. Shall we move the meeting there?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes. I will email everyone the new room number now. Could you ask the technical team to repair the other projector?",
+          "transcript": " Yes, I will email everyone the new room number now. Could you ask the technical team to repair the other projector?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Of course. I will call them as soon as we finish talking.",
+          "transcript": " Of course, I will call them as soon as we finish talking.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Why are the speakers moving the meeting?",
+          "transcript": " Why are the speakers moving the meeting?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Where will the meeting take place?",
+          "transcript": " Where will the meeting take place?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What will Maya do next?",
+          "transcript": " What will Maya do next?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-listening-v1-delivery",
+      "sha256": "2496c1ca3096d0d42d76d8cf7413290b8525720fd90f8d6f796da82671f47e5a",
+      "expected": "Hello, this is Nora. We ordered twelve desk lamps, but only ten arrived this morning. I am sorry about that. The other two are being packed now. They will arrive tomorrow, and there will be no additional delivery charge. That is fine. Could you email me the tracking number today? Certainly. I will send it this afternoon when the package leaves our warehouse. How many lamps are missing from the delivery? When will the remaining lamps arrive? What does Nora ask Leo to email?",
+      "transcript": " Hello, this is Nara. We ordered 12 desk lamps, but only 10 arrived this morning.  I am sorry about that. The other two are being packed now. They will arrive tomorrow and there will be no additional delivery charge.  That is fine. Could you email me the tracking number today?  Certainly, I will send it this afternoon when the package leaves our warehouse.  How many lamps are missing from the delivery?  When will the remaining lamps arrive?  What does Nora ask Leo to email?",
+      "wordErrorRate": 0.011904761904761904,
+      "expectedWords": 84,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 58.95,
+      "peak": 0.8119552731513977,
+      "rms": 0.07897214591503143,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Hello, this is Nora. We ordered twelve desk lamps, but only ten arrived this morning.",
+          "transcript": " Hello, this is Nara. We ordered 12 desk lamps, but only 10 arrived this morning.",
+          "similarity": 0.9333333333333333,
+          "flagged": false
+        },
+        {
+          "source": "I am sorry about that. The other two are being packed now. They will arrive tomorrow, and there will be no additional delivery charge.",
+          "transcript": " I am sorry about that. The other two are being packed now. They will arrive tomorrow and there will be no additional delivery charge.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "That is fine. Could you email me the tracking number today?",
+          "transcript": " That is fine. Could you email me the tracking number today?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Certainly. I will send it this afternoon when the package leaves our warehouse.",
+          "transcript": " Certainly, I will send it this afternoon when the package leaves our warehouse.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "How many lamps are missing from the delivery?",
+          "transcript": " How many lamps are missing from the delivery?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "When will the remaining lamps arrive?",
+          "transcript": " When will the remaining lamps arrive?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What does Nora ask Leo to email?",
+          "transcript": " What does Nora ask Leo to email?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p4-listening-v1-museum",
+      "sha256": "2ca1ad3fddd2761086aed3d811dca92b8403f1976f52bd6abe2d7eb5cf49dbc9",
+      "expected": "Welcome to the City Museum. Here is some information for your visit. We are open from nine in the morning until six in the evening. The photography gallery is closed today, Thursday, for maintenance. All other galleries remain open. You can find our cafe on the first floor, beside the gift shop. Please ask at the information desk if you need a map. What is the main purpose of the announcement? Which area is closed today? Where is the cafe?",
+      "transcript": " Welcome to the City Museum. Here is some information for your visit. We are open from 9 in the morning until 6 in the evening. The photography gallery is closed today, Thursday for maintenance. All other galleries remain open. You can find our cafe on the first floor beside the gift shop. Please ask at the information desk if you need a map.  What is the main purpose of the announcement?  which area is closed today.  Where is the cafe?",
+      "wordErrorRate": 0.0,
+      "expectedWords": 80,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 54.475,
+      "peak": 0.8243759870529175,
+      "rms": 0.07873044908046722,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Welcome to the City Museum. Here is some information for your visit. We are open from nine in the morning until six in the evening. The photography gallery is closed today, Thursday, for maintenance. All other galleries remain open. You can find our cafe on the first floor, beside the gift shop. Please ask at the information desk if you need a map.",
+          "transcript": " Welcome to the City Museum. Here is some information for your visit. We are open from 9 in the morning until 6 in the evening. The photography gallery is closed today, Thursday for maintenance. All other galleries remain open. You can find our cafe on the first floor beside the gift shop. Please ask at the information desk if you need a map.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What is the main purpose of the announcement?",
+          "transcript": " What is the main purpose of the announcement?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Which area is closed today?",
+          "transcript": " which area is closed today.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Where is the cafe?",
+          "transcript": " Where is the cafe?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p4-listening-v1-repair",
+      "sha256": "a231a306422a981282f08d23472161b208a6f4b96cba40e68aa074f114407a92",
+      "expected": "Hello, this is Jordan from Greenway Repairs. I am calling to confirm the appointment to repair your office air conditioner. Our technician will arrive this Friday between ten and eleven in the morning. Please arrange for someone to meet the technician at the rear entrance, because the front entrance is being painted. Call us by noon on Thursday to confirm that someone will be available. Thank you. Why is Jordan calling? On which day will the technician arrive? Where should someone meet the technician?",
+      "transcript": " Hello, this is Jordan from Greenway Repairs. I am calling to confirm the appointment to repair your office air conditioner. Our technician will arrive this Friday between 10 and 11 in the morning. Please arrange for someone to meet the technician at the rear entrance because the front entrance is being painted. Call us by noon on Thursday to confirm that someone will be available. Thank you.  Why is Jordan calling?  On which day will the technician arrive?  Where should someone meet the technician?",
+      "wordErrorRate": 0.0,
+      "expectedWords": 84,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 56.85,
+      "peak": 0.8211478590965271,
+      "rms": 0.0808977335691452,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Hello, this is Jordan from Greenway Repairs. I am calling to confirm the appointment to repair your office air conditioner. Our technician will arrive this Friday between ten and eleven in the morning. Please arrange for someone to meet the technician at the rear entrance, because the front entrance is being painted. Call us by noon on Thursday to confirm that someone will be available. Thank you.",
+          "transcript": " Hello, this is Jordan from Greenway Repairs. I am calling to confirm the appointment to repair your office air conditioner. Our technician will arrive this Friday between 10 and 11 in the morning. Please arrange for someone to meet the technician at the rear entrance because the front entrance is being painted. Call us by noon on Thursday to confirm that someone will be available. Thank you.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Why is Jordan calling?",
+          "transcript": " Why is Jordan calling?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "On which day will the technician arrive?",
+          "transcript": " On which day will the technician arrive?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Where should someone meet the technician?",
+          "transcript": " Where should someone meet the technician?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-exam-v1-registration",
+      "sha256": "57b608bf4be7356c096d8fea253a313a93cc0a80534a918271528ef4b10f1f3c",
+      "expected": "Hello. I registered for the sales workshop, but my confirmation email lists the online session. I wanted to attend in person. There are still seats in the in-person session on Tuesday. I can change your registration without a fee. Thank you. Should I bring a printed ticket? No. Just show the confirmation email on your phone at the reception desk. I will send an updated email now. Why is the caller contacting the workshop organizer? When is the in-person session? What should the caller show at reception?",
+      "transcript": " Hello, I registered for the sales workshop, but my confirmation email lists the online session. I wanted to attend in person.  There are still seats in the in-person session on Tuesday. I can change your registration without a fee.  Thank you. Should I bring a printed ticket?  No, just show the confirmation email on your phone at the reception desk. I will send an updated email now.  Why is the caller contacting the workshop organizer?  When is the in-person session?  What should the colors show at reception?",
+      "wordErrorRate": 0.0898876404494382,
+      "expectedWords": 89,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 61.6,
+      "peak": 0.8184517621994019,
+      "rms": 0.08129183948040009,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Hello. I registered for the sales workshop, but my confirmation email lists the online session. I wanted to attend in person.",
+          "transcript": " Hello, I registered for the sales workshop, but my confirmation email lists the online session. I wanted to attend in person.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "There are still seats in the in-person session on Tuesday. I can change your registration without a fee.",
+          "transcript": " There are still seats in the in-person session on Tuesday. I can change your registration without a fee.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Thank you. Should I bring a printed ticket?",
+          "transcript": " Thank you. Should I bring a printed ticket?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "No. Just show the confirmation email on your phone at the reception desk. I will send an updated email now.",
+          "transcript": " No, just show the confirmation email on your phone at the reception desk. I will send an updated email now.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Why is the caller contacting the workshop organizer?",
+          "transcript": " Why is the caller contacting the workshop organizer?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "When is the in-person session?",
+          "transcript": " When is the in-person session?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What should the caller show at reception?",
+          "transcript": " What should the colors show at reception?",
+          "similarity": 0.8571428571428571,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-exam-v1-restaurant",
+      "sha256": "1a685aedbea2f4778bb74f2a93bf594b96facd439cd068f7b2d955281944e0b6",
+      "expected": "I booked a table for six at seven tonight, but two colleagues cannot come. Could you change it to four people? Certainly. Your table will still be ready at seven. Would you prefer a table near the window? Yes, please. One guest cannot eat peanuts. Can you inform the kitchen? I will add that note to the reservation and speak to the chef before you arrive. How many people will attend the dinner? What will remain unchanged? What will the restaurant employee do?",
+      "transcript": " I booked a table for six at seven tonight, but two colleagues cannot come. Could you change it to four people?  Certainly, your table will still be ready at 7. Would you prefer a table near the window?  Yes, please. One guest cannot eat peanuts. Can you inform the kitchen?  I will add that note to the reservation and speak to the chef before you arrive.  How many people will attend the dinner?  What will remain unchanged?  What will the restaurant employee do?",
+      "wordErrorRate": 0.0,
+      "expectedWords": 83,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 58.525,
+      "peak": 0.8315445780754089,
+      "rms": 0.07888784259557724,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "I booked a table for six at seven tonight, but two colleagues cannot come. Could you change it to four people?",
+          "transcript": " I booked a table for six at seven tonight, but two colleagues cannot come. Could you change it to four people?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Certainly. Your table will still be ready at seven. Would you prefer a table near the window?",
+          "transcript": " Certainly, your table will still be ready at 7. Would you prefer a table near the window?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes, please. One guest cannot eat peanuts. Can you inform the kitchen?",
+          "transcript": " Yes, please. One guest cannot eat peanuts. Can you inform the kitchen?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I will add that note to the reservation and speak to the chef before you arrive.",
+          "transcript": " I will add that note to the reservation and speak to the chef before you arrive.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "How many people will attend the dinner?",
+          "transcript": " How many people will attend the dinner?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What will remain unchanged?",
+          "transcript": " What will remain unchanged?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What will the restaurant employee do?",
+          "transcript": " What will the restaurant employee do?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-exam-v1-printer",
+      "sha256": "88313cc14d0d2f832902c671288b3741a1544413e274e9eccc67f1e4a3a10a41",
+      "expected": "The printer on the second floor keeps leaving dark lines on our documents. We need clean copies for a client meeting tomorrow. A technician can come at two this afternoon. Until then, you can use the printer in the ground-floor copy room. That will help. Should I send the technician a sample of the problem? Yes, please email a scanned copy to our support address. What problem is reported? Where can staff print documents temporarily? What does the support employee request?",
+      "transcript": " The printer on the second floor keeps leaving dark lines on our documents. We need clean copies for a client meeting tomorrow.  A technician can come at 2 this afternoon. Until then, you can use the printer in the ground floor copy room.  That will help. Should I send the technician a sample of the problem?  Yes, please email a scanned copy to our support address.  What problem is reported?  Where can staff print documents temporarily?  What does the support employee request?",
+      "wordErrorRate": 0.012195121951219513,
+      "expectedWords": 82,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 59.75,
+      "peak": 0.8153761625289917,
+      "rms": 0.08358065783977509,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "The printer on the second floor keeps leaving dark lines on our documents. We need clean copies for a client meeting tomorrow.",
+          "transcript": " The printer on the second floor keeps leaving dark lines on our documents. We need clean copies for a client meeting tomorrow.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "A technician can come at two this afternoon. Until then, you can use the printer in the ground-floor copy room.",
+          "transcript": " A technician can come at 2 this afternoon. Until then, you can use the printer in the ground floor copy room.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "That will help. Should I send the technician a sample of the problem?",
+          "transcript": " That will help. Should I send the technician a sample of the problem?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes, please email a scanned copy to our support address.",
+          "transcript": " Yes, please email a scanned copy to our support address.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What problem is reported?",
+          "transcript": " What problem is reported?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Where can staff print documents temporarily?",
+          "transcript": " Where can staff print documents temporarily?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What does the support employee request?",
+          "transcript": " What does the support employee request?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-exam-v1-hotel",
+      "sha256": "e8bc2140b712233d26fc9d25a14a2963b48dcf06f5167b15b7129f3370f11540",
+      "expected": "I have a room reservation for tonight. My flight arrives at eleven in the morning. Could I check in then? Our regular check-in time is three. Early check-in depends on room availability, but we can store your luggage for free. That is useful. I have a meeting at one, so I will leave my bags and come back later. Of course. Please bring your booking confirmation and identification when you return to check in. What does the guest ask about? Which service is offered without a fee? What does the guest plan to do before the meeting?",
+      "transcript": " I have a room reservation for tonight. My flight arrives at 11 in the morning. Could I check in then?  Our regular check-in time is 3. Early check-in depends on room availability, but we can store your luggage for free.  That is useful. I have a meeting at one, so I will leave my bags and come back later.  Of course, please bring your booking confirmation and identification when you return to check-in.  What does the guest ask about?  which service is offered without a fee.  What does the guest plan to do before the meeting?",
+      "wordErrorRate": 0.13131313131313133,
+      "expectedWords": 99,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 63.375,
+      "peak": 0.8167583346366882,
+      "rms": 0.08305485546588898,
+      "flagged": true,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "I have a room reservation for tonight. My flight arrives at eleven in the morning. Could I check in then?",
+          "transcript": " I have a room reservation for tonight. My flight arrives at 11 in the morning. Could I check in then?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Our regular check-in time is three. Early check-in depends on room availability, but we can store your luggage for free.",
+          "transcript": " Our regular check-in time is 3. Early check-in depends on room availability, but we can store your luggage for free.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "That is useful. I have a meeting at one, so I will leave my bags and come back later.",
+          "transcript": " That is useful. I have a meeting at one, so I will leave my bags and come back later.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Of course. Please bring your booking confirmation and identification when you return to check in.",
+          "transcript": " Of course, please bring your booking confirmation and identification when you return to check-in.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What does the guest ask about?",
+          "transcript": " What does the guest ask about?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Which service is offered without a fee?",
+          "transcript": " which service is offered without a fee.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What does the guest plan to do before the meeting?",
+          "transcript": " What does the guest plan to do before the meeting?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-exam-v1-interview",
+      "sha256": "4121d50b504e20990b2d7c36a9b9c824487e557cd01043b917cd1d25eb64b331",
+      "expected": "We would like to interview you for the accounting position next Wednesday at ten. Are you available? I have another appointment that morning. Could we meet in the afternoon instead? Yes, two thirty is available. Please bring a copy of your resume and a list of two references. Thank you. I will be there at two thirty on Wednesday. Which position is being discussed? What time is agreed on for the interview? What is the applicant asked to bring?",
+      "transcript": " We would like to interview you for the accounting position next Wednesday at 10. Are you available?  I have another appointment that morning. Could we meet in the afternoon instead?  Yes, 230 is available. Please bring a copy of your resume and a list of two references.  Thank you. I will be there at 2.30 on Wednesday.  which position is being discussed.  What time is agreed on for the interview?  What is the applicant asked to bring?",
+      "wordErrorRate": 0.012987012987012988,
+      "expectedWords": 77,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 57.15,
+      "peak": 0.8111791014671326,
+      "rms": 0.07751863449811935,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "We would like to interview you for the accounting position next Wednesday at ten. Are you available?",
+          "transcript": " We would like to interview you for the accounting position next Wednesday at 10. Are you available?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I have another appointment that morning. Could we meet in the afternoon instead?",
+          "transcript": " I have another appointment that morning. Could we meet in the afternoon instead?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes, two thirty is available. Please bring a copy of your resume and a list of two references.",
+          "transcript": " Yes, 230 is available. Please bring a copy of your resume and a list of two references.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Thank you. I will be there at two thirty on Wednesday.",
+          "transcript": " Thank you. I will be there at 2.30 on Wednesday.",
+          "similarity": 0.9,
+          "flagged": false
+        },
+        {
+          "source": "Which position is being discussed?",
+          "transcript": " which position is being discussed.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What time is agreed on for the interview?",
+          "transcript": " What time is agreed on for the interview?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What is the applicant asked to bring?",
+          "transcript": " What is the applicant asked to bring?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-exam-v1-catering",
+      "sha256": "7a3de7c1e71b2d9a55d96f94d71c008cdcc92a5c5bcd4cce1c38cb931a32a452",
+      "expected": "We ordered forty lunches for Friday, but five more participants have registered. Can you increase the order? Yes. I will prepare forty-five lunches. Do you still want delivery at eleven thirty? Yes. Please use the east entrance, since the main hall will be crowded. Understood. I will send a revised invoice this afternoon. Why is the order being changed? How many lunches will be prepared? Which entrance should the delivery person use?",
+      "transcript": " We ordered 40 lunches for Friday, but five more participants have registered. Can you increase the order?  Yes, I will prepare 45 lunches. Do you still want delivery at 11.30?  Yes, please use the east entrance, since the main hall will be crowded.  Understood, I will send a revised invoice this afternoon.  Why is the order being changed?  How many lunches will be prepared?  which entrance should the delivery person use.",
+      "wordErrorRate": 0.014084507042253521,
+      "expectedWords": 71,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 58.5,
+      "peak": 0.8222780823707581,
+      "rms": 0.07982659339904785,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "We ordered forty lunches for Friday, but five more participants have registered. Can you increase the order?",
+          "transcript": " We ordered 40 lunches for Friday, but five more participants have registered. Can you increase the order?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes. I will prepare forty-five lunches. Do you still want delivery at eleven thirty?",
+          "transcript": " Yes, I will prepare 45 lunches. Do you still want delivery at 11.30?",
+          "similarity": 0.9230769230769231,
+          "flagged": false
+        },
+        {
+          "source": "Yes. Please use the east entrance, since the main hall will be crowded.",
+          "transcript": " Yes, please use the east entrance, since the main hall will be crowded.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Understood. I will send a revised invoice this afternoon.",
+          "transcript": " Understood, I will send a revised invoice this afternoon.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Why is the order being changed?",
+          "transcript": " Why is the order being changed?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "How many lunches will be prepared?",
+          "transcript": " How many lunches will be prepared?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Which entrance should the delivery person use?",
+          "transcript": " which entrance should the delivery person use.",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-exam-v1-software",
+      "sha256": "18d144e95d3fe0feb5290fa39f8d0940cecc962e4a41428c754d03dc3cd8a10f",
+      "expected": "I could not attend yesterday's training on the new inventory system. Is there another session? There is a repeat session on Thursday at nine. It will be online, and I can send you the link. Great. Do I need to install the software before the session? Yes. Follow the installation guide in the welcome email. Contact the help desk if you cannot sign in. What does the employee want to do? How will the repeat session be held? What should the employee do before training?",
+      "transcript": " I could not attend yesterday's training on the new inventory system. Is there another session?  There is a repeat session on Thursday at 9. It will be online and I can send you the link.  Great! Do I need to install the software before the session?  Yes, follow the installation guide in the welcome email. Contact the help desk if you cannot sign in.  What does the employee want to do?  How will the repeat session be held?  What should the employee do before training?",
+      "wordErrorRate": 0.023255813953488372,
+      "expectedWords": 86,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 58.375,
+      "peak": 0.8194152116775513,
+      "rms": 0.08020927011966705,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "I could not attend yesterday's training on the new inventory system. Is there another session?",
+          "transcript": " I could not attend yesterday's training on the new inventory system. Is there another session?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "There is a repeat session on Thursday at nine. It will be online, and I can send you the link.",
+          "transcript": " There is a repeat session on Thursday at 9. It will be online and I can send you the link.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Great. Do I need to install the software before the session?",
+          "transcript": " Great! Do I need to install the software before the session?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes. Follow the installation guide in the welcome email. Contact the help desk if you cannot sign in.",
+          "transcript": " Yes, follow the installation guide in the welcome email. Contact the help desk if you cannot sign in.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What does the employee want to do?",
+          "transcript": " What does the employee want to do?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "How will the repeat session be held?",
+          "transcript": " How will the repeat session be held?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What should the employee do before training?",
+          "transcript": " What should the employee do before training?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-exam-v1-bicycle-repair",
+      "sha256": "198d243d401713117a653376f4f7a2059ff2c3847fcb089446cc23b3ff280d57",
+      "expected": "I left my bicycle here yesterday. Have you finished replacing the brakes? Yes, the brakes are ready. However, I noticed a worn rear tire. Would you like us to replace it too? Yes, please. Can I collect the bicycle before the shop closes at six? Certainly. It will be ready at four. We will text you when the work is complete. Which repair has already been completed? What additional work does the customer approve? When will the bicycle be ready?",
+      "transcript": " I left my bicycle here yesterday. Have you finished replacing the brakes?  Yes, the brakes are ready. However, I noticed a worn rear tire. Would you like us to replace it too?  Yes, please. Can I collect the bicycle before the shop closes at six?  Certainly, it will be ready at four. We will text you when the work is complete.  which repair has already been completed.  What additional work does the customer approve?  When will the bicycle be ready?",
+      "wordErrorRate": 0.0,
+      "expectedWords": 80,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 58.1,
+      "peak": 0.8372153043746948,
+      "rms": 0.07862606644630432,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "I left my bicycle here yesterday. Have you finished replacing the brakes?",
+          "transcript": " I left my bicycle here yesterday. Have you finished replacing the brakes?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes, the brakes are ready. However, I noticed a worn rear tire. Would you like us to replace it too?",
+          "transcript": " Yes, the brakes are ready. However, I noticed a worn rear tire. Would you like us to replace it too?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes, please. Can I collect the bicycle before the shop closes at six?",
+          "transcript": " Yes, please. Can I collect the bicycle before the shop closes at six?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Certainly. It will be ready at four. We will text you when the work is complete.",
+          "transcript": " Certainly, it will be ready at four. We will text you when the work is complete.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Which repair has already been completed?",
+          "transcript": " which repair has already been completed.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What additional work does the customer approve?",
+          "transcript": " What additional work does the customer approve?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "When will the bicycle be ready?",
+          "transcript": " When will the bicycle be ready?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-exam-v1-supplies",
+      "sha256": "69c16dcc32e4c7711bced8033ee67aff39755ec1b3591671c1af6f9901aebe45",
+      "expected": "The order form says we requested blue folders, but the delivery contains green ones. I checked the order number. The supplier sent the wrong color. They can exchange them on Monday. That should work. We do not need the folders until the staff seminar on Wednesday. I will contact the supplier now and ask them to collect the green folders when they deliver the replacements. What is wrong with the delivery? When can the folders be exchanged? What will the employee ask the supplier to do?",
+      "transcript": " The order form says we requested blue folders, but the delivery contains green ones.  I checked the order number. The supplier sent the wrong color. They can exchange them on Monday.  That should work. We do not need the folders until the staff seminar on Wednesday.  I will contact the supplier now and ask them to collect the green folders when they deliver the replacements.  What is wrong with the delivery?  When can the folders be exchanged?  What will the employee ask the supplier to do?",
+      "wordErrorRate": 0.0,
+      "expectedWords": 86,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 61.6,
+      "peak": 0.8180657625198364,
+      "rms": 0.08356345444917679,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "The order form says we requested blue folders, but the delivery contains green ones.",
+          "transcript": " The order form says we requested blue folders, but the delivery contains green ones.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I checked the order number. The supplier sent the wrong color. They can exchange them on Monday.",
+          "transcript": " I checked the order number. The supplier sent the wrong color. They can exchange them on Monday.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "That should work. We do not need the folders until the staff seminar on Wednesday.",
+          "transcript": " That should work. We do not need the folders until the staff seminar on Wednesday.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I will contact the supplier now and ask them to collect the green folders when they deliver the replacements.",
+          "transcript": " I will contact the supplier now and ask them to collect the green folders when they deliver the replacements.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What is wrong with the delivery?",
+          "transcript": " What is wrong with the delivery?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "When can the folders be exchanged?",
+          "transcript": " When can the folders be exchanged?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What will the employee ask the supplier to do?",
+          "transcript": " What will the employee ask the supplier to do?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-exam-v1-travel",
+      "sha256": "5772a8614b72641b459ccbe5c8c2049582283a90ebca84210ca025d5e3f13019",
+      "expected": "Our flight to the trade fair has been moved to eight in the morning. We should leave the office earlier. I will book a taxi for five thirty. Shall I ask the hotel to keep our rooms despite our earlier arrival? Our rooms have been reserved since last night, so they should already be available. Please email our new arrival time to the hotel. I will do that after I reserve the taxi. What has changed? What time will the taxi be booked for? What will the hotel be informed about?",
+      "transcript": " Our flight to the trade fair has been moved to 8 in the morning. We should leave the office earlier.  I will book a taxi for $5.30. Shall I ask the hotel to keep our rooms despite our earlier arrival?  Our rooms have been reserved since last night, so they should already be available. Please email our new arrival time to the hotel.  I will do that after I reserve the taxi.  What has changed?  What time will the taxi be booked for?  What will the hotel be informed about?",
+      "wordErrorRate": 0.0,
+      "expectedWords": 90,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 60.25,
+      "peak": 0.812439501285553,
+      "rms": 0.07742371410131454,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Our flight to the trade fair has been moved to eight in the morning. We should leave the office earlier.",
+          "transcript": " Our flight to the trade fair has been moved to 8 in the morning. We should leave the office earlier.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I will book a taxi for five thirty. Shall I ask the hotel to keep our rooms despite our earlier arrival?",
+          "transcript": " I will book a taxi for $5.30. Shall I ask the hotel to keep our rooms despite our earlier arrival?",
+          "similarity": 0.95,
+          "flagged": false
+        },
+        {
+          "source": "Our rooms have been reserved since last night, so they should already be available. Please email our new arrival time to the hotel.",
+          "transcript": " Our rooms have been reserved since last night, so they should already be available. Please email our new arrival time to the hotel.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I will do that after I reserve the taxi.",
+          "transcript": " I will do that after I reserve the taxi.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What has changed?",
+          "transcript": " What has changed?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What time will the taxi be booked for?",
+          "transcript": " What time will the taxi be booked for?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What will the hotel be informed about?",
+          "transcript": " What will the hotel be informed about?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p3-exam-v1-library",
+      "sha256": "dc404066dc341f2c8c4d364c1822dad0c1b3976f54a18df023ad6925c83cca63",
+      "expected": "I borrowed the marketing handbook last week. Can I renew it for another seven days? I am sorry, but another member has reserved that copy. You need to return it by Friday. Is there an electronic version I can read after I return the book? Yes. Sign in to the member portal and open the digital resources page. You can access it there. Why can the handbook not be renewed? When must the printed book be returned? Where can the member find the electronic version?",
+      "transcript": " I borrowed the marketing handbook last week. Can I renew it for another seven days?  I am sorry, but another member has reserved that copy. You need to return it by Friday.  Is there an electronic version I can read after I return the book?  Yes, sign in to the Member Portal and open the Digital Resources page. You can access it there.  Why can the handbook not be renewed?  When must the printed book be returned?  Where can the member find the electronic version?",
+      "wordErrorRate": 0.0,
+      "expectedWords": 85,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 59.9,
+      "peak": 0.8195825815200806,
+      "rms": 0.08088701218366623,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "I borrowed the marketing handbook last week. Can I renew it for another seven days?",
+          "transcript": " I borrowed the marketing handbook last week. Can I renew it for another seven days?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "I am sorry, but another member has reserved that copy. You need to return it by Friday.",
+          "transcript": " I am sorry, but another member has reserved that copy. You need to return it by Friday.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Is there an electronic version I can read after I return the book?",
+          "transcript": " Is there an electronic version I can read after I return the book?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Yes. Sign in to the member portal and open the digital resources page. You can access it there.",
+          "transcript": " Yes, sign in to the Member Portal and open the Digital Resources page. You can access it there.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Why can the handbook not be renewed?",
+          "transcript": " Why can the handbook not be renewed?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "When must the printed book be returned?",
+          "transcript": " When must the printed book be returned?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Where can the member find the electronic version?",
+          "transcript": " Where can the member find the electronic version?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p4-exam-v1-shuttle",
+      "sha256": "fd208e46ebe50db84c213c1715db9a93ee25d9e47ceba35bc2f566f96fc931bd",
+      "expected": "Attention, passengers traveling to the airport. The next shuttle will leave at ten fifteen. Please check the departure board for your bay. Bay two, our usual departure point, is closed for repairs today. Please purchase your ticket at the kiosk before boarding. Large suitcases must be placed in the luggage compartment. The journey will take approximately forty minutes. Look at the departure board. Which bay should airport passengers use? What should passengers do before boarding? How long is the journey expected to take?",
+      "transcript": " Attention, passengers traveling to the airport. The next shuttle will leave at 10.15. Please check the departure board for your bay. Bay 2, our usual departure point, is closed for repairs today. Please purchase your ticket at the kiosk before boarding. Large suitcases must be placed in the luggage compartment. The journey will take approximately 40 minutes.  Look at the departure board, which bay should airport passengers use.  What should passengers do before boarding?  How long is the journey expected to take?",
+      "wordErrorRate": 0.0,
+      "expectedWords": 72,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 59.075,
+      "peak": 0.8158984780311584,
+      "rms": 0.07644736766815186,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Attention, passengers traveling to the airport. The next shuttle will leave at ten fifteen. Please check the departure board for your bay. Bay two, our usual departure point, is closed for repairs today. Please purchase your ticket at the kiosk before boarding. Large suitcases must be placed in the luggage compartment. The journey will take approximately forty minutes.",
+          "transcript": " Attention, passengers traveling to the airport. The next shuttle will leave at 10.15. Please check the departure board for your bay. Bay 2, our usual departure point, is closed for repairs today. Please purchase your ticket at the kiosk before boarding. Large suitcases must be placed in the luggage compartment. The journey will take approximately 40 minutes.",
+          "similarity": 0.9824561403508771,
+          "flagged": false
+        },
+        {
+          "source": "Look at the departure board. Which bay should airport passengers use?",
+          "transcript": " Look at the departure board, which bay should airport passengers use.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What should passengers do before boarding?",
+          "transcript": " What should passengers do before boarding?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "How long is the journey expected to take?",
+          "transcript": " How long is the journey expected to take?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p4-exam-v1-opening",
+      "sha256": "4067fb0bd47be4d8dce7e919681a732ae4e2549de6b52ebc02eed92732908932",
+      "expected": "This is a message for customers of Eastbank Hardware. Starting next Monday, our weekday opening time will change from eight to seven thirty. We are making this change to serve customers who need supplies before work. Our closing time remains six, and weekend hours will not change. The tool rental desk will continue to open at nine. What is the main purpose of the message? Why is the change being made? What will stay the same?",
+      "transcript": " This is a message for customers of eSpank hardware. Starting next Monday, our weekday opening time will change from 8 to 7.30. We are making this change to serve customers who need supplies before work. Our closing time remains 6, and weekend hours will not change. The tool rental desk will continue to open at 9.  What is the main purpose of the message?  Why is the change being made?  What will stay the same?",
+      "wordErrorRate": 0.04,
+      "expectedWords": 75,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 53.975,
+      "peak": 0.8162164688110352,
+      "rms": 0.0788925290107727,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "This is a message for customers of Eastbank Hardware. Starting next Monday, our weekday opening time will change from eight to seven thirty. We are making this change to serve customers who need supplies before work. Our closing time remains six, and weekend hours will not change. The tool rental desk will continue to open at nine.",
+          "transcript": " This is a message for customers of eSpank hardware. Starting next Monday, our weekday opening time will change from 8 to 7.30. We are making this change to serve customers who need supplies before work. Our closing time remains 6, and weekend hours will not change. The tool rental desk will continue to open at 9.",
+          "similarity": 0.9642857142857143,
+          "flagged": false
+        },
+        {
+          "source": "What is the main purpose of the message?",
+          "transcript": " What is the main purpose of the message?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Why is the change being made?",
+          "transcript": " Why is the change being made?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What will stay the same?",
+          "transcript": " What will stay the same?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p4-exam-v1-safety",
+      "sha256": "e38d370921bbf9bc8e38b3e832aa5e9e709b43b8b91daa130e7cb127a3d78a17",
+      "expected": "Before we begin the warehouse tour, please put on the yellow safety vest provided at reception. Keep your vest on throughout the tour. Photography is permitted in the packing area, but it is not allowed near the loading dock. Stay with your guide at all times, because forklifts operate along several routes. We will finish the tour in the training room. What should visitors put on? Where is photography prohibited? Why must visitors stay with the guide?",
+      "transcript": " Before we begin the warehouse tour, please put on the yellow safety vest provided at reception. Keep your vest on throughout the tour. Photography is permitted in the packing area, but it is not allowed near the loading dock. Stay with your guide at all times because forklifts operate along several routes. We will finish the tour in the training room.  What should visitors put on?  Where is photography prohibited?  Why must visitors stay with the guide?",
+      "wordErrorRate": 0.11688311688311688,
+      "expectedWords": 77,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 54.025,
+      "peak": 0.8132896423339844,
+      "rms": 0.07866334915161133,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Before we begin the warehouse tour, please put on the yellow safety vest provided at reception. Keep your vest on throughout the tour. Photography is permitted in the packing area, but it is not allowed near the loading dock. Stay with your guide at all times, because forklifts operate along several routes. We will finish the tour in the training room.",
+          "transcript": " Before we begin the warehouse tour, please put on the yellow safety vest provided at reception. Keep your vest on throughout the tour. Photography is permitted in the packing area, but it is not allowed near the loading dock. Stay with your guide at all times because forklifts operate along several routes. We will finish the tour in the training room.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What should visitors put on?",
+          "transcript": " What should visitors put on?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Where is photography prohibited?",
+          "transcript": " Where is photography prohibited?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Why must visitors stay with the guide?",
+          "transcript": " Why must visitors stay with the guide?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p4-exam-v1-order",
+      "sha256": "e5d0965208e154d1fe2b79d6b225f8e2742a053f6d6447bf080d33cb1be14d8f",
+      "expected": "Hello, this is Clara from Oak Street Books. The business dictionaries you ordered are ready for collection. We will hold them at the front counter until we close at five on Saturday. Please bring your order number when you collect them. We close at five on Saturday. If you prefer delivery, call us by Friday afternoon so that we can arrange it. Delivery costs six dollars. Why is Clara calling? What should the customer bring? What should the customer do to request delivery?",
+      "transcript": " Hello, this is Clara from Oak Street Books. The business dictionaries you ordered are ready for collection. We will hold them at the front counter until we close at 5 on Saturday. Please bring your order number when you collect them. We close at 5 on Saturday. If you prefer delivery, call us by Friday afternoon so that we can arrange it. Delivery costs $6.  Why is Clara calling?  What should the customer bring?  What should the customer do to request delivery?",
+      "wordErrorRate": 0.0,
+      "expectedWords": 82,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 55.825,
+      "peak": 0.81238853931427,
+      "rms": 0.08178568631410599,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Hello, this is Clara from Oak Street Books. The business dictionaries you ordered are ready for collection. We will hold them at the front counter until we close at five on Saturday. Please bring your order number when you collect them. We close at five on Saturday. If you prefer delivery, call us by Friday afternoon so that we can arrange it. Delivery costs six dollars.",
+          "transcript": " Hello, this is Clara from Oak Street Books. The business dictionaries you ordered are ready for collection. We will hold them at the front counter until we close at 5 on Saturday. Please bring your order number when you collect them. We close at 5 on Saturday. If you prefer delivery, call us by Friday afternoon so that we can arrange it. Delivery costs $6.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Why is Clara calling?",
+          "transcript": " Why is Clara calling?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What should the customer bring?",
+          "transcript": " What should the customer bring?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What should the customer do to request delivery?",
+          "transcript": " What should the customer do to request delivery?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p4-exam-v1-presentation",
+      "sha256": "7ea1e02bebf148797cc50646de4cdca5ddb11c4fe563fab17b9f01954601f3cd",
+      "expected": "Our next speaker is Dr. Elena Park, a transportation researcher. She will discuss how companies can reduce delivery delays by using better route planning. Her presentation will last thirty minutes, followed by a ten-minute question period. Please keep your questions until the end. After the session, printed copies of the presentation will be available at the information desk, not at the exit. What is the presentation about? When should attendees ask questions? Where can attendees obtain printed copies?",
+      "transcript": " Our next speaker is Dr. Alina Park, a transportation researcher. She will discuss how companies can reduce delivery delays by using better route planning. Her presentation will last 30 minutes, followed by a 10-minute question period. Please keep your questions until the end. After the session, printed copies of the presentation will be available at the information desk, not at the exit.  What is the presentation about?  When should attendees ask questions?  Where can attendees obtain printed copies?",
+      "wordErrorRate": 0.012658227848101266,
+      "expectedWords": 79,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 57.85,
+      "peak": 0.8173168897628784,
+      "rms": 0.08114390075206757,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Our next speaker is Dr. Elena Park, a transportation researcher. She will discuss how companies can reduce delivery delays by using better route planning. Her presentation will last thirty minutes, followed by a ten-minute question period. Please keep your questions until the end. After the session, printed copies of the presentation will be available at the information desk, not at the exit.",
+          "transcript": " Our next speaker is Dr. Alina Park, a transportation researcher. She will discuss how companies can reduce delivery delays by using better route planning. Her presentation will last 30 minutes, followed by a 10-minute question period. Please keep your questions until the end. After the session, printed copies of the presentation will be available at the information desk, not at the exit.",
+          "similarity": 0.9841269841269841,
+          "flagged": false
+        },
+        {
+          "source": "What is the presentation about?",
+          "transcript": " What is the presentation about?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "When should attendees ask questions?",
+          "transcript": " When should attendees ask questions?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Where can attendees obtain printed copies?",
+          "transcript": " Where can attendees obtain printed copies?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p4-exam-v1-maintenance",
+      "sha256": "626a9e275667fe2f5bf11f76dd7a5d3b765957fde63f74734a9f3ed059d144c4",
+      "expected": "Attention, tenants of Riverside Offices. Water service will be temporarily interrupted this Wednesday from two to four in the afternoon while a pipe is replaced. The elevators and electricity will continue to operate normally. Please avoid using the kitchen taps during this period. Drinking water will be available in bottles at reception. If work finishes early, we will send an email to all tenants. Which service will be interrupted? How long is the interruption scheduled to last? Where can tenants obtain drinking water?",
+      "transcript": " Attention, tenants of Riverside offices. Water service will be temporarily interrupted this Wednesday from 2 to 4 in the afternoon, while a pipe is replaced. The elevators and electricity will continue to operate normally. Please avoid using the kitchen taps during this period. Drinking water will be available in bottles at reception. If work finishes early, we will send an email to all tenants.  which service will be interrupted.  How long is the interruption scheduled to last?  where contentants obtain drinking water.",
+      "wordErrorRate": 0.04819277108433735,
+      "expectedWords": 83,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 58.975,
+      "peak": 0.8058680891990662,
+      "rms": 0.08648645132780075,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "Attention, tenants of Riverside Offices. Water service will be temporarily interrupted this Wednesday from two to four in the afternoon while a pipe is replaced. The elevators and electricity will continue to operate normally. Please avoid using the kitchen taps during this period. Drinking water will be available in bottles at reception. If work finishes early, we will send an email to all tenants.",
+          "transcript": " Attention, tenants of Riverside offices. Water service will be temporarily interrupted this Wednesday from 2 to 4 in the afternoon, while a pipe is replaced. The elevators and electricity will continue to operate normally. Please avoid using the kitchen taps during this period. Drinking water will be available in bottles at reception. If work finishes early, we will send an email to all tenants.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Which service will be interrupted?",
+          "transcript": " which service will be interrupted.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "How long is the interruption scheduled to last?",
+          "transcript": " How long is the interruption scheduled to last?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Where can tenants obtain drinking water?",
+          "transcript": " where contentants obtain drinking water.",
+          "similarity": 0.7272727272727273,
+          "flagged": true
+        }
+      ],
+      "segmentFlags": 1
+    },
+    {
+      "id": "p4-exam-v1-recruitment",
+      "sha256": "aac65dddc3fcb11e127ddbe8eda48f9b341d8343fa803fd1dcd01bd70ac68a4d",
+      "expected": "The town business fair needs volunteers next Saturday. Volunteers will welcome visitors and help exhibitors find their assigned booths. No sales experience is required. All volunteers must attend a short briefing at eight thirty on the morning of the fair. Lunch will be provided, but you should bring a reusable water bottle. To register, complete the form on the town website by Thursday. What will volunteers help exhibitors do? What must all volunteers attend? How should people register?",
+      "transcript": " The town business fair needs volunteers next Saturday. Volunteers will welcome visitors and help exhibitors find their assigned booths. No sales experience is required. All volunteers must attend a short briefing at 8.30 on the morning of the fair. Lunch will be provided, but you should bring a reusable water bottle. To register, complete the form on the town website by Thursday.  What will volunteers help exhibitors do?  What must all volunteers attend?  How should people register?",
+      "wordErrorRate": 0.012987012987012988,
+      "expectedWords": 77,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 58.0,
+      "peak": 0.8144065737724304,
+      "rms": 0.0804879367351532,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "The town business fair needs volunteers next Saturday. Volunteers will welcome visitors and help exhibitors find their assigned booths. No sales experience is required. All volunteers must attend a short briefing at eight thirty on the morning of the fair. Lunch will be provided, but you should bring a reusable water bottle. To register, complete the form on the town website by Thursday.",
+          "transcript": " The town business fair needs volunteers next Saturday. Volunteers will welcome visitors and help exhibitors find their assigned booths. No sales experience is required. All volunteers must attend a short briefing at 8.30 on the morning of the fair. Lunch will be provided, but you should bring a reusable water bottle. To register, complete the form on the town website by Thursday.",
+          "similarity": 0.9838709677419355,
+          "flagged": false
+        },
+        {
+          "source": "What will volunteers help exhibitors do?",
+          "transcript": " What will volunteers help exhibitors do?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What must all volunteers attend?",
+          "transcript": " What must all volunteers attend?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "How should people register?",
+          "transcript": " How should people register?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    },
+    {
+      "id": "p4-exam-v1-lost-property",
+      "sha256": "7f564088056de82e276d53c5970218540f742e54f20ca56599645098cafad6a8",
+      "expected": "May I have your attention, please? A black laptop bag has been found in the second-floor conference room. It is now at the security desk near the main entrance. To claim the bag, please describe what is inside and show identification. The security desk is staffed until eight this evening. After that time, call the building office tomorrow morning to arrange collection. Where was the bag found? What must the owner do to claim the bag? Until what time is the security desk staffed tonight?",
+      "transcript": " May I have your attention, please? A black laptop bag has been found in the second floor conference room. It is now at the security desk near the main entrance. To claim the bag, please describe what is inside and show identification. The security desk is staffed until 8 this evening. After that time, call the building office tomorrow morning to arrange collection.  Where was the bag found?  What must the owner do to claim the bag?  Until what time is the security desk staffed tonight?",
+      "wordErrorRate": 0.0,
+      "expectedWords": 86,
+      "sampleRate": "24000",
+      "channels": 1,
+      "duration": 57.325,
+      "peak": 0.8001851439476013,
+      "rms": 0.08133575320243835,
+      "flagged": false,
+      "disposition": "segment-ASR-reviewed",
+      "segments": [
+        {
+          "source": "May I have your attention, please? A black laptop bag has been found in the second-floor conference room. It is now at the security desk near the main entrance. To claim the bag, please describe what is inside and show identification. The security desk is staffed until eight this evening. After that time, call the building office tomorrow morning to arrange collection.",
+          "transcript": " May I have your attention, please? A black laptop bag has been found in the second floor conference room. It is now at the security desk near the main entrance. To claim the bag, please describe what is inside and show identification. The security desk is staffed until 8 this evening. After that time, call the building office tomorrow morning to arrange collection.",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Where was the bag found?",
+          "transcript": " Where was the bag found?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "What must the owner do to claim the bag?",
+          "transcript": " What must the owner do to claim the bag?",
+          "similarity": 1.0,
+          "flagged": false
+        },
+        {
+          "source": "Until what time is the security desk staffed tonight?",
+          "transcript": " Until what time is the security desk staffed tonight?",
+          "similarity": 1.0,
+          "flagged": false
+        }
+      ],
+      "segmentFlags": 0
+    }
+  ],
+  "passed": false,
+  "flagged": [
+    "p2-v2-indirect-1",
+    "p2-v2-indirect-6",
+    "p4-exam-v1-maintenance"
+  ],
+  "humanListeningCertified": false,
+  "reviewRequired": true
+}

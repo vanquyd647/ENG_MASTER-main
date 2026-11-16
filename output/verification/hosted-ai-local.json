@@ -1,0 +1,477 @@
+{
+  "checkedAt": "2026-10-15T11:54:06.170Z",
+  "stage": "local",
+  "deployment": "http://localhost:3113",
+  "project": "engai-2c7fe",
+  "authMethod": "temporary custom-token account",
+  "checks": [
+    {
+      "endpoint": "explain",
+      "status": 200,
+      "characters": 732,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "endpoint": "simplify",
+      "status": 200,
+      "characters": 467,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "endpoint": "examples",
+      "status": 200,
+      "characters": 879,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "endpoint": "compare",
+      "status": 200,
+      "characters": 757,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "endpoint": "practice",
+      "status": 200,
+      "characters": 554,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "endpoint": "personal-source",
+      "status": 200
+    },
+    {
+      "endpoint": "quiz",
+      "status": 200,
+      "validatedQuestions": 2,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "endpoint": "mistake-review",
+      "status": 200,
+      "characters": 2371
+    },
+    {
+      "endpoint": "approved-meaning-mismatch",
+      "status": 400,
+      "code": "catalog_mismatch"
+    },
+    {
+      "endpoint": "quiz-invalid",
+      "status": 400,
+      "code": "invalid_words"
+    },
+    {
+      "endpoint": "avatar-flag",
+      "status": 503,
+      "code": "avatar_disabled"
+    },
+    {
+      "endpoint": "daily-quota",
+      "status": 429,
+      "code": "daily_quota"
+    }
+  ],
+  "cleanup": {
+    "auth": true,
+    "quota": true
+  },
+  "samples": {
+    "explain": {
+      "version": "toeic-vi-v3",
+      "action": "explain",
+      "source": {
+        "kind": "catalog",
+        "wordId": "rec-01",
+        "word": "opening",
+        "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+        "pos": "noun",
+        "topic": "Recruitment",
+        "example": "There is an opening in the sales department.",
+        "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+      },
+      "lesson": {
+        "summary": "Danh từ opening trong tuyển dụng chỉ vị trí công việc còn trống hoặc cơ hội việc làm mới tại doanh nghiệp.",
+        "usage": "Dùng để thông báo hoặc tìm kiếm cơ hội tuyển dụng nhân sự cho một bộ phận cụ thể trong công ty.",
+        "caution": "Tránh nhầm lẫn với nghĩa sự khai trương cửa hàng; trong bối cảnh công sở TOEIC, từ này chủ yếu chỉ vị trí tuyển dụng.",
+        "collocations": [
+          {
+            "phrase": "job opening",
+            "meaning": "vị trí việc làm trống"
+          },
+          {
+            "phrase": "career opening",
+            "meaning": "cơ hội nghề nghiệp"
+          },
+          {
+            "phrase": "opening in the sales department",
+            "meaning": "vị trí trống trong phòng kinh doanh"
+          }
+        ],
+        "examples": [
+          {
+            "english": "We have an opening for an experienced accountant in our finance team.",
+            "vietnamese": "Chúng tôi có một vị trí trống dành cho kế toán viên có kinh nghiệm trong đội ngũ tài chính."
+          }
+        ],
+        "questions": []
+      }
+    },
+    "simplify": {
+      "version": "toeic-vi-v3",
+      "action": "simplify",
+      "source": {
+        "kind": "catalog",
+        "wordId": "rec-01",
+        "word": "opening",
+        "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+        "pos": "noun",
+        "topic": "Recruitment",
+        "example": "There is an opening in the sales department.",
+        "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+      },
+      "lesson": {
+        "summary": "Opening là danh từ chỉ vị trí hoặc chỗ làm việc còn trống trong công ty.",
+        "usage": "Dùng trong bối cảnh tuyển dụng khi thông báo về một cơ hội việc làm mới hoặc vị trí chưa có người làm.",
+        "caution": "Chỉ dùng trong ngữ cảnh công việc và tuyển dụng theo câu ví dụ trên.",
+        "collocations": [
+          {
+            "phrase": "job opening",
+            "meaning": "vị trí việc làm trống"
+          }
+        ],
+        "examples": [
+          {
+            "english": "There is an opening in the sales department.",
+            "vietnamese": "Phòng bán hàng có một vị trí còn trống."
+          }
+        ],
+        "questions": []
+      }
+    },
+    "examples": {
+      "version": "toeic-vi-v3",
+      "action": "examples",
+      "source": {
+        "kind": "catalog",
+        "wordId": "rec-01",
+        "word": "opening",
+        "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+        "pos": "noun",
+        "topic": "Recruitment",
+        "example": "There is an opening in the sales department.",
+        "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+      },
+      "lesson": {
+        "summary": "Opening là danh từ chỉ vị trí công việc còn trống trong doanh nghiệp, thường xuất hiện trong tuyển dụng và thông báo nội bộ.",
+        "usage": "Dùng từ này khi cần thông báo hoặc ứng tuyển vào một chỗ làm việc còn thiếu người trong phòng ban.",
+        "caution": "Chỉ dùng opening với nghĩa vị trí công việc trống trong ngữ cảnh tuyển dụng này, không dùng cho sự khai trương cửa hàng.",
+        "collocations": [
+          {
+            "phrase": "job opening",
+            "meaning": "vị trí việc làm trống"
+          }
+        ],
+        "examples": [
+          {
+            "english": "Our team has an opening for a new project manager.",
+            "vietnamese": "Đội ngũ của chúng tôi có một vị trí trống cho quản lý dự án mới."
+          },
+          {
+            "english": "Please send your resume if you want to apply for the opening.",
+            "vietnamese": "Vui lòng gửi sơ yếu lý lịch nếu bạn muốn ứng tuyển vào vị trí trống."
+          },
+          {
+            "english": "The human resources department announced a sudden opening in finance.",
+            "vietnamese": "Phòng nhân sự đã thông báo về một vị trí trống bất ngờ ở bộ phận tài chính."
+          }
+        ],
+        "questions": []
+      }
+    },
+    "compare": {
+      "version": "toeic-vi-v3",
+      "action": "compare",
+      "source": {
+        "kind": "catalog",
+        "wordId": "pdf-toeic-0145",
+        "word": "calculation",
+        "meaning": "sự tính toán, phép tính",
+        "pos": "noun",
+        "topic": "TOEIC bổ sung (PDF)",
+        "example": "We discussed the calculation at the meeting.",
+        "exampleTranslation": "Chúng tôi thảo luận về sự tính toán tại cuộc họp."
+      },
+      "comparison": {
+        "kind": "catalog",
+        "wordId": "ttp-30",
+        "word": "correspondence",
+        "meaning": "thư từ, quan hệ thư từ",
+        "pos": "noun",
+        "topic": "Trading Transport",
+        "example": "Please read the correspondence carefully.",
+        "exampleTranslation": "Hãy đọc thư từ cẩn thận."
+      },
+      "lesson": {
+        "summary": "Calculation chỉ sự tính toán hoặc con số, trong khi correspondence chỉ thư từ hoặc tài liệu trao đổi trong công việc.",
+        "usage": "Calculation dùng danh từ đếm được/không đếm được, thường theo sau động từ make hoặc do. Correspondence dùng danh từ không đếm được chỉ hệ thống thư tín hoặc tài liệu chung.",
+        "caution": "Hai từ có nghĩa và ngữ cảnh hoàn toàn khác nhau, tuyệt đối không thể thay thế cho nhau trong bất kỳ trường hợp nào.",
+        "collocations": [
+          {
+            "phrase": "make a calculation",
+            "meaning": "thực hiện một phép tính"
+          },
+          {
+            "phrase": "handle correspondence",
+            "meaning": "xử lý thư từ"
+          }
+        ],
+        "examples": [
+          {
+            "english": "We discussed the calculation at the meeting.",
+            "vietnamese": "Chúng tôi thảo luận về sự tính toán tại cuộc họp."
+          },
+          {
+            "english": "Please read the correspondence carefully.",
+            "vietnamese": "Hãy đọc thư từ cẩn thận."
+          }
+        ],
+        "questions": []
+      }
+    },
+    "practice": {
+      "version": "toeic-vi-v3",
+      "action": "practice",
+      "source": {
+        "kind": "catalog",
+        "wordId": "pdf-toeic-0145",
+        "word": "calculation",
+        "meaning": "sự tính toán, phép tính",
+        "pos": "noun",
+        "topic": "TOEIC bổ sung (PDF)",
+        "example": "We discussed the calculation at the meeting.",
+        "exampleTranslation": "Chúng tôi thảo luận về sự tính toán tại cuộc họp."
+      },
+      "lesson": {
+        "summary": "Từ calculation là danh từ mang nghĩa sự tính toán hoặc phép tính trong môi trường công việc.",
+        "usage": "Thường đứng sau động từ hoặc giới từ để chỉ hành động tính toán các con số tài chính hoặc dữ liệu dự án.",
+        "caution": "Cần phân biệt với động từ calculate; trong bối cảnh công sở, calculation tập trung vào kết quả của quá trình tính toán.",
+        "collocations": [
+          {
+            "phrase": "cost calculation",
+            "meaning": "sự tính toán chi phí"
+          }
+        ],
+        "examples": [
+          {
+            "english": "We discussed the calculation at the meeting.",
+            "vietnamese": "Chúng tôi thảo luận về sự tính toán tại cuộc họp."
+          }
+        ],
+        "questions": [
+          {
+            "wordId": "pdf-toeic-0145",
+            "type": "mcq",
+            "questionText": "We discussed the _____ at the meeting.",
+            "options": [
+              "calculate",
+              "calculation",
+              "calculated",
+              "calculating"
+            ],
+            "answer": "calculation",
+            "hint": "Chọn danh từ phù hợp đi sau mạo từ để chỉ sự việc được thảo luận trong cuộc họp.",
+            "translation": "Chúng tôi thảo luận về sự tính toán tại cuộc họp.",
+            "explanation": "Sau mạo từ và động từ discussed cần một danh từ làm tân ngữ, do đó calculation là đáp án chính xác."
+          }
+        ]
+      }
+    },
+    "personal": {
+      "version": "toeic-vi-v3",
+      "action": "explain",
+      "source": {
+        "kind": "user",
+        "wordId": "personal-qa-checklist",
+        "word": "onboarding checklist",
+        "meaning": "danh sách việc cần làm khi tiếp nhận nhân viên mới",
+        "pos": "",
+        "topic": "",
+        "example": "",
+        "exampleTranslation": ""
+      },
+      "lesson": {
+        "summary": "Onboarding checklist là danh sách các nhiệm vụ và tài liệu cần thiết để hướng dẫn và tích hợp nhân viên mới vào tổ chức.",
+        "usage": "Cụm từ này thường xuất hiện trong ngữ cảnh nhân sự khi quản lý quy trình hội nhập và đào tạo ban đầu cho nhân sự mới.",
+        "caution": "Cần lưu ý không nhầm lẫn cụm từ này với các danh sách kiểm tra công việc hàng ngày thông thường vì onboarding checklist chỉ áp dụng riêng cho quá trình hội nhập nhân sự mới.",
+        "collocations": [
+          {
+            "phrase": "complete an onboarding checklist",
+            "meaning": "hoàn thành danh sách việc cần làm khi tiếp nhận nhân viên mới"
+          },
+          {
+            "phrase": "follow an onboarding checklist",
+            "meaning": "tuân theo danh sách việc cần làm khi tiếp nhận nhân viên mới"
+          },
+          {
+            "phrase": "update the onboarding checklist",
+            "meaning": "cập nhật danh sách việc cần làm khi tiếp nhận nhân viên mới"
+          }
+        ],
+        "examples": [
+          {
+            "english": "The HR manager shared the onboarding checklist with the new team member on day one.",
+            "vietnamese": "Trưởng phòng nhân sự đã chia sẻ danh sách việc cần làm khi tiếp nhận nhân viên mới với thành viên mới vào ngày đầu tiên."
+          }
+        ],
+        "questions": []
+      }
+    },
+    "quiz": [
+      {
+        "wordId": "pdf-toeic-0043",
+        "type": "mcq",
+        "questionText": "Please read the _____ carefully before signing it.",
+        "options": [
+          "agreement",
+          "dispute",
+          "formula",
+          "strategy"
+        ],
+        "answer": "agreement",
+        "hint": "Chọn danh từ chỉ văn bản thỏa thuận pháp lý.",
+        "translation": "Hãy đọc hợp đồng cẩn thận trước khi ký.",
+        "explanation": "Agreement là danh từ phù hợp nghĩa hợp đồng trong ngữ cảnh công việc."
+      },
+      {
+        "wordId": "tra-19",
+        "type": "fill",
+        "questionText": "The accounting department sent the _____ to the client.",
+        "options": [],
+        "answer": "invoice",
+        "hint": "Điền danh từ chỉ chứng từ yêu cầu thanh toán tiền hàng.",
+        "translation": "Phòng kế toán đã gửi hóa đơn cho khách hàng.",
+        "explanation": "Invoice là danh từ chính xác cho ngữ cảnh thương mại và kế toán."
+      }
+    ],
+    "review": {
+      "version": "toeic-vi-v3",
+      "items": [
+        {
+          "source": {
+            "kind": "catalog",
+            "wordId": "tra-19",
+            "word": "invoice",
+            "meaning": "hoá đơn",
+            "pos": "noun",
+            "topic": "Trading",
+            "example": "Please read the invoice carefully.",
+            "exampleTranslation": "Hãy đọc hoá đơn cẩn thận."
+          },
+          "userAnswer": "invioce",
+          "correctAnswer": "invoice",
+          "feedback": {
+            "index": 0,
+            "explanation": "Bạn viết sai chính tả từ invoice thành invioce do đảo vị trí hai ký tự o và i. Hãy chú ý kiểm tra kỹ mặt chữ trước khi nộp bài.",
+            "english": "Please review the invoice before payment.",
+            "vietnamese": "Vui lòng xem lại hóa đơn trước khi thanh toán.",
+            "question": "Please send the _____ to the accounting department.",
+            "answer": "invoice"
+          }
+        },
+        {
+          "source": {
+            "kind": "catalog",
+            "wordId": "pdf-toeic-0145",
+            "word": "calculation",
+            "meaning": "sự tính toán, phép tính",
+            "pos": "noun",
+            "topic": "TOEIC bổ sung (PDF)",
+            "example": "We discussed the calculation at the meeting.",
+            "exampleTranslation": "Chúng tôi thảo luận về sự tính toán tại cuộc họp."
+          },
+          "userAnswer": "thư từ",
+          "correctAnswer": "sự tính toán, phép tính",
+          "feedback": {
+            "index": 1,
+            "explanation": "Bạn chọn nghĩa là thư từ, điều này chưa chính xác với từ calculation. Nghĩa đúng trong ngữ cảnh này là sự tính toán hoặc phép tính.",
+            "english": "The calculation was verified by the manager.",
+            "vietnamese": "Phép tính đã được quản lý xác minh.",
+            "question": "The final _____ was checked twice.",
+            "answer": "calculation"
+          }
+        },
+        {
+          "source": {
+            "kind": "catalog",
+            "wordId": "pdf-toeic-0280",
+            "word": "dependence",
+            "meaning": "sự phụ thuộc",
+            "pos": "noun",
+            "topic": "TOEIC bổ sung (PDF)",
+            "example": "We discussed the dependence at the meeting.",
+            "exampleTranslation": "Chúng tôi thảo luận về sự phụ thuộc tại cuộc họp."
+          },
+          "userAnswer": "sự độc lập",
+          "correctAnswer": "dependence",
+          "feedback": {
+            "index": 2,
+            "explanation": "Bạn chọn nghĩa sự độc lập, điều này trái ngược với nghĩa của dependence. Từ này chỉ sự phụ thuộc trong ngữ cảnh quản lý chuỗi cung ứng.",
+            "english": "High dependence on one supplier carries risks.",
+            "vietnamese": "Sự phụ thuộc lớn vào một nhà cung cấp đi kèm với rủi ro.",
+            "question": "Reducing our _____ on imports is necessary.",
+            "answer": "dependence"
+          }
+        },
+        {
+          "source": {
+            "kind": "catalog",
+            "wordId": "rec-03",
+            "word": "meet",
+            "meaning": "đáp ứng (yêu cầu); gặp, gặp gỡ",
+            "pos": "verb",
+            "topic": "Recruitment",
+            "example": "Please meet the requirements.",
+            "exampleTranslation": "Hãy đáp ứng các yêu cầu."
+          },
+          "userAnswer": "gặp gỡ",
+          "correctAnswer": "đáp ứng (yêu cầu); gặp, gặp gỡ",
+          "feedback": {
+            "index": 3,
+            "explanation": "Bạn chọn nghĩa gặp gỡ, tuy đây là nghĩa phổ biến của meet nhưng chưa phù hợp nhất với ngữ cảnh yêu cầu công việc. Trong câu này, meet mang nghĩa là đáp ứng các yêu cầu.",
+            "english": "We must meet the project deadline.",
+            "vietnamese": "Chúng ta phải đáp ứng thời hạn dự án.",
+            "question": "They strive to _____ high standards.",
+            "answer": "meet"
+          }
+        },
+        {
+          "source": {
+            "kind": "catalog",
+            "wordId": "rec-04",
+            "word": "qualified",
+            "meaning": "đủ khả năng, trình độ, điều kiện",
+            "pos": "adjective",
+            "topic": "Recruitment",
+            "example": "She is qualified for the position.",
+            "exampleTranslation": "Cô ấy đủ trình độ cho vị trí này."
+          },
+          "userAnswer": "qualify",
+          "correctAnswer": "qualified",
+          "feedback": {
+            "index": 4,
+            "explanation": "Bạn điền dạng động từ qualify thay vì tính từ qualified. Vị trí cần điền nằm trước danh từ applicants để làm rõ nghĩa bổ trợ, nên cần dùng tính từ.",
+            "english": "Only qualified candidates are considered.",
+            "vietnamese": "Chỉ những ứng viên đủ điều kiện mới được xem xét.",
+            "question": "Find a _____ technician for the job.",
+            "answer": "qualified"
+          }
+        }
+      ]
+    }
+  },
+  "quota": {
+    "documents": 5,
+    "ttlTimestamps": true
+  },
+  "passed": true
+}

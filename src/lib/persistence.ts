@@ -1,20 +1,15 @@
 import {
-  collection,
   doc,
   getDoc,
-  getDocs,
   runTransaction,
-  setDoc,
-  updateDoc,
-  writeBatch,
 } from "firebase/firestore";
 import { db } from "./firebase";
-import { chunkItems } from "./chunks";
+import { assertDatasetTransaction, datasetCollectionPath, getCachedGeneration } from "../repositories/cloudDataset";
+import { parseProgressItem, parseSessionLog } from "./dataValidation";
 import {
   calculateNextStreak,
   createDailyActivity,
   getLocalDateKey,
-  normalizeProfileWordCount,
 } from "./learning";
 export {
   activateGuestSession,
@@ -24,9 +19,10 @@ export {
   recordGuestSession,
   saveGuestProfile,
   saveGuestProgress,
+  replaceGuestBackup,
+  saveGuestStudyState,
 } from "./guestPersistence";
 import type {
-  BackupV2,
   DailyActivity,
   ProgressItem,
   StudySessionLog,
@@ -38,12 +34,7 @@ export const toStoredProgress = (
   wordId: string,
   item: ProgressItem,
 ) => ({
-  easiness: item.easiness,
-  interval: item.interval,
-  repetitions: item.repetitions,
-  nextReviewDate: item.nextReviewDate,
-  ...(item.lastReviewDate ? { lastReviewDate: item.lastReviewDate } : {}),
-  ...(item.wrongCount !== undefined ? { wrongCount: item.wrongCount } : {}),
+  ...parseProgressItem(item),
   userId: uid,
   wordId,
 });
@@ -54,88 +45,22 @@ export const saveCloudProgressItem = async (
   item: ProgressItem,
   totalWordsLearned: number,
 ) => {
-  await Promise.all([
-    setDoc(
-      doc(db, `users/${uid}/progress`, wordId),
-      toStoredProgress(uid, wordId, item),
-    ),
-    updateDoc(doc(db, "users", uid), { totalWordsLearned }),
-  ]);
-};
-
-const commitInChunks = async <T>(
-  items: T[],
-  addToBatch: (batch: ReturnType<typeof writeBatch>, item: T) => void,
-) => {
-  for (const chunk of chunkItems(items)) {
-    const batch = writeBatch(db);
-    for (const item of chunk) {
-      addToBatch(batch, item);
-    }
-    await batch.commit();
-  }
-};
-
-const clearCloudCollection = async (path: string) => {
-  const snapshots = await getDocs(collection(db, path));
-  await commitInChunks(snapshots.docs, (batch, snapshot) => {
-    batch.delete(snapshot.ref);
+  const generation = getCachedGeneration(uid);
+  await runTransaction(db, async transaction => {
+    await assertDatasetTransaction(transaction, uid, generation);
+    transaction.set(doc(db, datasetCollectionPath(uid, 'progress', generation), wordId), toStoredProgress(uid, wordId, item));
+    transaction.update(doc(db, 'users', uid), { totalWordsLearned });
   });
 };
 
-export const replaceCloudProgress = async (
-  currentProfile: UserProfile,
-  backup: BackupV2,
-) => {
-  const uid = currentProfile.uid;
-  await clearCloudCollection(`users/${uid}/progress`);
-  await clearCloudCollection(`users/${uid}/dailyActivity`);
-
-  await commitInChunks(
-    Object.entries(backup.progress),
-    (batch, [wordId, item]) => {
-      batch.set(
-        doc(db, `users/${uid}/progress`, wordId),
-        toStoredProgress(uid, wordId, item),
-      );
-    },
-  );
-
-  const importedProfile = backup.profile || {};
-  const nextProfile = normalizeProfileWordCount(
-    {
-      ...currentProfile,
-      ...importedProfile,
-      uid,
-      email: currentProfile.email,
-    },
-    backup.progress,
-  );
-  await setDoc(doc(db, "users", uid), nextProfile);
-  return nextProfile;
-};
-
-export const resetCloudProgress = async (profile: UserProfile) => {
-  await clearCloudCollection(`users/${profile.uid}/progress`);
-  await clearCloudCollection(`users/${profile.uid}/dailyActivity`);
-
-  const nextProfile: UserProfile = {
-    ...profile,
-    totalWordsLearned: 0,
-    streak: 0,
-    history: [],
-  };
-  delete nextProfile.lastStudyDate;
-  await setDoc(doc(db, "users", profile.uid), nextProfile);
-  return nextProfile;
-};
+export { replaceCloudProgress, resetCloudProgress, recoverCloudRestore, getCloudActivities } from "./datasetPersistence";
 
 export const getCloudDailyActivity = async (
   uid: string,
   dateKey = getLocalDateKey(),
 ) => {
   const snapshot = await getDoc(
-    doc(db, `users/${uid}/dailyActivity`, dateKey),
+    doc(db, datasetCollectionPath(uid, "dailyActivity"), dateKey),
   );
   return snapshot.exists() ? (snapshot.data() as DailyActivity) : null;
 };
@@ -145,6 +70,7 @@ type SessionRecordInput = {
   log: StudySessionLog;
   wordIds: string[];
   timeZone?: string;
+  generation?: string;
 };
 
 export const recordCloudSession = async ({
@@ -152,19 +78,25 @@ export const recordCloudSession = async ({
   log,
   wordIds,
   timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone,
+  generation = getCachedGeneration(profile.uid),
 }: SessionRecordInput) => {
+  log = parseSessionLog({ ...log, wordIds: log.wordIds || wordIds });
+  wordIds = log.wordIds || [];
   const dateKey = getLocalDateKey(new Date(log.date), timeZone);
   const profileRef = doc(db, "users", profile.uid);
   const activityRef = doc(
     db,
-    `users/${profile.uid}/dailyActivity`,
+    datasetCollectionPath(profile.uid, "dailyActivity", generation),
     dateKey,
   );
+  const sessionRef=doc(db,datasetCollectionPath(profile.uid,'sessions',generation),log.id);
 
   return runTransaction(db, async (transaction) => {
-    const [profileSnapshot, activitySnapshot] = await Promise.all([
+    await assertDatasetTransaction(transaction, profile.uid, generation);
+    const [profileSnapshot, activitySnapshot, sessionSnapshot] = await Promise.all([
       transaction.get(profileRef),
       transaction.get(activityRef),
+      transaction.get(sessionRef),
     ]);
     const storedProfile = profileSnapshot.exists()
       ? (profileSnapshot.data() as UserProfile)
@@ -172,6 +104,9 @@ export const recordCloudSession = async ({
     const existingActivity = activitySnapshot.exists()
       ? (activitySnapshot.data() as DailyActivity)
       : null;
+    if (sessionSnapshot.exists() || storedProfile.history?.some((session) => session.id === log.id)) {
+      return { profile: storedProfile, activity: existingActivity || createDailyActivity(dateKey, timeZone, [], wordIds) };
+    }
     const activity = createDailyActivity(
       dateKey,
       timeZone,
@@ -187,7 +122,10 @@ export const recordCloudSession = async ({
         storedProfile.streak,
       ),
       lastStudyDate: dateKey,
+      studyTimeSeconds: (storedProfile.studyTimeSeconds ?? storedProfile.studyTimeMinutes*60)+(log.durationSeconds || 0),
+      studyTimeMinutes: Math.floor(((storedProfile.studyTimeSeconds ?? storedProfile.studyTimeMinutes*60)+(log.durationSeconds || 0))/60),
     };
+    transaction.set(sessionRef, log);
     transaction.set(activityRef, activity);
     transaction.set(profileRef, nextProfile);
     return { profile: nextProfile, activity };

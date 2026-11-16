@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-10-16T16:16:08.950Z",
+  "origin": "https://eng-master-main2.vercel.app",
+  "passed": false,
+  "checks": [],
+  "timeMethod": "Playwright clock fast-forward, not a two-hour wall-clock test",
+  "error": "### Error\nTimeoutError: page.waitForFunction: Timeout 30000ms exceeded.\n"
+}

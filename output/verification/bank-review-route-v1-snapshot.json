@@ -1,0 +1,22 @@
+[
+  {
+    "question": {
+      "id": "p5-reviewed-v1-route",
+      "kind": "part5",
+      "topic": "Từ loại",
+      "difficulty": 1,
+      "prompt": "This is the _____ of the three available routes to the airport.",
+      "options": [
+        "fastly",
+        "fastest",
+        "faster",
+        "fast"
+      ],
+      "correctIndex": 1,
+      "explanation": "The fastest of the three routes: so sánh nhất trong ba tuyến đường. Fast không đứng một mình ở vị trí này; faster dùng khi so sánh hai đối tượng."
+    },
+    "listening": null,
+    "reading": null,
+    "context": null
+  }
+]

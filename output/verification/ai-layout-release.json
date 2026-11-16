@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-15T06:03:08.863Z",
+  "release": "2026.10.15-learning.4",
+  "deployment": "dpl_2ut12FjLSgZ3zb7ZvnWGZKYQrbFY",
+  "candidate": "https://eng-master-main2-l88p5cnuh-quys-projects-d07a5005.vercel.app",
+  "origin": "https://eng-master-main2.vercel.app",
+  "promoted": true,
+  "previousDeployment": "dpl_GDsELjHYofnWQK4c8rKXsMukbQGC",
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "catalog": true,
+    "unit": 139,
+    "newLayoutTests": 6,
+    "nativeApiImports": 4,
+    "browserLocal": 5,
+    "browserProduction": 5,
+    "publicBuild": true
+  },
+  "layout": {
+    "surfaces": [
+      "quiz mistake review",
+      "inline vocabulary explanation",
+      "study explanation modal",
+      "individual quiz explanation"
+    ],
+    "tones": {
+      "correct": "rgb(110, 231, 183)",
+      "mistake": "rgb(253, 164, 175)",
+      "explanation": "rgb(165, 180, 252)",
+      "example": "rgb(125, 211, 252)",
+      "practice": "rgb(252, 211, 77)"
+    },
+    "widths": [
+      360,
+      390,
+      768,
+      1280
+    ],
+    "legacyMarkdownSupported": true,
+    "rawHtmlSkipped": true,
+    "requestErrorsSeparate": true
+  },
+  "browserFixture": "deterministic Markdown HTTP responses; real temporary Firebase identity; no Gemini requests",
+  "liveGeminiQualityChecked": false,
+  "cleanup": {
+    "local": true,
+    "production": true
+  },
+  "build": {
+    "localInitialReferencedGzip": 395679,
+    "productionInitialReferencedGzip": 396135,
+    "offlineAssets": 42,
+    "offlineRevision": "097929a0ba53800a",
+    "serverSecretsAbsent": true
+  },
+  "vocabulary": 1575,
+  "practiceQuestions": 166,
+  "catalogAndOriginalBankUnchanged": true,
+  "promptChanged": false,
+  "modelChanged": false,
+  "rulesChanged": false,
+  "schemaChanged": false,
+  "billingChanged": false,
+  "avatarEnabled": false,
+  "nativeTtlEnabled": false,
+  "gitCommitted": false,
+  "evidence": [
+    "ai-layout-unit.log",
+    "ai-layout-build-metrics.json",
+    "ai-layout-browser-local.json",
+    "ai-layout-browser-production.json",
+    "ai-layout-public-build.json",
+    "ai-layout-promote.log"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-10-15T04:31:24.722Z",
+  "initialReferencedGzip": 394411,
+  "chartsReferenced": false,
+  "serverSecretsAbsent": true,
+  "secretCheck": "local configured credentials",
+  "catalogUnchanged": true,
+  "hashes": {
+    "src/data/workplacePractice.ts": "e389a541dcdaca6ce75ab4889162f630e7dfb126d06a94848a36ad2dd2eb3bb0",
+    "src/data/vocabulary.ts": "a3d6a89214fa682552664dfedb6644ef984de9aed5c215bb8b072c7127f80598",
+    "src/data/toeic-pdf.ts": "f3f6db312ce9fdcc1bc52e887a30ab76df51a3bbd8adcc303e46f9efa314bb2b",
+    "new/vocabulary-reviewed.json": "32a0060b1c67c8b85db3f0c2e6af02c1e71a794c860167764102897950e6afac"
+  },
+  "files": [
+    {
+      "url": "/assets/index-Dlrpy3b-.js",
+      "bytes": 521158,
+      "gzip": 164989
+    },
+    {
+      "url": "/assets/vocabulary-pdf-CqKjsr25.js",
+      "bytes": 256256,
+      "gzip": 44941
+    },
+    {
+      "url": "/assets/vocabulary-CkEYtlix.js",
+      "bytes": 272041,
+      "gzip": 56412
+    },
+    {
+      "url": "/assets/firebase-DFaKbn1P.js",
+      "bytes": 505254,
+      "gzip": 117329
+    },
+    {
+      "url": "/assets/index-DLR1imuD.css",
+      "bytes": 64736,
+      "gzip": 10740
+    }
+  ],
+  "offlinePack": {
+    "revision": "dc9e54294a4302f9",
+    "files": [
+      "/index.html",
+      "/manifest.webmanifest",
+      "/assets/AiExplanation-fg1PTbfP.js",
+      "/assets/Browse-BNioFkDE.js",
+      "/assets/Dashboard-Df0kU2al.js",
+      "/assets/DocumentImportView-B4caebrg.js",
+      "/assets/MistakesView-D402SrA2.js",
+      "/assets/PracticeSession-BkLcGJ_h.js",
+      "/assets/QuizSession-BzlA92kK.js",
+      "/assets/RatingControls-CYiZN1Fj.js",
+      "/assets/ReviewSession-Dirtnd2b.js",
+      "/assets/RoadmapView-lIRLvm0d.js",
+      "/assets/SettingsView-Sb4beVRN.js",
+      "/assets/StatsView-BcvQD11M.js",
+      "/assets/TodayLearningView-DPeXrf3V.js",
+      "/assets/WorkplaceView-BrDuebau.js",
+      "/assets/brain-DMh7d2Gb.js",
+      "/assets/calendar-tt9IrKdj.js",
+      "/assets/chevron-right-CJYDmQtP.js",
+      "/assets/circle-alert-DYgyU2pb.js",
+      "/assets/circle-check-BrOw53kG.js",
+      "/assets/clipboard-list-6_aKOU63.js",
+      "/assets/dialogueSpeech-oHxABc6d.js",
+      "/assets/firebase-DFaKbn1P.js",
+      "/assets/flame-DAud-Rrn.js",
+      "/assets/index-B8enA7St.js",
+      "/assets/index-DLR1imuD.css",
+      "/assets/index-Dlrpy3b-.js",
+      "/assets/pdf.worker.min-CjEcRF4W.mjs",
+      "/assets/pdfWordImport-BqNyxNl7.js",
+      "/assets/practiceStore-oPWsZcnF.js",
+      "/assets/rotate-ccw-DsHuFiNa.js",
+      "/assets/sparkles-BWdhSEfb.js",
+      "/assets/speech-B2CixKEO.js",
+      "/assets/useActiveTime-Bb4fKJeY.js",
+      "/assets/vocabulary-CkEYtlix.js",
+      "/assets/vocabulary-pdf-CqKjsr25.js",
+      "/assets/volume-2-BSl9aloM.js",
+      "/fonts/InterVariable.woff2",
+      "/icons/app-192.png",
+      "/icons/app-192.svg",
+      "/icons/app-512.png"
+    ]
+  }
+}

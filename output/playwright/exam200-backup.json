@@ -1,0 +1,897 @@
+{
+  "version": 4,
+  "extendedPracticeRecords": [
+    {
+      "id": "exam1_16b2c194b9c14589864153ce104d730c_part1",
+      "bankVersion": 2,
+      "kind": "part1",
+      "startedAt": "2026-10-16T16:18:49.785Z",
+      "finishedAt": "2026-10-16T18:18:49.785Z",
+      "durationSeconds": 2699,
+      "answers": [
+        {
+          "questionId": "p1-listening-v1-forklift-q1",
+          "selectedIndex": 1
+        },
+        {
+          "questionId": "p1-listening-v1-desk-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p1-listening-v1-home-office-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p1-listening-v1-conference-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p1-listening-v1-bicycle-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p1-listening-v1-cyclist-q1",
+          "selectedIndex": null
+        }
+      ]
+    },
+    {
+      "id": "exam1_16b2c194b9c14589864153ce104d730c_part2",
+      "bankVersion": 2,
+      "kind": "part2",
+      "startedAt": "2026-10-16T16:18:49.785Z",
+      "finishedAt": "2026-10-16T18:18:49.785Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p2-v1-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-5",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-6",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-7",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-8",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-9",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-10",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-11",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-12",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-13",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-14",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-15",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-16",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-17",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v1-18",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v2-where-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v2-where-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v2-where-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v2-where-4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v2-where-5",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v2-where-6",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p2-v2-when-1",
+          "selectedIndex": null
+        }
+      ]
+    },
+    {
+      "id": "exam1_16b2c194b9c14589864153ce104d730c_part3",
+      "bankVersion": 2,
+      "kind": "part3",
+      "startedAt": "2026-10-16T16:18:49.785Z",
+      "finishedAt": "2026-10-16T18:18:49.785Z",
+      "durationSeconds": 2,
+      "answers": [
+        {
+          "questionId": "p3-listening-v1-meeting-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-listening-v1-meeting-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-listening-v1-meeting-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-listening-v1-delivery-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-listening-v1-delivery-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-listening-v1-delivery-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-registration-q1",
+          "selectedIndex": 3
+        },
+        {
+          "questionId": "p3-exam-v1-registration-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-registration-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-restaurant-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-restaurant-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-restaurant-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-printer-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-printer-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-printer-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-hotel-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-hotel-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-hotel-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-interview-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-interview-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-interview-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-catering-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-catering-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-catering-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-software-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-software-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-software-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-bicycle-repair-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-bicycle-repair-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-bicycle-repair-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-supplies-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-supplies-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-supplies-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-travel-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-travel-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-travel-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-library-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-library-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-library-q3",
+          "selectedIndex": null
+        }
+      ]
+    },
+    {
+      "id": "exam1_16b2c194b9c14589864153ce104d730c_part4",
+      "bankVersion": 2,
+      "kind": "part4",
+      "startedAt": "2026-10-16T16:18:49.785Z",
+      "finishedAt": "2026-10-16T18:18:49.785Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p4-listening-v1-museum-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-listening-v1-museum-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-listening-v1-museum-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-listening-v1-repair-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-listening-v1-repair-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-listening-v1-repair-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-shuttle-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-shuttle-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-shuttle-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-opening-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-opening-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-opening-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-safety-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-safety-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-safety-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-order-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-order-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-order-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-presentation-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-presentation-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-presentation-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-maintenance-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-maintenance-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-maintenance-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-recruitment-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-recruitment-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-recruitment-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-lost-property-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-lost-property-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p4-exam-v1-lost-property-q3",
+          "selectedIndex": null
+        }
+      ]
+    },
+    {
+      "id": "exam1_16b2c194b9c14589864153ce104d730c_part5",
+      "bankVersion": 2,
+      "kind": "part5",
+      "startedAt": "2026-10-16T16:18:49.785Z",
+      "finishedAt": "2026-10-16T18:18:49.785Z",
+      "durationSeconds": 12,
+      "answers": [
+        {
+          "questionId": "p5-v1-1",
+          "selectedIndex": 0
+        },
+        {
+          "questionId": "p5-v1-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-5",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-6",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-7",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-8",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-9",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-10",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-11",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-12",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-13",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-14",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-15",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-reviewed-v1-route",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-17",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-18",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-19",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-20",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-21",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-22",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-23",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v1-24",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v2-forms-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v2-forms-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v2-forms-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v2-forms-4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v2-forms-5",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p5-v2-forms-6",
+          "selectedIndex": null
+        }
+      ]
+    },
+    {
+      "id": "exam1_16b2c194b9c14589864153ce104d730c_part6",
+      "bankVersion": 2,
+      "kind": "part6",
+      "startedAt": "2026-10-16T16:18:49.785Z",
+      "finishedAt": "2026-10-16T18:18:49.785Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p6-calibrated-v1-delivery-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-delivery-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-delivery-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-delivery-4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-training-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-training-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-training-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-training-4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-renovation-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-renovation-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-renovation-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-renovation-4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-membership-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-membership-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-membership-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p6-calibrated-v1-membership-4",
+          "selectedIndex": null
+        }
+      ]
+    },
+    {
+      "id": "exam1_16b2c194b9c14589864153ce104d730c_part7",
+      "bankVersion": 2,
+      "kind": "part7",
+      "startedAt": "2026-10-16T16:18:49.785Z",
+      "finishedAt": "2026-10-16T18:18:49.785Z",
+      "durationSeconds": 4487,
+      "answers": [
+        {
+          "questionId": "p7-exam-v1-fitness-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-fitness-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-fitness-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-course-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-course-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-course-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-returns-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-returns-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-returns-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-appointment-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-appointment-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-accept-v1-handover-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-accept-v1-handover-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-accept-v1-handover-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-accept-v1-parking-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-accept-v1-parking-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-accept-v1-parking-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-store-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-store-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-store-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-invoice-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-invoice-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-invoice-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-recruitment-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-recruitment-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-recruitment-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-train-1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-train-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-calibrated-v1-train-3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-venue-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-venue-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-venue-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-venue-q4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-venue-q5",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-shipment-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-shipment-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-shipment-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-shipment-q4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-shipment-q5",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-volunteer-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-volunteer-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-volunteer-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-volunteer-q4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-volunteer-q5",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-conference-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-conference-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-conference-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-conference-q4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-conference-q5",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-supplier-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-supplier-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-supplier-q3",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-supplier-q4",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-exam-v1-supplier-q5",
+          "selectedIndex": 3
+        }
+      ]
+    }
+  ],
+  "catalogVersion": "toeic-1575-v1",
+  "exportedAt": "2026-10-16T16:19:01.844Z",
+  "profile": {
+    "displayName": "Khách (Guest)",
+    "studyTimeMinutes": 0,
+    "streak": 0,
+    "dailyGoal": 15
+  },
+  "progress": {},
+  "practiceRecords": [],
+  "roadmap": null,
+  "customWords": [],
+  "favorites": [],
+  "preferences": {
+    "sound": true,
+    "notifications": false,
+    "studySessionSize": 15,
+    "reminderHour": 20
+  },
+  "decks": [],
+  "dailyActivity": {},
+  "events": []
+}

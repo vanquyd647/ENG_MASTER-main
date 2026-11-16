@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p2-v2-when-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Question asks 'When is...', option 0 provides a specific time 'By noon on Thursday'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-when-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Question asks 'When does...', option 1 provides a closing time 'At six in the evening'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-when-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Question asks 'When will...', option 2 gives the arrival time 'It is scheduled for Monday morning'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-when-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Question asks 'When did...', option 0 provides a past time 'Yesterday afternoon'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-when-5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Question asks 'When can...', option 1 specifies a time 'I have some time after lunch'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-when-6",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Question asks 'When should...', option 2 provides a deadline 'No later than Friday'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-request-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Polite request for an email is directly accepted by 'Certainly, I will send it now.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-request-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Offer to reserve a taxi is accepted by 'Yes, that would be helpful.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-request-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Suggestion to review the contract is agreed to by 'Yes, let us meet at three.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-request-4",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Request to hold the elevator is accommodated by 'Of course, take your time.'",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

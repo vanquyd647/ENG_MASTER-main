@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
-import { generateQuiz } from "../../src/server/gemini";
-import { handleGeminiApi } from "../../src/server/vercelGeminiHandler";
+import { generateQuiz } from "../../src/server/gemini.js";
+import { handleGeminiApi } from "../../src/server/vercelGeminiHandler.js";
 
 export default async function handler(req: IncomingMessage & { body?: unknown }, res: ServerResponse) {
   await handleGeminiApi(req, res, generateQuiz, "quiz");

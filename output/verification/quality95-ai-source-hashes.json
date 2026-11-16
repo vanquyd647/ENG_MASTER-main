@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-15T13:45:26.910Z",
+  "note": "Backend unchanged between pilot candidate dpl_AGpXHGf8FTKB7wLw7VMbKjKwumDJ and final candidate dpl_EXuHgSHHuJrWgAA4F8nZmdCnaXDR; final product change is AppShell mobile spacing only.",
+  "hashes": {
+    "src/server/gemini.ts": "df05229a51721c8999a305873cd618aee2c51dc81a203f9050979faf0da73a52",
+    "src/server/aiPrompts.ts": "b49641d097056d977a4ecb5421e740a466f00d6bd0240647570a2451c1a24831",
+    "src/server/aiGrounding.ts": "81e8edcb20800a0343ccb505ba5c3682899783ea33c0d6851815805e56b87054",
+    "src/server/learningNotes.ts": "1007b57d48a565cac9b52a6498eb3a230eee39061c6b5437b4e0da20b9cd9fcd",
+    "src/domain/aiContent.ts": "cfb9f68f66a9dd98d438a3f3b4d4eb9248d122261b152a4ac164cca80b320d57",
+    "src/domain/aiQuality.ts": "4181d0cd24fe0811be17c6a857e79f5d0572d4a5c0fe9305512681592994ca5f",
+    "src/domain/aiQuiz.ts": "a91a9c7e4dc5c7614f5759c444d3456c64d72f190660b8383ab03dd86c7c9511",
+    "src/domain/random.ts": "3a27494cedf6b287d8a126524f0658e28c7b9da96c315734b621a7c2a2c2827c"
+  }
+}

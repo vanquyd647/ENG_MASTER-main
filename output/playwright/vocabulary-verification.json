@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-13",
+  "mode": "local guest session with demo Firebase configuration",
+  "catalog": {
+    "original": 905,
+    "pdfRows": 1000,
+    "overlaps": 329,
+    "duplicateRows": 1,
+    "added": 670,
+    "total": 1575,
+    "correctedExistingMeanings": 274,
+    "legacyStableFieldsPreserved": true
+  },
+  "checks": {
+    "typecheck": "passed",
+    "vocabularyValidation": "passed",
+    "tests": { "passed": 28, "files": 8 },
+    "build": "passed",
+    "normalizationIdempotent": true,
+    "importIdempotent": true,
+    "fullCatalogBackup": "passed"
+  },
+  "browser": {
+    "search": { "word": "stapler", "meaning": "dụng cụ bấm ghim, máy dập ghim", "emptyExampleHidden": true },
+    "quiz": {
+      "correct": 5,
+      "total": 5,
+      "persistedIds": ["pdf-toeic-0024", "pdf-toeic-0601", "pdf-toeic-0090", "pdf-toeic-0878", "pdf-toeic-0924"]
+    },
+    "flashcards": {
+      "completed": 5,
+      "persistedIds": ["pdf-toeic-0002", "pdf-toeic-0001", "pdf-toeic-0008", "pdf-toeic-0007", "pdf-toeic-0006"],
+      "intervalDays": 1,
+      "repetitions": 1,
+      "persistedAfterReload": true
+    }
+  },
+  "firebaseRulesDeployed": false,
+  "onlineServicesTested": false
+}

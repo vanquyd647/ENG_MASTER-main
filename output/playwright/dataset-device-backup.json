@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "catalogVersion": "toeic-1575-v1",
+  "exportedAt": "2026-10-16T16:24:32.182Z",
+  "profile": {
+    "displayName": "QA Browser A",
+    "studyTimeMinutes": 0,
+    "streak": 0,
+    "dailyGoal": 15
+  },
+  "progress": {
+    "rec-03": {
+      "easiness": 2.5,
+      "interval": 1,
+      "repetitions": 2,
+      "nextReviewDate": "2026-10-20T00:00:00.000Z"
+    },
+    "rec-01": {
+      "easiness": 2.5,
+      "interval": 1,
+      "repetitions": 1,
+      "nextReviewDate": "2026-10-17T16:24:18.873Z",
+      "lastReviewDate": "2026-10-16T16:24:18.873Z",
+      "wrongCount": 0,
+      "lastOperationId": "fbfbf670-c6c5-46e4-b942-7106f8949a20:rec-01",
+      "revision": 1
+    }
+  },
+  "practiceRecords": [],
+  "roadmap": null,
+  "customWords": [],
+  "favorites": [],
+  "preferences": {
+    "sound": false,
+    "notifications": false,
+    "studySessionSize": 15,
+    "reminderHour": 20
+  },
+  "decks": [],
+  "dailyActivity": {},
+  "events": [
+    {
+      "id": "fbfbf670-c6c5-46e4-b942-7106f8949a20:rec-01",
+      "wordId": "rec-01",
+      "sessionId": "fbfbf670-c6c5-46e4-b942-7106f8949a20",
+      "occurredAt": "2026-10-16T16:24:18.873Z",
+      "timeZone": "Asia/Saigon",
+      "mode": "review",
+      "durationSeconds": 1,
+      "before": null,
+      "after": {
+        "easiness": 2.5,
+        "interval": 1,
+        "repetitions": 1,
+        "nextReviewDate": "2026-10-17T16:24:18.873Z",
+        "lastReviewDate": "2026-10-16T16:24:18.873Z",
+        "wrongCount": 0,
+        "lastOperationId": "fbfbf670-c6c5-46e4-b942-7106f8949a20:rec-01",
+        "revision": 1
+      },
+      "quality": 4
+    }
+  ],
+  "unsentOperations": [
+    {
+      "id": "qa_browser_1350145d72ac4b0c8f26955e7b21709e:fbfbf670-c6c5-46e4-b942-7106f8949a20:rec-01",
+      "owner": "qa_browser_1350145d72ac4b0c8f26955e7b21709e",
+      "generation": "legacy",
+      "kind": "study",
+      "event": {
+        "id": "fbfbf670-c6c5-46e4-b942-7106f8949a20:rec-01",
+        "wordId": "rec-01",
+        "sessionId": "fbfbf670-c6c5-46e4-b942-7106f8949a20",
+        "occurredAt": "2026-10-16T16:24:18.873Z",
+        "timeZone": "Asia/Saigon",
+        "mode": "review",
+        "durationSeconds": 1,
+        "before": null,
+        "after": {
+          "easiness": 2.5,
+          "interval": 1,
+          "repetitions": 1,
+          "nextReviewDate": "2026-10-17T16:24:18.873Z",
+          "lastReviewDate": "2026-10-16T16:24:18.873Z",
+          "wrongCount": 0,
+          "lastOperationId": "fbfbf670-c6c5-46e4-b942-7106f8949a20:rec-01",
+          "revision": 1
+        },
+        "quality": 4
+      },
+      "attempts": 0,
+      "nextAttemptAt": 0,
+      "queuedAt": 1792167858880
+    }
+  ]
+}

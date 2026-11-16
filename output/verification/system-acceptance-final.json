@@ -1,0 +1,585 @@
+{
+  "checkedAt": "2026-10-16T16:26:42.720Z",
+  "release": "2026.10.16-learning.8",
+  "planSha256": "437fad1b0dafb3d0792cd378db7eb7abc99398732241849b80b2882162d2c05d",
+  "localEvidence": "accept95-browser-final-v4",
+  "localRunValid": true,
+  "offlineRevision": "e9b3a74a721297f8",
+  "targetPercent": 95,
+  "aggregation": "minimum-per-area-no-average; all critical gates required",
+  "candidateReadyForPromotion": true,
+  "overall95Ready": true,
+  "overallPercent": 95.6989247311828,
+  "areas": [
+    {
+      "id": "content",
+      "percent": 97.1830985915493,
+      "passed": true,
+      "criticalPendingOrFailed": [],
+      "checks": [
+        {
+          "id": "bank-denominator-311",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "six-reviewed-source-photos",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam-format-and-reading-length",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "all-current-audio-assets",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "actual-audio-decode-and-ASR",
+          "passed": true,
+          "critical": true
+        }
+      ],
+      "answerReview": {
+        "passed": 311,
+        "total": 311
+      },
+      "audioClarity": {
+        "passed": 69,
+        "total": 71,
+        "method": "Local ASR; two retained discrepancies; not human certification"
+      }
+    },
+    {
+      "id": "ai",
+      "percent": 95.6989247311828,
+      "passed": true,
+      "criticalPendingOrFailed": [],
+      "checks": [
+        {
+          "id": "200-output-semantic-and-raw-model-review",
+          "passed": true,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "id": "data-sync",
+      "percent": 100,
+      "passed": true,
+      "criticalPendingOrFailed": [],
+      "checks": [
+        {
+          "id": "browser-cloud-acceptance.json:0",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-cloud-acceptance.json:1",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-cloud-acceptance.json:2",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-cloud-acceptance.json:3",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-guest-merge.json:0",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-guest-merge.json:1",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-dataset-acceptance.json:0",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-dataset-acceptance.json:1",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-dataset-acceptance.json:2",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-dataset-acceptance.json:3",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-dataset-acceptance.json:4",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "cloud-sdk:0",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "cloud-sdk:1",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "cloud-sdk:2",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "cloud-sdk:3",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "cloud-sdk:4",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "cloud-sdk:5",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "cloud-sdk:6",
+          "passed": true,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "id": "offline-resume",
+      "percent": 100,
+      "passed": true,
+      "criticalPendingOrFailed": [],
+      "checks": [
+        {
+          "id": "exam200-browser.json:0",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:1",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:2",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:3",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:4",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:5",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:6",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:7",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:0",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:1",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:2",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:3",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:4",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:5",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:6",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:7",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:8",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-pwa-update.json:0",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-pwa-update.json:1",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-pwa-update.json:2",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-pwa-update.json:3",
+          "passed": true,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "id": "ui-accessibility",
+      "percent": 100,
+      "passed": true,
+      "criticalPendingOrFailed": [],
+      "checks": [
+        {
+          "id": "exam200-browser.json:0",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:1",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:2",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:3",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:4",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:5",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:6",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "exam200-browser.json:7",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:0",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:1",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:2",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:3",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:4",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:5",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:6",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:7",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "listening-v1-browser.json:8",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-learning-content.json:0",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-learning-content.json:1",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-learning-content.json:2",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-learning-content.json:3",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-learning-content.json:4",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-learning-content.json:5",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-learning-content.json:6",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-learning-content.json:7",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-learning-content.json:8",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:0",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:1",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:2",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:3",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:4",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:5",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:6",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:7",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:8",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:9",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:10",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:11",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "browser-ai-layout.json:12",
+          "passed": true,
+          "critical": true
+        }
+      ]
+    },
+    {
+      "id": "security-release",
+      "percent": 100,
+      "passed": true,
+      "criticalPendingOrFailed": [],
+      "checks": [
+        {
+          "id": "unit-and-UI-regressions",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "15-Emulator-security-cases",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "4-native-Node-API-imports",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "public-secrets-catalog-budget-and-audio",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "dependency-high-critical-zero",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "production-candidate-12-API-regressions",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "remote-artifacts-match-tested-build",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "compatible-validated-rollback-target",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "production-public-artifact-and-secret-scan",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "production-12-API-regressions",
+          "passed": true,
+          "critical": true
+        },
+        {
+          "id": "production-browser-regressions",
+          "passed": true,
+          "critical": true
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "bank-review-adjudicated.json": "43b6a4fbe046c5b803b0b8c6deaa79d35dca4680461a76c2af4700a8aff201b4",
+    "exam-content-profile.json": "d162460aceb60f49474ae04744c967de5cf2afe923d3a72238c537a694f77ec0",
+    "audio-acceptance-final.json": "1a8ee5d605764d71ac308849bd21bff0704ac6a118317e41b7d719381a0a52a8",
+    "listening-asset-verification.json": "e2e4ee258933ea894ef57280b1c821f05e9322ef928f1e7878ae5c8487179d16",
+    "accept95-ai-semantic-final.json": "8a249db258537d6a1c99f13ea01f5450f6be2a5978be7c6e542e670a2a772a5b",
+    "accept95-browser-final-v4/browser-cloud-acceptance.json": "40505fb75887ee7b38405cb776c58e349a839773e6108fb88ee57add8dd377a1",
+    "accept95-browser-final-v4/browser-guest-merge.json": "6173f07a6a98ef115e05a33b09999cb97af340433b8e14c7cef3b006919b0575",
+    "accept95-browser-final-v4/browser-dataset-acceptance.json": "c33a51aabff242e396da3ab53cb7659b9b986b52a7035094b0be8f06a0f705d5",
+    "cloud-release-client-sdk.json": "ff27d22851f4047d322fecd8a1ddfcde6bea82c0c5d81caf12b6a5eb007df905",
+    "accept95-browser-final-v4/exam200-browser.json": "3003aa8de179ad76caeda1b841693f91a48f2b9401d73df932b1966b4845da87",
+    "accept95-browser-final-v4/listening-v1-browser.json": "34dd1654d843db1eac68bea04d422dc2bc3700735f825d3113eb36fc98683a14",
+    "accept95-browser-final-v4/browser-pwa-update.json": "adbb98560ab7b590067085bdb99f0964774f9a437e74f000fc2dc821a9bcf9b3",
+    "accept95-browser-final-v4/browser-learning-content.json": "11c1670c00378e92ca8e93eadc3fd8b180a8008f3766401bbaa14188a26fc1c5",
+    "accept95-browser-final-v4/browser-ai-layout.json": "84703ee620bd301fec383a76bec99c118aa044ac288be66ddba01d4c8bea8d84",
+    "accept95-unit-v7.json": "50e5c60cb9e2dd1174d53f6a6f65aff8f35e5000e9d50e897879b23dfd6cc771",
+    "accept95-emulator-v7.json": "79e1cceaeef73def754cc6610d4f0deb4bc5cb588df41c27c49cddf61f449ab6",
+    "build-metrics.json": "bed15621eb996d7a8d7ed424a1fbfdea447ba3694dffabcd42628a19a73e2607",
+    "accept95-dependency-audit.json": "30efb8fed815301d27f05533edb356a61d336ecb13d9c829824fc957edb20d1d",
+    "hosted-ai-production-candidate.json": "2e70b0a262b2710837f3a16922550a4d62dc2acd1d55786923e5a595231ea360",
+    "accept95-preview-proof.json": "3419e1f004fb9179111a457ebe65cc7d1d822bdd68a8e345de87c05b7683624b",
+    "accept95-release.json": "ed254b5a85817feb46b77b07ab55a2495cb087bea9e0df2612469e75363c1c6c",
+    "public-build-release.json": "8eebcf9cfc5ad70340935a9045942e1a897eefe8580a72b439c16c662a389043",
+    "hosted-ai-production.json": "f052cfa36fb3f18317bd816efdb0fffa4cf7777c18210ff3661b7a54f0374c0c",
+    "accept95-browser-production/run.json": "fb4132fd0fd29543bdac19891ee7fd5048ac1b99aea9e4dae622689e336feadd"
+  },
+  "blockers": [],
+  "exclusions": [
+    "AI avatar",
+    "native Firestore TTL",
+    "billing upgrade"
+  ],
+  "limits": [
+    "95% future model accuracy on all 1575 words",
+    "learner score gains",
+    "official TOEIC certification or empirical score equivalence",
+    "human listening certification"
+  ]
+}

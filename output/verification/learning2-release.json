@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-10-15T04:36:19.160Z",
+  "release": "2026.10.15-learning.2",
+  "origin": "https://eng-master-main2.vercel.app",
+  "deployment": "dpl_13mQPZCec98JxX4emQ2x5hPi6Uxv",
+  "candidate": "https://eng-master-main2-18p0fqlnf-quys-projects-d07a5005.vercel.app",
+  "promoted": true,
+  "project": "quys-projects-d07a5005/eng-master-main2",
+  "firebaseProject": "engai-2c7fe",
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "catalog": true,
+    "unit": 123,
+    "emulator": 14,
+    "nativeApiImports": 4,
+    "browserContentProduction": 9,
+    "browserRegressionProduction": 8,
+    "browserCloudLocal": 4,
+    "cloudClientSdk": 6,
+    "hostedApiCandidate": 6,
+    "publicAssets": true,
+    "auditVulnerabilities": 0
+  },
+  "content": {
+    "vocabulary": 1575,
+    "originalQuestions": 60,
+    "addedQuestions": 106,
+    "totalQuestions": 166,
+    "part2": 42,
+    "part5": 48,
+    "context": 24,
+    "grammar": 18,
+    "part6": 16,
+    "part7": 18,
+    "grammarLessons": 6,
+    "part6Passages": 4,
+    "part7Passages": 6,
+    "workplaceLessons": 8,
+    "catalogAndOriginalBankUnchanged": true
+  },
+  "build": {
+    "localInitialReferencedGzip": 394411,
+    "productionInitialReferencedGzip": 394866,
+    "offlineAssets": 42,
+    "offlineRevision": "7586dd418e2ff431",
+    "serverSecretsAbsent": true
+  },
+  "rules": {
+    "checkedAt": "2026-10-15T04:17:36.791Z",
+    "project": "engai-2c7fe",
+    "previousRuleset": "projects/engai-2c7fe/rulesets/fcdf7830-1d12-4a89-aee0-66d1f7110f62",
+    "activeRuleset": "projects/engai-2c7fe/rulesets/9ee45128-0e9d-4f5e-8527-7cd123309289",
+    "sha256": "163deff321fb56f49038e466d75c329e92d8d71b63cc148da8a748c879c5a6a6",
+    "activated": true,
+    "legacyDataMigrated": false
+  },
+  "cleanup": {
+    "cloudClient": true,
+    "cloudBrowser": true,
+    "ai": {
+      "auth": true,
+      "quota": true
+    }
+  },
+  "avatarEnabled": false,
+  "nativeTtlEnabled": false,
+  "billingChanged": false,
+  "geminiModel": "gemini-3.5-flash-lite",
+  "backupExtendedVersion": 4,
+  "gitCommitted": false,
+  "limits": [
+    "Up to 100 legacy and 100 extended practice results; no lifetime aggregate.",
+    "Device drafts do not sync and are not in normal backup.",
+    "Use current app for full backup/reset/restore with extended schema.",
+    "Content and difficulty labels are internal; no official TOEIC score mapping."
+  ],
+  "evidence": [
+    "learning2-unit.log",
+    "learning2-emulator.log",
+    "learning2-build-metrics.json",
+    "learning2-audit.json",
+    "learning2-firestore-rules.json",
+    "learning2-cloud-client.json",
+    "learning2-browser-cloud-local.json",
+    "learning2-hosted-ai-candidate.json",
+    "learning2-public-build.json",
+    "browser-learning-content-production.json",
+    "learning2-browser-regression-production.json",
+    "learning2-promote.log"
+  ]
+}

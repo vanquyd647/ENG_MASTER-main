@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p6-v2-training-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A training session will be held in Room 204...",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-training-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "...so that they can practice the booking process...",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-training-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "No software installation is necessary. However, please check...",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-training-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A second session will be offered next Wednesday for those who cannot attend on Friday.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-renovation-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "...all visitors must use the side entryway on Pine Street.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-renovation-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Although some noise is unavoidable...",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-renovation-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "We appreciate your patience while these improvements are made.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-renovation-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The finished lobby will provide a more welcoming space for everyone.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-membership-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "...annual membership at Westbridge Business Library will expire on June 30.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-membership-2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "...a receipt will be sent automatically to your registered email address.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

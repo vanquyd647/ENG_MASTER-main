@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-16T12:03:06.814Z",
+  "passed": true,
+  "clips": 71,
+  "questions": 117,
+  "examQuestions": 100,
+  "examSeconds": 2700,
+  "assets": 72,
+  "bytes": 40708200,
+  "manifestSha256": "10393cd78d41183739291703970a043da407a11ec1e9046df3c92f001c95788b",
+  "inputSha256": "861321177f0e40a01a0e33791cce46fd608327688a1e26976c9d387289b614d3",
+  "checks": [
+    "every active listening question mapped",
+    "current source text and options",
+    "source hashes",
+    "asset bytes and SHA256",
+    "100-question cue order",
+    "45-minute PCM duration"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-16T12:35:23.076Z",
+  "release": "2026.10.16-learning.8",
+  "productionOrigin": "https://eng-master-main2.vercel.app",
+  "candidate": {
+    "id": "dpl_Afst1V1YfZ66H3HSCFEKFSvXQSvQ",
+    "url": "https://eng-master-main2-bve9l07ol-quys-projects-d07a5005.vercel.app",
+    "target": "production",
+    "automaticAliasSkipped": true
+  },
+  "promoted": true,
+  "rollback": {
+    "url": "https://eng-master-main2-ejb48shd9-quys-projects-d07a5005.vercel.app",
+    "id": "dpl_H5yEHkhKA1DJkG1UFd83whQv1NvP",
+    "validated": true,
+    "supports311Questions": true,
+    "supportsBank2": true,
+    "evidence": "output/verification/hosted-ai-history/production-candidate-20261016122859733.json",
+    "method": "Prior READY v7 production-environment candidate: 12 API regressions, same current bank-2/backup-4 registry and 311 question IDs. Final delta is static Firebase client env access; scripts/answers/schema unchanged. Use vercel promote on this URL if needed.",
+    "command": "vercel promote https://eng-master-main2-ejb48shd9-quys-projects-d07a5005.vercel.app",
+    "doNotUse": "learning.7 does not understand the new question IDs; retain only as historical deployment, not the data-compatible rollback target."
+  },
+  "promotionEvidence": "output/verification/accept95-promote.log",
+  "acceptanceVerifiedAt": "2026-10-16T16:25:24.922Z",
+  "overall95Ready": true,
+  "minimumAreaPercent": 95.6989247311828,
+  "productionEvidence": [
+    "output/verification/public-build-release.json",
+    "output/verification/hosted-ai-production.json",
+    "output/verification/accept95-browser-production/run.json",
+    "output/verification/system-acceptance-final.json"
+  ],
+  "promotionConfirmedAt": "2026-10-16T16:16:00.849Z"
+}

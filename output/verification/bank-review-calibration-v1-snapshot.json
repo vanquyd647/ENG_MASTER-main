@@ -1,0 +1,1830 @@
+[
+  {
+    "question": {
+      "id": "p6-calibrated-v1-delivery-1",
+      "kind": "part6",
+      "topic": "Giao hàng",
+      "prompt": "Chọn từ cho chỗ trống (1).",
+      "options": [
+        "deliver",
+        "delivery",
+        "delivered",
+        "delivering"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sau will cần động từ nguyên mẫu deliver: giao các bàn làm việc.",
+      "difficulty": 1,
+      "passageId": "p6-calibrated-v1-delivery"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-delivery",
+      "kind": "part6",
+      "title": "Email đổi lịch giao hàng",
+      "topic": "Giao hàng",
+      "text": "To: Harbor Office Supplies\nSubject: Updated delivery time\n\nThe desks have already been assembled and checked against the specifications on your purchase order. Protective packaging will remain in place during transport, and the driver will remove it after the furniture has been placed in your office. To help us avoid delays, please keep the unloading area clear and tell reception that a furniture delivery is expected. Our office can answer questions about access arrangements during normal business hours.\n\nThank you for your order. Our driver will (1) _____ your desks on Tuesday morning. The delivery was originally planned for Monday, but the warehouse is closed that day for an annual safety inspection.\n\nPlease ensure that someone is available to sign for the (2) _____. If the new time is inconvenient, contact us (3) _____ 4 p.m. today so that we can arrange another date.\n\n(4) _____\n\nBest regards,\nMaya Lewis, Delivery Coordinator",
+      "translation": "Cảm ơn đơn hàng của quý khách. Tài xế sẽ giao bàn vào sáng thứ Ba. Lịch ban đầu là thứ Hai, nhưng kho đóng cửa hôm đó để kiểm tra an toàn hằng năm. Vui lòng bố trí người ký nhận lô hàng. Nếu giờ mới không thuận tiện, liên hệ trước hạn 4 giờ chiều hôm nay để sắp xếp ngày khác.\n\nBàn đã được lắp và kiểm tra theo thông số trong đơn đặt hàng. Bao bì bảo vệ được giữ trong lúc vận chuyển; tài xế tháo sau khi đặt bàn vào văn phòng. Để tránh chậm trễ, hãy để trống khu dỡ hàng và báo lễ tân về chuyến giao nội thất. Văn phòng hỗ trợ câu hỏi về lối vào trong giờ làm việc."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-delivery-2",
+      "kind": "part6",
+      "topic": "Giao hàng",
+      "prompt": "Chọn từ cho chỗ trống (2).",
+      "options": [
+        "shipping",
+        "shipment",
+        "ship",
+        "shipped"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sign for the shipment nghĩa là ký nhận lô hàng; cần danh từ shipment.",
+      "difficulty": 2,
+      "passageId": "p6-calibrated-v1-delivery"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-delivery",
+      "kind": "part6",
+      "title": "Email đổi lịch giao hàng",
+      "topic": "Giao hàng",
+      "text": "To: Harbor Office Supplies\nSubject: Updated delivery time\n\nThe desks have already been assembled and checked against the specifications on your purchase order. Protective packaging will remain in place during transport, and the driver will remove it after the furniture has been placed in your office. To help us avoid delays, please keep the unloading area clear and tell reception that a furniture delivery is expected. Our office can answer questions about access arrangements during normal business hours.\n\nThank you for your order. Our driver will (1) _____ your desks on Tuesday morning. The delivery was originally planned for Monday, but the warehouse is closed that day for an annual safety inspection.\n\nPlease ensure that someone is available to sign for the (2) _____. If the new time is inconvenient, contact us (3) _____ 4 p.m. today so that we can arrange another date.\n\n(4) _____\n\nBest regards,\nMaya Lewis, Delivery Coordinator",
+      "translation": "Cảm ơn đơn hàng của quý khách. Tài xế sẽ giao bàn vào sáng thứ Ba. Lịch ban đầu là thứ Hai, nhưng kho đóng cửa hôm đó để kiểm tra an toàn hằng năm. Vui lòng bố trí người ký nhận lô hàng. Nếu giờ mới không thuận tiện, liên hệ trước hạn 4 giờ chiều hôm nay để sắp xếp ngày khác.\n\nBàn đã được lắp và kiểm tra theo thông số trong đơn đặt hàng. Bao bì bảo vệ được giữ trong lúc vận chuyển; tài xế tháo sau khi đặt bàn vào văn phòng. Để tránh chậm trễ, hãy để trống khu dỡ hàng và báo lễ tân về chuyến giao nội thất. Văn phòng hỗ trợ câu hỏi về lối vào trong giờ làm việc."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-delivery-3",
+      "kind": "part6",
+      "topic": "Giao hàng",
+      "prompt": "Chọn từ cho chỗ trống (3).",
+      "options": [
+        "in",
+        "on",
+        "by",
+        "since"
+      ],
+      "correctIndex": 2,
+      "explanation": "By 4 p.m. nêu hạn chót cần liên hệ để thay lịch.",
+      "difficulty": 1,
+      "passageId": "p6-calibrated-v1-delivery"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-delivery",
+      "kind": "part6",
+      "title": "Email đổi lịch giao hàng",
+      "topic": "Giao hàng",
+      "text": "To: Harbor Office Supplies\nSubject: Updated delivery time\n\nThe desks have already been assembled and checked against the specifications on your purchase order. Protective packaging will remain in place during transport, and the driver will remove it after the furniture has been placed in your office. To help us avoid delays, please keep the unloading area clear and tell reception that a furniture delivery is expected. Our office can answer questions about access arrangements during normal business hours.\n\nThank you for your order. Our driver will (1) _____ your desks on Tuesday morning. The delivery was originally planned for Monday, but the warehouse is closed that day for an annual safety inspection.\n\nPlease ensure that someone is available to sign for the (2) _____. If the new time is inconvenient, contact us (3) _____ 4 p.m. today so that we can arrange another date.\n\n(4) _____\n\nBest regards,\nMaya Lewis, Delivery Coordinator",
+      "translation": "Cảm ơn đơn hàng của quý khách. Tài xế sẽ giao bàn vào sáng thứ Ba. Lịch ban đầu là thứ Hai, nhưng kho đóng cửa hôm đó để kiểm tra an toàn hằng năm. Vui lòng bố trí người ký nhận lô hàng. Nếu giờ mới không thuận tiện, liên hệ trước hạn 4 giờ chiều hôm nay để sắp xếp ngày khác.\n\nBàn đã được lắp và kiểm tra theo thông số trong đơn đặt hàng. Bao bì bảo vệ được giữ trong lúc vận chuyển; tài xế tháo sau khi đặt bàn vào văn phòng. Để tránh chậm trễ, hãy để trống khu dỡ hàng và báo lễ tân về chuyến giao nội thất. Văn phòng hỗ trợ câu hỏi về lối vào trong giờ làm việc."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-delivery-4",
+      "kind": "part6",
+      "topic": "Giao hàng",
+      "prompt": "Chọn câu phù hợp cho chỗ trống (4).",
+      "options": [
+        "We look forward to completing your delivery.",
+        "No signature will be required for this order.",
+        "Please ignore the updated delivery schedule.",
+        "The warehouse will be open all day on Monday."
+      ],
+      "correctIndex": 0,
+      "explanation": "Đoạn thư đang xác nhận lịch giao hàng; lời kết về việc hoàn tất giao hàng nối đúng chủ đề.",
+      "difficulty": 2,
+      "passageId": "p6-calibrated-v1-delivery"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-delivery",
+      "kind": "part6",
+      "title": "Email đổi lịch giao hàng",
+      "topic": "Giao hàng",
+      "text": "To: Harbor Office Supplies\nSubject: Updated delivery time\n\nThe desks have already been assembled and checked against the specifications on your purchase order. Protective packaging will remain in place during transport, and the driver will remove it after the furniture has been placed in your office. To help us avoid delays, please keep the unloading area clear and tell reception that a furniture delivery is expected. Our office can answer questions about access arrangements during normal business hours.\n\nThank you for your order. Our driver will (1) _____ your desks on Tuesday morning. The delivery was originally planned for Monday, but the warehouse is closed that day for an annual safety inspection.\n\nPlease ensure that someone is available to sign for the (2) _____. If the new time is inconvenient, contact us (3) _____ 4 p.m. today so that we can arrange another date.\n\n(4) _____\n\nBest regards,\nMaya Lewis, Delivery Coordinator",
+      "translation": "Cảm ơn đơn hàng của quý khách. Tài xế sẽ giao bàn vào sáng thứ Ba. Lịch ban đầu là thứ Hai, nhưng kho đóng cửa hôm đó để kiểm tra an toàn hằng năm. Vui lòng bố trí người ký nhận lô hàng. Nếu giờ mới không thuận tiện, liên hệ trước hạn 4 giờ chiều hôm nay để sắp xếp ngày khác.\n\nBàn đã được lắp và kiểm tra theo thông số trong đơn đặt hàng. Bao bì bảo vệ được giữ trong lúc vận chuyển; tài xế tháo sau khi đặt bàn vào văn phòng. Để tránh chậm trễ, hãy để trống khu dỡ hàng và báo lễ tân về chuyến giao nội thất. Văn phòng hỗ trợ câu hỏi về lối vào trong giờ làm việc."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-training-1",
+      "kind": "part6",
+      "topic": "Đào tạo",
+      "prompt": "Chọn từ cho chỗ trống (1).",
+      "options": [
+        "held",
+        "be held",
+        "holding",
+        "have held"
+      ],
+      "correctIndex": 1,
+      "explanation": "A training session là buổi học được tổ chức; will be held là bị động tương lai.",
+      "difficulty": 1,
+      "passageId": "p6-calibrated-v1-training"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-training",
+      "kind": "part6",
+      "title": "Thông báo đào tạo hệ thống",
+      "topic": "Đào tạo",
+      "text": "Staff Notice: Booking System Training\n\nThe new system replaces the paper calendar currently kept at reception. Employees will be able to see available rooms, add equipment requests and update their reservations from their own desks. Existing reservations will be transferred by the administration team, so staff should not enter them again. A short illustrated guide will also be placed on the staff website for reference after the training. Questions about individual bookings can be discussed at the end of the session.\n\nThe company will introduce a new room-booking system next month. A training session will (1) _____ in Room 204 this Friday at 2 p.m. The session is intended for employees who regularly arrange meetings.\n\nParticipants should bring a laptop so that they can (2) _____ the booking process during the session. No software installation is necessary. (3) _____, please check that you can connect to the office wireless network.\n\n(4) _____ A second session will be offered next Wednesday for those who cannot attend on Friday.",
+      "translation": "Công ty đưa vào hệ thống đặt phòng mới từ tháng sau. Buổi đào tạo diễn ra tại Phòng 204 vào thứ Sáu lúc 2 giờ chiều, dành cho nhân viên thường tổ chức họp. Hãy mang laptop để thực hành. Không cần cài phần mềm, nhưng cần kiểm tra kết nối Wi-Fi văn phòng. Có buổi học thứ hai vào thứ Tư tới cho người không dự được thứ Sáu.\n\nHệ thống mới thay lịch giấy tại lễ tân. Nhân viên xem phòng trống, yêu cầu thiết bị và cập nhật đặt chỗ từ bàn làm việc. Nhóm hành chính chuyển các lịch đã đặt; nhân viên không nhập lại. Hướng dẫn ngắn có hình sẽ đăng trên website nội bộ để tra cứu sau đào tạo. Có thể hỏi về từng lịch đặt vào cuối buổi."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-training-2",
+      "kind": "part6",
+      "topic": "Đào tạo",
+      "prompt": "Chọn từ cho chỗ trống (2).",
+      "options": [
+        "practice",
+        "practical",
+        "practically",
+        "practitioner"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sau can cần động từ nguyên mẫu practice: thực hành quy trình đặt phòng.",
+      "difficulty": 1,
+      "passageId": "p6-calibrated-v1-training"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-training",
+      "kind": "part6",
+      "title": "Thông báo đào tạo hệ thống",
+      "topic": "Đào tạo",
+      "text": "Staff Notice: Booking System Training\n\nThe new system replaces the paper calendar currently kept at reception. Employees will be able to see available rooms, add equipment requests and update their reservations from their own desks. Existing reservations will be transferred by the administration team, so staff should not enter them again. A short illustrated guide will also be placed on the staff website for reference after the training. Questions about individual bookings can be discussed at the end of the session.\n\nThe company will introduce a new room-booking system next month. A training session will (1) _____ in Room 204 this Friday at 2 p.m. The session is intended for employees who regularly arrange meetings.\n\nParticipants should bring a laptop so that they can (2) _____ the booking process during the session. No software installation is necessary. (3) _____, please check that you can connect to the office wireless network.\n\n(4) _____ A second session will be offered next Wednesday for those who cannot attend on Friday.",
+      "translation": "Công ty đưa vào hệ thống đặt phòng mới từ tháng sau. Buổi đào tạo diễn ra tại Phòng 204 vào thứ Sáu lúc 2 giờ chiều, dành cho nhân viên thường tổ chức họp. Hãy mang laptop để thực hành. Không cần cài phần mềm, nhưng cần kiểm tra kết nối Wi-Fi văn phòng. Có buổi học thứ hai vào thứ Tư tới cho người không dự được thứ Sáu.\n\nHệ thống mới thay lịch giấy tại lễ tân. Nhân viên xem phòng trống, yêu cầu thiết bị và cập nhật đặt chỗ từ bàn làm việc. Nhóm hành chính chuyển các lịch đã đặt; nhân viên không nhập lại. Hướng dẫn ngắn có hình sẽ đăng trên website nội bộ để tra cứu sau đào tạo. Có thể hỏi về từng lịch đặt vào cuối buổi."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-training-3",
+      "kind": "part6",
+      "topic": "Đào tạo",
+      "prompt": "Chọn từ nối cho chỗ trống (3).",
+      "options": [
+        "Otherwise",
+        "However",
+        "For example",
+        "As a result"
+      ],
+      "correctIndex": 1,
+      "explanation": "Không cần cài phần mềm, tuy nhiên vẫn phải kiểm tra kết nối mạng; However thể hiện chuyển ý phù hợp.",
+      "difficulty": 2,
+      "passageId": "p6-calibrated-v1-training"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-training",
+      "kind": "part6",
+      "title": "Thông báo đào tạo hệ thống",
+      "topic": "Đào tạo",
+      "text": "Staff Notice: Booking System Training\n\nThe new system replaces the paper calendar currently kept at reception. Employees will be able to see available rooms, add equipment requests and update their reservations from their own desks. Existing reservations will be transferred by the administration team, so staff should not enter them again. A short illustrated guide will also be placed on the staff website for reference after the training. Questions about individual bookings can be discussed at the end of the session.\n\nThe company will introduce a new room-booking system next month. A training session will (1) _____ in Room 204 this Friday at 2 p.m. The session is intended for employees who regularly arrange meetings.\n\nParticipants should bring a laptop so that they can (2) _____ the booking process during the session. No software installation is necessary. (3) _____, please check that you can connect to the office wireless network.\n\n(4) _____ A second session will be offered next Wednesday for those who cannot attend on Friday.",
+      "translation": "Công ty đưa vào hệ thống đặt phòng mới từ tháng sau. Buổi đào tạo diễn ra tại Phòng 204 vào thứ Sáu lúc 2 giờ chiều, dành cho nhân viên thường tổ chức họp. Hãy mang laptop để thực hành. Không cần cài phần mềm, nhưng cần kiểm tra kết nối Wi-Fi văn phòng. Có buổi học thứ hai vào thứ Tư tới cho người không dự được thứ Sáu.\n\nHệ thống mới thay lịch giấy tại lễ tân. Nhân viên xem phòng trống, yêu cầu thiết bị và cập nhật đặt chỗ từ bàn làm việc. Nhóm hành chính chuyển các lịch đã đặt; nhân viên không nhập lại. Hướng dẫn ngắn có hình sẽ đăng trên website nội bộ để tra cứu sau đào tạo. Có thể hỏi về từng lịch đặt vào cuối buổi."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-training-4",
+      "kind": "part6",
+      "topic": "Đào tạo",
+      "prompt": "Chọn câu phù hợp cho chỗ trống (4).",
+      "options": [
+        "Please let your supervisor know which session you plan to attend.",
+        "All training sessions are canceled this month.",
+        "Please leave your laptop at home.",
+        "The session can only be accessed from outside the office."
+      ],
+      "correctIndex": 0,
+      "explanation": "Câu nhắc thông báo buổi sẽ tham dự nối hợp lý với thông tin có buổi học thứ hai ở câu sau.",
+      "difficulty": 2,
+      "passageId": "p6-calibrated-v1-training"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-training",
+      "kind": "part6",
+      "title": "Thông báo đào tạo hệ thống",
+      "topic": "Đào tạo",
+      "text": "Staff Notice: Booking System Training\n\nThe new system replaces the paper calendar currently kept at reception. Employees will be able to see available rooms, add equipment requests and update their reservations from their own desks. Existing reservations will be transferred by the administration team, so staff should not enter them again. A short illustrated guide will also be placed on the staff website for reference after the training. Questions about individual bookings can be discussed at the end of the session.\n\nThe company will introduce a new room-booking system next month. A training session will (1) _____ in Room 204 this Friday at 2 p.m. The session is intended for employees who regularly arrange meetings.\n\nParticipants should bring a laptop so that they can (2) _____ the booking process during the session. No software installation is necessary. (3) _____, please check that you can connect to the office wireless network.\n\n(4) _____ A second session will be offered next Wednesday for those who cannot attend on Friday.",
+      "translation": "Công ty đưa vào hệ thống đặt phòng mới từ tháng sau. Buổi đào tạo diễn ra tại Phòng 204 vào thứ Sáu lúc 2 giờ chiều, dành cho nhân viên thường tổ chức họp. Hãy mang laptop để thực hành. Không cần cài phần mềm, nhưng cần kiểm tra kết nối Wi-Fi văn phòng. Có buổi học thứ hai vào thứ Tư tới cho người không dự được thứ Sáu.\n\nHệ thống mới thay lịch giấy tại lễ tân. Nhân viên xem phòng trống, yêu cầu thiết bị và cập nhật đặt chỗ từ bàn làm việc. Nhóm hành chính chuyển các lịch đã đặt; nhân viên không nhập lại. Hướng dẫn ngắn có hình sẽ đăng trên website nội bộ để tra cứu sau đào tạo. Có thể hỏi về từng lịch đặt vào cuối buổi."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-renovation-1",
+      "kind": "part6",
+      "topic": "Cơ sở vật chất",
+      "prompt": "Chọn từ cho chỗ trống (1).",
+      "options": [
+        "entryway",
+        "enter",
+        "entering",
+        "entered"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sau side cần danh từ entryway: lối vào bên hông tòa nhà.",
+      "difficulty": 2,
+      "passageId": "p6-calibrated-v1-renovation"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-renovation",
+      "kind": "part6",
+      "title": "Thông báo sửa khu vực tiếp khách",
+      "topic": "Cơ sở vật chất",
+      "text": "Lobby Renovation\n\nThe project will replace worn flooring and improve the signs directing visitors to meeting rooms. Work areas will be separated from public corridors by temporary barriers. Employees should remind expected guests about the alternative route when confirming appointments. Scheduled meetings and deliveries will continue during the renovation, and the building manager will post progress reports on the staff website. Please keep emergency exits clear and follow the instructions displayed near the temporary reception desk.\n\nRenovation of the main lobby will begin on May 12 and is expected to last two weeks. During this period, all visitors must use the side (1) _____ on Pine Street. Clear signs will be placed outside the building.\n\nThe reception team will continue to assist visitors from a temporary desk on the ground floor. (2) _____ some noise is unavoidable, the contractor will carry out the loudest work before 9 a.m.\n\nWe appreciate your (3) _____ while these improvements are made. (4) _____",
+      "translation": "Sửa sảnh chính bắt đầu ngày 12 tháng Năm và dự kiến kéo dài hai tuần. Khách phải dùng lối bên đường Pine. Bộ phận lễ tân hỗ trợ tại bàn tạm ở tầng trệt. Dù không tránh khỏi tiếng ồn, công việc ồn nhất sẽ được làm trước 9 giờ sáng. Ban quản lý cảm ơn sự kiên nhẫn và dự kiến sảnh hoàn thiện sẽ tiện nghi hơn.\n\nDự án thay sàn đã mòn và cải thiện biển chỉ dẫn đến phòng họp. Rào tạm ngăn khu thi công với hành lang công cộng. Nhân viên nhắc khách về lối thay thế khi xác nhận lịch hẹn. Các cuộc họp và chuyến giao hàng vẫn diễn ra; quản lý tòa nhà đăng tiến độ trên website nội bộ. Hãy để lối thoát hiểm thông thoáng và theo hướng dẫn gần bàn lễ tân tạm."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-renovation-2",
+      "kind": "part6",
+      "topic": "Cơ sở vật chất",
+      "prompt": "Chọn từ nối cho chỗ trống (2).",
+      "options": [
+        "Despite",
+        "Although",
+        "Because of",
+        "During"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sau chỗ trống là mệnh đề some noise is unavoidable, dùng Although để diễn tả nhượng bộ.",
+      "difficulty": 2,
+      "passageId": "p6-calibrated-v1-renovation"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-renovation",
+      "kind": "part6",
+      "title": "Thông báo sửa khu vực tiếp khách",
+      "topic": "Cơ sở vật chất",
+      "text": "Lobby Renovation\n\nThe project will replace worn flooring and improve the signs directing visitors to meeting rooms. Work areas will be separated from public corridors by temporary barriers. Employees should remind expected guests about the alternative route when confirming appointments. Scheduled meetings and deliveries will continue during the renovation, and the building manager will post progress reports on the staff website. Please keep emergency exits clear and follow the instructions displayed near the temporary reception desk.\n\nRenovation of the main lobby will begin on May 12 and is expected to last two weeks. During this period, all visitors must use the side (1) _____ on Pine Street. Clear signs will be placed outside the building.\n\nThe reception team will continue to assist visitors from a temporary desk on the ground floor. (2) _____ some noise is unavoidable, the contractor will carry out the loudest work before 9 a.m.\n\nWe appreciate your (3) _____ while these improvements are made. (4) _____",
+      "translation": "Sửa sảnh chính bắt đầu ngày 12 tháng Năm và dự kiến kéo dài hai tuần. Khách phải dùng lối bên đường Pine. Bộ phận lễ tân hỗ trợ tại bàn tạm ở tầng trệt. Dù không tránh khỏi tiếng ồn, công việc ồn nhất sẽ được làm trước 9 giờ sáng. Ban quản lý cảm ơn sự kiên nhẫn và dự kiến sảnh hoàn thiện sẽ tiện nghi hơn.\n\nDự án thay sàn đã mòn và cải thiện biển chỉ dẫn đến phòng họp. Rào tạm ngăn khu thi công với hành lang công cộng. Nhân viên nhắc khách về lối thay thế khi xác nhận lịch hẹn. Các cuộc họp và chuyến giao hàng vẫn diễn ra; quản lý tòa nhà đăng tiến độ trên website nội bộ. Hãy để lối thoát hiểm thông thoáng và theo hướng dẫn gần bàn lễ tân tạm."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-renovation-3",
+      "kind": "part6",
+      "topic": "Cơ sở vật chất",
+      "prompt": "Chọn từ cho chỗ trống (3).",
+      "options": [
+        "patient",
+        "patiently",
+        "patience",
+        "patients"
+      ],
+      "correctIndex": 2,
+      "explanation": "Your patience là cụm danh từ: sự kiên nhẫn của quý khách.",
+      "difficulty": 1,
+      "passageId": "p6-calibrated-v1-renovation"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-renovation",
+      "kind": "part6",
+      "title": "Thông báo sửa khu vực tiếp khách",
+      "topic": "Cơ sở vật chất",
+      "text": "Lobby Renovation\n\nThe project will replace worn flooring and improve the signs directing visitors to meeting rooms. Work areas will be separated from public corridors by temporary barriers. Employees should remind expected guests about the alternative route when confirming appointments. Scheduled meetings and deliveries will continue during the renovation, and the building manager will post progress reports on the staff website. Please keep emergency exits clear and follow the instructions displayed near the temporary reception desk.\n\nRenovation of the main lobby will begin on May 12 and is expected to last two weeks. During this period, all visitors must use the side (1) _____ on Pine Street. Clear signs will be placed outside the building.\n\nThe reception team will continue to assist visitors from a temporary desk on the ground floor. (2) _____ some noise is unavoidable, the contractor will carry out the loudest work before 9 a.m.\n\nWe appreciate your (3) _____ while these improvements are made. (4) _____",
+      "translation": "Sửa sảnh chính bắt đầu ngày 12 tháng Năm và dự kiến kéo dài hai tuần. Khách phải dùng lối bên đường Pine. Bộ phận lễ tân hỗ trợ tại bàn tạm ở tầng trệt. Dù không tránh khỏi tiếng ồn, công việc ồn nhất sẽ được làm trước 9 giờ sáng. Ban quản lý cảm ơn sự kiên nhẫn và dự kiến sảnh hoàn thiện sẽ tiện nghi hơn.\n\nDự án thay sàn đã mòn và cải thiện biển chỉ dẫn đến phòng họp. Rào tạm ngăn khu thi công với hành lang công cộng. Nhân viên nhắc khách về lối thay thế khi xác nhận lịch hẹn. Các cuộc họp và chuyến giao hàng vẫn diễn ra; quản lý tòa nhà đăng tiến độ trên website nội bộ. Hãy để lối thoát hiểm thông thoáng và theo hướng dẫn gần bàn lễ tân tạm."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-renovation-4",
+      "kind": "part6",
+      "topic": "Cơ sở vật chất",
+      "prompt": "Chọn câu phù hợp cho chỗ trống (4).",
+      "options": [
+        "The finished lobby will provide a more welcoming space for everyone.",
+        "Visitors should continue to use the main lobby.",
+        "The renovation will not affect the lobby.",
+        "Reception services will be unavailable until next month."
+      ],
+      "correctIndex": 0,
+      "explanation": "Câu kết nói lợi ích của sảnh sau sửa chữa, phù hợp toàn bộ thông báo.",
+      "difficulty": 2,
+      "passageId": "p6-calibrated-v1-renovation"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-renovation",
+      "kind": "part6",
+      "title": "Thông báo sửa khu vực tiếp khách",
+      "topic": "Cơ sở vật chất",
+      "text": "Lobby Renovation\n\nThe project will replace worn flooring and improve the signs directing visitors to meeting rooms. Work areas will be separated from public corridors by temporary barriers. Employees should remind expected guests about the alternative route when confirming appointments. Scheduled meetings and deliveries will continue during the renovation, and the building manager will post progress reports on the staff website. Please keep emergency exits clear and follow the instructions displayed near the temporary reception desk.\n\nRenovation of the main lobby will begin on May 12 and is expected to last two weeks. During this period, all visitors must use the side (1) _____ on Pine Street. Clear signs will be placed outside the building.\n\nThe reception team will continue to assist visitors from a temporary desk on the ground floor. (2) _____ some noise is unavoidable, the contractor will carry out the loudest work before 9 a.m.\n\nWe appreciate your (3) _____ while these improvements are made. (4) _____",
+      "translation": "Sửa sảnh chính bắt đầu ngày 12 tháng Năm và dự kiến kéo dài hai tuần. Khách phải dùng lối bên đường Pine. Bộ phận lễ tân hỗ trợ tại bàn tạm ở tầng trệt. Dù không tránh khỏi tiếng ồn, công việc ồn nhất sẽ được làm trước 9 giờ sáng. Ban quản lý cảm ơn sự kiên nhẫn và dự kiến sảnh hoàn thiện sẽ tiện nghi hơn.\n\nDự án thay sàn đã mòn và cải thiện biển chỉ dẫn đến phòng họp. Rào tạm ngăn khu thi công với hành lang công cộng. Nhân viên nhắc khách về lối thay thế khi xác nhận lịch hẹn. Các cuộc họp và chuyến giao hàng vẫn diễn ra; quản lý tòa nhà đăng tiến độ trên website nội bộ. Hãy để lối thoát hiểm thông thoáng và theo hướng dẫn gần bàn lễ tân tạm."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-membership-1",
+      "kind": "part6",
+      "topic": "Dịch vụ khách hàng",
+      "prompt": "Chọn từ cho chỗ trống (1).",
+      "options": [
+        "expand",
+        "expire",
+        "expect",
+        "express"
+      ],
+      "correctIndex": 1,
+      "explanation": "Membership sẽ hết hạn vào June 30; expire là động từ đúng nghĩa.",
+      "difficulty": 1,
+      "passageId": "p6-calibrated-v1-membership"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-membership",
+      "kind": "part6",
+      "title": "Email gia hạn hội viên",
+      "topic": "Dịch vụ khách hàng",
+      "text": "Dear Ms. Ortiz,\n\nYour account page lists the resources included in your current membership and shows the status of any outstanding reservations. These reservations will remain in your account when you renew. There is no need to create a second account or submit a new application. Please keep a copy of the payment confirmation for your records. Members who prefer to discuss their options may contact the service desk during the opening hours shown on our website.\n\nYour annual membership at Westbridge Business Library will (1) _____ on June 30. Renewing before that date will ensure uninterrupted access to our online journals and meeting rooms.\n\nTo renew, sign in to your account and select Membership. The annual fee has not changed. Once payment is processed, a receipt will be sent (2) _____ to your registered email address.\n\nIf your contact details have changed, please update (3) _____ before completing payment. (4) _____\n\nSincerely,\nMembership Services",
+      "translation": "Thẻ hội viên thư viện kinh doanh Westbridge hết hạn ngày 30 tháng Sáu. Gia hạn trước ngày đó để tiếp tục truy cập tạp chí trực tuyến và phòng họp. Đăng nhập, chọn Membership; phí năm không đổi. Biên lai tự động gửi tới email đăng ký sau khi xử lý thanh toán. Hãy cập nhật thông tin liên hệ nếu đã thay đổi; bộ phận hội viên có thể hỗ trợ khi gặp khó khăn.\n\nTrang tài khoản liệt kê tài nguyên thuộc gói hội viên và trạng thái các lượt đặt còn lại. Các lượt đặt được giữ khi gia hạn. Không cần tạo tài khoản thứ hai hoặc nộp đơn mới. Hãy giữ xác nhận thanh toán để lưu hồ sơ. Hội viên muốn trao đổi có thể liên hệ quầy dịch vụ trong giờ mở cửa trên website."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-membership-2",
+      "kind": "part6",
+      "topic": "Dịch vụ khách hàng",
+      "prompt": "Chọn từ cho chỗ trống (2).",
+      "options": [
+        "automatic",
+        "automation",
+        "automate",
+        "automatically"
+      ],
+      "correctIndex": 3,
+      "explanation": "Automatically là trạng từ bổ nghĩa will be sent: được gửi tự động.",
+      "difficulty": 1,
+      "passageId": "p6-calibrated-v1-membership"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-membership",
+      "kind": "part6",
+      "title": "Email gia hạn hội viên",
+      "topic": "Dịch vụ khách hàng",
+      "text": "Dear Ms. Ortiz,\n\nYour account page lists the resources included in your current membership and shows the status of any outstanding reservations. These reservations will remain in your account when you renew. There is no need to create a second account or submit a new application. Please keep a copy of the payment confirmation for your records. Members who prefer to discuss their options may contact the service desk during the opening hours shown on our website.\n\nYour annual membership at Westbridge Business Library will (1) _____ on June 30. Renewing before that date will ensure uninterrupted access to our online journals and meeting rooms.\n\nTo renew, sign in to your account and select Membership. The annual fee has not changed. Once payment is processed, a receipt will be sent (2) _____ to your registered email address.\n\nIf your contact details have changed, please update (3) _____ before completing payment. (4) _____\n\nSincerely,\nMembership Services",
+      "translation": "Thẻ hội viên thư viện kinh doanh Westbridge hết hạn ngày 30 tháng Sáu. Gia hạn trước ngày đó để tiếp tục truy cập tạp chí trực tuyến và phòng họp. Đăng nhập, chọn Membership; phí năm không đổi. Biên lai tự động gửi tới email đăng ký sau khi xử lý thanh toán. Hãy cập nhật thông tin liên hệ nếu đã thay đổi; bộ phận hội viên có thể hỗ trợ khi gặp khó khăn.\n\nTrang tài khoản liệt kê tài nguyên thuộc gói hội viên và trạng thái các lượt đặt còn lại. Các lượt đặt được giữ khi gia hạn. Không cần tạo tài khoản thứ hai hoặc nộp đơn mới. Hãy giữ xác nhận thanh toán để lưu hồ sơ. Hội viên muốn trao đổi có thể liên hệ quầy dịch vụ trong giờ mở cửa trên website."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-membership-3",
+      "kind": "part6",
+      "topic": "Dịch vụ khách hàng",
+      "prompt": "Chọn từ cho chỗ trống (3).",
+      "options": [
+        "they",
+        "their",
+        "them",
+        "theirs"
+      ],
+      "correctIndex": 2,
+      "explanation": "Them là đại từ tân ngữ thay cho contact details sau update.",
+      "difficulty": 2,
+      "passageId": "p6-calibrated-v1-membership"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-membership",
+      "kind": "part6",
+      "title": "Email gia hạn hội viên",
+      "topic": "Dịch vụ khách hàng",
+      "text": "Dear Ms. Ortiz,\n\nYour account page lists the resources included in your current membership and shows the status of any outstanding reservations. These reservations will remain in your account when you renew. There is no need to create a second account or submit a new application. Please keep a copy of the payment confirmation for your records. Members who prefer to discuss their options may contact the service desk during the opening hours shown on our website.\n\nYour annual membership at Westbridge Business Library will (1) _____ on June 30. Renewing before that date will ensure uninterrupted access to our online journals and meeting rooms.\n\nTo renew, sign in to your account and select Membership. The annual fee has not changed. Once payment is processed, a receipt will be sent (2) _____ to your registered email address.\n\nIf your contact details have changed, please update (3) _____ before completing payment. (4) _____\n\nSincerely,\nMembership Services",
+      "translation": "Thẻ hội viên thư viện kinh doanh Westbridge hết hạn ngày 30 tháng Sáu. Gia hạn trước ngày đó để tiếp tục truy cập tạp chí trực tuyến và phòng họp. Đăng nhập, chọn Membership; phí năm không đổi. Biên lai tự động gửi tới email đăng ký sau khi xử lý thanh toán. Hãy cập nhật thông tin liên hệ nếu đã thay đổi; bộ phận hội viên có thể hỗ trợ khi gặp khó khăn.\n\nTrang tài khoản liệt kê tài nguyên thuộc gói hội viên và trạng thái các lượt đặt còn lại. Các lượt đặt được giữ khi gia hạn. Không cần tạo tài khoản thứ hai hoặc nộp đơn mới. Hãy giữ xác nhận thanh toán để lưu hồ sơ. Hội viên muốn trao đổi có thể liên hệ quầy dịch vụ trong giờ mở cửa trên website."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p6-calibrated-v1-membership-4",
+      "kind": "part6",
+      "topic": "Dịch vụ khách hàng",
+      "prompt": "Chọn câu phù hợp cho chỗ trống (4).",
+      "options": [
+        "Our membership team can help if you have trouble with the renewal process.",
+        "The annual fee has doubled this year.",
+        "Paper receipts can only be collected at reception.",
+        "Your access will end even if you renew on time."
+      ],
+      "correctIndex": 0,
+      "explanation": "Câu đề nghị hỗ trợ gia hạn tiếp nối hướng dẫn thanh toán; không mâu thuẫn với quyền truy cập đã nêu.",
+      "difficulty": 2,
+      "passageId": "p6-calibrated-v1-membership"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p6-calibrated-v1-membership",
+      "kind": "part6",
+      "title": "Email gia hạn hội viên",
+      "topic": "Dịch vụ khách hàng",
+      "text": "Dear Ms. Ortiz,\n\nYour account page lists the resources included in your current membership and shows the status of any outstanding reservations. These reservations will remain in your account when you renew. There is no need to create a second account or submit a new application. Please keep a copy of the payment confirmation for your records. Members who prefer to discuss their options may contact the service desk during the opening hours shown on our website.\n\nYour annual membership at Westbridge Business Library will (1) _____ on June 30. Renewing before that date will ensure uninterrupted access to our online journals and meeting rooms.\n\nTo renew, sign in to your account and select Membership. The annual fee has not changed. Once payment is processed, a receipt will be sent (2) _____ to your registered email address.\n\nIf your contact details have changed, please update (3) _____ before completing payment. (4) _____\n\nSincerely,\nMembership Services",
+      "translation": "Thẻ hội viên thư viện kinh doanh Westbridge hết hạn ngày 30 tháng Sáu. Gia hạn trước ngày đó để tiếp tục truy cập tạp chí trực tuyến và phòng họp. Đăng nhập, chọn Membership; phí năm không đổi. Biên lai tự động gửi tới email đăng ký sau khi xử lý thanh toán. Hãy cập nhật thông tin liên hệ nếu đã thay đổi; bộ phận hội viên có thể hỗ trợ khi gặp khó khăn.\n\nTrang tài khoản liệt kê tài nguyên thuộc gói hội viên và trạng thái các lượt đặt còn lại. Các lượt đặt được giữ khi gia hạn. Không cần tạo tài khoản thứ hai hoặc nộp đơn mới. Hãy giữ xác nhận thanh toán để lưu hồ sơ. Hội viên muốn trao đổi có thể liên hệ quầy dịch vụ trong giờ mở cửa trên website."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-store-1",
+      "kind": "part7",
+      "topic": "Bán lẻ",
+      "prompt": "What should a customer do before visiting the collection desk?",
+      "options": [
+        "Wait for the ready-for-collection email",
+        "Call the manufacturer",
+        "Print the entire online catalog",
+        "Cancel the delivery service"
+      ],
+      "correctIndex": 0,
+      "explanation": "Thông báo yêu cầu đợi email xác nhận hàng sẵn sàng trước khi đến.",
+      "difficulty": 1,
+      "passageId": "p7-calibrated-v1-store"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-store",
+      "kind": "part7",
+      "title": "Thông báo cửa hàng",
+      "topic": "Bán lẻ",
+      "text": "NORTHLINE ELECTRONICS\nStore Collection Service\n\nPlace your order on our website and choose Collect in Store at checkout. Orders confirmed before 3 p.m. are usually ready the same day. You will receive an email when your items are ready; please wait for this message before visiting the store.\n\nBring your order number and a photo ID. A friend may collect an order on your behalf if you enter their name in your account before collection. Orders not collected within seven days will be canceled and refunded.\n\nCollection desk hours: Monday–Saturday, 10 a.m.–7 p.m. Closed on Sundays.\n\nCollection is handled separately from the repair service, so please follow the signs for online orders rather than joining the repairs queue. If an order contains several items, the email will state whether the entire order is ready. Check this information before arranging your journey. Staff can help you inspect the packaging at the counter, but changes to an online order must be requested through your account.",
+      "translation": "Đặt hàng trên website và chọn nhận tại cửa hàng. Đơn xác nhận trước 3 giờ chiều thường sẵn sàng trong ngày; hãy đợi email xác nhận hàng đã sẵn sàng. Khi nhận, mang mã đơn và giấy tờ có ảnh. Bạn có thể nhờ bạn bè nhận nếu khai báo tên người đó trước. Quá bảy ngày không nhận, đơn bị hủy và hoàn tiền. Quầy mở thứ Hai đến thứ Bảy, 10 giờ–19 giờ, nghỉ Chủ nhật.\n\nQuầy nhận hàng tách với dịch vụ sửa chữa; hãy theo biển đơn trực tuyến thay vì xếp hàng sửa chữa. Nếu đơn có nhiều món, email cho biết đã đủ toàn bộ hay chưa. Kiểm tra trước khi đi. Nhân viên có thể giúp kiểm tra bao bì tại quầy; muốn sửa đơn trực tuyến phải yêu cầu qua tài khoản."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-store-2",
+      "kind": "part7",
+      "topic": "Bán lẻ",
+      "prompt": "Under what condition may a friend collect an order?",
+      "options": [
+        "The friend pays an additional fee",
+        "The customer adds the friend’s name in the account beforehand",
+        "The friend arrives on Sunday",
+        "The order has been waiting over seven days"
+      ],
+      "correctIndex": 1,
+      "explanation": "Người mua phải nhập tên người nhận thay trong tài khoản trước lúc nhận hàng.",
+      "difficulty": 2,
+      "passageId": "p7-calibrated-v1-store"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-store",
+      "kind": "part7",
+      "title": "Thông báo cửa hàng",
+      "topic": "Bán lẻ",
+      "text": "NORTHLINE ELECTRONICS\nStore Collection Service\n\nPlace your order on our website and choose Collect in Store at checkout. Orders confirmed before 3 p.m. are usually ready the same day. You will receive an email when your items are ready; please wait for this message before visiting the store.\n\nBring your order number and a photo ID. A friend may collect an order on your behalf if you enter their name in your account before collection. Orders not collected within seven days will be canceled and refunded.\n\nCollection desk hours: Monday–Saturday, 10 a.m.–7 p.m. Closed on Sundays.\n\nCollection is handled separately from the repair service, so please follow the signs for online orders rather than joining the repairs queue. If an order contains several items, the email will state whether the entire order is ready. Check this information before arranging your journey. Staff can help you inspect the packaging at the counter, but changes to an online order must be requested through your account.",
+      "translation": "Đặt hàng trên website và chọn nhận tại cửa hàng. Đơn xác nhận trước 3 giờ chiều thường sẵn sàng trong ngày; hãy đợi email xác nhận hàng đã sẵn sàng. Khi nhận, mang mã đơn và giấy tờ có ảnh. Bạn có thể nhờ bạn bè nhận nếu khai báo tên người đó trước. Quá bảy ngày không nhận, đơn bị hủy và hoàn tiền. Quầy mở thứ Hai đến thứ Bảy, 10 giờ–19 giờ, nghỉ Chủ nhật.\n\nQuầy nhận hàng tách với dịch vụ sửa chữa; hãy theo biển đơn trực tuyến thay vì xếp hàng sửa chữa. Nếu đơn có nhiều món, email cho biết đã đủ toàn bộ hay chưa. Kiểm tra trước khi đi. Nhân viên có thể giúp kiểm tra bao bì tại quầy; muốn sửa đơn trực tuyến phải yêu cầu qua tài khoản."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-store-3",
+      "kind": "part7",
+      "topic": "Bán lẻ",
+      "prompt": "What happens to an order that is not collected within seven days?",
+      "options": [
+        "It is transferred to another store",
+        "A storage fee is charged",
+        "It is delivered automatically",
+        "It is canceled and refunded"
+      ],
+      "correctIndex": 3,
+      "explanation": "Thông báo nêu rõ orders not collected within seven days will be canceled and refunded.",
+      "difficulty": 1,
+      "passageId": "p7-calibrated-v1-store"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-store",
+      "kind": "part7",
+      "title": "Thông báo cửa hàng",
+      "topic": "Bán lẻ",
+      "text": "NORTHLINE ELECTRONICS\nStore Collection Service\n\nPlace your order on our website and choose Collect in Store at checkout. Orders confirmed before 3 p.m. are usually ready the same day. You will receive an email when your items are ready; please wait for this message before visiting the store.\n\nBring your order number and a photo ID. A friend may collect an order on your behalf if you enter their name in your account before collection. Orders not collected within seven days will be canceled and refunded.\n\nCollection desk hours: Monday–Saturday, 10 a.m.–7 p.m. Closed on Sundays.\n\nCollection is handled separately from the repair service, so please follow the signs for online orders rather than joining the repairs queue. If an order contains several items, the email will state whether the entire order is ready. Check this information before arranging your journey. Staff can help you inspect the packaging at the counter, but changes to an online order must be requested through your account.",
+      "translation": "Đặt hàng trên website và chọn nhận tại cửa hàng. Đơn xác nhận trước 3 giờ chiều thường sẵn sàng trong ngày; hãy đợi email xác nhận hàng đã sẵn sàng. Khi nhận, mang mã đơn và giấy tờ có ảnh. Bạn có thể nhờ bạn bè nhận nếu khai báo tên người đó trước. Quá bảy ngày không nhận, đơn bị hủy và hoàn tiền. Quầy mở thứ Hai đến thứ Bảy, 10 giờ–19 giờ, nghỉ Chủ nhật.\n\nQuầy nhận hàng tách với dịch vụ sửa chữa; hãy theo biển đơn trực tuyến thay vì xếp hàng sửa chữa. Nếu đơn có nhiều món, email cho biết đã đủ toàn bộ hay chưa. Kiểm tra trước khi đi. Nhân viên có thể giúp kiểm tra bao bì tại quầy; muốn sửa đơn trực tuyến phải yêu cầu qua tài khoản."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-invoice-1",
+      "kind": "part7",
+      "topic": "Thanh toán",
+      "prompt": "What is the total amount due?",
+      "options": [
+        "$360",
+        "$540",
+        "$900",
+        "$1,080"
+      ],
+      "correctIndex": 2,
+      "explanation": "Total due trên hóa đơn là $900, bằng 360 + 540.",
+      "difficulty": 1,
+      "passageId": "p7-calibrated-v1-invoice"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-invoice",
+      "kind": "part7",
+      "title": "Hóa đơn và ghi chú thanh toán",
+      "topic": "Thanh toán",
+      "text": "CEDAR DESIGN STUDIO\nInvoice CD-418\nIssued: September 2\nClient: Brookfield Travel\n\nWebsite banner design: $360\nThree brochure layouts: $540\nTotal due: $900\nPayment deadline: September 16\n\nPlease include CD-418 as the payment reference. Payments should be made by bank transfer; bank details appear in the client portal. Printed brochures and printing services are not included in this invoice. For questions about the listed design work, contact accounts@cedar.example.\n\nThe completed digital files are available for download in the same portal. This invoice covers the design work approved by your marketing department; it does not authorize any additional printing. If your finance team needs a revised billing address, please request the change before submitting payment so that the correct details appear on your records. Include the invoice number in correspondence to help us locate your account promptly.",
+      "translation": "Hóa đơn CD-418 ngày 2 tháng Chín cho Brookfield Travel gồm thiết kế banner website 360 đô và ba bản bố cục brochure 540 đô, tổng 900 đô, hạn thanh toán 16 tháng Chín. Chuyển khoản và ghi mã CD-418; thông tin ngân hàng có trong cổng khách hàng. Hóa đơn không gồm brochure in sẵn hoặc dịch vụ in.\n\nCác tệp kỹ thuật số hoàn chỉnh có thể tải trong cùng cổng khách hàng. Hóa đơn cho công việc thiết kế được bộ phận tiếp thị duyệt, không cho phép phát sinh dịch vụ in. Nếu cần sửa địa chỉ xuất hóa đơn, bộ phận tài chính yêu cầu trước khi trả tiền để hồ sơ đúng. Ghi số hóa đơn khi liên hệ để nhanh chóng tìm tài khoản."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-invoice-2",
+      "kind": "part7",
+      "topic": "Thanh toán",
+      "prompt": "Which service is NOT included?",
+      "options": [
+        "Website banner design",
+        "Brochure layout design",
+        "Printed brochures",
+        "Design work for Brookfield Travel"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ghi chú loại trừ printed brochures và dịch vụ in; các mục thiết kế có trên hóa đơn.",
+      "difficulty": 2,
+      "passageId": "p7-calibrated-v1-invoice"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-invoice",
+      "kind": "part7",
+      "title": "Hóa đơn và ghi chú thanh toán",
+      "topic": "Thanh toán",
+      "text": "CEDAR DESIGN STUDIO\nInvoice CD-418\nIssued: September 2\nClient: Brookfield Travel\n\nWebsite banner design: $360\nThree brochure layouts: $540\nTotal due: $900\nPayment deadline: September 16\n\nPlease include CD-418 as the payment reference. Payments should be made by bank transfer; bank details appear in the client portal. Printed brochures and printing services are not included in this invoice. For questions about the listed design work, contact accounts@cedar.example.\n\nThe completed digital files are available for download in the same portal. This invoice covers the design work approved by your marketing department; it does not authorize any additional printing. If your finance team needs a revised billing address, please request the change before submitting payment so that the correct details appear on your records. Include the invoice number in correspondence to help us locate your account promptly.",
+      "translation": "Hóa đơn CD-418 ngày 2 tháng Chín cho Brookfield Travel gồm thiết kế banner website 360 đô và ba bản bố cục brochure 540 đô, tổng 900 đô, hạn thanh toán 16 tháng Chín. Chuyển khoản và ghi mã CD-418; thông tin ngân hàng có trong cổng khách hàng. Hóa đơn không gồm brochure in sẵn hoặc dịch vụ in.\n\nCác tệp kỹ thuật số hoàn chỉnh có thể tải trong cùng cổng khách hàng. Hóa đơn cho công việc thiết kế được bộ phận tiếp thị duyệt, không cho phép phát sinh dịch vụ in. Nếu cần sửa địa chỉ xuất hóa đơn, bộ phận tài chính yêu cầu trước khi trả tiền để hồ sơ đúng. Ghi số hóa đơn khi liên hệ để nhanh chóng tìm tài khoản."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-invoice-3",
+      "kind": "part7",
+      "topic": "Thanh toán",
+      "prompt": "What should the client include when making payment?",
+      "options": [
+        "The invoice reference CD-418",
+        "A copy of its travel brochure",
+        "The designer’s personal address",
+        "A membership number"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ghi chú yêu cầu dùng CD-418 làm payment reference khi chuyển khoản.",
+      "difficulty": 1,
+      "passageId": "p7-calibrated-v1-invoice"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-invoice",
+      "kind": "part7",
+      "title": "Hóa đơn và ghi chú thanh toán",
+      "topic": "Thanh toán",
+      "text": "CEDAR DESIGN STUDIO\nInvoice CD-418\nIssued: September 2\nClient: Brookfield Travel\n\nWebsite banner design: $360\nThree brochure layouts: $540\nTotal due: $900\nPayment deadline: September 16\n\nPlease include CD-418 as the payment reference. Payments should be made by bank transfer; bank details appear in the client portal. Printed brochures and printing services are not included in this invoice. For questions about the listed design work, contact accounts@cedar.example.\n\nThe completed digital files are available for download in the same portal. This invoice covers the design work approved by your marketing department; it does not authorize any additional printing. If your finance team needs a revised billing address, please request the change before submitting payment so that the correct details appear on your records. Include the invoice number in correspondence to help us locate your account promptly.",
+      "translation": "Hóa đơn CD-418 ngày 2 tháng Chín cho Brookfield Travel gồm thiết kế banner website 360 đô và ba bản bố cục brochure 540 đô, tổng 900 đô, hạn thanh toán 16 tháng Chín. Chuyển khoản và ghi mã CD-418; thông tin ngân hàng có trong cổng khách hàng. Hóa đơn không gồm brochure in sẵn hoặc dịch vụ in.\n\nCác tệp kỹ thuật số hoàn chỉnh có thể tải trong cùng cổng khách hàng. Hóa đơn cho công việc thiết kế được bộ phận tiếp thị duyệt, không cho phép phát sinh dịch vụ in. Nếu cần sửa địa chỉ xuất hóa đơn, bộ phận tài chính yêu cầu trước khi trả tiền để hồ sơ đúng. Ghi số hóa đơn khi liên hệ để nhanh chóng tìm tài khoản."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-recruitment-1",
+      "kind": "part7",
+      "topic": "Tuyển dụng",
+      "prompt": "Which skill is required for the position?",
+      "options": [
+        "Designing event venues",
+        "Using spreadsheets",
+        "Driving a delivery van",
+        "Managing hotel restaurants"
+      ],
+      "correctIndex": 1,
+      "explanation": "Thông báo yêu cầu comfortable using spreadsheets và giao tiếp tiếng Anh.",
+      "difficulty": 1,
+      "passageId": "p7-calibrated-v1-recruitment"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-recruitment",
+      "kind": "part7",
+      "title": "Tin tuyển trợ lý điều phối",
+      "topic": "Tuyển dụng",
+      "text": "OPERATIONS ASSISTANT — LARKIN EVENTS\n\nWe are seeking an organized assistant to support our event coordination team. Duties include maintaining supplier records, preparing schedules, and answering client inquiries. Previous experience in event planning is welcome but is not required. Applicants must be comfortable using spreadsheets and communicating in English.\n\nThis is a full-time role based at our downtown office. Occasional Saturday work is required during major events; employees receive a weekday off in return.\n\nEmail a résumé and a short cover letter by April 18. Shortlisted applicants will be contacted for interviews in the following week.\n\nThe successful applicant will work closely with a senior coordinator during an initial training period. We provide an introduction to our booking procedures and supplier database, so applicants are not expected to know these systems in advance. The office is within walking distance of Central Station. Please use the position title as the subject of your email and combine your application documents into one PDF attachment.",
+      "translation": "Larkin Events tuyển trợ lý vận hành làm toàn thời gian ở văn phòng trung tâm: quản lý hồ sơ nhà cung cấp, chuẩn bị lịch và trả lời khách. Có kinh nghiệm sự kiện là lợi thế nhưng không bắt buộc; cần dùng bảng tính và giao tiếp tiếng Anh. Đôi khi làm thứ Bảy và được nghỉ bù ngày thường. Nộp CV và thư ứng tuyển ngắn trước hạn 18 tháng Tư.\n\nỨng viên được tuyển làm cùng điều phối viên cấp cao trong giai đoạn đào tạo ban đầu. Công ty hướng dẫn quy trình đặt chỗ và cơ sở dữ liệu nhà cung cấp, không đòi hỏi biết trước hệ thống. Văn phòng cách ga Central một quãng đi bộ. Ghi tên vị trí ở tiêu đề email và gộp hồ sơ vào một tệp PDF đính kèm."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-recruitment-2",
+      "kind": "part7",
+      "topic": "Tuyển dụng",
+      "prompt": "What is stated about Saturday work?",
+      "options": [
+        "It is required every week",
+        "It is paid only in cash",
+        "It may be necessary, with a weekday off in return",
+        "It is never part of the role"
+      ],
+      "correctIndex": 2,
+      "explanation": "Đôi khi phải làm thứ Bảy khi có sự kiện lớn và được nghỉ bù ngày thường.",
+      "difficulty": 2,
+      "passageId": "p7-calibrated-v1-recruitment"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-recruitment",
+      "kind": "part7",
+      "title": "Tin tuyển trợ lý điều phối",
+      "topic": "Tuyển dụng",
+      "text": "OPERATIONS ASSISTANT — LARKIN EVENTS\n\nWe are seeking an organized assistant to support our event coordination team. Duties include maintaining supplier records, preparing schedules, and answering client inquiries. Previous experience in event planning is welcome but is not required. Applicants must be comfortable using spreadsheets and communicating in English.\n\nThis is a full-time role based at our downtown office. Occasional Saturday work is required during major events; employees receive a weekday off in return.\n\nEmail a résumé and a short cover letter by April 18. Shortlisted applicants will be contacted for interviews in the following week.\n\nThe successful applicant will work closely with a senior coordinator during an initial training period. We provide an introduction to our booking procedures and supplier database, so applicants are not expected to know these systems in advance. The office is within walking distance of Central Station. Please use the position title as the subject of your email and combine your application documents into one PDF attachment.",
+      "translation": "Larkin Events tuyển trợ lý vận hành làm toàn thời gian ở văn phòng trung tâm: quản lý hồ sơ nhà cung cấp, chuẩn bị lịch và trả lời khách. Có kinh nghiệm sự kiện là lợi thế nhưng không bắt buộc; cần dùng bảng tính và giao tiếp tiếng Anh. Đôi khi làm thứ Bảy và được nghỉ bù ngày thường. Nộp CV và thư ứng tuyển ngắn trước hạn 18 tháng Tư.\n\nỨng viên được tuyển làm cùng điều phối viên cấp cao trong giai đoạn đào tạo ban đầu. Công ty hướng dẫn quy trình đặt chỗ và cơ sở dữ liệu nhà cung cấp, không đòi hỏi biết trước hệ thống. Văn phòng cách ga Central một quãng đi bộ. Ghi tên vị trí ở tiêu đề email và gộp hồ sơ vào một tệp PDF đính kèm."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-recruitment-3",
+      "kind": "part7",
+      "topic": "Tuyển dụng",
+      "prompt": "What must applicants send by April 18?",
+      "options": [
+        "A résumé and a short cover letter",
+        "A full event budget",
+        "Two signed contracts",
+        "A software certificate"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hướng dẫn ứng tuyển yêu cầu résumé và short cover letter trước hạn 18 tháng Tư.",
+      "difficulty": 1,
+      "passageId": "p7-calibrated-v1-recruitment"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-recruitment",
+      "kind": "part7",
+      "title": "Tin tuyển trợ lý điều phối",
+      "topic": "Tuyển dụng",
+      "text": "OPERATIONS ASSISTANT — LARKIN EVENTS\n\nWe are seeking an organized assistant to support our event coordination team. Duties include maintaining supplier records, preparing schedules, and answering client inquiries. Previous experience in event planning is welcome but is not required. Applicants must be comfortable using spreadsheets and communicating in English.\n\nThis is a full-time role based at our downtown office. Occasional Saturday work is required during major events; employees receive a weekday off in return.\n\nEmail a résumé and a short cover letter by April 18. Shortlisted applicants will be contacted for interviews in the following week.\n\nThe successful applicant will work closely with a senior coordinator during an initial training period. We provide an introduction to our booking procedures and supplier database, so applicants are not expected to know these systems in advance. The office is within walking distance of Central Station. Please use the position title as the subject of your email and combine your application documents into one PDF attachment.",
+      "translation": "Larkin Events tuyển trợ lý vận hành làm toàn thời gian ở văn phòng trung tâm: quản lý hồ sơ nhà cung cấp, chuẩn bị lịch và trả lời khách. Có kinh nghiệm sự kiện là lợi thế nhưng không bắt buộc; cần dùng bảng tính và giao tiếp tiếng Anh. Đôi khi làm thứ Bảy và được nghỉ bù ngày thường. Nộp CV và thư ứng tuyển ngắn trước hạn 18 tháng Tư.\n\nỨng viên được tuyển làm cùng điều phối viên cấp cao trong giai đoạn đào tạo ban đầu. Công ty hướng dẫn quy trình đặt chỗ và cơ sở dữ liệu nhà cung cấp, không đòi hỏi biết trước hệ thống. Văn phòng cách ga Central một quãng đi bộ. Ghi tên vị trí ở tiêu đề email và gộp hồ sơ vào một tệp PDF đính kèm."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-train-1",
+      "kind": "part7",
+      "topic": "Đi lại",
+      "prompt": "Which section is affected before noon?",
+      "options": [
+        "Mill Park–Harbor",
+        "Harbor–Easton direct express",
+        "Easton–Mill Park",
+        "Every Riverline service"
+      ],
+      "correctIndex": 2,
+      "explanation": "Thông báo ngừng tàu Easton–Mill Park trước trưa; đoạn Mill Park–Harbor vẫn bình thường.",
+      "difficulty": 1,
+      "passageId": "p7-calibrated-v1-train"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-train",
+      "kind": "part7",
+      "title": "Thông báo đường sắt và lịch thay thế",
+      "topic": "Đi lại",
+      "text": "RIVERLINE RAIL NOTICE\nEngineering work: Sunday, October 11\n\nTrains between Easton and Mill Park will not operate before noon. Replacement buses will run every thirty minutes from outside Easton Station, beginning at 6 a.m. Travel by bus is expected to take twenty minutes longer than the usual train journey. Regular rail tickets will be accepted on the replacement buses at no additional charge.\n\nTrains on the Mill Park–Harbor section will operate normally throughout the day. Normal service between Easton and Mill Park resumes at noon.\n\nStation staff will be available to direct passengers to the temporary bus stop. Please check the destination sign before boarding, as ordinary local buses also use the road outside the station. Passengers with connecting services should consult the journey planner and leave additional time. The work is being carried out while passenger numbers are lower to reduce disruption. Any further updates will be displayed on station information boards and the Riverline website.",
+      "translation": "Chủ nhật 11 tháng Mười, tàu Easton–Mill Park ngừng trước trưa để thi công. Xe buýt thay thế khởi hành ngoài ga Easton từ 6 giờ, mỗi 30 phút; đi lâu hơn tàu khoảng 20 phút và chấp nhận vé tàu không thu thêm phí. Đoạn Mill Park–Harbor vẫn hoạt động bình thường. Tàu Easton–Mill Park chạy lại lúc trưa.\n\nNhân viên ga hướng dẫn đến điểm xe buýt tạm. Kiểm tra biển đích đến trước khi lên vì xe địa phương thường cũng đi qua đường ngoài ga. Khách có chuyến nối tra cứu công cụ hành trình và dành thêm thời gian. Thi công lúc ít khách để giảm gián đoạn. Cập nhật mới đăng trên bảng thông tin ga và website Riverline."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-train-2",
+      "kind": "part7",
+      "topic": "Đi lại",
+      "prompt": "How much extra must regular ticket holders pay for a replacement bus?",
+      "options": [
+        "Nothing",
+        "$2",
+        "$5",
+        "The full bus fare"
+      ],
+      "correctIndex": 0,
+      "explanation": "Regular rail tickets được chấp nhận trên xe buýt mà không thu thêm phí.",
+      "difficulty": 1,
+      "passageId": "p7-calibrated-v1-train"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-train",
+      "kind": "part7",
+      "title": "Thông báo đường sắt và lịch thay thế",
+      "topic": "Đi lại",
+      "text": "RIVERLINE RAIL NOTICE\nEngineering work: Sunday, October 11\n\nTrains between Easton and Mill Park will not operate before noon. Replacement buses will run every thirty minutes from outside Easton Station, beginning at 6 a.m. Travel by bus is expected to take twenty minutes longer than the usual train journey. Regular rail tickets will be accepted on the replacement buses at no additional charge.\n\nTrains on the Mill Park–Harbor section will operate normally throughout the day. Normal service between Easton and Mill Park resumes at noon.\n\nStation staff will be available to direct passengers to the temporary bus stop. Please check the destination sign before boarding, as ordinary local buses also use the road outside the station. Passengers with connecting services should consult the journey planner and leave additional time. The work is being carried out while passenger numbers are lower to reduce disruption. Any further updates will be displayed on station information boards and the Riverline website.",
+      "translation": "Chủ nhật 11 tháng Mười, tàu Easton–Mill Park ngừng trước trưa để thi công. Xe buýt thay thế khởi hành ngoài ga Easton từ 6 giờ, mỗi 30 phút; đi lâu hơn tàu khoảng 20 phút và chấp nhận vé tàu không thu thêm phí. Đoạn Mill Park–Harbor vẫn hoạt động bình thường. Tàu Easton–Mill Park chạy lại lúc trưa.\n\nNhân viên ga hướng dẫn đến điểm xe buýt tạm. Kiểm tra biển đích đến trước khi lên vì xe địa phương thường cũng đi qua đường ngoài ga. Khách có chuyến nối tra cứu công cụ hành trình và dành thêm thời gian. Thi công lúc ít khách để giảm gián đoạn. Cập nhật mới đăng trên bảng thông tin ga và website Riverline."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-calibrated-v1-train-3",
+      "kind": "part7",
+      "topic": "Đi lại",
+      "prompt": "What should passengers allow for when using the replacement bus?",
+      "options": [
+        "A twenty-minute longer journey",
+        "A departure every ten minutes",
+        "A walk from Mill Park to Harbor",
+        "An afternoon-only service"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hành trình xe buýt dự kiến lâu hơn tàu thông thường 20 phút.",
+      "difficulty": 2,
+      "passageId": "p7-calibrated-v1-train"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-calibrated-v1-train",
+      "kind": "part7",
+      "title": "Thông báo đường sắt và lịch thay thế",
+      "topic": "Đi lại",
+      "text": "RIVERLINE RAIL NOTICE\nEngineering work: Sunday, October 11\n\nTrains between Easton and Mill Park will not operate before noon. Replacement buses will run every thirty minutes from outside Easton Station, beginning at 6 a.m. Travel by bus is expected to take twenty minutes longer than the usual train journey. Regular rail tickets will be accepted on the replacement buses at no additional charge.\n\nTrains on the Mill Park–Harbor section will operate normally throughout the day. Normal service between Easton and Mill Park resumes at noon.\n\nStation staff will be available to direct passengers to the temporary bus stop. Please check the destination sign before boarding, as ordinary local buses also use the road outside the station. Passengers with connecting services should consult the journey planner and leave additional time. The work is being carried out while passenger numbers are lower to reduce disruption. Any further updates will be displayed on station information boards and the Riverline website.",
+      "translation": "Chủ nhật 11 tháng Mười, tàu Easton–Mill Park ngừng trước trưa để thi công. Xe buýt thay thế khởi hành ngoài ga Easton từ 6 giờ, mỗi 30 phút; đi lâu hơn tàu khoảng 20 phút và chấp nhận vé tàu không thu thêm phí. Đoạn Mill Park–Harbor vẫn hoạt động bình thường. Tàu Easton–Mill Park chạy lại lúc trưa.\n\nNhân viên ga hướng dẫn đến điểm xe buýt tạm. Kiểm tra biển đích đến trước khi lên vì xe địa phương thường cũng đi qua đường ngoài ga. Khách có chuyến nối tra cứu công cụ hành trình và dành thêm thời gian. Thi công lúc ít khách để giảm gián đoạn. Cập nhật mới đăng trên bảng thông tin ga và website Riverline."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-fitness-q1",
+      "kind": "part7",
+      "topic": "Quy định phòng tập",
+      "prompt": "What must members do after each visit?",
+      "options": [
+        "Leave padlocks at reception.",
+        "Register for a personal trainer.",
+        "Remove all items from their lockers.",
+        "Pay a new locker fee."
+      ],
+      "correctIndex": 2,
+      "explanation": "Thông báo yêu cầu dọn trống tủ sau mỗi lần sử dụng.",
+      "evidence": "lockers must be emptied at the end of each visit",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-fitness"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-fitness",
+      "kind": "part7",
+      "title": "Quy định phòng tập",
+      "topic": "Quy định phòng tập",
+      "text": "NORTHVIEW FITNESS — MEMBER NOTICE\nFrom May 1, lockers must be emptied at the end of each visit. Items left overnight will be taken to reception and kept for seven days. Members may collect them during staffed hours, from 6 a.m. to 9 p.m. The center is not introducing a locker rental charge. Please bring your own padlock; spare padlocks are not available at the desk.\n\nThese arrangements are intended to make the changing area easier to clean and to ensure that lockers are available for everyone. A locker number is printed inside each door; please mention it when asking reception about a missing item. Before leaving, check the shelf and floor of your locker. Staff will record where each unclaimed item was found to assist members who return to collect it.",
+      "translation": "Từ ngày 1/5, phải dọn hết đồ trong tủ sau mỗi lần tập. Đồ để qua đêm được đưa về lễ tân và giữ bảy ngày. Có thể nhận từ 6 giờ sáng đến 9 giờ tối khi có nhân viên. Không có phí thuê tủ mới. Hội viên tự mang khóa; quầy không có khóa dự phòng.\n\nQuy định giúp vệ sinh khu thay đồ và bảo đảm có tủ cho mọi người. Số tủ in trong cửa; hãy nêu số khi hỏi lễ tân về đồ thất lạc. Trước khi về, kiểm tra kệ và sàn tủ. Nhân viên ghi vị trí tìm thấy từng món để hỗ trợ người quay lại nhận."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-fitness-q2",
+      "kind": "part7",
+      "topic": "Quy định phòng tập",
+      "prompt": "How long are items left overnight kept at reception?",
+      "options": [
+        "One month.",
+        "Seven days.",
+        "One day.",
+        "Three days."
+      ],
+      "correctIndex": 1,
+      "explanation": "Đồ được chuyển về lễ tân và giữ bảy ngày.",
+      "evidence": "kept for seven days",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-fitness"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-fitness",
+      "kind": "part7",
+      "title": "Quy định phòng tập",
+      "topic": "Quy định phòng tập",
+      "text": "NORTHVIEW FITNESS — MEMBER NOTICE\nFrom May 1, lockers must be emptied at the end of each visit. Items left overnight will be taken to reception and kept for seven days. Members may collect them during staffed hours, from 6 a.m. to 9 p.m. The center is not introducing a locker rental charge. Please bring your own padlock; spare padlocks are not available at the desk.\n\nThese arrangements are intended to make the changing area easier to clean and to ensure that lockers are available for everyone. A locker number is printed inside each door; please mention it when asking reception about a missing item. Before leaving, check the shelf and floor of your locker. Staff will record where each unclaimed item was found to assist members who return to collect it.",
+      "translation": "Từ ngày 1/5, phải dọn hết đồ trong tủ sau mỗi lần tập. Đồ để qua đêm được đưa về lễ tân và giữ bảy ngày. Có thể nhận từ 6 giờ sáng đến 9 giờ tối khi có nhân viên. Không có phí thuê tủ mới. Hội viên tự mang khóa; quầy không có khóa dự phòng.\n\nQuy định giúp vệ sinh khu thay đồ và bảo đảm có tủ cho mọi người. Số tủ in trong cửa; hãy nêu số khi hỏi lễ tân về đồ thất lạc. Trước khi về, kiểm tra kệ và sàn tủ. Nhân viên ghi vị trí tìm thấy từng món để hỗ trợ người quay lại nhận."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-fitness-q3",
+      "kind": "part7",
+      "topic": "Quy định phòng tập",
+      "prompt": "What should members bring?",
+      "options": [
+        "Their own padlock.",
+        "A printed locker rental contract.",
+        "A towel for the receptionist.",
+        "A spare membership application."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hội viên cần tự mang ổ khóa vì quầy không có khóa dự phòng.",
+      "evidence": "Please bring your own padlock",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-fitness"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-fitness",
+      "kind": "part7",
+      "title": "Quy định phòng tập",
+      "topic": "Quy định phòng tập",
+      "text": "NORTHVIEW FITNESS — MEMBER NOTICE\nFrom May 1, lockers must be emptied at the end of each visit. Items left overnight will be taken to reception and kept for seven days. Members may collect them during staffed hours, from 6 a.m. to 9 p.m. The center is not introducing a locker rental charge. Please bring your own padlock; spare padlocks are not available at the desk.\n\nThese arrangements are intended to make the changing area easier to clean and to ensure that lockers are available for everyone. A locker number is printed inside each door; please mention it when asking reception about a missing item. Before leaving, check the shelf and floor of your locker. Staff will record where each unclaimed item was found to assist members who return to collect it.",
+      "translation": "Từ ngày 1/5, phải dọn hết đồ trong tủ sau mỗi lần tập. Đồ để qua đêm được đưa về lễ tân và giữ bảy ngày. Có thể nhận từ 6 giờ sáng đến 9 giờ tối khi có nhân viên. Không có phí thuê tủ mới. Hội viên tự mang khóa; quầy không có khóa dự phòng.\n\nQuy định giúp vệ sinh khu thay đồ và bảo đảm có tủ cho mọi người. Số tủ in trong cửa; hãy nêu số khi hỏi lễ tân về đồ thất lạc. Trước khi về, kiểm tra kệ và sàn tủ. Nhân viên ghi vị trí tìm thấy từng món để hỗ trợ người quay lại nhận."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-course-q1",
+      "kind": "part7",
+      "topic": "Email khóa học",
+      "prompt": "Why will there be no class on June 12?",
+      "options": [
+        "The instructor will attend a conference.",
+        "The course fee has not been paid.",
+        "All participants have completed the course.",
+        "The building will be closed for maintenance."
+      ],
+      "correctIndex": 3,
+      "explanation": "Email nêu tòa nhà đóng cửa để bảo trì.",
+      "evidence": "the building will be closed for maintenance",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-course"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-course",
+      "kind": "part7",
+      "title": "Email khóa học",
+      "topic": "Email khóa học",
+      "text": "To: New course participants\nSubject: Business writing course\nOur four-week course begins on June 3. Classes meet on Tuesdays and Thursdays from 6 to 7:30 p.m. in Room 12. There will be no class on June 12 because the building will be closed for maintenance. A replacement class will be held on Friday, June 13, at the same time. All worksheets are included in the course fee. Please bring a notebook, but a laptop is optional.\n\nDuring the course, you will practise writing clear emails, short reports and responses to customer inquiries. The instructor will provide feedback on a selection of your work, and you will revise a sample message with a partner. Please read the introductory handout attached to this email before the first class. If you have an example of a difficult writing task from your job, bring an anonymized version for discussion.",
+      "translation": "Khóa viết thương mại kéo dài bốn tuần, bắt đầu 3/6. Học thứ Ba và thứ Năm từ 18:00 đến 19:30 ở phòng 12. Ngày 12/6 nghỉ vì tòa nhà bảo trì; học bù thứ Sáu 13/6 cùng giờ. Phí bao gồm phiếu bài tập. Cần mang vở; laptop là tùy chọn.\n\nKhóa học luyện email rõ ràng, báo cáo ngắn và trả lời khách. Giảng viên nhận xét một số bài; học viên sửa tin nhắn mẫu cùng bạn. Đọc tài liệu giới thiệu đính kèm trước buổi đầu. Có thể mang mẫu nhiệm vụ viết khó trong công việc đã ẩn thông tin cá nhân để thảo luận."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-course-q2",
+      "kind": "part7",
+      "topic": "Email khóa học",
+      "prompt": "When will the replacement class begin?",
+      "options": [
+        "At 9 a.m. on June 3.",
+        "At noon on June 13.",
+        "At 6 p.m. on June 13.",
+        "At 7:30 p.m. on June 12."
+      ],
+      "correctIndex": 2,
+      "explanation": "Học bù ngày 13/6 cùng giờ bắt đầu thường lệ là 18:00.",
+      "evidence": "Friday, June 13, at the same time",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-course"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-course",
+      "kind": "part7",
+      "title": "Email khóa học",
+      "topic": "Email khóa học",
+      "text": "To: New course participants\nSubject: Business writing course\nOur four-week course begins on June 3. Classes meet on Tuesdays and Thursdays from 6 to 7:30 p.m. in Room 12. There will be no class on June 12 because the building will be closed for maintenance. A replacement class will be held on Friday, June 13, at the same time. All worksheets are included in the course fee. Please bring a notebook, but a laptop is optional.\n\nDuring the course, you will practise writing clear emails, short reports and responses to customer inquiries. The instructor will provide feedback on a selection of your work, and you will revise a sample message with a partner. Please read the introductory handout attached to this email before the first class. If you have an example of a difficult writing task from your job, bring an anonymized version for discussion.",
+      "translation": "Khóa viết thương mại kéo dài bốn tuần, bắt đầu 3/6. Học thứ Ba và thứ Năm từ 18:00 đến 19:30 ở phòng 12. Ngày 12/6 nghỉ vì tòa nhà bảo trì; học bù thứ Sáu 13/6 cùng giờ. Phí bao gồm phiếu bài tập. Cần mang vở; laptop là tùy chọn.\n\nKhóa học luyện email rõ ràng, báo cáo ngắn và trả lời khách. Giảng viên nhận xét một số bài; học viên sửa tin nhắn mẫu cùng bạn. Đọc tài liệu giới thiệu đính kèm trước buổi đầu. Có thể mang mẫu nhiệm vụ viết khó trong công việc đã ẩn thông tin cá nhân để thảo luận."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-course-q3",
+      "kind": "part7",
+      "topic": "Email khóa học",
+      "prompt": "What is included in the fee?",
+      "options": [
+        "Transportation to class.",
+        "Worksheets.",
+        "A laptop.",
+        "A notebook."
+      ],
+      "correctIndex": 1,
+      "explanation": "Phí bao gồm phiếu bài tập; laptop không được nói là cấp miễn phí.",
+      "evidence": "All worksheets are included in the course fee.",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-course"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-course",
+      "kind": "part7",
+      "title": "Email khóa học",
+      "topic": "Email khóa học",
+      "text": "To: New course participants\nSubject: Business writing course\nOur four-week course begins on June 3. Classes meet on Tuesdays and Thursdays from 6 to 7:30 p.m. in Room 12. There will be no class on June 12 because the building will be closed for maintenance. A replacement class will be held on Friday, June 13, at the same time. All worksheets are included in the course fee. Please bring a notebook, but a laptop is optional.\n\nDuring the course, you will practise writing clear emails, short reports and responses to customer inquiries. The instructor will provide feedback on a selection of your work, and you will revise a sample message with a partner. Please read the introductory handout attached to this email before the first class. If you have an example of a difficult writing task from your job, bring an anonymized version for discussion.",
+      "translation": "Khóa viết thương mại kéo dài bốn tuần, bắt đầu 3/6. Học thứ Ba và thứ Năm từ 18:00 đến 19:30 ở phòng 12. Ngày 12/6 nghỉ vì tòa nhà bảo trì; học bù thứ Sáu 13/6 cùng giờ. Phí bao gồm phiếu bài tập. Cần mang vở; laptop là tùy chọn.\n\nKhóa học luyện email rõ ràng, báo cáo ngắn và trả lời khách. Giảng viên nhận xét một số bài; học viên sửa tin nhắn mẫu cùng bạn. Đọc tài liệu giới thiệu đính kèm trước buổi đầu. Có thể mang mẫu nhiệm vụ viết khó trong công việc đã ẩn thông tin cá nhân để thảo luận."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-returns-q1",
+      "kind": "part7",
+      "topic": "Chính sách đổi trả",
+      "prompt": "Under what condition can opened headphones be returned?",
+      "options": [
+        "They are faulty.",
+        "They were bought with a gift voucher.",
+        "They are more than a year old.",
+        "The customer prefers another color."
+      ],
+      "correctIndex": 0,
+      "explanation": "Tai nghe đã mở chỉ được nhận trả khi bị lỗi.",
+      "evidence": "Opened headphones may be returned only if faulty.",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-returns"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-returns",
+      "kind": "part7",
+      "title": "Chính sách đổi trả",
+      "topic": "Chính sách đổi trả",
+      "text": "WESTBROOK ELECTRONICS — RETURNS\nUnused accessories may be returned within 30 days of purchase with the original receipt. Opened headphones may be returned only if faulty. Online orders can be returned by post or at any branch. Customers pay return postage unless the item is defective. Refunds are sent to the original payment method within five business days after the return is approved. Gift vouchers cannot be exchanged for cash.\n\nFor a postal return, complete the return request in your online account and place the reference number inside the package. Pack the item securely to prevent damage during transport. Staff will email you when the inspection is complete. If you return an order to a branch, bring the same purchase documents that would be required for a postal return. Keep a copy until the refund appears in your account.",
+      "translation": "Phụ kiện chưa sử dụng được trả trong 30 ngày với hóa đơn gốc. Tai nghe đã mở chỉ được trả khi có lỗi. Đơn trực tuyến có thể trả qua bưu điện hoặc tại mọi chi nhánh. Khách trả bưu phí trừ hàng lỗi. Tiền về phương thức thanh toán ban đầu trong năm ngày làm việc sau khi duyệt. Phiếu quà tặng không đổi thành tiền mặt.\n\nTrả qua bưu điện: gửi yêu cầu trong tài khoản và đặt mã tham chiếu trong gói. Đóng gói chắc để tránh hư hỏng khi vận chuyển. Nhân viên email khi kiểm tra xong. Trả tại chi nhánh cũng mang chứng từ mua hàng như trả qua bưu điện. Giữ bản sao đến khi nhận được tiền hoàn."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-returns-q2",
+      "kind": "part7",
+      "topic": "Chính sách đổi trả",
+      "prompt": "Where can an online purchase be returned?",
+      "options": [
+        "Only at the head office.",
+        "Only through a delivery driver.",
+        "Only at the branch nearest the warehouse.",
+        "At any branch or by post."
+      ],
+      "correctIndex": 3,
+      "explanation": "Đơn trực tuyến được trả tại bất kỳ chi nhánh hoặc qua bưu điện.",
+      "evidence": "by post or at any branch",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-returns"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-returns",
+      "kind": "part7",
+      "title": "Chính sách đổi trả",
+      "topic": "Chính sách đổi trả",
+      "text": "WESTBROOK ELECTRONICS — RETURNS\nUnused accessories may be returned within 30 days of purchase with the original receipt. Opened headphones may be returned only if faulty. Online orders can be returned by post or at any branch. Customers pay return postage unless the item is defective. Refunds are sent to the original payment method within five business days after the return is approved. Gift vouchers cannot be exchanged for cash.\n\nFor a postal return, complete the return request in your online account and place the reference number inside the package. Pack the item securely to prevent damage during transport. Staff will email you when the inspection is complete. If you return an order to a branch, bring the same purchase documents that would be required for a postal return. Keep a copy until the refund appears in your account.",
+      "translation": "Phụ kiện chưa sử dụng được trả trong 30 ngày với hóa đơn gốc. Tai nghe đã mở chỉ được trả khi có lỗi. Đơn trực tuyến có thể trả qua bưu điện hoặc tại mọi chi nhánh. Khách trả bưu phí trừ hàng lỗi. Tiền về phương thức thanh toán ban đầu trong năm ngày làm việc sau khi duyệt. Phiếu quà tặng không đổi thành tiền mặt.\n\nTrả qua bưu điện: gửi yêu cầu trong tài khoản và đặt mã tham chiếu trong gói. Đóng gói chắc để tránh hư hỏng khi vận chuyển. Nhân viên email khi kiểm tra xong. Trả tại chi nhánh cũng mang chứng từ mua hàng như trả qua bưu điện. Giữ bản sao đến khi nhận được tiền hoàn."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-returns-q3",
+      "kind": "part7",
+      "topic": "Chính sách đổi trả",
+      "prompt": "When does the customer not have to pay return postage?",
+      "options": [
+        "Whenever a gift voucher was used.",
+        "When the receipt is missing.",
+        "When the item is defective.",
+        "Whenever the packaging is open."
+      ],
+      "correctIndex": 2,
+      "explanation": "Chính sách miễn phí trả hàng qua bưu điện cho hàng lỗi.",
+      "evidence": "unless the item is defective",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-returns"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-returns",
+      "kind": "part7",
+      "title": "Chính sách đổi trả",
+      "topic": "Chính sách đổi trả",
+      "text": "WESTBROOK ELECTRONICS — RETURNS\nUnused accessories may be returned within 30 days of purchase with the original receipt. Opened headphones may be returned only if faulty. Online orders can be returned by post or at any branch. Customers pay return postage unless the item is defective. Refunds are sent to the original payment method within five business days after the return is approved. Gift vouchers cannot be exchanged for cash.\n\nFor a postal return, complete the return request in your online account and place the reference number inside the package. Pack the item securely to prevent damage during transport. Staff will email you when the inspection is complete. If you return an order to a branch, bring the same purchase documents that would be required for a postal return. Keep a copy until the refund appears in your account.",
+      "translation": "Phụ kiện chưa sử dụng được trả trong 30 ngày với hóa đơn gốc. Tai nghe đã mở chỉ được trả khi có lỗi. Đơn trực tuyến có thể trả qua bưu điện hoặc tại mọi chi nhánh. Khách trả bưu phí trừ hàng lỗi. Tiền về phương thức thanh toán ban đầu trong năm ngày làm việc sau khi duyệt. Phiếu quà tặng không đổi thành tiền mặt.\n\nTrả qua bưu điện: gửi yêu cầu trong tài khoản và đặt mã tham chiếu trong gói. Đóng gói chắc để tránh hư hỏng khi vận chuyển. Nhân viên email khi kiểm tra xong. Trả tại chi nhánh cũng mang chứng từ mua hàng như trả qua bưu điện. Giữ bản sao đến khi nhận được tiền hoàn."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-appointment-q1",
+      "kind": "part7",
+      "topic": "Hướng dẫn khám sức khỏe",
+      "prompt": "What time should the patient arrive?",
+      "options": [
+        "9:20 a.m.",
+        "10:05 a.m.",
+        "10:20 a.m.",
+        "10:35 a.m."
+      ],
+      "correctIndex": 1,
+      "explanation": "Lịch 10:20, đến sớm 15 phút là 10:05.",
+      "evidence": "Please arrive 15 minutes early",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-appointment"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-appointment",
+      "kind": "part7",
+      "title": "Hướng dẫn khám sức khỏe",
+      "topic": "Hướng dẫn khám sức khỏe",
+      "text": "HARBOR CLINIC — APPOINTMENT REMINDER\nYour workplace health check is scheduled for August 14 at 10:20 a.m. Please arrive 15 minutes early to complete a registration form. Bring photo identification and the authorization letter supplied by your employer. You do not need to fast for this appointment. If you need to reschedule, telephone the clinic at least 24 hours before your visit. Parking is available behind the building, but it is not free.\n\nOn arrival, tell reception that you are attending an employer-arranged appointment. The receptionist will check your documents and direct you to the waiting area. Your results will be handled according to the consent form completed at the clinic. If you need accessibility assistance, mention this when you contact reception so that suitable arrangements can be made. Please have your appointment reference available when asking a question about your booking.",
+      "translation": "Lịch khám sức khỏe cơ quan là 14/8 lúc 10:20. Đến sớm 15 phút để điền phiếu. Mang giấy tờ có ảnh và thư chấp thuận do cơ quan cung cấp. Không cần nhịn ăn cho lịch này. Muốn đổi lịch, gọi trước ít nhất 24 giờ. Bãi đỗ phía sau có thu phí.\n\nKhi đến, báo lễ tân đây là lịch do cơ quan thu xếp. Lễ tân kiểm tra giấy tờ và chỉ khu chờ. Kết quả được xử lý theo phiếu chấp thuận điền tại phòng khám. Nếu cần hỗ trợ tiếp cận, báo lễ tân để bố trí phù hợp. Chuẩn bị mã lịch hẹn khi hỏi về việc đặt lịch."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-appointment-q2",
+      "kind": "part7",
+      "topic": "Hướng dẫn khám sức khỏe",
+      "prompt": "Which document should the employer provide?",
+      "options": [
+        "An authorization letter.",
+        "A parking receipt.",
+        "A restaurant reservation.",
+        "A library membership card."
+      ],
+      "correctIndex": 0,
+      "explanation": "Thư chấp thuận do cơ quan cung cấp.",
+      "evidence": "the authorization letter supplied by your employer",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-appointment"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-appointment",
+      "kind": "part7",
+      "title": "Hướng dẫn khám sức khỏe",
+      "topic": "Hướng dẫn khám sức khỏe",
+      "text": "HARBOR CLINIC — APPOINTMENT REMINDER\nYour workplace health check is scheduled for August 14 at 10:20 a.m. Please arrive 15 minutes early to complete a registration form. Bring photo identification and the authorization letter supplied by your employer. You do not need to fast for this appointment. If you need to reschedule, telephone the clinic at least 24 hours before your visit. Parking is available behind the building, but it is not free.\n\nOn arrival, tell reception that you are attending an employer-arranged appointment. The receptionist will check your documents and direct you to the waiting area. Your results will be handled according to the consent form completed at the clinic. If you need accessibility assistance, mention this when you contact reception so that suitable arrangements can be made. Please have your appointment reference available when asking a question about your booking.",
+      "translation": "Lịch khám sức khỏe cơ quan là 14/8 lúc 10:20. Đến sớm 15 phút để điền phiếu. Mang giấy tờ có ảnh và thư chấp thuận do cơ quan cung cấp. Không cần nhịn ăn cho lịch này. Muốn đổi lịch, gọi trước ít nhất 24 giờ. Bãi đỗ phía sau có thu phí.\n\nKhi đến, báo lễ tân đây là lịch do cơ quan thu xếp. Lễ tân kiểm tra giấy tờ và chỉ khu chờ. Kết quả được xử lý theo phiếu chấp thuận điền tại phòng khám. Nếu cần hỗ trợ tiếp cận, báo lễ tân để bố trí phù hợp. Chuẩn bị mã lịch hẹn khi hỏi về việc đặt lịch."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-venue-q1",
+      "kind": "part7",
+      "topic": "Đặt địa điểm sự kiện",
+      "prompt": "Which room best meets the request?",
+      "options": [
+        "Elm Room.",
+        "Oak Room.",
+        "All three rooms equally.",
+        "Cedar Room."
+      ],
+      "correctIndex": 3,
+      "explanation": "Cedar đủ cho 32 người và rẻ hơn Oak; Elm chỉ chứa 20 người.",
+      "evidence": "Cedar Room: up to 40 guests, $260 per half-day.",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-venue"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-venue",
+      "kind": "part7",
+      "title": "Đặt địa điểm sự kiện",
+      "topic": "Đặt địa điểm sự kiện",
+      "text": "DOCUMENT 1 — VENUE PRICE LIST\nElm Room: up to 20 guests, $180 per half-day.\nCedar Room: up to 40 guests, $260 per half-day.\nOak Room: up to 80 guests, $420 per half-day.\nAll prices include chairs, tables and a projector. Catering costs extra. Half-day periods are 8 a.m.–noon or 1–5 p.m.\n\nRoom layouts can be arranged for a presentation or a discussion. Please describe your preferred layout when making a booking so our staff can prepare the furniture before you arrive. A coordinator will check the equipment with your group representative at the start of the reserved period. Requests for refreshments should be included in a separate catering order. Contact the venue office to confirm availability before making travel arrangements.\n\nDOCUMENT 2 — EMAIL\nTo: Venue coordinator\nWe need a room for 32 people on September 9, from 1 to 5 p.m. Please reserve the least expensive room that can accommodate everyone. We will use your projector, but we will arrange lunch ourselves. Send the invoice to our finance team, not to the individual participants.\n\nThis is an internal planning meeting for our regional service team. Most participants will arrive after visiting clients in the morning, so we do not require access during the earlier period. Please arrange the chairs so that everyone can see the presentation screen. We would appreciate written confirmation of the room name and equipment included, as our finance team needs these details when approving the booking.",
+      "translation": "Bảng giá nửa ngày: Elm tối đa 20 người/180 đô; Cedar tối đa 40/260 đô; Oak tối đa 80/420 đô. Giá gồm bàn ghế và máy chiếu, ăn uống tính thêm. Ca sáng 8–12, chiều 13–17. Email đặt phòng rẻ nhất đủ cho 32 người ngày 9/9, 13–17; dùng máy chiếu, tự lo ăn trưa; gửi hóa đơn cho bộ phận tài chính.\n\nCó thể bố trí phòng để thuyết trình hoặc thảo luận. Nêu kiểu bố trí khi đặt để nhân viên chuẩn bị bàn ghế. Điều phối viên kiểm tra thiết bị với đại diện nhóm đầu ca. Đặt đồ ăn uống bằng đơn riêng; hỏi văn phòng địa điểm để xác nhận còn phòng trước khi thu xếp đi lại. Email bổ sung: đây là cuộc họp lập kế hoạch nội bộ của nhóm dịch vụ khu vực; đa số khách đến sau khi thăm khách hàng buổi sáng, không cần vào ca sớm. Xếp ghế nhìn được màn hình; xác nhận bằng văn bản tên phòng và thiết bị để tài chính duyệt."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-venue-q2",
+      "kind": "part7",
+      "topic": "Đặt địa điểm sự kiện",
+      "prompt": "What is the room rental charge for the requested period?",
+      "options": [
+        "$420.",
+        "$520.",
+        "$260.",
+        "$180."
+      ],
+      "correctIndex": 2,
+      "explanation": "Thời gian 13–17 là một nửa ngày; Cedar giá 260 đô.",
+      "evidence": "Cedar Room: up to 40 guests, $260 per half-day.",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-venue"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-venue",
+      "kind": "part7",
+      "title": "Đặt địa điểm sự kiện",
+      "topic": "Đặt địa điểm sự kiện",
+      "text": "DOCUMENT 1 — VENUE PRICE LIST\nElm Room: up to 20 guests, $180 per half-day.\nCedar Room: up to 40 guests, $260 per half-day.\nOak Room: up to 80 guests, $420 per half-day.\nAll prices include chairs, tables and a projector. Catering costs extra. Half-day periods are 8 a.m.–noon or 1–5 p.m.\n\nRoom layouts can be arranged for a presentation or a discussion. Please describe your preferred layout when making a booking so our staff can prepare the furniture before you arrive. A coordinator will check the equipment with your group representative at the start of the reserved period. Requests for refreshments should be included in a separate catering order. Contact the venue office to confirm availability before making travel arrangements.\n\nDOCUMENT 2 — EMAIL\nTo: Venue coordinator\nWe need a room for 32 people on September 9, from 1 to 5 p.m. Please reserve the least expensive room that can accommodate everyone. We will use your projector, but we will arrange lunch ourselves. Send the invoice to our finance team, not to the individual participants.\n\nThis is an internal planning meeting for our regional service team. Most participants will arrive after visiting clients in the morning, so we do not require access during the earlier period. Please arrange the chairs so that everyone can see the presentation screen. We would appreciate written confirmation of the room name and equipment included, as our finance team needs these details when approving the booking.",
+      "translation": "Bảng giá nửa ngày: Elm tối đa 20 người/180 đô; Cedar tối đa 40/260 đô; Oak tối đa 80/420 đô. Giá gồm bàn ghế và máy chiếu, ăn uống tính thêm. Ca sáng 8–12, chiều 13–17. Email đặt phòng rẻ nhất đủ cho 32 người ngày 9/9, 13–17; dùng máy chiếu, tự lo ăn trưa; gửi hóa đơn cho bộ phận tài chính.\n\nCó thể bố trí phòng để thuyết trình hoặc thảo luận. Nêu kiểu bố trí khi đặt để nhân viên chuẩn bị bàn ghế. Điều phối viên kiểm tra thiết bị với đại diện nhóm đầu ca. Đặt đồ ăn uống bằng đơn riêng; hỏi văn phòng địa điểm để xác nhận còn phòng trước khi thu xếp đi lại. Email bổ sung: đây là cuộc họp lập kế hoạch nội bộ của nhóm dịch vụ khu vực; đa số khách đến sau khi thăm khách hàng buổi sáng, không cần vào ca sớm. Xếp ghế nhìn được màn hình; xác nhận bằng văn bản tên phòng và thiết bị để tài chính duyệt."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-venue-q3",
+      "kind": "part7",
+      "topic": "Đặt địa điểm sự kiện",
+      "prompt": "Which item is included in the rental price?",
+      "options": [
+        "An overnight room.",
+        "A projector.",
+        "Lunch.",
+        "Transport for all guests."
+      ],
+      "correctIndex": 1,
+      "explanation": "Bảng giá gồm máy chiếu; ăn uống tính riêng.",
+      "evidence": "include chairs, tables and a projector",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-venue"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-venue",
+      "kind": "part7",
+      "title": "Đặt địa điểm sự kiện",
+      "topic": "Đặt địa điểm sự kiện",
+      "text": "DOCUMENT 1 — VENUE PRICE LIST\nElm Room: up to 20 guests, $180 per half-day.\nCedar Room: up to 40 guests, $260 per half-day.\nOak Room: up to 80 guests, $420 per half-day.\nAll prices include chairs, tables and a projector. Catering costs extra. Half-day periods are 8 a.m.–noon or 1–5 p.m.\n\nRoom layouts can be arranged for a presentation or a discussion. Please describe your preferred layout when making a booking so our staff can prepare the furniture before you arrive. A coordinator will check the equipment with your group representative at the start of the reserved period. Requests for refreshments should be included in a separate catering order. Contact the venue office to confirm availability before making travel arrangements.\n\nDOCUMENT 2 — EMAIL\nTo: Venue coordinator\nWe need a room for 32 people on September 9, from 1 to 5 p.m. Please reserve the least expensive room that can accommodate everyone. We will use your projector, but we will arrange lunch ourselves. Send the invoice to our finance team, not to the individual participants.\n\nThis is an internal planning meeting for our regional service team. Most participants will arrive after visiting clients in the morning, so we do not require access during the earlier period. Please arrange the chairs so that everyone can see the presentation screen. We would appreciate written confirmation of the room name and equipment included, as our finance team needs these details when approving the booking.",
+      "translation": "Bảng giá nửa ngày: Elm tối đa 20 người/180 đô; Cedar tối đa 40/260 đô; Oak tối đa 80/420 đô. Giá gồm bàn ghế và máy chiếu, ăn uống tính thêm. Ca sáng 8–12, chiều 13–17. Email đặt phòng rẻ nhất đủ cho 32 người ngày 9/9, 13–17; dùng máy chiếu, tự lo ăn trưa; gửi hóa đơn cho bộ phận tài chính.\n\nCó thể bố trí phòng để thuyết trình hoặc thảo luận. Nêu kiểu bố trí khi đặt để nhân viên chuẩn bị bàn ghế. Điều phối viên kiểm tra thiết bị với đại diện nhóm đầu ca. Đặt đồ ăn uống bằng đơn riêng; hỏi văn phòng địa điểm để xác nhận còn phòng trước khi thu xếp đi lại. Email bổ sung: đây là cuộc họp lập kế hoạch nội bộ của nhóm dịch vụ khu vực; đa số khách đến sau khi thăm khách hàng buổi sáng, không cần vào ca sớm. Xếp ghế nhìn được màn hình; xác nhận bằng văn bản tên phòng và thiết bị để tài chính duyệt."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-venue-q4",
+      "kind": "part7",
+      "topic": "Đặt địa điểm sự kiện",
+      "prompt": "What will the customer arrange independently?",
+      "options": [
+        "Lunch.",
+        "The projector installation.",
+        "The room reservation system.",
+        "The chairs and tables."
+      ],
+      "correctIndex": 0,
+      "explanation": "Email nói khách tự lo bữa trưa.",
+      "evidence": "we will arrange lunch ourselves",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-venue"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-venue",
+      "kind": "part7",
+      "title": "Đặt địa điểm sự kiện",
+      "topic": "Đặt địa điểm sự kiện",
+      "text": "DOCUMENT 1 — VENUE PRICE LIST\nElm Room: up to 20 guests, $180 per half-day.\nCedar Room: up to 40 guests, $260 per half-day.\nOak Room: up to 80 guests, $420 per half-day.\nAll prices include chairs, tables and a projector. Catering costs extra. Half-day periods are 8 a.m.–noon or 1–5 p.m.\n\nRoom layouts can be arranged for a presentation or a discussion. Please describe your preferred layout when making a booking so our staff can prepare the furniture before you arrive. A coordinator will check the equipment with your group representative at the start of the reserved period. Requests for refreshments should be included in a separate catering order. Contact the venue office to confirm availability before making travel arrangements.\n\nDOCUMENT 2 — EMAIL\nTo: Venue coordinator\nWe need a room for 32 people on September 9, from 1 to 5 p.m. Please reserve the least expensive room that can accommodate everyone. We will use your projector, but we will arrange lunch ourselves. Send the invoice to our finance team, not to the individual participants.\n\nThis is an internal planning meeting for our regional service team. Most participants will arrive after visiting clients in the morning, so we do not require access during the earlier period. Please arrange the chairs so that everyone can see the presentation screen. We would appreciate written confirmation of the room name and equipment included, as our finance team needs these details when approving the booking.",
+      "translation": "Bảng giá nửa ngày: Elm tối đa 20 người/180 đô; Cedar tối đa 40/260 đô; Oak tối đa 80/420 đô. Giá gồm bàn ghế và máy chiếu, ăn uống tính thêm. Ca sáng 8–12, chiều 13–17. Email đặt phòng rẻ nhất đủ cho 32 người ngày 9/9, 13–17; dùng máy chiếu, tự lo ăn trưa; gửi hóa đơn cho bộ phận tài chính.\n\nCó thể bố trí phòng để thuyết trình hoặc thảo luận. Nêu kiểu bố trí khi đặt để nhân viên chuẩn bị bàn ghế. Điều phối viên kiểm tra thiết bị với đại diện nhóm đầu ca. Đặt đồ ăn uống bằng đơn riêng; hỏi văn phòng địa điểm để xác nhận còn phòng trước khi thu xếp đi lại. Email bổ sung: đây là cuộc họp lập kế hoạch nội bộ của nhóm dịch vụ khu vực; đa số khách đến sau khi thăm khách hàng buổi sáng, không cần vào ca sớm. Xếp ghế nhìn được màn hình; xác nhận bằng văn bản tên phòng và thiết bị để tài chính duyệt."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-venue-q5",
+      "kind": "part7",
+      "topic": "Đặt địa điểm sự kiện",
+      "prompt": "Who should receive the invoice?",
+      "options": [
+        "Every participant individually.",
+        "The catering company.",
+        "The projector manufacturer.",
+        "The finance team."
+      ],
+      "correctIndex": 3,
+      "explanation": "Email yêu cầu gửi hóa đơn cho nhóm tài chính.",
+      "evidence": "Send the invoice to our finance team",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-venue"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-venue",
+      "kind": "part7",
+      "title": "Đặt địa điểm sự kiện",
+      "topic": "Đặt địa điểm sự kiện",
+      "text": "DOCUMENT 1 — VENUE PRICE LIST\nElm Room: up to 20 guests, $180 per half-day.\nCedar Room: up to 40 guests, $260 per half-day.\nOak Room: up to 80 guests, $420 per half-day.\nAll prices include chairs, tables and a projector. Catering costs extra. Half-day periods are 8 a.m.–noon or 1–5 p.m.\n\nRoom layouts can be arranged for a presentation or a discussion. Please describe your preferred layout when making a booking so our staff can prepare the furniture before you arrive. A coordinator will check the equipment with your group representative at the start of the reserved period. Requests for refreshments should be included in a separate catering order. Contact the venue office to confirm availability before making travel arrangements.\n\nDOCUMENT 2 — EMAIL\nTo: Venue coordinator\nWe need a room for 32 people on September 9, from 1 to 5 p.m. Please reserve the least expensive room that can accommodate everyone. We will use your projector, but we will arrange lunch ourselves. Send the invoice to our finance team, not to the individual participants.\n\nThis is an internal planning meeting for our regional service team. Most participants will arrive after visiting clients in the morning, so we do not require access during the earlier period. Please arrange the chairs so that everyone can see the presentation screen. We would appreciate written confirmation of the room name and equipment included, as our finance team needs these details when approving the booking.",
+      "translation": "Bảng giá nửa ngày: Elm tối đa 20 người/180 đô; Cedar tối đa 40/260 đô; Oak tối đa 80/420 đô. Giá gồm bàn ghế và máy chiếu, ăn uống tính thêm. Ca sáng 8–12, chiều 13–17. Email đặt phòng rẻ nhất đủ cho 32 người ngày 9/9, 13–17; dùng máy chiếu, tự lo ăn trưa; gửi hóa đơn cho bộ phận tài chính.\n\nCó thể bố trí phòng để thuyết trình hoặc thảo luận. Nêu kiểu bố trí khi đặt để nhân viên chuẩn bị bàn ghế. Điều phối viên kiểm tra thiết bị với đại diện nhóm đầu ca. Đặt đồ ăn uống bằng đơn riêng; hỏi văn phòng địa điểm để xác nhận còn phòng trước khi thu xếp đi lại. Email bổ sung: đây là cuộc họp lập kế hoạch nội bộ của nhóm dịch vụ khu vực; đa số khách đến sau khi thăm khách hàng buổi sáng, không cần vào ca sớm. Xếp ghế nhìn được màn hình; xác nhận bằng văn bản tên phòng và thiết bị để tài chính duyệt."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-shipment-q1",
+      "kind": "part7",
+      "topic": "Đối chiếu lô hàng",
+      "prompt": "What was delivered first?",
+      "options": [
+        "Ten filing cabinets.",
+        "Six office desks.",
+        "Eight desk chairs.",
+        "Two filing cabinets."
+      ],
+      "correctIndex": 2,
+      "explanation": "Email xác nhận giao tám ghế trước.",
+      "evidence": "delivered the eight chairs this morning",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-shipment"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-shipment",
+      "kind": "part7",
+      "title": "Đối chiếu lô hàng",
+      "topic": "Đối chiếu lô hàng",
+      "text": "DOCUMENT 1 — ORDER CONFIRMATION\nCustomer: Harbor Design\nOrder HD-82: 8 desk chairs at $90 each; 2 filing cabinets at $150 each.\nDelivery address: 14 River Road, loading bay at rear.\nDelivery date: October 6.\n\nThe chairs are from our standard office range and are supplied ready for use. The cabinet specification includes lockable drawers for confidential files. Please retain this confirmation so that your receiving team can compare the delivered items with the order. Any discrepancy should be reported using the order number printed above. Your accounts department will receive the invoice separately; the driver does not collect payment at the loading bay.\n\nDOCUMENT 2 — DELIVERY EMAIL\nWe delivered the eight chairs this morning. The two cabinets were not loaded onto the truck because they were still being checked. They will arrive on October 7, with no extra delivery charge. Please keep order HD-82 available for the driver. We apologize for the split delivery.\n\nOur dispatch team has now completed the cabinet checks and set the units aside for the next delivery. There is no need to place a second order. We will send a tracking link when the vehicle leaves the warehouse. To help the receiving team, please make a note on today's delivery record that only the chairs have arrived and that the cabinets are still outstanding.",
+      "translation": "Đơn HD-82: 8 ghế bàn làm việc giá 90 đô/chiếc, 2 tủ hồ sơ 150 đô/chiếc; giao 14 River Road ở bến phía sau ngày 6/10. Email xác nhận đã giao đủ ghế sáng nay; hai tủ chưa lên xe do còn kiểm tra, sẽ giao ngày 7/10 không thu thêm phí; giữ mã đơn để đưa tài xế.\n\nGhế thuộc dòng văn phòng tiêu chuẩn, giao ở trạng thái dùng được ngay; tủ có ngăn khóa cho hồ sơ mật. Giữ xác nhận để bộ phận nhận so với hàng thực tế. Báo sai lệch bằng mã đơn; kế toán nhận hóa đơn riêng, tài xế không thu tiền tại bến. Email bổ sung: đã kiểm tra xong tủ và để riêng cho chuyến sau, không cần đặt đơn mới. Sẽ gửi liên kết theo dõi khi xe rời kho. Ghi trên biên bản hôm nay rằng mới nhận ghế, tủ vẫn chờ giao."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-shipment-q2",
+      "kind": "part7",
+      "topic": "Đối chiếu lô hàng",
+      "prompt": "Why were the cabinets not included in the first delivery?",
+      "options": [
+        "Their price had increased.",
+        "They were still being checked.",
+        "The customer canceled them.",
+        "The address was incorrect."
+      ],
+      "correctIndex": 1,
+      "explanation": "Các tủ vẫn đang được kiểm tra nên chưa đưa lên xe.",
+      "evidence": "they were still being checked",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-shipment"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-shipment",
+      "kind": "part7",
+      "title": "Đối chiếu lô hàng",
+      "topic": "Đối chiếu lô hàng",
+      "text": "DOCUMENT 1 — ORDER CONFIRMATION\nCustomer: Harbor Design\nOrder HD-82: 8 desk chairs at $90 each; 2 filing cabinets at $150 each.\nDelivery address: 14 River Road, loading bay at rear.\nDelivery date: October 6.\n\nThe chairs are from our standard office range and are supplied ready for use. The cabinet specification includes lockable drawers for confidential files. Please retain this confirmation so that your receiving team can compare the delivered items with the order. Any discrepancy should be reported using the order number printed above. Your accounts department will receive the invoice separately; the driver does not collect payment at the loading bay.\n\nDOCUMENT 2 — DELIVERY EMAIL\nWe delivered the eight chairs this morning. The two cabinets were not loaded onto the truck because they were still being checked. They will arrive on October 7, with no extra delivery charge. Please keep order HD-82 available for the driver. We apologize for the split delivery.\n\nOur dispatch team has now completed the cabinet checks and set the units aside for the next delivery. There is no need to place a second order. We will send a tracking link when the vehicle leaves the warehouse. To help the receiving team, please make a note on today's delivery record that only the chairs have arrived and that the cabinets are still outstanding.",
+      "translation": "Đơn HD-82: 8 ghế bàn làm việc giá 90 đô/chiếc, 2 tủ hồ sơ 150 đô/chiếc; giao 14 River Road ở bến phía sau ngày 6/10. Email xác nhận đã giao đủ ghế sáng nay; hai tủ chưa lên xe do còn kiểm tra, sẽ giao ngày 7/10 không thu thêm phí; giữ mã đơn để đưa tài xế.\n\nGhế thuộc dòng văn phòng tiêu chuẩn, giao ở trạng thái dùng được ngay; tủ có ngăn khóa cho hồ sơ mật. Giữ xác nhận để bộ phận nhận so với hàng thực tế. Báo sai lệch bằng mã đơn; kế toán nhận hóa đơn riêng, tài xế không thu tiền tại bến. Email bổ sung: đã kiểm tra xong tủ và để riêng cho chuyến sau, không cần đặt đơn mới. Sẽ gửi liên kết theo dõi khi xe rời kho. Ghi trên biên bản hôm nay rằng mới nhận ghế, tủ vẫn chờ giao."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-shipment-q3",
+      "kind": "part7",
+      "topic": "Đối chiếu lô hàng",
+      "prompt": "When will the cabinets arrive?",
+      "options": [
+        "October 7.",
+        "October 5.",
+        "October 6.",
+        "October 14."
+      ],
+      "correctIndex": 0,
+      "explanation": "Email cho biết giao tủ ngày 7/10, sau lịch ban đầu một ngày.",
+      "evidence": "They will arrive on October 7",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-shipment"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-shipment",
+      "kind": "part7",
+      "title": "Đối chiếu lô hàng",
+      "topic": "Đối chiếu lô hàng",
+      "text": "DOCUMENT 1 — ORDER CONFIRMATION\nCustomer: Harbor Design\nOrder HD-82: 8 desk chairs at $90 each; 2 filing cabinets at $150 each.\nDelivery address: 14 River Road, loading bay at rear.\nDelivery date: October 6.\n\nThe chairs are from our standard office range and are supplied ready for use. The cabinet specification includes lockable drawers for confidential files. Please retain this confirmation so that your receiving team can compare the delivered items with the order. Any discrepancy should be reported using the order number printed above. Your accounts department will receive the invoice separately; the driver does not collect payment at the loading bay.\n\nDOCUMENT 2 — DELIVERY EMAIL\nWe delivered the eight chairs this morning. The two cabinets were not loaded onto the truck because they were still being checked. They will arrive on October 7, with no extra delivery charge. Please keep order HD-82 available for the driver. We apologize for the split delivery.\n\nOur dispatch team has now completed the cabinet checks and set the units aside for the next delivery. There is no need to place a second order. We will send a tracking link when the vehicle leaves the warehouse. To help the receiving team, please make a note on today's delivery record that only the chairs have arrived and that the cabinets are still outstanding.",
+      "translation": "Đơn HD-82: 8 ghế bàn làm việc giá 90 đô/chiếc, 2 tủ hồ sơ 150 đô/chiếc; giao 14 River Road ở bến phía sau ngày 6/10. Email xác nhận đã giao đủ ghế sáng nay; hai tủ chưa lên xe do còn kiểm tra, sẽ giao ngày 7/10 không thu thêm phí; giữ mã đơn để đưa tài xế.\n\nGhế thuộc dòng văn phòng tiêu chuẩn, giao ở trạng thái dùng được ngay; tủ có ngăn khóa cho hồ sơ mật. Giữ xác nhận để bộ phận nhận so với hàng thực tế. Báo sai lệch bằng mã đơn; kế toán nhận hóa đơn riêng, tài xế không thu tiền tại bến. Email bổ sung: đã kiểm tra xong tủ và để riêng cho chuyến sau, không cần đặt đơn mới. Sẽ gửi liên kết theo dõi khi xe rời kho. Ghi trên biên bản hôm nay rằng mới nhận ghế, tủ vẫn chờ giao."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-shipment-q4",
+      "kind": "part7",
+      "topic": "Đối chiếu lô hàng",
+      "prompt": "Where should the driver unload the items?",
+      "options": [
+        "At the main reception counter.",
+        "At a neighboring office.",
+        "At the railway station.",
+        "At the rear loading bay."
+      ],
+      "correctIndex": 3,
+      "explanation": "Địa chỉ trong xác nhận yêu cầu bến bốc dỡ phía sau.",
+      "evidence": "loading bay at rear",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-shipment"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-shipment",
+      "kind": "part7",
+      "title": "Đối chiếu lô hàng",
+      "topic": "Đối chiếu lô hàng",
+      "text": "DOCUMENT 1 — ORDER CONFIRMATION\nCustomer: Harbor Design\nOrder HD-82: 8 desk chairs at $90 each; 2 filing cabinets at $150 each.\nDelivery address: 14 River Road, loading bay at rear.\nDelivery date: October 6.\n\nThe chairs are from our standard office range and are supplied ready for use. The cabinet specification includes lockable drawers for confidential files. Please retain this confirmation so that your receiving team can compare the delivered items with the order. Any discrepancy should be reported using the order number printed above. Your accounts department will receive the invoice separately; the driver does not collect payment at the loading bay.\n\nDOCUMENT 2 — DELIVERY EMAIL\nWe delivered the eight chairs this morning. The two cabinets were not loaded onto the truck because they were still being checked. They will arrive on October 7, with no extra delivery charge. Please keep order HD-82 available for the driver. We apologize for the split delivery.\n\nOur dispatch team has now completed the cabinet checks and set the units aside for the next delivery. There is no need to place a second order. We will send a tracking link when the vehicle leaves the warehouse. To help the receiving team, please make a note on today's delivery record that only the chairs have arrived and that the cabinets are still outstanding.",
+      "translation": "Đơn HD-82: 8 ghế bàn làm việc giá 90 đô/chiếc, 2 tủ hồ sơ 150 đô/chiếc; giao 14 River Road ở bến phía sau ngày 6/10. Email xác nhận đã giao đủ ghế sáng nay; hai tủ chưa lên xe do còn kiểm tra, sẽ giao ngày 7/10 không thu thêm phí; giữ mã đơn để đưa tài xế.\n\nGhế thuộc dòng văn phòng tiêu chuẩn, giao ở trạng thái dùng được ngay; tủ có ngăn khóa cho hồ sơ mật. Giữ xác nhận để bộ phận nhận so với hàng thực tế. Báo sai lệch bằng mã đơn; kế toán nhận hóa đơn riêng, tài xế không thu tiền tại bến. Email bổ sung: đã kiểm tra xong tủ và để riêng cho chuyến sau, không cần đặt đơn mới. Sẽ gửi liên kết theo dõi khi xe rời kho. Ghi trên biên bản hôm nay rằng mới nhận ghế, tủ vẫn chờ giao."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-shipment-q5",
+      "kind": "part7",
+      "topic": "Đối chiếu lô hàng",
+      "prompt": "What is the total price of the ordered furniture, excluding any delivery charges?",
+      "options": [
+        "$870.",
+        "$1,200.",
+        "$1,020.",
+        "$720."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tám ghế: 8×90=720; hai tủ: 2×150=300; cộng 1.020 đô.",
+      "evidence": "8 desk chairs at $90 each; 2 filing cabinets at $150 each.",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-shipment"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-shipment",
+      "kind": "part7",
+      "title": "Đối chiếu lô hàng",
+      "topic": "Đối chiếu lô hàng",
+      "text": "DOCUMENT 1 — ORDER CONFIRMATION\nCustomer: Harbor Design\nOrder HD-82: 8 desk chairs at $90 each; 2 filing cabinets at $150 each.\nDelivery address: 14 River Road, loading bay at rear.\nDelivery date: October 6.\n\nThe chairs are from our standard office range and are supplied ready for use. The cabinet specification includes lockable drawers for confidential files. Please retain this confirmation so that your receiving team can compare the delivered items with the order. Any discrepancy should be reported using the order number printed above. Your accounts department will receive the invoice separately; the driver does not collect payment at the loading bay.\n\nDOCUMENT 2 — DELIVERY EMAIL\nWe delivered the eight chairs this morning. The two cabinets were not loaded onto the truck because they were still being checked. They will arrive on October 7, with no extra delivery charge. Please keep order HD-82 available for the driver. We apologize for the split delivery.\n\nOur dispatch team has now completed the cabinet checks and set the units aside for the next delivery. There is no need to place a second order. We will send a tracking link when the vehicle leaves the warehouse. To help the receiving team, please make a note on today's delivery record that only the chairs have arrived and that the cabinets are still outstanding.",
+      "translation": "Đơn HD-82: 8 ghế bàn làm việc giá 90 đô/chiếc, 2 tủ hồ sơ 150 đô/chiếc; giao 14 River Road ở bến phía sau ngày 6/10. Email xác nhận đã giao đủ ghế sáng nay; hai tủ chưa lên xe do còn kiểm tra, sẽ giao ngày 7/10 không thu thêm phí; giữ mã đơn để đưa tài xế.\n\nGhế thuộc dòng văn phòng tiêu chuẩn, giao ở trạng thái dùng được ngay; tủ có ngăn khóa cho hồ sơ mật. Giữ xác nhận để bộ phận nhận so với hàng thực tế. Báo sai lệch bằng mã đơn; kế toán nhận hóa đơn riêng, tài xế không thu tiền tại bến. Email bổ sung: đã kiểm tra xong tủ và để riêng cho chuyến sau, không cần đặt đơn mới. Sẽ gửi liên kết theo dõi khi xe rời kho. Ghi trên biên bản hôm nay rằng mới nhận ghế, tủ vẫn chờ giao."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-volunteer-q1",
+      "kind": "part7",
+      "topic": "Phân ca tình nguyện",
+      "prompt": "Which shift is confirmed for the volunteer?",
+      "options": [
+        "6–10 p.m.",
+        "8 a.m.–noon.",
+        "Noon–4 p.m.",
+        "2–6 p.m."
+      ],
+      "correctIndex": 1,
+      "explanation": "Người đăng ký xin ca sáng; thư trả lời xác nhận ca được yêu cầu.",
+      "evidence": "Your requested shift and assignment are confirmed.",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-volunteer"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-volunteer",
+      "kind": "part7",
+      "title": "Phân ca tình nguyện",
+      "topic": "Phân ca tình nguyện",
+      "text": "DOCUMENT 1 — VOLUNTEER NOTICE\nThe Lakeside Book Fair is on November 8. Morning volunteers work 8 a.m.–noon; afternoon volunteers work noon–4 p.m. Each volunteer receives a meal voucher. Volunteers assigned to the information desk must attend an online briefing on November 6.\n\nThe fair raises funds for local reading programs. Volunteers will help visitors find book sections, answer general questions and direct deliveries to the organizers. Assignment information is included in the confirmation email. Comfortable shoes are recommended because some duties involve standing. Team leaders will be available throughout the event to help with questions volunteers cannot answer.\n\nDOCUMENT 2 — EMAIL FROM A VOLUNTEER\nI can help on November 8, but I have an appointment at 2 p.m. I have worked at an information desk before and would prefer that assignment. Please let me know whether I can work the morning shift.\n\nMy previous assignment involved explaining event schedules and helping visitors locate activities. I would be happy to use that experience again. I will be travelling by bus and can reach the site early enough to collect any materials before work begins. Please also tell me whether I need to collect identification when I arrive.\n\nDOCUMENT 3 — COORDINATOR REPLY\nYour requested shift and assignment are confirmed. The online briefing link will be sent tomorrow. Please report to the north gate 15 minutes before your shift begins, where you will receive a badge.\n\nThe badge will identify you to visitors and other volunteers. The team leader will explain how to refer questions about payments or missing items to the organizers. You do not need to bring your own sign or uniform. Your confirmation email contains the coordinator's contact details in case your travel plans change.",
+      "translation": "Hội sách Lakeside ngày 8/11 có ca sáng 8–12 và chiều 12–16; mỗi tình nguyện viên nhận phiếu ăn. Trực quầy thông tin phải họp trực tuyến 6/11. Người đăng ký có hẹn 14 giờ, muốn ca sáng và công việc quầy thông tin. Điều phối viên xác nhận cả ca lẫn vị trí, sẽ gửi liên kết họp ngày mai; đến cổng bắc sớm 15 phút để nhận thẻ.\n\nHội sách gây quỹ cho chương trình đọc địa phương. Tình nguyện viên chỉ khu sách, trả lời câu hỏi chung, hướng dẫn người giao hàng; email xác nhận ghi vị trí. Nên mang giày thoải mái vì có công việc phải đứng; trưởng nhóm hỗ trợ câu khó. Người đăng ký bổ sung đã giải thích lịch và chỉ hoạt động ở lần trước, muốn dùng kinh nghiệm đó; đi xe buýt, có thể đến sớm lấy tài liệu và hỏi có cần nhận thẻ không. Trả lời bổ sung: thẻ giúp nhận diện; trưởng nhóm hướng dẫn chuyển câu hỏi về thanh toán/đồ thất lạc; không cần tự mang biển hay đồng phục; email có liên hệ điều phối viên nếu đổi kế hoạch đi lại."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-volunteer-q2",
+      "kind": "part7",
+      "topic": "Phân ca tình nguyện",
+      "prompt": "Where will the volunteer work?",
+      "options": [
+        "At the information desk.",
+        "In the catering kitchen.",
+        "At the south parking lot.",
+        "In the ticket printing office."
+      ],
+      "correctIndex": 0,
+      "explanation": "Người đăng ký muốn trực quầy thông tin và được chấp thuận.",
+      "evidence": "would prefer that assignment",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-volunteer"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-volunteer",
+      "kind": "part7",
+      "title": "Phân ca tình nguyện",
+      "topic": "Phân ca tình nguyện",
+      "text": "DOCUMENT 1 — VOLUNTEER NOTICE\nThe Lakeside Book Fair is on November 8. Morning volunteers work 8 a.m.–noon; afternoon volunteers work noon–4 p.m. Each volunteer receives a meal voucher. Volunteers assigned to the information desk must attend an online briefing on November 6.\n\nThe fair raises funds for local reading programs. Volunteers will help visitors find book sections, answer general questions and direct deliveries to the organizers. Assignment information is included in the confirmation email. Comfortable shoes are recommended because some duties involve standing. Team leaders will be available throughout the event to help with questions volunteers cannot answer.\n\nDOCUMENT 2 — EMAIL FROM A VOLUNTEER\nI can help on November 8, but I have an appointment at 2 p.m. I have worked at an information desk before and would prefer that assignment. Please let me know whether I can work the morning shift.\n\nMy previous assignment involved explaining event schedules and helping visitors locate activities. I would be happy to use that experience again. I will be travelling by bus and can reach the site early enough to collect any materials before work begins. Please also tell me whether I need to collect identification when I arrive.\n\nDOCUMENT 3 — COORDINATOR REPLY\nYour requested shift and assignment are confirmed. The online briefing link will be sent tomorrow. Please report to the north gate 15 minutes before your shift begins, where you will receive a badge.\n\nThe badge will identify you to visitors and other volunteers. The team leader will explain how to refer questions about payments or missing items to the organizers. You do not need to bring your own sign or uniform. Your confirmation email contains the coordinator's contact details in case your travel plans change.",
+      "translation": "Hội sách Lakeside ngày 8/11 có ca sáng 8–12 và chiều 12–16; mỗi tình nguyện viên nhận phiếu ăn. Trực quầy thông tin phải họp trực tuyến 6/11. Người đăng ký có hẹn 14 giờ, muốn ca sáng và công việc quầy thông tin. Điều phối viên xác nhận cả ca lẫn vị trí, sẽ gửi liên kết họp ngày mai; đến cổng bắc sớm 15 phút để nhận thẻ.\n\nHội sách gây quỹ cho chương trình đọc địa phương. Tình nguyện viên chỉ khu sách, trả lời câu hỏi chung, hướng dẫn người giao hàng; email xác nhận ghi vị trí. Nên mang giày thoải mái vì có công việc phải đứng; trưởng nhóm hỗ trợ câu khó. Người đăng ký bổ sung đã giải thích lịch và chỉ hoạt động ở lần trước, muốn dùng kinh nghiệm đó; đi xe buýt, có thể đến sớm lấy tài liệu và hỏi có cần nhận thẻ không. Trả lời bổ sung: thẻ giúp nhận diện; trưởng nhóm hướng dẫn chuyển câu hỏi về thanh toán/đồ thất lạc; không cần tự mang biển hay đồng phục; email có liên hệ điều phối viên nếu đổi kế hoạch đi lại."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-volunteer-q3",
+      "kind": "part7",
+      "topic": "Phân ca tình nguyện",
+      "prompt": "What must the volunteer attend on November 6?",
+      "options": [
+        "A book signing.",
+        "A driving test.",
+        "An in-person lunch.",
+        "An online briefing."
+      ],
+      "correctIndex": 3,
+      "explanation": "Thông báo yêu cầu người trực quầy thông tin dự họp trực tuyến 6/11.",
+      "evidence": "an online briefing on November 6",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-volunteer"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-volunteer",
+      "kind": "part7",
+      "title": "Phân ca tình nguyện",
+      "topic": "Phân ca tình nguyện",
+      "text": "DOCUMENT 1 — VOLUNTEER NOTICE\nThe Lakeside Book Fair is on November 8. Morning volunteers work 8 a.m.–noon; afternoon volunteers work noon–4 p.m. Each volunteer receives a meal voucher. Volunteers assigned to the information desk must attend an online briefing on November 6.\n\nThe fair raises funds for local reading programs. Volunteers will help visitors find book sections, answer general questions and direct deliveries to the organizers. Assignment information is included in the confirmation email. Comfortable shoes are recommended because some duties involve standing. Team leaders will be available throughout the event to help with questions volunteers cannot answer.\n\nDOCUMENT 2 — EMAIL FROM A VOLUNTEER\nI can help on November 8, but I have an appointment at 2 p.m. I have worked at an information desk before and would prefer that assignment. Please let me know whether I can work the morning shift.\n\nMy previous assignment involved explaining event schedules and helping visitors locate activities. I would be happy to use that experience again. I will be travelling by bus and can reach the site early enough to collect any materials before work begins. Please also tell me whether I need to collect identification when I arrive.\n\nDOCUMENT 3 — COORDINATOR REPLY\nYour requested shift and assignment are confirmed. The online briefing link will be sent tomorrow. Please report to the north gate 15 minutes before your shift begins, where you will receive a badge.\n\nThe badge will identify you to visitors and other volunteers. The team leader will explain how to refer questions about payments or missing items to the organizers. You do not need to bring your own sign or uniform. Your confirmation email contains the coordinator's contact details in case your travel plans change.",
+      "translation": "Hội sách Lakeside ngày 8/11 có ca sáng 8–12 và chiều 12–16; mỗi tình nguyện viên nhận phiếu ăn. Trực quầy thông tin phải họp trực tuyến 6/11. Người đăng ký có hẹn 14 giờ, muốn ca sáng và công việc quầy thông tin. Điều phối viên xác nhận cả ca lẫn vị trí, sẽ gửi liên kết họp ngày mai; đến cổng bắc sớm 15 phút để nhận thẻ.\n\nHội sách gây quỹ cho chương trình đọc địa phương. Tình nguyện viên chỉ khu sách, trả lời câu hỏi chung, hướng dẫn người giao hàng; email xác nhận ghi vị trí. Nên mang giày thoải mái vì có công việc phải đứng; trưởng nhóm hỗ trợ câu khó. Người đăng ký bổ sung đã giải thích lịch và chỉ hoạt động ở lần trước, muốn dùng kinh nghiệm đó; đi xe buýt, có thể đến sớm lấy tài liệu và hỏi có cần nhận thẻ không. Trả lời bổ sung: thẻ giúp nhận diện; trưởng nhóm hướng dẫn chuyển câu hỏi về thanh toán/đồ thất lạc; không cần tự mang biển hay đồng phục; email có liên hệ điều phối viên nếu đổi kế hoạch đi lại."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-volunteer-q4",
+      "kind": "part7",
+      "topic": "Phân ca tình nguyện",
+      "prompt": "What time should the volunteer report to the north gate?",
+      "options": [
+        "8:15 a.m.",
+        "11:45 a.m.",
+        "7:45 a.m.",
+        "8:00 a.m."
+      ],
+      "correctIndex": 2,
+      "explanation": "Ca bắt đầu 8 giờ; đến trước 15 phút là 7:45.",
+      "evidence": "15 minutes before your shift begins",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-volunteer"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-volunteer",
+      "kind": "part7",
+      "title": "Phân ca tình nguyện",
+      "topic": "Phân ca tình nguyện",
+      "text": "DOCUMENT 1 — VOLUNTEER NOTICE\nThe Lakeside Book Fair is on November 8. Morning volunteers work 8 a.m.–noon; afternoon volunteers work noon–4 p.m. Each volunteer receives a meal voucher. Volunteers assigned to the information desk must attend an online briefing on November 6.\n\nThe fair raises funds for local reading programs. Volunteers will help visitors find book sections, answer general questions and direct deliveries to the organizers. Assignment information is included in the confirmation email. Comfortable shoes are recommended because some duties involve standing. Team leaders will be available throughout the event to help with questions volunteers cannot answer.\n\nDOCUMENT 2 — EMAIL FROM A VOLUNTEER\nI can help on November 8, but I have an appointment at 2 p.m. I have worked at an information desk before and would prefer that assignment. Please let me know whether I can work the morning shift.\n\nMy previous assignment involved explaining event schedules and helping visitors locate activities. I would be happy to use that experience again. I will be travelling by bus and can reach the site early enough to collect any materials before work begins. Please also tell me whether I need to collect identification when I arrive.\n\nDOCUMENT 3 — COORDINATOR REPLY\nYour requested shift and assignment are confirmed. The online briefing link will be sent tomorrow. Please report to the north gate 15 minutes before your shift begins, where you will receive a badge.\n\nThe badge will identify you to visitors and other volunteers. The team leader will explain how to refer questions about payments or missing items to the organizers. You do not need to bring your own sign or uniform. Your confirmation email contains the coordinator's contact details in case your travel plans change.",
+      "translation": "Hội sách Lakeside ngày 8/11 có ca sáng 8–12 và chiều 12–16; mỗi tình nguyện viên nhận phiếu ăn. Trực quầy thông tin phải họp trực tuyến 6/11. Người đăng ký có hẹn 14 giờ, muốn ca sáng và công việc quầy thông tin. Điều phối viên xác nhận cả ca lẫn vị trí, sẽ gửi liên kết họp ngày mai; đến cổng bắc sớm 15 phút để nhận thẻ.\n\nHội sách gây quỹ cho chương trình đọc địa phương. Tình nguyện viên chỉ khu sách, trả lời câu hỏi chung, hướng dẫn người giao hàng; email xác nhận ghi vị trí. Nên mang giày thoải mái vì có công việc phải đứng; trưởng nhóm hỗ trợ câu khó. Người đăng ký bổ sung đã giải thích lịch và chỉ hoạt động ở lần trước, muốn dùng kinh nghiệm đó; đi xe buýt, có thể đến sớm lấy tài liệu và hỏi có cần nhận thẻ không. Trả lời bổ sung: thẻ giúp nhận diện; trưởng nhóm hướng dẫn chuyển câu hỏi về thanh toán/đồ thất lạc; không cần tự mang biển hay đồng phục; email có liên hệ điều phối viên nếu đổi kế hoạch đi lại."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-volunteer-q5",
+      "kind": "part7",
+      "topic": "Phân ca tình nguyện",
+      "prompt": "What is provided to every volunteer?",
+      "options": [
+        "A cash transport allowance.",
+        "A meal voucher.",
+        "A free hotel room.",
+        "A permanent parking permit."
+      ],
+      "correctIndex": 1,
+      "explanation": "Thông báo nêu mỗi tình nguyện viên nhận một phiếu ăn.",
+      "evidence": "Each volunteer receives a meal voucher.",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-volunteer"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-volunteer",
+      "kind": "part7",
+      "title": "Phân ca tình nguyện",
+      "topic": "Phân ca tình nguyện",
+      "text": "DOCUMENT 1 — VOLUNTEER NOTICE\nThe Lakeside Book Fair is on November 8. Morning volunteers work 8 a.m.–noon; afternoon volunteers work noon–4 p.m. Each volunteer receives a meal voucher. Volunteers assigned to the information desk must attend an online briefing on November 6.\n\nThe fair raises funds for local reading programs. Volunteers will help visitors find book sections, answer general questions and direct deliveries to the organizers. Assignment information is included in the confirmation email. Comfortable shoes are recommended because some duties involve standing. Team leaders will be available throughout the event to help with questions volunteers cannot answer.\n\nDOCUMENT 2 — EMAIL FROM A VOLUNTEER\nI can help on November 8, but I have an appointment at 2 p.m. I have worked at an information desk before and would prefer that assignment. Please let me know whether I can work the morning shift.\n\nMy previous assignment involved explaining event schedules and helping visitors locate activities. I would be happy to use that experience again. I will be travelling by bus and can reach the site early enough to collect any materials before work begins. Please also tell me whether I need to collect identification when I arrive.\n\nDOCUMENT 3 — COORDINATOR REPLY\nYour requested shift and assignment are confirmed. The online briefing link will be sent tomorrow. Please report to the north gate 15 minutes before your shift begins, where you will receive a badge.\n\nThe badge will identify you to visitors and other volunteers. The team leader will explain how to refer questions about payments or missing items to the organizers. You do not need to bring your own sign or uniform. Your confirmation email contains the coordinator's contact details in case your travel plans change.",
+      "translation": "Hội sách Lakeside ngày 8/11 có ca sáng 8–12 và chiều 12–16; mỗi tình nguyện viên nhận phiếu ăn. Trực quầy thông tin phải họp trực tuyến 6/11. Người đăng ký có hẹn 14 giờ, muốn ca sáng và công việc quầy thông tin. Điều phối viên xác nhận cả ca lẫn vị trí, sẽ gửi liên kết họp ngày mai; đến cổng bắc sớm 15 phút để nhận thẻ.\n\nHội sách gây quỹ cho chương trình đọc địa phương. Tình nguyện viên chỉ khu sách, trả lời câu hỏi chung, hướng dẫn người giao hàng; email xác nhận ghi vị trí. Nên mang giày thoải mái vì có công việc phải đứng; trưởng nhóm hỗ trợ câu khó. Người đăng ký bổ sung đã giải thích lịch và chỉ hoạt động ở lần trước, muốn dùng kinh nghiệm đó; đi xe buýt, có thể đến sớm lấy tài liệu và hỏi có cần nhận thẻ không. Trả lời bổ sung: thẻ giúp nhận diện; trưởng nhóm hướng dẫn chuyển câu hỏi về thanh toán/đồ thất lạc; không cần tự mang biển hay đồng phục; email có liên hệ điều phối viên nếu đổi kế hoạch đi lại."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-conference-q1",
+      "kind": "part7",
+      "topic": "Lịch hội nghị và thay đổi",
+      "prompt": "Which room will host the data workshop?",
+      "options": [
+        "Room 8.",
+        "Room 5.",
+        "Hall A.",
+        "Garden Room."
+      ],
+      "correctIndex": 0,
+      "explanation": "Email đổi riêng phòng thực hành dữ liệu từ 5 sang 8.",
+      "evidence": "take place in Room 8",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-conference"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-conference",
+      "kind": "part7",
+      "title": "Lịch hội nghị và thay đổi",
+      "topic": "Lịch hội nghị và thay đổi",
+      "text": "DOCUMENT 1 — FRIDAY PROGRAM\n9:00–10:00: Opening talk, Hall A.\n10:15–11:15: Data workshop, Room 5.\n11:30–12:30: Marketing panel, Hall B.\n12:30–1:30: Lunch, Garden Room.\n\nPlease keep this program with your registration materials. Each session is designed to be attended separately, so participants may select activities relevant to their roles. Volunteers in the main corridor can direct visitors to the halls. The registration counter will remain staffed during the morning for anyone who needs help locating an activity or checking a booking.\n\nDOCUMENT 2 — ORGANIZER EMAIL\nRoom 5 has an electrical fault. The data workshop will now take place in Room 8 at its original time. All other sessions remain as printed. Participants who registered for the data workshop should bring a laptop with the provided sample files downloaded.\n\nThe fault affects the room equipment rather than the workshop content, and the instructor will use the same exercises as planned. The replacement room has suitable power outlets for the practical activity. Please charge your device beforehand and test that the sample files open correctly. Staff will update the directional signs to reflect the change.\n\nDOCUMENT 3 — PARTICIPANT MESSAGE\nI will attend the data workshop, then meet a colleague at the marketing panel. I have already downloaded the sample files. Please tell me where to find the updated room information when I arrive.\nReply: Updated signs will be displayed beside the registration counter.\n\nThis is my first visit to the conference center, and I would like to avoid going to the original room by mistake. I have kept a copy of my registration confirmation on my phone. I will check the signs near the counter before walking to the workshop and can ask a volunteer if I need further directions.",
+      "translation": "Lịch thứ Sáu: khai mạc 9–10 ở Hall A, thực hành dữ liệu 10:15–11:15 ở phòng 5, thảo luận tiếp thị 11:30–12:30 ở Hall B, ăn trưa 12:30–13:30 tại Garden Room. Do lỗi điện, thực hành chuyển sang phòng 8 cùng giờ; các buổi khác không đổi. Người dự mang laptop có file mẫu. Khách dự thực hành rồi gặp đồng nghiệp tại buổi tiếp thị; biển cập nhật nằm cạnh quầy đăng ký.\n\nLịch bổ sung: giữ chương trình cùng tài liệu đăng ký; có thể chọn từng buổi phù hợp công việc; tình nguyện viên ở hành lang chỉ các hội trường; quầy đăng ký có nhân viên suốt buổi sáng. Email bổ sung: lỗi ở thiết bị phòng, nội dung và bài tập không đổi; phòng mới có ổ điện phù hợp, hãy sạc máy và thử mở tệp; nhân viên sửa biển chỉ đường. Khách bổ sung lần đầu đến trung tâm, muốn tránh vào nhầm phòng cũ, đã giữ xác nhận trên điện thoại; sẽ xem biển gần quầy rồi đến buổi thực hành, hỏi tình nguyện viên nếu cần."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-conference-q2",
+      "kind": "part7",
+      "topic": "Lịch hội nghị và thay đổi",
+      "prompt": "When will the data workshop begin?",
+      "options": [
+        "9:00 a.m.",
+        "11:30 a.m.",
+        "12:30 p.m.",
+        "10:15 a.m."
+      ],
+      "correctIndex": 3,
+      "explanation": "Đổi phòng nhưng giữ giờ ban đầu, tức 10:15.",
+      "evidence": "10:15–11:15: Data workshop",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-conference"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-conference",
+      "kind": "part7",
+      "title": "Lịch hội nghị và thay đổi",
+      "topic": "Lịch hội nghị và thay đổi",
+      "text": "DOCUMENT 1 — FRIDAY PROGRAM\n9:00–10:00: Opening talk, Hall A.\n10:15–11:15: Data workshop, Room 5.\n11:30–12:30: Marketing panel, Hall B.\n12:30–1:30: Lunch, Garden Room.\n\nPlease keep this program with your registration materials. Each session is designed to be attended separately, so participants may select activities relevant to their roles. Volunteers in the main corridor can direct visitors to the halls. The registration counter will remain staffed during the morning for anyone who needs help locating an activity or checking a booking.\n\nDOCUMENT 2 — ORGANIZER EMAIL\nRoom 5 has an electrical fault. The data workshop will now take place in Room 8 at its original time. All other sessions remain as printed. Participants who registered for the data workshop should bring a laptop with the provided sample files downloaded.\n\nThe fault affects the room equipment rather than the workshop content, and the instructor will use the same exercises as planned. The replacement room has suitable power outlets for the practical activity. Please charge your device beforehand and test that the sample files open correctly. Staff will update the directional signs to reflect the change.\n\nDOCUMENT 3 — PARTICIPANT MESSAGE\nI will attend the data workshop, then meet a colleague at the marketing panel. I have already downloaded the sample files. Please tell me where to find the updated room information when I arrive.\nReply: Updated signs will be displayed beside the registration counter.\n\nThis is my first visit to the conference center, and I would like to avoid going to the original room by mistake. I have kept a copy of my registration confirmation on my phone. I will check the signs near the counter before walking to the workshop and can ask a volunteer if I need further directions.",
+      "translation": "Lịch thứ Sáu: khai mạc 9–10 ở Hall A, thực hành dữ liệu 10:15–11:15 ở phòng 5, thảo luận tiếp thị 11:30–12:30 ở Hall B, ăn trưa 12:30–13:30 tại Garden Room. Do lỗi điện, thực hành chuyển sang phòng 8 cùng giờ; các buổi khác không đổi. Người dự mang laptop có file mẫu. Khách dự thực hành rồi gặp đồng nghiệp tại buổi tiếp thị; biển cập nhật nằm cạnh quầy đăng ký.\n\nLịch bổ sung: giữ chương trình cùng tài liệu đăng ký; có thể chọn từng buổi phù hợp công việc; tình nguyện viên ở hành lang chỉ các hội trường; quầy đăng ký có nhân viên suốt buổi sáng. Email bổ sung: lỗi ở thiết bị phòng, nội dung và bài tập không đổi; phòng mới có ổ điện phù hợp, hãy sạc máy và thử mở tệp; nhân viên sửa biển chỉ đường. Khách bổ sung lần đầu đến trung tâm, muốn tránh vào nhầm phòng cũ, đã giữ xác nhận trên điện thoại; sẽ xem biển gần quầy rồi đến buổi thực hành, hỏi tình nguyện viên nếu cần."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-conference-q3",
+      "kind": "part7",
+      "topic": "Lịch hội nghị và thay đổi",
+      "prompt": "What should workshop participants bring?",
+      "options": [
+        "A hotel booking receipt.",
+        "A new electrical cable for Room 5.",
+        "A laptop with the sample files.",
+        "A printed lunch menu."
+      ],
+      "correctIndex": 2,
+      "explanation": "Email yêu cầu laptop có các file mẫu đã tải.",
+      "evidence": "bring a laptop with the provided sample files downloaded",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-conference"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-conference",
+      "kind": "part7",
+      "title": "Lịch hội nghị và thay đổi",
+      "topic": "Lịch hội nghị và thay đổi",
+      "text": "DOCUMENT 1 — FRIDAY PROGRAM\n9:00–10:00: Opening talk, Hall A.\n10:15–11:15: Data workshop, Room 5.\n11:30–12:30: Marketing panel, Hall B.\n12:30–1:30: Lunch, Garden Room.\n\nPlease keep this program with your registration materials. Each session is designed to be attended separately, so participants may select activities relevant to their roles. Volunteers in the main corridor can direct visitors to the halls. The registration counter will remain staffed during the morning for anyone who needs help locating an activity or checking a booking.\n\nDOCUMENT 2 — ORGANIZER EMAIL\nRoom 5 has an electrical fault. The data workshop will now take place in Room 8 at its original time. All other sessions remain as printed. Participants who registered for the data workshop should bring a laptop with the provided sample files downloaded.\n\nThe fault affects the room equipment rather than the workshop content, and the instructor will use the same exercises as planned. The replacement room has suitable power outlets for the practical activity. Please charge your device beforehand and test that the sample files open correctly. Staff will update the directional signs to reflect the change.\n\nDOCUMENT 3 — PARTICIPANT MESSAGE\nI will attend the data workshop, then meet a colleague at the marketing panel. I have already downloaded the sample files. Please tell me where to find the updated room information when I arrive.\nReply: Updated signs will be displayed beside the registration counter.\n\nThis is my first visit to the conference center, and I would like to avoid going to the original room by mistake. I have kept a copy of my registration confirmation on my phone. I will check the signs near the counter before walking to the workshop and can ask a volunteer if I need further directions.",
+      "translation": "Lịch thứ Sáu: khai mạc 9–10 ở Hall A, thực hành dữ liệu 10:15–11:15 ở phòng 5, thảo luận tiếp thị 11:30–12:30 ở Hall B, ăn trưa 12:30–13:30 tại Garden Room. Do lỗi điện, thực hành chuyển sang phòng 8 cùng giờ; các buổi khác không đổi. Người dự mang laptop có file mẫu. Khách dự thực hành rồi gặp đồng nghiệp tại buổi tiếp thị; biển cập nhật nằm cạnh quầy đăng ký.\n\nLịch bổ sung: giữ chương trình cùng tài liệu đăng ký; có thể chọn từng buổi phù hợp công việc; tình nguyện viên ở hành lang chỉ các hội trường; quầy đăng ký có nhân viên suốt buổi sáng. Email bổ sung: lỗi ở thiết bị phòng, nội dung và bài tập không đổi; phòng mới có ổ điện phù hợp, hãy sạc máy và thử mở tệp; nhân viên sửa biển chỉ đường. Khách bổ sung lần đầu đến trung tâm, muốn tránh vào nhầm phòng cũ, đã giữ xác nhận trên điện thoại; sẽ xem biển gần quầy rồi đến buổi thực hành, hỏi tình nguyện viên nếu cần."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-conference-q4",
+      "kind": "part7",
+      "topic": "Lịch hội nghị và thay đổi",
+      "prompt": "Where will the participant meet the colleague?",
+      "options": [
+        "At the north gate.",
+        "In Hall B.",
+        "In Room 5.",
+        "In Hall A."
+      ],
+      "correctIndex": 1,
+      "explanation": "Khách hẹn ở buổi thảo luận tiếp thị; lịch ghi Hall B.",
+      "evidence": "Marketing panel, Hall B.",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-conference"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-conference",
+      "kind": "part7",
+      "title": "Lịch hội nghị và thay đổi",
+      "topic": "Lịch hội nghị và thay đổi",
+      "text": "DOCUMENT 1 — FRIDAY PROGRAM\n9:00–10:00: Opening talk, Hall A.\n10:15–11:15: Data workshop, Room 5.\n11:30–12:30: Marketing panel, Hall B.\n12:30–1:30: Lunch, Garden Room.\n\nPlease keep this program with your registration materials. Each session is designed to be attended separately, so participants may select activities relevant to their roles. Volunteers in the main corridor can direct visitors to the halls. The registration counter will remain staffed during the morning for anyone who needs help locating an activity or checking a booking.\n\nDOCUMENT 2 — ORGANIZER EMAIL\nRoom 5 has an electrical fault. The data workshop will now take place in Room 8 at its original time. All other sessions remain as printed. Participants who registered for the data workshop should bring a laptop with the provided sample files downloaded.\n\nThe fault affects the room equipment rather than the workshop content, and the instructor will use the same exercises as planned. The replacement room has suitable power outlets for the practical activity. Please charge your device beforehand and test that the sample files open correctly. Staff will update the directional signs to reflect the change.\n\nDOCUMENT 3 — PARTICIPANT MESSAGE\nI will attend the data workshop, then meet a colleague at the marketing panel. I have already downloaded the sample files. Please tell me where to find the updated room information when I arrive.\nReply: Updated signs will be displayed beside the registration counter.\n\nThis is my first visit to the conference center, and I would like to avoid going to the original room by mistake. I have kept a copy of my registration confirmation on my phone. I will check the signs near the counter before walking to the workshop and can ask a volunteer if I need further directions.",
+      "translation": "Lịch thứ Sáu: khai mạc 9–10 ở Hall A, thực hành dữ liệu 10:15–11:15 ở phòng 5, thảo luận tiếp thị 11:30–12:30 ở Hall B, ăn trưa 12:30–13:30 tại Garden Room. Do lỗi điện, thực hành chuyển sang phòng 8 cùng giờ; các buổi khác không đổi. Người dự mang laptop có file mẫu. Khách dự thực hành rồi gặp đồng nghiệp tại buổi tiếp thị; biển cập nhật nằm cạnh quầy đăng ký.\n\nLịch bổ sung: giữ chương trình cùng tài liệu đăng ký; có thể chọn từng buổi phù hợp công việc; tình nguyện viên ở hành lang chỉ các hội trường; quầy đăng ký có nhân viên suốt buổi sáng. Email bổ sung: lỗi ở thiết bị phòng, nội dung và bài tập không đổi; phòng mới có ổ điện phù hợp, hãy sạc máy và thử mở tệp; nhân viên sửa biển chỉ đường. Khách bổ sung lần đầu đến trung tâm, muốn tránh vào nhầm phòng cũ, đã giữ xác nhận trên điện thoại; sẽ xem biển gần quầy rồi đến buổi thực hành, hỏi tình nguyện viên nếu cần."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-conference-q5",
+      "kind": "part7",
+      "topic": "Lịch hội nghị và thay đổi",
+      "prompt": "Where will updated signs be displayed?",
+      "options": [
+        "Beside the registration counter.",
+        "Inside the hotel bedrooms.",
+        "At the railway platform.",
+        "Behind the catering kitchen."
+      ],
+      "correctIndex": 0,
+      "explanation": "Thư trả lời chỉ rõ biển cập nhật cạnh quầy đăng ký.",
+      "evidence": "beside the registration counter",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-conference"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-conference",
+      "kind": "part7",
+      "title": "Lịch hội nghị và thay đổi",
+      "topic": "Lịch hội nghị và thay đổi",
+      "text": "DOCUMENT 1 — FRIDAY PROGRAM\n9:00–10:00: Opening talk, Hall A.\n10:15–11:15: Data workshop, Room 5.\n11:30–12:30: Marketing panel, Hall B.\n12:30–1:30: Lunch, Garden Room.\n\nPlease keep this program with your registration materials. Each session is designed to be attended separately, so participants may select activities relevant to their roles. Volunteers in the main corridor can direct visitors to the halls. The registration counter will remain staffed during the morning for anyone who needs help locating an activity or checking a booking.\n\nDOCUMENT 2 — ORGANIZER EMAIL\nRoom 5 has an electrical fault. The data workshop will now take place in Room 8 at its original time. All other sessions remain as printed. Participants who registered for the data workshop should bring a laptop with the provided sample files downloaded.\n\nThe fault affects the room equipment rather than the workshop content, and the instructor will use the same exercises as planned. The replacement room has suitable power outlets for the practical activity. Please charge your device beforehand and test that the sample files open correctly. Staff will update the directional signs to reflect the change.\n\nDOCUMENT 3 — PARTICIPANT MESSAGE\nI will attend the data workshop, then meet a colleague at the marketing panel. I have already downloaded the sample files. Please tell me where to find the updated room information when I arrive.\nReply: Updated signs will be displayed beside the registration counter.\n\nThis is my first visit to the conference center, and I would like to avoid going to the original room by mistake. I have kept a copy of my registration confirmation on my phone. I will check the signs near the counter before walking to the workshop and can ask a volunteer if I need further directions.",
+      "translation": "Lịch thứ Sáu: khai mạc 9–10 ở Hall A, thực hành dữ liệu 10:15–11:15 ở phòng 5, thảo luận tiếp thị 11:30–12:30 ở Hall B, ăn trưa 12:30–13:30 tại Garden Room. Do lỗi điện, thực hành chuyển sang phòng 8 cùng giờ; các buổi khác không đổi. Người dự mang laptop có file mẫu. Khách dự thực hành rồi gặp đồng nghiệp tại buổi tiếp thị; biển cập nhật nằm cạnh quầy đăng ký.\n\nLịch bổ sung: giữ chương trình cùng tài liệu đăng ký; có thể chọn từng buổi phù hợp công việc; tình nguyện viên ở hành lang chỉ các hội trường; quầy đăng ký có nhân viên suốt buổi sáng. Email bổ sung: lỗi ở thiết bị phòng, nội dung và bài tập không đổi; phòng mới có ổ điện phù hợp, hãy sạc máy và thử mở tệp; nhân viên sửa biển chỉ đường. Khách bổ sung lần đầu đến trung tâm, muốn tránh vào nhầm phòng cũ, đã giữ xác nhận trên điện thoại; sẽ xem biển gần quầy rồi đến buổi thực hành, hỏi tình nguyện viên nếu cần."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-supplier-q1",
+      "kind": "part7",
+      "topic": "Chọn nhà cung cấp in ấn",
+      "prompt": "Which service meets the customer's deadline?",
+      "options": [
+        "The five-business-day standard service.",
+        "An overseas postal service.",
+        "A service beginning after the product launch.",
+        "The two-business-day express service."
+      ],
+      "correctIndex": 3,
+      "explanation": "Từ thứ Hai đến thứ Tư cần dịch vụ nhanh hai ngày làm việc.",
+      "evidence": "Express service: two business days",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-supplier"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-supplier",
+      "kind": "part7",
+      "title": "Chọn nhà cung cấp in ấn",
+      "topic": "Chọn nhà cung cấp in ấn",
+      "text": "DOCUMENT 1 — PRINTING QUOTE\nMaple Print: 500 full-color brochures for $240. Standard turnaround: five business days after artwork approval. Express service: two business days for an additional $60. Delivery within the city is included.\n\nThe quotation assumes that the customer provides approved digital artwork in the requested format. The price covers the paper, printing and folding of the stated quantity. Design revisions requested after approval may require a separate quotation. Please check spelling and contact information carefully before approving the files, as production staff will print the approved version.\n\nDOCUMENT 2 — CUSTOMER EMAIL\nWe approve the artwork today, Monday, March 3. We need the brochures delivered by Wednesday, March 5, for a product launch. Please use the service that meets that deadline. Delivery is to our city office at 8 Elm Street.\n\nThe brochures will be handed to visitors at our launch presentation, so the requested delivery date is important. Our marketing team has checked the text and images and does not require further revisions. I will forward the payment instructions to our accounts department as soon as you confirm the final amount. Please keep the delivery address on the order.\n\nDOCUMENT 3 — SUPPLIER REPLY\nWe confirm your selected service. The total is $300, including city delivery. Please check that the delivery contact number on the order form is correct. Production will begin once we receive payment today.\n\nWe have attached the payment instructions and a copy of the approved file for your records. The delivery driver will use the telephone number on the form to contact your office on arrival. Please ensure that a staff member can receive the cartons. We will email a dispatch confirmation after the order has been packed.",
+      "translation": "Báo giá Maple Print: 500 tờ gấp màu 240 đô; thường cần năm ngày làm việc sau duyệt bản thiết kế. Dịch vụ nhanh hai ngày làm việc, thêm 60 đô; miễn phí giao trong thành phố. Khách duyệt thứ Hai 3/3, cần hàng thứ Tư 5/3 tại 8 Elm Street. Nhà in xác nhận tổng 300 đô có giao hàng, yêu cầu kiểm tra số liên hệ; bắt đầu sản xuất khi nhận thanh toán hôm nay.\n\nBáo giá bổ sung: khách cung cấp tệp thiết kế đã duyệt đúng định dạng; giá gồm giấy, in và gấp số lượng đã nêu. Sửa thiết kế sau duyệt có thể cần báo giá riêng. Kiểm tra chính tả/thông tin liên hệ vì nhân viên in đúng bản duyệt. Khách bổ sung sẽ phát brochure ở buổi ra mắt, nên ngày giao quan trọng; đã kiểm tra chữ/ảnh, không sửa thêm; chuyển hướng dẫn thanh toán cho kế toán khi xác nhận tổng tiền, giữ địa chỉ trên đơn. Nhà in bổ sung đính kèm hướng dẫn và bản duyệt; tài xế gọi số trên phiếu khi đến, bố trí người nhận thùng; sẽ email xác nhận gửi sau đóng gói."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-supplier-q2",
+      "kind": "part7",
+      "topic": "Chọn nhà cung cấp in ấn",
+      "prompt": "What causes the total to rise from $240 to $300?",
+      "options": [
+        "A larger order quantity.",
+        "A change to black-and-white printing.",
+        "The express service surcharge.",
+        "A city delivery charge."
+      ],
+      "correctIndex": 2,
+      "explanation": "Phụ phí nhanh 60 đô làm tổng thành 300; giao nội thành đã gồm.",
+      "evidence": "an additional $60",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-supplier"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-supplier",
+      "kind": "part7",
+      "title": "Chọn nhà cung cấp in ấn",
+      "topic": "Chọn nhà cung cấp in ấn",
+      "text": "DOCUMENT 1 — PRINTING QUOTE\nMaple Print: 500 full-color brochures for $240. Standard turnaround: five business days after artwork approval. Express service: two business days for an additional $60. Delivery within the city is included.\n\nThe quotation assumes that the customer provides approved digital artwork in the requested format. The price covers the paper, printing and folding of the stated quantity. Design revisions requested after approval may require a separate quotation. Please check spelling and contact information carefully before approving the files, as production staff will print the approved version.\n\nDOCUMENT 2 — CUSTOMER EMAIL\nWe approve the artwork today, Monday, March 3. We need the brochures delivered by Wednesday, March 5, for a product launch. Please use the service that meets that deadline. Delivery is to our city office at 8 Elm Street.\n\nThe brochures will be handed to visitors at our launch presentation, so the requested delivery date is important. Our marketing team has checked the text and images and does not require further revisions. I will forward the payment instructions to our accounts department as soon as you confirm the final amount. Please keep the delivery address on the order.\n\nDOCUMENT 3 — SUPPLIER REPLY\nWe confirm your selected service. The total is $300, including city delivery. Please check that the delivery contact number on the order form is correct. Production will begin once we receive payment today.\n\nWe have attached the payment instructions and a copy of the approved file for your records. The delivery driver will use the telephone number on the form to contact your office on arrival. Please ensure that a staff member can receive the cartons. We will email a dispatch confirmation after the order has been packed.",
+      "translation": "Báo giá Maple Print: 500 tờ gấp màu 240 đô; thường cần năm ngày làm việc sau duyệt bản thiết kế. Dịch vụ nhanh hai ngày làm việc, thêm 60 đô; miễn phí giao trong thành phố. Khách duyệt thứ Hai 3/3, cần hàng thứ Tư 5/3 tại 8 Elm Street. Nhà in xác nhận tổng 300 đô có giao hàng, yêu cầu kiểm tra số liên hệ; bắt đầu sản xuất khi nhận thanh toán hôm nay.\n\nBáo giá bổ sung: khách cung cấp tệp thiết kế đã duyệt đúng định dạng; giá gồm giấy, in và gấp số lượng đã nêu. Sửa thiết kế sau duyệt có thể cần báo giá riêng. Kiểm tra chính tả/thông tin liên hệ vì nhân viên in đúng bản duyệt. Khách bổ sung sẽ phát brochure ở buổi ra mắt, nên ngày giao quan trọng; đã kiểm tra chữ/ảnh, không sửa thêm; chuyển hướng dẫn thanh toán cho kế toán khi xác nhận tổng tiền, giữ địa chỉ trên đơn. Nhà in bổ sung đính kèm hướng dẫn và bản duyệt; tài xế gọi số trên phiếu khi đến, bố trí người nhận thùng; sẽ email xác nhận gửi sau đóng gói."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-supplier-q3",
+      "kind": "part7",
+      "topic": "Chọn nhà cung cấp in ấn",
+      "prompt": "How many brochures were quoted?",
+      "options": [
+        "60.",
+        "500.",
+        "240.",
+        "300."
+      ],
+      "correctIndex": 1,
+      "explanation": "Báo giá ghi số lượng 500 tờ, các số khác là giá/phụ phí.",
+      "evidence": "500 full-color brochures",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-supplier"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-supplier",
+      "kind": "part7",
+      "title": "Chọn nhà cung cấp in ấn",
+      "topic": "Chọn nhà cung cấp in ấn",
+      "text": "DOCUMENT 1 — PRINTING QUOTE\nMaple Print: 500 full-color brochures for $240. Standard turnaround: five business days after artwork approval. Express service: two business days for an additional $60. Delivery within the city is included.\n\nThe quotation assumes that the customer provides approved digital artwork in the requested format. The price covers the paper, printing and folding of the stated quantity. Design revisions requested after approval may require a separate quotation. Please check spelling and contact information carefully before approving the files, as production staff will print the approved version.\n\nDOCUMENT 2 — CUSTOMER EMAIL\nWe approve the artwork today, Monday, March 3. We need the brochures delivered by Wednesday, March 5, for a product launch. Please use the service that meets that deadline. Delivery is to our city office at 8 Elm Street.\n\nThe brochures will be handed to visitors at our launch presentation, so the requested delivery date is important. Our marketing team has checked the text and images and does not require further revisions. I will forward the payment instructions to our accounts department as soon as you confirm the final amount. Please keep the delivery address on the order.\n\nDOCUMENT 3 — SUPPLIER REPLY\nWe confirm your selected service. The total is $300, including city delivery. Please check that the delivery contact number on the order form is correct. Production will begin once we receive payment today.\n\nWe have attached the payment instructions and a copy of the approved file for your records. The delivery driver will use the telephone number on the form to contact your office on arrival. Please ensure that a staff member can receive the cartons. We will email a dispatch confirmation after the order has been packed.",
+      "translation": "Báo giá Maple Print: 500 tờ gấp màu 240 đô; thường cần năm ngày làm việc sau duyệt bản thiết kế. Dịch vụ nhanh hai ngày làm việc, thêm 60 đô; miễn phí giao trong thành phố. Khách duyệt thứ Hai 3/3, cần hàng thứ Tư 5/3 tại 8 Elm Street. Nhà in xác nhận tổng 300 đô có giao hàng, yêu cầu kiểm tra số liên hệ; bắt đầu sản xuất khi nhận thanh toán hôm nay.\n\nBáo giá bổ sung: khách cung cấp tệp thiết kế đã duyệt đúng định dạng; giá gồm giấy, in và gấp số lượng đã nêu. Sửa thiết kế sau duyệt có thể cần báo giá riêng. Kiểm tra chính tả/thông tin liên hệ vì nhân viên in đúng bản duyệt. Khách bổ sung sẽ phát brochure ở buổi ra mắt, nên ngày giao quan trọng; đã kiểm tra chữ/ảnh, không sửa thêm; chuyển hướng dẫn thanh toán cho kế toán khi xác nhận tổng tiền, giữ địa chỉ trên đơn. Nhà in bổ sung đính kèm hướng dẫn và bản duyệt; tài xế gọi số trên phiếu khi đến, bố trí người nhận thùng; sẽ email xác nhận gửi sau đóng gói."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-supplier-q4",
+      "kind": "part7",
+      "topic": "Chọn nhà cung cấp in ấn",
+      "prompt": "What must happen before production begins?",
+      "options": [
+        "The printer must receive payment.",
+        "The launch must finish.",
+        "The delivery office must move.",
+        "The customer must order another 500 brochures."
+      ],
+      "correctIndex": 0,
+      "explanation": "Thư trả lời yêu cầu nhận thanh toán trước khi sản xuất.",
+      "evidence": "Production will begin once we receive payment today.",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-supplier"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-supplier",
+      "kind": "part7",
+      "title": "Chọn nhà cung cấp in ấn",
+      "topic": "Chọn nhà cung cấp in ấn",
+      "text": "DOCUMENT 1 — PRINTING QUOTE\nMaple Print: 500 full-color brochures for $240. Standard turnaround: five business days after artwork approval. Express service: two business days for an additional $60. Delivery within the city is included.\n\nThe quotation assumes that the customer provides approved digital artwork in the requested format. The price covers the paper, printing and folding of the stated quantity. Design revisions requested after approval may require a separate quotation. Please check spelling and contact information carefully before approving the files, as production staff will print the approved version.\n\nDOCUMENT 2 — CUSTOMER EMAIL\nWe approve the artwork today, Monday, March 3. We need the brochures delivered by Wednesday, March 5, for a product launch. Please use the service that meets that deadline. Delivery is to our city office at 8 Elm Street.\n\nThe brochures will be handed to visitors at our launch presentation, so the requested delivery date is important. Our marketing team has checked the text and images and does not require further revisions. I will forward the payment instructions to our accounts department as soon as you confirm the final amount. Please keep the delivery address on the order.\n\nDOCUMENT 3 — SUPPLIER REPLY\nWe confirm your selected service. The total is $300, including city delivery. Please check that the delivery contact number on the order form is correct. Production will begin once we receive payment today.\n\nWe have attached the payment instructions and a copy of the approved file for your records. The delivery driver will use the telephone number on the form to contact your office on arrival. Please ensure that a staff member can receive the cartons. We will email a dispatch confirmation after the order has been packed.",
+      "translation": "Báo giá Maple Print: 500 tờ gấp màu 240 đô; thường cần năm ngày làm việc sau duyệt bản thiết kế. Dịch vụ nhanh hai ngày làm việc, thêm 60 đô; miễn phí giao trong thành phố. Khách duyệt thứ Hai 3/3, cần hàng thứ Tư 5/3 tại 8 Elm Street. Nhà in xác nhận tổng 300 đô có giao hàng, yêu cầu kiểm tra số liên hệ; bắt đầu sản xuất khi nhận thanh toán hôm nay.\n\nBáo giá bổ sung: khách cung cấp tệp thiết kế đã duyệt đúng định dạng; giá gồm giấy, in và gấp số lượng đã nêu. Sửa thiết kế sau duyệt có thể cần báo giá riêng. Kiểm tra chính tả/thông tin liên hệ vì nhân viên in đúng bản duyệt. Khách bổ sung sẽ phát brochure ở buổi ra mắt, nên ngày giao quan trọng; đã kiểm tra chữ/ảnh, không sửa thêm; chuyển hướng dẫn thanh toán cho kế toán khi xác nhận tổng tiền, giữ địa chỉ trên đơn. Nhà in bổ sung đính kèm hướng dẫn và bản duyệt; tài xế gọi số trên phiếu khi đến, bố trí người nhận thùng; sẽ email xác nhận gửi sau đóng gói."
+    },
+    "context": null
+  },
+  {
+    "question": {
+      "id": "p7-exam-v1-supplier-q5",
+      "kind": "part7",
+      "topic": "Chọn nhà cung cấp in ấn",
+      "prompt": "What does the supplier ask the customer to check?",
+      "options": [
+        "The number of hotel rooms.",
+        "The launch speaker's biography.",
+        "The address of an overseas branch.",
+        "The delivery contact number."
+      ],
+      "correctIndex": 3,
+      "explanation": "Nhà in yêu cầu kiểm tra số điện thoại liên hệ giao hàng trên phiếu.",
+      "evidence": "delivery contact number on the order form",
+      "difficulty": 2,
+      "passageId": "p7-exam-v1-supplier"
+    },
+    "listening": null,
+    "reading": {
+      "id": "p7-exam-v1-supplier",
+      "kind": "part7",
+      "title": "Chọn nhà cung cấp in ấn",
+      "topic": "Chọn nhà cung cấp in ấn",
+      "text": "DOCUMENT 1 — PRINTING QUOTE\nMaple Print: 500 full-color brochures for $240. Standard turnaround: five business days after artwork approval. Express service: two business days for an additional $60. Delivery within the city is included.\n\nThe quotation assumes that the customer provides approved digital artwork in the requested format. The price covers the paper, printing and folding of the stated quantity. Design revisions requested after approval may require a separate quotation. Please check spelling and contact information carefully before approving the files, as production staff will print the approved version.\n\nDOCUMENT 2 — CUSTOMER EMAIL\nWe approve the artwork today, Monday, March 3. We need the brochures delivered by Wednesday, March 5, for a product launch. Please use the service that meets that deadline. Delivery is to our city office at 8 Elm Street.\n\nThe brochures will be handed to visitors at our launch presentation, so the requested delivery date is important. Our marketing team has checked the text and images and does not require further revisions. I will forward the payment instructions to our accounts department as soon as you confirm the final amount. Please keep the delivery address on the order.\n\nDOCUMENT 3 — SUPPLIER REPLY\nWe confirm your selected service. The total is $300, including city delivery. Please check that the delivery contact number on the order form is correct. Production will begin once we receive payment today.\n\nWe have attached the payment instructions and a copy of the approved file for your records. The delivery driver will use the telephone number on the form to contact your office on arrival. Please ensure that a staff member can receive the cartons. We will email a dispatch confirmation after the order has been packed.",
+      "translation": "Báo giá Maple Print: 500 tờ gấp màu 240 đô; thường cần năm ngày làm việc sau duyệt bản thiết kế. Dịch vụ nhanh hai ngày làm việc, thêm 60 đô; miễn phí giao trong thành phố. Khách duyệt thứ Hai 3/3, cần hàng thứ Tư 5/3 tại 8 Elm Street. Nhà in xác nhận tổng 300 đô có giao hàng, yêu cầu kiểm tra số liên hệ; bắt đầu sản xuất khi nhận thanh toán hôm nay.\n\nBáo giá bổ sung: khách cung cấp tệp thiết kế đã duyệt đúng định dạng; giá gồm giấy, in và gấp số lượng đã nêu. Sửa thiết kế sau duyệt có thể cần báo giá riêng. Kiểm tra chính tả/thông tin liên hệ vì nhân viên in đúng bản duyệt. Khách bổ sung sẽ phát brochure ở buổi ra mắt, nên ngày giao quan trọng; đã kiểm tra chữ/ảnh, không sửa thêm; chuyển hướng dẫn thanh toán cho kế toán khi xác nhận tổng tiền, giữ địa chỉ trên đơn. Nhà in bổ sung đính kèm hướng dẫn và bản duyệt; tài xế gọi số trên phiếu khi đến, bố trí người nhận thùng; sẽ email xác nhận gửi sau đóng gói."
+    },
+    "context": null
+  }
+]

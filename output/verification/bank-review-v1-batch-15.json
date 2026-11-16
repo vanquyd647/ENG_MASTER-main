@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p7-v2-invoice-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Please include CD-418 as the payment reference.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-recruitment-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Applicants must be comfortable using spreadsheets and communicating in English.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-recruitment-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Occasional Saturday work is required during major events; employees receive a weekday off in return.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-recruitment-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Email a résumé and a short cover letter by April 18.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-train-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Trains between Easton and Mill Park will not operate before noon.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-train-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Regular rail tickets will be accepted on the replacement buses at no additional charge.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-train-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Travel by bus is expected to take twenty minutes longer than the usual train journey.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-feedback-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "However, the printed agenda said breakfast would be available until 9:30, while the buffet was cleared at 9:00.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-feedback-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "We used an outdated agenda template, which listed the wrong breakfast time.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-feedback-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "We would also like to refund your breakfast charge; please send us your booking reference.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-10-13T11:32:33.444Z",
+  "project": "engai-2c7fe",
+  "ruleset": "projects/engai-2c7fe/rulesets/f7fa24b8-e1b2-46e4-af56-c5ec7286f0aa",
+  "rulesHash": "8b764baafc32b478b053b86841ea38fcaed9712d9f9dd9cfd579e9d5dd1e21b9",
+  "compiled": true,
+  "activated": false,
+  "rollbackRuleset": "projects/engai-2c7fe/rulesets/380d4eda-bcc9-4fd8-9dd5-09de5da5dd41"
+}

@@ -1,0 +1,2680 @@
+{
+  "checkedAt": "2026-10-16T07:02:59.937Z",
+  "reviewer": "Gemini answer-blind checker; adjudication by Codex pending",
+  "model": "gemini-3.5-flash-lite",
+  "sourceSha256": "79ed5d947a404bb7d2491ea5efcd0f0f22e6e170e4f3505547f79506365b48b5",
+  "scope": "277 authored practice questions; separate from AI teaching-output benchmark",
+  "denominator": 277,
+  "examIds": [
+    "p1-listening-v1-forklift-q1",
+    "p1-listening-v1-desk-q1",
+    "p1-listening-v1-home-office-q1",
+    "p1-listening-v1-conference-q1",
+    "p1-listening-v1-bicycle-q1",
+    "p1-listening-v1-cyclist-q1",
+    "p2-v1-1",
+    "p2-v1-2",
+    "p2-v1-3",
+    "p2-v1-4",
+    "p2-v1-5",
+    "p2-v1-6",
+    "p2-v1-7",
+    "p2-v1-8",
+    "p2-v1-9",
+    "p2-v1-10",
+    "p2-v1-11",
+    "p2-v1-12",
+    "p2-v1-13",
+    "p2-v1-14",
+    "p2-v1-15",
+    "p2-v1-16",
+    "p2-v1-17",
+    "p2-v1-18",
+    "p2-v2-where-1",
+    "p2-v2-where-2",
+    "p2-v2-where-3",
+    "p2-v2-where-4",
+    "p2-v2-where-5",
+    "p2-v2-where-6",
+    "p2-v2-when-1",
+    "p3-listening-v1-meeting-q1",
+    "p3-listening-v1-meeting-q2",
+    "p3-listening-v1-meeting-q3",
+    "p3-listening-v1-delivery-q1",
+    "p3-listening-v1-delivery-q2",
+    "p3-listening-v1-delivery-q3",
+    "p3-exam-v1-registration-q1",
+    "p3-exam-v1-registration-q2",
+    "p3-exam-v1-registration-q3",
+    "p3-exam-v1-restaurant-q1",
+    "p3-exam-v1-restaurant-q2",
+    "p3-exam-v1-restaurant-q3",
+    "p3-exam-v1-printer-q1",
+    "p3-exam-v1-printer-q2",
+    "p3-exam-v1-printer-q3",
+    "p3-exam-v1-hotel-q1",
+    "p3-exam-v1-hotel-q2",
+    "p3-exam-v1-hotel-q3",
+    "p3-exam-v1-interview-q1",
+    "p3-exam-v1-interview-q2",
+    "p3-exam-v1-interview-q3",
+    "p3-exam-v1-catering-q1",
+    "p3-exam-v1-catering-q2",
+    "p3-exam-v1-catering-q3",
+    "p3-exam-v1-software-q1",
+    "p3-exam-v1-software-q2",
+    "p3-exam-v1-software-q3",
+    "p3-exam-v1-bicycle-repair-q1",
+    "p3-exam-v1-bicycle-repair-q2",
+    "p3-exam-v1-bicycle-repair-q3",
+    "p3-exam-v1-supplies-q1",
+    "p3-exam-v1-supplies-q2",
+    "p3-exam-v1-supplies-q3",
+    "p3-exam-v1-travel-q1",
+    "p3-exam-v1-travel-q2",
+    "p3-exam-v1-travel-q3",
+    "p3-exam-v1-library-q1",
+    "p3-exam-v1-library-q2",
+    "p3-exam-v1-library-q3",
+    "p4-listening-v1-museum-q1",
+    "p4-listening-v1-museum-q2",
+    "p4-listening-v1-museum-q3",
+    "p4-listening-v1-repair-q1",
+    "p4-listening-v1-repair-q2",
+    "p4-listening-v1-repair-q3",
+    "p4-exam-v1-shuttle-q1",
+    "p4-exam-v1-shuttle-q2",
+    "p4-exam-v1-shuttle-q3",
+    "p4-exam-v1-opening-q1",
+    "p4-exam-v1-opening-q2",
+    "p4-exam-v1-opening-q3",
+    "p4-exam-v1-safety-q1",
+    "p4-exam-v1-safety-q2",
+    "p4-exam-v1-safety-q3",
+    "p4-exam-v1-order-q1",
+    "p4-exam-v1-order-q2",
+    "p4-exam-v1-order-q3",
+    "p4-exam-v1-presentation-q1",
+    "p4-exam-v1-presentation-q2",
+    "p4-exam-v1-presentation-q3",
+    "p4-exam-v1-maintenance-q1",
+    "p4-exam-v1-maintenance-q2",
+    "p4-exam-v1-maintenance-q3",
+    "p4-exam-v1-recruitment-q1",
+    "p4-exam-v1-recruitment-q2",
+    "p4-exam-v1-recruitment-q3",
+    "p4-exam-v1-lost-property-q1",
+    "p4-exam-v1-lost-property-q2",
+    "p4-exam-v1-lost-property-q3",
+    "p5-v1-1",
+    "p5-v1-2",
+    "p5-v1-3",
+    "p5-v1-4",
+    "p5-v1-5",
+    "p5-v1-6",
+    "p5-v1-7",
+    "p5-v1-8",
+    "p5-v1-9",
+    "p5-v1-10",
+    "p5-v1-11",
+    "p5-v1-12",
+    "p5-v1-13",
+    "p5-v1-14",
+    "p5-v1-15",
+    "p5-v1-16",
+    "p5-v1-17",
+    "p5-v1-18",
+    "p5-v1-19",
+    "p5-v1-20",
+    "p5-v1-21",
+    "p5-v1-22",
+    "p5-v1-23",
+    "p5-v1-24",
+    "p5-v2-forms-1",
+    "p5-v2-forms-2",
+    "p5-v2-forms-3",
+    "p5-v2-forms-4",
+    "p5-v2-forms-5",
+    "p5-v2-forms-6",
+    "p6-v2-delivery-1",
+    "p6-v2-delivery-2",
+    "p6-v2-delivery-3",
+    "p6-v2-delivery-4",
+    "p6-v2-training-1",
+    "p6-v2-training-2",
+    "p6-v2-training-3",
+    "p6-v2-training-4",
+    "p6-v2-renovation-1",
+    "p6-v2-renovation-2",
+    "p6-v2-renovation-3",
+    "p6-v2-renovation-4",
+    "p6-v2-membership-1",
+    "p6-v2-membership-2",
+    "p6-v2-membership-3",
+    "p6-v2-membership-4",
+    "p7-v2-workshop-1",
+    "p7-v2-workshop-2",
+    "p7-v2-workshop-3",
+    "p7-v2-store-1",
+    "p7-v2-store-2",
+    "p7-v2-store-3",
+    "p7-v2-invoice-1",
+    "p7-v2-invoice-2",
+    "p7-v2-invoice-3",
+    "p7-v2-recruitment-1",
+    "p7-v2-recruitment-2",
+    "p7-v2-recruitment-3",
+    "p7-v2-train-1",
+    "p7-v2-train-2",
+    "p7-v2-train-3",
+    "p7-v2-feedback-1",
+    "p7-v2-feedback-2",
+    "p7-v2-feedback-3",
+    "p7-exam-v1-fitness-q1",
+    "p7-exam-v1-fitness-q2",
+    "p7-exam-v1-fitness-q3",
+    "p7-exam-v1-course-q1",
+    "p7-exam-v1-course-q2",
+    "p7-exam-v1-course-q3",
+    "p7-exam-v1-returns-q1",
+    "p7-exam-v1-returns-q2",
+    "p7-exam-v1-returns-q3",
+    "p7-exam-v1-appointment-q1",
+    "p7-exam-v1-appointment-q2",
+    "p7-exam-v1-venue-q1",
+    "p7-exam-v1-venue-q2",
+    "p7-exam-v1-venue-q3",
+    "p7-exam-v1-venue-q4",
+    "p7-exam-v1-venue-q5",
+    "p7-exam-v1-shipment-q1",
+    "p7-exam-v1-shipment-q2",
+    "p7-exam-v1-shipment-q3",
+    "p7-exam-v1-shipment-q4",
+    "p7-exam-v1-shipment-q5",
+    "p7-exam-v1-volunteer-q1",
+    "p7-exam-v1-volunteer-q2",
+    "p7-exam-v1-volunteer-q3",
+    "p7-exam-v1-volunteer-q4",
+    "p7-exam-v1-volunteer-q5",
+    "p7-exam-v1-conference-q1",
+    "p7-exam-v1-conference-q2",
+    "p7-exam-v1-conference-q3",
+    "p7-exam-v1-conference-q4",
+    "p7-exam-v1-conference-q5",
+    "p7-exam-v1-supplier-q1",
+    "p7-exam-v1-supplier-q2",
+    "p7-exam-v1-supplier-q3",
+    "p7-exam-v1-supplier-q4",
+    "p7-exam-v1-supplier-q5"
+  ],
+  "batches": [
+    {
+      "index": 0,
+      "ids": [
+        "p5-v1-1",
+        "p5-v1-2",
+        "p5-v1-3",
+        "p5-v1-4",
+        "p5-v1-5",
+        "p5-v1-6",
+        "p5-v1-7",
+        "p5-v1-8",
+        "p5-v1-9",
+        "p5-v1-10"
+      ],
+      "inputSha256": "2b60756b75442f5eb2964d606e4afe45675ec7bb1758cf16538534395a8535c1",
+      "status": "complete",
+      "outputSha256": "eb2759708370d702b72c32a51375dba9f25ce6adade42000931b1ebdf90d7df0",
+      "usage": {
+        "promptTokenCount": 674,
+        "candidatesTokenCount": 770,
+        "totalTokenCount": 1444,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 674
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 1,
+      "ids": [
+        "p5-v1-11",
+        "p5-v1-12",
+        "p5-v1-13",
+        "p5-v1-14",
+        "p5-v1-15",
+        "p5-v1-16",
+        "p5-v1-17",
+        "p5-v1-18",
+        "p5-v1-19",
+        "p5-v1-20"
+      ],
+      "inputSha256": "b9227454dabbad7197b3463601accb5ee85c58cad5025becfcda85ffa8ef6904",
+      "status": "complete",
+      "outputSha256": "7374cbc884c6e84a28a2505258ce52c2373bfa6ab5ae028e07bb4dae127352d8",
+      "usage": {
+        "promptTokenCount": 674,
+        "candidatesTokenCount": 604,
+        "totalTokenCount": 1278,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 674
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 2,
+      "ids": [
+        "p5-v1-21",
+        "p5-v1-22",
+        "p5-v1-23",
+        "p5-v1-24",
+        "p2-v1-1",
+        "p2-v1-2",
+        "p2-v1-3",
+        "p2-v1-4",
+        "p2-v1-5",
+        "p2-v1-6"
+      ],
+      "inputSha256": "a6ef24c8a51ef2a7c735aa4ab06a48f3cf7a7e06551ce9b739602887aca94d37",
+      "status": "complete",
+      "outputSha256": "77a1b3664efb6db9c490f23749a7011a1a7526893a6fff7357687b627914100a",
+      "usage": {
+        "promptTokenCount": 709,
+        "candidatesTokenCount": 754,
+        "totalTokenCount": 1463,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 709
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 3,
+      "ids": [
+        "p2-v1-7",
+        "p2-v1-8",
+        "p2-v1-9",
+        "p2-v1-10",
+        "p2-v1-11",
+        "p2-v1-12",
+        "p2-v1-13",
+        "p2-v1-14",
+        "p2-v1-15",
+        "p2-v1-16"
+      ],
+      "inputSha256": "0305f8e759a66636c0350e6f8915ebb54aecfdf993d6129e02decb835b4fdedb",
+      "status": "complete",
+      "outputSha256": "a680908911af13c05146cf9829029ae256b9dc4d369529ca742f21d7d7a4588b",
+      "usage": {
+        "promptTokenCount": 774,
+        "candidatesTokenCount": 724,
+        "totalTokenCount": 1498,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 774
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 4,
+      "ids": [
+        "p2-v1-17",
+        "p2-v1-18",
+        "context-v1-meeting-1",
+        "context-v1-meeting-2",
+        "context-v1-meeting-3",
+        "context-v1-travel-1",
+        "context-v1-travel-2",
+        "context-v1-travel-3",
+        "context-v1-shipping-1",
+        "context-v1-shipping-2"
+      ],
+      "inputSha256": "0b4ada1f19a31a97d1cc78812a8abf2c8412e8a96c1d2a1204a0d691ed3612c5",
+      "status": "complete",
+      "outputSha256": "3a207b35c957f4e17003b750019a2dca3d96fd388e26ba031db8033bcff9bc02",
+      "usage": {
+        "promptTokenCount": 733,
+        "candidatesTokenCount": 719,
+        "totalTokenCount": 1452,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 733
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 5,
+      "ids": [
+        "context-v1-shipping-3",
+        "context-v1-hiring-1",
+        "context-v1-hiring-2",
+        "context-v1-hiring-3",
+        "context-v1-maintenance-1",
+        "context-v1-maintenance-2",
+        "context-v1-maintenance-3",
+        "context-v1-payment-1",
+        "context-v1-payment-2",
+        "context-v1-payment-3"
+      ],
+      "inputSha256": "5090feca9f5432dbb56e3a4bbf31b97dad1f9071f04b350c04e78060e91ef2c2",
+      "status": "complete",
+      "outputSha256": "8af11c8f4512aa44ad6131525cb8d3a2a3d8ab31ca01a66296c171110a589558",
+      "usage": {
+        "promptTokenCount": 694,
+        "candidatesTokenCount": 636,
+        "totalTokenCount": 1330,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 694
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 6,
+      "ids": [
+        "p5-v2-forms-1",
+        "p5-v2-forms-2",
+        "p5-v2-forms-3",
+        "p5-v2-forms-4",
+        "p5-v2-forms-5",
+        "p5-v2-forms-6",
+        "p5-v2-agree-1",
+        "p5-v2-agree-2",
+        "p5-v2-agree-3",
+        "p5-v2-agree-4"
+      ],
+      "inputSha256": "1b82d4f370d0303fcb92c55b16035ac55a002b5bf3e7c630aee3b3f769a7a026",
+      "status": "complete",
+      "outputSha256": "81ecd3c687a7c23fb082ad74fbad1d9cc9758d9d7537efef48edceef11abd94a",
+      "usage": {
+        "promptTokenCount": 694,
+        "candidatesTokenCount": 745,
+        "totalTokenCount": 1439,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 694
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 7,
+      "ids": [
+        "p5-v2-agree-5",
+        "p5-v2-agree-6",
+        "p5-v2-tense-1",
+        "p5-v2-tense-2",
+        "p5-v2-tense-3",
+        "p5-v2-tense-4",
+        "p5-v2-tense-5",
+        "p5-v2-tense-6",
+        "p5-v2-passive-1",
+        "p5-v2-passive-2"
+      ],
+      "inputSha256": "8fd2508e40ca843a94f938b9013fce696bc367da700ec29175802dc9a7c9242a",
+      "status": "complete",
+      "outputSha256": "094cd779c1e1b51f149488249520a15d8038778275ab63030bce21a1c4cf5d7c",
+      "usage": {
+        "promptTokenCount": 715,
+        "candidatesTokenCount": 870,
+        "totalTokenCount": 1585,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 715
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 8,
+      "ids": [
+        "p5-v2-passive-3",
+        "p5-v2-passive-4",
+        "p5-v2-passive-5",
+        "p5-v2-passive-6",
+        "p2-v2-where-1",
+        "p2-v2-where-2",
+        "p2-v2-where-3",
+        "p2-v2-where-4",
+        "p2-v2-where-5",
+        "p2-v2-where-6"
+      ],
+      "inputSha256": "70bf6696a6dad1f8d9a9065cca587f0264e1348feaf0eca8bf3d4607bd313f7f",
+      "status": "complete",
+      "outputSha256": "306f9d2d13b534ce094b7538da91f28d89c66003f971b5302c379780dc5e10ed",
+      "usage": {
+        "promptTokenCount": 740,
+        "candidatesTokenCount": 836,
+        "totalTokenCount": 1576,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 740
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 9,
+      "ids": [
+        "p2-v2-when-1",
+        "p2-v2-when-2",
+        "p2-v2-when-3",
+        "p2-v2-when-4",
+        "p2-v2-when-5",
+        "p2-v2-when-6",
+        "p2-v2-request-1",
+        "p2-v2-request-2",
+        "p2-v2-request-3",
+        "p2-v2-request-4"
+      ],
+      "inputSha256": "7c6e74d5f5c0cd73ce9f8c9bbb109bb8b6758a10654a898ad7037826362697b1",
+      "status": "complete",
+      "outputSha256": "78e817cd40f5b5a2c0170a5ffced4ab31e46f27c154202d930ec9fcfa16e7b2d",
+      "usage": {
+        "promptTokenCount": 780,
+        "candidatesTokenCount": 787,
+        "totalTokenCount": 1567,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 780
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 10,
+      "ids": [
+        "p2-v2-request-5",
+        "p2-v2-request-6",
+        "p2-v2-indirect-1",
+        "p2-v2-indirect-2",
+        "p2-v2-indirect-3",
+        "p2-v2-indirect-4",
+        "p2-v2-indirect-5",
+        "p2-v2-indirect-6",
+        "grammar-v2-word-forms-1",
+        "grammar-v2-word-forms-2"
+      ],
+      "inputSha256": "892978fea71e038788c087adbc1613a5e89d4318847ee47af78fcff0370cec04",
+      "status": "complete",
+      "outputSha256": "88e27580d07021721358691d77bd9119bac30f9604c2299e6566b318756c4907",
+      "usage": {
+        "promptTokenCount": 783,
+        "candidatesTokenCount": 764,
+        "totalTokenCount": 1547,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 783
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 11,
+      "ids": [
+        "grammar-v2-word-forms-3",
+        "grammar-v2-agreement-1",
+        "grammar-v2-agreement-2",
+        "grammar-v2-agreement-3",
+        "grammar-v2-tenses-1",
+        "grammar-v2-tenses-2",
+        "grammar-v2-tenses-3",
+        "grammar-v2-prepositions-1",
+        "grammar-v2-prepositions-2",
+        "grammar-v2-prepositions-3"
+      ],
+      "inputSha256": "a0d28ab088acc2a86aa881ad227cfc84daa61ff0d1fcd75284ac015636530435",
+      "status": "complete",
+      "outputSha256": "c1a220795ca0e5cbe8d216400cbbc3021d7a3dc786786e4f38c5db9f48b80e61",
+      "usage": {
+        "promptTokenCount": 693,
+        "candidatesTokenCount": 775,
+        "totalTokenCount": 1468,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 693
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 12,
+      "ids": [
+        "grammar-v2-connectors-1",
+        "grammar-v2-connectors-2",
+        "grammar-v2-connectors-3",
+        "grammar-v2-passive-1",
+        "grammar-v2-passive-2",
+        "grammar-v2-passive-3",
+        "p6-v2-delivery-1",
+        "p6-v2-delivery-2",
+        "p6-v2-delivery-3",
+        "p6-v2-delivery-4"
+      ],
+      "inputSha256": "36c05d227d97ad7849ac7f8901b9489854b9ef4318a2db2b939cc90efbf344ef",
+      "status": "complete",
+      "outputSha256": "5f47a78a03e878e621b33b10d6e54007c27e3abedc047834a9640ba4e064b449",
+      "usage": {
+        "promptTokenCount": 1489,
+        "candidatesTokenCount": 781,
+        "totalTokenCount": 2270,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1489
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 13,
+      "ids": [
+        "p6-v2-training-1",
+        "p6-v2-training-2",
+        "p6-v2-training-3",
+        "p6-v2-training-4",
+        "p6-v2-renovation-1",
+        "p6-v2-renovation-2",
+        "p6-v2-renovation-3",
+        "p6-v2-renovation-4",
+        "p6-v2-membership-1",
+        "p6-v2-membership-2"
+      ],
+      "inputSha256": "57f9b38b41f212bd4c77516c9bdec3c255fecf2660a46e84cf80ee223f9d6b11",
+      "status": "complete",
+      "outputSha256": "3d21c914ec1555fe17a5da4c54029cb886d4010843776d9dae981500e702a52d",
+      "usage": {
+        "promptTokenCount": 2827,
+        "candidatesTokenCount": 711,
+        "totalTokenCount": 3538,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2827
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 14,
+      "ids": [
+        "p6-v2-membership-3",
+        "p6-v2-membership-4",
+        "p7-v2-workshop-1",
+        "p7-v2-workshop-2",
+        "p7-v2-workshop-3",
+        "p7-v2-store-1",
+        "p7-v2-store-2",
+        "p7-v2-store-3",
+        "p7-v2-invoice-1",
+        "p7-v2-invoice-2"
+      ],
+      "inputSha256": "b396883e38707a96fb5ef058c9cc24aea0fd766f454ea706d2b853068cc776e3",
+      "status": "complete",
+      "outputSha256": "ea0bedf8573c8af9bd5a18655fa0c42c01d7e4203756d32341b3873054241abc",
+      "usage": {
+        "promptTokenCount": 3052,
+        "candidatesTokenCount": 747,
+        "totalTokenCount": 3799,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 3052
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 15,
+      "ids": [
+        "p7-v2-invoice-3",
+        "p7-v2-recruitment-1",
+        "p7-v2-recruitment-2",
+        "p7-v2-recruitment-3",
+        "p7-v2-train-1",
+        "p7-v2-train-2",
+        "p7-v2-train-3",
+        "p7-v2-feedback-1",
+        "p7-v2-feedback-2",
+        "p7-v2-feedback-3"
+      ],
+      "inputSha256": "f8ba495ffa55861b4fd22666ad65a93b06262e3597dc9e2f0149441ae020a309",
+      "status": "complete",
+      "outputSha256": "b6eebe1cc513c08beba80c8f33c3d4d71d876a34529be4d995c353e4e738cd93",
+      "usage": {
+        "promptTokenCount": 2951,
+        "candidatesTokenCount": 753,
+        "totalTokenCount": 3704,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2951
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 16,
+      "ids": [
+        "workplace-v2-supplier-1",
+        "workplace-v2-supplier-2",
+        "workplace-v2-supplier-3",
+        "workplace-v2-onboarding-1",
+        "workplace-v2-onboarding-2",
+        "workplace-v2-onboarding-3",
+        "p1-listening-v1-forklift-q1",
+        "p1-listening-v1-desk-q1",
+        "p1-listening-v1-home-office-q1",
+        "p1-listening-v1-conference-q1"
+      ],
+      "inputSha256": "8863c918235c71680f3896ef01d468df68c6eb47749dca32354fa73b1ad78821",
+      "status": "failed",
+      "error": {
+        "name": "ApiError",
+        "status": 429
+      }
+    },
+    {
+      "index": 17,
+      "ids": [
+        "p1-listening-v1-bicycle-q1",
+        "p1-listening-v1-cyclist-q1",
+        "p3-listening-v1-meeting-q1",
+        "p3-listening-v1-meeting-q2",
+        "p3-listening-v1-meeting-q3",
+        "p3-listening-v1-delivery-q1",
+        "p3-listening-v1-delivery-q2",
+        "p3-listening-v1-delivery-q3",
+        "p4-listening-v1-museum-q1",
+        "p4-listening-v1-museum-q2"
+      ],
+      "inputSha256": "a374449277fb56ba91c4b5e4b5905c6931c9462f3fcc204ccdbfafdddeb330b2",
+      "status": "complete",
+      "outputSha256": "02cebc03ade156f5974f7fa9f0ae338a5f2bf6850f62f386ff9b6df4454f8520",
+      "usage": {
+        "promptTokenCount": 4533,
+        "candidatesTokenCount": 862,
+        "totalTokenCount": 5395,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 2373
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 2160
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    {
+      "index": 18,
+      "ids": [
+        "p4-listening-v1-museum-q3",
+        "p4-listening-v1-repair-q1",
+        "p4-listening-v1-repair-q2",
+        "p4-listening-v1-repair-q3",
+        "p3-exam-v1-registration-q1",
+        "p3-exam-v1-registration-q2",
+        "p3-exam-v1-registration-q3",
+        "p3-exam-v1-restaurant-q1",
+        "p3-exam-v1-restaurant-q2",
+        "p3-exam-v1-restaurant-q3"
+      ],
+      "inputSha256": "86f6deb66a6a41968f5b26f7a1170441b195a12dbe29a114a86e829fab2b1ff9",
+      "status": "failed",
+      "error": {
+        "name": "ApiError",
+        "status": 429
+      }
+    },
+    {
+      "index": 19,
+      "ids": [
+        "p3-exam-v1-printer-q1",
+        "p3-exam-v1-printer-q2",
+        "p3-exam-v1-printer-q3",
+        "p3-exam-v1-hotel-q1",
+        "p3-exam-v1-hotel-q2",
+        "p3-exam-v1-hotel-q3",
+        "p3-exam-v1-interview-q1",
+        "p3-exam-v1-interview-q2",
+        "p3-exam-v1-interview-q3",
+        "p3-exam-v1-catering-q1"
+      ],
+      "inputSha256": "61228ce644ac5fbca640bcfd2d997051efc1a8411bed6d1596fa9330a2fc096c",
+      "status": "failed",
+      "error": {
+        "name": "ApiError",
+        "status": 429
+      }
+    },
+    {
+      "index": 20,
+      "ids": [
+        "p3-exam-v1-catering-q2",
+        "p3-exam-v1-catering-q3",
+        "p3-exam-v1-software-q1",
+        "p3-exam-v1-software-q2",
+        "p3-exam-v1-software-q3",
+        "p3-exam-v1-bicycle-repair-q1",
+        "p3-exam-v1-bicycle-repair-q2",
+        "p3-exam-v1-bicycle-repair-q3",
+        "p3-exam-v1-supplies-q1",
+        "p3-exam-v1-supplies-q2"
+      ],
+      "inputSha256": "29f2156b68dcfda92ee7609c942e8048264542d774d9ac7278e75168fce3d49f",
+      "status": "failed",
+      "error": {
+        "name": "ApiError",
+        "status": 429
+      }
+    },
+    {
+      "index": 21,
+      "ids": [
+        "p3-exam-v1-supplies-q3",
+        "p3-exam-v1-travel-q1",
+        "p3-exam-v1-travel-q2",
+        "p3-exam-v1-travel-q3",
+        "p3-exam-v1-library-q1",
+        "p3-exam-v1-library-q2",
+        "p3-exam-v1-library-q3",
+        "p4-exam-v1-shuttle-q1",
+        "p4-exam-v1-shuttle-q2",
+        "p4-exam-v1-shuttle-q3"
+      ],
+      "inputSha256": "e9a8afb22960f7f40de2de3ab9a84619eef4e81781fa3361fbeeb64cc423b76d",
+      "status": "failed",
+      "error": {
+        "name": "ApiError",
+        "status": 429
+      }
+    },
+    {
+      "index": 22,
+      "ids": [
+        "p4-exam-v1-opening-q1",
+        "p4-exam-v1-opening-q2",
+        "p4-exam-v1-opening-q3",
+        "p4-exam-v1-safety-q1",
+        "p4-exam-v1-safety-q2",
+        "p4-exam-v1-safety-q3",
+        "p4-exam-v1-order-q1",
+        "p4-exam-v1-order-q2",
+        "p4-exam-v1-order-q3",
+        "p4-exam-v1-presentation-q1"
+      ],
+      "inputSha256": "24b7266156e32617a5af7a25572b34f6df94b91bf39aff95cc4f3842de2b0ebf",
+      "status": "failed",
+      "error": {
+        "name": "ApiError",
+        "status": 429
+      }
+    },
+    {
+      "index": 23,
+      "ids": [
+        "p4-exam-v1-presentation-q2",
+        "p4-exam-v1-presentation-q3",
+        "p4-exam-v1-maintenance-q1",
+        "p4-exam-v1-maintenance-q2",
+        "p4-exam-v1-maintenance-q3",
+        "p4-exam-v1-recruitment-q1",
+        "p4-exam-v1-recruitment-q2",
+        "p4-exam-v1-recruitment-q3",
+        "p4-exam-v1-lost-property-q1",
+        "p4-exam-v1-lost-property-q2"
+      ],
+      "inputSha256": "f7524ac908a3d552b2158c87e73a2242eb0cd5a0c068efbb75c11b2deac0df3c",
+      "status": "failed",
+      "error": {
+        "name": "ApiError",
+        "status": 429
+      }
+    },
+    {
+      "index": 24,
+      "ids": [
+        "p4-exam-v1-lost-property-q3",
+        "p7-exam-v1-fitness-q1",
+        "p7-exam-v1-fitness-q2",
+        "p7-exam-v1-fitness-q3",
+        "p7-exam-v1-course-q1",
+        "p7-exam-v1-course-q2",
+        "p7-exam-v1-course-q3",
+        "p7-exam-v1-returns-q1",
+        "p7-exam-v1-returns-q2",
+        "p7-exam-v1-returns-q3"
+      ],
+      "inputSha256": "e7530ad7f782da758251bc333e07db9124d36ac6d3b32a5311f393e17def755f",
+      "status": "failed",
+      "error": {
+        "name": "ApiError",
+        "status": 429
+      }
+    },
+    {
+      "index": 25,
+      "ids": [
+        "p7-exam-v1-appointment-q1",
+        "p7-exam-v1-appointment-q2",
+        "p7-exam-v1-venue-q1",
+        "p7-exam-v1-venue-q2",
+        "p7-exam-v1-venue-q3",
+        "p7-exam-v1-venue-q4",
+        "p7-exam-v1-venue-q5",
+        "p7-exam-v1-shipment-q1",
+        "p7-exam-v1-shipment-q2",
+        "p7-exam-v1-shipment-q3"
+      ],
+      "inputSha256": "38b914e626e4d071ef9c7245f7c20977239ceb4c603803e5adcb842aeed8ac2e",
+      "status": "failed",
+      "error": {
+        "name": "ApiError",
+        "status": 429
+      }
+    },
+    {
+      "index": 26,
+      "ids": [
+        "p7-exam-v1-shipment-q4",
+        "p7-exam-v1-shipment-q5",
+        "p7-exam-v1-volunteer-q1",
+        "p7-exam-v1-volunteer-q2",
+        "p7-exam-v1-volunteer-q3",
+        "p7-exam-v1-volunteer-q4",
+        "p7-exam-v1-volunteer-q5",
+        "p7-exam-v1-conference-q1",
+        "p7-exam-v1-conference-q2",
+        "p7-exam-v1-conference-q3"
+      ],
+      "inputSha256": "80e010656fb19ab58a553a9418d5f113a52cc5116c1ff4f364bca51eecfc919a",
+      "status": "failed",
+      "error": {
+        "name": "ApiError",
+        "status": 429
+      }
+    },
+    {
+      "index": 27,
+      "ids": [
+        "p7-exam-v1-conference-q4",
+        "p7-exam-v1-conference-q5",
+        "p7-exam-v1-supplier-q1",
+        "p7-exam-v1-supplier-q2",
+        "p7-exam-v1-supplier-q3",
+        "p7-exam-v1-supplier-q4",
+        "p7-exam-v1-supplier-q5"
+      ],
+      "inputSha256": "b774888d5e6da6091d2249954b2d27a1f7e069bfa4e85aaba53f316d0cb87f4d",
+      "status": "failed",
+      "error": {
+        "name": "ApiError",
+        "status": 429
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "p5-v1-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The preposition 'by' is used to indicate a deadline (by Friday).",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "An adverb ('efficiently') is needed to modify the verb 'works'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Modal verb 'must' is followed by a base verb ('register').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-4",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "'Since' is used with the present perfect tense to indicate a starting point in time ('2022').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-5",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A singular noun ('discount') is required after the article 'a'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-6",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "'Because' introduces a clause expressing the reason for the postponement.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-7",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The verb 'encourage' takes an infinitive with 'to' in the passive structure ('are encouraged to provide').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-8",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A plural noun ('requirements') is needed after the possessive pronoun 'our'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-9",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "First conditional sentence structure uses 'If + present simple' ('arrives'), followed by 'will + verb' ('will inspect') in the main clause.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-10",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The past time marker 'yesterday' combined with the passive subject 'The documents' requires the past passive form ('were reviewed').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-11",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The verb 'contact' requires an object pronoun like 'me'.",
+      "issue": "none",
+      "translationIssue": "none",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-12",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "'near' functions as a preposition meaning close to.",
+      "issue": "none",
+      "translationIssue": "none",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-13",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The phrasal preposition 'look forward to' is followed by a gerund (-ing form).",
+      "issue": "none",
+      "translationIssue": "none",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-14",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The verb 'checked' needs to be modified by the adverb 'carefully'.",
+      "issue": "none",
+      "translationIssue": "none",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-15",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The preposition 'by' indicates the amount of change or difference.",
+      "issue": "none",
+      "translationIssue": "none",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-16",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The superlative adjective 'fastest' is required after the definite article 'the'.",
+      "issue": "none",
+      "translationIssue": "none",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-17",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The preposition 'for' is used with a period of time like 'two years'.",
+      "issue": "none",
+      "translationIssue": "none",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-18",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The subject 'Every applicant' is singular and requires the singular verb 'needs'.",
+      "issue": "none",
+      "translationIssue": "none",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-19",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "'in case' means 'if it happens that' or 'as a precaution against', which fits the context of keeping a receipt.",
+      "issue": "none",
+      "translationIssue": "none",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-20",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The past participle 'damaged' acts as an adjective modifying the noun 'component'.",
+      "issue": "none",
+      "translationIssue": "none",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-21",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The passive voice structure requires the past participle 'scheduled' after 'has been'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-22",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The relative pronoun 'that' is used for things/rooms as the subject of the subordinate clause.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-23",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The possessive adjective 'their' is needed to modify the noun 'skills'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v1-24",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The noun 'attachment' is required after the determiner 'an'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The question asks 'When', and 'On Thursday morning' provides a valid time.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The question asks 'Where', and 'In the top drawer' provides a location.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The question asks 'Who', and 'The operations manager' names a person.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The request asks to send the schedule, and 'Certainly, I will email it now' is an appropriate polite acceptance.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-5",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The question asks 'Why', and 'Because the road was closed' provides a reason.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The question asks 'How often', and 'Once a month' answers regarding frequency.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-7",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Option A directly answers the preference question regarding seat types.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-8",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Option C directly responds to whether the budget review is finished by indicating it is not yet done.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-9",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Option B answers the 'How much' price question.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-10",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Option A provides a valid reason ('thirty guests') for reserving the larger conference room.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-11",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Option C answers a yes/no question about the supervisor's presence.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-12",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Option B identifies which folder ('The one labeled April') contains the invoices.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-13",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Option A ('That works for me') responds affirmatively to rescheduling a meeting.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-14",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Option C ('Ask the receptionist') directly answers where to get a visitor badge.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-15",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Option B accepts the suggestion to order lunch.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-16",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Option A ('About forty minutes') answers the duration question 'How long'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-17",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The question asks for confirmation of a hotel booking, and 'Yes, I received the confirmation.' directly answers and confirms the status.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v1-18",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "'Would you mind...' is politely answered by 'Of course not, I will close it.' indicating agreement to perform the action.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-meeting-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Context implies the speaker needs more time to complete an estimate.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-meeting-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Context specifies updating the invitation details for the rescheduled meeting.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-meeting-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Context indicates the conference room capacity is one hundred people.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": false
+    },
+    {
+      "id": "context-v1-travel-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Context states the flight arrives at six in the evening.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-travel-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Context mentions the shuttle departs every thirty minutes.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-travel-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Context instructs the traveler to meet the driver outside Terminal Two.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-shipping-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Context states the tracking page shows no recent updates.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-shipping-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Context confirms the carrier collected the package last Friday.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": false
+    },
+    {
+      "id": "context-v1-shipping-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Standard question on future delivery timing.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-hiring-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Standard recruitment question.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-hiring-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Standard interview scheduling question.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": false
+    },
+    {
+      "id": "context-v1-hiring-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Standard applicant inquiry.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-maintenance-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Standard office equipment malfunction question.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-maintenance-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Standard technician dispatch schedule.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-maintenance-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Standard alternative equipment instruction.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-payment-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Standard billing discrepancy question.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-payment-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Standard document correction timeline.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "context-v1-payment-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Standard payment terms question.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-forms-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "An adverb is needed to modify the verb inspected.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-forms-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A noun is required as the direct object of need.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-forms-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "An adjective is required after the linking verb is and comparative more.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-forms-4",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "A noun is required as the head of the compound subject Customer satisfaction.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-forms-5",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "An adjective in past participle form is needed to modify the noun analysis.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-forms-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "An adverb is needed to modify the verb reached.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-agree-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The subject is 'The package' (singular), so it requires the singular verb 'is'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-agree-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject is 'Both branches' (plural), so it requires the plural base verb 'offer'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-agree-3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The subject is 'Each applicant' (singular), so it requires the singular verb 'needs'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-agree-4",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The subject is 'The instructions' (plural), so it requires the plural verb 'are'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-agree-5",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The subject is 'One of the meeting rooms', which is singular ('One'). Therefore, the singular verb 'has' is required.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-agree-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject 'The manager and her assistant' is compound connected by 'and', taking a plural verb. The time marker 'now' indicates the present continuous tense ('are').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-tense-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The time marker 'in 2019' specifies a completed action in the past, requiring the simple past tense ('opened').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-tense-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The phrase 'since 2021' indicates an action that started in the past and continues into the present, requiring the present perfect tense ('have used').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-tense-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The time marker 'At the moment' requires the present continuous tense ('are testing').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-tense-4",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "In a past time clause ('By the time the guests arrived yesterday'), an action completed prior to another past action requires the past perfect tense ('had prepared').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-tense-5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The sentence expresses a regular schedule ('every weekday'), requiring the simple present tense with a third-person singular subject ('The train'), hence 'leaves'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-tense-6",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The time marker 'tomorrow' indicates a future action, requiring the future simple tense ('will review').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-passive-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Modal verbs ('must') are followed by the base form of the passive voice ('be approved').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-passive-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject ('The damaged items') receives the action of returning, and the time marker 'yesterday' requires the past passive tense ('were returned').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-passive-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The subject 'The final invoice' receives the action of sending in the future, requiring the passive voice 'will be sent'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-passive-4",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The action of cleaning happened before another action in the past ('arrived'), requiring the past perfect passive 'had been cleaned'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-passive-5",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The past participle 'published' functions as an adjective after the linking verb 'are' to describe the state of the survey results.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p5-v2-passive-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Plural subject 'Employees' requires the plural passive form 'are required' to express obligation.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-where-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a location. 'Beside the reception desk' correctly provides a location.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-where-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A 'Where' question requires a place as an answer. 'In the second-floor conference room' is the only location given.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-where-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a destination or place to put something. 'In the tray marked Human Resources' correctly answers where to leave the forms.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-where-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a location. 'In the underground garage' directly answers where the van was parked.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-where-5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a place. 'At the security counter' provides the correct location.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-where-6",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a location. 'Across from the central station' correctly indicates a location.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-when-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Question asks 'When is...', option 0 provides a specific time 'By noon on Thursday'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-when-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Question asks 'When does...', option 1 provides a closing time 'At six in the evening'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-when-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Question asks 'When will...', option 2 gives the arrival time 'It is scheduled for Monday morning'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-when-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Question asks 'When did...', option 0 provides a past time 'Yesterday afternoon'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-when-5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Question asks 'When can...', option 1 specifies a time 'I have some time after lunch'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-when-6",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Question asks 'When should...', option 2 provides a deadline 'No later than Friday'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-request-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Polite request for an email is directly accepted by 'Certainly, I will send it now.'",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-request-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Offer to reserve a taxi is accepted by 'Yes, that would be helpful.'",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-request-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Suggestion to review the contract is agreed to by 'Yes, let us meet at three.'",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-request-4",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Request to hold the elevator is accommodated by 'Of course, take your time.'",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-request-5",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Would you mind checking these figures? - Not at all. Let me take a look.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-request-6",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Can someone cover my shift on Saturday? - I can, if it is the morning shift.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-indirect-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Who is responsible for arranging the shipment? - Ask Ms. Chen in logistics.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-indirect-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Why has the presentation been postponed? - The client requested more time to review the data.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-indirect-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Do we need to print more brochures? - There are still several boxes in storage.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-indirect-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Has the conference room been booked? - Let me check the reservation calendar.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-indirect-5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "How will you get to the trade fair? - A colleague offered me a ride.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p2-v2-indirect-6",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Is the application form available online? - The website is being updated; I can give you a paper copy.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-word-forms-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The verb completed requires an adverb (successfully) to modify it.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-word-forms-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The adjective clear requires a noun object (explanation) following the article a.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-word-forms-3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The adjective 'durable' coordinates grammatically with the adjective 'attractive' across the conjunction 'and'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-agreement-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject phrase 'The number of...' takes a singular verb ('is').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-agreement-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject 'Several members' is plural, requiring the plural base verb 'travel'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-agreement-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Indefinite pronouns starting with 'Every' (like 'Every employee') take singular verbs ('has').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-tenses-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The time marker 'Last month' requires the simple past tense ('exceeded').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-tenses-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The presence of 'since she graduated' indicates an action starting in the past and continuing into the present, requiring the present perfect tense ('has worked').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-tenses-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "An ongoing past action interrupted by another uses the past continuous tense ('was checking').",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-prepositions-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Specific times of the clock take the preposition 'at'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-prepositions-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Specific days and dates take the preposition 'on'.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-prepositions-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "To indicate an action or state continuing up to a specific time, 'until' is used.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-connectors-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "\"the heavy snow\" is a noun phrase, requiring a prepositional connector like \"Because of\".",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-connectors-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "\"the report is lengthy\" is a full clause containing a subject and verb, requiring the conjunction \"Although\".",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-connectors-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Conditional clause introduced by \"if\" matches \"you encounter any technical problems\".",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-passive-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "\"The office windows\" is plural and acts as the receiver of the action; present passive \"are cleaned\" is correct.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-passive-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Modal verb \"must\" is followed by the passive infinitive \"be changed\".",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "grammar-v2-passive-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Action occurred prior to another past event (\"changed last week\"), requiring past perfect passive \"had been sent\".",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-delivery-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Modal verb \"will\" must be followed by the base verb form \"deliver\".",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-delivery-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The noun \"shipment\" matches the context of signing for delivered goods.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-delivery-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "\"by 4 p.m. today\" indicates the deadline by which to contact them.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-delivery-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "\"We look forward to completing your delivery\" fits naturally as a closing sentence before the sign-off.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-training-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A training session will be held in Room 204...",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-training-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "...so that they can practice the booking process...",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-training-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "No software installation is necessary. However, please check...",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-training-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A second session will be offered next Wednesday for those who cannot attend on Friday.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-renovation-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "...all visitors must use the side entryway on Pine Street.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-renovation-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Although some noise is unavoidable...",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-renovation-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "We appreciate your patience while these improvements are made.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-renovation-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The finished lobby will provide a more welcoming space for everyone.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-membership-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "...annual membership at Westbridge Business Library will expire on June 30.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-membership-2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "...a receipt will be sent automatically to your registered email address.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-membership-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Please update [them] before completing payment, referring back to contact details.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p6-v2-membership-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Our membership team can help if you have trouble with the renewal process.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-workshop-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The Customer Service Workshop will now be held in Room B, rather than Room A.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-workshop-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Please arrive fifteen minutes before the opening session (9:00), so 8:45 a.m.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-workshop-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "email me by Wednesday if you would like to attend it.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-store-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "You will receive an email when your items are ready; please wait for this message before visiting the store.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-store-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A friend may collect an order on your behalf if you enter their name in your account before collection.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-store-3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Orders not collected within seven days will be canceled and refunded.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-invoice-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Total due: $900",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-invoice-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Printed brochures and printing services are not included in this invoice.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-invoice-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Please include CD-418 as the payment reference.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-recruitment-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Applicants must be comfortable using spreadsheets and communicating in English.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-recruitment-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Occasional Saturday work is required during major events; employees receive a weekday off in return.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-recruitment-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Email a résumé and a short cover letter by April 18.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-train-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Trains between Easton and Mill Park will not operate before noon.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-train-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Regular rail tickets will be accepted on the replacement buses at no additional charge.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-train-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Travel by bus is expected to take twenty minutes longer than the usual train journey.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-feedback-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "However, the printed agenda said breakfast would be available until 9:30, while the buffet was cleared at 9:00.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-feedback-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "We used an outdated agenda template, which listed the wrong breakfast time.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p7-v2-feedback-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "We would also like to refund your breakfast charge; please send us your booking reference.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p1-listening-v1-bicycle-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The photograph clearly shows a white bicycle standing beside a blue wall.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p1-listening-v1-cyclist-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The photograph depicts a person riding a bicycle along a path in foggy weather.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p3-listening-v1-meeting-q1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Maya: '...the projector in room three hundred four has stopped working.' -> Ben: 'Shall we move the meeting there?'",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p3-listening-v1-meeting-q2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Ben: 'Room two hundred eighteen is available.' -> Maya: 'Yes. I will email everyone the new room number now.'",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p3-listening-v1-meeting-q3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Maya: 'I will email everyone the new room number now.'",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    },
+    {
+      "id": "p3-listening-v1-delivery-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Nora: 'We ordered twelve desk lamps, but only ten arrived this morning.' -> 12 - 10 = 1 missing lamp package/two lamps total? Wait, 'We ordered twelve... but only ten arrived', so 2 are missing. Let's check options: One, Two, Ten, Twelve. 12 - 10 = 2, so Two lamps are missing.",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": false
+    },
+    {
+      "id": "p3-listening-v1-delivery-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Leo: 'They will arrive tomorrow'",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 2,
+      "answerMatches": true
+    },
+    {
+      "id": "p3-listening-v1-delivery-q3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Nora: 'Could you email me the tracking number today?'",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 0,
+      "answerMatches": true
+    },
+    {
+      "id": "p4-listening-v1-museum-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Announcer: 'Welcome to the City Museum. Here is some information for your visit.'",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 1,
+      "answerMatches": true
+    },
+    {
+      "id": "p4-listening-v1-museum-q2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Announcer: 'The photography gallery is closed today, Thursday, for maintenance.'",
+      "issue": "",
+      "translationIssue": "",
+      "authoredIndex": 3,
+      "answerMatches": true
+    }
+  ],
+  "passed": false,
+  "summary": {
+    "reviewed": 170,
+    "answerMatches": 166,
+    "flagged": [
+      "p5-v1-11",
+      "p5-v1-12",
+      "p5-v1-13",
+      "p5-v1-14",
+      "p5-v1-15",
+      "p5-v1-16",
+      "p5-v1-17",
+      "p5-v1-18",
+      "p5-v1-19",
+      "p5-v1-20",
+      "context-v1-meeting-3",
+      "context-v1-shipping-2",
+      "context-v1-hiring-2",
+      "p3-listening-v1-delivery-q1"
+    ],
+    "failedBatches": 11
+  },
+  "adjudicationRequired": true,
+  "finishedAt": "2026-10-16T07:03:36.490Z"
+}

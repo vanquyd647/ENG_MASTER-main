@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "grammar-v2-connectors-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Followed by a noun phrase 'the heavy snow', requiring the prepositional connector 'Because of'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-connectors-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Followed by a full clause 'the report is lengthy', requiring the subordinating conjunction 'Although'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-connectors-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Followed by a full conditional clause 'you encounter any technical problems', requiring 'if'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-passive-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Plural subject 'The office windows' requires a plural passive verb 'are cleaned'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-passive-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Modal verb 'must' is followed by the passive infinitive 'be changed'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-passive-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Past action occurring before another past event ('changed last week') requires the past perfect passive 'had been sent'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-delivery-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "After modal 'will', the bare infinitive verb 'deliver' is needed.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-delivery-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Compound noun 'sign for the shipment' refers to the delivered items.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-delivery-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The deadline preposition meaning 'not later than' a specific time is 'by'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-delivery-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "'We look forward to completing your delivery' matches the context of rescheduling a delivery.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-training-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Future modal 'will' requires 'be held' to form the passive voice for an event taking place.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-training-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Infinitive verb 'practice' follows 'can' to describe trying out the booking process.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-training-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "'Otherwise' acts as a conditional transition connecting the lack of required software installation to checking wireless network connectivity.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-training-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "'Please let your supervisor know which session you plan to attend' logically precedes mentioning a second session option.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-renovation-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Noun modifier 'side entryway' identifies the alternative entrance.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-renovation-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Followed by a clause 'some noise is unavoidable', requiring the concessive conjunction 'Although'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-renovation-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Possessive determiner 'your' requires the noun 'patience'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-renovation-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "'The finished lobby will provide a more welcoming space for everyone' concludes a renovation announcement positively.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-membership-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Membership timeline contexts use 'expire' for end dates.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-membership-2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Modifying the verb phrase 'will be sent', the adverb 'automatically' is required.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

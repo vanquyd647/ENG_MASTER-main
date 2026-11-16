@@ -25,6 +25,23 @@ service cloud.firestore {
     function existing() {
       return resource.data;
     }
+    function isDateTime(value) {
+      return value is string && value.size() <= 64 && value.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}T.*');
+    }
+    function nonnegativeInteger(value) {
+      return value is int && value >= 0 && value <= 9007199254740991;
+    }
+    function validSnapshot(data) {
+      return data is map &&
+        data.keys().hasAll(['easiness', 'interval', 'repetitions', 'nextReviewDate']) &&
+        data.keys().hasOnly(['easiness', 'interval', 'repetitions', 'nextReviewDate', 'lastReviewDate', 'wrongCount', 'lastOperationId', 'revision']) &&
+        data.easiness is number && data.easiness >= 1.3 && data.easiness <= 9007199254740991 &&
+        nonnegativeInteger(data.interval) && nonnegativeInteger(data.repetitions) && isDateTime(data.nextReviewDate) &&
+        (!data.keys().hasAny(['lastReviewDate']) || isDateTime(data.lastReviewDate)) &&
+        (!data.keys().hasAny(['wrongCount']) || nonnegativeInteger(data.wrongCount)) &&
+        (!data.keys().hasAny(['revision']) || nonnegativeInteger(data.revision)) &&
+        (!data.keys().hasAny(['lastOperationId']) || (data.lastOperationId is string && data.lastOperationId.size() > 0 && data.lastOperationId.size() <= 200));
+    }
 
     // Words collection (Static content - anyone can read, only admin can write)
     match /words/{wordId} {
@@ -32,12 +49,160 @@ service cloud.firestore {
       allow write: if false; // Only manageable via server or console for now
     }
 
+    function validProfile(data) {
+        return data.keys().hasAll(['uid', 'email']) &&
+               data.keys().hasOnly(['uid', 'email', 'displayName', 'photoURL', 'totalWordsLearned', 'studyTimeMinutes', 'studyTimeSeconds', 'streak', 'dailyGoal', 'lastStudyDate', 'history', 'datasetGeneration']) &&
+               data.uid == request.auth.uid &&
+               (!data.keys().hasAny(['studyTimeSeconds']) || nonnegativeInteger(data.studyTimeSeconds)) &&
+               (!data.keys().hasAny(['datasetGeneration']) || isValidId(data.datasetGeneration)) &&
+               data.email is string && data.email.size() < 256 &&
+               (!data.keys().hasAny(['displayName']) || (data.displayName is string && data.displayName.size() <= 120)) &&
+               (!data.keys().hasAny(['photoURL']) || (data.photoURL is string && data.photoURL.size() <= 900000)) &&
+               (!data.keys().hasAny(['totalWordsLearned']) || (data.totalWordsLearned is int && data.totalWordsLearned >= 0)) &&
+               (!data.keys().hasAny(['studyTimeMinutes']) || (data.studyTimeMinutes is int && data.studyTimeMinutes >= 0)) &&
+               (!data.keys().hasAny(['streak']) || (data.streak is int && data.streak >= 0)) &&
+               (!data.keys().hasAny(['dailyGoal']) || (data.dailyGoal is int && data.dailyGoal >= 5 && data.dailyGoal <= 50)) &&
+               (!data.keys().hasAny(['lastStudyDate']) || data.lastStudyDate is string) &&
+               (!data.keys().hasAny(['history']) || (data.history is list && data.history.size() <= 50));
+    }
+    function validProgress(data, wordId) {
+        return data.keys().hasAll(['userId', 'wordId', 'easiness', 'interval', 'repetitions', 'nextReviewDate']) &&
+               data.keys().hasOnly(['userId', 'wordId', 'easiness', 'interval', 'repetitions', 'nextReviewDate', 'lastReviewDate', 'wrongCount', 'lastOperationId', 'revision']) &&
+               data.userId == request.auth.uid &&
+               data.wordId == wordId && isValidId(wordId) &&
+               data.easiness is number && data.easiness >= 1.3 && data.easiness <= 9007199254740991 &&
+               nonnegativeInteger(data.interval) && nonnegativeInteger(data.repetitions) &&
+               isDateTime(data.nextReviewDate) &&
+               (!data.keys().hasAny(['lastReviewDate']) || isDateTime(data.lastReviewDate)) &&
+               (!data.keys().hasAny(['wrongCount']) || nonnegativeInteger(data.wrongCount)) &&
+               (!data.keys().hasAny(['lastOperationId']) || (data.lastOperationId is string && data.lastOperationId.size() <= 200)) &&
+               (!data.keys().hasAny(['revision']) || nonnegativeInteger(data.revision));
+    }
+    function validDailyActivity(data, dateKey) {
+        return data.keys().hasAll(['dateKey', 'timeZone', 'wordIds', 'updatedAt']) &&
+               data.keys().hasOnly(['dateKey', 'timeZone', 'wordIds', 'updatedAt']) &&
+               data.dateKey == dateKey &&
+               dateKey.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$') &&
+               data.timeZone is string && data.timeZone.size() <= 100 &&
+               // Room for the bundled catalog and personal vocabulary.
+               data.wordIds is list && data.wordIds.size() <= 10000 &&
+               data.updatedAt is string;
+    }
+    function boundedText(value, maximum) { return value is string && value.size() <= maximum; }
+    function validAttempt(data) {
+      return data is map && data.keys().hasAll(['questionId','questionType','questionText','userAnswer','correctAnswer','options','explanation','word','meaning']) &&
+        data.keys().hasOnly(['questionId','questionType','questionText','userAnswer','correctAnswer','options','explanation','word','meaning']) &&
+        boundedText(data.questionId,200) && data.questionId.matches('^[a-zA-Z0-9_:-]+$') && data.questionType in ['mcq','fill'] &&
+        boundedText(data.questionText,2000) && data.questionText.size()>0 && boundedText(data.userAnswer,2000) && boundedText(data.correctAnswer,2000) && data.correctAnswer.size()>0 &&
+        boundedText(data.explanation,5000) && boundedText(data.word,80) && data.word.size()>0 && boundedText(data.meaning,300) && data.meaning.size()>0 && data.options is list &&
+        ((data.questionType=='fill' && data.options.size()==0) || (data.questionType=='mcq' && data.options.size()==4 && data.options.toSet().size()==4 && data.correctAnswer in data.options &&
+          boundedText(data.options[0],2000) && boundedText(data.options[1],2000) && boundedText(data.options[2],2000) && boundedText(data.options[3],2000)));
+    }
+    function validStudyEvent(data,eventId) {
+        return data.keys().hasAll(['id', 'wordId', 'sessionId', 'mode', 'occurredAt', 'timeZone', 'durationSeconds', 'before', 'after']) &&
+          data.keys().hasOnly(['id', 'wordId', 'sessionId', 'mode', 'occurredAt', 'timeZone', 'durationSeconds', 'before', 'after', 'quality', 'correct', 'attempt']) &&
+          data.id == eventId && data.id.size() <= 200 && data.id.matches('^[a-zA-Z0-9_:-]+$') && isValidId(data.wordId) &&
+          isValidId(data.sessionId) &&
+          data.mode in ['review', 'practice', 'quiz', 'cloze', 'listening'] && isDateTime(data.occurredAt) &&
+          data.timeZone is string && data.timeZone.size() <= 100 && data.durationSeconds is int && data.durationSeconds >= 0 && data.durationSeconds <= 3600 &&
+          (data.before == null || validSnapshot(data.before)) && validSnapshot(data.after) &&
+          (!data.keys().hasAny(['quality']) || (data.quality is int && data.quality >= 0 && data.quality <= 5)) &&
+          (!data.keys().hasAny(['correct']) || data.correct is bool) &&
+          (!data.keys().hasAny(['attempt']) || (data.keys().hasAny(['correct']) && validAttempt(data.attempt)));
+    }
+    function validSession(data, sessionId) { return data.id == sessionId &&
+        data.keys().hasOnly(['id', 'date', 'type', 'score', 'details', 'wordIds', 'studiedCount', 'correctCount', 'totalQuestions', 'durationSeconds']) &&
+        isValidId(sessionId) && data.type in ['review', 'quiz'] && isDateTime(data.date) &&
+        data.details is string && data.details.size() <= 500 &&
+        (!data.keys().hasAny(['wordIds']) || (data.wordIds is list && data.wordIds.size() <= 10000)) &&
+        (!data.keys().hasAny(['studiedCount']) || (data.studiedCount is int && data.studiedCount >= 0 && data.studiedCount <= 10000)) &&
+        (!data.keys().hasAny(['correctCount']) || (data.correctCount is int && data.correctCount >= 0 && data.correctCount <= 10000)) &&
+        (!data.keys().hasAny(['totalQuestions']) || (data.totalQuestions is int && data.totalQuestions >= 0 && data.totalQuestions <= 10000)) &&
+        (!data.keys().hasAny(['durationSeconds']) || (data.durationSeconds is int && data.durationSeconds >= 0 && data.durationSeconds <= 36000000)) &&
+        (!data.keys().hasAll(['correctCount','totalQuestions']) || data.correctCount <= data.totalQuestions) &&
+        (!data.keys().hasAny(['score']) || (data.score is string && data.score.size() <= 50)); }
+    function validSettings(data, settingsId) { return settingsId in ['preferences','learning','extendedLearning'] &&
+        data.keys().hasOnly(['values', 'updatedAt']) && data.values is map &&
+        ((settingsId == 'extendedLearning' && data.values.keys().hasOnly(['eng_master_extended_practice_v1']) &&
+          (!data.values.keys().hasAny(['eng_master_extended_practice_v1']) || data.values.eng_master_extended_practice_v1 == null ||
+            (data.values.eng_master_extended_practice_v1 is string && data.values.eng_master_extended_practice_v1.size() <= 800000))) ||
+        (settingsId in ['preferences','learning'] && data.values.keys().hasOnly(['eng_master_custom_words_v1', 'eng_master_favorites_v1', 'eng_master_decks_v1', 'eng_master_study_size_v1', 'eng_master_reminder_hour_v1', 'eng_master_roadmap_v1', 'eng_master_practice_records_v1']))) &&
+        isDateTime(data.updatedAt); }
+    function datasetPath(userId) { return /databases/$(database)/documents/users/$(userId)/system/dataset; }
+    function legacyWritable(userId) {
+      return !exists(datasetPath(userId)) || (get(datasetPath(userId)).data.active == 'legacy' && get(datasetPath(userId)).data.pending == null);
+    }
+    function profileWritable(userId) {
+      return !exists(datasetPath(userId)) || (getAfter(datasetPath(userId)).data.pending == null && incoming().get('datasetGeneration', 'legacy') == getAfter(datasetPath(userId)).data.active);
+    }
+    function generationRemovable(userId, generation) {
+      return exists(datasetPath(userId)) && get(datasetPath(userId)).data.pending == null && generation != 'legacy' &&
+        generation != get(datasetPath(userId)).data.active && generation != get(datasetPath(userId)).data.get('previous','legacy');
+    }
+    function generationWritable(userId, generation) {
+      return exists(datasetPath(userId)) && ((get(datasetPath(userId)).data.active == generation && get(datasetPath(userId)).data.pending == null) || get(datasetPath(userId)).data.pending == generation);
+    }
+    function validDatasetState(data) {
+      return data.keys().hasOnly(['active','pending','previous','updatedAt']) && data.keys().hasAll(['active','pending','updatedAt']) && isValidId(data.active) &&
+        (data.pending == null || (isValidId(data.pending) && data.pending != 'legacy' && data.pending != data.active)) &&
+        (!data.keys().hasAny(['previous']) || isValidId(data.previous)) && isDateTime(data.updatedAt);
+    }
+    match /users/{userId}/system/dataset {
+      allow get: if isOwner(userId);
+      allow create: if isOwner(userId) && validDatasetState(incoming()) && incoming().active == 'legacy';
+      allow update: if isOwner(userId) && validDatasetState(incoming()) && (
+        (existing().pending == null && incoming().active == existing().active) ||
+        (existing().pending != null && incoming().pending == null && (incoming().active == existing().active ||
+          (incoming().active == existing().pending && incoming().previous == existing().active && getAfter(/databases/$(database)/documents/users/$(userId)/datasets/$(incoming().active)).data.status == 'ready' && getAfter(/databases/$(database)/documents/users/$(userId)).data.datasetGeneration == incoming().active)))
+      );
+    }
+    match /users/{userId}/datasets/{generation} {
+      allow get, list: if isOwner(userId);
+      allow delete: if isOwner(userId) && generationRemovable(userId,generation);
+      allow create, update: if isOwner(userId) && isValidId(generation) && generation != 'legacy' && getAfter(datasetPath(userId)).data.pending == generation &&
+        incoming().keys().hasOnly(['status','createdAt','progressCount']) && incoming().status in ['preparing','ready'] && isDateTime(incoming().createdAt) &&
+        (incoming().status != 'ready' || (nonnegativeInteger(incoming().progressCount) && incoming().progressCount <= 20000));
+      match /progress/{wordId} {
+        allow get, list: if isOwner(userId);
+        allow create, update: if isOwner(userId) && generationWritable(userId,generation) && validProgress(incoming(),wordId);
+        allow delete: if isOwner(userId) && (generationWritable(userId,generation) || generationRemovable(userId,generation));
+      }
+      match /dailyActivity/{dateKey} {
+        allow get, list: if isOwner(userId);
+        allow create, update: if isOwner(userId) && generationWritable(userId,generation) && validDailyActivity(incoming(),dateKey);
+        allow delete: if isOwner(userId) && (generationWritable(userId,generation) || generationRemovable(userId,generation));
+      }
+      match /events/{eventId} {
+        allow get, list: if isOwner(userId);
+        allow create: if isOwner(userId) && generationWritable(userId,generation) && validStudyEvent(incoming(),eventId);
+        allow update: if isOwner(userId) && generationWritable(userId,generation) && incoming() == existing();
+        allow delete: if isOwner(userId) && (generationWritable(userId,generation) || generationRemovable(userId,generation));
+      }
+      match /sessions/{sessionId} {
+        allow get, list: if isOwner(userId);
+        allow create, update: if isOwner(userId) && generationWritable(userId,generation) && validSession(incoming(),sessionId);
+        allow delete: if isOwner(userId) && (generationWritable(userId,generation) || generationRemovable(userId,generation));
+      }
+      match /settings/{settingsId} {
+        allow delete: if isOwner(userId) && generationRemovable(userId,generation);
+        allow get, list: if isOwner(userId);
+        allow create, update: if isOwner(userId) && generationWritable(userId,generation) && validSettings(incoming(),settingsId);
+      }
+      match /snapshots/{snapshotId} {
+        allow delete: if isOwner(userId) && generationRemovable(userId,generation);
+        allow get, list: if isOwner(userId);
+        allow create, update: if isOwner(userId) && get(datasetPath(userId)).data.pending == generation && snapshotId in ['profile','previousProfile'] && validProfile(incoming());
+      }
+    }
+
     // User collection
     match /users/{userId} {
       function isValidUser(data) {
         return data.keys().hasAll(['uid', 'email']) &&
-               data.keys().hasOnly(['uid', 'email', 'displayName', 'photoURL', 'totalWordsLearned', 'studyTimeMinutes', 'streak', 'dailyGoal', 'lastStudyDate', 'history']) &&
+               data.keys().hasOnly(['uid', 'email', 'displayName', 'photoURL', 'totalWordsLearned', 'studyTimeMinutes', 'studyTimeSeconds', 'streak', 'dailyGoal', 'lastStudyDate', 'history', 'datasetGeneration']) &&
                data.uid == request.auth.uid &&
+               (!data.keys().hasAny(['studyTimeSeconds']) || nonnegativeInteger(data.studyTimeSeconds)) &&
+               (!data.keys().hasAny(['datasetGeneration']) || isValidId(data.datasetGeneration)) &&
                data.email is string && data.email.size() < 256 &&
                (!data.keys().hasAny(['displayName']) || (data.displayName is string && data.displayName.size() <= 120)) &&
                (!data.keys().hasAny(['photoURL']) || (data.photoURL is string && data.photoURL.size() <= 900000)) &&
@@ -50,33 +215,34 @@ service cloud.firestore {
       }
 
       allow get: if isOwner(userId);
-      allow create: if isOwner(userId) && isValidUser(incoming()) && incoming().keys().size() <= 10;
-      allow update: if isOwner(userId) && isValidUser(incoming()) && 
+      allow create: if isOwner(userId) && profileWritable(userId) && isValidUser(incoming()) && incoming().keys().size() <= 13;
+      allow update: if isOwner(userId) && profileWritable(userId) && isValidUser(incoming()) &&
                     incoming().uid == existing().uid &&
                     incoming().email == existing().email &&
-                    incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'photoURL', 'totalWordsLearned', 'studyTimeMinutes', 'streak', 'dailyGoal', 'lastStudyDate', 'history']);
+                    incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'photoURL', 'totalWordsLearned', 'studyTimeMinutes', 'studyTimeSeconds', 'streak', 'dailyGoal', 'lastStudyDate', 'history', 'datasetGeneration']);
     }
 
     // User progress subcollection
     match /users/{userId}/progress/{wordId} {
       function isValidProgress(data) {
         return data.keys().hasAll(['userId', 'wordId', 'easiness', 'interval', 'repetitions', 'nextReviewDate']) &&
-               data.keys().hasOnly(['userId', 'wordId', 'easiness', 'interval', 'repetitions', 'nextReviewDate', 'lastReviewDate', 'wrongCount']) &&
+               data.keys().hasOnly(['userId', 'wordId', 'easiness', 'interval', 'repetitions', 'nextReviewDate', 'lastReviewDate', 'wrongCount', 'lastOperationId', 'revision']) &&
                data.userId == request.auth.uid &&
-               data.wordId == wordId &&
-               data.easiness is number &&
-               data.interval is int &&
-               data.repetitions is int &&
-               data.nextReviewDate is string &&
-               (!data.keys().hasAny(['lastReviewDate']) || data.lastReviewDate is string) &&
-               (!data.keys().hasAny(['wrongCount']) || (data.wrongCount is int && data.wrongCount >= 0));
+               data.wordId == wordId && isValidId(wordId) &&
+               data.easiness is number && data.easiness >= 1.3 && data.easiness <= 9007199254740991 &&
+               nonnegativeInteger(data.interval) && nonnegativeInteger(data.repetitions) &&
+               isDateTime(data.nextReviewDate) &&
+               (!data.keys().hasAny(['lastReviewDate']) || isDateTime(data.lastReviewDate)) &&
+               (!data.keys().hasAny(['wrongCount']) || nonnegativeInteger(data.wrongCount)) &&
+               (!data.keys().hasAny(['lastOperationId']) || (data.lastOperationId is string && data.lastOperationId.size() <= 200)) &&
+               (!data.keys().hasAny(['revision']) || nonnegativeInteger(data.revision));
       }
 
       allow list: if isOwner(userId);
       allow get: if isOwner(userId);
-      allow create: if isOwner(userId) && isValidProgress(incoming());
-      allow update: if isOwner(userId) && isValidProgress(incoming());
-      allow delete: if isOwner(userId);
+      allow create: if isOwner(userId) && legacyWritable(userId) && isValidProgress(incoming());
+      allow update: if isOwner(userId) && legacyWritable(userId) && isValidProgress(incoming());
+      allow delete: if isOwner(userId) && legacyWritable(userId);
     }
 
     match /users/{userId}/dailyActivity/{dateKey} {
@@ -86,13 +252,53 @@ service cloud.firestore {
                data.dateKey == dateKey &&
                dateKey.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$') &&
                data.timeZone is string && data.timeZone.size() <= 100 &&
-               data.wordIds is list && data.wordIds.size() <= 905 &&
+               // Room for the bundled catalog and personal vocabulary.
+               data.wordIds is list && data.wordIds.size() <= 10000 &&
                data.updatedAt is string;
       }
 
       allow get, list: if isOwner(userId);
-      allow create, update: if isOwner(userId) && isValidDailyActivity(incoming());
-      allow delete: if isOwner(userId);
+      allow create, update: if isOwner(userId) && legacyWritable(userId) && isValidDailyActivity(incoming());
+      allow delete: if isOwner(userId) && legacyWritable(userId);
+    }
+
+    match /users/{userId}/events/{eventId} {
+      function validEvent(data) {
+        return data.keys().hasAll(['id', 'wordId', 'sessionId', 'mode', 'occurredAt', 'timeZone', 'durationSeconds', 'before', 'after']) &&
+          data.keys().hasOnly(['id', 'wordId', 'sessionId', 'mode', 'occurredAt', 'timeZone', 'durationSeconds', 'before', 'after', 'quality', 'correct', 'attempt']) &&
+          data.id == eventId && data.id.size() <= 200 && data.id.matches('^[a-zA-Z0-9_:-]+$') && isValidId(data.wordId) &&
+          isValidId(data.sessionId) &&
+          data.mode in ['review', 'practice', 'quiz', 'cloze', 'listening'] && isDateTime(data.occurredAt) &&
+          data.timeZone is string && data.timeZone.size() <= 100 && data.durationSeconds is int && data.durationSeconds >= 0 && data.durationSeconds <= 3600 &&
+          (data.before == null || validSnapshot(data.before)) && validSnapshot(data.after) &&
+          (!data.keys().hasAny(['quality']) || (data.quality is int && data.quality >= 0 && data.quality <= 5)) &&
+          (!data.keys().hasAny(['correct']) || data.correct is bool) &&
+          (!data.keys().hasAny(['attempt']) || (data.keys().hasAny(['correct']) && validAttempt(data.attempt)));
+      }
+      allow get, list: if isOwner(userId);
+      allow create: if isOwner(userId) && legacyWritable(userId) && validEvent(incoming());
+      allow update: if isOwner(userId) && legacyWritable(userId) && incoming() == existing();
+      allow delete: if isOwner(userId) && legacyWritable(userId);
+    }
+    match /users/{userId}/sessions/{sessionId} {
+      allow get, list: if isOwner(userId);
+      allow create, update: if isOwner(userId) && legacyWritable(userId) && incoming().id == sessionId &&
+        incoming().keys().hasOnly(['id', 'date', 'type', 'score', 'details', 'wordIds', 'studiedCount', 'correctCount', 'totalQuestions', 'durationSeconds']) &&
+        isValidId(sessionId) && incoming().type in ['review', 'quiz'] && isDateTime(incoming().date) &&
+        incoming().details is string && incoming().details.size() <= 500 &&
+        (!incoming().keys().hasAny(['wordIds']) || (incoming().wordIds is list && incoming().wordIds.size() <= 10000)) &&
+        (!incoming().keys().hasAny(['studiedCount']) || (incoming().studiedCount is int && incoming().studiedCount >= 0 && incoming().studiedCount <= 10000)) &&
+        (!incoming().keys().hasAny(['correctCount']) || (incoming().correctCount is int && incoming().correctCount >= 0 && incoming().correctCount <= 10000)) &&
+        (!incoming().keys().hasAny(['totalQuestions']) || (incoming().totalQuestions is int && incoming().totalQuestions >= 0 && incoming().totalQuestions <= 10000)) &&
+        (!incoming().keys().hasAny(['durationSeconds']) || (incoming().durationSeconds is int && incoming().durationSeconds >= 0 && incoming().durationSeconds <= 36000000)) &&
+        (!incoming().keys().hasAll(['correctCount','totalQuestions']) || incoming().correctCount <= incoming().totalQuestions) &&
+        (!incoming().keys().hasAny(['score']) || (incoming().score is string && incoming().score.size() <= 50));
+      allow delete: if isOwner(userId) && legacyWritable(userId);
+    }
+    match /users/{userId}/settings/{settingsId} {
+      allow get, list: if isOwner(userId);
+      allow create, update: if isOwner(userId) && legacyWritable(userId) && validSettings(incoming(),settingsId);
+      allow delete: if isOwner(userId) && legacyWritable(userId);
     }
 
     // Server-only collection. Firebase Admin bypasses client security rules.

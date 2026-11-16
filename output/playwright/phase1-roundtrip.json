@@ -1,0 +1,117 @@
+{
+  "version": 3,
+  "catalogVersion": "toeic-1575-v1",
+  "exportedAt": "2026-10-13T06:43:28.151Z",
+  "profile": {
+    "displayName": "Khách (Guest)",
+    "studyTimeMinutes": 0,
+    "streak": 1,
+    "dailyGoal": 15,
+    "lastStudyDate": "2026-10-13",
+    "history": [
+      {
+        "id": "26a1b990-0aaf-40b8-95b1-ca29be79019e",
+        "date": "2026-10-13T06:41:33.586Z",
+        "type": "review",
+        "details": "Hoàn thành học từ mới (5 thẻ)",
+        "score": "5 từ",
+        "wordIds": [
+          "rec-01",
+          "rec-02",
+          "rec-05",
+          "rec-04",
+          "rec-03"
+        ],
+        "studiedCount": 5
+      }
+    ]
+  },
+  "progress": {
+    "rec-01": {
+      "easiness": 2.5,
+      "interval": 1,
+      "repetitions": 1,
+      "nextReviewDate": "2026-10-14T06:41:26.965Z",
+      "lastReviewDate": "2026-10-13T06:41:26.965Z",
+      "wrongCount": 0,
+      "lastOperationId": "26a1b990-0aaf-40b8-95b1-ca29be79019e:rec-01"
+    },
+    "rec-02": {
+      "easiness": 2.5,
+      "interval": 1,
+      "repetitions": 1,
+      "nextReviewDate": "2026-10-14T06:41:28.611Z",
+      "lastReviewDate": "2026-10-13T06:41:28.611Z",
+      "wrongCount": 0,
+      "lastOperationId": "26a1b990-0aaf-40b8-95b1-ca29be79019e:rec-02"
+    },
+    "rec-05": {
+      "easiness": 2.5,
+      "interval": 1,
+      "repetitions": 1,
+      "nextReviewDate": "2026-10-14T06:41:30.249Z",
+      "lastReviewDate": "2026-10-13T06:41:30.249Z",
+      "wrongCount": 0,
+      "lastOperationId": "26a1b990-0aaf-40b8-95b1-ca29be79019e:rec-05"
+    },
+    "rec-04": {
+      "easiness": 2.5,
+      "interval": 1,
+      "repetitions": 1,
+      "nextReviewDate": "2026-10-14T06:41:31.889Z",
+      "lastReviewDate": "2026-10-13T06:41:31.889Z",
+      "wrongCount": 0,
+      "lastOperationId": "26a1b990-0aaf-40b8-95b1-ca29be79019e:rec-04"
+    },
+    "rec-03": {
+      "easiness": 2.5,
+      "interval": 1,
+      "repetitions": 1,
+      "nextReviewDate": "2026-10-14T06:41:33.578Z",
+      "lastReviewDate": "2026-10-13T06:41:33.578Z",
+      "wrongCount": 0,
+      "lastOperationId": "26a1b990-0aaf-40b8-95b1-ca29be79019e:rec-03"
+    },
+    "custom-qa-phase1": {
+      "easiness": 2.5,
+      "interval": 1,
+      "repetitions": 1,
+      "nextReviewDate": "2026-10-14T00:00:00.000Z"
+    }
+  },
+  "customWords": [
+    {
+      "id": "custom-qa-phase1",
+      "word": "handover note",
+      "meaning": "ghi chú bàn giao",
+      "topic": "Từ cá nhân",
+      "phonetic": "",
+      "pos": "noun",
+      "example": "Please read the handover note.",
+      "exampleTranslation": "Vui lòng đọc ghi chú bàn giao."
+    }
+  ],
+  "favorites": [
+    "custom-qa-phase1"
+  ],
+  "preferences": {
+    "sound": false,
+    "notifications": false,
+    "studySessionSize": 5,
+    "reminderHour": 20
+  },
+  "dailyActivity": {
+    "2026-10-13": {
+      "dateKey": "2026-10-13",
+      "timeZone": "Asia/Saigon",
+      "updatedAt": "2026-10-13T06:41:33.587Z",
+      "wordIds": [
+        "rec-01",
+        "rec-02",
+        "rec-05",
+        "rec-04",
+        "rec-03"
+      ]
+    }
+  }
+}

@@ -2,8 +2,10 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { VOCABULARY, type Word } from "../src/data/vocabulary.ts";
+import { BASE_VOCABULARY, type Word } from "../src/data/vocabulary.ts";
 import { lookupIpa } from "./ipa-dictionary.ts";
+import { EXISTING_MEANING_CORRECTIONS } from "./vocabulary-corrections.ts";
+import { applyReviewedWord } from "./reviewed-vocabulary.ts";
 
 const projectRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -35,25 +37,6 @@ const normalizeText = (value: string) =>
     .replace(/\s+/g, " ")
     .replace(/\s+([,.;!?])/g, "$1")
     .trim();
-
-const repairVietnameseOcr = (value: string) => {
-  const tokens = normalizeText(value).split(" ");
-  const repaired: string[] = [];
-
-  for (const token of tokens) {
-    const previous = repaired.at(-1);
-    if (
-      previous &&
-      (/^\p{L}$/u.test(previous) || /^\p{L}$/u.test(token))
-    ) {
-      repaired[repaired.length - 1] = previous + token;
-    } else {
-      repaired.push(token);
-    }
-  }
-
-  return repaired.join(" ").toLocaleLowerCase("vi");
-};
 
 const createExample = (word: string, pos: string, meaning: string) => {
   const normalizedPos = pos.toLowerCase();
@@ -93,9 +76,11 @@ const loadVocabularyFromHead = () => {
     ["show", "HEAD:src/data/vocabulary.ts"],
     { cwd: projectRoot, encoding: "utf8" },
   );
-  const marker = "export const VOCABULARY";
-  const start = source.indexOf("[", source.indexOf(marker));
-  const end = source.lastIndexOf("];");
+  const marker = source.includes("export const BASE_VOCABULARY")
+    ? "export const BASE_VOCABULARY"
+    : "export const VOCABULARY";
+  const start = source.indexOf("[", source.indexOf(" = ", source.indexOf(marker)));
+  const end = source.indexOf("\n];", start) + 1;
   if (start < 0 || end < 0) {
     throw new Error("Could not read VOCABULARY from the Git HEAD version.");
   }
@@ -104,7 +89,7 @@ const loadVocabularyFromHead = () => {
 
 const sourceVocabulary = process.argv.includes("--from-head")
   ? loadVocabularyFromHead()
-  : VOCABULARY;
+  : BASE_VOCABULARY;
 
 const looksCorrupted = (entry: Word) => {
   const example = normalizeText(entry.example);
@@ -128,7 +113,9 @@ const normalized = sourceVocabulary.map((entry): Word => {
     throw new Error(`No IPA pronunciation found for ${entry.id} (${word})`);
   }
 
-  const meaning = repairVietnameseOcr(entry.meaning);
+  const meaning = normalizeText(EXISTING_MEANING_CORRECTIONS[word] || entry.meaning)
+    .replace(/([,;])(?=\S)/g, "$1 ")
+    .replace(/[,;]\s*$/, "");
   const wasOcrImported = looksCorrupted(entry);
   const generatedExample = createExample(word, entry.pos, meaning);
 
@@ -149,27 +136,16 @@ const normalized = sourceVocabulary.map((entry): Word => {
       vi: meaning,
     },
   };
-});
+}).map(applyReviewedWord);
 
-const source = `export interface Word {
-  id: string;
-  topic: string;
-  word: string;
-  phonetic: string;
-  pos: string;
-  meaning: string;
-  example: string;
-  exampleTranslation: string;
-  translations?: {
-    vi?: string;
-    fr?: string;
-    es?: string;
-    [key: string]: string | undefined;
-  };
-}
+const source = `import type { Word } from "./vocabularyTypes";
+import { TOEIC_PDF_VOCABULARY } from "./toeic-pdf";
+export type { Word } from "./vocabularyTypes";
 
-export const VOCABULARY: Word[] = ${JSON.stringify(normalized, null, 2)};
+export const BASE_VOCABULARY: Word[] = ${JSON.stringify(normalized, null, 2)};
+
+export const VOCABULARY: Word[] = [...BASE_VOCABULARY, ...TOEIC_PDF_VOCABULARY];
 `;
 
 fs.writeFileSync(vocabularyPath, source, "utf8");
-console.log(`[vocabulary] Normalized ${normalized.length} entries.`);
+console.log(`[vocabulary] Normalized ${normalized.length} base entries; PDF additions are retained separately.`);

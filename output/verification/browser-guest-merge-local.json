@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-14T12:37:33.074Z",
+  "origin": "http://localhost:3110",
+  "authMethod": "two temporary custom-token identities in isolated browser",
+  "checks": [
+    "guest stores two graded words before authentication",
+    "merge adds guest-only rec-02, preserves account rec-01 repetitions=3, and retains guest copy"
+  ],
+  "cleanup": true,
+  "providerStep": "custom-token identity fixture; Google consent not exercised",
+  "cloud": {
+    "progress": 2,
+    "existingRepetitions": 3,
+    "guestOnlyRepetitions": 1
+  },
+  "passed": true
+}

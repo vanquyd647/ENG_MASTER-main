@@ -1,30 +1,17 @@
-export interface Word {
-  id: string;
-  topic: string;
-  word: string;
-  phonetic: string;
-  pos: string;
-  meaning: string;
-  example: string;
-  exampleTranslation: string;
-  translations?: {
-    vi?: string;
-    fr?: string;
-    es?: string;
-    [key: string]: string | undefined;
-  };
-}
+import type { Word } from "./vocabularyTypes";
+import { TOEIC_PDF_VOCABULARY } from "./toeic-pdf";
+export type { Word } from "./vocabularyTypes";
 
-export const VOCABULARY: Word[] = [
+export const BASE_VOCABULARY: Word[] = [
   {
     "id": "rec-01",
     "topic": "Recruitment",
     "word": "opening",
-    "phonetic": "/ˈəʊpənɪŋ/",
+    "phonetic": "/ˈoʊpənɪŋ/",
     "pos": "noun",
     "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
-    "example": "A huge crowd turned out for the opening of the new show.",
-    "exampleTranslation": "Một đám đông lớn đã đến để khai mạc buổi biểu diễn mới.",
+    "example": "There is an opening in the sales department.",
+    "exampleTranslation": "Phòng bán hàng có một vị trí còn trống.",
     "translations": {
       "vi": "vị trí trống, sự mở cửa, lễ khai trương",
       "fr": "poste vacant",
@@ -37,11 +24,11 @@ export const VOCABULARY: Word[] = [
     "word": "applicant",
     "phonetic": "/ˈæplɪkənt/",
     "pos": "noun",
-    "meaning": "ứng viên, người xin việc",
-    "example": "Successful applicants will be notified in writing.",
-    "exampleTranslation": "Các ứng viên thành công sẽ được thông báo bằng văn bản.",
+    "meaning": "người ứng tuyển, ứng viên",
+    "example": "The applicant answered our questions.",
+    "exampleTranslation": "Người ứng tuyển đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
-      "vi": "ứng viên, người xin việc",
+      "vi": "người ứng tuyển, ứng viên",
       "fr": "candidat",
       "es": "solicitante"
     }
@@ -50,26 +37,26 @@ export const VOCABULARY: Word[] = [
     "id": "rec-03",
     "topic": "Recruitment",
     "word": "meet",
-    "phonetic": "/mˈiːt/",
+    "phonetic": "/ˈmit/",
     "pos": "verb",
-    "meaning": "thỏa mãn, đáp ứng yêu cầu/ điều kiện",
-    "example": "They will only agree to sign the contract if certain conditions are met.",
-    "exampleTranslation": "Họ chỉ sẽ đồng ý ký hợp đồng khi một số điều kiện được đáp ứng.",
+    "meaning": "đáp ứng (yêu cầu); gặp, gặp gỡ",
+    "example": "Please meet the requirements.",
+    "exampleTranslation": "Hãy đáp ứng các yêu cầu.",
     "translations": {
-      "vi": "thỏa mãn, đáp ứng yêu cầu/ điều kiện",
-      "fr": "rencontrer",
-      "es": "reunirse"
+      "vi": "đáp ứng (yêu cầu); gặp, gặp gỡ",
+      "fr": "répondre aux exigences; rencontrer",
+      "es": "cumplir los requisitos; reunirse"
     }
   },
   {
     "id": "rec-04",
     "topic": "Recruitment",
     "word": "qualified",
-    "phonetic": "/kwˈɒlɪfˌaɪd/",
-    "pos": "adj",
+    "phonetic": "/ˈkwɑləfaɪd/",
+    "pos": "adjective",
     "meaning": "đủ khả năng, trình độ, điều kiện",
-    "example": "I can't think of anyone better qualified to take over.",
-    "exampleTranslation": "Tôi không thể nghĩ về bất kỳ ai có đủ điều kiện tốt hơn để đảm nhận.",
+    "example": "She is qualified for the position.",
+    "exampleTranslation": "Cô ấy đủ trình độ cho vị trí này.",
     "translations": {
       "vi": "đủ khả năng, trình độ, điều kiện",
       "fr": "qualifié",
@@ -80,11 +67,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-05",
     "topic": "Recruitment",
     "word": "candidate",
-    "phonetic": "/kˈændɪdˌeɪt/",
+    "phonetic": "/ˈkændədeɪt/",
     "pos": "noun",
     "meaning": "thí sinh, ứng viên",
-    "example": "There are three candidates standing in the election.",
-    "exampleTranslation": "Có 3 ứng cử viên đứng trong cuộc bầu cử.",
+    "example": "The candidate answered our questions.",
+    "exampleTranslation": "Thí sinh đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "thí sinh, ứng viên",
       "fr": "candidat",
@@ -95,11 +82,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-06",
     "topic": "Recruitment",
     "word": "confidence",
-    "phonetic": "/kˈɒnfɪdəns/",
+    "phonetic": "/ˈkɑnfədəns/",
     "pos": "noun",
     "meaning": "sự tin tưởng, lòng tin",
-    "example": "The changes should improve public confidence in the system.",
-    "exampleTranslation": "Những thay đổi sẽ cải thiện lòng tin của công chúng vào hệ thống.",
+    "example": "Training increased her confidence.",
+    "exampleTranslation": "Đào tạo giúp cô ấy tự tin hơn.",
     "translations": {
       "vi": "sự tin tưởng, lòng tin",
       "fr": "confiance",
@@ -110,11 +97,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-07",
     "topic": "Recruitment",
     "word": "highly",
-    "phonetic": "/hˈaɪli/",
-    "pos": "adv",
+    "phonetic": "/ˈhaɪli/",
+    "pos": "adverb",
     "meaning": "rất, hết sức",
-    "example": "It is an able, young and highly motivated workforce.",
-    "exampleTranslation": "Đây là một lực lượng lao động có năng lực, trẻ và có động lực rất cao.",
+    "example": "The candidate is highly qualified.",
+    "exampleTranslation": "Ứng viên có trình độ rất tốt.",
     "translations": {
       "vi": "rất, hết sức",
       "fr": "hautement",
@@ -125,11 +112,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-08",
     "topic": "Recruitment",
     "word": "professional",
-    "phonetic": "/pɹəfˈɛʃənəl/",
-    "pos": "adj",
+    "phonetic": "/prəˈfɛʃənəl/",
+    "pos": "adjective",
     "meaning": "có tính chuyên môn, chuyên nghiệp, lành nghề",
-    "example": "He spent his professional career at the University of Pennsylvania.",
-    "exampleTranslation": "Ông đã dành sự nghiệp chuyên môn của mình tại Đại học Pennsylvania.",
+    "example": "The employee seemed professional during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ chuyên nghiệp trong buổi phỏng vấn.",
     "translations": {
       "vi": "có tính chuyên môn, chuyên nghiệp, lành nghề",
       "fr": "professionnel",
@@ -140,11 +127,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-09",
     "topic": "Recruitment",
     "word": "hire",
-    "phonetic": "/hˈaɪə/",
+    "phonetic": "/ˈhaɪɚ/",
     "pos": "verb",
     "meaning": "thuê mướn, tuyển dụng",
-    "example": "Poor families don't have enough money to hire good lawyers.",
-    "exampleTranslation": "Những gia đình nghèo không đủ tiền để thuê luật sư giỏi.",
+    "example": "Please hire a new assistant.",
+    "exampleTranslation": "Hãy thuê một trợ lý mới.",
     "translations": {
       "vi": "thuê mướn, tuyển dụng",
       "fr": "embaucher",
@@ -155,13 +142,13 @@ export const VOCABULARY: Word[] = [
     "id": "rec-10",
     "topic": "Recruitment",
     "word": "reference",
-    "phonetic": "/ɹˈɛfɹəns/",
+    "phonetic": "/ˈrɛfɚəns/",
     "pos": "noun",
-    "meaning": "sự giới thiệu, sự tham khảo",
-    "example": "She spoke in very vague terms and there were no direct references to specific situations.",
-    "exampleTranslation": "Cô ấy nói những thuật ngữ rất mơ hồ và không có sự đề cập trực tiếp đến các tình huống cụ thể.",
+    "meaning": "lời giới thiệu, người giới thiệu; sự tham khảo",
+    "example": "Please provide a reference from your former employer.",
+    "exampleTranslation": "Hãy cung cấp lời giới thiệu từ người sử dụng lao động trước.",
     "translations": {
-      "vi": "sự giới thiệu, sự tham khảo",
+      "vi": "lời giới thiệu, người giới thiệu; sự tham khảo",
       "fr": "référence",
       "es": "referencia"
     }
@@ -170,11 +157,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-11",
     "topic": "Recruitment",
     "word": "position",
-    "phonetic": "/pəzˈɪʃən/",
+    "phonetic": "/pəˈzɪʃən/",
     "pos": "noun",
     "meaning": "chức vụ, vị trí",
-    "example": "He applied for the position of marketing manager.",
-    "exampleTranslation": "Anh ấy đã ứng tuyển vào vị trí trưởng phòng marketing.",
+    "example": "She applied for a position in accounting.",
+    "exampleTranslation": "Cô ấy ứng tuyển vào vị trí kế toán.",
     "translations": {
       "vi": "chức vụ, vị trí"
     }
@@ -183,11 +170,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-12",
     "topic": "Recruitment",
     "word": "achievement",
-    "phonetic": "/ɐtʃˈiːvmənt/",
+    "phonetic": "/əˈtʃivmənt/",
     "pos": "noun",
     "meaning": "thành tựu, thành tích, sự đạt được",
-    "example": "Finishing the marathon in 10th place was an incredible achievement.",
-    "exampleTranslation": "Kết thúc cuộc thi marathon ở vị trí thứ 10 là một thành tích đáng kinh ngạc.",
+    "example": "We discussed the achievement at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về thành tựu tại cuộc họp.",
     "translations": {
       "vi": "thành tựu, thành tích, sự đạt được"
     }
@@ -196,11 +183,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-13",
     "topic": "Recruitment",
     "word": "impressed",
-    "phonetic": "/ɪmpɹˈɛst/",
-    "pos": "verb",
+    "phonetic": "/ɪmˈprɛst/",
+    "pos": "adjective",
     "meaning": "có ấn tượng, cảm phục",
-    "example": "We were impressed by the great richness of detail in her painting.",
-    "exampleTranslation": "Chúng tôi bị ấn tượng bởi sự phong phú của các chi tiết trong bức tranh của cô ấy.",
+    "example": "She was impressed by the presentation.",
+    "exampleTranslation": "Cô ấy ấn tượng với bài thuyết trình.",
     "translations": {
       "vi": "có ấn tượng, cảm phục"
     }
@@ -210,10 +197,10 @@ export const VOCABULARY: Word[] = [
     "topic": "Recruitment",
     "word": "excellent",
     "phonetic": "/ˈɛksələnt/",
-    "pos": "adj",
+    "pos": "adjective",
     "meaning": "xuất sắc, vượt trội, ưu tú",
-    "example": "Her car is in excellent condition.",
-    "exampleTranslation": "Xe của cô ấy luôn trong tình trạng tuyệt vời.",
+    "example": "The proposed plan is excellent.",
+    "exampleTranslation": "Kế hoạch được đề xuất xuất sắc.",
     "translations": {
       "vi": "xuất sắc, vượt trội, ưu tú"
     }
@@ -222,11 +209,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-15",
     "topic": "Recruitment",
     "word": "eligible",
-    "phonetic": "/ˈɛlɪdʒəbəl/",
-    "pos": "adj",
+    "phonetic": "/ˈɛlədʒəbəl/",
+    "pos": "adjective",
     "meaning": "có đủ tư cách, thích hợp",
-    "example": "Only people over 18 are eligible to vote.",
-    "exampleTranslation": "Chỉ những người trên 18 tuổi mới đủ tư cách bỏ phiếu.",
+    "example": "Members are eligible for a discount.",
+    "exampleTranslation": "Hội viên đủ điều kiện hưởng giảm giá.",
     "translations": {
       "vi": "có đủ tư cách, thích hợp"
     }
@@ -235,11 +222,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-16",
     "topic": "Recruitment",
     "word": "identify",
-    "phonetic": "/aɪdˈɛntɪfˌaɪ/",
+    "phonetic": "/aɪˈdɛntəfaɪ/",
     "pos": "verb",
     "meaning": "nhận diện, nhận ra",
-    "example": "Even the smallest baby can identify its mother by her voice.",
-    "exampleTranslation": "Ngay cả em bé nhỏ nhất cũng có thể nhận dạng mẹ của nó bằng giọng nói của mẹ.",
+    "example": "Please identify the main problem.",
+    "exampleTranslation": "Hãy xác định vấn đề chính.",
     "translations": {
       "vi": "nhận diện, nhận ra"
     }
@@ -248,11 +235,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-17",
     "topic": "Recruitment",
     "word": "associate",
-    "phonetic": "/əˈsoʊsiˌeɪt/",
+    "phonetic": "/əˈsoʊsieɪt/",
     "pos": "verb",
     "meaning": "liên kết, kết giao",
-    "example": "Most people associate this brand with good quality.",
-    "exampleTranslation": "Hầu hết mọi người liên kết thương hiệu này với chất lượng tốt.",
+    "example": "Please associate this brand with quality.",
+    "exampleTranslation": "Hãy liên hệ thương hiệu này với chất lượng.",
     "translations": {
       "vi": "liên kết, kết giao"
     }
@@ -261,11 +248,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-18",
     "topic": "Recruitment",
     "word": "employment",
-    "phonetic": "/ɛmplˈɔɪmənt/",
+    "phonetic": "/ɛmˈplɔɪmənt/",
     "pos": "noun",
     "meaning": "việc làm",
-    "example": "If you are unemployed but you are actively seeking employment, you may qualify for benefits.",
-    "exampleTranslation": "Nếu bạn đang thất nghiệp nhưng bạn đang tích cực tìm kiếm việc làm, bạn có thể đủ điều kiện nhận trợ cấp.",
+    "example": "We discussed the employment at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về việc làm tại cuộc họp.",
     "translations": {
       "vi": "việc làm"
     }
@@ -274,11 +261,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-19",
     "topic": "Recruitment",
     "word": "lack",
-    "phonetic": "/lˈæk/",
+    "phonetic": "/ˈlæk/",
     "pos": "verb",
     "meaning": "thiếu, không có",
-    "example": "We are lacking three members of staff due to illness.",
-    "exampleTranslation": "Chúng tôi đang thiếu ba nhân viên do bệnh tật.",
+    "example": "Some applicants lack the necessary experience.",
+    "exampleTranslation": "Một số ứng viên thiếu kinh nghiệm cần thiết.",
     "translations": {
       "vi": "thiếu, không có"
     }
@@ -287,11 +274,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-20",
     "topic": "Recruitment",
     "word": "managerial",
-    "phonetic": "/mˌænɐdʒˈiəɹɪəl/",
-    "pos": "adj",
+    "phonetic": "/mænɪˈdʒɪriəl/",
+    "pos": "adjective",
     "meaning": "thuộc về quản lý",
-    "example": "She has developed critical technical and managerial skills.",
-    "exampleTranslation": "Cô ấy đã phát triển các kỹ năng quản lý và kỹ thuật quan trọng.",
+    "example": "She has strong managerial skills.",
+    "exampleTranslation": "Cô ấy có kỹ năng quản lý tốt.",
     "translations": {
       "vi": "thuộc về quản lý"
     }
@@ -300,11 +287,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-21",
     "topic": "Recruitment",
     "word": "familiar",
-    "phonetic": "/fəmˈɪliə/",
-    "pos": "adj",
+    "phonetic": "/fəˈmɪljɚ/",
+    "pos": "adjective",
     "meaning": "quen thuộc, thuần thục",
-    "example": "There were one or two familiar faces.",
-    "exampleTranslation": "Có một hoặc hai khuôn mặt quen thuộc.",
+    "example": "The procedure is familiar to us.",
+    "exampleTranslation": "Chúng tôi quen với quy trình này.",
     "translations": {
       "vi": "quen thuộc, thuần thục"
     }
@@ -313,24 +300,24 @@ export const VOCABULARY: Word[] = [
     "id": "rec-22",
     "topic": "Recruitment",
     "word": "prospective",
-    "phonetic": "/pɹəspˈɛktɪv/",
-    "pos": "adj",
-    "meaning": "có triển vọng, có tương lai",
-    "example": "We've had three sets of prospective buyers looking at the house.",
-    "exampleTranslation": "Chúng tôi đã có ba nhóm người mua tiềm năng đang xem nhà.",
+    "phonetic": "/prəˈspɛktɪv/",
+    "pos": "adjective",
+    "meaning": "tiềm năng, có triển vọng",
+    "example": "We met with prospective clients.",
+    "exampleTranslation": "Chúng tôi gặp các khách hàng tiềm năng.",
     "translations": {
-      "vi": "có triển vọng, có tương lai"
+      "vi": "tiềm năng, có triển vọng"
     }
   },
   {
     "id": "rec-23",
     "topic": "Recruitment",
     "word": "appeal",
-    "phonetic": "/ɐpˈiːl/",
+    "phonetic": "/əˈpil/",
     "pos": "verb",
     "meaning": "kêu gọi, lôi cuốn, hấp dẫn",
-    "example": "They're appealing for clothes and blankets to send to the devastated region.",
-    "exampleTranslation": "Họ đang kêu gọi quần áo và chăn để gửi đến vùng bị tàn phá.",
+    "example": "Please appeal to younger customers.",
+    "exampleTranslation": "Hãy thu hút khách hàng trẻ tuổi hơn.",
     "translations": {
       "vi": "kêu gọi, lôi cuốn, hấp dẫn"
     }
@@ -339,11 +326,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-24",
     "topic": "Recruitment",
     "word": "specialize",
-    "phonetic": "/ˈspɛʃəˌɫaɪz/",
+    "phonetic": "/ˈspɛʃəlaɪz/",
     "pos": "verb",
     "meaning": "chuyên làm về, học chuyên về",
-    "example": "She hired a lawyer who specializes in divorce cases.",
-    "exampleTranslation": "Cô thuê một luật sư chuyên về các vụ ly hôn.",
+    "example": "Please specialize in business law.",
+    "exampleTranslation": "Hãy chuyên về luật kinh doanh.",
     "translations": {
       "vi": "chuyên làm về, học chuyên về"
     }
@@ -352,24 +339,24 @@ export const VOCABULARY: Word[] = [
     "id": "rec-25",
     "topic": "Recruitment",
     "word": "apprehensive",
-    "phonetic": "/ˌæpɹɪhˈɛnsɪv/",
-    "pos": "adj",
-    "meaning": "lo lắng,e sợ",
-    "example": "I've invited a lot of people to the party, but I'm a little apprehensive that no one will come.",
-    "exampleTranslation": "Tôi đã mời rất nhiều người đến bữa tiệc, nhưng tôi hơi e ngại rằng sẽ không có ai đến cả.",
+    "phonetic": "/æprɪˈhɛnsɪv/",
+    "pos": "adjective",
+    "meaning": "lo lắng, e sợ",
+    "example": "The employee seemed apprehensive during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ lo lắng trong buổi phỏng vấn.",
     "translations": {
-      "vi": "lo lắng,e sợ"
+      "vi": "lo lắng, e sợ"
     }
   },
   {
     "id": "rec-26",
     "topic": "Recruitment",
     "word": "consultant",
-    "phonetic": "/kənsˈʌltənt/",
+    "phonetic": "/kənˈsʌltənt/",
     "pos": "noun",
     "meaning": "người tư vấn, cố vấn",
-    "example": "She is a feng shui consultant.",
-    "exampleTranslation": "Cô ấy là một nhà tư vấn phong thủy.",
+    "example": "The consultant answered our questions.",
+    "exampleTranslation": "Người tư vấn đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "người tư vấn, cố vấn"
     }
@@ -378,11 +365,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-27",
     "topic": "Recruitment",
     "word": "entitle",
-    "phonetic": "/ɛntˈaɪtəl/",
+    "phonetic": "/ɛnˈtaɪtəl/",
     "pos": "verb",
     "meaning": "cho quyền làm gì",
-    "example": "The employer is entitled to ask for references.",
-    "exampleTranslation": "Nhà tuyển dụng có quyền yêu cầu các tài liệu tham khảo.",
+    "example": "Please entitle members to a discount.",
+    "exampleTranslation": "Hãy cho phép hội viên được hưởng giảm giá.",
     "translations": {
       "vi": "cho quyền làm gì"
     }
@@ -391,11 +378,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-28",
     "topic": "Recruitment",
     "word": "certification",
-    "phonetic": "/sˌɜːtɪfɪkˈeɪʃən/",
+    "phonetic": "/sɝtəfəˈkeɪʃən/",
     "pos": "noun",
     "meaning": "sự chứng nhận, giấy chứng nhận",
-    "example": "He earned certification to fly single-engine aircraft.",
-    "exampleTranslation": "Anh đã đạt được giấy chứng nhận lái máy bay một động cơ.",
+    "example": "We discussed the certification at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự chứng nhận tại cuộc họp.",
     "translations": {
       "vi": "sự chứng nhận, giấy chứng nhận"
     }
@@ -404,11 +391,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-29",
     "topic": "Recruitment",
     "word": "occupation",
-    "phonetic": "/ˌɒkjʊpˈeɪʃən/",
+    "phonetic": "/ɑkjəˈpeɪʃən/",
     "pos": "noun",
     "meaning": "nghề nghiệp",
-    "example": "He listed his occupation on the form as 'teacher.'",
-    "exampleTranslation": "Anh ta liệt kê nghề nghiệp của mình trên biểu mẫu là một giáo viên.",
+    "example": "We discussed the occupation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về nghề nghiệp tại cuộc họp.",
     "translations": {
       "vi": "nghề nghiệp"
     }
@@ -417,11 +404,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-30",
     "topic": "Recruitment",
     "word": "wage",
-    "phonetic": "/wˈeɪdʒ/",
+    "phonetic": "/ˈweɪdʒ/",
     "pos": "noun",
     "meaning": "tiền lương, tiền công",
-    "example": "There will be an increase in tax for those earning in excess of twice the national average wage.",
-    "exampleTranslation": "Sẽ tăng thuế đối với những người có thu nhập cao hơn gấp đôi tiền lương trung bình của cả nước.",
+    "example": "The company pays a fair wage.",
+    "exampleTranslation": "Công ty trả mức lương công bằng.",
     "translations": {
       "vi": "tiền lương, tiền công"
     }
@@ -430,11 +417,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-31",
     "topic": "Recruitment",
     "word": "resume",
-    "phonetic": "/ˈɹɛzəˌmeɪ/",
+    "phonetic": "/ˈrɛzəmeɪ/",
     "pos": "noun",
     "meaning": "sơ yếu lý lịch",
-    "example": "She sent her resume to 50 companies, but didn't even get an interview.",
-    "exampleTranslation": "Cô đã gửi sơ yếu lý lịch của mình đến 50 công ty, nhưng thậm chí không nhận được một cuộc phỏng vấn.",
+    "example": "Please read the resume carefully.",
+    "exampleTranslation": "Hãy đọc sơ yếu lý lịch cẩn thận.",
     "translations": {
       "vi": "sơ yếu lý lịch"
     }
@@ -443,11 +430,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-32",
     "topic": "Recruitment",
     "word": "requirement",
-    "phonetic": "/ɹɪkwˈaɪəmənt/",
+    "phonetic": "/rɪˈkwaɪrmənt/",
     "pos": "noun",
     "meaning": "điều kiện cần thiết, yêu cầu",
-    "example": "A good degree is a minimum requirement for many jobs.",
-    "exampleTranslation": "Bằng cấp tốt là yêu cầu tối thiểu cho nhiều công việc.",
+    "example": "We discussed the requirement at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về điều kiện cần thiết tại cuộc họp.",
     "translations": {
       "vi": "điều kiện cần thiết, yêu cầu"
     }
@@ -456,11 +443,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-33",
     "topic": "Recruitment",
     "word": "interview",
-    "phonetic": "/ˈɪntəvjˌuː/",
+    "phonetic": "/ˈɪntɚvju/",
     "pos": "noun",
     "meaning": "cuộc phỏng vấn",
-    "example": "I had an interview for a job with a publisher.",
-    "exampleTranslation": "Tôi đã có một cuộc phỏng vấn cho một công việc với một nhà xuất bản.",
+    "example": "The interview will take place on Monday.",
+    "exampleTranslation": "Buổi phỏng vấn diễn ra vào thứ Hai.",
     "translations": {
       "vi": "cuộc phỏng vấn"
     }
@@ -469,11 +456,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-34",
     "topic": "Recruitment",
     "word": "training",
-    "phonetic": "/tɹˈeɪnɪŋ/",
+    "phonetic": "/ˈtreɪnɪŋ/",
     "pos": "noun",
     "meaning": "sự đào tạo, huấn luyện",
-    "example": "No formal qualifications are required for the work - you'll get on-the-job training.",
-    "exampleTranslation": "Không yêu cầu bằng cấp chính thức cho công việc - bạn sẽ được đào tạo tại chỗ.",
+    "example": "We discussed the training at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự đào tạo tại cuộc họp.",
     "translations": {
       "vi": "sự đào tạo, huấn luyện"
     }
@@ -482,11 +469,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-35",
     "topic": "Recruitment",
     "word": "condition",
-    "phonetic": "/kəndˈɪʃən/",
+    "phonetic": "/kənˈdɪʃən/",
     "pos": "noun",
     "meaning": "điều kiện",
-    "example": "Riis devoted his life to improving conditions in urban slums.",
-    "exampleTranslation": "Riis cống hiến cuộc đời của mình để cải thiện điều kiện ở các khu ổ chuột ở đô thị.",
+    "example": "We discussed the condition at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về điều kiện tại cuộc họp.",
     "translations": {
       "vi": "điều kiện"
     }
@@ -495,11 +482,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-36",
     "topic": "Recruitment",
     "word": "diligent",
-    "phonetic": "/dˈɪlɪdʒənt/",
-    "pos": "adj",
+    "phonetic": "/ˈdɪlɪdʒənt/",
+    "pos": "adjective",
     "meaning": "siêng năng, cần cù",
-    "example": "Their lawyer was extremely diligent in preparing their case.",
-    "exampleTranslation": "Luật sư của họ đã cực kỳ siêng năng chuẩn bị vụ án của họ.",
+    "example": "The employee seemed diligent during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ chăm chỉ trong buổi phỏng vấn.",
     "translations": {
       "vi": "siêng năng, cần cù"
     }
@@ -508,24 +495,24 @@ export const VOCABULARY: Word[] = [
     "id": "rec-37",
     "topic": "Recruitment",
     "word": "proficiency",
-    "phonetic": "/pɹəfˈɪʃənsi/",
+    "phonetic": "/prəˈfɪʃənsi/",
     "pos": "noun",
-    "meaning": "sự thông thạo, sự thành thạo",
-    "example": "Some providers recommended strategies for students with limited English proficiency.",
-    "exampleTranslation": "Một số nhà cung cấp đề xuất các chiến lược cho học sinh có trình độ tiếng Anh hạn chế.",
+    "meaning": "sự thành thạo, sự thông thạo",
+    "example": "We discussed the proficiency at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự thành thạo tại cuộc họp.",
     "translations": {
-      "vi": "sự thông thạo, sự thành thạo"
+      "vi": "sự thành thạo, sự thông thạo"
     }
   },
   {
     "id": "rec-38",
     "topic": "Recruitment",
     "word": "degree",
-    "phonetic": "/dɪɡɹˈiː/",
+    "phonetic": "/dɪˈɡri/",
     "pos": "noun",
     "meaning": "trình độ, bằng cấp",
-    "example": "This job demands a high degree of skill.",
-    "exampleTranslation": "Công việc này đòi hỏi trình độ kỹ năng cao.",
+    "example": "We discussed the degree at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về trình độ tại cuộc họp.",
     "translations": {
       "vi": "trình độ, bằng cấp"
     }
@@ -534,11 +521,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-39",
     "topic": "Recruitment",
     "word": "payroll",
-    "phonetic": "/pˈeɪɹəʊl/",
+    "phonetic": "/ˈpeɪroʊl/",
     "pos": "noun",
     "meaning": "bảng lương, tổng quỹ lương",
-    "example": "With debts of $4 million and a monthly payroll of $1.2 million, the venture is clearly heading for trouble.",
-    "exampleTranslation": "Với khoản nợ 4 triệu đô la và bảng lương hàng tháng là 1,2 triệu đô la, các dự án rõ ràng đang gặp khó khăn.",
+    "example": "We discussed the payroll at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về bảng lương tại cuộc họp.",
     "translations": {
       "vi": "bảng lương, tổng quỹ lương"
     }
@@ -547,11 +534,11 @@ export const VOCABULARY: Word[] = [
     "id": "rec-40",
     "topic": "Recruitment",
     "word": "recruit",
-    "phonetic": "/ɹɪkɹˈuːt/",
+    "phonetic": "/rəˈkrut/",
     "pos": "verb",
     "meaning": "tuyển dụng",
-    "example": "I recruited three of my friends to help me move.",
-    "exampleTranslation": "Tôi đã tuyển dụng ba người bạn của mình để giúp tôi di chuyển.",
+    "example": "Please recruit more engineers.",
+    "exampleTranslation": "Hãy tuyển thêm kỹ sư.",
     "translations": {
       "vi": "tuyển dụng"
     }
@@ -560,11 +547,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-01",
     "topic": "Regulations",
     "word": "attire",
-    "phonetic": "/ɐtˈaɪə/",
+    "phonetic": "/əˈtaɪɚ/",
     "pos": "noun",
     "meaning": "quần áo, cách ăn mặc",
-    "example": "I hardly think jeans are appropriate attire for a wedding.",
-    "exampleTranslation": "Tôi hầu như không nghĩ quần jean là trang phục thích hợp cho một đám cưới.",
+    "example": "We inspected the attire yesterday.",
+    "exampleTranslation": "Chúng tôi kiểm tra quần áo hôm qua.",
     "translations": {
       "vi": "quần áo, cách ăn mặc",
       "fr": "tenue",
@@ -575,11 +562,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-02",
     "topic": "Regulations",
     "word": "concern",
-    "phonetic": "/kənsˈɜːn/",
+    "phonetic": "/kənˈsɝn/",
     "pos": "noun",
     "meaning": "sự lo lắng, mối quan ngại",
-    "example": "Concern for the safety of the two missing teenagers is growing.",
-    "exampleTranslation": "Mối lo lắng cho sự an toàn của 2 thanh niên mất tích ngày càng lớn.",
+    "example": "We discussed the concern at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự lo lắng tại cuộc họp.",
     "translations": {
       "vi": "sự lo lắng, mối quan ngại",
       "fr": "préoccupation",
@@ -590,11 +577,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-03",
     "topic": "Regulations",
     "word": "exception",
-    "phonetic": "/ɛksˈɛpʃən/",
+    "phonetic": "/ɪkˈsɛpʃən/",
     "pos": "noun",
     "meaning": "ngoại lệ",
-    "example": "There are exceptions to every rule.",
-    "exampleTranslation": "Có những ngoại lệ cho mọi quy tắc.",
+    "example": "We discussed the exception at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về ngoại lệ tại cuộc họp.",
     "translations": {
       "vi": "ngoại lệ",
       "fr": "exception",
@@ -605,11 +592,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-04",
     "topic": "Regulations",
     "word": "comply",
-    "phonetic": "/kəmplˈaɪ/",
+    "phonetic": "/kəmˈplaɪ/",
     "pos": "verb",
     "meaning": "tuân thủ, tuân theo",
-    "example": "There are serious penalties for failure to comply with the regulations.",
-    "exampleTranslation": "Có những hình phạt nghiêm khắc nếu không tuân thủ các quy định.",
+    "example": "Please comply with the safety rules.",
+    "exampleTranslation": "Hãy tuân thủ các quy định an toàn.",
     "translations": {
       "vi": "tuân thủ, tuân theo",
       "fr": "se conformer",
@@ -620,11 +607,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-05",
     "topic": "Regulations",
     "word": "regulation",
-    "phonetic": "/ɹˌɛɡjuːlˈeɪʃən/",
+    "phonetic": "/rɛɡjəˈleɪʃən/",
     "pos": "noun",
     "meaning": "quy định, quy tắc, điều lệ",
-    "example": "I have acted strictly in accordance with the regulations at all times.",
-    "exampleTranslation": "Tôi luôn luôn hành động theo đúng các quy định.",
+    "example": "Please read the regulation carefully.",
+    "exampleTranslation": "Hãy đọc quy định cẩn thận.",
     "translations": {
       "vi": "quy định, quy tắc, điều lệ",
       "fr": "règlement",
@@ -635,11 +622,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-01",
     "topic": "Office Work",
     "word": "accustomed",
-    "phonetic": "/ɐkˈʌstəmd/",
-    "pos": "adj",
+    "phonetic": "/əˈkʌstəmd/",
+    "pos": "adjective",
     "meaning": "quen với, thành thói quen",
-    "example": "Slowly Jack had become accustomed even to this.",
-    "exampleTranslation": "Từ từ Jack đã trở nên quen với điều này.",
+    "example": "She is accustomed to working early.",
+    "exampleTranslation": "Cô ấy quen làm việc sớm.",
     "translations": {
       "vi": "quen với, thành thói quen"
     }
@@ -648,11 +635,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-02",
     "topic": "Office Work",
     "word": "demanding",
-    "phonetic": "/dɪmˈɑːndɪŋ/",
-    "pos": "adj",
+    "phonetic": "/dɪˈmændɪŋ/",
+    "pos": "adjective",
     "meaning": "đòi hỏi khắt khe",
-    "example": "I'm trying to learn English, and I find it very demanding.",
-    "exampleTranslation": "Tôi đang cố gắng để học Tiếng Anh, và tôi thấy nó đòi hỏi rất khắt khe.",
+    "example": "The proposed plan is demanding.",
+    "exampleTranslation": "Kế hoạch được đề xuất đòi hỏi khắt khe.",
     "translations": {
       "vi": "đòi hỏi khắt khe"
     }
@@ -661,11 +648,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-03",
     "topic": "Office Work",
     "word": "colleague",
-    "phonetic": "/kˈɒliːɡ/",
+    "phonetic": "/ˈkɑliɡ/",
     "pos": "noun",
     "meaning": "đồng nghiệp",
-    "example": "We're entertaining some colleagues of Carol's tonight.",
-    "exampleTranslation": "Chúng ta sẽ chiêu đãi một số đồng nghiệp của Carol vào tối nay.",
+    "example": "The colleague answered our questions.",
+    "exampleTranslation": "Đồng nghiệp đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "đồng nghiệp"
     }
@@ -674,11 +661,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-04",
     "topic": "Office Work",
     "word": "division",
-    "phonetic": "/dɪvˈɪʒən/",
+    "phonetic": "/dɪˈvɪʒən/",
     "pos": "noun",
     "meaning": "bộ phận, sự phân chia",
-    "example": "The electronics division was split off into a freestanding company.",
-    "exampleTranslation": "Bộ phận điện tử được tách ra thành một công ty tự do.",
+    "example": "We discussed the division at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về bộ phận tại cuộc họp.",
     "translations": {
       "vi": "bộ phận, sự phân chia"
     }
@@ -687,11 +674,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-05",
     "topic": "Office Work",
     "word": "efficiently",
-    "phonetic": "/ɪfˈɪʃəntli/",
-    "pos": "adv",
+    "phonetic": "/ɪˈfɪʃəntli/",
+    "pos": "adverb",
     "meaning": "một cách hiệu quả",
-    "example": "She runs the business very efficiently.",
-    "exampleTranslation": "Cô ấy điều hành công việc kinh doanh một cách rất hiệu quả.",
+    "example": "The new machine works efficiently.",
+    "exampleTranslation": "Máy mới hoạt động hiệu quả.",
     "translations": {
       "vi": "một cách hiệu quả"
     }
@@ -700,24 +687,24 @@ export const VOCABULARY: Word[] = [
     "id": "reg-06",
     "topic": "Regulations",
     "word": "policy",
-    "phonetic": "/pˈɒlɪsi/",
+    "phonetic": "/ˈpɑləsi/",
     "pos": "noun",
-    "meaning": "quy chế, chínhs ách",
-    "example": "The team discussed the policy during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"quy chế, chínhs ách\" trong cuộc họp.",
+    "meaning": "quy chế, chính sách",
+    "example": "We discussed the policy at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về quy chế tại cuộc họp.",
     "translations": {
-      "vi": "quy chế, chínhs ách"
+      "vi": "quy chế, chính sách"
     }
   },
   {
     "id": "reg-07",
     "topic": "Regulations",
     "word": "severely",
-    "phonetic": "/sɪvˈiəli/",
-    "pos": "adv",
+    "phonetic": "/səˈvɪrli/",
+    "pos": "adverb",
     "meaning": "nghiêm khắc, khắt khe",
-    "example": "The team completed the task severely.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"nghiêm khắc, khắt khe\".",
+    "example": "The storm severely damaged the roof.",
+    "exampleTranslation": "Cơn bão làm mái nhà hư hại nghiêm trọng.",
     "translations": {
       "vi": "nghiêm khắc, khắt khe"
     }
@@ -726,11 +713,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-08",
     "topic": "Regulations",
     "word": "refrain",
-    "phonetic": "/ɹɪfɹˈeɪn/",
+    "phonetic": "/rɪˈfreɪn/",
     "pos": "verb",
     "meaning": "kiềm chế, hạn chế",
-    "example": "The team plans to refrain before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"kiềm chế, hạn chế\" trước thời hạn.",
+    "example": "Please refrain from smoking here.",
+    "exampleTranslation": "Hãy tránh hút thuốc ở đây.",
     "translations": {
       "vi": "kiềm chế, hạn chế"
     }
@@ -741,22 +728,22 @@ export const VOCABULARY: Word[] = [
     "word": "access",
     "phonetic": "/ˈæksɛs/",
     "pos": "noun",
-    "meaning": "quy ền truy cập, sự luit ới, đường vào",
-    "example": "The team discussed the access during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"quy ền truy cập, sự luit ới, đường vào\" trong cuộc họp.",
+    "meaning": "quyền truy cập, sự tiếp cận, đường vào",
+    "example": "We discussed the access at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về quyền truy cập tại cuộc họp.",
     "translations": {
-      "vi": "quy ền truy cập, sự luit ới, đường vào"
+      "vi": "quyền truy cập, sự tiếp cận, đường vào"
     }
   },
   {
     "id": "reg-10",
     "topic": "Regulations",
     "word": "thoroughly",
-    "phonetic": "/θˈʌɹəli/",
-    "pos": "adv",
+    "phonetic": "/ˈθɝoʊli/",
+    "pos": "adverb",
     "meaning": "một cách kỹ lưỡng",
-    "example": "The team completed the task thoroughly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"một cách kỹ lưỡng\".",
+    "example": "Please inspect the equipment thoroughly.",
+    "exampleTranslation": "Hãy kiểm tra thiết bị kỹ lưỡng.",
     "translations": {
       "vi": "một cách kỹ lưỡng"
     }
@@ -765,50 +752,50 @@ export const VOCABULARY: Word[] = [
     "id": "reg-11",
     "topic": "Regulations",
     "word": "revise",
-    "phonetic": "/ɹɪvˈaɪz/",
+    "phonetic": "/rɪˈvaɪz/",
     "pos": "verb",
-    "meaning": "sửa đổi, thay đổi (ý kiến,kế hoạch)",
-    "example": "The team plans to revise before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"sửa đổi, thay đổi (ý kiến,kế hoạch)\" trước thời hạn.",
+    "meaning": "sửa đổi, thay đổi (ý kiến, kế hoạch)",
+    "example": "Please revise the final report.",
+    "exampleTranslation": "Hãy chỉnh sửa báo cáo cuối cùng.",
     "translations": {
-      "vi": "sửa đổi, thay đổi (ý kiến,kế hoạch)"
+      "vi": "sửa đổi, thay đổi (ý kiến, kế hoạch)"
     }
   },
   {
     "id": "reg-12",
     "topic": "Regulations",
     "word": "approval",
-    "phonetic": "/ɐpɹˈuːvəl/",
+    "phonetic": "/əˈpruvəl/",
     "pos": "noun",
-    "meaning": "sự chấp thuận, sự phê duy ệt",
-    "example": "The team discussed the approval during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự chấp thuận, sự phê duy ệt\" trong cuộc họp.",
+    "meaning": "sự chấp thuận, sự phê duyệt",
+    "example": "We discussed the approval at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự chấp thuận tại cuộc họp.",
     "translations": {
-      "vi": "sự chấp thuận, sự phê duy ệt"
+      "vi": "sự chấp thuận, sự phê duyệt"
     }
   },
   {
     "id": "reg-13",
     "topic": "Regulations",
     "word": "form",
-    "phonetic": "/fˈɔːm/",
+    "phonetic": "/ˈfɔrm/",
     "pos": "noun",
-    "meaning": "kiểu, loại, hình thức",
-    "example": "The team discussed the form during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"kiểu, loại, hình thức\" trong cuộc họp.",
+    "meaning": "biểu mẫu; hình thức, dạng",
+    "example": "Please complete the application form.",
+    "exampleTranslation": "Hãy điền đầy đủ biểu mẫu ứng tuyển.",
     "translations": {
-      "vi": "kiểu, loại, hình thức"
+      "vi": "biểu mẫu; hình thức, dạng"
     }
   },
   {
     "id": "reg-14",
     "topic": "Regulations",
     "word": "immediately",
-    "phonetic": "/ɪmˈiːdɪətli/",
-    "pos": "adv",
+    "phonetic": "/ɪˈmidiətli/",
+    "pos": "adverb",
     "meaning": "ngay lập tức",
-    "example": "The team completed the task immediately.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"ngay lập tức\".",
+    "example": "Please contact the manager immediately.",
+    "exampleTranslation": "Hãy liên hệ người quản lý ngay lập tức.",
     "translations": {
       "vi": "ngay lập tức"
     }
@@ -817,11 +804,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-15",
     "topic": "Regulations",
     "word": "procedure",
-    "phonetic": "/pɹəsˈiːdʒɐ/",
+    "phonetic": "/prəˈsidʒɚ/",
     "pos": "noun",
     "meaning": "thủ tục",
-    "example": "The team discussed the procedure during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thủ tục\" trong cuộc họp.",
+    "example": "We discussed the procedure at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về thủ tục tại cuộc họp.",
     "translations": {
       "vi": "thủ tục"
     }
@@ -830,37 +817,37 @@ export const VOCABULARY: Word[] = [
     "id": "reg-16",
     "topic": "Regulations",
     "word": "negative",
-    "phonetic": "/nˈɛɡətˌɪv/",
-    "pos": "noun",
-    "meaning": "tiêu cực, bi quan",
-    "example": "The team discussed the negative during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tiêu cực, bi quan\" trong cuộc họp.",
+    "phonetic": "/ˈnɛɡətɪv/",
+    "pos": "adjective",
+    "meaning": "tiêu cực; âm tính",
+    "example": "The test result was negative.",
+    "exampleTranslation": "Kết quả xét nghiệm âm tính.",
     "translations": {
-      "vi": "tiêu cực, bi quan"
+      "vi": "tiêu cực; âm tính"
     }
   },
   {
     "id": "reg-17",
     "topic": "Regulations",
     "word": "mandate",
-    "phonetic": "/ˈmænˌdeɪt/",
+    "phonetic": "/ˈmændeɪt/",
     "pos": "verb",
-    "meaning": "ra lệnh, uỷ quy ền, uỷ thác",
-    "example": "The team plans to mandate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"ra lệnh, uỷ quy ền, uỷ thác\" trước thời hạn.",
+    "meaning": "ra lệnh, ủy quyền, ủy thác",
+    "example": "Please mandate regular safety checks.",
+    "exampleTranslation": "Hãy yêu cầu kiểm tra an toàn thường xuyên.",
     "translations": {
-      "vi": "ra lệnh, uỷ quy ền, uỷ thác"
+      "vi": "ra lệnh, ủy quyền, ủy thác"
     }
   },
   {
     "id": "reg-18",
     "topic": "Regulations",
     "word": "standard",
-    "phonetic": "/stˈændəd/",
+    "phonetic": "/ˈstændɚd/",
     "pos": "noun",
     "meaning": "tiêu chuẩn, chuẩn, trình độ",
-    "example": "The team discussed the standard during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tiêu chuẩn, chuẩn, trình độ\" trong cuộc họp.",
+    "example": "Please read the standard carefully.",
+    "exampleTranslation": "Hãy đọc tiêu chuẩn cẩn thận.",
     "translations": {
       "vi": "tiêu chuẩn, chuẩn, trình độ"
     }
@@ -869,11 +856,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-19",
     "topic": "Regulations",
     "word": "constant",
-    "phonetic": "/kˈɒnstənt/",
-    "pos": "adj",
+    "phonetic": "/ˈkɑnstənt/",
+    "pos": "adjective",
     "meaning": "liên tục, không ngớt, không đứt",
-    "example": "The manager described the proposal as constant.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"liên tục, không ngớt, không đứt\".",
+    "example": "The equipment requires constant monitoring.",
+    "exampleTranslation": "Thiết bị cần được theo dõi liên tục.",
     "translations": {
       "vi": "liên tục, không ngớt, không đứt"
     }
@@ -882,11 +869,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-20",
     "topic": "Regulations",
     "word": "obligation",
-    "phonetic": "/ˌɒblɪɡˈeɪʃən/",
+    "phonetic": "/ɑbləˈɡeɪʃən/",
     "pos": "noun",
     "meaning": "nghĩa vụ, trách nhiệm",
-    "example": "The team discussed the obligation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nghĩa vụ, trách nhiệm\" trong cuộc họp.",
+    "example": "We discussed the obligation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về nghĩa vụ tại cuộc họp.",
     "translations": {
       "vi": "nghĩa vụ, trách nhiệm"
     }
@@ -895,37 +882,37 @@ export const VOCABULARY: Word[] = [
     "id": "reg-21",
     "topic": "Regulations",
     "word": "authorize",
-    "phonetic": "/ˈɔθɝˌaɪz/",
+    "phonetic": "/ˈɔθɚaɪz/",
     "pos": "verb",
-    "meaning": "uỷ quy ền, cho phép",
-    "example": "The team plans to authorize before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"uỷ quy ền, cho phép\" trước thời hạn.",
+    "meaning": "ủy quyền, cho phép",
+    "example": "Please authorize the bank transfer.",
+    "exampleTranslation": "Hãy phê duyệt việc chuyển khoản.",
     "translations": {
-      "vi": "uỷ quy ền, cho phép"
+      "vi": "ủy quyền, cho phép"
     }
   },
   {
     "id": "reg-22",
     "topic": "Regulations",
     "word": "habit",
-    "phonetic": "/hˈæbɪt/",
+    "phonetic": "/ˈhæbət/",
     "pos": "noun",
-    "meaning": "thói quen,t ập quán",
-    "example": "The team discussed the habit during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thói quen,t ập quán\" trong cuộc họp.",
+    "meaning": "thói quen, tập quán",
+    "example": "We discussed the habit at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về thói quen tại cuộc họp.",
     "translations": {
-      "vi": "thói quen,t ập quán"
+      "vi": "thói quen, tập quán"
     }
   },
   {
     "id": "reg-23",
     "topic": "Regulations",
     "word": "restrict",
-    "phonetic": "/ɹɪstɹˈɪkt/",
+    "phonetic": "/riˈstrɪkt/",
     "pos": "verb",
     "meaning": "giới hạn, hạn chế",
-    "example": "The team plans to restrict before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giới hạn, hạn chế\" trước thời hạn.",
+    "example": "Please restrict access to this room.",
+    "exampleTranslation": "Hãy hạn chế quyền vào phòng này.",
     "translations": {
       "vi": "giới hạn, hạn chế"
     }
@@ -934,11 +921,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-24",
     "topic": "Regulations",
     "word": "code",
-    "phonetic": "/kˈəʊd/",
+    "phonetic": "/ˈkoʊd/",
     "pos": "noun",
     "meaning": "quy định",
-    "example": "The team discussed the code during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"quy định\" trong cuộc họp.",
+    "example": "Please read the code carefully.",
+    "exampleTranslation": "Hãy đọc quy định cẩn thận.",
     "translations": {
       "vi": "quy định"
     }
@@ -947,24 +934,24 @@ export const VOCABULARY: Word[] = [
     "id": "reg-25",
     "topic": "Regulations",
     "word": "adhere",
-    "phonetic": "/ɐdhˈiə/",
+    "phonetic": "/ədˈhɪr/",
     "pos": "verb",
-    "meaning": "báms át, tuân thủ",
-    "example": "The team plans to adhere before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"báms át, tuân thủ\" trước thời hạn.",
+    "meaning": "bám sát, tuân thủ",
+    "example": "Please adhere to the company policy.",
+    "exampleTranslation": "Hãy tuân thủ chính sách công ty.",
     "translations": {
-      "vi": "báms át, tuân thủ"
+      "vi": "bám sát, tuân thủ"
     }
   },
   {
     "id": "reg-26",
     "topic": "Regulations",
     "word": "permission",
-    "phonetic": "/pəmˈɪʃən/",
+    "phonetic": "/pɚˈmɪʃən/",
     "pos": "noun",
     "meaning": "sự cho phép",
-    "example": "The team discussed the permission during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự cho phép\" trong cuộc họp.",
+    "example": "We need permission to enter the building.",
+    "exampleTranslation": "Chúng tôi cần được phép vào tòa nhà.",
     "translations": {
       "vi": "sự cho phép"
     }
@@ -973,11 +960,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-27",
     "topic": "Regulations",
     "word": "approach",
-    "phonetic": "/ɐpɹˈəʊtʃ/",
+    "phonetic": "/əˈproʊtʃ/",
     "pos": "noun",
     "meaning": "cách tiếp cận, phương pháp xử lý",
-    "example": "The team discussed the approach during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cách tiếp cận, phương pháp xử lý\" trong cuộc họp.",
+    "example": "We discussed the approach at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về cách tiếp cận tại cuộc họp.",
     "translations": {
       "vi": "cách tiếp cận, phương pháp xử lý"
     }
@@ -986,37 +973,37 @@ export const VOCABULARY: Word[] = [
     "id": "reg-28",
     "topic": "Regulations",
     "word": "inspection",
-    "phonetic": "/ɪnspˈɛkʃən/",
+    "phonetic": "/ɪnˈspɛkʃən/",
     "pos": "noun",
-    "meaning": "sự kiểm tr a, sự thanh tra",
-    "example": "The team discussed the inspection during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự kiểm tr a, sự thanh tra\" trong cuộc họp.",
+    "meaning": "sự kiểm tra, sự thanh tra",
+    "example": "We discussed the inspection at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự kiểm tra tại cuộc họp.",
     "translations": {
-      "vi": "sự kiểm tr a, sự thanh tra"
+      "vi": "sự kiểm tra, sự thanh tra"
     }
   },
   {
     "id": "reg-29",
     "topic": "Regulations",
     "word": "arrangement",
-    "phonetic": "/ɐɹˈeɪndʒmənt/",
+    "phonetic": "/ɚˈeɪndʒmənt/",
     "pos": "noun",
-    "meaning": "sựs ắp đặt, sựs ắpx ếp,",
-    "example": "The team discussed the arrangement during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sựs ắp đặt, sựs ắpx ếp,\" trong cuộc họp.",
+    "meaning": "sự sắp đặt, sự sắp xếp",
+    "example": "We discussed the arrangement at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự sắp đặt tại cuộc họp.",
     "translations": {
-      "vi": "sựs ắp đặt, sựs ắpx ếp,"
+      "vi": "sự sắp đặt, sự sắp xếp"
     }
   },
   {
     "id": "reg-30",
     "topic": "Regulations",
     "word": "enable",
-    "phonetic": "/ɛnˈeɪbəl/",
+    "phonetic": "/ɛˈneɪbəl/",
     "pos": "verb",
     "meaning": "làm cho có thể, cho phép",
-    "example": "The team plans to enable before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm cho có thể, cho phép\" trước thời hạn.",
+    "example": "Please enable online payments.",
+    "exampleTranslation": "Hãy cho phép thanh toán trực tuyến.",
     "translations": {
       "vi": "làm cho có thể, cho phép"
     }
@@ -1027,35 +1014,35 @@ export const VOCABULARY: Word[] = [
     "word": "act",
     "phonetic": "/ˈækt/",
     "pos": "noun",
-    "meaning": "việc, hành động; đạo luật",
-    "example": "The team discussed the act during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"việc, hành động; đạo luật\" trong cuộc họp.",
+    "meaning": "đạo luật; hành động",
+    "example": "The new act protects employee rights.",
+    "exampleTranslation": "Đạo luật mới bảo vệ quyền của nhân viên.",
     "translations": {
-      "vi": "việc, hành động; đạo luật"
+      "vi": "đạo luật; hành động"
     }
   },
   {
     "id": "reg-32",
     "topic": "Regulations",
     "word": "compensation",
-    "phonetic": "/kˌɒmpənsˈeɪʃən/",
+    "phonetic": "/kɑmpənˈseɪʃən/",
     "pos": "noun",
-    "meaning": "sự đền bù, sự bồi thường",
-    "example": "The team discussed the compensation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đền bù, sự bồi thường\" trong cuộc họp.",
+    "meaning": "sự bồi thường; tiền thù lao",
+    "example": "Employees received compensation for overtime.",
+    "exampleTranslation": "Nhân viên nhận thù lao cho giờ làm thêm.",
     "translations": {
-      "vi": "sự đền bù, sự bồi thường"
+      "vi": "sự bồi thường; tiền thù lao"
     }
   },
   {
     "id": "reg-33",
     "topic": "Regulations",
     "word": "ban",
-    "phonetic": "/bˈæn/",
+    "phonetic": "/ˈbæn/",
     "pos": "noun",
     "meaning": "lệnh cấm, sự cấm đoán",
-    "example": "The team discussed the ban during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lệnh cấm, sự cấm đoán\" trong cuộc họp.",
+    "example": "Please read the ban carefully.",
+    "exampleTranslation": "Hãy đọc lệnh cấm cẩn thận.",
     "translations": {
       "vi": "lệnh cấm, sự cấm đoán"
     }
@@ -1064,11 +1051,11 @@ export const VOCABULARY: Word[] = [
     "id": "reg-34",
     "topic": "Regulations",
     "word": "abolish",
-    "phonetic": "/ɐbˈɒlɪʃ/",
+    "phonetic": "/əˈbɑlɪʃ/",
     "pos": "verb",
     "meaning": "thủ tiêu, bãi bỏ, huỷ bỏ",
-    "example": "The team plans to abolish before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thủ tiêu, bãi bỏ, huỷ bỏ\" trước thời hạn.",
+    "example": "Please abolish the outdated rule.",
+    "exampleTranslation": "Hãy bãi bỏ quy định lỗi thời.",
     "translations": {
       "vi": "thủ tiêu, bãi bỏ, huỷ bỏ"
     }
@@ -1077,24 +1064,24 @@ export const VOCABULARY: Word[] = [
     "id": "off-06",
     "topic": "Office Work",
     "word": "request",
-    "phonetic": "/ɹɪkwˈɛst/",
+    "phonetic": "/rɪˈkwɛst/",
     "pos": "noun",
-    "meaning": "lờiy êu cầu, thỉnh cầu",
-    "example": "The team discussed the request during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lờiy êu cầu, thỉnh cầu\" trong cuộc họp.",
+    "meaning": "lời yêu cầu, thỉnh cầu",
+    "example": "Please read the request carefully.",
+    "exampleTranslation": "Hãy đọc lời yêu cầu cẩn thận.",
     "translations": {
-      "vi": "lờiy êu cầu, thỉnh cầu"
+      "vi": "lời yêu cầu, thỉnh cầu"
     }
   },
   {
     "id": "off-07",
     "topic": "Office Work",
     "word": "submit",
-    "phonetic": "/səbmˈɪt/",
+    "phonetic": "/səbˈmɪt/",
     "pos": "verb",
     "meaning": "đệ trình, nộp",
-    "example": "The team plans to submit before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đệ trình, nộp\" trước thời hạn.",
+    "example": "Please submit your application online.",
+    "exampleTranslation": "Hãy nộp hồ sơ trực tuyến.",
     "translations": {
       "vi": "đệ trình, nộp"
     }
@@ -1103,11 +1090,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-08",
     "topic": "Office Work",
     "word": "directly",
-    "phonetic": "/daɪɹˈɛktli/",
-    "pos": "adv",
+    "phonetic": "/dɚˈɛktli/",
+    "pos": "adverb",
     "meaning": "trực tiếp, thẳng, ngay",
-    "example": "The team completed the task directly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"trực tiếp, thẳng, ngay\".",
+    "example": "Send the invoice directly to accounting.",
+    "exampleTranslation": "Gửi hóa đơn trực tiếp đến phòng kế toán.",
     "translations": {
       "vi": "trực tiếp, thẳng, ngay"
     }
@@ -1116,11 +1103,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-09",
     "topic": "Office Work",
     "word": "remind",
-    "phonetic": "/ɹɪmˈaɪnd/",
+    "phonetic": "/riˈmaɪnd/",
     "pos": "verb",
     "meaning": "nhắc nhở",
-    "example": "The team plans to remind before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nhắc nhở\" trước thời hạn.",
+    "example": "Please remind me about the meeting.",
+    "exampleTranslation": "Hãy nhắc tôi về cuộc họp.",
     "translations": {
       "vi": "nhắc nhở"
     }
@@ -1129,11 +1116,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-10",
     "topic": "Office Work",
     "word": "instruct",
-    "phonetic": "/ɪnstɹˈʌkt/",
+    "phonetic": "/ɪnˈstrʌkt/",
     "pos": "verb",
     "meaning": "hướng dẫn, chỉ thị, dạy",
-    "example": "The team plans to instruct before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hướng dẫn, chỉ thị, dạy\" trước thời hạn.",
+    "example": "Please instruct the staff on safety.",
+    "exampleTranslation": "Hãy hướng dẫn nhân viên về an toàn.",
     "translations": {
       "vi": "hướng dẫn, chỉ thị, dạy"
     }
@@ -1142,11 +1129,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-11",
     "topic": "Office Work",
     "word": "sample",
-    "phonetic": "/sˈɑːmpəl/",
+    "phonetic": "/ˈsæmpəl/",
     "pos": "noun",
     "meaning": "vật mẫu, mẫu thử",
-    "example": "The team discussed the sample during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"vật mẫu, mẫu thử\" trong cuộc họp.",
+    "example": "We discussed the sample at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về vật mẫu tại cuộc họp.",
     "translations": {
       "vi": "vật mẫu, mẫu thử"
     }
@@ -1155,11 +1142,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-12",
     "topic": "Office Work",
     "word": "notify",
-    "phonetic": "/nˈəʊtɪfˌaɪ/",
+    "phonetic": "/ˈnoʊtəfaɪ/",
     "pos": "verb",
     "meaning": "thông báo, cho biết",
-    "example": "The team plans to notify before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thông báo, cho biết\" trước thời hạn.",
+    "example": "Please notify customers of the delay.",
+    "exampleTranslation": "Hãy thông báo cho khách hàng về sự chậm trễ.",
     "translations": {
       "vi": "thông báo, cho biết"
     }
@@ -1168,11 +1155,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-13",
     "topic": "Office Work",
     "word": "perform",
-    "phonetic": "/pəfˈɔːm/",
+    "phonetic": "/pɚˈfɔrm/",
     "pos": "verb",
     "meaning": "thi hành, thực hiện, hoạt động",
-    "example": "The team plans to perform before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thi hành, thực hiện, hoạt động\" trước thời hạn.",
+    "example": "Please perform a routine inspection.",
+    "exampleTranslation": "Hãy thực hiện một cuộc kiểm tra định kỳ.",
     "translations": {
       "vi": "thi hành, thực hiện, hoạt động"
     }
@@ -1181,37 +1168,37 @@ export const VOCABULARY: Word[] = [
     "id": "off-14",
     "topic": "Office Work",
     "word": "assignment",
-    "phonetic": "/ɐsˈaɪnmənt/",
+    "phonetic": "/əˈsaɪnmənt/",
     "pos": "noun",
-    "meaning": "công việc, nhiệm vụ, bàit ập",
-    "example": "The team discussed the assignment during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"công việc, nhiệm vụ, bàit ập\" trong cuộc họp.",
+    "meaning": "công việc, nhiệm vụ, bài tập",
+    "example": "We discussed the assignment at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về công việc tại cuộc họp.",
     "translations": {
-      "vi": "công việc, nhiệm vụ, bàit ập"
+      "vi": "công việc, nhiệm vụ, bài tập"
     }
   },
   {
     "id": "off-15",
     "topic": "Office Work",
     "word": "entire",
-    "phonetic": "/ɛntˈaɪə/",
-    "pos": "adj",
-    "meaning": "tr ọnv ẹn, hoàn to àn",
-    "example": "The manager described the proposal as entire.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tr ọnv ẹn, hoàn to àn\".",
+    "phonetic": "/ɪnˈtaɪɚ/",
+    "pos": "adjective",
+    "meaning": "trọn vẹn, hoàn toàn",
+    "example": "The entire team attended the meeting.",
+    "exampleTranslation": "Cả đội đã dự cuộc họp.",
     "translations": {
-      "vi": "tr ọnv ẹn, hoàn to àn"
+      "vi": "trọn vẹn, hoàn toàn"
     }
   },
   {
     "id": "off-16",
     "topic": "Office Work",
     "word": "attendance",
-    "phonetic": "/ɐtˈɛndəns/",
+    "phonetic": "/əˈtɛndəns/",
     "pos": "noun",
     "meaning": "sự tham gia, sự có mặt",
-    "example": "The team discussed the attendance during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự tham gia, sự có mặt\" trong cuộc họp.",
+    "example": "We discussed the attendance at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự tham gia tại cuộc họp.",
     "translations": {
       "vi": "sự tham gia, sự có mặt"
     }
@@ -1220,50 +1207,50 @@ export const VOCABULARY: Word[] = [
     "id": "off-17",
     "topic": "Office Work",
     "word": "absolutely",
-    "phonetic": "/ˌæbsəlˈuːtli/",
-    "pos": "adv",
-    "meaning": "hoànt oàn, chắc chắn,",
-    "example": "The team completed the task absolutely.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"hoànt oàn, chắc chắn,\".",
+    "phonetic": "/æbsəˈlutli/",
+    "pos": "adverb",
+    "meaning": "hoàn toàn, chắc chắn",
+    "example": "The information is absolutely correct.",
+    "exampleTranslation": "Thông tin hoàn toàn chính xác.",
     "translations": {
-      "vi": "hoànt oàn, chắc chắn,"
+      "vi": "hoàn toàn, chắc chắn"
     }
   },
   {
     "id": "off-18",
     "topic": "Office Work",
     "word": "attentively",
-    "phonetic": "/ɐtˈɛntɪvli/",
-    "pos": "adv",
-    "meaning": "chăm chú, thận tr ọng",
-    "example": "The team completed the task attentively.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"chăm chú, thận tr ọng\".",
+    "phonetic": "/əˈtɛntɪvli/",
+    "pos": "adverb",
+    "meaning": "chăm chú, thận trọng",
+    "example": "The trainees listened attentively to the instructor.",
+    "exampleTranslation": "Học viên chăm chú nghe người hướng dẫn.",
     "translations": {
-      "vi": "chăm chú, thận tr ọng"
+      "vi": "chăm chú, thận trọng"
     }
   },
   {
     "id": "off-19",
     "topic": "Office Work",
     "word": "supervision",
-    "phonetic": "/suːpəvˈɪʒən/",
+    "phonetic": "/supɚˈvɪʒən/",
     "pos": "noun",
-    "meaning": "sự giáms át",
-    "example": "The team discussed the supervision during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự giáms át\" trong cuộc họp.",
+    "meaning": "sự giám sát",
+    "example": "We discussed the supervision at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự giám sát tại cuộc họp.",
     "translations": {
-      "vi": "sự giáms át"
+      "vi": "sự giám sát"
     }
   },
   {
     "id": "off-20",
     "topic": "Office Work",
     "word": "revision",
-    "phonetic": "/ɹɪvˈɪʒən/",
+    "phonetic": "/riˈvɪʒən/",
     "pos": "noun",
     "meaning": "sự sửa lại, duyệt lại",
-    "example": "The team discussed the revision during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự sửa lại, duyệt lại\" trong cuộc họp.",
+    "example": "We discussed the revision at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự sửa lại tại cuộc họp.",
     "translations": {
       "vi": "sự sửa lại, duyệt lại"
     }
@@ -1272,11 +1259,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-21",
     "topic": "Office Work",
     "word": "reluctantly",
-    "phonetic": "/ɹɪlˈʌktəntli/",
-    "pos": "adv",
+    "phonetic": "/rɪˈlʌktəntli/",
+    "pos": "adverb",
     "meaning": "miễn cưỡng, bất đắc dĩ",
-    "example": "The team completed the task reluctantly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"miễn cưỡng, bất đắc dĩ\".",
+    "example": "She reluctantly accepted the revised schedule.",
+    "exampleTranslation": "Cô ấy miễn cưỡng chấp nhận lịch đã sửa.",
     "translations": {
       "vi": "miễn cưỡng, bất đắc dĩ"
     }
@@ -1285,63 +1272,63 @@ export const VOCABULARY: Word[] = [
     "id": "off-22",
     "topic": "Office Work",
     "word": "convey",
-    "phonetic": "/kənvˈeɪ/",
+    "phonetic": "/kənˈveɪ/",
     "pos": "verb",
-    "meaning": "truy ền đạt,v ận chuyển",
-    "example": "The team plans to convey before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"truy ền đạt,v ận chuyển\" trước thời hạn.",
+    "meaning": "truyền đạt, vận chuyển",
+    "example": "Please convey the message clearly.",
+    "exampleTranslation": "Hãy truyền đạt thông điệp rõ ràng.",
     "translations": {
-      "vi": "truy ền đạt,v ận chuyển"
+      "vi": "truyền đạt, vận chuyển"
     }
   },
   {
     "id": "off-23",
     "topic": "Office Work",
     "word": "check",
-    "phonetic": "/tʃˈɛk/",
+    "phonetic": "/ˈtʃɛk/",
     "pos": "verb",
-    "meaning": "kiểm tr a, xemxé t,x ác nhận",
-    "example": "The team plans to check before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"kiểm tr a, xemxé t,x ác nhận\" trước thời hạn.",
+    "meaning": "kiểm tra, xem xét, xác nhận",
+    "example": "Please check the delivery address.",
+    "exampleTranslation": "Hãy kiểm tra địa chỉ giao hàng.",
     "translations": {
-      "vi": "kiểm tr a, xemxé t,x ác nhận"
+      "vi": "kiểm tra, xem xét, xác nhận"
     }
   },
   {
     "id": "off-24",
     "topic": "Office Work",
     "word": "oversee",
-    "phonetic": "/ˌəʊvəsˈiː/",
+    "phonetic": "/ˈoʊvɚsi/",
     "pos": "verb",
-    "meaning": "quans át, giáms át",
-    "example": "The team plans to oversee before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"quans át, giáms át\" trước thời hạn.",
+    "meaning": "quan sát, giám sát",
+    "example": "Please oversee the construction project.",
+    "exampleTranslation": "Hãy giám sát dự án xây dựng.",
     "translations": {
-      "vi": "quans át, giáms át"
+      "vi": "quan sát, giám sát"
     }
   },
   {
     "id": "off-25",
     "topic": "Office Work",
     "word": "concentrate",
-    "phonetic": "/kˈɒnsəntɹˌeɪt/",
-    "pos": "noun",
-    "meaning": "tập trung, chút âm",
-    "example": "The team discussed the concentrate during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tập trung, chút âm\" trong cuộc họp.",
+    "phonetic": "/ˈkɑnsəntreɪt/",
+    "pos": "verb",
+    "meaning": "tập trung, chú tâm",
+    "example": "Please concentrate on the task.",
+    "exampleTranslation": "Hãy tập trung vào nhiệm vụ.",
     "translations": {
-      "vi": "tập trung, chút âm"
+      "vi": "tập trung, chú tâm"
     }
   },
   {
     "id": "off-26",
     "topic": "Office Work",
     "word": "corporation",
-    "phonetic": "/kˌɔːpəɹˈeɪʃən/",
+    "phonetic": "/kɔrpɚˈeɪʃən/",
     "pos": "noun",
     "meaning": "công ty, tập đoàn",
-    "example": "The team discussed the corporation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"công ty, tập đoàn\" trong cuộc họp.",
+    "example": "We discussed the corporation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về công ty tại cuộc họp.",
     "translations": {
       "vi": "công ty, tập đoàn"
     }
@@ -1350,37 +1337,37 @@ export const VOCABULARY: Word[] = [
     "id": "off-27",
     "topic": "Office Work",
     "word": "manage",
-    "phonetic": "/mˈænɪdʒ/",
+    "phonetic": "/ˈmænədʒ/",
     "pos": "verb",
-    "meaning": "quản lý,x oays ở, giải quyết được",
-    "example": "The team plans to manage before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"quản lý,x oays ở, giải quyết được\" trước thời hạn.",
+    "meaning": "quản lý, xoay sở, giải quyết được",
+    "example": "Please manage the project budget.",
+    "exampleTranslation": "Hãy quản lý ngân sách dự án.",
     "translations": {
-      "vi": "quản lý,x oays ở, giải quyết được"
+      "vi": "quản lý, xoay sở, giải quyết được"
     }
   },
   {
     "id": "off-28",
     "topic": "Office Work",
     "word": "monitor",
-    "phonetic": "/mˈɒnɪtɐ/",
+    "phonetic": "/ˈmɑnətɚ/",
     "pos": "verb",
-    "meaning": "giáms át, theo dõi",
-    "example": "The team plans to monitor before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giáms át, theo dõi\" trước thời hạn.",
+    "meaning": "giám sát, theo dõi",
+    "example": "Please monitor the system regularly.",
+    "exampleTranslation": "Hãy theo dõi hệ thống thường xuyên.",
     "translations": {
-      "vi": "giáms át, theo dõi"
+      "vi": "giám sát, theo dõi"
     }
   },
   {
     "id": "off-29",
     "topic": "Office Work",
     "word": "deserve",
-    "phonetic": "/dɪzˈɜːv/",
+    "phonetic": "/dɪˈzɝv/",
     "pos": "verb",
     "meaning": "đáng, xứng đáng",
-    "example": "The team plans to deserve before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đáng, xứng đáng\" trước thời hạn.",
+    "example": "Workers deserve a fair payment.",
+    "exampleTranslation": "Người lao động xứng đáng nhận mức thù lao công bằng.",
     "translations": {
       "vi": "đáng, xứng đáng"
     }
@@ -1389,11 +1376,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-30",
     "topic": "Office Work",
     "word": "release",
-    "phonetic": "/ɹiˈɫis/",
+    "phonetic": "/riˈlis/",
     "pos": "verb",
     "meaning": "phát hành, phóng thích, làm nhẹ bớt",
-    "example": "The team plans to release before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phát hành, phóng thích, làm nhẹ bớt\" trước thời hạn.",
+    "example": "Please release the updated software.",
+    "exampleTranslation": "Hãy phát hành phần mềm đã cập nhật.",
     "translations": {
       "vi": "phát hành, phóng thích, làm nhẹ bớt"
     }
@@ -1402,11 +1389,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-31",
     "topic": "Office Work",
     "word": "electronically",
-    "phonetic": "/ˌɛlɪktɹˈɒnɪkli/",
-    "pos": "adv",
+    "phonetic": "/ɪlɛkˈtrɑnɪkəli/",
+    "pos": "adverb",
     "meaning": "bằng điện tử",
-    "example": "The team completed the task electronically.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"bằng điện tử\".",
+    "example": "Customers can pay their bills electronically.",
+    "exampleTranslation": "Khách hàng có thể thanh toán hóa đơn bằng phương thức điện tử.",
     "translations": {
       "vi": "bằng điện tử"
     }
@@ -1415,50 +1402,50 @@ export const VOCABULARY: Word[] = [
     "id": "off-32",
     "topic": "Office Work",
     "word": "workshop",
-    "phonetic": "/wˈɜːkʃɒp/",
+    "phonetic": "/ˈwɝkʃɑp/",
     "pos": "noun",
-    "meaning": "hội thảo, buổi đàot ạo",
-    "example": "The team discussed the workshop during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hội thảo, buổi đàot ạo\" trong cuộc họp.",
+    "meaning": "hội thảo, buổi đào tạo",
+    "example": "The workshop teaches practical skills.",
+    "exampleTranslation": "Hội thảo hướng dẫn kỹ năng thực tế.",
     "translations": {
-      "vi": "hội thảo, buổi đàot ạo"
+      "vi": "hội thảo, buổi đào tạo"
     }
   },
   {
     "id": "off-33",
     "topic": "Office Work",
     "word": "headquarters",
-    "phonetic": "/hɛdkwˈɔːtəz/",
+    "phonetic": "/ˈhɛdkwɔrtɚz/",
     "pos": "noun",
-    "meaning": "trụsở chính",
-    "example": "The team discussed the headquarters during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"trụsở chính\" trong cuộc họp.",
+    "meaning": "trụ sở chính",
+    "example": "Our headquarters are in the city center.",
+    "exampleTranslation": "Trụ sở chính của chúng tôi ở trung tâm thành phố.",
     "translations": {
-      "vi": "trụsở chính"
+      "vi": "trụ sở chính"
     }
   },
   {
     "id": "off-34",
     "topic": "Office Work",
     "word": "involved",
-    "phonetic": "/ɪnvˈɒlvd/",
-    "pos": "adj",
-    "meaning": "có tham giav ào, có liên quan",
-    "example": "The manager described the proposal as involved.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có tham giav ào, có liên quan\".",
+    "phonetic": "/ɪnˈvɑlvd/",
+    "pos": "adjective",
+    "meaning": "có tham gia vào, có liên quan",
+    "example": "All departments are involved in the project.",
+    "exampleTranslation": "Tất cả phòng ban đều tham gia dự án.",
     "translations": {
-      "vi": "có tham giav ào, có liên quan"
+      "vi": "có tham gia vào, có liên quan"
     }
   },
   {
     "id": "off-35",
     "topic": "Office Work",
     "word": "procrastinate",
-    "phonetic": "/pɹəkɹˈɑːstɪnˌeɪt/",
+    "phonetic": "/prəˈkræstəneɪt/",
     "pos": "verb",
     "meaning": "trì hoãn, chần chừ",
-    "example": "The team plans to procrastinate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"trì hoãn, chần chừ\" trước thời hạn.",
+    "example": "Do not procrastinate over important tasks.",
+    "exampleTranslation": "Đừng chần chừ với những nhiệm vụ quan trọng.",
     "translations": {
       "vi": "trì hoãn, chần chừ"
     }
@@ -1467,24 +1454,24 @@ export const VOCABULARY: Word[] = [
     "id": "off-36",
     "topic": "Office Work",
     "word": "combined",
-    "phonetic": "/kəmbˈaɪnd/",
-    "pos": "adj",
-    "meaning": "đượckết hợp, chung,t ổng hợp",
-    "example": "The manager described the proposal as combined.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đượckết hợp, chung,t ổng hợp\".",
+    "phonetic": "/kəmˈbaɪnd/",
+    "pos": "adjective",
+    "meaning": "được kết hợp, chung, tổng hợp",
+    "example": "The combined cost includes both services.",
+    "exampleTranslation": "Chi phí tổng hợp bao gồm cả hai dịch vụ.",
     "translations": {
-      "vi": "đượckết hợp, chung,t ổng hợp"
+      "vi": "được kết hợp, chung, tổng hợp"
     }
   },
   {
     "id": "off-37",
     "topic": "Office Work",
     "word": "occasionally",
-    "phonetic": "/əkˈeɪʒənəli/",
-    "pos": "adv",
+    "phonetic": "/əˈkeɪʒənəli/",
+    "pos": "adverb",
     "meaning": "thỉnh thoảng, đôi khi",
-    "example": "The team completed the task occasionally.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"thỉnh thoảng, đôi khi\".",
+    "example": "We occasionally hold meetings online.",
+    "exampleTranslation": "Thỉnh thoảng chúng tôi họp trực tuyến.",
     "translations": {
       "vi": "thỉnh thoảng, đôi khi"
     }
@@ -1493,11 +1480,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-38",
     "topic": "Office Work",
     "word": "employee",
-    "phonetic": "/ɛmplˈɔɪiː/",
+    "phonetic": "/ɛmˈplɔɪi/",
     "pos": "noun",
     "meaning": "nhân viên, người lao động",
-    "example": "The team discussed the employee during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nhân viên, người lao động\" trong cuộc họp.",
+    "example": "The employee answered our questions.",
+    "exampleTranslation": "Nhân viên đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "nhân viên, người lao động"
     }
@@ -1506,11 +1493,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-39",
     "topic": "Office Work",
     "word": "assist",
-    "phonetic": "/ɐsˈɪst/",
+    "phonetic": "/əˈsɪst/",
     "pos": "verb",
     "meaning": "trợ giúp, hỗ trợ",
-    "example": "The team plans to assist before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"trợ giúp, hỗ trợ\" trước thời hạn.",
+    "example": "Please assist customers with their orders.",
+    "exampleTranslation": "Hãy hỗ trợ khách hàng với đơn hàng của họ.",
     "translations": {
       "vi": "trợ giúp, hỗ trợ"
     }
@@ -1519,24 +1506,24 @@ export const VOCABULARY: Word[] = [
     "id": "off-40",
     "topic": "Office Work",
     "word": "responsible",
-    "phonetic": "/ɹɪspˈɒnsəbəl/",
-    "pos": "adj",
-    "meaning": "có tr ách nhiệm,",
-    "example": "The manager described the proposal as responsible.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có tr ách nhiệm,\".",
+    "phonetic": "/riˈspɑnsəbəl/",
+    "pos": "adjective",
+    "meaning": "có trách nhiệm",
+    "example": "The employee seemed responsible during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ có trách nhiệm trong buổi phỏng vấn.",
     "translations": {
-      "vi": "có tr ách nhiệm,"
+      "vi": "có trách nhiệm"
     }
   },
   {
     "id": "off-41",
     "topic": "Office Work",
     "word": "conduct",
-    "phonetic": "/ˈkɑndəkt/",
+    "phonetic": "/kənˈdʌkt/",
     "pos": "verb",
     "meaning": "tiến hành, chỉ đạo, điều khiển",
-    "example": "The team plans to conduct before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tiến hành, chỉ đạo, điều khiển\" trước thời hạn.",
+    "example": "Please conduct a customer survey.",
+    "exampleTranslation": "Hãy tiến hành khảo sát khách hàng.",
     "translations": {
       "vi": "tiến hành, chỉ đạo, điều khiển"
     }
@@ -1545,37 +1532,37 @@ export const VOCABULARY: Word[] = [
     "id": "off-42",
     "topic": "Office Work",
     "word": "agree",
-    "phonetic": "/ɐɡɹˈiː/",
+    "phonetic": "/əˈɡri/",
     "pos": "verb",
-    "meaning": "đồngý",
-    "example": "The team plans to agree before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đồngý\" trước thời hạn.",
+    "meaning": "đồng ý",
+    "example": "Please agree on a delivery date.",
+    "exampleTranslation": "Hãy thống nhất ngày giao hàng.",
     "translations": {
-      "vi": "đồngý"
+      "vi": "đồng ý"
     }
   },
   {
     "id": "off-43",
     "topic": "Office Work",
     "word": "supervise",
-    "phonetic": "/sˈuːpəvˌaɪz/",
+    "phonetic": "/ˈsupɚvaɪz/",
     "pos": "verb",
-    "meaning": "giáms át",
-    "example": "The team plans to supervise before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giáms át\" trước thời hạn.",
+    "meaning": "giám sát",
+    "example": "Please supervise the new employees.",
+    "exampleTranslation": "Hãy giám sát các nhân viên mới.",
     "translations": {
-      "vi": "giáms át"
+      "vi": "giám sát"
     }
   },
   {
     "id": "off-44",
     "topic": "Office Work",
     "word": "direct",
-    "phonetic": "/daɪɹˈɛkt/",
+    "phonetic": "/dɚˈɛkt/",
     "pos": "verb",
     "meaning": "hướng dẫn, chỉ đạo",
-    "example": "The team plans to direct before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hướng dẫn, chỉ đạo\" trước thời hạn.",
+    "example": "Please direct visitors to the reception desk.",
+    "exampleTranslation": "Hãy hướng dẫn khách đến quầy lễ tân.",
     "translations": {
       "vi": "hướng dẫn, chỉ đạo"
     }
@@ -1584,11 +1571,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-45",
     "topic": "Office Work",
     "word": "assign",
-    "phonetic": "/ɐsˈaɪn/",
+    "phonetic": "/əˈsaɪn/",
     "pos": "verb",
     "meaning": "phân công, bổ nhiệm",
-    "example": "The team plans to assign before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phân công, bổ nhiệm\" trước thời hạn.",
+    "example": "Please assign tasks to each member.",
+    "exampleTranslation": "Hãy phân công nhiệm vụ cho từng thành viên.",
     "translations": {
       "vi": "phân công, bổ nhiệm"
     }
@@ -1597,11 +1584,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-46",
     "topic": "Office Work",
     "word": "leading",
-    "phonetic": "/ˈɫidɪŋ/",
-    "pos": "adj",
+    "phonetic": "/ˈlidɪŋ/",
+    "pos": "adjective",
     "meaning": "dẫn đầu, tiên phong, hàng đầu",
-    "example": "The manager described the proposal as leading.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"dẫn đầu, tiên phong, hàng đầu\".",
+    "example": "The company is a leading supplier.",
+    "exampleTranslation": "Công ty là nhà cung cấp hàng đầu.",
     "translations": {
       "vi": "dẫn đầu, tiên phong, hàng đầu"
     }
@@ -1610,24 +1597,24 @@ export const VOCABULARY: Word[] = [
     "id": "off-47",
     "topic": "Office Work",
     "word": "formal",
-    "phonetic": "/fˈɔːməl/",
-    "pos": "adj",
-    "meaning": "tr ang tr ọng, chính thức",
-    "example": "The manager described the proposal as formal.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tr ang tr ọng, chính thức\".",
+    "phonetic": "/ˈfɔrməl/",
+    "pos": "adjective",
+    "meaning": "trang trọng, chính thức",
+    "example": "Please wear formal clothing to the reception.",
+    "exampleTranslation": "Hãy mặc trang phục lịch sự đến buổi tiếp đón.",
     "translations": {
-      "vi": "tr ang tr ọng, chính thức"
+      "vi": "trang trọng, chính thức"
     }
   },
   {
     "id": "off-48",
     "topic": "Office Work",
     "word": "remove",
-    "phonetic": "/ɹɪmˈuːv/",
+    "phonetic": "/riˈmuv/",
     "pos": "verb",
     "meaning": "xoá, dẹp; đuổi, cách chức",
-    "example": "The team plans to remove before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"xoá, dẹp; đuổi, cách chức\" trước thời hạn.",
+    "example": "Please remove the damaged parts.",
+    "exampleTranslation": "Hãy tháo các bộ phận bị hỏng.",
     "translations": {
       "vi": "xoá, dẹp; đuổi, cách chức"
     }
@@ -1636,37 +1623,37 @@ export const VOCABULARY: Word[] = [
     "id": "off-49",
     "topic": "Office Work",
     "word": "collect",
-    "phonetic": "/kəˈɫɛkt/",
+    "phonetic": "/kəˈlɛkt/",
     "pos": "verb",
-    "meaning": "thu thập,t ập hợp",
-    "example": "The team plans to collect before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thu thập,t ập hợp\" trước thời hạn.",
+    "meaning": "thu thập, tập hợp",
+    "example": "Please collect the completed forms.",
+    "exampleTranslation": "Hãy thu thập các biểu mẫu đã điền.",
     "translations": {
-      "vi": "thu thập,t ập hợp"
+      "vi": "thu thập, tập hợp"
     }
   },
   {
     "id": "off-50",
     "topic": "Office Work",
     "word": "coordinate",
-    "phonetic": "/koʊˈɔɹdəˌneɪt/",
+    "phonetic": "/koʊˈɔrdəneɪt/",
     "pos": "verb",
-    "meaning": "điều phối,kết hợp",
-    "example": "The team plans to coordinate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"điều phối,kết hợp\" trước thời hạn.",
+    "meaning": "điều phối, kết hợp",
+    "example": "Please coordinate the delivery schedule.",
+    "exampleTranslation": "Hãy điều phối lịch giao hàng.",
     "translations": {
-      "vi": "điều phối,kết hợp"
+      "vi": "điều phối, kết hợp"
     }
   },
   {
     "id": "off-51",
     "topic": "Office Work",
     "word": "hardly",
-    "phonetic": "/hˈɑːdli/",
-    "pos": "adv",
+    "phonetic": "/ˈhɑrdli/",
+    "pos": "adverb",
     "meaning": "hiếm khi, khó khăn, hầu như không",
-    "example": "The team completed the task hardly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"hiếm khi, khó khăn, hầu như không\".",
+    "example": "We could hardly hear the announcement.",
+    "exampleTranslation": "Chúng tôi gần như không nghe được thông báo.",
     "translations": {
       "vi": "hiếm khi, khó khăn, hầu như không"
     }
@@ -1675,11 +1662,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-52",
     "topic": "Office Work",
     "word": "skillfully",
-    "phonetic": "/skˈɪlfəli/",
-    "pos": "adv",
+    "phonetic": "/ˈskɪlfəli/",
+    "pos": "adverb",
     "meaning": "thành thạo, khéo léo",
-    "example": "The team completed the task skillfully.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"thành thạo, khéo léo\".",
+    "example": "The technician repaired the device skillfully.",
+    "exampleTranslation": "Kỹ thuật viên sửa thiết bị khéo léo.",
     "translations": {
       "vi": "thành thạo, khéo léo"
     }
@@ -1688,50 +1675,50 @@ export const VOCABULARY: Word[] = [
     "id": "off-53",
     "topic": "Office Work",
     "word": "exclusive",
-    "phonetic": "/ɛksklˈuːsɪv/",
-    "pos": "adj",
-    "meaning": "riêng biệ t, độc quy ền",
-    "example": "The manager described the proposal as exclusive.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"riêng biệ t, độc quy ền\".",
+    "phonetic": "/ɪkˈsklusɪv/",
+    "pos": "adjective",
+    "meaning": "riêng biệt, độc quyền",
+    "example": "Members receive exclusive access to the lounge.",
+    "exampleTranslation": "Hội viên được quyền sử dụng phòng chờ riêng.",
     "translations": {
-      "vi": "riêng biệ t, độc quy ền"
+      "vi": "riêng biệt, độc quyền"
     }
   },
   {
     "id": "off-54",
     "topic": "Office Work",
     "word": "intention",
-    "phonetic": "/ɪntˈɛnʃən/",
+    "phonetic": "/ɪnˈtɛntʃən/",
     "pos": "noun",
-    "meaning": "ýđịnh, mục đích,ý muốn",
-    "example": "The team discussed the intention during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"ýđịnh, mục đích,ý muốn\" trong cuộc họp.",
+    "meaning": "ý định, mục đích, ý muốn",
+    "example": "We discussed the intention at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về ý định tại cuộc họp.",
     "translations": {
-      "vi": "ýđịnh, mục đích,ý muốn"
+      "vi": "ý định, mục đích, ý muốn"
     }
   },
   {
     "id": "off-55",
     "topic": "Office Work",
     "word": "disturbing",
-    "phonetic": "/dɪstˈɜːbɪŋ/",
-    "pos": "adj",
-    "meaning": "làm nhiễu loạn, làmx áo tr ộn",
-    "example": "The manager described the proposal as disturbing.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"làm nhiễu loạn, làmx áo tr ộn\".",
+    "phonetic": "/dɪˈstɝbɪŋ/",
+    "pos": "adjective",
+    "meaning": "làm nhiễu loạn, làm xáo trộn",
+    "example": "The report contained disturbing findings.",
+    "exampleTranslation": "Báo cáo chứa những phát hiện đáng lo ngại.",
     "translations": {
-      "vi": "làm nhiễu loạn, làmx áo tr ộn"
+      "vi": "làm nhiễu loạn, làm xáo trộn"
     }
   },
   {
     "id": "off-56",
     "topic": "Office Work",
     "word": "foster",
-    "phonetic": "/fˈɒstɐ/",
+    "phonetic": "/ˈfɑstɚ/",
     "pos": "verb",
     "meaning": "thúc đẩy, bồi dưỡng, bồi đắp",
-    "example": "The team plans to foster before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thúc đẩy, bồi dưỡng, bồi đắp\" trước thời hạn.",
+    "example": "Please foster cooperation between departments.",
+    "exampleTranslation": "Hãy thúc đẩy sự hợp tác giữa các phòng ban.",
     "translations": {
       "vi": "thúc đẩy, bồi dưỡng, bồi đắp"
     }
@@ -1740,11 +1727,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-57",
     "topic": "Office Work",
     "word": "neutrality",
-    "phonetic": "/njuːtɹˈælɪti/",
+    "phonetic": "/nuˈtræləti/",
     "pos": "noun",
     "meaning": "tính chất trung lập, thái độ trung lập",
-    "example": "The team discussed the neutrality during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tính chất trung lập, thái độ trung lập\" trong cuộc họp.",
+    "example": "We discussed the neutrality at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về tính chất trung lập tại cuộc họp.",
     "translations": {
       "vi": "tính chất trung lập, thái độ trung lập"
     }
@@ -1753,24 +1740,24 @@ export const VOCABULARY: Word[] = [
     "id": "off-58",
     "topic": "Office Work",
     "word": "widely",
-    "phonetic": "/wˈaɪdli/",
-    "pos": "adv",
-    "meaning": "rộng, nhiều,xa",
-    "example": "The team completed the task widely.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"rộng, nhiều,xa\".",
+    "phonetic": "/ˈwaɪdli/",
+    "pos": "adverb",
+    "meaning": "rộng, nhiều, xa",
+    "example": "This software is widely used in offices.",
+    "exampleTranslation": "Phần mềm này được dùng rộng rãi trong các văn phòng.",
     "translations": {
-      "vi": "rộng, nhiều,xa"
+      "vi": "rộng, nhiều, xa"
     }
   },
   {
     "id": "off-59",
     "topic": "Office Work",
     "word": "undertake",
-    "phonetic": "/ˌʌndətˈeɪk/",
+    "phonetic": "/ˈʌndɚteɪk/",
     "pos": "verb",
     "meaning": "đảm nhận, tiếp quản",
-    "example": "The team plans to undertake before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đảm nhận, tiếp quản\" trước thời hạn.",
+    "example": "Please undertake a detailed investigation.",
+    "exampleTranslation": "Hãy tiến hành một cuộc điều tra chi tiết.",
     "translations": {
       "vi": "đảm nhận, tiếp quản"
     }
@@ -1779,11 +1766,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-60",
     "topic": "Office Work",
     "word": "manner",
-    "phonetic": "/mˈænɐ/",
+    "phonetic": "/ˈmænɚ/",
     "pos": "noun",
     "meaning": "cách, lối; thái độ, cử chỉ",
-    "example": "The team discussed the manner during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cách, lối; thái độ, cử chỉ\" trong cuộc họp.",
+    "example": "We discussed the manner at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về cách tại cuộc họp.",
     "translations": {
       "vi": "cách, lối; thái độ, cử chỉ"
     }
@@ -1792,11 +1779,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-61",
     "topic": "Office Work",
     "word": "adjust",
-    "phonetic": "/ɐdʒˈʌst/",
+    "phonetic": "/əˈdʒʌst/",
     "pos": "verb",
     "meaning": "điều chỉnh, làm cho thích hợp",
-    "example": "The team plans to adjust before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"điều chỉnh, làm cho thích hợp\" trước thời hạn.",
+    "example": "Please adjust the seat height.",
+    "exampleTranslation": "Hãy điều chỉnh độ cao của ghế.",
     "translations": {
       "vi": "điều chỉnh, làm cho thích hợp"
     }
@@ -1805,11 +1792,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-62",
     "topic": "Office Work",
     "word": "personnel",
-    "phonetic": "/pˌɜːsənˈɛl/",
+    "phonetic": "/pɝsəˈnɛl/",
     "pos": "noun",
     "meaning": "nhân viên, công chức",
-    "example": "The team discussed the personnel during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nhân viên, công chức\" trong cuộc họp.",
+    "example": "The personnel department handles recruitment.",
+    "exampleTranslation": "Phòng nhân sự phụ trách tuyển dụng.",
     "translations": {
       "vi": "nhân viên, công chức"
     }
@@ -1818,11 +1805,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-63",
     "topic": "Office Work",
     "word": "abstract",
-    "phonetic": "/ˈæbˌstɹækt/",
-    "pos": "adj",
+    "phonetic": "/ˈæbstrækt/",
+    "pos": "adjective",
     "meaning": "trừu tượng, mơ hồ",
-    "example": "The manager described the proposal as abstract.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"trừu tượng, mơ hồ\".",
+    "example": "The lecture introduced an abstract concept.",
+    "exampleTranslation": "Bài giảng giới thiệu một khái niệm trừu tượng.",
     "translations": {
       "vi": "trừu tượng, mơ hồ"
     }
@@ -1831,24 +1818,24 @@ export const VOCABULARY: Word[] = [
     "id": "off-64",
     "topic": "Office Work",
     "word": "directory",
-    "phonetic": "/daɪɹˈɛktəɹˌi/",
+    "phonetic": "/dɚˈɛktɚi/",
     "pos": "noun",
-    "meaning": "danh bạ,sổ địa chỉ",
-    "example": "The team discussed the directory during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"danh bạ,sổ địa chỉ\" trong cuộc họp.",
+    "meaning": "danh bạ, sổ địa chỉ",
+    "example": "Please read the directory carefully.",
+    "exampleTranslation": "Hãy đọc danh bạ cẩn thận.",
     "translations": {
-      "vi": "danh bạ,sổ địa chỉ"
+      "vi": "danh bạ, sổ địa chỉ"
     }
   },
   {
     "id": "off-65",
     "topic": "Office Work",
     "word": "transform",
-    "phonetic": "/ˈtɹænsfɔɹm/",
+    "phonetic": "/trænˈsfɔrm/",
     "pos": "verb",
     "meaning": "biến đổi, thay đổi",
-    "example": "The team plans to transform before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"biến đổi, thay đổi\" trước thời hạn.",
+    "example": "Please transform the empty room into an office.",
+    "exampleTranslation": "Hãy biến căn phòng trống thành văn phòng.",
     "translations": {
       "vi": "biến đổi, thay đổi"
     }
@@ -1857,63 +1844,63 @@ export const VOCABULARY: Word[] = [
     "id": "off-66",
     "topic": "Office Work",
     "word": "respectful",
-    "phonetic": "/ɹɪspˈɛktfəl/",
-    "pos": "adj",
-    "meaning": "tôn tr ọng, lễ phép, kính cẩn",
-    "example": "The manager described the proposal as respectful.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tôn tr ọng, lễ phép, kính cẩn\".",
+    "phonetic": "/rɪˈspɛktfəl/",
+    "pos": "adjective",
+    "meaning": "tôn trọng, lễ phép, kính cẩn",
+    "example": "The employee seemed respectful during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ lễ phép trong buổi phỏng vấn.",
     "translations": {
-      "vi": "tôn tr ọng, lễ phép, kính cẩn"
+      "vi": "tôn trọng, lễ phép, kính cẩn"
     }
   },
   {
     "id": "off-67",
     "topic": "Office Work",
     "word": "duplicate",
-    "phonetic": "/ˈdupɫəˌkeɪt/",
+    "phonetic": "/ˈduplɪkət/",
     "pos": "noun",
-    "meaning": "bảns ao",
-    "example": "The team discussed the duplicate during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bảns ao\" trong cuộc họp.",
+    "meaning": "bản sao",
+    "example": "We inspected the duplicate yesterday.",
+    "exampleTranslation": "Chúng tôi kiểm tra bản sao hôm qua.",
     "translations": {
-      "vi": "bảns ao"
+      "vi": "bản sao"
     }
   },
   {
     "id": "off-68",
     "topic": "Office Work",
     "word": "contrary",
-    "phonetic": "/ˈkɑntɹɛɹi/",
-    "pos": "noun",
-    "meaning": "sự tr ái ngược, điều ngược lại",
-    "example": "The team discussed the contrary during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự tr ái ngược, điều ngược lại\" trong cuộc họp.",
+    "phonetic": "/ˈkɑntrɛri/",
+    "pos": "adjective",
+    "meaning": "trái ngược, đối lập",
+    "example": "The decision was contrary to our expectations.",
+    "exampleTranslation": "Quyết định trái với kỳ vọng của chúng tôi.",
     "translations": {
-      "vi": "sự tr ái ngược, điều ngược lại"
+      "vi": "trái ngược, đối lập"
     }
   },
   {
     "id": "off-69",
     "topic": "Office Work",
     "word": "engage",
-    "phonetic": "/ɛnɡˈeɪdʒ/",
+    "phonetic": "/ɛnˈɡeɪdʒ/",
     "pos": "verb",
-    "meaning": "tham gia, camkế t, thu hút",
-    "example": "The team plans to engage before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tham gia, camkế t, thu hút\" trước thời hạn.",
+    "meaning": "tham gia, cam kết, thu hút",
+    "example": "Please engage in the discussion.",
+    "exampleTranslation": "Hãy tham gia cuộc thảo luận.",
     "translations": {
-      "vi": "tham gia, camkế t, thu hút"
+      "vi": "tham gia, cam kết, thu hút"
     }
   },
   {
     "id": "off-70",
     "topic": "Office Work",
     "word": "timely",
-    "phonetic": "/tˈaɪmli/",
-    "pos": "adj",
+    "phonetic": "/ˈtaɪmli/",
+    "pos": "adjective",
     "meaning": "kịp thời",
-    "example": "The manager described the proposal as timely.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"kịp thời\".",
+    "example": "Thank you for your timely response.",
+    "exampleTranslation": "Cảm ơn bạn đã phản hồi kịp thời.",
     "translations": {
       "vi": "kịp thời"
     }
@@ -1922,11 +1909,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-71",
     "topic": "Office Work",
     "word": "realistically",
-    "phonetic": "/ɹiəlˈɪstɪkli/",
-    "pos": "adv",
+    "phonetic": "/riəˈlɪstɪkli/",
+    "pos": "adverb",
     "meaning": "theo thực tế, thực tế là",
-    "example": "The team completed the task realistically.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"theo thực tế, thực tế là\".",
+    "example": "We must assess the situation realistically.",
+    "exampleTranslation": "Chúng ta phải đánh giá tình hình một cách thực tế.",
     "translations": {
       "vi": "theo thực tế, thực tế là"
     }
@@ -1935,11 +1922,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-72",
     "topic": "Office Work",
     "word": "promptly",
-    "phonetic": "/pɹˈɒmptli/",
-    "pos": "adv",
+    "phonetic": "/ˈprɑmptli/",
+    "pos": "adverb",
     "meaning": "nhanh chóng, ngay lập tức, đúng giờ",
-    "example": "The team completed the task promptly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"nhanh chóng, ngay lập tức, đúng giờ\".",
+    "example": "The supplier responded promptly to our request.",
+    "exampleTranslation": "Nhà cung cấp phản hồi yêu cầu nhanh chóng.",
     "translations": {
       "vi": "nhanh chóng, ngay lập tức, đúng giờ"
     }
@@ -1948,24 +1935,24 @@ export const VOCABULARY: Word[] = [
     "id": "off-73",
     "topic": "Office Work",
     "word": "accessible",
-    "phonetic": "/ɐksˈɛsəbəl/",
-    "pos": "adv",
-    "meaning": "có thể truy cập/ tiếp cận được,",
-    "example": "The team completed the task accessible.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"có thể truy cập/ tiếp cận được,\".",
+    "phonetic": "/ækˈsɛsəbəl/",
+    "pos": "adjective",
+    "meaning": "có thể truy cập, tiếp cận được",
+    "example": "The building is accessible to wheelchair users.",
+    "exampleTranslation": "Người dùng xe lăn có thể tiếp cận tòa nhà.",
     "translations": {
-      "vi": "có thể truy cập/ tiếp cận được,"
+      "vi": "có thể truy cập, tiếp cận được"
     }
   },
   {
     "id": "off-74",
     "topic": "Office Work",
     "word": "implement",
-    "phonetic": "/ˈɪmpɫəmənt/",
+    "phonetic": "/ˈɪmpləmənt/",
     "pos": "verb",
     "meaning": "thi hành, tiến hành",
-    "example": "The team plans to implement before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thi hành, tiến hành\" trước thời hạn.",
+    "example": "Please implement the new policy.",
+    "exampleTranslation": "Hãy triển khai chính sách mới.",
     "translations": {
       "vi": "thi hành, tiến hành"
     }
@@ -1974,37 +1961,37 @@ export const VOCABULARY: Word[] = [
     "id": "off-75",
     "topic": "Office Work",
     "word": "feedback",
-    "phonetic": "/fˈiːdbæk/",
+    "phonetic": "/ˈfidbæk/",
     "pos": "noun",
-    "meaning": "phản hồi,ý kiến nhậnx ét",
-    "example": "The team discussed the feedback during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"phản hồi,ý kiến nhậnx ét\" trong cuộc họp.",
+    "meaning": "phản hồi, ý kiến nhận xét",
+    "example": "We discussed the feedback at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về phản hồi tại cuộc họp.",
     "translations": {
-      "vi": "phản hồi,ý kiến nhậnx ét"
+      "vi": "phản hồi, ý kiến nhận xét"
     }
   },
   {
     "id": "off-76",
     "topic": "Office Work",
     "word": "outstanding",
-    "phonetic": "/aʊtstˈændɪŋ/",
-    "pos": "adj",
-    "meaning": "nội bật, đáng chú ý; cònt ồnt ại,",
-    "example": "The manager described the proposal as outstanding.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"nội bật, đáng chú ý; cònt ồnt ại,\".",
+    "phonetic": "/aʊtˈstændɪŋ/",
+    "pos": "adjective",
+    "meaning": "nổi bật, xuất sắc; chưa thanh toán, chưa giải quyết",
+    "example": "The proposed plan is outstanding.",
+    "exampleTranslation": "Kế hoạch được đề xuất nổi bật.",
     "translations": {
-      "vi": "nội bật, đáng chú ý; cònt ồnt ại,"
+      "vi": "nổi bật, xuất sắc; chưa thanh toán, chưa giải quyết"
     }
   },
   {
     "id": "off-77",
     "topic": "Office Work",
     "word": "inform",
-    "phonetic": "/ɪnfˈɔːm/",
+    "phonetic": "/ɪnˈfɔrm/",
     "pos": "verb",
     "meaning": "thông báo, báo tin",
-    "example": "The team plans to inform before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thông báo, báo tin\" trước thời hạn.",
+    "example": "Please inform us of any changes.",
+    "exampleTranslation": "Hãy thông báo cho chúng tôi về mọi thay đổi.",
     "translations": {
       "vi": "thông báo, báo tin"
     }
@@ -2013,11 +2000,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-78",
     "topic": "Office Work",
     "word": "replacement",
-    "phonetic": "/ɹɪplˈeɪsmənt/",
+    "phonetic": "/rɪˈpleɪsmənt/",
     "pos": "noun",
     "meaning": "sự thay thế, vật/ người thay thế",
-    "example": "The team discussed the replacement during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự thay thế, vật/ người thay thế\" trong cuộc họp.",
+    "example": "We discussed the replacement at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự thay thế tại cuộc họp.",
     "translations": {
       "vi": "sự thay thế, vật/ người thay thế"
     }
@@ -2026,11 +2013,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-79",
     "topic": "Office Work",
     "word": "announcement",
-    "phonetic": "/ɐnˈaʊnsmənt/",
+    "phonetic": "/əˈnaʊnsmənt/",
     "pos": "noun",
     "meaning": "thông cáo, thông báo",
-    "example": "The team discussed the announcement during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thông cáo, thông báo\" trong cuộc họp.",
+    "example": "Please read the announcement carefully.",
+    "exampleTranslation": "Hãy đọc thông cáo cẩn thận.",
     "translations": {
       "vi": "thông cáo, thông báo"
     }
@@ -2042,8 +2029,8 @@ export const VOCABULARY: Word[] = [
     "phonetic": "/ˈaʊtlaɪn/",
     "pos": "noun",
     "meaning": "bản thảo, nét phác thảo, dàn bài",
-    "example": "The team discussed the outline during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bản thảo, nét phác thảo, dàn bài\" trong cuộc họp.",
+    "example": "Please prepare an outline of the report.",
+    "exampleTranslation": "Hãy chuẩn bị đề cương báo cáo.",
     "translations": {
       "vi": "bản thảo, nét phác thảo, dàn bài"
     }
@@ -2052,11 +2039,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-81",
     "topic": "Office Work",
     "word": "explain",
-    "phonetic": "/ɛksplˈeɪn/",
+    "phonetic": "/ɪkˈspleɪn/",
     "pos": "verb",
     "meaning": "giải thích, giảng giải",
-    "example": "The team plans to explain before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giải thích, giảng giải\" trước thời hạn.",
+    "example": "Please explain the payment terms.",
+    "exampleTranslation": "Hãy giải thích các điều khoản thanh toán.",
     "translations": {
       "vi": "giải thích, giảng giải"
     }
@@ -2065,24 +2052,24 @@ export const VOCABULARY: Word[] = [
     "id": "off-82",
     "topic": "Office Work",
     "word": "overview",
-    "phonetic": "/ˈəʊvəvjˌuː/",
+    "phonetic": "/ˈoʊvɚvju/",
     "pos": "noun",
-    "meaning": "tổng quát, khái quát",
-    "example": "The team discussed the overview during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tổng quát, khái quát\" trong cuộc họp.",
+    "meaning": "cái nhìn tổng quan, bản tổng quan",
+    "example": "The report provides an overview of the project.",
+    "exampleTranslation": "Báo cáo cung cấp cái nhìn tổng quan về dự án.",
     "translations": {
-      "vi": "tổng quát, khái quát"
+      "vi": "cái nhìn tổng quan, bản tổng quan"
     }
   },
   {
     "id": "off-83",
     "topic": "Office Work",
     "word": "matter",
-    "phonetic": "/mˈætɐ/",
+    "phonetic": "/ˈmætɚ/",
     "pos": "noun",
     "meaning": "vấn đề, công việc",
-    "example": "The team discussed the matter during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"vấn đề, công việc\" trong cuộc họp.",
+    "example": "We discussed the matter at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về vấn đề tại cuộc họp.",
     "translations": {
       "vi": "vấn đề, công việc"
     }
@@ -2091,11 +2078,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-84",
     "topic": "Office Work",
     "word": "remainder",
-    "phonetic": "/ɹɪmˈeɪndɐ/",
+    "phonetic": "/rɪˈmeɪndɚ/",
     "pos": "noun",
     "meaning": "người/ vật còn lại, phần còn lại",
-    "example": "The team discussed the remainder during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"người/ vật còn lại, phần còn lại\" trong cuộc họp.",
+    "example": "We discussed the remainder at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về người/ vật còn lại tại cuộc họp.",
     "translations": {
       "vi": "người/ vật còn lại, phần còn lại"
     }
@@ -2104,11 +2091,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-85",
     "topic": "Office Work",
     "word": "essential",
-    "phonetic": "/ɪsˈɛnʃəl/",
-    "pos": "adj",
+    "phonetic": "/ɛˈsɛnʃəl/",
+    "pos": "adjective",
     "meaning": "cần thiết, thiết yếu, cốt yếu",
-    "example": "The manager described the proposal as essential.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"cần thiết, thiết yếu, cốt yếu\".",
+    "example": "The proposed plan is essential.",
+    "exampleTranslation": "Kế hoạch được đề xuất cần thiết.",
     "translations": {
       "vi": "cần thiết, thiết yếu, cốt yếu"
     }
@@ -2117,11 +2104,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-86",
     "topic": "Office Work",
     "word": "divide",
-    "phonetic": "/dɪvˈaɪd/",
+    "phonetic": "/dɪˈvaɪd/",
     "pos": "verb",
     "meaning": "chia ra, phân chia",
-    "example": "The team plans to divide before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chia ra, phân chia\" trước thời hạn.",
+    "example": "Please divide the work equally.",
+    "exampleTranslation": "Hãy chia đều công việc.",
     "translations": {
       "vi": "chia ra, phân chia"
     }
@@ -2130,11 +2117,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-87",
     "topic": "Office Work",
     "word": "major",
-    "phonetic": "/mˈeɪdʒɐ/",
-    "pos": "adj",
+    "phonetic": "/ˈmeɪdʒɚ/",
+    "pos": "adjective",
     "meaning": "chủ yếu, chủ chốt, trọng đại",
-    "example": "The manager described the proposal as major.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"chủ yếu, chủ chốt, trọng đại\".",
+    "example": "The delay caused a major problem.",
+    "exampleTranslation": "Sự chậm trễ gây ra vấn đề lớn.",
     "translations": {
       "vi": "chủ yếu, chủ chốt, trọng đại"
     }
@@ -2143,11 +2130,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-88",
     "topic": "Office Work",
     "word": "face",
-    "phonetic": "/fˈeɪs/",
+    "phonetic": "/ˈfeɪs/",
     "pos": "verb",
     "meaning": "đương đầu, đối mặt, hướng về",
-    "example": "The team plans to face before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đương đầu, đối mặt, hướng về\" trước thời hạn.",
+    "example": "Please face the problem directly.",
+    "exampleTranslation": "Hãy đối mặt trực tiếp với vấn đề.",
     "translations": {
       "vi": "đương đầu, đối mặt, hướng về"
     }
@@ -2156,11 +2143,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-89",
     "topic": "Office Work",
     "word": "follow",
-    "phonetic": "/fˈɒləʊ/",
+    "phonetic": "/ˈfɑloʊ/",
     "pos": "verb",
     "meaning": "làm theo, theo dõi, chú ý, theo kịp",
-    "example": "The team plans to follow before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm theo, theo dõi, chú ý, theo kịp\" trước thời hạn.",
+    "example": "Please follow the instructions carefully.",
+    "exampleTranslation": "Hãy làm theo hướng dẫn cẩn thận.",
     "translations": {
       "vi": "làm theo, theo dõi, chú ý, theo kịp"
     }
@@ -2169,11 +2156,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-90",
     "topic": "Office Work",
     "word": "apparently",
-    "phonetic": "/ɐpˈæɹəntli/",
-    "pos": "adv",
+    "phonetic": "/əˈpɛrəntli/",
+    "pos": "adverb",
     "meaning": "hình như",
-    "example": "The team completed the task apparently.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"hình như\".",
+    "example": "Apparently, the meeting has been postponed.",
+    "exampleTranslation": "Có vẻ cuộc họp đã bị hoãn.",
     "translations": {
       "vi": "hình như"
     }
@@ -2182,50 +2169,50 @@ export const VOCABULARY: Word[] = [
     "id": "off-91",
     "topic": "Office Work",
     "word": "aware",
-    "phonetic": "/ɐwˈeə/",
-    "pos": "adv",
-    "meaning": "biế t, nhận thấy, nhận thức được",
-    "example": "The team completed the task aware.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"biế t, nhận thấy, nhận thức được\".",
+    "phonetic": "/əˈwɛr/",
+    "pos": "adjective",
+    "meaning": "biết, nhận thấy, nhận thức được",
+    "example": "The staff are aware of the risks.",
+    "exampleTranslation": "Nhân viên nhận thức được những rủi ro.",
     "translations": {
-      "vi": "biế t, nhận thấy, nhận thức được"
+      "vi": "biết, nhận thấy, nhận thức được"
     }
   },
   {
     "id": "off-92",
     "topic": "Office Work",
     "word": "extended",
-    "phonetic": "/ɛkstˈɛndɪd/",
-    "pos": "adj",
-    "meaning": "mởr ộng,k éo dài",
-    "example": "The manager described the proposal as extended.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"mởr ộng,k éo dài\".",
+    "phonetic": "/ɪkˈstɛndəd/",
+    "pos": "adjective",
+    "meaning": "mở rộng, kéo dài",
+    "example": "The hotel offers an extended stay package.",
+    "exampleTranslation": "Khách sạn cung cấp gói lưu trú dài ngày.",
     "translations": {
-      "vi": "mởr ộng,k éo dài"
+      "vi": "mở rộng, kéo dài"
     }
   },
   {
     "id": "off-93",
     "topic": "Office Work",
     "word": "accidentally",
-    "phonetic": "/ˌæksɪdˈɛntəli/",
-    "pos": "adv",
-    "meaning": "tình cờ, ngoàiý muốn",
-    "example": "The team completed the task accidentally.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"tình cờ, ngoàiý muốn\".",
+    "phonetic": "/æksəˈdɛntəli/",
+    "pos": "adverb",
+    "meaning": "tình cờ, ngoài ý muốn",
+    "example": "I accidentally deleted the wrong file.",
+    "exampleTranslation": "Tôi vô tình xóa nhầm tệp.",
     "translations": {
-      "vi": "tình cờ, ngoàiý muốn"
+      "vi": "tình cờ, ngoài ý muốn"
     }
   },
   {
     "id": "off-94",
     "topic": "Office Work",
     "word": "advisable",
-    "phonetic": "/ɐdvˈaɪzəbəl/",
-    "pos": "adj",
+    "phonetic": "/ədˈvaɪzəbəl/",
+    "pos": "adjective",
     "meaning": "nên làm, thích hợp",
-    "example": "The manager described the proposal as advisable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"nên làm, thích hợp\".",
+    "example": "It is advisable to book early.",
+    "exampleTranslation": "Nên đặt chỗ sớm.",
     "translations": {
       "vi": "nên làm, thích hợp"
     }
@@ -2234,11 +2221,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-95",
     "topic": "Office Work",
     "word": "concerned",
-    "phonetic": "/kənsˈɜːnd/",
-    "pos": "adj",
+    "phonetic": "/kənˈsɝnd/",
+    "pos": "adjective",
     "meaning": "lo lắng, lo âu, có liên quan đến",
-    "example": "The manager described the proposal as concerned.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"lo lắng, lo âu, có liên quan đến\".",
+    "example": "The employee seemed concerned during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ lo lắng trong buổi phỏng vấn.",
     "translations": {
       "vi": "lo lắng, lo âu, có liên quan đến"
     }
@@ -2247,11 +2234,11 @@ export const VOCABULARY: Word[] = [
     "id": "off-96",
     "topic": "Office Work",
     "word": "speak",
-    "phonetic": "/spˈiːk/",
+    "phonetic": "/ˈspik/",
     "pos": "verb",
     "meaning": "nói",
-    "example": "The team plans to speak before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nói\" trước thời hạn.",
+    "example": "Please speak to the manager.",
+    "exampleTranslation": "Hãy nói chuyện với người quản lý.",
     "translations": {
       "vi": "nói"
     }
@@ -2260,11 +2247,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-01",
     "topic": "Leisure Time, Community",
     "word": "exhibition",
-    "phonetic": "/ɛksɪbˈɪʃən/",
+    "phonetic": "/ɛksəˈbɪʃən/",
     "pos": "noun",
     "meaning": "cuộc triển lãm, sự trưng bày",
-    "example": "The team discussed the exhibition during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cuộc triển lãm, sự trưng bày\" trong cuộc họp.",
+    "example": "We discussed the exhibition at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về cuộc triển lãm tại cuộc họp.",
     "translations": {
       "vi": "cuộc triển lãm, sự trưng bày"
     }
@@ -2273,37 +2260,37 @@ export const VOCABULARY: Word[] = [
     "id": "lei-02",
     "topic": "Leisure Time, Community",
     "word": "live",
-    "phonetic": "/ˈɫaɪv/",
-    "pos": "adj",
-    "meaning": "pháts óng trực tiếp (r adio, tv),s ống",
-    "example": "The manager described the proposal as live.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"pháts óng trực tiếp (r adio, tv),s ống\".",
+    "phonetic": "/laɪv/",
+    "pos": "adjective",
+    "meaning": "trực tiếp; còn sống",
+    "example": "We watched a live broadcast of the event.",
+    "exampleTranslation": "Chúng tôi xem chương trình phát sóng trực tiếp của sự kiện.",
     "translations": {
-      "vi": "pháts óng trực tiếp (r adio, tv),s ống"
+      "vi": "trực tiếp; còn sống"
     }
   },
   {
     "id": "lei-03",
     "topic": "Leisure Time, Community",
     "word": "donation",
-    "phonetic": "/dəʊnˈeɪʃən/",
+    "phonetic": "/doʊˈneɪʃən/",
     "pos": "noun",
-    "meaning": "sự quy ên góp, từ thiện, sựt ặng",
-    "example": "The team discussed the donation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự quy ên góp, từ thiện, sựt ặng\" trong cuộc họp.",
+    "meaning": "sự quyên góp, sự tặng, khoản đóng góp",
+    "example": "We discussed the donation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự quyên góp tại cuộc họp.",
     "translations": {
-      "vi": "sự quy ên góp, từ thiện, sựt ặng"
+      "vi": "sự quyên góp, sự tặng, khoản đóng góp"
     }
   },
   {
     "id": "lei-04",
     "topic": "Leisure Time, Community",
     "word": "present",
-    "phonetic": "/ˈpɹɛzənt/",
+    "phonetic": "/prɪˈzɛnt/",
     "pos": "verb",
     "meaning": "trình bày, giới thiệu",
-    "example": "The team plans to present before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"trình bày, giới thiệu\" trước thời hạn.",
+    "example": "Please present the survey results.",
+    "exampleTranslation": "Hãy trình bày kết quả khảo sát.",
     "translations": {
       "vi": "trình bày, giới thiệu"
     }
@@ -2312,24 +2299,24 @@ export const VOCABULARY: Word[] = [
     "id": "lei-05",
     "topic": "Leisure Time, Community",
     "word": "required",
-    "phonetic": "/ɹɪkwˈaɪəd/",
-    "pos": "adj",
-    "meaning": "cần thiế t, đượcy êu cầu, phải có",
-    "example": "The manager described the proposal as required.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"cần thiế t, đượcy êu cầu, phải có\".",
+    "phonetic": "/riˈkwaɪɚd/",
+    "pos": "adjective",
+    "meaning": "cần thiết, được yêu cầu, phải có",
+    "example": "Please submit all the required documents.",
+    "exampleTranslation": "Hãy nộp tất cả tài liệu được yêu cầu.",
     "translations": {
-      "vi": "cần thiế t, đượcy êu cầu, phải có"
+      "vi": "cần thiết, được yêu cầu, phải có"
     }
   },
   {
     "id": "lei-06",
     "topic": "Leisure Time, Community",
     "word": "appear",
-    "phonetic": "/ɐpˈiə/",
+    "phonetic": "/əˈpɪr/",
     "pos": "verb",
     "meaning": "xuất hiện, trình diện",
-    "example": "The team plans to appear before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"xuất hiện, trình diện\" trước thời hạn.",
+    "example": "Their names appear on the guest list.",
+    "exampleTranslation": "Tên của họ có tên trong danh sách khách mời.",
     "translations": {
       "vi": "xuất hiện, trình diện"
     }
@@ -2338,11 +2325,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-07",
     "topic": "Leisure Time, Community",
     "word": "accompany",
-    "phonetic": "/ɐkˈʌmpəni/",
+    "phonetic": "/əˈkʌmpəni/",
     "pos": "verb",
     "meaning": "đi cùng ai đó, kèm theo",
-    "example": "The team plans to accompany before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đi cùng ai đó, kèm theo\" trước thời hạn.",
+    "example": "Please accompany visitors to the conference room.",
+    "exampleTranslation": "Hãy đi cùng khách đến phòng hội nghị.",
     "translations": {
       "vi": "đi cùng ai đó, kèm theo"
     }
@@ -2351,50 +2338,50 @@ export const VOCABULARY: Word[] = [
     "id": "lei-08",
     "topic": "Leisure Time, Community",
     "word": "note",
-    "phonetic": "/nˈəʊt/",
+    "phonetic": "/ˈnoʊt/",
     "pos": "verb",
-    "meaning": "ghi chú, lưuý",
-    "example": "The team plans to note before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"ghi chú, lưuý\" trước thời hạn.",
+    "meaning": "ghi chú, lưu ý",
+    "example": "Please note the revised deadline.",
+    "exampleTranslation": "Hãy lưu ý thời hạn đã thay đổi.",
     "translations": {
-      "vi": "ghi chú, lưuý"
+      "vi": "ghi chú, lưu ý"
     }
   },
   {
     "id": "lei-09",
     "topic": "Leisure Time, Community",
     "word": "upcoming",
-    "phonetic": "/ʌpkˈʌmɪŋ/",
-    "pos": "adj",
-    "meaning": "sắp đến,s ắpt ới",
-    "example": "The manager described the proposal as upcoming.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"sắp đến,s ắpt ới\".",
+    "phonetic": "/ˈʌpkʌmɪŋ/",
+    "pos": "adjective",
+    "meaning": "sắp đến, sắp tới",
+    "example": "The upcoming meeting will discuss the budget.",
+    "exampleTranslation": "Cuộc họp sắp tới sẽ bàn về ngân sách.",
     "translations": {
-      "vi": "sắp đến,s ắpt ới"
+      "vi": "sắp đến, sắp tới"
     }
   },
   {
     "id": "lei-10",
     "topic": "Leisure Time, Community",
     "word": "lend",
-    "phonetic": "/lˈɛnd/",
+    "phonetic": "/ˈlɛnd/",
     "pos": "verb",
-    "meaning": "cho mượn, chov ay",
-    "example": "The team plans to lend before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cho mượn, chov ay\" trước thời hạn.",
+    "meaning": "cho mượn, cho vay",
+    "example": "Please lend me your calculator.",
+    "exampleTranslation": "Hãy cho tôi mượn máy tính bỏ túi.",
     "translations": {
-      "vi": "cho mượn, chov ay"
+      "vi": "cho mượn, cho vay"
     }
   },
   {
     "id": "lei-11",
     "topic": "Leisure Time, Community",
     "word": "local",
-    "phonetic": "/lˈəʊkəl/",
-    "pos": "adj",
+    "phonetic": "/ˈloʊkəl/",
+    "pos": "adjective",
     "meaning": "địa phương, cục bộ",
-    "example": "The manager described the proposal as local.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"địa phương, cục bộ\".",
+    "example": "We buy supplies from local businesses.",
+    "exampleTranslation": "Chúng tôi mua vật tư từ doanh nghiệp địa phương.",
     "translations": {
       "vi": "địa phương, cục bộ"
     }
@@ -2403,11 +2390,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-12",
     "topic": "Leisure Time, Community",
     "word": "contributor",
-    "phonetic": "/kəntɹˈɪbjuːtɐ/",
+    "phonetic": "/kənˈtrɪbjətɚ/",
     "pos": "noun",
     "meaning": "người cống hiến, người đóng góp",
-    "example": "The team discussed the contributor during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"người cống hiến, người đóng góp\" trong cuộc họp.",
+    "example": "The contributor answered our questions.",
+    "exampleTranslation": "Người cống hiến đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "người cống hiến, người đóng góp"
     }
@@ -2416,11 +2403,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-13",
     "topic": "Leisure Time, Community",
     "word": "fascinating",
-    "phonetic": "/fˈæsɪnˌeɪtɪŋ/",
-    "pos": "adj",
+    "phonetic": "/ˈfæsəneɪtɪŋ/",
+    "pos": "adjective",
     "meaning": "hấp dẫn, lôi cuốn, quyến rũ",
-    "example": "The manager described the proposal as fascinating.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"hấp dẫn, lôi cuốn, quyến rũ\".",
+    "example": "The proposed plan is fascinating.",
+    "exampleTranslation": "Kế hoạch được đề xuất hấp dẫn.",
     "translations": {
       "vi": "hấp dẫn, lôi cuốn, quyến rũ"
     }
@@ -2429,24 +2416,24 @@ export const VOCABULARY: Word[] = [
     "id": "lei-14",
     "topic": "Leisure Time, Community",
     "word": "showing",
-    "phonetic": "/ʃˈəʊɪŋ/",
+    "phonetic": "/ˈʃoʊɪŋ/",
     "pos": "noun",
-    "meaning": "sự trình diễn, chứngcứ",
-    "example": "The team discussed the showing during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự trình diễn, chứngcứ\" trong cuộc họp.",
+    "meaning": "suất chiếu; sự trình diễn",
+    "example": "The film's first showing starts at seven.",
+    "exampleTranslation": "Suất chiếu đầu của bộ phim bắt đầu lúc bảy giờ.",
     "translations": {
-      "vi": "sự trình diễn, chứngcứ"
+      "vi": "suất chiếu; sự trình diễn"
     }
   },
   {
     "id": "lei-15",
     "topic": "Leisure Time, Community",
     "word": "celebrity",
-    "phonetic": "/səlˈɛbɹɪti/",
+    "phonetic": "/səˈlɛbrɪti/",
     "pos": "noun",
     "meaning": "người nổi tiếng",
-    "example": "The team discussed the celebrity during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"người nổi tiếng\" trong cuộc họp.",
+    "example": "The celebrity answered our questions.",
+    "exampleTranslation": "Người nổi tiếng đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "người nổi tiếng"
     }
@@ -2455,11 +2442,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-16",
     "topic": "Leisure Time, Community",
     "word": "alumni",
-    "phonetic": "/ɐlˈʌmni/",
+    "phonetic": "/əˈlʌmnaɪ/",
     "pos": "noun",
     "meaning": "cựu sinh viên",
-    "example": "The team discussed the alumni during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cựu sinh viên\" trong cuộc họp.",
+    "example": "The university invited its alumni to the event.",
+    "exampleTranslation": "Trường đại học mời cựu sinh viên đến sự kiện.",
     "translations": {
       "vi": "cựu sinh viên"
     }
@@ -2468,11 +2455,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-17",
     "topic": "Leisure Time, Community",
     "word": "banquet",
-    "phonetic": "/bˈæŋkwɪt/",
+    "phonetic": "/ˈbæŋkwət/",
     "pos": "noun",
     "meaning": "bữa tiệc lớn",
-    "example": "The team discussed the banquet during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bữa tiệc lớn\" trong cuộc họp.",
+    "example": "We discussed the banquet at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về bữa tiệc lớn tại cuộc họp.",
     "translations": {
       "vi": "bữa tiệc lớn"
     }
@@ -2481,11 +2468,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-18",
     "topic": "Leisure Time, Community",
     "word": "anniversary",
-    "phonetic": "/ˌænɪvˈɜːsəɹˌi/",
+    "phonetic": "/ænəˈvɝsɚi/",
     "pos": "noun",
     "meaning": "lễ kỷ niệm, ngày kỷ niệm",
-    "example": "The team discussed the anniversary during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lễ kỷ niệm, ngày kỷ niệm\" trong cuộc họp.",
+    "example": "We discussed the anniversary at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về lễ kỷ niệm tại cuộc họp.",
     "translations": {
       "vi": "lễ kỷ niệm, ngày kỷ niệm"
     }
@@ -2494,11 +2481,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-19",
     "topic": "Leisure Time, Community",
     "word": "rest",
-    "phonetic": "/ɹˈɛst/",
+    "phonetic": "/ˈrɛst/",
     "pos": "verb",
     "meaning": "nghỉ ngơi, thư giãn",
-    "example": "The team plans to rest before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nghỉ ngơi, thư giãn\" trước thời hạn.",
+    "example": "Please rest after the long journey.",
+    "exampleTranslation": "Hãy nghỉ ngơi sau hành trình dài.",
     "translations": {
       "vi": "nghỉ ngơi, thư giãn"
     }
@@ -2507,11 +2494,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-20",
     "topic": "Leisure Time, Community",
     "word": "fundraising",
-    "phonetic": "/fʌndɹˈeɪzɪŋ/",
+    "phonetic": "/ˈfʌndreɪsɪŋ/",
     "pos": "noun",
     "meaning": "việc gây quỹ",
-    "example": "The team discussed the fundraising during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"việc gây quỹ\" trong cuộc họp.",
+    "example": "We discussed the fundraising at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về việc gây quỹ tại cuộc họp.",
     "translations": {
       "vi": "việc gây quỹ"
     }
@@ -2520,50 +2507,50 @@ export const VOCABULARY: Word[] = [
     "id": "lei-21",
     "topic": "Leisure Time, Community",
     "word": "issue",
-    "phonetic": "/ˈɪʃuː/",
+    "phonetic": "/ˈɪʃu/",
     "pos": "verb",
-    "meaning": "phát hành, chora mắt",
-    "example": "The team plans to issue before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phát hành, chora mắt\" trước thời hạn.",
+    "meaning": "phát hành, cho ra mắt",
+    "example": "Please issue a receipt for the payment.",
+    "exampleTranslation": "Hãy xuất biên lai cho khoản thanh toán.",
     "translations": {
-      "vi": "phát hành, chora mắt"
+      "vi": "phát hành, cho ra mắt"
     }
   },
   {
     "id": "lei-22",
     "topic": "Leisure Time, Community",
     "word": "anonymous",
-    "phonetic": "/ɐnˈɒnəməs/",
-    "pos": "adj",
-    "meaning": "giấut ên, ẩn danh, nặc danh",
-    "example": "The manager described the proposal as anonymous.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"giấut ên, ẩn danh, nặc danh\".",
+    "phonetic": "/əˈnɑnəməs/",
+    "pos": "adjective",
+    "meaning": "giấu tên, ẩn danh, nặc danh",
+    "example": "The company received an anonymous complaint.",
+    "exampleTranslation": "Công ty nhận được khiếu nại nặc danh.",
     "translations": {
-      "vi": "giấut ên, ẩn danh, nặc danh"
+      "vi": "giấu tên, ẩn danh, nặc danh"
     }
   },
   {
     "id": "lei-23",
     "topic": "Leisure Time, Community",
     "word": "commit",
-    "phonetic": "/kəmˈɪt/",
+    "phonetic": "/kəˈmɪt/",
     "pos": "verb",
-    "meaning": "giao phó, uỷ thác, camkế t, hứa",
-    "example": "The team plans to commit before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giao phó, uỷ thác, camkế t, hứa\" trước thời hạn.",
+    "meaning": "giao phó, ủy thác, cam kết, hứa",
+    "example": "Please commit to the agreed schedule.",
+    "exampleTranslation": "Hãy cam kết tuân theo lịch đã thống nhất.",
     "translations": {
-      "vi": "giao phó, uỷ thác, camkế t, hứa"
+      "vi": "giao phó, ủy thác, cam kết, hứa"
     }
   },
   {
     "id": "lei-24",
     "topic": "Leisure Time, Community",
     "word": "audience",
-    "phonetic": "/ˈɔːdiəns/",
+    "phonetic": "/ˈɑdiəns/",
     "pos": "noun",
     "meaning": "khán giả, thính giả",
-    "example": "The team discussed the audience during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"khán giả, thính giả\" trong cuộc họp.",
+    "example": "We discussed the audience at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về khán giả tại cuộc họp.",
     "translations": {
       "vi": "khán giả, thính giả"
     }
@@ -2572,11 +2559,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-25",
     "topic": "Leisure Time, Community",
     "word": "author",
-    "phonetic": "/ˈɔːθɐ/",
+    "phonetic": "/ˈɔθɚ/",
     "pos": "noun",
     "meaning": "tác giả",
-    "example": "The team discussed the author during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tác giả\" trong cuộc họp.",
+    "example": "The author answered our questions.",
+    "exampleTranslation": "Tác giả đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "tác giả"
     }
@@ -2585,11 +2572,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-26",
     "topic": "Leisure Time, Community",
     "word": "antique",
-    "phonetic": "/æntˈiːk/",
+    "phonetic": "/ænˈtik/",
     "pos": "noun",
     "meaning": "đồ cổ",
-    "example": "The team discussed the antique during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"đồ cổ\" trong cuộc họp.",
+    "example": "The museum displays a valuable antique.",
+    "exampleTranslation": "Bảo tàng trưng bày một món đồ cổ có giá trị.",
     "translations": {
       "vi": "đồ cổ"
     }
@@ -2598,11 +2585,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-27",
     "topic": "Leisure Time, Community",
     "word": "manuscript",
-    "phonetic": "/mˈænjuːskɹˌɪpt/",
+    "phonetic": "/ˈmænjəskrɪpt/",
     "pos": "noun",
     "meaning": "bản viết tay, bản thảo",
-    "example": "The team discussed the manuscript during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bản viết tay, bản thảo\" trong cuộc họp.",
+    "example": "Please read the manuscript carefully.",
+    "exampleTranslation": "Hãy đọc bản viết tay cẩn thận.",
     "translations": {
       "vi": "bản viết tay, bản thảo"
     }
@@ -2611,11 +2598,11 @@ export const VOCABULARY: Word[] = [
     "id": "lei-28",
     "topic": "Leisure Time, Community",
     "word": "advocate",
-    "phonetic": "/ˈædvəˌkeɪt/",
+    "phonetic": "/ˈædvəkət/",
     "pos": "noun",
     "meaning": "người ủng hộ, người biện hộ",
-    "example": "The team discussed the advocate during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"người ủng hộ, người biện hộ\" trong cuộc họp.",
+    "example": "The advocate answered our questions.",
+    "exampleTranslation": "Người ủng hộ đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "người ủng hộ, người biện hộ"
     }
@@ -2624,24 +2611,24 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-01",
     "topic": "Marketing",
     "word": "survey",
-    "phonetic": "/ˈsɝˌveɪ/",
+    "phonetic": "/sɚˈveɪ/",
     "pos": "noun",
-    "meaning": "cuộc khảos át, cuộc thăm dò",
-    "example": "The team discussed the survey during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cuộc khảos át, cuộc thăm dò\" trong cuộc họp.",
+    "meaning": "cuộc khảo sát, cuộc thăm dò",
+    "example": "We discussed the survey at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về cuộc khảo sát tại cuộc họp.",
     "translations": {
-      "vi": "cuộc khảos át, cuộc thăm dò"
+      "vi": "cuộc khảo sát, cuộc thăm dò"
     }
   },
   {
     "id": "mkt-02",
     "topic": "Marketing",
     "word": "analysis",
-    "phonetic": "/ɐnˈæləsˌɪs/",
+    "phonetic": "/əˈnæləsəs/",
     "pos": "noun",
     "meaning": "sự phân tích",
-    "example": "The team discussed the analysis during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự phân tích\" trong cuộc họp.",
+    "example": "We discussed the analysis at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự phân tích tại cuộc họp.",
     "translations": {
       "vi": "sự phân tích"
     }
@@ -2650,37 +2637,37 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-03",
     "topic": "Marketing",
     "word": "monopoly",
-    "phonetic": "/mənˈɒpəli/",
+    "phonetic": "/məˈnɑpəli/",
     "pos": "noun",
-    "meaning": "sự độc quy ền,v ật độc quy ền",
-    "example": "The team discussed the monopoly during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự độc quy ền,v ật độc quy ền\" trong cuộc họp.",
+    "meaning": "sự độc quyền, độc quyền kinh doanh",
+    "example": "We discussed the monopoly at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự độc quyền tại cuộc họp.",
     "translations": {
-      "vi": "sự độc quy ền,v ật độc quy ền"
+      "vi": "sự độc quyền, độc quyền kinh doanh"
     }
   },
   {
     "id": "mkt-04",
     "topic": "Marketing",
     "word": "competition",
-    "phonetic": "/kˌɒmpətˈɪʃən/",
+    "phonetic": "/kɑmpəˈtɪʃən/",
     "pos": "noun",
-    "meaning": "sự cạnh tr anh, cuộc thi",
-    "example": "The team discussed the competition during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự cạnh tr anh, cuộc thi\" trong cuộc họp.",
+    "meaning": "sự cạnh tranh, cuộc thi",
+    "example": "We discussed the competition at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự cạnh tranh tại cuộc họp.",
     "translations": {
-      "vi": "sự cạnh tr anh, cuộc thi"
+      "vi": "sự cạnh tranh, cuộc thi"
     }
   },
   {
     "id": "mkt-05",
     "topic": "Marketing",
     "word": "demand",
-    "phonetic": "/dɪmˈɑːnd/",
+    "phonetic": "/dɪˈmænd/",
     "pos": "noun",
     "meaning": "nhu cầu",
-    "example": "The team discussed the demand during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nhu cầu\" trong cuộc họp.",
+    "example": "Demand for the product is increasing.",
+    "exampleTranslation": "Nhu cầu về sản phẩm đang tăng.",
     "translations": {
       "vi": "nhu cầu"
     }
@@ -2689,24 +2676,24 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-06",
     "topic": "Marketing",
     "word": "expand",
-    "phonetic": "/ɛkspˈænd/",
+    "phonetic": "/ɪkˈspænd/",
     "pos": "verb",
-    "meaning": "mởr ộng",
-    "example": "The team plans to expand before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"mởr ộng\" trước thời hạn.",
+    "meaning": "mở rộng",
+    "example": "Please expand the customer service team.",
+    "exampleTranslation": "Hãy mở rộng đội ngũ chăm sóc khách hàng.",
     "translations": {
-      "vi": "mởr ộng"
+      "vi": "mở rộng"
     }
   },
   {
     "id": "mkt-07",
     "topic": "Marketing",
     "word": "advanced",
-    "phonetic": "/ɐdvˈænst/",
-    "pos": "adj",
+    "phonetic": "/ədˈvænst/",
+    "pos": "adjective",
     "meaning": "tiên tiến, cao cấp",
-    "example": "The manager described the proposal as advanced.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tiên tiến, cao cấp\".",
+    "example": "The proposed plan is advanced.",
+    "exampleTranslation": "Kế hoạch được đề xuất tiên tiến.",
     "translations": {
       "vi": "tiên tiến, cao cấp"
     }
@@ -2715,11 +2702,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-08",
     "topic": "Marketing",
     "word": "postpone",
-    "phonetic": "/pəʊstpˈəʊn/",
+    "phonetic": "/poʊstˈpoʊn/",
     "pos": "verb",
     "meaning": "trì hoãn, hoãn lại",
-    "example": "The team plans to postpone before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"trì hoãn, hoãn lại\" trước thời hạn.",
+    "example": "Please postpone the meeting until Friday.",
+    "exampleTranslation": "Hãy hoãn cuộc họp đến thứ Sáu.",
     "translations": {
       "vi": "trì hoãn, hoãn lại"
     }
@@ -2728,37 +2715,37 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-09",
     "topic": "Marketing",
     "word": "additional",
-    "phonetic": "/ɐdˈɪʃənəl/",
-    "pos": "adj",
-    "meaning": "thêm vào, bổ sungv ào",
-    "example": "The manager described the proposal as additional.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"thêm vào, bổ sungv ào\".",
+    "phonetic": "/əˈdɪʃənəl/",
+    "pos": "adjective",
+    "meaning": "thêm vào, bổ sung vào",
+    "example": "We need additional staff this month.",
+    "exampleTranslation": "Chúng tôi cần thêm nhân viên trong tháng này.",
     "translations": {
-      "vi": "thêm vào, bổ sungv ào"
+      "vi": "thêm vào, bổ sung vào"
     }
   },
   {
     "id": "mkt-10",
     "topic": "Marketing",
     "word": "examine",
-    "phonetic": "/ɛɡzˈæmɪn/",
+    "phonetic": "/ɪɡˈzæmɪn/",
     "pos": "verb",
-    "meaning": "xemx ét, kiểm tra, điều tra",
-    "example": "The team plans to examine before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"xemx ét, kiểm tra, điều tra\" trước thời hạn.",
+    "meaning": "xem xét, kiểm tra, điều tra",
+    "example": "Please examine the equipment carefully.",
+    "exampleTranslation": "Hãy kiểm tra thiết bị cẩn thận.",
     "translations": {
-      "vi": "xemx ét, kiểm tra, điều tra"
+      "vi": "xem xét, kiểm tra, điều tra"
     }
   },
   {
     "id": "mkt-11",
     "topic": "Marketing",
     "word": "like",
-    "phonetic": "/lˈaɪk/",
+    "phonetic": "/ˈlaɪk/",
     "pos": "verb",
     "meaning": "yêu thích",
-    "example": "The team plans to like before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"yêu thích\" trước thời hạn.",
+    "example": "We like the new office layout.",
+    "exampleTranslation": "Chúng tôi thích cách bố trí văn phòng mới.",
     "translations": {
       "vi": "yêu thích"
     }
@@ -2767,11 +2754,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-12",
     "topic": "Marketing",
     "word": "especially",
-    "phonetic": "/ɪspˈɛʃəlˌi/",
-    "pos": "adv",
+    "phonetic": "/əˈspɛʃli/",
+    "pos": "adverb",
     "meaning": "đặc biệt",
-    "example": "The team completed the task especially.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"đặc biệt\".",
+    "example": "This guide is especially useful for beginners.",
+    "exampleTranslation": "Hướng dẫn này đặc biệt hữu ích cho người mới.",
     "translations": {
       "vi": "đặc biệt"
     }
@@ -2780,11 +2767,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-13",
     "topic": "Marketing",
     "word": "reserve",
-    "phonetic": "/ɹiˈzɝv/",
+    "phonetic": "/rɪˈzɝv/",
     "pos": "verb",
     "meaning": "đặt trước, dự trữ, để dành",
-    "example": "The team plans to reserve before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đặt trước, dự trữ, để dành\" trước thời hạn.",
+    "example": "Please reserve a table for four.",
+    "exampleTranslation": "Hãy đặt bàn cho bốn người.",
     "translations": {
       "vi": "đặt trước, dự trữ, để dành"
     }
@@ -2793,24 +2780,24 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-14",
     "topic": "Marketing",
     "word": "cooperate",
-    "phonetic": "/kəʊˈɒpəɹˌeɪt/",
+    "phonetic": "/koʊˈɑpɚeɪt/",
     "pos": "verb",
-    "meaning": "hợpt ác",
-    "example": "The team plans to cooperate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hợpt ác\" trước thời hạn.",
+    "meaning": "hợp tác",
+    "example": "Please cooperate with the inspection team.",
+    "exampleTranslation": "Hãy hợp tác với đoàn kiểm tra.",
     "translations": {
-      "vi": "hợpt ác"
+      "vi": "hợp tác"
     }
   },
   {
     "id": "mkt-15",
     "topic": "Marketing",
     "word": "very",
-    "phonetic": "/vˈɛɹi/",
-    "pos": "adv",
+    "phonetic": "/ˈvɛri/",
+    "pos": "adverb",
     "meaning": "rất, hết sức",
-    "example": "The team completed the task very.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"rất, hết sức\".",
+    "example": "The instructions are very clear.",
+    "exampleTranslation": "Hướng dẫn rất rõ ràng.",
     "translations": {
       "vi": "rất, hết sức"
     }
@@ -2819,11 +2806,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-16",
     "topic": "Marketing",
     "word": "consecutive",
-    "phonetic": "/kənsˈɛkjuːtˌɪv/",
-    "pos": "adj",
+    "phonetic": "/kənˈsɛkjətɪv/",
+    "pos": "adjective",
     "meaning": "liên tiếp, liên tục, liền nhau",
-    "example": "The manager described the proposal as consecutive.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"liên tiếp, liên tục, liền nhau\".",
+    "example": "Sales increased for three consecutive months.",
+    "exampleTranslation": "Doanh số tăng trong ba tháng liên tiếp.",
     "translations": {
       "vi": "liên tiếp, liên tục, liền nhau"
     }
@@ -2832,63 +2819,63 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-17",
     "topic": "Marketing",
     "word": "expectation",
-    "phonetic": "/ɛkspɪktˈeɪʃən/",
+    "phonetic": "/ɛkspɛkˈteɪʃən/",
     "pos": "noun",
-    "meaning": "sự mong muốn, kỳv ọng, dự kiến",
-    "example": "The team discussed the expectation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự mong muốn, kỳv ọng, dự kiến\" trong cuộc họp.",
+    "meaning": "sự mong muốn, kỳ vọng, dự kiến",
+    "example": "We discussed the expectation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự mong muốn tại cuộc họp.",
     "translations": {
-      "vi": "sự mong muốn, kỳv ọng, dự kiến"
+      "vi": "sự mong muốn, kỳ vọng, dự kiến"
     }
   },
   {
     "id": "mkt-18",
     "topic": "Marketing",
     "word": "raise",
-    "phonetic": "/ɹˈeɪz/",
+    "phonetic": "/ˈreɪz/",
     "pos": "verb",
-    "meaning": "tăng lên, nâng lên, đề xuất, đưara",
-    "example": "The team plans to raise before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tăng lên, nâng lên, đề xuất, đưara\" trước thời hạn.",
+    "meaning": "tăng lên, nâng lên, đề xuất, đưa ra",
+    "example": "Please raise the issue at the meeting.",
+    "exampleTranslation": "Hãy nêu vấn đề tại cuộc họp.",
     "translations": {
-      "vi": "tăng lên, nâng lên, đề xuất, đưara"
+      "vi": "tăng lên, nâng lên, đề xuất, đưa ra"
     }
   },
   {
     "id": "mkt-19",
     "topic": "Marketing",
     "word": "extremely",
-    "phonetic": "/ɛkstɹˈiːmli/",
-    "pos": "adv",
-    "meaning": "vô cùng, cựckỳ",
-    "example": "The team completed the task extremely.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"vô cùng, cựckỳ\".",
+    "phonetic": "/ɛkˈstrimli/",
+    "pos": "adverb",
+    "meaning": "vô cùng, cực kỳ",
+    "example": "The delivery team was extremely helpful.",
+    "exampleTranslation": "Đội giao hàng giúp đỡ rất nhiệt tình.",
     "translations": {
-      "vi": "vô cùng, cựckỳ"
+      "vi": "vô cùng, cực kỳ"
     }
   },
   {
     "id": "mkt-20",
     "topic": "Marketing",
     "word": "probable",
-    "phonetic": "/pɹˈɒbəbəl/",
-    "pos": "adj",
-    "meaning": "nhiều khả năng, có thể,",
-    "example": "The manager described the proposal as probable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"nhiều khả năng, có thể,\".",
+    "phonetic": "/ˈprɑbəbəl/",
+    "pos": "adjective",
+    "meaning": "nhiều khả năng, có thể",
+    "example": "The engineer identified the probable cause.",
+    "exampleTranslation": "Kỹ sư xác định nguyên nhân có khả năng nhất.",
     "translations": {
-      "vi": "nhiều khả năng, có thể,"
+      "vi": "nhiều khả năng, có thể"
     }
   },
   {
     "id": "mkt-21",
     "topic": "Marketing",
     "word": "focus",
-    "phonetic": "/fˈəʊkəs/",
+    "phonetic": "/ˈfoʊkəs/",
     "pos": "verb",
     "meaning": "tập trung",
-    "example": "The team plans to focus before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tập trung\" trước thời hạn.",
+    "example": "Please focus on the main objective.",
+    "exampleTranslation": "Hãy tập trung vào mục tiêu chính.",
     "translations": {
       "vi": "tập trung"
     }
@@ -2897,24 +2884,24 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-22",
     "topic": "Marketing",
     "word": "impact",
-    "phonetic": "/ˈɪmpækt/",
+    "phonetic": "/ɪmˈpækt/",
     "pos": "noun",
-    "meaning": "sự ảnh hưởng, sự tác động",
-    "example": "The team discussed the impact during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự ảnh hưởng, sự tác động\" trong cuộc họp.",
+    "meaning": "tác động, ảnh hưởng; sự va chạm",
+    "example": "We discussed the impact at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về tác động tại cuộc họp.",
     "translations": {
-      "vi": "sự ảnh hưởng, sự tác động"
+      "vi": "tác động, ảnh hưởng; sự va chạm"
     }
   },
   {
     "id": "mkt-23",
     "topic": "Marketing",
     "word": "comparison",
-    "phonetic": "/kəmpˈæɹɪsən/",
+    "phonetic": "/kəmˈpɛrəsən/",
     "pos": "noun",
     "meaning": "sự so sánh",
-    "example": "The team discussed the comparison during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự so sánh\" trong cuộc họp.",
+    "example": "We discussed the comparison at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự so sánh tại cuộc họp.",
     "translations": {
       "vi": "sự so sánh"
     }
@@ -2923,76 +2910,76 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-24",
     "topic": "Marketing",
     "word": "gap",
-    "phonetic": "/ɡˈæp/",
+    "phonetic": "/ˈɡæp/",
     "pos": "noun",
-    "meaning": "lỗ hỏng, kẽ hở, khoảng trắng",
-    "example": "The team discussed the gap during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lỗ hỏng, kẽ hở, khoảng trắng\" trong cuộc họp.",
+    "meaning": "lỗ hổng, kẽ hở, khoảng trống",
+    "example": "We discussed the gap at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về lỗ hổng tại cuộc họp.",
     "translations": {
-      "vi": "lỗ hỏng, kẽ hở, khoảng trắng"
+      "vi": "lỗ hổng, kẽ hở, khoảng trống"
     }
   },
   {
     "id": "mkt-25",
     "topic": "Marketing",
     "word": "mounting",
-    "phonetic": "/mˈaʊntɪŋ/",
-    "pos": "adj",
-    "meaning": "tăng dần lên",
-    "example": "The manager described the proposal as mounting.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tăng dần lên\".",
+    "phonetic": "/ˈmaʊntɪŋ/",
+    "pos": "adjective",
+    "meaning": "đang tăng lên",
+    "example": "We are concerned about mounting costs.",
+    "exampleTranslation": "Chúng tôi lo ngại về chi phí đang tăng.",
     "translations": {
-      "vi": "tăng dần lên"
+      "vi": "đang tăng lên"
     }
   },
   {
     "id": "mkt-26",
     "topic": "Marketing",
     "word": "reflective",
-    "phonetic": "/ɹɪflˈɛktɪv/",
-    "pos": "adj",
-    "meaning": "phản chiếu, phản ánh",
-    "example": "The manager described the proposal as reflective.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"phản chiếu, phản ánh\".",
+    "phonetic": "/rɪˈflɛktɪv/",
+    "pos": "adjective",
+    "meaning": "phản quang, phản chiếu; suy tư",
+    "example": "Workers must wear reflective clothing.",
+    "exampleTranslation": "Công nhân phải mặc quần áo phản quang.",
     "translations": {
-      "vi": "phản chiếu, phản ánh"
+      "vi": "phản quang, phản chiếu; suy tư"
     }
   },
   {
     "id": "mkt-27",
     "topic": "Marketing",
     "word": "appreciate",
-    "phonetic": "/ɐpɹˈiːʃɪˌeɪt/",
+    "phonetic": "/əˈpriʃieɪt/",
     "pos": "verb",
-    "meaning": "đánh giá cao, cảm kích,",
-    "example": "The team plans to appreciate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đánh giá cao, cảm kích,\" trước thời hạn.",
+    "meaning": "đánh giá cao, cảm kích",
+    "example": "Please appreciate your colleagues' efforts.",
+    "exampleTranslation": "Hãy trân trọng nỗ lực của đồng nghiệp.",
     "translations": {
-      "vi": "đánh giá cao, cảm kích,"
+      "vi": "đánh giá cao, cảm kích"
     }
   },
   {
     "id": "mkt-28",
     "topic": "Marketing",
     "word": "publicize",
-    "phonetic": "/ˈpəbɫɪˌsaɪz/",
+    "phonetic": "/ˈpʌblɪsaɪz/",
     "pos": "verb",
-    "meaning": "quảng cáo, đưara công khai",
-    "example": "The team plans to publicize before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"quảng cáo, đưara công khai\" trước thời hạn.",
+    "meaning": "quảng cáo, đưa ra công khai",
+    "example": "Please publicize the upcoming event.",
+    "exampleTranslation": "Hãy quảng bá sự kiện sắp tới.",
     "translations": {
-      "vi": "quảng cáo, đưara công khai"
+      "vi": "quảng cáo, đưa ra công khai"
     }
   },
   {
     "id": "mkt-29",
     "topic": "Marketing",
     "word": "target",
-    "phonetic": "/tˈɑːɡɪt/",
+    "phonetic": "/ˈtɑrɡət/",
     "pos": "noun",
     "meaning": "mục tiêu, đích",
-    "example": "The team discussed the target during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"mục tiêu, đích\" trong cuộc họp.",
+    "example": "We reached the monthly sales target.",
+    "exampleTranslation": "Chúng tôi đạt chỉ tiêu bán hàng tháng.",
     "translations": {
       "vi": "mục tiêu, đích"
     }
@@ -3001,26 +2988,26 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-30",
     "topic": "Marketing",
     "word": "campaign",
-    "phonetic": "/kæmpˈeɪn/",
+    "phonetic": "/kæmˈpeɪn/",
     "pos": "noun",
-    "meaning": "chiến dịch, cuộcv ận động",
-    "example": "The team discussed the campaign during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chiến dịch, cuộcv ận động\" trong cuộc họp.",
+    "meaning": "chiến dịch, cuộc vận động",
+    "example": "We discussed the campaign at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về chiến dịch tại cuộc họp.",
     "translations": {
-      "vi": "chiến dịch, cuộcv ận động"
+      "vi": "chiến dịch, cuộc vận động"
     }
   },
   {
     "id": "mkt-31",
     "topic": "Marketing",
     "word": "marginal",
-    "phonetic": "/mˈɑːdʒɪnəl/",
-    "pos": "adj",
-    "meaning": "ởmép, ngoài lề, không đángkể",
-    "example": "The manager described the proposal as marginal.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"ởmép, ngoài lề, không đángkể\".",
+    "phonetic": "/ˈmɑrdʒənəl/",
+    "pos": "adjective",
+    "meaning": "ở mép, ngoài lề, không đáng kể",
+    "example": "The change produced only a marginal improvement.",
+    "exampleTranslation": "Thay đổi chỉ đem lại cải thiện rất nhỏ.",
     "translations": {
-      "vi": "ởmép, ngoài lề, không đángkể"
+      "vi": "ở mép, ngoài lề, không đáng kể"
     }
   },
   {
@@ -3028,49 +3015,49 @@ export const VOCABULARY: Word[] = [
     "topic": "Marketing",
     "word": "instantly",
     "phonetic": "/ˈɪnstəntli/",
-    "pos": "adv",
-    "meaning": "ngay khi, ngay lập tức",
-    "example": "The team completed the task instantly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"ngay khi, ngay lập tức\".",
+    "pos": "adverb",
+    "meaning": "ngay lập tức",
+    "example": "The system updates the balance instantly.",
+    "exampleTranslation": "Hệ thống cập nhật số dư ngay lập tức.",
     "translations": {
-      "vi": "ngay khi, ngay lập tức"
+      "vi": "ngay lập tức"
     }
   },
   {
     "id": "mkt-33",
     "topic": "Marketing",
     "word": "creative",
-    "phonetic": "/kɹiːˈeɪtɪv/",
-    "pos": "adj",
-    "meaning": "sángt ạo",
-    "example": "The manager described the proposal as creative.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"sángt ạo\".",
+    "phonetic": "/kriˈeɪtɪv/",
+    "pos": "adjective",
+    "meaning": "sáng tạo",
+    "example": "The proposed plan is creative.",
+    "exampleTranslation": "Kế hoạch được đề xuất sáng tạo.",
     "translations": {
-      "vi": "sángt ạo"
+      "vi": "sáng tạo"
     }
   },
   {
     "id": "mkt-34",
     "topic": "Marketing",
     "word": "aggressively",
-    "phonetic": "/ɐɡɹˈɛsɪvli/",
-    "pos": "adv",
-    "meaning": "xôngx áo, tích cực",
-    "example": "The team completed the task aggressively.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"xôngx áo, tích cực\".",
+    "phonetic": "/əˈɡrɛsɪvli/",
+    "pos": "adverb",
+    "meaning": "xông xáo, tích cực",
+    "example": "The company is expanding aggressively.",
+    "exampleTranslation": "Công ty đang mở rộng rất mạnh mẽ.",
     "translations": {
-      "vi": "xôngx áo, tích cực"
+      "vi": "xông xáo, tích cực"
     }
   },
   {
     "id": "mkt-35",
     "topic": "Marketing",
     "word": "strategy",
-    "phonetic": "/stɹˈætədʒi/",
+    "phonetic": "/ˈstrætədʒi/",
     "pos": "noun",
     "meaning": "chiến lược",
-    "example": "The team discussed the strategy during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chiến lược\" trong cuộc họp.",
+    "example": "We discussed the strategy at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về chiến lược tại cuộc họp.",
     "translations": {
       "vi": "chiến lược"
     }
@@ -3079,11 +3066,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-36",
     "topic": "Marketing",
     "word": "indicate",
-    "phonetic": "/ˈɪndɪkˌeɪt/",
+    "phonetic": "/ˈɪndəkeɪt/",
     "pos": "verb",
     "meaning": "biểu thị, chỉ ra",
-    "example": "The team plans to indicate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"biểu thị, chỉ ra\" trước thời hạn.",
+    "example": "Please indicate your preferred delivery date.",
+    "exampleTranslation": "Hãy ghi rõ ngày giao hàng mong muốn.",
     "translations": {
       "vi": "biểu thị, chỉ ra"
     }
@@ -3092,11 +3079,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-37",
     "topic": "Marketing",
     "word": "attract",
-    "phonetic": "/ɐtɹˈækt/",
+    "phonetic": "/əˈtrækt/",
     "pos": "verb",
     "meaning": "thu hút, lôi cuốn",
-    "example": "The team plans to attract before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thu hút, lôi cuốn\" trước thời hạn.",
+    "example": "Please attract more customers to the store.",
+    "exampleTranslation": "Hãy thu hút thêm khách đến cửa hàng.",
     "translations": {
       "vi": "thu hút, lôi cuốn"
     }
@@ -3105,11 +3092,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-38",
     "topic": "Marketing",
     "word": "experience",
-    "phonetic": "/ɛkspˈiəɹɪəns/",
+    "phonetic": "/ɪkˈspɪriəns/",
     "pos": "noun",
     "meaning": "kinh nghiệm, sự trải nghiệm",
-    "example": "The team discussed the experience during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"kinh nghiệm, sự trải nghiệm\" trong cuộc họp.",
+    "example": "We discussed the experience at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về kinh nghiệm tại cuộc họp.",
     "translations": {
       "vi": "kinh nghiệm, sự trải nghiệm"
     }
@@ -3118,11 +3105,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-39",
     "topic": "Marketing",
     "word": "analyze",
-    "phonetic": "/ˈænəˌɫaɪz/",
+    "phonetic": "/ˈænəlaɪz/",
     "pos": "verb",
     "meaning": "phân tích",
-    "example": "The team plans to analyze before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phân tích\" trước thời hạn.",
+    "example": "Please analyze the sales figures.",
+    "exampleTranslation": "Hãy phân tích số liệu bán hàng.",
     "translations": {
       "vi": "phân tích"
     }
@@ -3131,24 +3118,24 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-40",
     "topic": "Marketing",
     "word": "advise",
-    "phonetic": "/ɐdvˈaɪz/",
+    "phonetic": "/ædˈvaɪz/",
     "pos": "verb",
-    "meaning": "khuy ên nhủ, tưv ấn",
-    "example": "The team plans to advise before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"khuy ên nhủ, tưv ấn\" trước thời hạn.",
+    "meaning": "khuyên nhủ, tư vấn",
+    "example": "Please advise customers on suitable products.",
+    "exampleTranslation": "Hãy tư vấn cho khách hàng về sản phẩm phù hợp.",
     "translations": {
-      "vi": "khuy ên nhủ, tưv ấn"
+      "vi": "khuyên nhủ, tư vấn"
     }
   },
   {
     "id": "mkt-41",
     "topic": "Marketing",
     "word": "means",
-    "phonetic": "/mˈiːnz/",
+    "phonetic": "/ˈminz/",
     "pos": "noun",
     "meaning": "phương tiện, cách",
-    "example": "The team discussed the means during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"phương tiện, cách\" trong cuộc họp.",
+    "example": "We need a reliable means of transport.",
+    "exampleTranslation": "Chúng tôi cần phương tiện vận chuyển đáng tin cậy.",
     "translations": {
       "vi": "phương tiện, cách"
     }
@@ -3157,11 +3144,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-42",
     "topic": "Marketing",
     "word": "prefer",
-    "phonetic": "/pɹɪfˈɜː/",
+    "phonetic": "/prəˈfɝ/",
     "pos": "verb",
     "meaning": "yêu thích hơn (những cái khác)",
-    "example": "The team plans to prefer before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"yêu thích hơn (những cái khác)\" trước thời hạn.",
+    "example": "We prefer a quieter meeting room.",
+    "exampleTranslation": "Chúng tôi thích một phòng họp yên tĩnh hơn.",
     "translations": {
       "vi": "yêu thích hơn (những cái khác)"
     }
@@ -3170,11 +3157,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-43",
     "topic": "Marketing",
     "word": "advantage",
-    "phonetic": "/ɐdvˈɑːntɪdʒ/",
+    "phonetic": "/ædˈvæntɪdʒ/",
     "pos": "noun",
     "meaning": "lợi ích, lợi thế",
-    "example": "The team discussed the advantage during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lợi ích, lợi thế\" trong cuộc họp.",
+    "example": "We discussed the advantage at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về lợi ích tại cuộc họp.",
     "translations": {
       "vi": "lợi ích, lợi thế"
     }
@@ -3183,11 +3170,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-44",
     "topic": "Marketing",
     "word": "steadily",
-    "phonetic": "/stˈɛdɪli/",
-    "pos": "adv",
+    "phonetic": "/ˈstɛdəli/",
+    "pos": "adverb",
     "meaning": "vững chắc, bình tĩnh, kiên định",
-    "example": "The team completed the task steadily.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"vững chắc, bình tĩnh, kiên định\".",
+    "example": "Sales have increased steadily this year.",
+    "exampleTranslation": "Doanh số tăng đều đặn trong năm nay.",
     "translations": {
       "vi": "vững chắc, bình tĩnh, kiên định"
     }
@@ -3196,76 +3183,76 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-45",
     "topic": "Marketing",
     "word": "necessarily",
-    "phonetic": "/nˌɛsɪsˈɛɹəli/",
-    "pos": "verb",
-    "meaning": "tấty ếu, nhất thiết",
-    "example": "The team plans to necessarily before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tấty ếu, nhất thiết\" trước thời hạn.",
+    "phonetic": "/nɛsəˈsɛrəli/",
+    "pos": "adverb",
+    "meaning": "tất yếu, nhất thiết",
+    "example": "A higher price does not necessarily mean better quality.",
+    "exampleTranslation": "Giá cao hơn không nhất thiết đồng nghĩa với chất lượng tốt hơn.",
     "translations": {
-      "vi": "tấty ếu, nhất thiết"
+      "vi": "tất yếu, nhất thiết"
     }
   },
   {
     "id": "mkt-46",
     "topic": "Marketing",
     "word": "detect",
-    "phonetic": "/dɪtˈɛkt/",
+    "phonetic": "/dɪˈtɛkt/",
     "pos": "verb",
-    "meaning": "phát hiệnr a, khám phá ra",
-    "example": "The team plans to detect before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phát hiệnr a, khám phá ra\" trước thời hạn.",
+    "meaning": "phát hiện ra, khám phá ra",
+    "example": "Please detect errors in the report.",
+    "exampleTranslation": "Hãy phát hiện lỗi trong báo cáo.",
     "translations": {
-      "vi": "phát hiệnr a, khám phá ra"
+      "vi": "phát hiện ra, khám phá ra"
     }
   },
   {
     "id": "mkt-47",
     "topic": "Marketing",
     "word": "cover",
-    "phonetic": "/kˈʌvɐ/",
+    "phonetic": "/ˈkʌvɚ/",
     "pos": "verb",
-    "meaning": "bao gồm, thanht oán, che phủ",
-    "example": "The team plans to cover before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bao gồm, thanht oán, che phủ\" trước thời hạn.",
+    "meaning": "bao gồm, thanh toán, che phủ",
+    "example": "Please cover the cost of transportation.",
+    "exampleTranslation": "Hãy chi trả chi phí vận chuyển.",
     "translations": {
-      "vi": "bao gồm, thanht oán, che phủ"
+      "vi": "bao gồm, thanh toán, che phủ"
     }
   },
   {
     "id": "mkt-48",
     "topic": "Marketing",
     "word": "less",
-    "phonetic": "/lˈɛs/",
-    "pos": "adj",
-    "meaning": "ít hơn,k ém hơn",
-    "example": "The manager described the proposal as less.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"ít hơn,k ém hơn\".",
+    "phonetic": "/ˈlɛs/",
+    "pos": "adjective",
+    "meaning": "ít hơn, kém hơn",
+    "example": "We now use less paper.",
+    "exampleTranslation": "Hiện chúng tôi dùng ít giấy hơn.",
     "translations": {
-      "vi": "ít hơn,k ém hơn"
+      "vi": "ít hơn, kém hơn"
     }
   },
   {
     "id": "mkt-49",
     "topic": "Marketing",
     "word": "majority",
-    "phonetic": "/mədʒˈɒɹɪtˌi/",
+    "phonetic": "/məˈdʒɔrəti/",
     "pos": "noun",
-    "meaning": "đas ố,số đông",
-    "example": "The team discussed the majority during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"đas ố,số đông\" trong cuộc họp.",
+    "meaning": "đa số, số đông",
+    "example": "We discussed the majority at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về đa số tại cuộc họp.",
     "translations": {
-      "vi": "đas ố,số đông"
+      "vi": "đa số, số đông"
     }
   },
   {
     "id": "mkt-50",
     "topic": "Marketing",
     "word": "adopt",
-    "phonetic": "/ɐdˈɒpt/",
+    "phonetic": "/əˈdɑpt/",
     "pos": "verb",
     "meaning": "thông qua, lựa chọn, làm theo",
-    "example": "The team plans to adopt before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thông qua, lựa chọn, làm theo\" trước thời hạn.",
+    "example": "Please adopt a more effective approach.",
+    "exampleTranslation": "Hãy áp dụng cách tiếp cận hiệu quả hơn.",
     "translations": {
       "vi": "thông qua, lựa chọn, làm theo"
     }
@@ -3274,24 +3261,24 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-51",
     "topic": "Marketing",
     "word": "largely",
-    "phonetic": "/lˈɑːdʒli/",
-    "pos": "adv",
-    "meaning": "tr ên quy mô lớn, phần lớn",
-    "example": "The team completed the task largely.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"tr ên quy mô lớn, phần lớn\".",
+    "phonetic": "/ˈlɑrdʒli/",
+    "pos": "adverb",
+    "meaning": "trên quy mô lớn, phần lớn",
+    "example": "The delay was largely caused by bad weather.",
+    "exampleTranslation": "Sự chậm trễ chủ yếu do thời tiết xấu.",
     "translations": {
-      "vi": "tr ên quy mô lớn, phần lớn"
+      "vi": "trên quy mô lớn, phần lớn"
     }
   },
   {
     "id": "mkt-52",
     "topic": "Marketing",
     "word": "incentive",
-    "phonetic": "/ɪnsˈɛntɪv/",
+    "phonetic": "/ɪnˈsɛntɪv/",
     "pos": "noun",
     "meaning": "sự khích lệ, ưu đãi",
-    "example": "The team discussed the incentive during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự khích lệ, ưu đãi\" trong cuộc họp.",
+    "example": "We discussed the incentive at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự khích lệ tại cuộc họp.",
     "translations": {
       "vi": "sự khích lệ, ưu đãi"
     }
@@ -3300,11 +3287,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-53",
     "topic": "Marketing",
     "word": "need",
-    "phonetic": "/nˈiːd/",
+    "phonetic": "/ˈnid/",
     "pos": "noun",
     "meaning": "nhu cầu, sự cần thiết",
-    "example": "The team discussed the need during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nhu cầu, sự cần thiết\" trong cuộc họp.",
+    "example": "We discussed the need at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về nhu cầu tại cuộc họp.",
     "translations": {
       "vi": "nhu cầu, sự cần thiết"
     }
@@ -3313,11 +3300,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-54",
     "topic": "Marketing",
     "word": "advertisement",
-    "phonetic": "/ɐdvˈɜːtɪsmənt/",
+    "phonetic": "/ædˈvɝtəzmənt/",
     "pos": "noun",
     "meaning": "quảng cáo",
-    "example": "The team discussed the advertisement during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"quảng cáo\" trong cuộc họp.",
+    "example": "Please read the advertisement carefully.",
+    "exampleTranslation": "Hãy đọc quảng cáo cẩn thận.",
     "translations": {
       "vi": "quảng cáo"
     }
@@ -3328,24 +3315,24 @@ export const VOCABULARY: Word[] = [
     "word": "aim",
     "phonetic": "/ˈeɪm/",
     "pos": "verb",
-    "meaning": "nhắmt ới, có mục đích",
-    "example": "The team plans to aim before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nhắmt ới, có mục đích\" trước thời hạn.",
+    "meaning": "nhắm tới, có mục đích",
+    "example": "Please aim to improve customer satisfaction.",
+    "exampleTranslation": "Hãy đặt mục tiêu cải thiện sự hài lòng của khách hàng.",
     "translations": {
-      "vi": "nhắmt ới, có mục đích"
+      "vi": "nhắm tới, có mục đích"
     }
   },
   {
     "id": "mkt-56",
     "topic": "Marketing",
     "word": "introduce",
-    "phonetic": "/ˌɪntɹədjˈuːs/",
+    "phonetic": "/ɪntrəˈdus/",
     "pos": "verb",
-    "meaning": "giới thiệu, đưara",
-    "example": "The team plans to introduce before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giới thiệu, đưara\" trước thời hạn.",
+    "meaning": "giới thiệu, đưa ra",
+    "example": "Please introduce the new team members.",
+    "exampleTranslation": "Hãy giới thiệu các thành viên mới.",
     "translations": {
-      "vi": "giới thiệu, đưara"
+      "vi": "giới thiệu, đưa ra"
     }
   },
   {
@@ -3354,22 +3341,22 @@ export const VOCABULARY: Word[] = [
     "word": "absence",
     "phonetic": "/ˈæbsəns/",
     "pos": "noun",
-    "meaning": "sựv ắng mặt, nghỉ; sự thiếu, khôngcó",
-    "example": "The team discussed the absence during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sựv ắng mặt, nghỉ; sự thiếu, khôngcó\" trong cuộc họp.",
+    "meaning": "sự vắng mặt, nghỉ; sự thiếu, không có",
+    "example": "We discussed the absence at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự vắng mặt tại cuộc họp.",
     "translations": {
-      "vi": "sựv ắng mặt, nghỉ; sự thiếu, khôngcó"
+      "vi": "sự vắng mặt, nghỉ; sự thiếu, không có"
     }
   },
   {
     "id": "mkt-58",
     "topic": "Marketing",
     "word": "forward",
-    "phonetic": "/fˈɔːwəd/",
-    "pos": "adv",
+    "phonetic": "/ˈfɔrwɚd/",
+    "pos": "adverb",
     "meaning": "về phía trước; tiến bộ",
-    "example": "The team completed the task forward.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"về phía trước; tiến bộ\".",
+    "example": "Please move forward to the next counter.",
+    "exampleTranslation": "Hãy tiến lên quầy tiếp theo.",
     "translations": {
       "vi": "về phía trước; tiến bộ"
     }
@@ -3378,11 +3365,11 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-59",
     "topic": "Marketing",
     "word": "contemporary",
-    "phonetic": "/kəntˈɛmpəɹəɹi/",
-    "pos": "adj",
+    "phonetic": "/kənˈtɛmpɚɛri/",
+    "pos": "adjective",
     "meaning": "đương thời, hiện đại",
-    "example": "The manager described the proposal as contemporary.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đương thời, hiện đại\".",
+    "example": "The gallery displays contemporary art.",
+    "exampleTranslation": "Phòng trưng bày giới thiệu nghệ thuật đương đại.",
     "translations": {
       "vi": "đương thời, hiện đại"
     }
@@ -3391,24 +3378,24 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-60",
     "topic": "Marketing",
     "word": "discussion",
-    "phonetic": "/dɪskˈʌʃən/",
+    "phonetic": "/dɪˈskʌʃən/",
     "pos": "noun",
-    "meaning": "sự thảo luận, sự tr anh luận",
-    "example": "The team discussed the discussion during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự thảo luận, sự tr anh luận\" trong cuộc họp.",
+    "meaning": "sự thảo luận, sự tranh luận",
+    "example": "The discussion focused on customer service.",
+    "exampleTranslation": "Cuộc thảo luận tập trung vào chăm sóc khách hàng.",
     "translations": {
-      "vi": "sự thảo luận, sự tr anh luận"
+      "vi": "sự thảo luận, sự tranh luận"
     }
   },
   {
     "id": "mkt-61",
     "topic": "Marketing",
     "word": "initial",
-    "phonetic": "/ɪnˈɪʃəl/",
-    "pos": "adj",
+    "phonetic": "/ɪˈnɪʃəl/",
+    "pos": "adjective",
     "meaning": "ban đầu, lúc đầu",
-    "example": "The manager described the proposal as initial.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"ban đầu, lúc đầu\".",
+    "example": "The initial estimate was too low.",
+    "exampleTranslation": "Ước tính ban đầu quá thấp.",
     "translations": {
       "vi": "ban đầu, lúc đầu"
     }
@@ -3417,24 +3404,24 @@ export const VOCABULARY: Word[] = [
     "id": "mkt-62",
     "topic": "Marketing",
     "word": "resolve",
-    "phonetic": "/ɹiˈzɑɫv/",
+    "phonetic": "/riˈzɑlv/",
     "pos": "verb",
-    "meaning": "giải quyế t, kiên quy ết",
-    "example": "The team plans to resolve before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giải quyế t, kiên quy ết\" trước thời hạn.",
+    "meaning": "giải quyết, kiên quyết",
+    "example": "Please resolve the billing issue.",
+    "exampleTranslation": "Hãy giải quyết vấn đề thanh toán.",
     "translations": {
-      "vi": "giải quyế t, kiên quy ết"
+      "vi": "giải quyết, kiên quyết"
     }
   },
   {
     "id": "mkt-63",
     "topic": "Marketing",
     "word": "disregard",
-    "phonetic": "/dˌɪsɹɪɡˈɑːd/",
+    "phonetic": "/dɪsrɪˈɡɑrd/",
     "pos": "verb",
     "meaning": "xem nhẹ, không đếm xỉa đến",
-    "example": "The team plans to disregard before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"xem nhẹ, không đếm xỉa đến\" trước thời hạn.",
+    "example": "Please disregard the outdated instructions.",
+    "exampleTranslation": "Hãy bỏ qua những hướng dẫn lỗi thời.",
     "translations": {
       "vi": "xem nhẹ, không đếm xỉa đến"
     }
@@ -3443,11 +3430,11 @@ export const VOCABULARY: Word[] = [
     "id": "eco-01",
     "topic": "Economy",
     "word": "dramatically",
-    "phonetic": "/dɹəmˈætɪkli/",
-    "pos": "adv",
+    "phonetic": "/drəˈmætɪkli/",
+    "pos": "adverb",
     "meaning": "đột ngột, đáng kể",
-    "example": "The team completed the task dramatically.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"đột ngột, đáng kể\".",
+    "example": "Production costs have fallen dramatically.",
+    "exampleTranslation": "Chi phí sản xuất đã giảm mạnh.",
     "translations": {
       "vi": "đột ngột, đáng kể"
     }
@@ -3456,11 +3443,11 @@ export const VOCABULARY: Word[] = [
     "id": "eco-02",
     "topic": "Economy",
     "word": "unstable",
-    "phonetic": "/ʌnstˈeɪbəl/",
-    "pos": "adj",
+    "phonetic": "/ənˈsteɪbəl/",
+    "pos": "adjective",
     "meaning": "không ổn định, không bền vững",
-    "example": "The manager described the proposal as unstable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"không ổn định, không bền vững\".",
+    "example": "The internet connection is unstable.",
+    "exampleTranslation": "Kết nối internet không ổn định.",
     "translations": {
       "vi": "không ổn định, không bền vững"
     }
@@ -3469,11 +3456,11 @@ export const VOCABULARY: Word[] = [
     "id": "eco-03",
     "topic": "Economy",
     "word": "rapidly",
-    "phonetic": "/ɹˈæpɪdli/",
-    "pos": "adv",
+    "phonetic": "/ˈræpədli/",
+    "pos": "adverb",
     "meaning": "nhanh chóng, mau lẹ",
-    "example": "The team completed the task rapidly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"nhanh chóng, mau lẹ\".",
+    "example": "The local economy is growing rapidly.",
+    "exampleTranslation": "Kinh tế địa phương đang tăng trưởng nhanh chóng.",
     "translations": {
       "vi": "nhanh chóng, mau lẹ"
     }
@@ -3482,11 +3469,11 @@ export const VOCABULARY: Word[] = [
     "id": "eco-04",
     "topic": "Economy",
     "word": "assert",
-    "phonetic": "/ɐsˈɜːt/",
+    "phonetic": "/əˈsɝt/",
     "pos": "verb",
     "meaning": "khẳng định, quả quyết, đòi",
-    "example": "The team plans to assert before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"khẳng định, quả quyết, đòi\" trước thời hạn.",
+    "example": "Please assert your rights politely.",
+    "exampleTranslation": "Hãy khẳng định quyền của mình một cách lịch sự.",
     "translations": {
       "vi": "khẳng định, quả quyết, đòi"
     }
@@ -3495,11 +3482,11 @@ export const VOCABULARY: Word[] = [
     "id": "eco-05",
     "topic": "Economy",
     "word": "potential",
-    "phonetic": "/pətˈɛnʃəl/",
-    "pos": "adj",
+    "phonetic": "/pəˈtɛnʃəl/",
+    "pos": "adjective",
     "meaning": "tiềm năng, có khả năng",
-    "example": "The manager described the proposal as potential.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tiềm năng, có khả năng\".",
+    "example": "We discussed the potential risks.",
+    "exampleTranslation": "Chúng tôi thảo luận những rủi ro tiềm ẩn.",
     "translations": {
       "vi": "tiềm năng, có khả năng"
     }
@@ -3508,11 +3495,11 @@ export const VOCABULARY: Word[] = [
     "id": "eco-06",
     "topic": "Economy",
     "word": "pleased",
-    "phonetic": "/plˈiːzd/",
-    "pos": "adj",
+    "phonetic": "/ˈplizd/",
+    "pos": "adjective",
     "meaning": "hài lòng, vui",
-    "example": "The manager described the proposal as pleased.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"hài lòng, vui\".",
+    "example": "The employee seemed pleased during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ hài lòng trong buổi phỏng vấn.",
     "translations": {
       "vi": "hài lòng, vui"
     }
@@ -3521,24 +3508,24 @@ export const VOCABULARY: Word[] = [
     "id": "eco-07",
     "topic": "Economy",
     "word": "remain",
-    "phonetic": "/ɹɪmˈeɪn/",
+    "phonetic": "/rɪˈmeɪn/",
     "pos": "verb",
-    "meaning": "giữ nguy ên,v ẫn, còn nhưcũ",
-    "example": "The team plans to remain before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giữ nguy ên,v ẫn, còn nhưcũ\" trước thời hạn.",
+    "meaning": "giữ nguyên, vẫn, còn như cũ",
+    "example": "Please remain calm during the interview.",
+    "exampleTranslation": "Hãy giữ bình tĩnh trong buổi phỏng vấn.",
     "translations": {
-      "vi": "giữ nguy ên,v ẫn, còn nhưcũ"
+      "vi": "giữ nguyên, vẫn, còn như cũ"
     }
   },
   {
     "id": "eco-08",
     "topic": "Economy",
     "word": "limited",
-    "phonetic": "/lˈɪmɪtɪd/",
-    "pos": "adj",
+    "phonetic": "/ˈlɪmətəd/",
+    "pos": "adjective",
     "meaning": "bị giới hạn, hạn chế",
-    "example": "The manager described the proposal as limited.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"bị giới hạn, hạn chế\".",
+    "example": "The offer is available for a limited time.",
+    "exampleTranslation": "Ưu đãi chỉ có trong thời gian giới hạn.",
     "translations": {
       "vi": "bị giới hạn, hạn chế"
     }
@@ -3547,24 +3534,24 @@ export const VOCABULARY: Word[] = [
     "id": "eco-09",
     "topic": "Economy",
     "word": "particular",
-    "phonetic": "/pətˈɪkjʊlɐ/",
-    "pos": "adj",
-    "meaning": "đặc biệ t, đặc thù, chi tiết",
-    "example": "The manager described the proposal as particular.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đặc biệ t, đặc thù, chi tiết\".",
+    "phonetic": "/pɚˈtɪkjəlɚ/",
+    "pos": "adjective",
+    "meaning": "đặc biệt, đặc thù, chi tiết",
+    "example": "Please pay attention to this particular detail.",
+    "exampleTranslation": "Hãy chú ý đến chi tiết cụ thể này.",
     "translations": {
-      "vi": "đặc biệ t, đặc thù, chi tiết"
+      "vi": "đặc biệt, đặc thù, chi tiết"
     }
   },
   {
     "id": "eco-10",
     "topic": "Economy",
     "word": "evenly",
-    "phonetic": "/ˈiːvənli/",
-    "pos": "adv",
+    "phonetic": "/ˈivənli/",
+    "pos": "adverb",
     "meaning": "công bằng, đều, ngang bằng nhau",
-    "example": "The team completed the task evenly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"công bằng, đều, ngang bằng nhau\".",
+    "example": "Distribute the workload evenly among employees.",
+    "exampleTranslation": "Chia đều khối lượng công việc cho nhân viên.",
     "translations": {
       "vi": "công bằng, đều, ngang bằng nhau"
     }
@@ -3573,24 +3560,24 @@ export const VOCABULARY: Word[] = [
     "id": "eco-11",
     "topic": "Economy",
     "word": "prospect",
-    "phonetic": "/ˈpɹɑspɛkt/",
+    "phonetic": "/ˈprɑspɛkt/",
     "pos": "noun",
-    "meaning": "viễn cảnh, triểnv ọng",
-    "example": "The team discussed the prospect during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"viễn cảnh, triểnv ọng\" trong cuộc họp.",
+    "meaning": "viễn cảnh, triển vọng",
+    "example": "We discussed the prospect at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về viễn cảnh tại cuộc họp.",
     "translations": {
-      "vi": "viễn cảnh, triểnv ọng"
+      "vi": "viễn cảnh, triển vọng"
     }
   },
   {
     "id": "eco-12",
     "topic": "Economy",
     "word": "period",
-    "phonetic": "/pˈiəɹɪəd/",
+    "phonetic": "/ˈpɪriəd/",
     "pos": "noun",
     "meaning": "thời kỳ, giai đoạn, khoảng thời gian",
-    "example": "The team discussed the period during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thời kỳ, giai đoạn, khoảng thời gian\" trong cuộc họp.",
+    "example": "We discussed the period at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về thời kỳ tại cuộc họp.",
     "translations": {
       "vi": "thời kỳ, giai đoạn, khoảng thời gian"
     }
@@ -3599,11 +3586,11 @@ export const VOCABULARY: Word[] = [
     "id": "eco-13",
     "topic": "Economy",
     "word": "industry",
-    "phonetic": "/ˈɪndʌstɹˌi/",
+    "phonetic": "/ˈɪndəstri/",
     "pos": "noun",
     "meaning": "công nghiệp, ngành, nghề",
-    "example": "The team discussed the industry during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"công nghiệp, ngành, nghề\" trong cuộc họp.",
+    "example": "We discussed the industry at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về công nghiệp tại cuộc họp.",
     "translations": {
       "vi": "công nghiệp, ngành, nghề"
     }
@@ -3612,24 +3599,24 @@ export const VOCABULARY: Word[] = [
     "id": "eco-14",
     "topic": "Economy",
     "word": "likely",
-    "phonetic": "/lˈaɪkli/",
-    "pos": "adv",
-    "meaning": "có khả năng, có thểx ảyra",
-    "example": "The team completed the task likely.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"có khả năng, có thểx ảyra\".",
+    "phonetic": "/ˈlaɪkli/",
+    "pos": "adverb",
+    "meaning": "có khả năng, có lẽ",
+    "example": "The manager will likely approve the request.",
+    "exampleTranslation": "Người quản lý có khả năng sẽ phê duyệt yêu cầu.",
     "translations": {
-      "vi": "có khả năng, có thểx ảyra"
+      "vi": "có khả năng, có lẽ"
     }
   },
   {
     "id": "eco-15",
     "topic": "Economy",
     "word": "director",
-    "phonetic": "/daɪɹˈɛktɐ/",
+    "phonetic": "/dɚˈɛktɚ/",
     "pos": "noun",
     "meaning": "giám đốc, người chỉ đạo",
-    "example": "The team discussed the director during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"giám đốc, người chỉ đạo\" trong cuộc họp.",
+    "example": "The director answered our questions.",
+    "exampleTranslation": "Giám đốc đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "giám đốc, người chỉ đạo"
     }
@@ -3638,24 +3625,24 @@ export const VOCABULARY: Word[] = [
     "id": "eco-16",
     "topic": "Economy",
     "word": "substitute",
-    "phonetic": "/sˈʌbstɪtjˌuːt/",
+    "phonetic": "/ˈsʌbstətut/",
     "pos": "noun",
-    "meaning": "ngườiv ật thay thế",
-    "example": "The team discussed the substitute during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"ngườiv ật thay thế\" trong cuộc họp.",
+    "meaning": "người hoặc vật thay thế",
+    "example": "We discussed the substitute at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về người hoặc vật thay thế tại cuộc họp.",
     "translations": {
-      "vi": "ngườiv ật thay thế"
+      "vi": "người hoặc vật thay thế"
     }
   },
   {
     "id": "eco-17",
     "topic": "Economy",
     "word": "fairly",
-    "phonetic": "/fˈeəli/",
-    "pos": "adv",
+    "phonetic": "/ˈfɛrli/",
+    "pos": "adverb",
     "meaning": "công bằng, ngay thẳng, kha khá",
-    "example": "The team completed the task fairly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"công bằng, ngay thẳng, kha khá\".",
+    "example": "The supervisor treated everyone fairly.",
+    "exampleTranslation": "Người giám sát đối xử công bằng với mọi người.",
     "translations": {
       "vi": "công bằng, ngay thẳng, kha khá"
     }
@@ -3664,37 +3651,37 @@ export const VOCABULARY: Word[] = [
     "id": "eco-18",
     "topic": "Economy",
     "word": "economical",
-    "phonetic": "/ˌiːkənˈɒmɪkəl/",
-    "pos": "adj",
-    "meaning": "tiết kiệm, kinhtế",
-    "example": "The manager described the proposal as economical.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tiết kiệm, kinhtế\".",
+    "phonetic": "/ɛkəˈnɑmɪkəl/",
+    "pos": "adjective",
+    "meaning": "tiết kiệm, kinh tế",
+    "example": "The proposed plan is economical.",
+    "exampleTranslation": "Kế hoạch được đề xuất tiết kiệm.",
     "translations": {
-      "vi": "tiết kiệm, kinhtế"
+      "vi": "tiết kiệm, kinh tế"
     }
   },
   {
     "id": "eco-19",
     "topic": "Economy",
     "word": "implication",
-    "phonetic": "/ˌɪmplɪkˈeɪʃən/",
+    "phonetic": "/ɪmpləˈkeɪʃən/",
     "pos": "noun",
-    "meaning": "sự liên quan, sự dính líu, hàmý",
-    "example": "The team discussed the implication during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự liên quan, sự dính líu, hàmý\" trong cuộc họp.",
+    "meaning": "sự liên quan, sự dính líu, hàm ý",
+    "example": "We discussed the implication at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự liên quan tại cuộc họp.",
     "translations": {
-      "vi": "sự liên quan, sự dính líu, hàmý"
+      "vi": "sự liên quan, sự dính líu, hàm ý"
     }
   },
   {
     "id": "eco-20",
     "topic": "Economy",
     "word": "prosperity",
-    "phonetic": "/pɹəspˈɛɹɪti/",
+    "phonetic": "/prɑˈspɛrəti/",
     "pos": "noun",
     "meaning": "sự hưng thịnh, sự phát đạt",
-    "example": "The team discussed the prosperity during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự hưng thịnh, sự phát đạt\" trong cuộc họp.",
+    "example": "We discussed the prosperity at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự hưng thịnh tại cuộc họp.",
     "translations": {
       "vi": "sự hưng thịnh, sự phát đạt"
     }
@@ -3703,50 +3690,50 @@ export const VOCABULARY: Word[] = [
     "id": "eco-21",
     "topic": "Economy",
     "word": "promising",
-    "phonetic": "/pɹˈɒmɪsɪŋ/",
-    "pos": "adj",
-    "meaning": "đầy hứa hẹn, nhiều triểnv ọng",
-    "example": "The manager described the proposal as promising.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đầy hứa hẹn, nhiều triểnv ọng\".",
+    "phonetic": "/ˈprɑməsɪŋ/",
+    "pos": "adjective",
+    "meaning": "đầy hứa hẹn, nhiều triển vọng",
+    "example": "The proposed plan is promising.",
+    "exampleTranslation": "Kế hoạch được đề xuất đầy hứa hẹn.",
     "translations": {
-      "vi": "đầy hứa hẹn, nhiều triểnv ọng"
+      "vi": "đầy hứa hẹn, nhiều triển vọng"
     }
   },
   {
     "id": "eco-22",
     "topic": "Economy",
     "word": "stagnant",
-    "phonetic": "/stˈæɡnənt/",
-    "pos": "adj",
-    "meaning": "trì tr ệ, uể oải, lờ đờ",
-    "example": "The manager described the proposal as stagnant.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"trì tr ệ, uể oải, lờ đờ\".",
+    "phonetic": "/ˈstæɡnənt/",
+    "pos": "adjective",
+    "meaning": "trì trệ, không phát triển; tù đọng",
+    "example": "Sales remained stagnant for several months.",
+    "exampleTranslation": "Doanh số trì trệ trong vài tháng.",
     "translations": {
-      "vi": "trì tr ệ, uể oải, lờ đờ"
+      "vi": "trì trệ, không phát triển; tù đọng"
     }
   },
   {
     "id": "eco-23",
     "topic": "Economy",
     "word": "soar",
-    "phonetic": "/sˈɔː/",
+    "phonetic": "/ˈsɔr/",
     "pos": "verb",
-    "meaning": "bay vút lên,t ăng vọt",
-    "example": "The team plans to soar before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bay vút lên,t ăng vọt\" trước thời hạn.",
+    "meaning": "bay vút lên, tăng vọt",
+    "example": "Prices can soar to a record level.",
+    "exampleTranslation": "Giá có thể tăng vọt lên mức kỷ lục.",
     "translations": {
-      "vi": "bay vút lên,t ăng vọt"
+      "vi": "bay vút lên, tăng vọt"
     }
   },
   {
     "id": "eco-24",
     "topic": "Economy",
     "word": "boost",
-    "phonetic": "/bˈuːst/",
+    "phonetic": "/ˈbust/",
     "pos": "verb",
     "meaning": "nâng lên, thúc đẩy",
-    "example": "The team plans to boost before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nâng lên, thúc đẩy\" trước thời hạn.",
+    "example": "Please boost sales through better service.",
+    "exampleTranslation": "Hãy tăng doanh số nhờ dịch vụ tốt hơn.",
     "translations": {
       "vi": "nâng lên, thúc đẩy"
     }
@@ -3755,24 +3742,24 @@ export const VOCABULARY: Word[] = [
     "id": "eco-25",
     "topic": "Economy",
     "word": "costly",
-    "phonetic": "/kˈɒstli/",
-    "pos": "adv",
-    "meaning": "tốnk ém, đắt tiền",
-    "example": "The team completed the task costly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"tốnk ém, đắt tiền\".",
+    "phonetic": "/ˈkɑstli/",
+    "pos": "adjective",
+    "meaning": "tốn kém, đắt tiền",
+    "example": "Replacing the equipment was costly.",
+    "exampleTranslation": "Việc thay thiết bị tốn kém.",
     "translations": {
-      "vi": "tốnk ém, đắt tiền"
+      "vi": "tốn kém, đắt tiền"
     }
   },
   {
     "id": "eco-26",
     "topic": "Economy",
     "word": "drastic",
-    "phonetic": "/dɹˈɑːstɪk/",
-    "pos": "adj",
+    "phonetic": "/ˈdræstɪk/",
+    "pos": "adjective",
     "meaning": "mạnh mẽ, quyết liệt",
-    "example": "The manager described the proposal as drastic.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"mạnh mẽ, quyết liệt\".",
+    "example": "The company made drastic changes.",
+    "exampleTranslation": "Công ty thực hiện những thay đổi mạnh mẽ.",
     "translations": {
       "vi": "mạnh mẽ, quyết liệt"
     }
@@ -3781,11 +3768,11 @@ export const VOCABULARY: Word[] = [
     "id": "eco-27",
     "topic": "Economy",
     "word": "evidence",
-    "phonetic": "/ˈɛvɪdəns/",
+    "phonetic": "/ˈɛvədəns/",
     "pos": "noun",
     "meaning": "bằng chứng, dấu hiệu",
-    "example": "The team discussed the evidence during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bằng chứng, dấu hiệu\" trong cuộc họp.",
+    "example": "We discussed the evidence at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về bằng chứng tại cuộc họp.",
     "translations": {
       "vi": "bằng chứng, dấu hiệu"
     }
@@ -3794,11 +3781,11 @@ export const VOCABULARY: Word[] = [
     "id": "eco-28",
     "topic": "Economy",
     "word": "fall",
-    "phonetic": "/fˈɔːl/",
+    "phonetic": "/ˈfɔl/",
     "pos": "verb",
     "meaning": "giảm xuống (giá cả, giá trị)",
-    "example": "The team plans to fall before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giảm xuống (giá cả, giá trị)\" trước thời hạn.",
+    "example": "Sales can fall below the expected level.",
+    "exampleTranslation": "Doanh số có thể giảm xuống dưới mức dự kiến.",
     "translations": {
       "vi": "giảm xuống (giá cả, giá trị)"
     }
@@ -3807,11 +3794,11 @@ export const VOCABULARY: Word[] = [
     "id": "eco-29",
     "topic": "Economy",
     "word": "indicator",
-    "phonetic": "/ˈɪndɪkˌeɪtɐ/",
+    "phonetic": "/ˈɪndəkeɪtɚ/",
     "pos": "noun",
     "meaning": "chỉ số",
-    "example": "The team discussed the indicator during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chỉ số\" trong cuộc họp.",
+    "example": "The unemployment rate is an economic indicator.",
+    "exampleTranslation": "Tỷ lệ thất nghiệp là chỉ số kinh tế.",
     "translations": {
       "vi": "chỉ số"
     }
@@ -3820,24 +3807,24 @@ export const VOCABULARY: Word[] = [
     "id": "eco-30",
     "topic": "Economy",
     "word": "consequence",
-    "phonetic": "/kˈɒnsɪkwəns/",
+    "phonetic": "/ˈkɑnsəkwəns/",
     "pos": "noun",
-    "meaning": "hậu quả, hệ quả,kết quả",
-    "example": "The team discussed the consequence during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hậu quả, hệ quả,kết quả\" trong cuộc họp.",
+    "meaning": "hậu quả, hệ quả, kết quả",
+    "example": "We discussed the consequence at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về hậu quả tại cuộc họp.",
     "translations": {
-      "vi": "hậu quả, hệ quả,kết quả"
+      "vi": "hậu quả, hệ quả, kết quả"
     }
   },
   {
     "id": "eco-31",
     "topic": "Economy",
     "word": "thrive",
-    "phonetic": "/θɹˈaɪv/",
+    "phonetic": "/ˈθraɪv/",
     "pos": "verb",
     "meaning": "phát triển mạnh, phát đạt",
-    "example": "The team plans to thrive before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phát triển mạnh, phát đạt\" trước thời hạn.",
+    "example": "Small businesses can thrive in a competitive market.",
+    "exampleTranslation": "Doanh nghiệp nhỏ có thể phát triển mạnh trong thị trường cạnh tranh.",
     "translations": {
       "vi": "phát triển mạnh, phát đạt"
     }
@@ -3846,24 +3833,24 @@ export const VOCABULARY: Word[] = [
     "id": "eco-32",
     "topic": "Economy",
     "word": "depression",
-    "phonetic": "/dɪpɹˈɛʃən/",
+    "phonetic": "/dɪˈprɛʃən/",
     "pos": "noun",
-    "meaning": "sự sụt giá, tình tr ạng đình trệ",
-    "example": "The team discussed the depression during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự sụt giá, tình tr ạng đình trệ\" trong cuộc họp.",
+    "meaning": "suy thoái, tình trạng đình trệ; sự trầm cảm",
+    "example": "We discussed the depression at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về suy thoái tại cuộc họp.",
     "translations": {
-      "vi": "sự sụt giá, tình tr ạng đình trệ"
+      "vi": "suy thoái, tình trạng đình trệ; sự trầm cảm"
     }
   },
   {
     "id": "eco-33",
     "topic": "Economy",
     "word": "dwindle",
-    "phonetic": "/dwˈɪndəl/",
+    "phonetic": "/ˈdwɪndəl/",
     "pos": "verb",
     "meaning": "thu nhỏ lại, giảm",
-    "example": "The team plans to dwindle before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thu nhỏ lại, giảm\" trước thời hạn.",
+    "example": "Supplies can dwindle as demand falls.",
+    "exampleTranslation": "Nguồn cung có thể giảm dần khi nhu cầu giảm.",
     "translations": {
       "vi": "thu nhỏ lại, giảm"
     }
@@ -3872,24 +3859,24 @@ export const VOCABULARY: Word[] = [
     "id": "eco-34",
     "topic": "Economy",
     "word": "impede",
-    "phonetic": "/ɪmpˈiːd/",
+    "phonetic": "/ɪmˈpid/",
     "pos": "verb",
-    "meaning": "cản tr ở, ngăn cản",
-    "example": "The team plans to impede before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cản tr ở, ngăn cản\" trước thời hạn.",
+    "meaning": "cản trở, ngăn cản",
+    "example": "Roadworks can impede the flow of traffic.",
+    "exampleTranslation": "Việc sửa đường có thể cản trở lưu thông.",
     "translations": {
-      "vi": "cản tr ở, ngăn cản"
+      "vi": "cản trở, ngăn cản"
     }
   },
   {
     "id": "eco-35",
     "topic": "Economy",
     "word": "adversity",
-    "phonetic": "/ædvˈəsɪti/",
+    "phonetic": "/ædˈvɝsɪti/",
     "pos": "noun",
     "meaning": "sự bất lợi, nghịch cảnh",
-    "example": "The team discussed the adversity during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự bất lợi, nghịch cảnh\" trong cuộc họp.",
+    "example": "We discussed the adversity at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự bất lợi tại cuộc họp.",
     "translations": {
       "vi": "sự bất lợi, nghịch cảnh"
     }
@@ -3898,11 +3885,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-01",
     "topic": "Shopping",
     "word": "exactly",
-    "phonetic": "/ɛɡzˈæktli/",
-    "pos": "adv",
+    "phonetic": "/ɪɡˈzæktli/",
+    "pos": "adverb",
     "meaning": "chính xác, đúng",
-    "example": "The team completed the task exactly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"chính xác, đúng\".",
+    "example": "The package arrived exactly on time.",
+    "exampleTranslation": "Gói hàng đến đúng giờ.",
     "translations": {
       "vi": "chính xác, đúng"
     }
@@ -3911,11 +3898,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-02",
     "topic": "Shopping",
     "word": "charge",
-    "phonetic": "/ˈtʃɑɹdʒ/",
+    "phonetic": "/ˈtʃɑrdʒ/",
     "pos": "noun",
     "meaning": "tiền phải trả, phí; nhiệm vụ, trách nhiệm",
-    "example": "The team discussed the charge during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tiền phải trả, phí; nhiệm vụ, trách nhiệm\" trong cuộc họp.",
+    "example": "We discussed the charge at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về tiền phải trả tại cuộc họp.",
     "translations": {
       "vi": "tiền phải trả, phí; nhiệm vụ, trách nhiệm"
     }
@@ -3924,24 +3911,24 @@ export const VOCABULARY: Word[] = [
     "id": "sho-03",
     "topic": "Shopping",
     "word": "experienced",
-    "phonetic": "/ɛkspˈiəɹɪənst/",
-    "pos": "adj",
-    "meaning": "có kinh nghiệm, lão luy ện",
-    "example": "The manager described the proposal as experienced.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có kinh nghiệm, lão luy ện\".",
+    "phonetic": "/ɪkˈspɪriənst/",
+    "pos": "adjective",
+    "meaning": "có kinh nghiệm, lão luyện",
+    "example": "The employee seemed experienced during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ có kinh nghiệm trong buổi phỏng vấn.",
     "translations": {
-      "vi": "có kinh nghiệm, lão luy ện"
+      "vi": "có kinh nghiệm, lão luyện"
     }
   },
   {
     "id": "sho-04",
     "topic": "Shopping",
     "word": "instruction",
-    "phonetic": "/ɪnstɹˈʌkʃən/",
+    "phonetic": "/ɪnˈstrʌkʃən/",
     "pos": "noun",
     "meaning": "lời chỉ dẫn, hướng dẫn",
-    "example": "The team discussed the instruction during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lời chỉ dẫn, hướng dẫn\" trong cuộc họp.",
+    "example": "Please read the instruction carefully.",
+    "exampleTranslation": "Hãy đọc lời chỉ dẫn cẩn thận.",
     "translations": {
       "vi": "lời chỉ dẫn, hướng dẫn"
     }
@@ -3950,24 +3937,24 @@ export const VOCABULARY: Word[] = [
     "id": "sho-05",
     "topic": "Shopping",
     "word": "expert",
-    "phonetic": "/ˈɛkspɜːt/",
+    "phonetic": "/ˈɛkspɚt/",
     "pos": "noun",
-    "meaning": "chuy ên gia",
-    "example": "The team discussed the expert during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chuy ên gia\" trong cuộc họp.",
+    "meaning": "chuyên gia",
+    "example": "The expert answered our questions.",
+    "exampleTranslation": "Chuyên gia đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
-      "vi": "chuy ên gia"
+      "vi": "chuyên gia"
     }
   },
   {
     "id": "sho-06",
     "topic": "Shopping",
     "word": "delivery",
-    "phonetic": "/dɪlˈɪvəɹi/",
+    "phonetic": "/dɪˈlɪvɚi/",
     "pos": "noun",
     "meaning": "sự giao hàng, sự phân phát",
-    "example": "The team discussed the delivery during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự giao hàng, sự phân phát\" trong cuộc họp.",
+    "example": "We discussed the delivery at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự giao hàng tại cuộc họp.",
     "translations": {
       "vi": "sự giao hàng, sự phân phát"
     }
@@ -3976,24 +3963,24 @@ export const VOCABULARY: Word[] = [
     "id": "sho-07",
     "topic": "Shopping",
     "word": "carefully",
-    "phonetic": "/kˈeəfəli/",
-    "pos": "adv",
-    "meaning": "một cách cẩn thận, thận tr ọng",
-    "example": "The team completed the task carefully.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"một cách cẩn thận, thận tr ọng\".",
+    "phonetic": "/ˈkɛrfəli/",
+    "pos": "adverb",
+    "meaning": "một cách cẩn thận, thận trọng",
+    "example": "Read the contract carefully before signing.",
+    "exampleTranslation": "Đọc kỹ hợp đồng trước khi ký.",
     "translations": {
-      "vi": "một cách cẩn thận, thận tr ọng"
+      "vi": "một cách cẩn thận, thận trọng"
     }
   },
   {
     "id": "sho-08",
     "topic": "Shopping",
     "word": "exclusively",
-    "phonetic": "/ɛksklˈuːsɪvli/",
-    "pos": "adv",
+    "phonetic": "/ɪkˈsklusɪvli/",
+    "pos": "adverb",
     "meaning": "riêng, dành riêng",
-    "example": "The team completed the task exclusively.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"riêng, dành riêng\".",
+    "example": "This service is available exclusively to members.",
+    "exampleTranslation": "Dịch vụ này chỉ dành cho hội viên.",
     "translations": {
       "vi": "riêng, dành riêng"
     }
@@ -4002,24 +3989,24 @@ export const VOCABULARY: Word[] = [
     "id": "sho-09",
     "topic": "Shopping",
     "word": "description",
-    "phonetic": "/dɪskɹˈɪpʃən/",
+    "phonetic": "/dɪˈskrɪpʃən/",
     "pos": "noun",
-    "meaning": "sự miêut ả, sự môtả",
-    "example": "The team discussed the description during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự miêut ả, sự môtả\" trong cuộc họp.",
+    "meaning": "sự miêu tả, sự mô tả",
+    "example": "The website provides a detailed product description.",
+    "exampleTranslation": "Trang web cung cấp mô tả sản phẩm chi tiết.",
     "translations": {
-      "vi": "sự miêut ả, sự môtả"
+      "vi": "sự miêu tả, sự mô tả"
     }
   },
   {
     "id": "sho-10",
     "topic": "Shopping",
     "word": "relatively",
-    "phonetic": "/ɹˈɛlətˌɪvli/",
-    "pos": "adv",
+    "phonetic": "/ˈrɛlətɪvli/",
+    "pos": "adverb",
     "meaning": "có liên quan, tương đối, vừa phải",
-    "example": "The team completed the task relatively.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"có liên quan, tương đối, vừa phải\".",
+    "example": "The new procedure is relatively simple.",
+    "exampleTranslation": "Quy trình mới tương đối đơn giản.",
     "translations": {
       "vi": "có liên quan, tương đối, vừa phải"
     }
@@ -4028,11 +4015,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-11",
     "topic": "Shopping",
     "word": "preparation",
-    "phonetic": "/pɹˌɛpəɹˈeɪʃən/",
+    "phonetic": "/prɛpɚˈeɪʃən/",
     "pos": "noun",
     "meaning": "sự chuẩn bị",
-    "example": "The team discussed the preparation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự chuẩn bị\" trong cuộc họp.",
+    "example": "We discussed the preparation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự chuẩn bị tại cuộc họp.",
     "translations": {
       "vi": "sự chuẩn bị"
     }
@@ -4041,11 +4028,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-12",
     "topic": "Shopping",
     "word": "area",
-    "phonetic": "/ˈeəɹiə/",
+    "phonetic": "/ˈɛriə/",
     "pos": "noun",
     "meaning": "khu vực, vùng, lĩnh vực",
-    "example": "The team discussed the area during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"khu vực, vùng, lĩnh vực\" trong cuộc họp.",
+    "example": "The area is near the station.",
+    "exampleTranslation": "Khu vực ở gần nhà ga.",
     "translations": {
       "vi": "khu vực, vùng, lĩnh vực"
     }
@@ -4054,11 +4041,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-13",
     "topic": "Shopping",
     "word": "alter",
-    "phonetic": "/ˈɒltɐ/",
+    "phonetic": "/ˈɔltɚ/",
     "pos": "verb",
     "meaning": "thay đổi, sửa đổi",
-    "example": "The team plans to alter before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thay đổi, sửa đổi\" trước thời hạn.",
+    "example": "Please alter the delivery schedule.",
+    "exampleTranslation": "Hãy thay đổi lịch giao hàng.",
     "translations": {
       "vi": "thay đổi, sửa đổi"
     }
@@ -4067,24 +4054,24 @@ export const VOCABULARY: Word[] = [
     "id": "sho-14",
     "topic": "Shopping",
     "word": "apply",
-    "phonetic": "/əˈpɫaɪ/",
+    "phonetic": "/əˈplaɪ/",
     "pos": "verb",
-    "meaning": "nộp đơn, ứng tuy ển, áp dụng",
-    "example": "The team plans to apply before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nộp đơn, ứng tuy ển, áp dụng\" trước thời hạn.",
+    "meaning": "nộp đơn, ứng tuyển, áp dụng",
+    "example": "Please apply for the vacant position.",
+    "exampleTranslation": "Hãy ứng tuyển vào vị trí còn trống.",
     "translations": {
-      "vi": "nộp đơn, ứng tuy ển, áp dụng"
+      "vi": "nộp đơn, ứng tuyển, áp dụng"
     }
   },
   {
     "id": "sho-15",
     "topic": "Shopping",
     "word": "mutually",
-    "phonetic": "/mjˈuːtʃuːəli/",
-    "pos": "adv",
+    "phonetic": "/ˈmjutʃuəli/",
+    "pos": "adverb",
     "meaning": "với nhau, lẫn nhau, qua lại",
-    "example": "The team completed the task mutually.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"với nhau, lẫn nhau, qua lại\".",
+    "example": "The agreement is mutually beneficial.",
+    "exampleTranslation": "Thỏa thuận có lợi cho cả hai bên.",
     "translations": {
       "vi": "với nhau, lẫn nhau, qua lại"
     }
@@ -4093,24 +4080,24 @@ export const VOCABULARY: Word[] = [
     "id": "sho-16",
     "topic": "Shopping",
     "word": "qualify",
-    "phonetic": "/kwˈɒlɪfˌaɪ/",
+    "phonetic": "/ˈkwɑləfaɪ/",
     "pos": "verb",
-    "meaning": "đủ điều kiện, đủ khả năng",
-    "example": "The team plans to qualify before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đủ điều kiện, đủ khả năng\" trước thời hạn.",
+    "meaning": "đủ điều kiện; làm cho đủ điều kiện",
+    "example": "Please qualify for the employee discount.",
+    "exampleTranslation": "Hãy đủ điều kiện hưởng giảm giá dành cho nhân viên.",
     "translations": {
-      "vi": "đủ điều kiện, đủ khả năng"
+      "vi": "đủ điều kiện; làm cho đủ điều kiện"
     }
   },
   {
     "id": "sho-17",
     "topic": "Shopping",
     "word": "valid",
-    "phonetic": "/vˈælɪd/",
-    "pos": "adj",
+    "phonetic": "/ˈvælɪd/",
+    "pos": "adjective",
     "meaning": "có hiệu lực, hợp lý, hợp lệ",
-    "example": "The manager described the proposal as valid.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có hiệu lực, hợp lý, hợp lệ\".",
+    "example": "Please present a valid ticket.",
+    "exampleTranslation": "Hãy xuất trình vé hợp lệ.",
     "translations": {
       "vi": "có hiệu lực, hợp lý, hợp lệ"
     }
@@ -4119,11 +4106,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-18",
     "topic": "Shopping",
     "word": "installment",
-    "phonetic": "/ɪnstˈɔːlmənt/",
+    "phonetic": "/ɪnˈstɔlmənt/",
     "pos": "noun",
     "meaning": "sự trả góp",
-    "example": "The team discussed the installment during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự trả góp\" trong cuộc họp.",
+    "example": "We discussed the installment at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự trả góp tại cuộc họp.",
     "translations": {
       "vi": "sự trả góp"
     }
@@ -4132,11 +4119,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-19",
     "topic": "Shopping",
     "word": "auction",
-    "phonetic": "/ˈɔːkʃən/",
+    "phonetic": "/ˈɑkʃən/",
     "pos": "noun",
     "meaning": "cuộc đấu giá, sự bán đấu giá",
-    "example": "The team discussed the auction during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cuộc đấu giá, sự bán đấu giá\" trong cuộc họp.",
+    "example": "We discussed the auction at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về cuộc đấu giá tại cuộc họp.",
     "translations": {
       "vi": "cuộc đấu giá, sự bán đấu giá"
     }
@@ -4145,11 +4132,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-20",
     "topic": "Shopping",
     "word": "authentic",
-    "phonetic": "/ɔːθˈɛntɪk/",
-    "pos": "adj",
+    "phonetic": "/əˈθɛntɪk/",
+    "pos": "adjective",
     "meaning": "thật, đích thực, đáng tin",
-    "example": "The manager described the proposal as authentic.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"thật, đích thực, đáng tin\".",
+    "example": "The new product is authentic.",
+    "exampleTranslation": "Sản phẩm mới thật.",
     "translations": {
       "vi": "thật, đích thực, đáng tin"
     }
@@ -4158,11 +4145,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-21",
     "topic": "Shopping",
     "word": "warranty",
-    "phonetic": "/wˈɒɹənti/",
+    "phonetic": "/ˈwɔrənti/",
     "pos": "noun",
     "meaning": "giấy bảo hành, sự bảo hành",
-    "example": "The team discussed the warranty during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"giấy bảo hành, sự bảo hành\" trong cuộc họp.",
+    "example": "Please read the warranty carefully.",
+    "exampleTranslation": "Hãy đọc giấy bảo hành cẩn thận.",
     "translations": {
       "vi": "giấy bảo hành, sự bảo hành"
     }
@@ -4171,11 +4158,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-22",
     "topic": "Shopping",
     "word": "receipt",
-    "phonetic": "/ɹɪsˈiːt/",
+    "phonetic": "/rɪˈsit/",
     "pos": "noun",
     "meaning": "biên lai",
-    "example": "The team discussed the receipt during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"biên lai\" trong cuộc họp.",
+    "example": "We discussed the receipt at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về biên lai tại cuộc họp.",
     "translations": {
       "vi": "biên lai"
     }
@@ -4184,11 +4171,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-23",
     "topic": "Shopping",
     "word": "spare",
-    "phonetic": "/spˈeə/",
+    "phonetic": "/ˈspɛr/",
     "pos": "verb",
     "meaning": "để dành, miễn cho, không cần đến",
-    "example": "The team plans to spare before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"để dành, miễn cho, không cần đến\" trước thời hạn.",
+    "example": "Please spare a few minutes for this survey.",
+    "exampleTranslation": "Hãy dành vài phút cho cuộc khảo sát này.",
     "translations": {
       "vi": "để dành, miễn cho, không cần đến"
     }
@@ -4197,11 +4184,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-24",
     "topic": "Shopping",
     "word": "desire",
-    "phonetic": "/dɪzˈaɪə/",
+    "phonetic": "/dɪˈzaɪɚ/",
     "pos": "noun",
     "meaning": "niềm mong muốn, khát khao",
-    "example": "The team discussed the desire during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"niềm mong muốn, khát khao\" trong cuộc họp.",
+    "example": "She expressed desire in her message.",
+    "exampleTranslation": "Cô ấy bày tỏ niềm mong muốn trong lời nhắn.",
     "translations": {
       "vi": "niềm mong muốn, khát khao"
     }
@@ -4210,11 +4197,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-25",
     "topic": "Shopping",
     "word": "consumption",
-    "phonetic": "/kənsˈʌmpʃən/",
+    "phonetic": "/kənˈsʌmpʃən/",
     "pos": "noun",
     "meaning": "sự tiêu thụ, sự tiêu dùng",
-    "example": "The team discussed the consumption during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự tiêu thụ, sự tiêu dùng\" trong cuộc họp.",
+    "example": "We discussed the consumption at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự tiêu thụ tại cuộc họp.",
     "translations": {
       "vi": "sự tiêu thụ, sự tiêu dùng"
     }
@@ -4223,11 +4210,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-26",
     "topic": "Shopping",
     "word": "fabric",
-    "phonetic": "/fˈæbɹɪk/",
+    "phonetic": "/ˈfæbrɪk/",
     "pos": "noun",
     "meaning": "vải",
-    "example": "The team discussed the fabric during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"vải\" trong cuộc họp.",
+    "example": "This fabric is durable and soft.",
+    "exampleTranslation": "Loại vải này bền và mềm.",
     "translations": {
       "vi": "vải"
     }
@@ -4236,11 +4223,11 @@ export const VOCABULARY: Word[] = [
     "id": "sho-27",
     "topic": "Shopping",
     "word": "research",
-    "phonetic": "/ˈɹisɝtʃ/",
+    "phonetic": "/riˈsɝtʃ/",
     "pos": "noun",
     "meaning": "sự nghiên cứu, điều tra",
-    "example": "The team discussed the research during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự nghiên cứu, điều tra\" trong cuộc họp.",
+    "example": "We discussed the research at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự nghiên cứu tại cuộc họp.",
     "translations": {
       "vi": "sự nghiên cứu, điều tra"
     }
@@ -4249,24 +4236,24 @@ export const VOCABULARY: Word[] = [
     "id": "sho-28",
     "topic": "Shopping",
     "word": "devise",
-    "phonetic": "/dɪvˈaɪz/",
+    "phonetic": "/dɪˈvaɪz/",
     "pos": "verb",
-    "meaning": "phát minh,s ángt ạo",
-    "example": "The team plans to devise before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phát minh,s ángt ạo\" trước thời hạn.",
+    "meaning": "phát minh, sáng tạo",
+    "example": "Please devise a practical solution.",
+    "exampleTranslation": "Hãy nghĩ ra một giải pháp thiết thực.",
     "translations": {
-      "vi": "phát minh,s ángt ạo"
+      "vi": "phát minh, sáng tạo"
     }
   },
   {
     "id": "sho-29",
     "topic": "Shopping",
     "word": "innovative",
-    "phonetic": "/ˈɪnəvˌeɪtɪv/",
-    "pos": "adj",
+    "phonetic": "/ˈɪnəveɪtɪv/",
+    "pos": "adjective",
     "meaning": "tân tiến, đổi mới",
-    "example": "The manager described the proposal as innovative.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tân tiến, đổi mới\".",
+    "example": "The new product is innovative.",
+    "exampleTranslation": "Sản phẩm mới tân tiến.",
     "translations": {
       "vi": "tân tiến, đổi mới"
     }
@@ -4275,24 +4262,24 @@ export const VOCABULARY: Word[] = [
     "id": "pde-01",
     "topic": "Product Development",
     "word": "intend",
-    "phonetic": "/ɪntˈɛnd/",
+    "phonetic": "/ɪnˈtɛnd/",
     "pos": "verb",
-    "meaning": "định, cóý định",
-    "example": "The team plans to intend before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"định, cóý định\" trước thời hạn.",
+    "meaning": "định, có ý định",
+    "example": "We intend to renew the contract.",
+    "exampleTranslation": "Chúng tôi dự định gia hạn hợp đồng.",
     "translations": {
-      "vi": "định, cóý định"
+      "vi": "định, có ý định"
     }
   },
   {
     "id": "pde-02",
     "topic": "Product Development",
     "word": "allow",
-    "phonetic": "/ɐlˈaʊ/",
+    "phonetic": "/əˈlaʊ/",
     "pos": "verb",
     "meaning": "cho phép, phê duyệt, chấp thuận",
-    "example": "The team plans to allow before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cho phép, phê duyệt, chấp thuận\" trước thời hạn.",
+    "example": "Please allow enough time for registration.",
+    "exampleTranslation": "Hãy dành đủ thời gian để đăng ký.",
     "translations": {
       "vi": "cho phép, phê duyệt, chấp thuận"
     }
@@ -4301,11 +4288,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-03",
     "topic": "Product Development",
     "word": "inspect",
-    "phonetic": "/ɪnspˈɛkt/",
+    "phonetic": "/ɪnˈspɛkt/",
     "pos": "verb",
     "meaning": "kiểm tra, thanh tra",
-    "example": "The team plans to inspect before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"kiểm tra, thanh tra\" trước thời hạn.",
+    "example": "Please inspect the goods before delivery.",
+    "exampleTranslation": "Hãy kiểm tra hàng trước khi giao.",
     "translations": {
       "vi": "kiểm tra, thanh tra"
     }
@@ -4314,11 +4301,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-04",
     "topic": "Product Development",
     "word": "improve",
-    "phonetic": "/ɪmpɹˈuːv/",
+    "phonetic": "/ɪmˈpruv/",
     "pos": "verb",
     "meaning": "cải tiến",
-    "example": "The team plans to improve before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cải tiến\" trước thời hạn.",
+    "example": "Please improve the quality of service.",
+    "exampleTranslation": "Hãy cải thiện chất lượng dịch vụ.",
     "translations": {
       "vi": "cải tiến"
     }
@@ -4327,11 +4314,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-05",
     "topic": "Product Development",
     "word": "increasingly",
-    "phonetic": "/ɪnkɹˈiːsɪŋli/",
-    "pos": "adv",
+    "phonetic": "/ɪnˈkrisɪŋli/",
+    "pos": "adverb",
     "meaning": "tăng dần",
-    "example": "The team completed the task increasingly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"tăng dần\".",
+    "example": "Customers are increasingly interested in online services.",
+    "exampleTranslation": "Khách hàng ngày càng quan tâm đến dịch vụ trực tuyến.",
     "translations": {
       "vi": "tăng dần"
     }
@@ -4340,11 +4327,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-06",
     "topic": "Product Development",
     "word": "invest",
-    "phonetic": "/ɪnvˈɛst/",
+    "phonetic": "/ɪnˈvɛst/",
     "pos": "verb",
     "meaning": "đầu tư",
-    "example": "The team plans to invest before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đầu tư\" trước thời hạn.",
+    "example": "Please invest in employee training.",
+    "exampleTranslation": "Hãy đầu tư vào đào tạo nhân viên.",
     "translations": {
       "vi": "đầu tư"
     }
@@ -4353,11 +4340,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-07",
     "topic": "Product Development",
     "word": "upgrade",
-    "phonetic": "/ˈəpˈɡɹeɪd/",
+    "phonetic": "/ˈʌpɡreɪd/",
     "pos": "noun",
     "meaning": "sự cải tiến, sự nâng cấp",
-    "example": "The team discussed the upgrade during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự cải tiến, sự nâng cấp\" trong cuộc họp.",
+    "example": "We discussed the upgrade at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự cải tiến tại cuộc họp.",
     "translations": {
       "vi": "sự cải tiến, sự nâng cấp"
     }
@@ -4366,37 +4353,37 @@ export const VOCABULARY: Word[] = [
     "id": "pde-08",
     "topic": "Product Development",
     "word": "explore",
-    "phonetic": "/ɛksplˈɔː/",
+    "phonetic": "/ɪkˈsplɔr/",
     "pos": "verb",
-    "meaning": "thám hiểm, tìmt òi, khám phá",
-    "example": "The team plans to explore before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thám hiểm, tìmt òi, khám phá\" trước thời hạn.",
+    "meaning": "thám hiểm, tìm tòi, khám phá",
+    "example": "Please explore alternative solutions.",
+    "exampleTranslation": "Hãy tìm hiểu các giải pháp khác.",
     "translations": {
-      "vi": "thám hiểm, tìmt òi, khám phá"
+      "vi": "thám hiểm, tìm tòi, khám phá"
     }
   },
   {
     "id": "pde-09",
     "topic": "Product Development",
     "word": "appearance",
-    "phonetic": "/ɐpˈiəɹəns/",
+    "phonetic": "/əˈpɪrəns/",
     "pos": "noun",
-    "meaning": "sự xuất hiện,vẻ ngoài, diện mạo",
-    "example": "The team discussed the appearance during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự xuất hiện,vẻ ngoài, diện mạo\" trong cuộc họp.",
+    "meaning": "sự xuất hiện, vẻ ngoài, diện mạo",
+    "example": "We discussed the appearance at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự xuất hiện tại cuộc họp.",
     "translations": {
-      "vi": "sự xuất hiện,vẻ ngoài, diện mạo"
+      "vi": "sự xuất hiện, vẻ ngoài, diện mạo"
     }
   },
   {
     "id": "pde-10",
     "topic": "Product Development",
     "word": "successful",
-    "phonetic": "/səksˈɛsfəl/",
-    "pos": "adj",
+    "phonetic": "/səkˈsɛsfəl/",
+    "pos": "adjective",
     "meaning": "thành công, thành đạt",
-    "example": "The manager described the proposal as successful.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"thành công, thành đạt\".",
+    "example": "The proposed plan is successful.",
+    "exampleTranslation": "Kế hoạch được đề xuất thành công.",
     "translations": {
       "vi": "thành công, thành đạt"
     }
@@ -4405,24 +4392,24 @@ export const VOCABULARY: Word[] = [
     "id": "pde-11",
     "topic": "Product Development",
     "word": "advance",
-    "phonetic": "/ɐdvˈæns/",
+    "phonetic": "/ədˈvæns/",
     "pos": "noun",
-    "meaning": "thành tựu, sự tiến bộ, sự thăng tiến",
-    "example": "The team discussed the advance during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thành tựu, sự tiến bộ, sự thăng tiến\" trong cuộc họp.",
+    "meaning": "sự tiến bộ; khoản ứng trước",
+    "example": "The supplier requested an advance on the payment.",
+    "exampleTranslation": "Nhà cung cấp yêu cầu ứng trước một phần tiền thanh toán.",
     "translations": {
-      "vi": "thành tựu, sự tiến bộ, sự thăng tiến"
+      "vi": "sự tiến bộ; khoản ứng trước"
     }
   },
   {
     "id": "pde-12",
     "topic": "Product Development",
     "word": "reliable",
-    "phonetic": "/ɹɪlˈaɪəbəl/",
-    "pos": "adj",
+    "phonetic": "/rɪˈlaɪəbəl/",
+    "pos": "adjective",
     "meaning": "đáng tin cậy",
-    "example": "The manager described the proposal as reliable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đáng tin cậy\".",
+    "example": "The new product is reliable.",
+    "exampleTranslation": "Sản phẩm mới đáng tin cậy.",
     "translations": {
       "vi": "đáng tin cậy"
     }
@@ -4431,11 +4418,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-13",
     "topic": "Product Development",
     "word": "quality",
-    "phonetic": "/kwˈɒlɪti/",
+    "phonetic": "/ˈkwɑləti/",
     "pos": "noun",
     "meaning": "chất lượng",
-    "example": "The team discussed the quality during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chất lượng\" trong cuộc họp.",
+    "example": "We discussed the quality at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về chất lượng tại cuộc họp.",
     "translations": {
       "vi": "chất lượng"
     }
@@ -4444,11 +4431,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-14",
     "topic": "Product Development",
     "word": "development",
-    "phonetic": "/dɪvˈɛləpmənt/",
+    "phonetic": "/dɪˈvɛləpmənt/",
     "pos": "noun",
     "meaning": "sự phát triển, sự tiến triển",
-    "example": "The team discussed the development during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự phát triển, sự tiến triển\" trong cuộc họp.",
+    "example": "We discussed the development at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự phát triển tại cuộc họp.",
     "translations": {
       "vi": "sự phát triển, sự tiến triển"
     }
@@ -4457,11 +4444,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-15",
     "topic": "Product Development",
     "word": "update",
-    "phonetic": "/ˈəpˌdeɪt/",
+    "phonetic": "/ˈʌpdeɪt/",
     "pos": "noun",
     "meaning": "sự cập nhật, sự nâng cấp",
-    "example": "The team discussed the update during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự cập nhật, sự nâng cấp\" trong cuộc họp.",
+    "example": "Please install the latest software update.",
+    "exampleTranslation": "Hãy cài bản cập nhật phần mềm mới nhất.",
     "translations": {
       "vi": "sự cập nhật, sự nâng cấp"
     }
@@ -4470,37 +4457,37 @@ export const VOCABULARY: Word[] = [
     "id": "pde-16",
     "topic": "Product Development",
     "word": "accurate",
-    "phonetic": "/ˈækjʊɹət/",
-    "pos": "adj",
-    "meaning": "đúng, chínhx ác",
-    "example": "The manager described the proposal as accurate.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đúng, chínhx ác\".",
+    "phonetic": "/ˈækjɚət/",
+    "pos": "adjective",
+    "meaning": "đúng, chính xác",
+    "example": "The measurements are accurate.",
+    "exampleTranslation": "Các số đo chính xác.",
     "translations": {
-      "vi": "đúng, chínhx ác"
+      "vi": "đúng, chính xác"
     }
   },
   {
     "id": "pde-17",
     "topic": "Product Development",
     "word": "complicated",
-    "phonetic": "/kˈɒmplɪkˌeɪtɪd/",
-    "pos": "adj",
-    "meaning": "phứct ạp,r ắcr ối",
-    "example": "The manager described the proposal as complicated.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"phứct ạp,r ắcr ối\".",
+    "phonetic": "/ˈkɑmpləkeɪtəd/",
+    "pos": "adjective",
+    "meaning": "phức tạp, rắc rối",
+    "example": "The proposed plan is complicated.",
+    "exampleTranslation": "Kế hoạch được đề xuất phức tạp.",
     "translations": {
-      "vi": "phứct ạp,r ắcr ối"
+      "vi": "phức tạp, rắc rối"
     }
   },
   {
     "id": "pde-18",
     "topic": "Product Development",
     "word": "indication",
-    "phonetic": "/ˌɪndɪkˈeɪʃən/",
+    "phonetic": "/ɪndəˈkeɪʃən/",
     "pos": "noun",
     "meaning": "biểu hiện, dấu hiệu",
-    "example": "The team discussed the indication during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"biểu hiện, dấu hiệu\" trong cuộc họp.",
+    "example": "The increase is an indication of stronger demand.",
+    "exampleTranslation": "Mức tăng là dấu hiệu cho thấy nhu cầu mạnh hơn.",
     "translations": {
       "vi": "biểu hiện, dấu hiệu"
     }
@@ -4509,11 +4496,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-19",
     "topic": "Product Development",
     "word": "compatible",
-    "phonetic": "/kəmpˈætəbəl/",
-    "pos": "adj",
+    "phonetic": "/kəmˈpætəbəl/",
+    "pos": "adjective",
     "meaning": "tương thích, thích hợp",
-    "example": "The manager described the proposal as compatible.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tương thích, thích hợp\".",
+    "example": "The software is compatible with our computers.",
+    "exampleTranslation": "Phần mềm tương thích với máy tính của chúng tôi.",
     "translations": {
       "vi": "tương thích, thích hợp"
     }
@@ -4522,11 +4509,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-20",
     "topic": "Product Development",
     "word": "superior",
-    "phonetic": "/suːpˈiəɹɪɐ/",
-    "pos": "adj",
+    "phonetic": "/suˈpɪriɚ/",
+    "pos": "adjective",
     "meaning": "cao, cao cấp, tốt hơn",
-    "example": "The manager described the proposal as superior.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"cao, cao cấp, tốt hơn\".",
+    "example": "This material is superior in quality.",
+    "exampleTranslation": "Vật liệu này có chất lượng tốt hơn.",
     "translations": {
       "vi": "cao, cao cấp, tốt hơn"
     }
@@ -4535,37 +4522,37 @@ export const VOCABULARY: Word[] = [
     "id": "pde-21",
     "topic": "Product Development",
     "word": "absolute",
-    "phonetic": "/ˈæbsəlˌuːt/",
-    "pos": "adj",
-    "meaning": "tuyệt đối, hoànt oàn, thuần tuý",
-    "example": "The manager described the proposal as absolute.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tuyệt đối, hoànt oàn, thuần tuý\".",
+    "phonetic": "/ˈæbsəlut/",
+    "pos": "adjective",
+    "meaning": "tuyệt đối, hoàn toàn, thuần túy",
+    "example": "Customer safety is an absolute priority.",
+    "exampleTranslation": "An toàn của khách hàng là ưu tiên tuyệt đối.",
     "translations": {
-      "vi": "tuyệt đối, hoànt oàn, thuần tuý"
+      "vi": "tuyệt đối, hoàn toàn, thuần túy"
     }
   },
   {
     "id": "pde-22",
     "topic": "Product Development",
     "word": "broaden",
-    "phonetic": "/bɹˈɔːdən/",
+    "phonetic": "/ˈbrɔdən/",
     "pos": "verb",
-    "meaning": "mởr ộng",
-    "example": "The team plans to broaden before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"mởr ộng\" trước thời hạn.",
+    "meaning": "mở rộng",
+    "example": "Please broaden your knowledge of accounting.",
+    "exampleTranslation": "Hãy mở rộng kiến thức về kế toán.",
     "translations": {
-      "vi": "mởr ộng"
+      "vi": "mở rộng"
     }
   },
   {
     "id": "pde-23",
     "topic": "Product Development",
     "word": "corrosion",
-    "phonetic": "/kəɹˈəʊʒən/",
+    "phonetic": "/kɚˈoʊʒən/",
     "pos": "noun",
     "meaning": "sự ăn mòn",
-    "example": "The team discussed the corrosion during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự ăn mòn\" trong cuộc họp.",
+    "example": "We discussed the corrosion at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự ăn mòn tại cuộc họp.",
     "translations": {
       "vi": "sự ăn mòn"
     }
@@ -4574,11 +4561,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-24",
     "topic": "Product Development",
     "word": "feature",
-    "phonetic": "/fˈiːtʃɐ/",
+    "phonetic": "/ˈfitʃɚ/",
     "pos": "noun",
     "meaning": "đặc điểm, tính năng",
-    "example": "The team discussed the feature during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"đặc điểm, tính năng\" trong cuộc họp.",
+    "example": "We discussed the feature at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về đặc điểm tại cuộc họp.",
     "translations": {
       "vi": "đặc điểm, tính năng"
     }
@@ -4587,11 +4574,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-25",
     "topic": "Product Development",
     "word": "inspiration",
-    "phonetic": "/ˌɪnspəɹˈeɪʃən/",
+    "phonetic": "/ɪnspɚˈeɪʃən/",
     "pos": "noun",
     "meaning": "cảm hứng, nguồn cảm hứng",
-    "example": "The team discussed the inspiration during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cảm hứng, nguồn cảm hứng\" trong cuộc họp.",
+    "example": "We discussed the inspiration at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về cảm hứng tại cuộc họp.",
     "translations": {
       "vi": "cảm hứng, nguồn cảm hứng"
     }
@@ -4602,22 +4589,22 @@ export const VOCABULARY: Word[] = [
     "word": "patent",
     "phonetic": "/ˈpætənt/",
     "pos": "noun",
-    "meaning": "bằngs áng chế, giấy đăngký",
-    "example": "The team discussed the patent during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bằngs áng chế, giấy đăngký\" trong cuộc họp.",
+    "meaning": "bằng sáng chế, giấy đăng ký",
+    "example": "Please read the patent carefully.",
+    "exampleTranslation": "Hãy đọc bằng sáng chế cẩn thận.",
     "translations": {
-      "vi": "bằngs áng chế, giấy đăngký"
+      "vi": "bằng sáng chế, giấy đăng ký"
     }
   },
   {
     "id": "pde-27",
     "topic": "Product Development",
     "word": "envision",
-    "phonetic": "/ɛnvˈɪʒən/",
+    "phonetic": "/ɛnˈvɪʒən/",
     "pos": "verb",
     "meaning": "hình dung, mường tượng",
-    "example": "The team plans to envision before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hình dung, mường tượng\" trước thời hạn.",
+    "example": "Please envision a more efficient workplace.",
+    "exampleTranslation": "Hãy hình dung một nơi làm việc hiệu quả hơn.",
     "translations": {
       "vi": "hình dung, mường tượng"
     }
@@ -4626,11 +4613,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-28",
     "topic": "Product Development",
     "word": "grant",
-    "phonetic": "/ɡɹˈɑːnt/",
+    "phonetic": "/ˈɡrænt/",
     "pos": "verb",
     "meaning": "ban, cấp, thừa nhận, công nhận",
-    "example": "The team plans to grant before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"ban, cấp, thừa nhận, công nhận\" trước thời hạn.",
+    "example": "Please grant access to authorized users.",
+    "exampleTranslation": "Hãy cấp quyền truy cập cho người dùng được phép.",
     "translations": {
       "vi": "ban, cấp, thừa nhận, công nhận"
     }
@@ -4639,11 +4626,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-29",
     "topic": "Product Development",
     "word": "various",
-    "phonetic": "/vˈeəɹɪəs/",
-    "pos": "adj",
+    "phonetic": "/ˈvɛriəs/",
+    "pos": "adjective",
     "meaning": "nhiều, đa dạng, khác nhau",
-    "example": "The manager described the proposal as various.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"nhiều, đa dạng, khác nhau\".",
+    "example": "We considered various options.",
+    "exampleTranslation": "Chúng tôi cân nhắc nhiều lựa chọn khác nhau.",
     "translations": {
       "vi": "nhiều, đa dạng, khác nhau"
     }
@@ -4652,11 +4639,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-30",
     "topic": "Product Development",
     "word": "manual",
-    "phonetic": "/mˈænjuːəl/",
+    "phonetic": "/ˈmænjuəl/",
     "pos": "noun",
     "meaning": "sổ tay, sách hướng dẫn",
-    "example": "The team discussed the manual during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sổ tay, sách hướng dẫn\" trong cuộc họp.",
+    "example": "Please read the manual carefully.",
+    "exampleTranslation": "Hãy đọc sổ tay cẩn thận.",
     "translations": {
       "vi": "sổ tay, sách hướng dẫn"
     }
@@ -4665,11 +4652,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-31",
     "topic": "Product Development",
     "word": "automate",
-    "phonetic": "/ˈɔːtəmˌeɪt/",
+    "phonetic": "/ˈɔtəmeɪt/",
     "pos": "verb",
     "meaning": "tự động hoá",
-    "example": "The team plans to automate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tự động hoá\" trước thời hạn.",
+    "example": "Please automate the billing process.",
+    "exampleTranslation": "Hãy tự động hóa quy trình thanh toán.",
     "translations": {
       "vi": "tự động hoá"
     }
@@ -4678,11 +4665,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-32",
     "topic": "Product Development",
     "word": "properly",
-    "phonetic": "/pɹˈɒpəli/",
-    "pos": "adv",
+    "phonetic": "/ˈprɑpɚli/",
+    "pos": "adverb",
     "meaning": "đúng đắn, thích đáng, hợp lệ",
-    "example": "The team completed the task properly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"đúng đắn, thích đáng, hợp lệ\".",
+    "example": "Make sure the machine is installed properly.",
+    "exampleTranslation": "Hãy bảo đảm máy được lắp đúng cách.",
     "translations": {
       "vi": "đúng đắn, thích đáng, hợp lệ"
     }
@@ -4691,11 +4678,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-33",
     "topic": "Product Development",
     "word": "safety",
-    "phonetic": "/sˈeɪfti/",
+    "phonetic": "/ˈseɪfti/",
     "pos": "noun",
     "meaning": "sự an toàn, tính an toàn",
-    "example": "The team discussed the safety during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự an toàn, tính an toàn\" trong cuộc họp.",
+    "example": "We discussed the safety at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự an toàn tại cuộc họp.",
     "translations": {
       "vi": "sự an toàn, tính an toàn"
     }
@@ -4704,11 +4691,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-34",
     "topic": "Product Development",
     "word": "precaution",
-    "phonetic": "/pɹɪkˈɔːʃən/",
+    "phonetic": "/priˈkɔʃən/",
     "pos": "noun",
     "meaning": "sự phòng ngừa, sự đề phòng",
-    "example": "The team discussed the precaution during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự phòng ngừa, sự đề phòng\" trong cuộc họp.",
+    "example": "We discussed the precaution at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự phòng ngừa tại cuộc họp.",
     "translations": {
       "vi": "sự phòng ngừa, sự đề phòng"
     }
@@ -4717,11 +4704,11 @@ export const VOCABULARY: Word[] = [
     "id": "pde-35",
     "topic": "Product Development",
     "word": "processing",
-    "phonetic": "/ˈpɹɑsɛsɪŋ/",
+    "phonetic": "/ˈprɑsɛsɪŋ/",
     "pos": "noun",
     "meaning": "sự chế biến, sự gia công",
-    "example": "The team discussed the processing during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự chế biến, sự gia công\" trong cuộc họp.",
+    "example": "We discussed the processing at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự chế biến tại cuộc họp.",
     "translations": {
       "vi": "sự chế biến, sự gia công"
     }
@@ -4730,37 +4717,37 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-01",
     "topic": "Product Manufacture",
     "word": "capacity",
-    "phonetic": "/kəpˈæsɪti/",
+    "phonetic": "/kəˈpæsəti/",
     "pos": "noun",
-    "meaning": "sức chứa, năng lực, tư cách",
-    "example": "The team discussed the capacity during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sức chứa, năng lực, tư cách\" trong cuộc họp.",
+    "meaning": "sức chứa; năng lực",
+    "example": "We discussed the capacity at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sức chứa tại cuộc họp.",
     "translations": {
-      "vi": "sức chứa, năng lực, tư cách"
+      "vi": "sức chứa; năng lực"
     }
   },
   {
     "id": "pmf-02",
     "topic": "Product Manufacture",
     "word": "utilize",
-    "phonetic": "/ˈjutəˌɫaɪz/",
+    "phonetic": "/ˈjutəlaɪz/",
     "pos": "verb",
-    "meaning": "dùng, sử dụng,t ận dụng, khai thác",
-    "example": "The team plans to utilize before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"dùng, sử dụng,t ận dụng, khai thác\" trước thời hạn.",
+    "meaning": "dùng, sử dụng, tận dụng, khai thác",
+    "example": "Please utilize the available resources.",
+    "exampleTranslation": "Hãy sử dụng các nguồn lực sẵn có.",
     "translations": {
-      "vi": "dùng, sử dụng,t ận dụng, khai thác"
+      "vi": "dùng, sử dụng, tận dụng, khai thác"
     }
   },
   {
     "id": "pmf-03",
     "topic": "Product Manufacture",
     "word": "place",
-    "phonetic": "/plˈeɪs/",
+    "phonetic": "/ˈpleɪs/",
     "pos": "verb",
     "meaning": "đặt, để, sắp xếp; đặt (hàng)",
-    "example": "The team plans to place before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đặt, để, sắp xếp; đặt (hàng)\" trước thời hạn.",
+    "example": "Please place an order before noon.",
+    "exampleTranslation": "Hãy đặt hàng trước buổi trưa.",
     "translations": {
       "vi": "đặt, để, sắp xếp; đặt (hàng)"
     }
@@ -4769,24 +4756,24 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-04",
     "topic": "Product Manufacture",
     "word": "renovate",
-    "phonetic": "/ɹˈɛnəvˌeɪt/",
+    "phonetic": "/ˈrɛnəveɪt/",
     "pos": "verb",
-    "meaning": "nâng cấp, cảit ạo (nhà cửa, nội thất)",
-    "example": "The team plans to renovate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nâng cấp, cảit ạo (nhà cửa, nội thất)\" trước thời hạn.",
+    "meaning": "nâng cấp, cải tạo (nhà cửa, nội thất)",
+    "example": "Please renovate the reception area.",
+    "exampleTranslation": "Hãy cải tạo khu vực lễ tân.",
     "translations": {
-      "vi": "nâng cấp, cảit ạo (nhà cửa, nội thất)"
+      "vi": "nâng cấp, cải tạo (nhà cửa, nội thất)"
     }
   },
   {
     "id": "pmf-05",
     "topic": "Product Manufacture",
     "word": "decision",
-    "phonetic": "/dɪsˈɪʒən/",
+    "phonetic": "/dɪˈsɪʒən/",
     "pos": "noun",
     "meaning": "quyết định",
-    "example": "The team discussed the decision during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"quyết định\" trong cuộc họp.",
+    "example": "We discussed the decision at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về quyết định tại cuộc họp.",
     "translations": {
       "vi": "quyết định"
     }
@@ -4795,24 +4782,24 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-06",
     "topic": "Product Manufacture",
     "word": "material",
-    "phonetic": "/mətˈiəɹɪəl/",
+    "phonetic": "/məˈtɪriəl/",
     "pos": "noun",
-    "meaning": "chất liệu,t ài liệu, nguyên liệu",
-    "example": "The team discussed the material during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chất liệu,t ài liệu, nguyên liệu\" trong cuộc họp.",
+    "meaning": "chất liệu, tài liệu, nguyên liệu",
+    "example": "Please select a suitable material.",
+    "exampleTranslation": "Hãy chọn vật liệu phù hợp.",
     "translations": {
-      "vi": "chất liệu,t ài liệu, nguyên liệu"
+      "vi": "chất liệu, tài liệu, nguyên liệu"
     }
   },
   {
     "id": "pmf-07",
     "topic": "Product Manufacture",
     "word": "success",
-    "phonetic": "/səksˈɛs/",
+    "phonetic": "/səkˈsɛs/",
     "pos": "noun",
     "meaning": "sự thành công, thắng lợi",
-    "example": "The team discussed the success during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự thành công, thắng lợi\" trong cuộc họp.",
+    "example": "We discussed the success at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự thành công tại cuộc họp.",
     "translations": {
       "vi": "sự thành công, thắng lợi"
     }
@@ -4821,11 +4808,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-08",
     "topic": "Product Manufacture",
     "word": "attribute",
-    "phonetic": "/ˈætɹəbˌjut/",
+    "phonetic": "/əˈtrɪbjut/",
     "pos": "verb",
     "meaning": "quy cho, gán cho",
-    "example": "The team plans to attribute before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"quy cho, gán cho\" trước thời hạn.",
+    "example": "Please attribute the increase to better marketing.",
+    "exampleTranslation": "Hãy cho rằng mức tăng là nhờ tiếp thị tốt hơn.",
     "translations": {
       "vi": "quy cho, gán cho"
     }
@@ -4834,24 +4821,24 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-09",
     "topic": "Product Manufacture",
     "word": "limit",
-    "phonetic": "/lˈɪmɪt/",
-    "pos": "adj",
-    "meaning": "giới hạn,r anh giới",
-    "example": "The manager described the proposal as limit.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"giới hạn,r anh giới\".",
+    "phonetic": "/ˈlɪmət/",
+    "pos": "noun",
+    "meaning": "giới hạn, ranh giới",
+    "example": "We discussed the limit at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về giới hạn tại cuộc họp.",
     "translations": {
-      "vi": "giới hạn,r anh giới"
+      "vi": "giới hạn, ranh giới"
     }
   },
   {
     "id": "pmf-10",
     "topic": "Product Manufacture",
     "word": "component",
-    "phonetic": "/kəmpˈəʊnənt/",
+    "phonetic": "/kəmˈpoʊnənt/",
     "pos": "noun",
     "meaning": "thành phần, bộ phận",
-    "example": "The team discussed the component during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thành phần, bộ phận\" trong cuộc họp.",
+    "example": "We discussed the component at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về thành phần tại cuộc họp.",
     "translations": {
       "vi": "thành phần, bộ phận"
     }
@@ -4860,11 +4847,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-11",
     "topic": "Product Manufacture",
     "word": "capable",
-    "phonetic": "/kˈeɪpəbəl/",
-    "pos": "adj",
+    "phonetic": "/ˈkeɪpəbəl/",
+    "pos": "adjective",
     "meaning": "có khả năng, có năng lực",
-    "example": "The manager described the proposal as capable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có khả năng, có năng lực\".",
+    "example": "The team is capable of completing the project.",
+    "exampleTranslation": "Đội có khả năng hoàn thành dự án.",
     "translations": {
       "vi": "có khả năng, có năng lực"
     }
@@ -4873,24 +4860,24 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-12",
     "topic": "Product Manufacture",
     "word": "comparable",
-    "phonetic": "/kˈɒmpəɹəbəl/",
-    "pos": "adj",
-    "meaning": "có thểsos ánh",
-    "example": "The manager described the proposal as comparable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có thểsos ánh\".",
+    "phonetic": "/ˈkɑmpɚəbəl/",
+    "pos": "adjective",
+    "meaning": "có thể so sánh",
+    "example": "The two products are comparable in quality.",
+    "exampleTranslation": "Hai sản phẩm có chất lượng tương đương.",
     "translations": {
-      "vi": "có thểsos ánh"
+      "vi": "có thể so sánh"
     }
   },
   {
     "id": "pmf-13",
     "topic": "Product Manufacture",
     "word": "produce",
-    "phonetic": "/ˈpɹoʊdus/",
+    "phonetic": "/prəˈdus/",
     "pos": "verb",
     "meaning": "sản xuất, chế tạo",
-    "example": "The team plans to produce before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"sản xuất, chế tạo\" trước thời hạn.",
+    "example": "Please produce a detailed progress report.",
+    "exampleTranslation": "Hãy lập một báo cáo tiến độ chi tiết.",
     "translations": {
       "vi": "sản xuất, chế tạo"
     }
@@ -4899,11 +4886,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-14",
     "topic": "Product Manufacture",
     "word": "respectively",
-    "phonetic": "/ɹɪspˈɛktɪvli/",
-    "pos": "adv",
+    "phonetic": "/rɪˈspɛktɪvli/",
+    "pos": "adverb",
     "meaning": "riêng từng cái, tương ứng",
-    "example": "The team completed the task respectively.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"riêng từng cái, tương ứng\".",
+    "example": "Anna and Ben manage sales and finance, respectively.",
+    "exampleTranslation": "Anna và Ben lần lượt phụ trách bán hàng và tài chính.",
     "translations": {
       "vi": "riêng từng cái, tương ứng"
     }
@@ -4912,11 +4899,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-15",
     "topic": "Product Manufacture",
     "word": "separately",
-    "phonetic": "/sˈɛpɹətli/",
-    "pos": "adv",
+    "phonetic": "/ˈsɛpɚətli/",
+    "pos": "adverb",
     "meaning": "tách biệt, riêng rẽ, khác nhau",
-    "example": "The team completed the task separately.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"tách biệt, riêng rẽ, khác nhau\".",
+    "example": "Please pack these items separately.",
+    "exampleTranslation": "Hãy đóng gói riêng các món này.",
     "translations": {
       "vi": "tách biệt, riêng rẽ, khác nhau"
     }
@@ -4925,11 +4912,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-16",
     "topic": "Product Manufacture",
     "word": "damaged",
-    "phonetic": "/dˈæmɪdʒd/",
-    "pos": "adj",
+    "phonetic": "/ˈdæmədʒd/",
+    "pos": "adjective",
     "meaning": "bị phá huỷ, bị hư hại, hỏng",
-    "example": "The manager described the proposal as damaged.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"bị phá huỷ, bị hư hại, hỏng\".",
+    "example": "The new product is damaged.",
+    "exampleTranslation": "Sản phẩm mới bị phá huỷ.",
     "translations": {
       "vi": "bị phá huỷ, bị hư hại, hỏng"
     }
@@ -4938,11 +4925,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-17",
     "topic": "Product Manufacture",
     "word": "prevent",
-    "phonetic": "/pɹɪvˈɛnt/",
+    "phonetic": "/prɪˈvɛnt/",
     "pos": "verb",
     "meaning": "ngăn chặn, ngăn ngừa",
-    "example": "The team plans to prevent before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"ngăn chặn, ngăn ngừa\" trước thời hạn.",
+    "example": "Please prevent unauthorized access.",
+    "exampleTranslation": "Hãy ngăn truy cập trái phép.",
     "translations": {
       "vi": "ngăn chặn, ngăn ngừa"
     }
@@ -4951,11 +4938,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-18",
     "topic": "Product Manufacture",
     "word": "chemical",
-    "phonetic": "/kˈɛmɪkəl/",
+    "phonetic": "/ˈkɛməkəl/",
     "pos": "noun",
     "meaning": "chất hoá học",
-    "example": "The team discussed the chemical during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chất hoá học\" trong cuộc họp.",
+    "example": "The chemical must be stored safely.",
+    "exampleTranslation": "Hóa chất phải được cất giữ an toàn.",
     "translations": {
       "vi": "chất hoá học"
     }
@@ -4964,24 +4951,24 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-19",
     "topic": "Product Manufacture",
     "word": "equipment",
-    "phonetic": "/ɪkwˈɪpmənt/",
+    "phonetic": "/ɪˈkwɪpmənt/",
     "pos": "noun",
-    "meaning": "máy móc, tr ang thiết bị",
-    "example": "The team discussed the equipment during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"máy móc, tr ang thiết bị\" trong cuộc họp.",
+    "meaning": "máy móc, trang thiết bị",
+    "example": "The equipment needs regular maintenance.",
+    "exampleTranslation": "Thiết bị cần được bảo dưỡng thường xuyên.",
     "translations": {
-      "vi": "máy móc, tr ang thiết bị"
+      "vi": "máy móc, trang thiết bị"
     }
   },
   {
     "id": "pmf-20",
     "topic": "Product Manufacture",
     "word": "operate",
-    "phonetic": "/ˈɒpəɹˌeɪt/",
+    "phonetic": "/ˈɑpɚeɪt/",
     "pos": "verb",
     "meaning": "vận hành, hoạt động",
-    "example": "The team plans to operate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"vận hành, hoạt động\" trước thời hạn.",
+    "example": "Please operate the machine safely.",
+    "exampleTranslation": "Hãy vận hành máy an toàn.",
     "translations": {
       "vi": "vận hành, hoạt động"
     }
@@ -4990,11 +4977,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-21",
     "topic": "Product Manufacture",
     "word": "assemble",
-    "phonetic": "/ɐsˈɛmbəl/",
+    "phonetic": "/əˈsɛmbəl/",
     "pos": "verb",
     "meaning": "lắp ráp; triệu tập, triệu hồi",
-    "example": "The team plans to assemble before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"lắp ráp; triệu tập, triệu hồi\" trước thời hạn.",
+    "example": "Please assemble the parts carefully.",
+    "exampleTranslation": "Hãy lắp ráp các bộ phận cẩn thận.",
     "translations": {
       "vi": "lắp ráp; triệu tập, triệu hồi"
     }
@@ -5003,24 +4990,24 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-22",
     "topic": "Product Manufacture",
     "word": "manufacturing",
-    "phonetic": "/mˌænjuːfˈæktʃəɹɪŋ/",
-    "pos": "adj",
-    "meaning": "thuộc sản xuất, chế tạo",
-    "example": "The manager described the proposal as manufacturing.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"thuộc sản xuất, chế tạo\".",
+    "phonetic": "/mænjəˈfæktʃɚɪŋ/",
+    "pos": "noun",
+    "meaning": "sự sản xuất, chế tạo",
+    "example": "Manufacturing requires careful quality control.",
+    "exampleTranslation": "Hoạt động sản xuất đòi hỏi kiểm soát chất lượng cẩn thận.",
     "translations": {
-      "vi": "thuộc sản xuất, chế tạo"
+      "vi": "sự sản xuất, chế tạo"
     }
   },
   {
     "id": "pmf-23",
     "topic": "Product Manufacture",
     "word": "tailored",
-    "phonetic": "/tˈeɪləd/",
-    "pos": "adj",
+    "phonetic": "/ˈteɪlɚd/",
+    "pos": "adjective",
     "meaning": "được tuỳ chỉnh, điều chỉnh",
-    "example": "The manager described the proposal as tailored.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"được tuỳ chỉnh, điều chỉnh\".",
+    "example": "The course is tailored to beginners.",
+    "exampleTranslation": "Khóa học được điều chỉnh cho người mới.",
     "translations": {
       "vi": "được tuỳ chỉnh, điều chỉnh"
     }
@@ -5029,11 +5016,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-24",
     "topic": "Product Manufacture",
     "word": "economize",
-    "phonetic": "/iˈkɑnəˌmaɪz/",
+    "phonetic": "/ɪˈkɑnəmaɪz/",
     "pos": "verb",
     "meaning": "tiết kiệm",
-    "example": "The team plans to economize before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tiết kiệm\" trước thời hạn.",
+    "example": "Please economize on office supplies.",
+    "exampleTranslation": "Hãy tiết kiệm vật tư văn phòng.",
     "translations": {
       "vi": "tiết kiệm"
     }
@@ -5042,11 +5029,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-25",
     "topic": "Product Manufacture",
     "word": "device",
-    "phonetic": "/dɪvˈaɪs/",
+    "phonetic": "/dɪˈvaɪs/",
     "pos": "noun",
     "meaning": "máy móc, thiết bị",
-    "example": "The team discussed the device during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"máy móc, thiết bị\" trong cuộc họp.",
+    "example": "We inspected the device yesterday.",
+    "exampleTranslation": "Chúng tôi kiểm tra máy móc hôm qua.",
     "translations": {
       "vi": "máy móc, thiết bị"
     }
@@ -5055,11 +5042,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-26",
     "topic": "Product Manufacture",
     "word": "trim",
-    "phonetic": "/tɹˈɪm/",
+    "phonetic": "/ˈtrɪm/",
     "pos": "verb",
     "meaning": "cắt, tỉa, loại bỏ; sắp xếp, thu dọn",
-    "example": "The team plans to trim before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cắt, tỉa, loại bỏ; sắp xếp, thu dọn\" trước thời hạn.",
+    "example": "Please trim unnecessary expenses.",
+    "exampleTranslation": "Hãy cắt giảm chi phí không cần thiết.",
     "translations": {
       "vi": "cắt, tỉa, loại bỏ; sắp xếp, thu dọn"
     }
@@ -5068,11 +5055,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-27",
     "topic": "Product Manufacture",
     "word": "launch",
-    "phonetic": "/lˈɔːntʃ/",
+    "phonetic": "/ˈlɔntʃ/",
     "pos": "verb",
     "meaning": "ra mắt (sản phẩm mới)",
-    "example": "The team plans to launch before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"ra mắt (sản phẩm mới)\" trước thời hạn.",
+    "example": "Please launch the new product next month.",
+    "exampleTranslation": "Hãy ra mắt sản phẩm mới vào tháng tới.",
     "translations": {
       "vi": "ra mắt (sản phẩm mới)"
     }
@@ -5081,11 +5068,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-28",
     "topic": "Product Manufacture",
     "word": "expiration",
-    "phonetic": "/ɛkspəɹˈeɪʃən/",
+    "phonetic": "/ɛkspɚˈeɪʃən/",
     "pos": "noun",
     "meaning": "sự hết hạn",
-    "example": "The team discussed the expiration during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự hết hạn\" trong cuộc họp.",
+    "example": "We discussed the expiration at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự hết hạn tại cuộc họp.",
     "translations": {
       "vi": "sự hết hạn"
     }
@@ -5094,11 +5081,11 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-29",
     "topic": "Product Manufacture",
     "word": "maneuver",
-    "phonetic": "/mənˈuːvɐ/",
+    "phonetic": "/məˈnuvɚ/",
     "pos": "verb",
     "meaning": "diễn tập, điều động",
-    "example": "The team plans to maneuver before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"diễn tập, điều động\" trước thời hạn.",
+    "example": "Please maneuver the vehicle into the parking space.",
+    "exampleTranslation": "Hãy điều khiển xe vào chỗ đỗ.",
     "translations": {
       "vi": "diễn tập, điều động"
     }
@@ -5107,24 +5094,24 @@ export const VOCABULARY: Word[] = [
     "id": "pmf-30",
     "topic": "Product Manufacture",
     "word": "coming",
-    "phonetic": "/kˈʌmɪŋ/",
-    "pos": "adj",
-    "meaning": "sắpt ới",
-    "example": "The manager described the proposal as coming.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"sắpt ới\".",
+    "phonetic": "/ˈkʌmɪŋ/",
+    "pos": "adjective",
+    "meaning": "sắp tới",
+    "example": "We will finish in the coming week.",
+    "exampleTranslation": "Chúng tôi sẽ hoàn thành trong tuần tới.",
     "translations": {
-      "vi": "sắpt ới"
+      "vi": "sắp tới"
     }
   },
   {
     "id": "csv-01",
     "topic": "Customer Service",
     "word": "complaint",
-    "phonetic": "/kəmplˈeɪnt/",
+    "phonetic": "/kəmˈpleɪnt/",
     "pos": "noun",
     "meaning": "lời than phiền, lời phàn nàn",
-    "example": "The team discussed the complaint during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lời than phiền, lời phàn nàn\" trong cuộc họp.",
+    "example": "We discussed the complaint at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về lời than phiền tại cuộc họp.",
     "translations": {
       "vi": "lời than phiền, lời phàn nàn"
     }
@@ -5133,37 +5120,37 @@ export const VOCABULARY: Word[] = [
     "id": "csv-02",
     "topic": "Customer Service",
     "word": "deal",
-    "phonetic": "/dˈiːl/",
+    "phonetic": "/ˈdil/",
     "pos": "verb",
-    "meaning": "giải quyế t; buôn bán; phân phối",
-    "example": "The team plans to deal before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giải quyế t; buôn bán; phân phối\" trước thời hạn.",
+    "meaning": "giải quyết; buôn bán; phân phối",
+    "example": "Please deal with the complaint promptly.",
+    "exampleTranslation": "Hãy xử lý khiếu nại nhanh chóng.",
     "translations": {
-      "vi": "giải quyế t; buôn bán; phân phối"
+      "vi": "giải quyết; buôn bán; phân phối"
     }
   },
   {
     "id": "csv-03",
     "topic": "Customer Service",
     "word": "argumentative",
-    "phonetic": "/ˌɑːɡjuːmˈɛntətˌɪv/",
-    "pos": "adj",
-    "meaning": "thích tr anh cãi",
-    "example": "The manager described the proposal as argumentative.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"thích tr anh cãi\".",
+    "phonetic": "/ɑrɡjəˈmɛntətɪv/",
+    "pos": "adjective",
+    "meaning": "thích tranh cãi",
+    "example": "The customer became argumentative during the discussion.",
+    "exampleTranslation": "Khách hàng trở nên thích tranh cãi trong cuộc thảo luận.",
     "translations": {
-      "vi": "thích tr anh cãi"
+      "vi": "thích tranh cãi"
     }
   },
   {
     "id": "csv-04",
     "topic": "Customer Service",
     "word": "appropriately",
-    "phonetic": "/ɐpɹˈəʊpɹɪətli/",
-    "pos": "adv",
+    "phonetic": "/əˈproʊpriɪtli/",
+    "pos": "adverb",
     "meaning": "thích hợp, thích đáng",
-    "example": "The team completed the task appropriately.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"thích hợp, thích đáng\".",
+    "example": "Employees should dress appropriately for the event.",
+    "exampleTranslation": "Nhân viên nên mặc trang phục phù hợp với sự kiện.",
     "translations": {
       "vi": "thích hợp, thích đáng"
     }
@@ -5172,11 +5159,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-05",
     "topic": "Customer Service",
     "word": "respond",
-    "phonetic": "/ɹɪspˈɒnd/",
+    "phonetic": "/rɪˈspɑnd/",
     "pos": "verb",
     "meaning": "phản ứng, phản hồi, trả lời",
-    "example": "The team plans to respond before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phản ứng, phản hồi, trả lời\" trước thời hạn.",
+    "example": "Please respond to the customer's question.",
+    "exampleTranslation": "Hãy trả lời câu hỏi của khách hàng.",
     "translations": {
       "vi": "phản ứng, phản hồi, trả lời"
     }
@@ -5185,11 +5172,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-06",
     "topic": "Customer Service",
     "word": "courteous",
-    "phonetic": "/kˈɜːtiəs/",
-    "pos": "adj",
+    "phonetic": "/ˈkɝtiəs/",
+    "pos": "adjective",
     "meaning": "lịch sự, nhã nhặn",
-    "example": "The manager described the proposal as courteous.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"lịch sự, nhã nhặn\".",
+    "example": "The employee seemed courteous during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ lịch sự trong buổi phỏng vấn.",
     "translations": {
       "vi": "lịch sự, nhã nhặn"
     }
@@ -5198,24 +5185,24 @@ export const VOCABULARY: Word[] = [
     "id": "csv-07",
     "topic": "Customer Service",
     "word": "satisfaction",
-    "phonetic": "/sˌætɪsfˈækʃən/",
+    "phonetic": "/sætəˈsfækʃən/",
     "pos": "noun",
-    "meaning": "sự hài lòng/thoả mãn",
-    "example": "The team discussed the satisfaction during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự hài lòng/thoả mãn\" trong cuộc họp.",
+    "meaning": "sự hài lòng, sự thỏa mãn",
+    "example": "She expressed satisfaction in her message.",
+    "exampleTranslation": "Cô ấy bày tỏ sự hài lòng trong lời nhắn.",
     "translations": {
-      "vi": "sự hài lòng/thoả mãn"
+      "vi": "sự hài lòng, sự thỏa mãn"
     }
   },
   {
     "id": "csv-08",
     "topic": "Customer Service",
     "word": "inconvenience",
-    "phonetic": "/ɪnkənvˈiːnɪəns/",
+    "phonetic": "/ɪnkənˈvinjəns/",
     "pos": "noun",
     "meaning": "sự bất lợi, bất tiện",
-    "example": "The team discussed the inconvenience during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự bất lợi, bất tiện\" trong cuộc họp.",
+    "example": "We discussed the inconvenience at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự bất lợi tại cuộc họp.",
     "translations": {
       "vi": "sự bất lợi, bất tiện"
     }
@@ -5224,11 +5211,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-09",
     "topic": "Customer Service",
     "word": "complete",
-    "phonetic": "/kəmplˈiːt/",
+    "phonetic": "/kəmˈplit/",
     "pos": "verb",
     "meaning": "hoàn thiện, hoàn thành",
-    "example": "The team plans to complete before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hoàn thiện, hoàn thành\" trước thời hạn.",
+    "example": "Please complete the registration form.",
+    "exampleTranslation": "Hãy điền đầy đủ biểu mẫu đăng ký.",
     "translations": {
       "vi": "hoàn thiện, hoàn thành"
     }
@@ -5237,24 +5224,24 @@ export const VOCABULARY: Word[] = [
     "id": "csv-10",
     "topic": "Customer Service",
     "word": "return",
-    "phonetic": "/ɹiˈtɝn/",
+    "phonetic": "/rɪˈtɝn/",
     "pos": "verb",
-    "meaning": "trở lại, quayvề",
-    "example": "The team plans to return before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"trở lại, quayvề\" trước thời hạn.",
+    "meaning": "trở lại, quay về",
+    "example": "Please return the damaged item.",
+    "exampleTranslation": "Hãy trả lại món hàng bị hỏng.",
     "translations": {
-      "vi": "trở lại, quayvề"
+      "vi": "trở lại, quay về"
     }
   },
   {
     "id": "csv-11",
     "topic": "Customer Service",
     "word": "replace",
-    "phonetic": "/ɹɪplˈeɪs/",
+    "phonetic": "/riˈpleɪs/",
     "pos": "verb",
     "meaning": "thay thế, thay chỗ",
-    "example": "The team plans to replace before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thay thế, thay chỗ\" trước thời hạn.",
+    "example": "Please replace the faulty battery.",
+    "exampleTranslation": "Hãy thay pin bị lỗi.",
     "translations": {
       "vi": "thay thế, thay chỗ"
     }
@@ -5263,11 +5250,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-12",
     "topic": "Customer Service",
     "word": "evaluation",
-    "phonetic": "/ɪvˌæljuːˈeɪʃən/",
+    "phonetic": "/ɪvæljuˈeɪʃən/",
     "pos": "noun",
     "meaning": "sự đánh giá, sự ước lượng",
-    "example": "The team discussed the evaluation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đánh giá, sự ước lượng\" trong cuộc họp.",
+    "example": "We discussed the evaluation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự đánh giá tại cuộc họp.",
     "translations": {
       "vi": "sự đánh giá, sự ước lượng"
     }
@@ -5276,11 +5263,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-13",
     "topic": "Customer Service",
     "word": "apologize",
-    "phonetic": "/əˈpɑɫəˌdʒaɪz/",
+    "phonetic": "/əˈpɑlədʒaɪz/",
     "pos": "verb",
     "meaning": "xin lỗi",
-    "example": "The team plans to apologize before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"xin lỗi\" trước thời hạn.",
+    "example": "Please apologize for the inconvenience.",
+    "exampleTranslation": "Hãy xin lỗi vì sự bất tiện.",
     "translations": {
       "vi": "xin lỗi"
     }
@@ -5289,11 +5276,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-14",
     "topic": "Customer Service",
     "word": "certain",
-    "phonetic": "/sˈɜːtən/",
-    "pos": "adj",
+    "phonetic": "/ˈsɝtən/",
+    "pos": "adjective",
     "meaning": "chắc, chắc chắn, nhất định",
-    "example": "The manager described the proposal as certain.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"chắc, chắc chắn, nhất định\".",
+    "example": "We are certain about the delivery date.",
+    "exampleTranslation": "Chúng tôi chắc chắn về ngày giao hàng.",
     "translations": {
       "vi": "chắc, chắc chắn, nhất định"
     }
@@ -5302,24 +5289,24 @@ export const VOCABULARY: Word[] = [
     "id": "csv-15",
     "topic": "Customer Service",
     "word": "commitment",
-    "phonetic": "/kəmˈɪtmənt/",
+    "phonetic": "/kəˈmɪtmənt/",
     "pos": "noun",
-    "meaning": "sự camkế t, sựt ậnt âm",
-    "example": "The team discussed the commitment during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự camkế t, sựt ậnt âm\" trong cuộc họp.",
+    "meaning": "sự cam kết, sự tận tâm",
+    "example": "We discussed the commitment at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự cam kết tại cuộc họp.",
     "translations": {
-      "vi": "sự camkế t, sựt ậnt âm"
+      "vi": "sự cam kết, sự tận tâm"
     }
   },
   {
     "id": "csv-16",
     "topic": "Customer Service",
     "word": "biography",
-    "phonetic": "/baɪˈɒɡɹəfi/",
+    "phonetic": "/baɪˈɑɡrəfi/",
     "pos": "noun",
     "meaning": "tiểu sử, lý lịch",
-    "example": "The team discussed the biography during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tiểu sử, lý lịch\" trong cuộc họp.",
+    "example": "Please read the biography carefully.",
+    "exampleTranslation": "Hãy đọc tiểu sử cẩn thận.",
     "translations": {
       "vi": "tiểu sử, lý lịch"
     }
@@ -5328,13 +5315,13 @@ export const VOCABULARY: Word[] = [
     "id": "csv-17",
     "topic": "Customer Service",
     "word": "critical",
-    "phonetic": "/kɹˈɪtɪkəl/",
-    "pos": "adj",
-    "meaning": "phê bình, chỉ trích",
-    "example": "The manager described the proposal as critical.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"phê bình, chỉ trích\".",
+    "phonetic": "/ˈkrɪtɪkəl/",
+    "pos": "adjective",
+    "meaning": "quan trọng, có tính quyết định; phê bình",
+    "example": "The proposed plan is critical.",
+    "exampleTranslation": "Kế hoạch được đề xuất quan trọng.",
     "translations": {
-      "vi": "phê bình, chỉ trích"
+      "vi": "quan trọng, có tính quyết định; phê bình"
     }
   },
   {
@@ -5344,8 +5331,8 @@ export const VOCABULARY: Word[] = [
     "phonetic": "/ˈkɑmbaɪn/",
     "pos": "verb",
     "meaning": "kết hợp",
-    "example": "The team plans to combine before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"kết hợp\" trước thời hạn.",
+    "example": "Please combine the two reports.",
+    "exampleTranslation": "Hãy kết hợp hai báo cáo.",
     "translations": {
       "vi": "kết hợp"
     }
@@ -5354,24 +5341,24 @@ export const VOCABULARY: Word[] = [
     "id": "csv-19",
     "topic": "Customer Service",
     "word": "observe",
-    "phonetic": "/ɒbzˈɜːv/",
+    "phonetic": "/əbˈzɝv/",
     "pos": "verb",
-    "meaning": "quan sát",
-    "example": "The team plans to observe before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"quan sát\" trước thời hạn.",
+    "meaning": "quan sát; tuân thủ",
+    "example": "Please observe the safety procedures.",
+    "exampleTranslation": "Hãy tuân thủ các quy trình an toàn.",
     "translations": {
-      "vi": "quan sát"
+      "vi": "quan sát; tuân thủ"
     }
   },
   {
     "id": "csv-20",
     "topic": "Customer Service",
     "word": "attitude",
-    "phonetic": "/ˈætɪtjˌuːd/",
+    "phonetic": "/ˈætətud/",
     "pos": "noun",
     "meaning": "thái độ",
-    "example": "The team discussed the attitude during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thái độ\" trong cuộc họp.",
+    "example": "We discussed the attitude at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về thái độ tại cuộc họp.",
     "translations": {
       "vi": "thái độ"
     }
@@ -5380,11 +5367,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-21",
     "topic": "Customer Service",
     "word": "disappoint",
-    "phonetic": "/dˌɪsɐpˈɔɪnt/",
+    "phonetic": "/dɪsəˈpɔɪnt/",
     "pos": "verb",
     "meaning": "làm thất vọng",
-    "example": "The team plans to disappoint before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm thất vọng\" trước thời hạn.",
+    "example": "Do not disappoint customers with poor service.",
+    "exampleTranslation": "Đừng làm khách hàng thất vọng vì dịch vụ kém.",
     "translations": {
       "vi": "làm thất vọng"
     }
@@ -5393,11 +5380,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-22",
     "topic": "Customer Service",
     "word": "insert",
-    "phonetic": "/ˈɪnˌsɝt/",
+    "phonetic": "/ɪnˈsɝt/",
     "pos": "verb",
     "meaning": "chèn vào, đưa vào",
-    "example": "The team plans to insert before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chèn vào, đưa vào\" trước thời hạn.",
+    "example": "Please insert the card into the machine.",
+    "exampleTranslation": "Hãy đưa thẻ vào máy.",
     "translations": {
       "vi": "chèn vào, đưa vào"
     }
@@ -5406,11 +5393,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-23",
     "topic": "Customer Service",
     "word": "disclose",
-    "phonetic": "/dɪsklˈəʊz/",
+    "phonetic": "/dɪˈskloʊz/",
     "pos": "verb",
     "meaning": "phơi bày, vạch trần, để lộ",
-    "example": "The team plans to disclose before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phơi bày, vạch trần, để lộ\" trước thời hạn.",
+    "example": "Please disclose the relevant information.",
+    "exampleTranslation": "Hãy cung cấp thông tin liên quan.",
     "translations": {
       "vi": "phơi bày, vạch trần, để lộ"
     }
@@ -5419,37 +5406,37 @@ export const VOCABULARY: Word[] = [
     "id": "csv-24",
     "topic": "Customer Service",
     "word": "politely",
-    "phonetic": "/pəlˈaɪtli/",
-    "pos": "adv",
-    "meaning": "lịch sự lễ phép",
-    "example": "The team completed the task politely.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"lịch sự lễ phép\".",
+    "phonetic": "/pəˈlaɪtli/",
+    "pos": "adverb",
+    "meaning": "lịch sự, lễ phép",
+    "example": "The receptionist greeted the visitors politely.",
+    "exampleTranslation": "Lễ tân chào khách lịch sự.",
     "translations": {
-      "vi": "lịch sự lễ phép"
+      "vi": "lịch sự, lễ phép"
     }
   },
   {
     "id": "csv-25",
     "topic": "Customer Service",
     "word": "seriously",
-    "phonetic": "/sˈiəɹɪəsli/",
-    "pos": "adv",
-    "meaning": "nghiêm túc, nghiêm trọng",
-    "example": "The team completed the task seriously.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"nghiêm túc, nghiêm trọng\".",
+    "phonetic": "/ˈsɪriəsli/",
+    "pos": "adverb",
+    "meaning": "nghiêm túc; nghiêm trọng",
+    "example": "We take customer complaints seriously.",
+    "exampleTranslation": "Chúng tôi xem xét khiếu nại của khách hàng nghiêm túc.",
     "translations": {
-      "vi": "nghiêm túc, nghiêm trọng"
+      "vi": "nghiêm túc; nghiêm trọng"
     }
   },
   {
     "id": "csv-26",
     "topic": "Customer Service",
     "word": "infuriate",
-    "phonetic": "/ɪnfjˈɔːɹɪˌeɪt/",
+    "phonetic": "/ɪnˈfjʊrieɪt/",
     "pos": "verb",
     "meaning": "làm tức điên lên",
-    "example": "The team plans to infuriate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm tức điên lên\" trước thời hạn.",
+    "example": "Do not infuriate customers with repeated delays.",
+    "exampleTranslation": "Đừng khiến khách hàng tức giận vì chậm trễ liên tục.",
     "translations": {
       "vi": "làm tức điên lên"
     }
@@ -5458,11 +5445,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-27",
     "topic": "Customer Service",
     "word": "cause",
-    "phonetic": "/kˈɔːz/",
+    "phonetic": "/ˈkɑz/",
     "pos": "verb",
     "meaning": "gây ra, tạo ra",
-    "example": "The team plans to cause before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"gây ra, tạo ra\" trước thời hạn.",
+    "example": "Do not cause unnecessary delays.",
+    "exampleTranslation": "Đừng gây ra sự chậm trễ không cần thiết.",
     "translations": {
       "vi": "gây ra, tạo ra"
     }
@@ -5471,11 +5458,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-28",
     "topic": "Customer Service",
     "word": "commentary",
-    "phonetic": "/kˈɒməntɹˌi/",
+    "phonetic": "/ˈkɑməntɛri/",
     "pos": "noun",
     "meaning": "bài bình luận, lời chú thích",
-    "example": "The team discussed the commentary during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bài bình luận, lời chú thích\" trong cuộc họp.",
+    "example": "Please read the commentary carefully.",
+    "exampleTranslation": "Hãy đọc bài bình luận cẩn thận.",
     "translations": {
       "vi": "bài bình luận, lời chú thích"
     }
@@ -5484,11 +5471,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-29",
     "topic": "Customer Service",
     "word": "interact",
-    "phonetic": "/ˌɪntəɹˈækt/",
+    "phonetic": "/ɪntɚˈækt/",
     "pos": "verb",
     "meaning": "tương tác, tác động qua lại",
-    "example": "The team plans to interact before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tương tác, tác động qua lại\" trước thời hạn.",
+    "example": "Please interact with customers politely.",
+    "exampleTranslation": "Hãy tương tác với khách hàng lịch sự.",
     "translations": {
       "vi": "tương tác, tác động qua lại"
     }
@@ -5497,11 +5484,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-30",
     "topic": "Customer Service",
     "word": "applaud",
-    "phonetic": "/ɐplˈɔːd/",
+    "phonetic": "/əˈplɔd/",
     "pos": "verb",
     "meaning": "hoan nghênh, tán thưởng",
-    "example": "The team plans to applaud before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hoan nghênh, tán thưởng\" trước thời hạn.",
+    "example": "Please applaud the team's achievement.",
+    "exampleTranslation": "Hãy tán thưởng thành tích của đội.",
     "translations": {
       "vi": "hoan nghênh, tán thưởng"
     }
@@ -5510,11 +5497,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-31",
     "topic": "Customer Service",
     "word": "defective",
-    "phonetic": "/dɪfˈɛktɪv/",
-    "pos": "adj",
+    "phonetic": "/dɪˈfɛktɪv/",
+    "pos": "adjective",
     "meaning": "có lỗi, có thiếu sót, nhược điểm",
-    "example": "The manager described the proposal as defective.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có lỗi, có thiếu sót, nhược điểm\".",
+    "example": "The new product is defective.",
+    "exampleTranslation": "Sản phẩm mới có lỗi.",
     "translations": {
       "vi": "có lỗi, có thiếu sót, nhược điểm"
     }
@@ -5523,11 +5510,11 @@ export const VOCABULARY: Word[] = [
     "id": "csv-32",
     "topic": "Customer Service",
     "word": "guarantee",
-    "phonetic": "/ɡˌæɹɑːntˈiː/",
+    "phonetic": "/ɡɛrənˈti/",
     "pos": "verb",
     "meaning": "cam đoan, đảm bảo, chắc chắn",
-    "example": "The team plans to guarantee before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cam đoan, đảm bảo, chắc chắn\" trước thời hạn.",
+    "example": "Please guarantee the quality of the product.",
+    "exampleTranslation": "Hãy bảo đảm chất lượng sản phẩm.",
     "translations": {
       "vi": "cam đoan, đảm bảo, chắc chắn"
     }
@@ -5536,11 +5523,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-01",
     "topic": "Traveling",
     "word": "international",
-    "phonetic": "/ˌɪntənˈæʃənəl/",
-    "pos": "adj",
+    "phonetic": "/ɪntɚˈnæʃənəl/",
+    "pos": "adjective",
     "meaning": "quốc tế",
-    "example": "The manager described the proposal as international.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"quốc tế\".",
+    "example": "She attended an international conference.",
+    "exampleTranslation": "Cô ấy dự hội nghị quốc tế.",
     "translations": {
       "vi": "quốc tế"
     }
@@ -5549,11 +5536,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-02",
     "topic": "Traveling",
     "word": "diverse",
-    "phonetic": "/daɪvˈɜːs/",
-    "pos": "adj",
+    "phonetic": "/daɪˈvɝs/",
+    "pos": "adjective",
     "meaning": "phong phú, đa dạng, nhiều loại",
-    "example": "The manager described the proposal as diverse.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"phong phú, đa dạng, nhiều loại\".",
+    "example": "The team has diverse experience.",
+    "exampleTranslation": "Đội có kinh nghiệm đa dạng.",
     "translations": {
       "vi": "phong phú, đa dạng, nhiều loại"
     }
@@ -5562,11 +5549,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-03",
     "topic": "Traveling",
     "word": "approximately",
-    "phonetic": "/ɐpɹˈɒksɪmətlˌi/",
-    "pos": "adv",
+    "phonetic": "/əˈprɑksəmətli/",
+    "pos": "adverb",
     "meaning": "xấp xỉ, khoảng",
-    "example": "The team completed the task approximately.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"xấp xỉ, khoảng\".",
+    "example": "The repair will take approximately two hours.",
+    "exampleTranslation": "Việc sửa chữa sẽ mất khoảng hai giờ.",
     "translations": {
       "vi": "xấp xỉ, khoảng"
     }
@@ -5575,11 +5562,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-04",
     "topic": "Traveling",
     "word": "comfortable",
-    "phonetic": "/kˈʌmftəbəl/",
-    "pos": "adj",
+    "phonetic": "/ˈkʌmfɚtəbəl/",
+    "pos": "adjective",
     "meaning": "thoải mái, dễ chịu",
-    "example": "The manager described the proposal as comfortable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"thoải mái, dễ chịu\".",
+    "example": "The meeting room is comfortable.",
+    "exampleTranslation": "Phòng họp thoải mái.",
     "translations": {
       "vi": "thoải mái, dễ chịu"
     }
@@ -5588,11 +5575,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-05",
     "topic": "Traveling",
     "word": "specify",
-    "phonetic": "/spˈɛsɪfˌaɪ/",
+    "phonetic": "/ˈspɛsəfaɪ/",
     "pos": "verb",
     "meaning": "làm rõ, ghi rõ",
-    "example": "The team plans to specify before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm rõ, ghi rõ\" trước thời hạn.",
+    "example": "Please specify the required quantity.",
+    "exampleTranslation": "Hãy ghi rõ số lượng cần thiết.",
     "translations": {
       "vi": "làm rõ, ghi rõ"
     }
@@ -5601,11 +5588,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-06",
     "topic": "Traveling",
     "word": "tightly",
-    "phonetic": "/tˈaɪtli/",
-    "pos": "adv",
+    "phonetic": "/ˈtaɪtli/",
+    "pos": "adverb",
     "meaning": "chặt, chặt chẽ",
-    "example": "The team completed the task tightly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"chặt, chặt chẽ\".",
+    "example": "Close the lid tightly after use.",
+    "exampleTranslation": "Đóng chặt nắp sau khi sử dụng.",
     "translations": {
       "vi": "chặt, chặt chẽ"
     }
@@ -5614,11 +5601,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-07",
     "topic": "Traveling",
     "word": "tour",
-    "phonetic": "/tˈɔː/",
+    "phonetic": "/ˈtʊr/",
     "pos": "noun",
     "meaning": "chuyến du lịch, chuyến tham quan",
-    "example": "The team discussed the tour during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chuyến du lịch, chuyến tham quan\" trong cuộc họp.",
+    "example": "We discussed the tour at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về chuyến du lịch tại cuộc họp.",
     "translations": {
       "vi": "chuyến du lịch, chuyến tham quan"
     }
@@ -5627,11 +5614,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-08",
     "topic": "Traveling",
     "word": "brochure",
-    "phonetic": "/bɹˈəʊʃɐ/",
+    "phonetic": "/broʊˈʃʊr/",
     "pos": "noun",
     "meaning": "cuốn sách mỏng, tờ gấp",
-    "example": "The team discussed the brochure during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cuốn sách mỏng, tờ gấp\" trong cuộc họp.",
+    "example": "Please read the brochure carefully.",
+    "exampleTranslation": "Hãy đọc cuốn sách mỏng cẩn thận.",
     "translations": {
       "vi": "cuốn sách mỏng, tờ gấp"
     }
@@ -5640,63 +5627,63 @@ export const VOCABULARY: Word[] = [
     "id": "trv-09",
     "topic": "Traveling",
     "word": "involve",
-    "phonetic": "/ɪnvˈɒlv/",
+    "phonetic": "/ɪnˈvɑlv/",
     "pos": "verb",
-    "meaning": "gồm,k éo theo; tham gia",
-    "example": "The team plans to involve before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"gồm,k éo theo; tham gia\" trước thời hạn.",
+    "meaning": "gồm, kéo theo; tham gia",
+    "example": "Please involve all departments in planning.",
+    "exampleTranslation": "Hãy cho tất cả phòng ban tham gia lập kế hoạch.",
     "translations": {
-      "vi": "gồm,k éo theo; tham gia"
+      "vi": "gồm, kéo theo; tham gia"
     }
   },
   {
     "id": "trv-10",
     "topic": "Traveling",
     "word": "away",
-    "phonetic": "/ɐwˈeɪ/",
-    "pos": "adv",
-    "meaning": "xa, cáchx a, mất đi",
-    "example": "The team completed the task away.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"xa, cáchx a, mất đi\".",
+    "phonetic": "/əˈweɪ/",
+    "pos": "adverb",
+    "meaning": "xa, cách xa, mất đi",
+    "example": "Please keep the boxes away from the exit.",
+    "exampleTranslation": "Hãy để các thùng hàng cách xa lối ra.",
     "translations": {
-      "vi": "xa, cáchx a, mất đi"
+      "vi": "xa, cách xa, mất đi"
     }
   },
   {
     "id": "trv-11",
     "topic": "Traveling",
     "word": "hospitality",
-    "phonetic": "/hˌɒspɪtˈælɪti/",
+    "phonetic": "/hɑspəˈtæləti/",
     "pos": "noun",
-    "meaning": "sự hiếu khách, sụ thân thiện",
-    "example": "The team discussed the hospitality during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự hiếu khách, sụ thân thiện\" trong cuộc họp.",
+    "meaning": "sự hiếu khách, sự thân thiện",
+    "example": "We appreciated the hotel's hospitality.",
+    "exampleTranslation": "Chúng tôi trân trọng sự hiếu khách của khách sạn.",
     "translations": {
-      "vi": "sự hiếu khách, sụ thân thiện"
+      "vi": "sự hiếu khách, sự thân thiện"
     }
   },
   {
     "id": "trv-12",
     "topic": "Traveling",
     "word": "unlimited",
-    "phonetic": "/ʌnlˈɪmɪtɪd/",
-    "pos": "adj",
-    "meaning": "vô hạn,vôt ận, không giới hạn",
-    "example": "The manager described the proposal as unlimited.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"vô hạn,vôt ận, không giới hạn\".",
+    "phonetic": "/ənˈlɪmətɪd/",
+    "pos": "adjective",
+    "meaning": "vô hạn, vô tận, không giới hạn",
+    "example": "Members have unlimited access to the library.",
+    "exampleTranslation": "Hội viên được sử dụng thư viện không giới hạn.",
     "translations": {
-      "vi": "vô hạn,vôt ận, không giới hạn"
+      "vi": "vô hạn, vô tận, không giới hạn"
     }
   },
   {
     "id": "trv-13",
     "topic": "Traveling",
     "word": "attraction",
-    "phonetic": "/ɐtɹˈækʃən/",
+    "phonetic": "/əˈtrækʃən/",
     "pos": "noun",
     "meaning": "sự thu hút, điểm tham quan",
-    "example": "The team discussed the attraction during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự thu hút, điểm tham quan\" trong cuộc họp.",
+    "example": "We discussed the attraction at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự thu hút tại cuộc họp.",
     "translations": {
       "vi": "sự thu hút, điểm tham quan"
     }
@@ -5705,11 +5692,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-14",
     "topic": "Traveling",
     "word": "itinerary",
-    "phonetic": "/aɪtˈɪnəɹəɹi/",
+    "phonetic": "/aɪˈtɪnɚɛri/",
     "pos": "noun",
     "meaning": "hành trình, lộ trình",
-    "example": "The team discussed the itinerary during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hành trình, lộ trình\" trong cuộc họp.",
+    "example": "Please confirm your travel itinerary.",
+    "exampleTranslation": "Hãy xác nhận lịch trình chuyến đi.",
     "translations": {
       "vi": "hành trình, lộ trình"
     }
@@ -5718,11 +5705,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-15",
     "topic": "Traveling",
     "word": "exotic",
-    "phonetic": "/ɛɡzˈɒtɪk/",
-    "pos": "adj",
+    "phonetic": "/ɪɡˈzɑtɪk/",
+    "pos": "adjective",
     "meaning": "kỳ lạ, đẹp kỳ lạ",
-    "example": "The manager described the proposal as exotic.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"kỳ lạ, đẹp kỳ lạ\".",
+    "example": "The shop sells exotic fruit.",
+    "exampleTranslation": "Cửa hàng bán trái cây ngoại nhập lạ mắt.",
     "translations": {
       "vi": "kỳ lạ, đẹp kỳ lạ"
     }
@@ -5731,24 +5718,24 @@ export const VOCABULARY: Word[] = [
     "id": "trv-16",
     "topic": "Traveling",
     "word": "super",
-    "phonetic": "/sˈuːpɐ/",
-    "pos": "adj",
-    "meaning": "nguy nga, tr áng lệ, tuyệt vời",
-    "example": "The manager described the proposal as super.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"nguy nga, tr áng lệ, tuyệt vời\".",
+    "phonetic": "/ˈsupɚ/",
+    "pos": "adjective",
+    "meaning": "tuyệt vời, xuất sắc",
+    "example": "The proposed plan is super.",
+    "exampleTranslation": "Kế hoạch được đề xuất tuyệt vời.",
     "translations": {
-      "vi": "nguy nga, tr áng lệ, tuyệt vời"
+      "vi": "tuyệt vời, xuất sắc"
     }
   },
   {
     "id": "trv-17",
     "topic": "Traveling",
     "word": "baggage",
-    "phonetic": "/bˈæɡɪdʒ/",
+    "phonetic": "/ˈbæɡədʒ/",
     "pos": "noun",
     "meaning": "hành lý",
-    "example": "The team discussed the baggage during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hành lý\" trong cuộc họp.",
+    "example": "We inspected the baggage yesterday.",
+    "exampleTranslation": "Chúng tôi kiểm tra hành lý hôm qua.",
     "translations": {
       "vi": "hành lý"
     }
@@ -5757,11 +5744,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-18",
     "topic": "Traveling",
     "word": "destination",
-    "phonetic": "/dˌɛstɪnˈeɪʃən/",
+    "phonetic": "/dɛstəˈneɪʃən/",
     "pos": "noun",
     "meaning": "đích, điểm đến",
-    "example": "The team discussed the destination during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"đích, điểm đến\" trong cuộc họp.",
+    "example": "The destination is near the station.",
+    "exampleTranslation": "Đích ở gần nhà ga.",
     "translations": {
       "vi": "đích, điểm đến"
     }
@@ -5770,11 +5757,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-19",
     "topic": "Traveling",
     "word": "missing",
-    "phonetic": "/mˈɪsɪŋ/",
-    "pos": "adj",
+    "phonetic": "/ˈmɪsɪŋ/",
+    "pos": "adjective",
     "meaning": "bị mất, thất lạc",
-    "example": "The manager described the proposal as missing.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"bị mất, thất lạc\".",
+    "example": "One item is missing from the shipment.",
+    "exampleTranslation": "Lô hàng thiếu một món.",
     "translations": {
       "vi": "bị mất, thất lạc"
     }
@@ -5783,11 +5770,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-20",
     "topic": "Traveling",
     "word": "locate",
-    "phonetic": "/ləʊkˈeɪt/",
+    "phonetic": "/ˈloʊkeɪt/",
     "pos": "verb",
     "meaning": "có vị trí, nằm ở, định vị",
-    "example": "The team plans to locate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"có vị trí, nằm ở, định vị\" trước thời hạn.",
+    "example": "Please locate the nearest emergency exit.",
+    "exampleTranslation": "Hãy xác định lối thoát hiểm gần nhất.",
     "translations": {
       "vi": "có vị trí, nằm ở, định vị"
     }
@@ -5796,11 +5783,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-21",
     "topic": "Traveling",
     "word": "duty",
-    "phonetic": "/djˈuːti/",
+    "phonetic": "/ˈduti/",
     "pos": "noun",
     "meaning": "thuế, nhiệm vụ/nghĩa vụ",
-    "example": "The team discussed the duty during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thuế, nhiệm vụ/nghĩa vụ\" trong cuộc họp.",
+    "example": "We discussed the duty at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về thuế tại cuộc họp.",
     "translations": {
       "vi": "thuế, nhiệm vụ/nghĩa vụ"
     }
@@ -5809,11 +5796,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-22",
     "topic": "Traveling",
     "word": "process",
-    "phonetic": "/ˈpɹɑˌsɛs/",
+    "phonetic": "/ˈprɑsɛs/",
     "pos": "noun",
     "meaning": "quá trình, tiến trình",
-    "example": "The team discussed the process during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"quá trình, tiến trình\" trong cuộc họp.",
+    "example": "We discussed the process at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về quá trình tại cuộc họp.",
     "translations": {
       "vi": "quá trình, tiến trình"
     }
@@ -5822,24 +5809,24 @@ export const VOCABULARY: Word[] = [
     "id": "trv-23",
     "topic": "Traveling",
     "word": "board",
-    "phonetic": "/bˈɔːd/",
+    "phonetic": "/ˈbɔrd/",
     "pos": "verb",
-    "meaning": "lên (tàu,x e, máy bay)",
-    "example": "The team plans to board before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"lên (tàu,x e, máy bay)\" trước thời hạn.",
+    "meaning": "lên (tàu, xe, máy bay)",
+    "example": "Please board the train at platform two.",
+    "exampleTranslation": "Hãy lên tàu ở sân ga số hai.",
     "translations": {
-      "vi": "lên (tàu,x e, máy bay)"
+      "vi": "lên (tàu, xe, máy bay)"
     }
   },
   {
     "id": "trv-24",
     "topic": "Traveling",
     "word": "depart",
-    "phonetic": "/dɪpˈɑːt/",
+    "phonetic": "/dɪˈpɑrt/",
     "pos": "verb",
     "meaning": "khởi hành",
-    "example": "The team plans to depart before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"khởi hành\" trước thời hạn.",
+    "example": "Please depart from the main terminal.",
+    "exampleTranslation": "Hãy khởi hành từ nhà ga chính.",
     "translations": {
       "vi": "khởi hành"
     }
@@ -5848,11 +5835,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-25",
     "topic": "Traveling",
     "word": "emergency",
-    "phonetic": "/ɪmˈɜːdʒənsi/",
+    "phonetic": "/ɪˈmɝdʒənsi/",
     "pos": "noun",
     "meaning": "trường hợp khẩn cấp",
-    "example": "The team discussed the emergency during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"trường hợp khẩn cấp\" trong cuộc họp.",
+    "example": "We discussed the emergency at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về trường hợp khẩn cấp tại cuộc họp.",
     "translations": {
       "vi": "trường hợp khẩn cấp"
     }
@@ -5861,11 +5848,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-26",
     "topic": "Traveling",
     "word": "passenger",
-    "phonetic": "/pˈæsɪndʒɐ/",
+    "phonetic": "/ˈpæsəndʒɚ/",
     "pos": "noun",
     "meaning": "hành khách",
-    "example": "The team discussed the passenger during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hành khách\" trong cuộc họp.",
+    "example": "The passenger answered our questions.",
+    "exampleTranslation": "Hành khách đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "hành khách"
     }
@@ -5874,11 +5861,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-27",
     "topic": "Traveling",
     "word": "carrier",
-    "phonetic": "/kˈæɹɪɐ/",
+    "phonetic": "/ˈkæriɚ/",
     "pos": "noun",
     "meaning": "người vận chuyển, hãng vận tải",
-    "example": "The team discussed the carrier during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"người vận chuyển, hãng vận tải\" trong cuộc họp.",
+    "example": "The carrier delivered the package safely.",
+    "exampleTranslation": "Đơn vị vận chuyển giao gói hàng an toàn.",
     "translations": {
       "vi": "người vận chuyển, hãng vận tải"
     }
@@ -5887,11 +5874,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-28",
     "topic": "Traveling",
     "word": "arrive",
-    "phonetic": "/ɐɹˈaɪv/",
+    "phonetic": "/ɚˈaɪv/",
     "pos": "verb",
     "meaning": "đến, tới nơi",
-    "example": "The team plans to arrive before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đến, tới nơi\" trước thời hạn.",
+    "example": "Please arrive at the airport early.",
+    "exampleTranslation": "Hãy đến sân bay sớm.",
     "translations": {
       "vi": "đến, tới nơi"
     }
@@ -5900,11 +5887,11 @@ export const VOCABULARY: Word[] = [
     "id": "trv-29",
     "topic": "Traveling",
     "word": "customs",
-    "phonetic": "/kˈʌstəmz/",
-    "pos": "verb",
+    "phonetic": "/ˈkʌstəmz/",
+    "pos": "noun",
     "meaning": "hải quan",
-    "example": "The team plans to customs before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hải quan\" trước thời hạn.",
+    "example": "Passengers must declare goods at customs.",
+    "exampleTranslation": "Hành khách phải khai báo hàng hóa tại hải quan.",
     "translations": {
       "vi": "hải quan"
     }
@@ -5913,24 +5900,24 @@ export const VOCABULARY: Word[] = [
     "id": "trv-30",
     "topic": "Traveling",
     "word": "indulge",
-    "phonetic": "/ɪndˈʌldʒ/",
+    "phonetic": "/ɪnˈdʌldʒ/",
     "pos": "verb",
-    "meaning": "chiều theo;t ận hưởng,s ay mê",
-    "example": "The team plans to indulge before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chiều theo;t ận hưởng,s ay mê\" trước thời hạn.",
+    "meaning": "chiều theo; tận hưởng, say mê",
+    "example": "Please indulge in a relaxing weekend.",
+    "exampleTranslation": "Hãy tận hưởng một cuối tuần thư giãn.",
     "translations": {
-      "vi": "chiều theo;t ận hưởng,s ay mê"
+      "vi": "chiều theo; tận hưởng, say mê"
     }
   },
   {
     "id": "trv-31",
     "topic": "Traveling",
     "word": "proximity",
-    "phonetic": "/pɹɒksˈɪmɪti/",
+    "phonetic": "/prɑkˈsɪməti/",
     "pos": "noun",
     "meaning": "sự gần, sự lân cận",
-    "example": "The team discussed the proximity during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự gần, sự lân cận\" trong cuộc họp.",
+    "example": "We discussed the proximity at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự gần tại cuộc họp.",
     "translations": {
       "vi": "sự gần, sự lân cận"
     }
@@ -5939,24 +5926,24 @@ export const VOCABULARY: Word[] = [
     "id": "trv-32",
     "topic": "Traveling",
     "word": "seating",
-    "phonetic": "/sˈiːtɪŋ/",
+    "phonetic": "/ˈsitɪŋ/",
     "pos": "noun",
-    "meaning": "chỗ ngồi; sựs ắp chỗ",
-    "example": "The team discussed the seating during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chỗ ngồi; sựs ắp chỗ\" trong cuộc họp.",
+    "meaning": "chỗ ngồi; sự sắp chỗ",
+    "example": "We inspected the seating yesterday.",
+    "exampleTranslation": "Chúng tôi kiểm tra chỗ ngồi hôm qua.",
     "translations": {
-      "vi": "chỗ ngồi; sựs ắp chỗ"
+      "vi": "chỗ ngồi; sự sắp chỗ"
     }
   },
   {
     "id": "con-01",
     "topic": "Contracts",
     "word": "proposal",
-    "phonetic": "/pɹəpˈəʊzəl/",
+    "phonetic": "/prəˈpoʊzəl/",
     "pos": "noun",
     "meaning": "sự đề xuất, lời đề nghị",
-    "example": "The team discussed the proposal during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đề xuất, lời đề nghị\" trong cuộc họp.",
+    "example": "Please review the proposal before the meeting.",
+    "exampleTranslation": "Hãy xem xét đề xuất trước cuộc họp.",
     "translations": {
       "vi": "sự đề xuất, lời đề nghị"
     }
@@ -5965,11 +5952,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-02",
     "topic": "Contracts",
     "word": "term",
-    "phonetic": "/tˈɜːm/",
+    "phonetic": "/ˈtɝm/",
     "pos": "noun",
     "meaning": "điều khoản; thời hạn",
-    "example": "The team discussed the term during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"điều khoản; thời hạn\" trong cuộc họp.",
+    "example": "Please read the term carefully.",
+    "exampleTranslation": "Hãy đọc điều khoản cẩn thận.",
     "translations": {
       "vi": "điều khoản; thời hạn"
     }
@@ -5978,24 +5965,24 @@ export const VOCABULARY: Word[] = [
     "id": "con-03",
     "topic": "Contracts",
     "word": "review",
-    "phonetic": "/ˌɹivˈju/",
+    "phonetic": "/riˈvju/",
     "pos": "verb",
-    "meaning": "xemxé t, duyệt lại, phê bình",
-    "example": "The team plans to review before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"xemxé t, duyệt lại, phê bình\" trước thời hạn.",
+    "meaning": "xem xét, duyệt lại, phê bình",
+    "example": "Please review the contract before signing.",
+    "exampleTranslation": "Hãy xem xét hợp đồng trước khi ký.",
     "translations": {
-      "vi": "xemxé t, duyệt lại, phê bình"
+      "vi": "xem xét, duyệt lại, phê bình"
     }
   },
   {
     "id": "con-04",
     "topic": "Contracts",
     "word": "contract",
-    "phonetic": "/ˈkɑnˌtɹækt/",
+    "phonetic": "/ˈkɑntrækt/",
     "pos": "noun",
     "meaning": "hợp đồng",
-    "example": "The team discussed the contract during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hợp đồng\" trong cuộc họp.",
+    "example": "Please read the contract carefully.",
+    "exampleTranslation": "Hãy đọc hợp đồng cẩn thận.",
     "translations": {
       "vi": "hợp đồng"
     }
@@ -6004,11 +5991,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-05",
     "topic": "Contracts",
     "word": "originally",
-    "phonetic": "/əɹˈɪdʒɪnəli/",
-    "pos": "adv",
+    "phonetic": "/ɚˈɪdʒənəli/",
+    "pos": "adverb",
     "meaning": "ban đầu, khởi đầu",
-    "example": "The team completed the task originally.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"ban đầu, khởi đầu\".",
+    "example": "The event was originally planned for Monday.",
+    "exampleTranslation": "Ban đầu sự kiện được lên kế hoạch vào thứ Hai.",
     "translations": {
       "vi": "ban đầu, khởi đầu"
     }
@@ -6017,11 +6004,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-06",
     "topic": "Contracts",
     "word": "initially",
-    "phonetic": "/ɪnˈɪʃəlˌi/",
-    "pos": "adv",
+    "phonetic": "/ɪˈnɪʃəli/",
+    "pos": "adverb",
     "meaning": "lúc đầu, ban đầu",
-    "example": "The team completed the task initially.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"lúc đầu, ban đầu\".",
+    "example": "The service was initially available only locally.",
+    "exampleTranslation": "Lúc đầu dịch vụ chỉ có tại địa phương.",
     "translations": {
       "vi": "lúc đầu, ban đầu"
     }
@@ -6030,11 +6017,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-07",
     "topic": "Contracts",
     "word": "expire",
-    "phonetic": "/ɛkspˈaɪə/",
+    "phonetic": "/ɪkˈspaɪr/",
     "pos": "verb",
     "meaning": "hết hạn, hết hiệu lực",
-    "example": "The team plans to expire before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hết hạn, hết hiệu lực\" trước thời hạn.",
+    "example": "The permit will expire at the end of the year.",
+    "exampleTranslation": "Giấy phép sẽ hết hạn vào cuối năm.",
     "translations": {
       "vi": "hết hạn, hết hiệu lực"
     }
@@ -6043,37 +6030,37 @@ export const VOCABULARY: Word[] = [
     "id": "con-08",
     "topic": "Contracts",
     "word": "collaborate",
-    "phonetic": "/kəlˈæbəɹˌeɪt/",
+    "phonetic": "/kəˈlæbɚeɪt/",
     "pos": "verb",
-    "meaning": "cộngt ác, hợpt ác",
-    "example": "The team plans to collaborate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cộngt ác, hợpt ác\" trước thời hạn.",
+    "meaning": "cộng tác, hợp tác",
+    "example": "Please collaborate with the design team.",
+    "exampleTranslation": "Hãy cộng tác với đội thiết kế.",
     "translations": {
-      "vi": "cộngt ác, hợpt ác"
+      "vi": "cộng tác, hợp tác"
     }
   },
   {
     "id": "con-09",
     "topic": "Contracts",
     "word": "dedicate",
-    "phonetic": "/dˈɛdɪkˌeɪt/",
+    "phonetic": "/ˈdɛdəkeɪt/",
     "pos": "verb",
-    "meaning": "cống hiến,t ậnt âm, dành cho",
-    "example": "The team plans to dedicate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cống hiến,t ậnt âm, dành cho\" trước thời hạn.",
+    "meaning": "cống hiến, tận tâm, dành cho",
+    "example": "Please dedicate more time to training.",
+    "exampleTranslation": "Hãy dành thêm thời gian cho đào tạo.",
     "translations": {
-      "vi": "cống hiến,t ậnt âm, dành cho"
+      "vi": "cống hiến, tận tâm, dành cho"
     }
   },
   {
     "id": "con-10",
     "topic": "Contracts",
     "word": "renew",
-    "phonetic": "/ɹɪnjˈuː/",
+    "phonetic": "/rɪˈnu/",
     "pos": "verb",
     "meaning": "làm mới, gia hạn (hợp đồng)",
-    "example": "The team plans to renew before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm mới, gia hạn (hợp đồng)\" trước thời hạn.",
+    "example": "Please renew your membership online.",
+    "exampleTranslation": "Hãy gia hạn tư cách hội viên trực tuyến.",
     "translations": {
       "vi": "làm mới, gia hạn (hợp đồng)"
     }
@@ -6082,11 +6069,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-11",
     "topic": "Contracts",
     "word": "dispute",
-    "phonetic": "/dɪspjˈuːt/",
+    "phonetic": "/dɪsˈpjut/",
     "pos": "noun",
     "meaning": "cuộc tranh luận, sự bất đồng",
-    "example": "The team discussed the dispute during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cuộc tranh luận, sự bất đồng\" trong cuộc họp.",
+    "example": "The parties resolved the contract dispute.",
+    "exampleTranslation": "Các bên giải quyết tranh chấp hợp đồng.",
     "translations": {
       "vi": "cuộc tranh luận, sự bất đồng"
     }
@@ -6095,11 +6082,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-12",
     "topic": "Contracts",
     "word": "impression",
-    "phonetic": "/ɪmpɹˈɛʃən/",
+    "phonetic": "/ɪmˈprɛʃən/",
     "pos": "noun",
     "meaning": "ấn tượng",
-    "example": "The team discussed the impression during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"ấn tượng\" trong cuộc họp.",
+    "example": "We discussed the impression at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về ấn tượng tại cuộc họp.",
     "translations": {
       "vi": "ấn tượng"
     }
@@ -6108,11 +6095,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-13",
     "topic": "Contracts",
     "word": "option",
-    "phonetic": "/ˈɒpʃən/",
+    "phonetic": "/ˈɑpʃən/",
     "pos": "noun",
     "meaning": "lựa chọn, quyền lựa chọn",
-    "example": "The team discussed the option during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lựa chọn, quyền lựa chọn\" trong cuộc họp.",
+    "example": "We discussed the option at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về lựa chọn tại cuộc họp.",
     "translations": {
       "vi": "lựa chọn, quyền lựa chọn"
     }
@@ -6121,11 +6108,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-14",
     "topic": "Contracts",
     "word": "terminate",
-    "phonetic": "/tˈɜːmɪnˌeɪt/",
+    "phonetic": "/ˈtɝməneɪt/",
     "pos": "verb",
     "meaning": "chấm dứt, hoàn thành",
-    "example": "The team plans to terminate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chấm dứt, hoàn thành\" trước thời hạn.",
+    "example": "Please terminate the agreement legally.",
+    "exampleTranslation": "Hãy chấm dứt thỏa thuận theo đúng pháp luật.",
     "translations": {
       "vi": "chấm dứt, hoàn thành"
     }
@@ -6134,11 +6121,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-15",
     "topic": "Contracts",
     "word": "proceed",
-    "phonetic": "/pɹəsˈiːd/",
+    "phonetic": "/prəˈsid/",
     "pos": "verb",
     "meaning": "tiến hành, tiếp tục",
-    "example": "The team plans to proceed before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tiến hành, tiếp tục\" trước thời hạn.",
+    "example": "Please proceed with the approved plan.",
+    "exampleTranslation": "Hãy tiếp tục thực hiện kế hoạch đã được phê duyệt.",
     "translations": {
       "vi": "tiến hành, tiếp tục"
     }
@@ -6147,11 +6134,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-16",
     "topic": "Contracts",
     "word": "narrow",
-    "phonetic": "/nˈæɹəʊ/",
+    "phonetic": "/ˈnɛroʊ/",
     "pos": "verb",
     "meaning": "thu hẹp, giảm bớt",
-    "example": "The team plans to narrow before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thu hẹp, giảm bớt\" trước thời hạn.",
+    "example": "Please narrow the list of candidates.",
+    "exampleTranslation": "Hãy thu hẹp danh sách ứng viên.",
     "translations": {
       "vi": "thu hẹp, giảm bớt"
     }
@@ -6160,24 +6147,24 @@ export const VOCABULARY: Word[] = [
     "id": "con-17",
     "topic": "Contracts",
     "word": "foundation",
-    "phonetic": "/faʊndˈeɪʃən/",
+    "phonetic": "/faʊnˈdeɪʃən/",
     "pos": "noun",
-    "meaning": "nềnt ảng, sự thành lập",
-    "example": "The team discussed the foundation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nềnt ảng, sự thành lập\" trong cuộc họp.",
+    "meaning": "nền tảng, sự thành lập",
+    "example": "We discussed the foundation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về nền tảng tại cuộc họp.",
     "translations": {
-      "vi": "nềnt ảng, sự thành lập"
+      "vi": "nền tảng, sự thành lập"
     }
   },
   {
     "id": "con-18",
     "topic": "Contracts",
     "word": "alliance",
-    "phonetic": "/ɐlˈaɪəns/",
+    "phonetic": "/əˈlaɪəns/",
     "pos": "noun",
     "meaning": "sự liên minh, khối liên minh",
-    "example": "The team discussed the alliance during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự liên minh, khối liên minh\" trong cuộc họp.",
+    "example": "We discussed the alliance at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự liên minh tại cuộc họp.",
     "translations": {
       "vi": "sự liên minh, khối liên minh"
     }
@@ -6186,11 +6173,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-19",
     "topic": "Contracts",
     "word": "stipulation",
-    "phonetic": "/stˌɪpjʊlˈeɪʃən/",
+    "phonetic": "/stɪpjəˈleɪʃən/",
     "pos": "noun",
     "meaning": "sự quy định, điều khoản quy định",
-    "example": "The team discussed the stipulation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự quy định, điều khoản quy định\" trong cuộc họp.",
+    "example": "The contract includes a payment stipulation.",
+    "exampleTranslation": "Hợp đồng có điều khoản quy định về thanh toán.",
     "translations": {
       "vi": "sự quy định, điều khoản quy định"
     }
@@ -6199,11 +6186,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-20",
     "topic": "Contracts",
     "word": "compromise",
-    "phonetic": "/kˈɒmpɹəmˌaɪz/",
+    "phonetic": "/ˈkɑmprəmaɪz/",
     "pos": "noun",
     "meaning": "sự thoả hiệp",
-    "example": "The team discussed the compromise during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự thoả hiệp\" trong cuộc họp.",
+    "example": "We discussed the compromise at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự thoả hiệp tại cuộc họp.",
     "translations": {
       "vi": "sự thoả hiệp"
     }
@@ -6212,11 +6199,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-21",
     "topic": "Contracts",
     "word": "deadlock",
-    "phonetic": "/dˈɛdlɒk/",
+    "phonetic": "/ˈdɛdlɑk/",
     "pos": "noun",
     "meaning": "sự bế tắc, sự đình trệ",
-    "example": "The team discussed the deadlock during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự bế tắc, sự đình trệ\" trong cuộc họp.",
+    "example": "We discussed the deadlock at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự bế tắc tại cuộc họp.",
     "translations": {
       "vi": "sự bế tắc, sự đình trệ"
     }
@@ -6225,11 +6212,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-22",
     "topic": "Contracts",
     "word": "signature",
-    "phonetic": "/sˈɪɡnɪtʃɐ/",
+    "phonetic": "/ˈsɪɡnətʃɚ/",
     "pos": "noun",
     "meaning": "chữ ký",
-    "example": "The team discussed the signature during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chữ ký\" trong cuộc họp.",
+    "example": "Please read the signature carefully.",
+    "exampleTranslation": "Hãy đọc chữ ký cẩn thận.",
     "translations": {
       "vi": "chữ ký"
     }
@@ -6238,11 +6225,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-23",
     "topic": "Contracts",
     "word": "cooperatively",
-    "phonetic": "/kəʊˈɒpəɹətˌɪvli/",
-    "pos": "adv",
+    "phonetic": "/koʊˈɑprətɪvli/",
+    "pos": "adverb",
     "meaning": "hợp tác",
-    "example": "The team completed the task cooperatively.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"hợp tác\".",
+    "example": "The departments worked cooperatively on the project.",
+    "exampleTranslation": "Các phòng ban hợp tác thực hiện dự án.",
     "translations": {
       "vi": "hợp tác"
     }
@@ -6251,11 +6238,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-24",
     "topic": "Contracts",
     "word": "objection",
-    "phonetic": "/ɒbdʒˈɛkʃən/",
+    "phonetic": "/əbˈdʒɛkʃən/",
     "pos": "noun",
     "meaning": "sự phản đối, sự bất bình",
-    "example": "The team discussed the objection during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự phản đối, sự bất bình\" trong cuộc họp.",
+    "example": "No one raised an objection.",
+    "exampleTranslation": "Không ai đưa ra ý kiến phản đối.",
     "translations": {
       "vi": "sự phản đối, sự bất bình"
     }
@@ -6264,11 +6251,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-25",
     "topic": "Contracts",
     "word": "security",
-    "phonetic": "/sɪkjˈɔːɹɪti/",
+    "phonetic": "/sɪˈkjʊrəti/",
     "pos": "noun",
     "meaning": "an ninh, sự bảo vệ",
-    "example": "The team discussed the security during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"an ninh, sự bảo vệ\" trong cuộc họp.",
+    "example": "We discussed the security at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về an ninh tại cuộc họp.",
     "translations": {
       "vi": "an ninh, sự bảo vệ"
     }
@@ -6277,11 +6264,11 @@ export const VOCABULARY: Word[] = [
     "id": "con-26",
     "topic": "Contracts",
     "word": "modify",
-    "phonetic": "/mˈɒdɪfˌaɪ/",
+    "phonetic": "/ˈmɑdəfaɪ/",
     "pos": "verb",
     "meaning": "sửa đổi, điều chỉnh",
-    "example": "The team plans to modify before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"sửa đổi, điều chỉnh\" trước thời hạn.",
+    "example": "Please modify the existing design.",
+    "exampleTranslation": "Hãy điều chỉnh thiết kế hiện tại.",
     "translations": {
       "vi": "sửa đổi, điều chỉnh"
     }
@@ -6290,37 +6277,37 @@ export const VOCABULARY: Word[] = [
     "id": "con-27",
     "topic": "Contracts",
     "word": "bid",
-    "phonetic": "/bˈɪd/",
+    "phonetic": "/ˈbɪd/",
     "pos": "noun",
-    "meaning": "sự đắt giá, sự bỏ thầu",
-    "example": "The team discussed the bid during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đắt giá, sự bỏ thầu\" trong cuộc họp.",
+    "meaning": "sự đặt giá, sự bỏ thầu",
+    "example": "The company submitted a bid for the contract.",
+    "exampleTranslation": "Công ty nộp hồ sơ dự thầu hợp đồng.",
     "translations": {
-      "vi": "sự đắt giá, sự bỏ thầu"
+      "vi": "sự đặt giá, sự bỏ thầu"
     }
   },
   {
     "id": "con-28",
     "topic": "Contracts",
     "word": "settle",
-    "phonetic": "/sˈɛtəl/",
+    "phonetic": "/ˈsɛtəl/",
     "pos": "verb",
-    "meaning": "giải quyế t, dàn xếp",
-    "example": "The team plans to settle before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giải quyế t, dàn xếp\" trước thời hạn.",
+    "meaning": "giải quyết, dàn xếp; thanh toán",
+    "example": "Please settle the outstanding invoice.",
+    "exampleTranslation": "Hãy thanh toán hóa đơn còn nợ.",
     "translations": {
-      "vi": "giải quyế t, dàn xếp"
+      "vi": "giải quyết, dàn xếp; thanh toán"
     }
   },
   {
     "id": "con-29",
     "topic": "Contracts",
     "word": "challenging",
-    "phonetic": "/tʃˈælɪndʒˌɪŋ/",
-    "pos": "adj",
+    "phonetic": "/ˈtʃæləndʒɪŋ/",
+    "pos": "adjective",
     "meaning": "đầy thách thức, khó khăn",
-    "example": "The manager described the proposal as challenging.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đầy thách thức, khó khăn\".",
+    "example": "The proposed plan is challenging.",
+    "exampleTranslation": "Kế hoạch được đề xuất đầy thách thức.",
     "translations": {
       "vi": "đầy thách thức, khó khăn"
     }
@@ -6329,11 +6316,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-01",
     "topic": "Trading",
     "word": "refuse",
-    "phonetic": "/ˈɹɛfˌjuz/",
+    "phonetic": "/rɪˈfjuz/",
     "pos": "verb",
     "meaning": "từ chối",
-    "example": "The team plans to refuse before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"từ chối\" trước thời hạn.",
+    "example": "Please refuse an unreasonable request.",
+    "exampleTranslation": "Hãy từ chối một yêu cầu vô lý.",
     "translations": {
       "vi": "từ chối"
     }
@@ -6342,11 +6329,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-02",
     "topic": "Trading",
     "word": "temporarily",
-    "phonetic": "/tˌɛmpəɹˈɛɹəli/",
-    "pos": "adv",
+    "phonetic": "/tɛmpɚˈɛrəli/",
+    "pos": "adverb",
     "meaning": "tạm thời, nhất thời",
-    "example": "The team completed the task temporarily.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"tạm thời, nhất thời\".",
+    "example": "The office is temporarily closed for repairs.",
+    "exampleTranslation": "Văn phòng tạm đóng cửa để sửa chữa.",
     "translations": {
       "vi": "tạm thời, nhất thời"
     }
@@ -6355,24 +6342,24 @@ export const VOCABULARY: Word[] = [
     "id": "tra-03",
     "topic": "Trading",
     "word": "bulk",
-    "phonetic": "/bˈʌlk/",
-    "pos": "adj",
-    "meaning": "lớn nhiều",
-    "example": "The manager described the proposal as bulk.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"lớn nhiều\".",
+    "phonetic": "/ˈbʌlk/",
+    "pos": "noun",
+    "meaning": "số lượng lớn, khối lượng lớn; phần chính",
+    "example": "Buying in bulk can reduce costs.",
+    "exampleTranslation": "Mua với số lượng lớn có thể giảm chi phí.",
     "translations": {
-      "vi": "lớn nhiều"
+      "vi": "số lượng lớn, khối lượng lớn; phần chính"
     }
   },
   {
     "id": "tra-04",
     "topic": "Trading",
     "word": "short",
-    "phonetic": "/ʃˈɔːt/",
-    "pos": "adj",
+    "phonetic": "/ˈʃɔrt/",
+    "pos": "adjective",
     "meaning": "ngắn, thiếu, không đủ",
-    "example": "The manager described the proposal as short.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"ngắn, thiếu, không đủ\".",
+    "example": "The meeting was short but useful.",
+    "exampleTranslation": "Cuộc họp ngắn nhưng hữu ích.",
     "translations": {
       "vi": "ngắn, thiếu, không đủ"
     }
@@ -6381,11 +6368,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-05",
     "topic": "Trading",
     "word": "cost",
-    "phonetic": "/kˈɒst/",
+    "phonetic": "/ˈkɑst/",
     "pos": "noun",
     "meaning": "giá, chi phí",
-    "example": "The team discussed the cost during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"giá, chi phí\" trong cuộc họp.",
+    "example": "We discussed the cost at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về giá tại cuộc họp.",
     "translations": {
       "vi": "giá, chi phí"
     }
@@ -6394,24 +6381,24 @@ export const VOCABULARY: Word[] = [
     "id": "tra-06",
     "topic": "Trading",
     "word": "order",
-    "phonetic": "/ˈɔːdɐ/",
+    "phonetic": "/ˈɔrdɚ/",
     "pos": "verb",
-    "meaning": "đặt hàng,y êu cầu",
-    "example": "The team plans to order before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đặt hàng,y êu cầu\" trước thời hạn.",
+    "meaning": "đặt hàng, yêu cầu",
+    "example": "Please order additional office supplies.",
+    "exampleTranslation": "Hãy đặt thêm vật tư văn phòng.",
     "translations": {
-      "vi": "đặt hàng,y êu cầu"
+      "vi": "đặt hàng, yêu cầu"
     }
   },
   {
     "id": "tra-07",
     "topic": "Trading",
     "word": "provide",
-    "phonetic": "/pɹəvˈaɪd/",
+    "phonetic": "/prəˈvaɪd/",
     "pos": "verb",
     "meaning": "cung cấp, dự phòng",
-    "example": "The team plans to provide before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cung cấp, dự phòng\" trước thời hạn.",
+    "example": "Please provide proof of identity.",
+    "exampleTranslation": "Hãy cung cấp giấy tờ chứng minh danh tính.",
     "translations": {
       "vi": "cung cấp, dự phòng"
     }
@@ -6420,11 +6407,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-08",
     "topic": "Trading",
     "word": "contact",
-    "phonetic": "/ˈkɑnˌtækt/",
+    "phonetic": "/ˈkɑntækt/",
     "pos": "verb",
     "meaning": "liên lạc, liên hệ",
-    "example": "The team plans to contact before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"liên lạc, liên hệ\" trước thời hạn.",
+    "example": "Please contact the customer service department.",
+    "exampleTranslation": "Hãy liên hệ bộ phận chăm sóc khách hàng.",
     "translations": {
       "vi": "liên lạc, liên hệ"
     }
@@ -6436,8 +6423,8 @@ export const VOCABULARY: Word[] = [
     "phonetic": "/ˈdɪskaʊnt/",
     "pos": "noun",
     "meaning": "sự giảm, tiền chiết khấu",
-    "example": "The team discussed the discount during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự giảm, tiền chiết khấu\" trong cuộc họp.",
+    "example": "We discussed the discount at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự giảm tại cuộc họp.",
     "translations": {
       "vi": "sự giảm, tiền chiết khấu"
     }
@@ -6446,11 +6433,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-10",
     "topic": "Trading",
     "word": "assure",
-    "phonetic": "/əʃjˈɔː/",
+    "phonetic": "/əˈʃʊr/",
     "pos": "verb",
     "meaning": "đảm bảo, cam đoan",
-    "example": "The team plans to assure before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đảm bảo, cam đoan\" trước thời hạn.",
+    "example": "Please assure customers of our commitment.",
+    "exampleTranslation": "Hãy cam đoan với khách hàng về cam kết của chúng tôi.",
     "translations": {
       "vi": "đảm bảo, cam đoan"
     }
@@ -6459,11 +6446,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-11",
     "topic": "Trading",
     "word": "seek",
-    "phonetic": "/sˈiːk/",
+    "phonetic": "/ˈsik/",
     "pos": "verb",
     "meaning": "tìm kiếm, theo đuổi",
-    "example": "The team plans to seek before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tìm kiếm, theo đuổi\" trước thời hạn.",
+    "example": "Please seek advice from an expert.",
+    "exampleTranslation": "Hãy tìm lời khuyên từ chuyên gia.",
     "translations": {
       "vi": "tìm kiếm, theo đuổi"
     }
@@ -6473,10 +6460,10 @@ export const VOCABULARY: Word[] = [
     "topic": "Trading",
     "word": "unable",
     "phonetic": "/ʌnˈeɪbəl/",
-    "pos": "adj",
+    "pos": "adjective",
     "meaning": "không thể, không có khả năng",
-    "example": "The manager described the proposal as unable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"không thể, không có khả năng\".",
+    "example": "We are unable to process the payment.",
+    "exampleTranslation": "Chúng tôi không thể xử lý khoản thanh toán.",
     "translations": {
       "vi": "không thể, không có khả năng"
     }
@@ -6485,24 +6472,24 @@ export const VOCABULARY: Word[] = [
     "id": "tra-13",
     "topic": "Trading",
     "word": "payment",
-    "phonetic": "/pˈeɪmənt/",
+    "phonetic": "/ˈpeɪmənt/",
     "pos": "noun",
-    "meaning": "việc trả tiền, khoản thanht oán",
-    "example": "The team discussed the payment during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"việc trả tiền, khoản thanht oán\" trong cuộc họp.",
+    "meaning": "việc trả tiền, khoản thanh toán",
+    "example": "We discussed the payment at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về việc trả tiền tại cuộc họp.",
     "translations": {
-      "vi": "việc trả tiền, khoản thanht oán"
+      "vi": "việc trả tiền, khoản thanh toán"
     }
   },
   {
     "id": "tra-14",
     "topic": "Trading",
     "word": "bargain",
-    "phonetic": "/bˈɑːɡɪn/",
+    "phonetic": "/ˈbɑrɡən/",
     "pos": "noun",
     "meaning": "sự mặc cả, món hời",
-    "example": "The team discussed the bargain during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự mặc cả, món hời\" trong cuộc họp.",
+    "example": "This jacket was a real bargain.",
+    "exampleTranslation": "Chiếc áo khoác này là món hời thật sự.",
     "translations": {
       "vi": "sự mặc cả, món hời"
     }
@@ -6511,11 +6498,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-15",
     "topic": "Trading",
     "word": "represent",
-    "phonetic": "/ˌɹɛpɹɪˈzɛnt/",
+    "phonetic": "/rɛprɪˈzɛnt/",
     "pos": "verb",
     "meaning": "đại diện, tiêu biểu cho",
-    "example": "The team plans to represent before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đại diện, tiêu biểu cho\" trước thời hạn.",
+    "example": "Please represent the company at the conference.",
+    "exampleTranslation": "Hãy đại diện công ty tại hội nghị.",
     "translations": {
       "vi": "đại diện, tiêu biểu cho"
     }
@@ -6524,11 +6511,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-16",
     "topic": "Trading",
     "word": "dealer",
-    "phonetic": "/dˈiːlɐ/",
+    "phonetic": "/ˈdilɚ/",
     "pos": "noun",
     "meaning": "người buôn bán, lái buôn",
-    "example": "The team discussed the dealer during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"người buôn bán, lái buôn\" trong cuộc họp.",
+    "example": "The dealer answered our questions.",
+    "exampleTranslation": "Người buôn bán đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "người buôn bán, lái buôn"
     }
@@ -6537,24 +6524,24 @@ export const VOCABULARY: Word[] = [
     "id": "tra-17",
     "topic": "Trading",
     "word": "inventory",
-    "phonetic": "/ˈɪnvəntɹˌi/",
+    "phonetic": "/ɪnvənˈtɔri/",
     "pos": "noun",
-    "meaning": "hàng tồn kho",
-    "example": "The team discussed the inventory during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hàng tồn kho\" trong cuộc họp.",
+    "meaning": "hàng tồn kho; danh mục kiểm kê",
+    "example": "We checked the warehouse inventory.",
+    "exampleTranslation": "Chúng tôi kiểm tra hàng tồn kho.",
     "translations": {
-      "vi": "hàng tồn kho"
+      "vi": "hàng tồn kho; danh mục kiểm kê"
     }
   },
   {
     "id": "tra-18",
     "topic": "Trading",
     "word": "commercial",
-    "phonetic": "/kəmˈɜːʃəl/",
-    "pos": "adj",
+    "phonetic": "/kəˈmɝʃəl/",
+    "pos": "adjective",
     "meaning": "(thuộc thương mại)",
-    "example": "The manager described the proposal as commercial.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"(thuộc thương mại)\".",
+    "example": "The bank offers commercial loans.",
+    "exampleTranslation": "Ngân hàng cung cấp các khoản vay kinh doanh.",
     "translations": {
       "vi": "(thuộc thương mại)"
     }
@@ -6566,8 +6553,8 @@ export const VOCABULARY: Word[] = [
     "phonetic": "/ˈɪnvɔɪs/",
     "pos": "noun",
     "meaning": "hoá đơn",
-    "example": "The team discussed the invoice during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hoá đơn\" trong cuộc họp.",
+    "example": "Please read the invoice carefully.",
+    "exampleTranslation": "Hãy đọc hoá đơn cẩn thận.",
     "translations": {
       "vi": "hoá đơn"
     }
@@ -6576,24 +6563,24 @@ export const VOCABULARY: Word[] = [
     "id": "tra-20",
     "topic": "Trading",
     "word": "move",
-    "phonetic": "/mˈuːv/",
+    "phonetic": "/ˈmuv/",
     "pos": "verb",
-    "meaning": "chuy ển động, di chuyển",
-    "example": "The team plans to move before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chuy ển động, di chuyển\" trước thời hạn.",
+    "meaning": "chuyển động, di chuyển",
+    "example": "Please move the boxes to the warehouse.",
+    "exampleTranslation": "Hãy chuyển các thùng hàng vào kho.",
     "translations": {
-      "vi": "chuy ển động, di chuyển"
+      "vi": "chuyển động, di chuyển"
     }
   },
   {
     "id": "tra-21",
     "topic": "Trading",
     "word": "distribute",
-    "phonetic": "/dˈɪstɹɪbjˌuːt/",
+    "phonetic": "/dɪˈstrɪbjut/",
     "pos": "verb",
     "meaning": "phân phối/phân phát",
-    "example": "The team plans to distribute before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phân phối/phân phát\" trước thời hạn.",
+    "example": "Please distribute the materials before the meeting.",
+    "exampleTranslation": "Hãy phát tài liệu trước cuộc họp.",
     "translations": {
       "vi": "phân phối/phân phát"
     }
@@ -6602,24 +6589,24 @@ export const VOCABULARY: Word[] = [
     "id": "tra-22",
     "topic": "Trading",
     "word": "stock",
-    "phonetic": "/stˈɒk/",
+    "phonetic": "/ˈstɑk/",
     "pos": "noun",
-    "meaning": "kho hàng, nguồn hàng; cổ phần",
-    "example": "The team discussed the stock during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"kho hàng, nguồn hàng; cổ phần\" trong cuộc họp.",
+    "meaning": "hàng tồn kho; cổ phần",
+    "example": "The store has sufficient stock.",
+    "exampleTranslation": "Cửa hàng có đủ hàng tồn kho.",
     "translations": {
-      "vi": "kho hàng, nguồn hàng; cổ phần"
+      "vi": "hàng tồn kho; cổ phần"
     }
   },
   {
     "id": "tra-23",
     "topic": "Trading",
     "word": "rating",
-    "phonetic": "/ɹˈeɪtɪŋ/",
+    "phonetic": "/ˈreɪtɪŋ/",
     "pos": "noun",
     "meaning": "sự đánh giá, thứ bậc",
-    "example": "The team discussed the rating during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đánh giá, thứ bậc\" trong cuộc họp.",
+    "example": "We discussed the rating at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự đánh giá tại cuộc họp.",
     "translations": {
       "vi": "sự đánh giá, thứ bậc"
     }
@@ -6628,11 +6615,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-24",
     "topic": "Trading",
     "word": "encompass",
-    "phonetic": "/ɛnkˈʌmpəs/",
+    "phonetic": "/ɛnˈkʌmpəs/",
     "pos": "verb",
     "meaning": "bao quanh, bao gồm",
-    "example": "The team plans to encompass before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bao quanh, bao gồm\" trước thời hạn.",
+    "example": "Please encompass all stages of production.",
+    "exampleTranslation": "Hãy bao gồm mọi giai đoạn sản xuất.",
     "translations": {
       "vi": "bao quanh, bao gồm"
     }
@@ -6641,11 +6628,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-25",
     "topic": "Trading",
     "word": "market",
-    "phonetic": "/mˈɑːkɪt/",
+    "phonetic": "/ˈmɑrkət/",
     "pos": "noun",
     "meaning": "thị trường",
-    "example": "The team discussed the market during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thị trường\" trong cuộc họp.",
+    "example": "We discussed the market at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về thị trường tại cuộc họp.",
     "translations": {
       "vi": "thị trường"
     }
@@ -6654,11 +6641,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-26",
     "topic": "Trading",
     "word": "commodity",
-    "phonetic": "/kəmˈɒdɪti/",
+    "phonetic": "/kəˈmɑdəti/",
     "pos": "noun",
     "meaning": "hàng hoá, mặt hàng",
-    "example": "The team discussed the commodity during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hàng hoá, mặt hàng\" trong cuộc họp.",
+    "example": "We inspected the commodity yesterday.",
+    "exampleTranslation": "Chúng tôi kiểm tra hàng hoá hôm qua.",
     "translations": {
       "vi": "hàng hoá, mặt hàng"
     }
@@ -6667,11 +6654,11 @@ export const VOCABULARY: Word[] = [
     "id": "tra-27",
     "topic": "Trading",
     "word": "quote",
-    "phonetic": "/kwˈəʊt/",
+    "phonetic": "/ˈkwoʊt/",
     "pos": "noun",
     "meaning": "báo giá",
-    "example": "The team discussed the quote during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"báo giá\" trong cuộc họp.",
+    "example": "We received a quote for the repairs.",
+    "exampleTranslation": "Chúng tôi nhận được báo giá sửa chữa.",
     "translations": {
       "vi": "báo giá"
     }
@@ -6680,24 +6667,24 @@ export const VOCABULARY: Word[] = [
     "id": "tra-28",
     "topic": "Trading",
     "word": "consignment",
-    "phonetic": "/kənsˈaɪnmənt/",
+    "phonetic": "/kənˈsaɪnmənt/",
     "pos": "noun",
-    "meaning": "sự gửi hàng, sự ký gửi (để bán)",
-    "example": "The team discussed the consignment during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự gửi hàng, sự ký gửi (để bán)\" trong cuộc họp.",
+    "meaning": "lô hàng ký gửi; sự ký gửi",
+    "example": "The consignment contains twenty boxes.",
+    "exampleTranslation": "Lô hàng ký gửi gồm hai mươi thùng.",
     "translations": {
-      "vi": "sự gửi hàng, sự ký gửi (để bán)"
+      "vi": "lô hàng ký gửi; sự ký gửi"
     }
   },
   {
     "id": "ttp-01",
     "topic": "Trading Transport",
     "word": "perishable",
-    "phonetic": "/pˈɛɹɪʃəbəl/",
-    "pos": "adj",
+    "phonetic": "/ˈpɛrɪʃəbəl/",
+    "pos": "adjective",
     "meaning": "dễ hỏng, dễ thối",
-    "example": "The manager described the proposal as perishable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"dễ hỏng, dễ thối\".",
+    "example": "Keep perishable food in the refrigerator.",
+    "exampleTranslation": "Hãy bảo quản thực phẩm dễ hỏng trong tủ lạnh.",
     "translations": {
       "vi": "dễ hỏng, dễ thối"
     }
@@ -6706,24 +6693,24 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-02",
     "topic": "Trading Transport",
     "word": "ensure",
-    "phonetic": "/ɛnʃˈɔː/",
+    "phonetic": "/ɛnˈʃʊr/",
     "pos": "verb",
-    "meaning": "bảo đảm, quả quy ết",
-    "example": "The team plans to ensure before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bảo đảm, quả quy ết\" trước thời hạn.",
+    "meaning": "bảo đảm, quả quyết",
+    "example": "Please ensure that every order is correct.",
+    "exampleTranslation": "Hãy bảo đảm mọi đơn hàng đều chính xác.",
     "translations": {
-      "vi": "bảo đảm, quả quy ết"
+      "vi": "bảo đảm, quả quyết"
     }
   },
   {
     "id": "ttp-03",
     "topic": "Trading Transport",
     "word": "particularly",
-    "phonetic": "/pətˈɪkjʊləli/",
-    "pos": "adv",
+    "phonetic": "/pɑrˈtɪkjəlɚli/",
+    "pos": "adverb",
     "meaning": "đặc biệt, cá biệt, đặc biệt là",
-    "example": "The team completed the task particularly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"đặc biệt, cá biệt, đặc biệt là\".",
+    "example": "The manager was particularly impressed by the proposal.",
+    "exampleTranslation": "Người quản lý đặc biệt ấn tượng với đề xuất.",
     "translations": {
       "vi": "đặc biệt, cá biệt, đặc biệt là"
     }
@@ -6732,11 +6719,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-04",
     "topic": "Trading Transport",
     "word": "adequately",
-    "phonetic": "/ˈædɪkwətli/",
-    "pos": "adv",
+    "phonetic": "/ˈædəkwətli/",
+    "pos": "adverb",
     "meaning": "tương xứng, thích đáng",
-    "example": "The team completed the task adequately.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"tương xứng, thích đáng\".",
+    "example": "The staff have been adequately trained.",
+    "exampleTranslation": "Nhân viên đã được đào tạo đầy đủ.",
     "translations": {
       "vi": "tương xứng, thích đáng"
     }
@@ -6745,13 +6732,13 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-05",
     "topic": "Trading Transport",
     "word": "article",
-    "phonetic": "/ˈɑːtɪkəl/",
+    "phonetic": "/ˈɑrtəkəl/",
     "pos": "noun",
-    "meaning": "vật phẩm, đồ; bài báo; điều khoản",
-    "example": "The team discussed the article during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"vật phẩm, đồ; bài báo; điều khoản\" trong cuộc họp.",
+    "meaning": "bài báo; vật phẩm; điều khoản",
+    "example": "She wrote an article about customer service.",
+    "exampleTranslation": "Cô ấy viết bài báo về chăm sóc khách hàng.",
     "translations": {
-      "vi": "vật phẩm, đồ; bài báo; điều khoản"
+      "vi": "bài báo; vật phẩm; điều khoản"
     }
   },
   {
@@ -6761,8 +6748,8 @@ export const VOCABULARY: Word[] = [
     "phonetic": "/ˈeɪdʒənsi/",
     "pos": "noun",
     "meaning": "đại lý, cơ quan, hãng, sở",
-    "example": "The team discussed the agency during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"đại lý, cơ quan, hãng, sở\" trong cuộc họp.",
+    "example": "We discussed the agency at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về đại lý tại cuộc họp.",
     "translations": {
       "vi": "đại lý, cơ quan, hãng, sở"
     }
@@ -6771,11 +6758,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-07",
     "topic": "Trading Transport",
     "word": "enclose",
-    "phonetic": "/ɛnklˈəʊz/",
+    "phonetic": "/ɪnˈkloʊz/",
     "pos": "verb",
     "meaning": "bao gồm, gửi kèm theo; vây quanh",
-    "example": "The team plans to enclose before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bao gồm, gửi kèm theo; vây quanh\" trước thời hạn.",
+    "example": "Please enclose a copy of the receipt.",
+    "exampleTranslation": "Hãy gửi kèm bản sao biên lai.",
     "translations": {
       "vi": "bao gồm, gửi kèm theo; vây quanh"
     }
@@ -6784,24 +6771,24 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-08",
     "topic": "Trading Transport",
     "word": "careful",
-    "phonetic": "/kˈeəfəl/",
-    "pos": "adj",
-    "meaning": "cẩn thận, kỹ lượng, chu đáo",
-    "example": "The manager described the proposal as careful.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"cẩn thận, kỹ lượng, chu đáo\".",
+    "phonetic": "/ˈkɛrfəl/",
+    "pos": "adjective",
+    "meaning": "cẩn thận, kỹ lưỡng, chu đáo",
+    "example": "Please be careful with this equipment.",
+    "exampleTranslation": "Hãy cẩn thận với thiết bị này.",
     "translations": {
-      "vi": "cẩn thận, kỹ lượng, chu đáo"
+      "vi": "cẩn thận, kỹ lưỡng, chu đáo"
     }
   },
   {
     "id": "ttp-09",
     "topic": "Trading Transport",
     "word": "attach",
-    "phonetic": "/ɐtˈætʃ/",
+    "phonetic": "/əˈtætʃ/",
     "pos": "verb",
     "meaning": "đính kèm, gắn vào",
-    "example": "The team plans to attach before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đính kèm, gắn vào\" trước thời hạn.",
+    "example": "Please attach the file to your email.",
+    "exampleTranslation": "Hãy đính kèm tệp vào email.",
     "translations": {
       "vi": "đính kèm, gắn vào"
     }
@@ -6810,11 +6797,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-10",
     "topic": "Trading Transport",
     "word": "formerly",
-    "phonetic": "/fˈɔːməli/",
-    "pos": "adv",
+    "phonetic": "/ˈfɔrmɚli/",
+    "pos": "adverb",
     "meaning": "trước đây",
-    "example": "The team completed the task formerly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"trước đây\".",
+    "example": "The building was formerly a warehouse.",
+    "exampleTranslation": "Trước đây tòa nhà là nhà kho.",
     "translations": {
       "vi": "trước đây"
     }
@@ -6823,11 +6810,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-11",
     "topic": "Trading Transport",
     "word": "package",
-    "phonetic": "/pˈækɪdʒ/",
+    "phonetic": "/ˈpækədʒ/",
     "pos": "noun",
     "meaning": "gói hàng, kiện hàng",
-    "example": "The team discussed the package during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"gói hàng, kiện hàng\" trong cuộc họp.",
+    "example": "We discussed the package at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về gói hàng tại cuộc họp.",
     "translations": {
       "vi": "gói hàng, kiện hàng"
     }
@@ -6836,24 +6823,24 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-12",
     "topic": "Trading Transport",
     "word": "react",
-    "phonetic": "/ɹɪˈækt/",
+    "phonetic": "/riˈækt/",
     "pos": "verb",
-    "meaning": "phản ứng,t ác động lại",
-    "example": "The team plans to react before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phản ứng,t ác động lại\" trước thời hạn.",
+    "meaning": "phản ứng, tác động lại",
+    "example": "Please react calmly to unexpected changes.",
+    "exampleTranslation": "Hãy phản ứng bình tĩnh trước thay đổi bất ngờ.",
     "translations": {
-      "vi": "phản ứng,t ác động lại"
+      "vi": "phản ứng, tác động lại"
     }
   },
   {
     "id": "ttp-13",
     "topic": "Trading Transport",
     "word": "convenience",
-    "phonetic": "/kənvˈiːnɪəns/",
+    "phonetic": "/kənˈvinjəns/",
     "pos": "noun",
     "meaning": "sự thuận lợi/thuận tiện",
-    "example": "The team discussed the convenience during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự thuận lợi/thuận tiện\" trong cuộc họp.",
+    "example": "We discussed the convenience at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự thuận lợi/thuận tiện tại cuộc họp.",
     "translations": {
       "vi": "sự thuận lợi/thuận tiện"
     }
@@ -6862,24 +6849,24 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-14",
     "topic": "Trading Transport",
     "word": "separate",
-    "phonetic": "/ˈsɛpɝˌeɪt/",
-    "pos": "adj",
-    "meaning": "tách rời ra, chia tay; phân loại",
-    "example": "The manager described the proposal as separate.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tách rời ra, chia tay; phân loại\".",
+    "phonetic": "/ˈsɛpɚət/",
+    "pos": "adjective",
+    "meaning": "riêng, tách biệt",
+    "example": "Please use a separate form.",
+    "exampleTranslation": "Hãy dùng một biểu mẫu riêng.",
     "translations": {
-      "vi": "tách rời ra, chia tay; phân loại"
+      "vi": "riêng, tách biệt"
     }
   },
   {
     "id": "ttp-15",
     "topic": "Trading Transport",
     "word": "handle",
-    "phonetic": "/hˈændəl/",
+    "phonetic": "/ˈhændəl/",
     "pos": "verb",
     "meaning": "điều khiển, xử lý",
-    "example": "The team plans to handle before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"điều khiển, xử lý\" trước thời hạn.",
+    "example": "Please handle fragile items with care.",
+    "exampleTranslation": "Hãy xử lý đồ dễ vỡ cẩn thận.",
     "translations": {
       "vi": "điều khiển, xử lý"
     }
@@ -6888,11 +6875,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-16",
     "topic": "Trading Transport",
     "word": "warehouse",
-    "phonetic": "/wˈeəhaʊs/",
+    "phonetic": "/ˈwɛrhaʊs/",
     "pos": "noun",
     "meaning": "nhà kho",
-    "example": "The team discussed the warehouse during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nhà kho\" trong cuộc họp.",
+    "example": "We inspected the warehouse yesterday.",
+    "exampleTranslation": "Chúng tôi kiểm tra nhà kho hôm qua.",
     "translations": {
       "vi": "nhà kho"
     }
@@ -6901,11 +6888,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-17",
     "topic": "Trading Transport",
     "word": "storage",
-    "phonetic": "/stˈɔːɹɪdʒ/",
+    "phonetic": "/ˈstɔrədʒ/",
     "pos": "noun",
     "meaning": "kho, sự tích trữ",
-    "example": "The team discussed the storage during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"kho, sự tích trữ\" trong cuộc họp.",
+    "example": "We discussed the storage at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về kho tại cuộc họp.",
     "translations": {
       "vi": "kho, sự tích trữ"
     }
@@ -6914,11 +6901,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-18",
     "topic": "Trading Transport",
     "word": "detach",
-    "phonetic": "/dɪtˈætʃ/",
+    "phonetic": "/ˈdɪtætʃ/",
     "pos": "verb",
     "meaning": "gỡ, tháo, tách ra",
-    "example": "The team plans to detach before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"gỡ, tháo, tách ra\" trước thời hạn.",
+    "example": "Please detach the cable before cleaning.",
+    "exampleTranslation": "Hãy tháo dây trước khi vệ sinh.",
     "translations": {
       "vi": "gỡ, tháo, tách ra"
     }
@@ -6927,11 +6914,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-19",
     "topic": "Trading Transport",
     "word": "envelope",
-    "phonetic": "/ˈɛnvəˌɫoʊp/",
+    "phonetic": "/ˈɛnvəloʊp/",
     "pos": "noun",
     "meaning": "phong bì",
-    "example": "The team discussed the envelope during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"phong bì\" trong cuộc họp.",
+    "example": "We inspected the envelope yesterday.",
+    "exampleTranslation": "Chúng tôi kiểm tra phong bì hôm qua.",
     "translations": {
       "vi": "phong bì"
     }
@@ -6940,11 +6927,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-20",
     "topic": "Trading Transport",
     "word": "exclusion",
-    "phonetic": "/ɛksklˈuːʒən/",
+    "phonetic": "/ɪkˈskluʒən/",
     "pos": "noun",
     "meaning": "sự không tính vào, sự loại trừ",
-    "example": "The team discussed the exclusion during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự không tính vào, sự loại trừ\" trong cuộc họp.",
+    "example": "We discussed the exclusion at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự không tính vào tại cuộc họp.",
     "translations": {
       "vi": "sự không tính vào, sự loại trừ"
     }
@@ -6953,11 +6940,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-21",
     "topic": "Trading Transport",
     "word": "incorrect",
-    "phonetic": "/ɪnkəɹˈɛkt/",
-    "pos": "adj",
+    "phonetic": "/ɪnkɚˈɛkt/",
+    "pos": "adjective",
     "meaning": "không đúng, sai",
-    "example": "The manager described the proposal as incorrect.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"không đúng, sai\".",
+    "example": "The proposed plan is incorrect.",
+    "exampleTranslation": "Kế hoạch được đề xuất không đúng.",
     "translations": {
       "vi": "không đúng, sai"
     }
@@ -6966,11 +6953,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-22",
     "topic": "Trading Transport",
     "word": "step",
-    "phonetic": "/stˈɛp/",
+    "phonetic": "/ˈstɛp/",
     "pos": "noun",
     "meaning": "bước đi, bước; biện pháp, bước tiến",
-    "example": "The team discussed the step during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bước đi, bước; biện pháp, bước tiến\" trong cuộc họp.",
+    "example": "We discussed the step at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về bước đi tại cuộc họp.",
     "translations": {
       "vi": "bước đi, bước; biện pháp, bước tiến"
     }
@@ -6979,50 +6966,50 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-23",
     "topic": "Trading Transport",
     "word": "fragile",
-    "phonetic": "/fɹˈædʒaɪl/",
-    "pos": "adj",
-    "meaning": "dễv ỡ, mỏng manh",
-    "example": "The manager described the proposal as fragile.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"dễv ỡ, mỏng manh\".",
+    "phonetic": "/ˈfrædʒəl/",
+    "pos": "adjective",
+    "meaning": "dễ vỡ, mỏng manh",
+    "example": "The new product is fragile.",
+    "exampleTranslation": "Sản phẩm mới dễ vỡ.",
     "translations": {
-      "vi": "dễv ỡ, mỏng manh"
+      "vi": "dễ vỡ, mỏng manh"
     }
   },
   {
     "id": "ttp-24",
     "topic": "Trading Transport",
     "word": "deliver",
-    "phonetic": "/dɪlˈɪvɐ/",
+    "phonetic": "/dɪˈlɪvɚ/",
     "pos": "verb",
-    "meaning": "giao, phát; phát biểu, bàytỏ",
-    "example": "The team plans to deliver before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giao, phát; phát biểu, bàytỏ\" trước thời hạn.",
+    "meaning": "giao, phát; phát biểu, bày tỏ",
+    "example": "Please deliver the goods on time.",
+    "exampleTranslation": "Hãy giao hàng đúng giờ.",
     "translations": {
-      "vi": "giao, phát; phát biểu, bàytỏ"
+      "vi": "giao, phát; phát biểu, bày tỏ"
     }
   },
   {
     "id": "ttp-25",
     "topic": "Trading Transport",
     "word": "courier",
-    "phonetic": "/kˈɜːɹɪɐ/",
+    "phonetic": "/ˈkɝiɚ/",
     "pos": "noun",
-    "meaning": "người đưa thư, công ty vận chuy ển",
-    "example": "The team discussed the courier during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"người đưa thư, công ty vận chuy ển\" trong cuộc họp.",
+    "meaning": "người đưa thư, công ty vận chuyển",
+    "example": "The courier answered our questions.",
+    "exampleTranslation": "Người đưa thư đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
-      "vi": "người đưa thư, công ty vận chuy ển"
+      "vi": "người đưa thư, công ty vận chuyển"
     }
   },
   {
     "id": "ttp-26",
     "topic": "Trading Transport",
     "word": "carton",
-    "phonetic": "/kˈɑːtən/",
+    "phonetic": "/ˈkɑrtən/",
     "pos": "noun",
     "meaning": "giấy bìa, hộp/thùng bìa cứng",
-    "example": "The team discussed the carton during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"giấy bìa, hộp/thùng bìa cứng\" trong cuộc họp.",
+    "example": "We discussed the carton at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về giấy bìa tại cuộc họp.",
     "translations": {
       "vi": "giấy bìa, hộp/thùng bìa cứng"
     }
@@ -7031,11 +7018,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-27",
     "topic": "Trading Transport",
     "word": "address",
-    "phonetic": "/ˈæˌdɹɛs/",
+    "phonetic": "/ˈædrɛs/",
     "pos": "noun",
     "meaning": "địa chỉ",
-    "example": "The team discussed the address during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"địa chỉ\" trong cuộc họp.",
+    "example": "Please read the address carefully.",
+    "exampleTranslation": "Hãy đọc địa chỉ cẩn thận.",
     "translations": {
       "vi": "địa chỉ"
     }
@@ -7044,13 +7031,13 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-28",
     "topic": "Trading Transport",
     "word": "carry",
-    "phonetic": "/kˈæɹi/",
+    "phonetic": "/ˈkæri/",
     "pos": "verb",
-    "meaning": "mang,v ác, đem theo;có",
-    "example": "The team plans to carry before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"mang,v ác, đem theo;có\" trước thời hạn.",
+    "meaning": "mang, vác, đem theo; có",
+    "example": "Please carry your passport with you.",
+    "exampleTranslation": "Hãy mang theo hộ chiếu.",
     "translations": {
-      "vi": "mang,v ác, đem theo;có"
+      "vi": "mang, vác, đem theo; có"
     }
   },
   {
@@ -7060,8 +7047,8 @@ export const VOCABULARY: Word[] = [
     "phonetic": "/ˈkɑntɛnt/",
     "pos": "noun",
     "meaning": "nội dung, đồ đựng bên trong",
-    "example": "The team discussed the content during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nội dung, đồ đựng bên trong\" trong cuộc họp.",
+    "example": "Please review the content of the report.",
+    "exampleTranslation": "Hãy xem xét nội dung báo cáo.",
     "translations": {
       "vi": "nội dung, đồ đựng bên trong"
     }
@@ -7070,11 +7057,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-30",
     "topic": "Trading Transport",
     "word": "correspondence",
-    "phonetic": "/kˌɒɹɪspˈɒndəns/",
+    "phonetic": "/kɔrəˈspɑndəns/",
     "pos": "noun",
     "meaning": "thư từ, quan hệ thư từ",
-    "example": "The team discussed the correspondence during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thư từ, quan hệ thư từ\" trong cuộc họp.",
+    "example": "Please read the correspondence carefully.",
+    "exampleTranslation": "Hãy đọc thư từ cẩn thận.",
     "translations": {
       "vi": "thư từ, quan hệ thư từ"
     }
@@ -7083,24 +7070,24 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-31",
     "topic": "Trading Transport",
     "word": "remarkable",
-    "phonetic": "/ɹɪmˈɑːkəbəl/",
-    "pos": "adj",
-    "meaning": "đáng chý ý, xuấts ắc, đặc biệt",
-    "example": "The manager described the proposal as remarkable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đáng chý ý, xuấts ắc, đặc biệt\".",
+    "phonetic": "/rɪˈmɑrkəbəl/",
+    "pos": "adjective",
+    "meaning": "đáng chú ý, xuất sắc, đặc biệt",
+    "example": "The proposed plan is remarkable.",
+    "exampleTranslation": "Kế hoạch được đề xuất đáng chú ý.",
     "translations": {
-      "vi": "đáng chý ý, xuấts ắc, đặc biệt"
+      "vi": "đáng chú ý, xuất sắc, đặc biệt"
     }
   },
   {
     "id": "ttp-32",
     "topic": "Trading Transport",
     "word": "impose",
-    "phonetic": "/ɪmpˈəʊz/",
+    "phonetic": "/ɪmˈpoʊz/",
     "pos": "verb",
     "meaning": "đánh, áp (thuế)",
-    "example": "The team plans to impose before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đánh, áp (thuế)\" trước thời hạn.",
+    "example": "Please impose a reasonable limit.",
+    "exampleTranslation": "Hãy áp dụng một giới hạn hợp lý.",
     "translations": {
       "vi": "đánh, áp (thuế)"
     }
@@ -7109,11 +7096,11 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-33",
     "topic": "Trading Transport",
     "word": "recipient",
-    "phonetic": "/ɹɪsˈɪpiənt/",
+    "phonetic": "/rəˈsɪpiənt/",
     "pos": "noun",
     "meaning": "người nhận",
-    "example": "The team discussed the recipient during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"người nhận\" trong cuộc họp.",
+    "example": "The recipient answered our questions.",
+    "exampleTranslation": "Người nhận đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "người nhận"
     }
@@ -7122,89 +7109,89 @@ export const VOCABULARY: Word[] = [
     "id": "ttp-34",
     "topic": "Trading Transport",
     "word": "obligate",
-    "phonetic": "/ˈɑbɫəˌɡeɪt/",
+    "phonetic": "/ˈɑbləɡeɪt/",
     "pos": "verb",
-    "meaning": "bắt buộc, giao tr ách nhiệm",
-    "example": "The team plans to obligate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bắt buộc, giao tr ách nhiệm\" trước thời hạn.",
+    "meaning": "bắt buộc, giao trách nhiệm",
+    "example": "Please obligate the supplier to meet the deadline.",
+    "exampleTranslation": "Hãy ràng buộc nhà cung cấp phải đáp ứng thời hạn.",
     "translations": {
-      "vi": "bắt buộc, giao tr ách nhiệm"
+      "vi": "bắt buộc, giao trách nhiệm"
     }
   },
   {
     "id": "hot-01",
     "topic": "Hotel, Restaurant",
     "word": "compensate",
-    "phonetic": "/kˈɒmpənsˌeɪt/",
-    "pos": "noun",
-    "meaning": "sự tiếp đón, sự tiếp nhận",
-    "example": "The team discussed the compensate during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự tiếp đón, sự tiếp nhận\" trong cuộc họp.",
+    "phonetic": "/ˈkɑmpənseɪt/",
+    "pos": "verb",
+    "meaning": "đền bù, bồi thường",
+    "example": "Please compensate customers for the delay.",
+    "exampleTranslation": "Hãy bồi thường cho khách hàng vì sự chậm trễ.",
     "translations": {
-      "vi": "sự tiếp đón, sự tiếp nhận"
+      "vi": "đền bù, bồi thường"
     }
   },
   {
     "id": "hot-02",
     "topic": "Hotel, Restaurant",
     "word": "complimentary",
-    "phonetic": "/kˌɒmplɪmˈɛntəɹi/",
-    "pos": "adj",
-    "meaning": "miễn phí, biếu,t ặng",
-    "example": "The manager described the proposal as complimentary.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"miễn phí, biếu,t ặng\".",
+    "phonetic": "/kɑmpləˈmɛntɚi/",
+    "pos": "adjective",
+    "meaning": "miễn phí, biếu, tặng",
+    "example": "The hotel offers complimentary breakfast.",
+    "exampleTranslation": "Khách sạn cung cấp bữa sáng miễn phí.",
     "translations": {
-      "vi": "miễn phí, biếu,t ặng"
+      "vi": "miễn phí, biếu, tặng"
     }
   },
   {
     "id": "hot-03",
     "topic": "Hotel, Restaurant",
     "word": "container",
-    "phonetic": "/kəntˈeɪnɐ/",
+    "phonetic": "/kənˈteɪnɚ/",
     "pos": "noun",
-    "meaning": "đồ để chứa (bình, lọ, hộp, thùng)",
-    "example": "The team discussed the container during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"đồ để chứa (bình, lọ, hộp, thùng)\" trong cuộc họp.",
+    "meaning": "vật chứa; bình, hộp, thùng",
+    "example": "We inspected the container yesterday.",
+    "exampleTranslation": "Chúng tôi kiểm tra vật chứa hôm qua.",
     "translations": {
-      "vi": "đồ để chứa (bình, lọ, hộp, thùng)"
+      "vi": "vật chứa; bình, hộp, thùng"
     }
   },
   {
     "id": "hot-04",
     "topic": "Hotel, Restaurant",
     "word": "elegant",
-    "phonetic": "/ˈɛlɪɡənt/",
-    "pos": "noun",
-    "meaning": "sự đặt trước, sự bảot ồn",
-    "example": "The team discussed the elegant during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đặt trước, sự bảot ồn\" trong cuộc họp.",
+    "phonetic": "/ˈɛləɡənt/",
+    "pos": "adjective",
+    "meaning": "thanh lịch, tao nhã, trang nhã",
+    "example": "The hotel has an elegant lobby.",
+    "exampleTranslation": "Khách sạn có tiền sảnh thanh lịch.",
     "translations": {
-      "vi": "sự đặt trước, sự bảot ồn"
+      "vi": "thanh lịch, tao nhã, trang nhã"
     }
   },
   {
     "id": "hot-05",
     "topic": "Hotel, Restaurant",
     "word": "make",
-    "phonetic": "/mˈeɪk/",
+    "phonetic": "/ˈmeɪk/",
     "pos": "verb",
-    "meaning": "làm,t ạo, gâyr a, thực hiện",
-    "example": "The team plans to make before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm,t ạo, gâyr a, thực hiện\" trước thời hạn.",
+    "meaning": "làm, tạo, gây ra, thực hiện",
+    "example": "Please make a reservation in advance.",
+    "exampleTranslation": "Hãy đặt chỗ trước.",
     "translations": {
-      "vi": "làm,t ạo, gâyr a, thực hiện"
+      "vi": "làm, tạo, gây ra, thực hiện"
     }
   },
   {
     "id": "hot-06",
     "topic": "Hotel, Restaurant",
     "word": "beverage",
-    "phonetic": "/bˈɛvəɹɪdʒ/",
+    "phonetic": "/ˈbɛvɚɪdʒ/",
     "pos": "noun",
     "meaning": "đồ uống",
-    "example": "The team discussed the beverage during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"đồ uống\" trong cuộc họp.",
+    "example": "We ordered the beverage at the restaurant.",
+    "exampleTranslation": "Chúng tôi gọi đồ uống tại nhà hàng.",
     "translations": {
       "vi": "đồ uống"
     }
@@ -7213,24 +7200,24 @@ export const VOCABULARY: Word[] = [
     "id": "hot-07",
     "topic": "Hotel, Restaurant",
     "word": "rate",
-    "phonetic": "/ɹˈeɪt/",
+    "phonetic": "/ˈreɪt/",
     "pos": "noun",
-    "meaning": "giá, mức giá",
-    "example": "The team discussed the rate during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"giá, mức giá\" trong cuộc họp.",
+    "meaning": "mức giá, tỷ lệ, mức độ",
+    "example": "We discussed the rate at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về mức giá tại cuộc họp.",
     "translations": {
-      "vi": "giá, mức giá"
+      "vi": "mức giá, tỷ lệ, mức độ"
     }
   },
   {
     "id": "hot-08",
     "topic": "Hotel, Restaurant",
     "word": "atmosphere",
-    "phonetic": "/ˈætməsfˌiə/",
+    "phonetic": "/ˈætməsfɪr/",
     "pos": "noun",
     "meaning": "không khí, bầu không khí",
-    "example": "The team discussed the atmosphere during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"không khí, bầu không khí\" trong cuộc họp.",
+    "example": "We discussed the atmosphere at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về không khí tại cuộc họp.",
     "translations": {
       "vi": "không khí, bầu không khí"
     }
@@ -7239,11 +7226,11 @@ export const VOCABULARY: Word[] = [
     "id": "hot-09",
     "topic": "Hotel, Restaurant",
     "word": "sequence",
-    "phonetic": "/sˈiːkwəns/",
+    "phonetic": "/ˈsikwəns/",
     "pos": "noun",
     "meaning": "sự nối tiếp, trình tự, chuỗi",
-    "example": "The team discussed the sequence during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự nối tiếp, trình tự, chuỗi\" trong cuộc họp.",
+    "example": "We discussed the sequence at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự nối tiếp tại cuộc họp.",
     "translations": {
       "vi": "sự nối tiếp, trình tự, chuỗi"
     }
@@ -7252,37 +7239,37 @@ export const VOCABULARY: Word[] = [
     "id": "hot-10",
     "topic": "Hotel, Restaurant",
     "word": "extensive",
-    "phonetic": "/ɛkstˈɛnsɪv/",
-    "pos": "adj",
-    "meaning": "rộngr ãi, bao quát",
-    "example": "The manager described the proposal as extensive.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"rộngr ãi, bao quát\".",
+    "phonetic": "/ɪkˈstɛnsɪv/",
+    "pos": "adjective",
+    "meaning": "rộng rãi, bao quát",
+    "example": "She has extensive experience in marketing.",
+    "exampleTranslation": "Cô ấy có nhiều kinh nghiệm tiếp thị.",
     "translations": {
-      "vi": "rộngr ãi, bao quát"
+      "vi": "rộng rãi, bao quát"
     }
   },
   {
     "id": "hot-11",
     "topic": "Hotel, Restaurant",
     "word": "prior",
-    "phonetic": "/pɹˈaɪɐ/",
-    "pos": "adj",
-    "meaning": "trước, ưu tiên",
-    "example": "The manager described the proposal as prior.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"trước, ưu tiên\".",
+    "phonetic": "/ˈpraɪɚ/",
+    "pos": "adjective",
+    "meaning": "trước, có trước",
+    "example": "You need prior approval for this expense.",
+    "exampleTranslation": "Bạn cần được phê duyệt trước cho khoản chi này.",
     "translations": {
-      "vi": "trước, ưu tiên"
+      "vi": "trước, có trước"
     }
   },
   {
     "id": "hot-12",
     "topic": "Hotel, Restaurant",
     "word": "belongings",
-    "phonetic": "/bɪlˈɒŋɪŋz/",
+    "phonetic": "/bɪˈlɔŋɪŋz/",
     "pos": "noun",
     "meaning": "đồ cá nhân, hành lý",
-    "example": "The team discussed the belongings during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"đồ cá nhân, hành lý\" trong cuộc họp.",
+    "example": "Please keep your belongings with you.",
+    "exampleTranslation": "Hãy giữ đồ dùng cá nhân bên mình.",
     "translations": {
       "vi": "đồ cá nhân, hành lý"
     }
@@ -7291,24 +7278,24 @@ export const VOCABULARY: Word[] = [
     "id": "hot-13",
     "topic": "Hotel, Restaurant",
     "word": "entirely",
-    "phonetic": "/ɛntˈaɪəli/",
-    "pos": "adv",
-    "meaning": "tr ọnv ẹn, hoànt oàn",
-    "example": "The team completed the task entirely.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"tr ọnv ẹn, hoànt oàn\".",
+    "phonetic": "/ɪnˈtaɪɚli/",
+    "pos": "adverb",
+    "meaning": "trọn vẹn, hoàn toàn",
+    "example": "The decision is entirely up to you.",
+    "exampleTranslation": "Quyết định hoàn toàn tùy ở bạn.",
     "translations": {
-      "vi": "tr ọnv ẹn, hoànt oàn"
+      "vi": "trọn vẹn, hoàn toàn"
     }
   },
   {
     "id": "hot-14",
     "topic": "Hotel, Restaurant",
     "word": "stir",
-    "phonetic": "/stˈɜː/",
+    "phonetic": "/ˈstɝ/",
     "pos": "verb",
     "meaning": "khuấy động",
-    "example": "The team plans to stir before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"khuấy động\" trước thời hạn.",
+    "example": "Please stir the soup gently.",
+    "exampleTranslation": "Hãy khuấy súp nhẹ nhàng.",
     "translations": {
       "vi": "khuấy động"
     }
@@ -7317,11 +7304,11 @@ export const VOCABULARY: Word[] = [
     "id": "hot-15",
     "topic": "Hotel, Restaurant",
     "word": "choice",
-    "phonetic": "/tʃˈɔɪs/",
+    "phonetic": "/ˈtʃɔɪs/",
     "pos": "noun",
     "meaning": "sự lựa chọn, quyền chọn",
-    "example": "The team discussed the choice during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự lựa chọn, quyền chọn\" trong cuộc họp.",
+    "example": "We discussed the choice at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự lựa chọn tại cuộc họp.",
     "translations": {
       "vi": "sự lựa chọn, quyền chọn"
     }
@@ -7330,11 +7317,11 @@ export const VOCABULARY: Word[] = [
     "id": "hot-16",
     "topic": "Hotel, Restaurant",
     "word": "freshness",
-    "phonetic": "/fɹˈɛʃnəs/",
+    "phonetic": "/ˈfrɛʃnəs/",
     "pos": "noun",
     "meaning": "sự tươi, sự sảng khoái",
-    "example": "The team discussed the freshness during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự tươi, sự sảng khoái\" trong cuộc họp.",
+    "example": "We discussed the freshness at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự tươi tại cuộc họp.",
     "translations": {
       "vi": "sự tươi, sự sảng khoái"
     }
@@ -7343,24 +7330,24 @@ export const VOCABULARY: Word[] = [
     "id": "hot-17",
     "topic": "Hotel, Restaurant",
     "word": "occupancy",
-    "phonetic": "/ˈɒkjʊpənsi/",
+    "phonetic": "/ˈɑkjəpənsi/",
     "pos": "noun",
-    "meaning": "sự cư ngụsống tại",
-    "example": "The team discussed the occupancy during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự cư ngụsống tại\" trong cuộc họp.",
+    "meaning": "sự cư trú, sự sử dụng phòng; tỷ lệ lấp đầy",
+    "example": "The hotel's occupancy rate increased.",
+    "exampleTranslation": "Tỷ lệ lấp đầy phòng của khách sạn tăng.",
     "translations": {
-      "vi": "sự cư ngụsống tại"
+      "vi": "sự cư trú, sự sử dụng phòng; tỷ lệ lấp đầy"
     }
   },
   {
     "id": "hot-18",
     "topic": "Hotel, Restaurant",
     "word": "chef",
-    "phonetic": "/ʃˈɛf/",
+    "phonetic": "/ˈʃɛf/",
     "pos": "noun",
     "meaning": "đầu bếp",
-    "example": "The team discussed the chef during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"đầu bếp\" trong cuộc họp.",
+    "example": "The chef answered our questions.",
+    "exampleTranslation": "Đầu bếp đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "đầu bếp"
     }
@@ -7369,37 +7356,37 @@ export const VOCABULARY: Word[] = [
     "id": "hot-19",
     "topic": "Hotel, Restaurant",
     "word": "decorate",
-    "phonetic": "/dˈɛkəɹˌeɪt/",
+    "phonetic": "/ˈdɛkɚeɪt/",
     "pos": "verb",
-    "meaning": "tr ang trí",
-    "example": "The team plans to decorate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tr ang trí\" trước thời hạn.",
+    "meaning": "trang trí",
+    "example": "Please decorate the conference room.",
+    "exampleTranslation": "Hãy trang trí phòng hội nghị.",
     "translations": {
-      "vi": "tr ang trí"
+      "vi": "trang trí"
     }
   },
   {
     "id": "hot-20",
     "topic": "Hotel, Restaurant",
     "word": "information",
-    "phonetic": "/ˌɪnfəmˈeɪʃən/",
+    "phonetic": "/ɪnfɚˈmeɪʃən/",
     "pos": "noun",
-    "meaning": "thông tin,t ài liệu",
-    "example": "The team discussed the information during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thông tin,t ài liệu\" trong cuộc họp.",
+    "meaning": "thông tin, tài liệu",
+    "example": "Please check the information carefully.",
+    "exampleTranslation": "Hãy kiểm tra thông tin cẩn thận.",
     "translations": {
-      "vi": "thông tin,t ài liệu"
+      "vi": "thông tin, tài liệu"
     }
   },
   {
     "id": "hot-21",
     "topic": "Hotel, Restaurant",
     "word": "cuisine",
-    "phonetic": "/kwɪzˈiːn/",
+    "phonetic": "/kwɪˈzin/",
     "pos": "noun",
     "meaning": "ẩm thực, cách nấu nướng",
-    "example": "The team discussed the cuisine during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"ẩm thực, cách nấu nướng\" trong cuộc họp.",
+    "example": "We enjoyed local cuisine at the restaurant.",
+    "exampleTranslation": "Chúng tôi thưởng thức ẩm thực địa phương tại nhà hàng.",
     "translations": {
       "vi": "ẩm thực, cách nấu nướng"
     }
@@ -7408,11 +7395,11 @@ export const VOCABULARY: Word[] = [
     "id": "hot-22",
     "topic": "Hotel, Restaurant",
     "word": "book",
-    "phonetic": "/bˈʊk/",
+    "phonetic": "/ˈbʊk/",
     "pos": "verb",
     "meaning": "đặt trước",
-    "example": "The team plans to book before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đặt trước\" trước thời hạn.",
+    "example": "Please book a room for two nights.",
+    "exampleTranslation": "Hãy đặt phòng cho hai đêm.",
     "translations": {
       "vi": "đặt trước"
     }
@@ -7421,11 +7408,11 @@ export const VOCABULARY: Word[] = [
     "id": "hot-23",
     "topic": "Hotel, Restaurant",
     "word": "amenity",
-    "phonetic": "/ɐmˈɛnɪti/",
+    "phonetic": "/əˈmɛnəti/",
     "pos": "noun",
     "meaning": "tiện nghi, sự dễ chịu",
-    "example": "The team discussed the amenity during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tiện nghi, sự dễ chịu\" trong cuộc họp.",
+    "example": "We discussed the amenity at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về tiện nghi tại cuộc họp.",
     "translations": {
       "vi": "tiện nghi, sự dễ chịu"
     }
@@ -7434,11 +7421,11 @@ export const VOCABULARY: Word[] = [
     "id": "hot-24",
     "topic": "Hotel, Restaurant",
     "word": "ease",
-    "phonetic": "/ˈiːz/",
+    "phonetic": "/ˈiz/",
     "pos": "verb",
     "meaning": "làm dễ chịu, làm nhẹ đi",
-    "example": "The team plans to ease before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm dễ chịu, làm nhẹ đi\" trước thời hạn.",
+    "example": "Please ease the pressure on employees.",
+    "exampleTranslation": "Hãy giảm áp lực cho nhân viên.",
     "translations": {
       "vi": "làm dễ chịu, làm nhẹ đi"
     }
@@ -7447,11 +7434,11 @@ export const VOCABULARY: Word[] = [
     "id": "hot-25",
     "topic": "Hotel, Restaurant",
     "word": "ingredient",
-    "phonetic": "/ɪnɡɹˈiːdiənt/",
+    "phonetic": "/ɪnˈɡridiənt/",
     "pos": "noun",
     "meaning": "thành phần, nguyên liệu",
-    "example": "The team discussed the ingredient during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thành phần, nguyên liệu\" trong cuộc họp.",
+    "example": "The recipe uses a fresh ingredient.",
+    "exampleTranslation": "Công thức dùng một nguyên liệu tươi.",
     "translations": {
       "vi": "thành phần, nguyên liệu"
     }
@@ -7460,11 +7447,11 @@ export const VOCABULARY: Word[] = [
     "id": "hot-26",
     "topic": "Hotel, Restaurant",
     "word": "sip",
-    "phonetic": "/sˈɪp/",
+    "phonetic": "/ˈsɪp/",
     "pos": "verb",
     "meaning": "uống từng ngụm, nhấm nháp",
-    "example": "The team plans to sip before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"uống từng ngụm, nhấm nháp\" trước thời hạn.",
+    "example": "Please sip your coffee slowly.",
+    "exampleTranslation": "Hãy nhấp cà phê chậm rãi.",
     "translations": {
       "vi": "uống từng ngụm, nhấm nháp"
     }
@@ -7473,11 +7460,11 @@ export const VOCABULARY: Word[] = [
     "id": "hot-27",
     "topic": "Hotel, Restaurant",
     "word": "complication",
-    "phonetic": "/kˌɒmplɪkˈeɪʃən/",
+    "phonetic": "/kɑmpləˈkeɪʃən/",
     "pos": "noun",
     "meaning": "sự phức tạp, sự rắc rối",
-    "example": "The team discussed the complication during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự phức tạp, sự rắc rối\" trong cuộc họp.",
+    "example": "We discussed the complication at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự phức tạp tại cuộc họp.",
     "translations": {
       "vi": "sự phức tạp, sự rắc rối"
     }
@@ -7486,11 +7473,11 @@ export const VOCABULARY: Word[] = [
     "id": "rev-01",
     "topic": "Revenue",
     "word": "decline",
-    "phonetic": "/dɪklˈaɪn/",
+    "phonetic": "/dɪˈklaɪn/",
     "pos": "noun",
     "meaning": "sự giảm, sự sụt giảm",
-    "example": "The team discussed the decline during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự giảm, sự sụt giảm\" trong cuộc họp.",
+    "example": "We discussed the decline at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự giảm tại cuộc họp.",
     "translations": {
       "vi": "sự giảm, sự sụt giảm"
     }
@@ -7499,24 +7486,24 @@ export const VOCABULARY: Word[] = [
     "id": "rev-02",
     "topic": "Revenue",
     "word": "markedly",
-    "phonetic": "/mˈɑːkɪdli/",
-    "pos": "adv",
-    "meaning": "rõ ràng,rõ rệt",
-    "example": "The team completed the task markedly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"rõ ràng,rõ rệt\".",
+    "phonetic": "/ˈmɑrkədli/",
+    "pos": "adverb",
+    "meaning": "rõ ràng, rõ rệt",
+    "example": "Customer satisfaction has improved markedly.",
+    "exampleTranslation": "Mức độ hài lòng của khách hàng đã cải thiện rõ rệt.",
     "translations": {
-      "vi": "rõ ràng,rõ rệt"
+      "vi": "rõ ràng, rõ rệt"
     }
   },
   {
     "id": "rev-03",
     "topic": "Revenue",
     "word": "increase",
-    "phonetic": "/ˈɪnˌkɹis/",
+    "phonetic": "/ˈɪnkris/",
     "pos": "noun",
     "meaning": "sự tăng, sự tăng thêm",
-    "example": "The team discussed the increase during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự tăng, sự tăng thêm\" trong cuộc họp.",
+    "example": "We discussed the increase at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự tăng tại cuộc họp.",
     "translations": {
       "vi": "sự tăng, sự tăng thêm"
     }
@@ -7525,11 +7512,11 @@ export const VOCABULARY: Word[] = [
     "id": "rev-04",
     "topic": "Revenue",
     "word": "substantial",
-    "phonetic": "/səbstˈænʃəl/",
-    "pos": "adj",
+    "phonetic": "/səbˈstænʃəl/",
+    "pos": "adjective",
     "meaning": "lớn, quan trọng, có giá trị",
-    "example": "The manager described the proposal as substantial.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"lớn, quan trọng, có giá trị\".",
+    "example": "The company made a substantial investment.",
+    "exampleTranslation": "Công ty thực hiện khoản đầu tư lớn.",
     "translations": {
       "vi": "lớn, quan trọng, có giá trị"
     }
@@ -7538,11 +7525,11 @@ export const VOCABULARY: Word[] = [
     "id": "rev-05",
     "topic": "Revenue",
     "word": "anticipate",
-    "phonetic": "/æntˈɪsɪpˌeɪt/",
+    "phonetic": "/ænˈtɪsəpeɪt/",
     "pos": "verb",
     "meaning": "thấy trước, đoán trước",
-    "example": "The team plans to anticipate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thấy trước, đoán trước\" trước thời hạn.",
+    "example": "Please anticipate changes in demand.",
+    "exampleTranslation": "Hãy dự đoán những thay đổi về nhu cầu.",
     "translations": {
       "vi": "thấy trước, đoán trước"
     }
@@ -7551,11 +7538,11 @@ export const VOCABULARY: Word[] = [
     "id": "rev-06",
     "topic": "Revenue",
     "word": "estimate",
-    "phonetic": "/ˈɛstəˌmeɪt/",
+    "phonetic": "/ˈɛstəmeɪt/",
     "pos": "verb",
     "meaning": "ước tính, ước lượng",
-    "example": "The team plans to estimate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"ước tính, ước lượng\" trước thời hạn.",
+    "example": "Please estimate the total cost.",
+    "exampleTranslation": "Hãy ước tính tổng chi phí.",
     "translations": {
       "vi": "ước tính, ước lượng"
     }
@@ -7564,24 +7551,24 @@ export const VOCABULARY: Word[] = [
     "id": "rev-07",
     "topic": "Revenue",
     "word": "production",
-    "phonetic": "/pɹədˈʌkʃən/",
+    "phonetic": "/prəˈdʌkʃən/",
     "pos": "noun",
-    "meaning": "sựs ản xuất,s ản lượng",
-    "example": "The team discussed the production during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sựs ản xuất,s ản lượng\" trong cuộc họp.",
+    "meaning": "sự sản xuất, sản lượng",
+    "example": "We discussed the production at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự sản xuất tại cuộc họp.",
     "translations": {
-      "vi": "sựs ản xuất,s ản lượng"
+      "vi": "sự sản xuất, sản lượng"
     }
   },
   {
     "id": "rev-08",
     "topic": "Revenue",
     "word": "impressive",
-    "phonetic": "/ɪmpɹˈɛsɪv/",
-    "pos": "adj",
+    "phonetic": "/ɪmˈprɛsɪv/",
+    "pos": "adjective",
     "meaning": "đầy ấn tượng",
-    "example": "The manager described the proposal as impressive.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đầy ấn tượng\".",
+    "example": "The proposed plan is impressive.",
+    "exampleTranslation": "Kế hoạch được đề xuất đầy ấn tượng.",
     "translations": {
       "vi": "đầy ấn tượng"
     }
@@ -7590,24 +7577,24 @@ export const VOCABULARY: Word[] = [
     "id": "rev-09",
     "topic": "Revenue",
     "word": "recent",
-    "phonetic": "/ɹˈiːsənt/",
-    "pos": "adj",
-    "meaning": "gần đây, mớix ảy ra",
-    "example": "The manager described the proposal as recent.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"gần đây, mớix ảy ra\".",
+    "phonetic": "/ˈrisənt/",
+    "pos": "adjective",
+    "meaning": "gần đây, mới xảy ra",
+    "example": "Have you read the recent announcement?",
+    "exampleTranslation": "Bạn đã đọc thông báo gần đây chưa?",
     "translations": {
-      "vi": "gần đây, mớix ảy ra"
+      "vi": "gần đây, mới xảy ra"
     }
   },
   {
     "id": "rev-10",
     "topic": "Revenue",
     "word": "exceed",
-    "phonetic": "/ɛksˈiːd/",
+    "phonetic": "/ɪkˈsid/",
     "pos": "verb",
     "meaning": "vượt quá, trội hơn",
-    "example": "The team plans to exceed before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"vượt quá, trội hơn\" trước thời hạn.",
+    "example": "Please exceed the monthly sales target.",
+    "exampleTranslation": "Hãy vượt chỉ tiêu bán hàng tháng.",
     "translations": {
       "vi": "vượt quá, trội hơn"
     }
@@ -7616,50 +7603,50 @@ export const VOCABULARY: Word[] = [
     "id": "rev-11",
     "topic": "Revenue",
     "word": "summarize",
-    "phonetic": "/ˈsəmɝˌaɪz/",
+    "phonetic": "/ˈsʌmɚaɪz/",
     "pos": "verb",
-    "meaning": "tóm tắt, tổngk ết",
-    "example": "The team plans to summarize before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tóm tắt, tổngk ết\" trước thời hạn.",
+    "meaning": "tóm tắt, tổng kết",
+    "example": "Please summarize the main findings.",
+    "exampleTranslation": "Hãy tóm tắt các kết quả chính.",
     "translations": {
-      "vi": "tóm tắt, tổngk ết"
+      "vi": "tóm tắt, tổng kết"
     }
   },
   {
     "id": "rev-12",
     "topic": "Revenue",
     "word": "growth",
-    "phonetic": "/ɡɹˈəʊθ/",
+    "phonetic": "/ˈɡroʊθ/",
     "pos": "noun",
-    "meaning": "sựt ăng trưởng, sự lớn mạnh",
-    "example": "The team discussed the growth during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sựt ăng trưởng, sự lớn mạnh\" trong cuộc họp.",
+    "meaning": "sự tăng trưởng, sự lớn mạnh",
+    "example": "We discussed the growth at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự tăng trưởng tại cuộc họp.",
     "translations": {
-      "vi": "sựt ăng trưởng, sự lớn mạnh"
+      "vi": "sự tăng trưởng, sự lớn mạnh"
     }
   },
   {
     "id": "rev-13",
     "topic": "Revenue",
     "word": "frequent",
-    "phonetic": "/ˈfɹiˌkwɛnt/",
-    "pos": "adj",
-    "meaning": "thường xuy ên",
-    "example": "The manager described the proposal as frequent.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"thường xuy ên\".",
+    "phonetic": "/ˈfrikwənt/",
+    "pos": "adjective",
+    "meaning": "thường xuyên",
+    "example": "Frequent delays affect customer satisfaction.",
+    "exampleTranslation": "Chậm trễ thường xuyên ảnh hưởng đến sự hài lòng của khách hàng.",
     "translations": {
-      "vi": "thường xuy ên"
+      "vi": "thường xuyên"
     }
   },
   {
     "id": "rev-14",
     "topic": "Revenue",
     "word": "achieve",
-    "phonetic": "/ɐtʃˈiːv/",
+    "phonetic": "/əˈtʃiv/",
     "pos": "verb",
     "meaning": "đạt được, giành được",
-    "example": "The team plans to achieve before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đạt được, giành được\" trước thời hạn.",
+    "example": "Please achieve the required standard.",
+    "exampleTranslation": "Hãy đạt tiêu chuẩn yêu cầu.",
     "translations": {
       "vi": "đạt được, giành được"
     }
@@ -7668,24 +7655,24 @@ export const VOCABULARY: Word[] = [
     "id": "rev-15",
     "topic": "Revenue",
     "word": "illustrate",
-    "phonetic": "/ˈɪləstɹˌeɪt/",
+    "phonetic": "/ˈɪləstreɪt/",
     "pos": "verb",
-    "meaning": "minh hoạ, làmrõý",
-    "example": "The team plans to illustrate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"minh hoạ, làmrõý\" trước thời hạn.",
+    "meaning": "minh họa, làm rõ ý",
+    "example": "Please illustrate the process with a diagram.",
+    "exampleTranslation": "Hãy minh họa quy trình bằng sơ đồ.",
     "translations": {
-      "vi": "minh hoạ, làmrõý"
+      "vi": "minh họa, làm rõ ý"
     }
   },
   {
     "id": "rev-16",
     "topic": "Revenue",
     "word": "inaccurate",
-    "phonetic": "/ɪnˈækjʊɹət/",
-    "pos": "adj",
+    "phonetic": "/ɪnˈækjɚət/",
+    "pos": "adjective",
     "meaning": "không chính xác, sai",
-    "example": "The manager described the proposal as inaccurate.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"không chính xác, sai\".",
+    "example": "The report contains inaccurate figures.",
+    "exampleTranslation": "Báo cáo chứa số liệu không chính xác.",
     "translations": {
       "vi": "không chính xác, sai"
     }
@@ -7694,11 +7681,11 @@ export const VOCABULARY: Word[] = [
     "id": "rev-17",
     "topic": "Revenue",
     "word": "percentage",
-    "phonetic": "/pəsˈɛntɪdʒ/",
+    "phonetic": "/pɚˈsɛntədʒ/",
     "pos": "noun",
     "meaning": "tỷ lệ, tỷ lệ phần trăm",
-    "example": "The team discussed the percentage during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tỷ lệ, tỷ lệ phần trăm\" trong cuộc họp.",
+    "example": "We discussed the percentage at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về tỷ lệ tại cuộc họp.",
     "translations": {
       "vi": "tỷ lệ, tỷ lệ phần trăm"
     }
@@ -7707,37 +7694,37 @@ export const VOCABULARY: Word[] = [
     "id": "rev-18",
     "topic": "Revenue",
     "word": "reduce",
-    "phonetic": "/ɹɪdjˈuːs/",
+    "phonetic": "/rəˈdus/",
     "pos": "verb",
-    "meaning": "giảm, giảm bớt,hạ",
-    "example": "The team plans to reduce before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giảm, giảm bớt,hạ\" trước thời hạn.",
+    "meaning": "giảm, giảm bớt, hạ",
+    "example": "Please reduce unnecessary paperwork.",
+    "exampleTranslation": "Hãy giảm công việc giấy tờ không cần thiết.",
     "translations": {
-      "vi": "giảm, giảm bớt,hạ"
+      "vi": "giảm, giảm bớt, hạ"
     }
   },
   {
     "id": "rev-19",
     "topic": "Revenue",
     "word": "tend",
-    "phonetic": "/tˈɛnd/",
-    "pos": "noun",
-    "meaning": "có khuynh hướng",
-    "example": "The team discussed the tend during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"có khuynh hướng\" trong cuộc họp.",
+    "phonetic": "/ˈtɛnd/",
+    "pos": "verb",
+    "meaning": "có xu hướng; chăm sóc",
+    "example": "Our employees tend to arrive early.",
+    "exampleTranslation": "Nhân viên chúng tôi có xu hướng đến sớm.",
     "translations": {
-      "vi": "có khuynh hướng"
+      "vi": "có xu hướng; chăm sóc"
     }
   },
   {
     "id": "rev-20",
     "topic": "Revenue",
     "word": "revenue",
-    "phonetic": "/ɹˈɛvənjˌuː/",
+    "phonetic": "/ˈrɛvənu/",
     "pos": "noun",
     "meaning": "thu nhập, doanh thu",
-    "example": "The team discussed the revenue during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thu nhập, doanh thu\" trong cuộc họp.",
+    "example": "We discussed the revenue at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về thu nhập tại cuộc họp.",
     "translations": {
       "vi": "thu nhập, doanh thu"
     }
@@ -7746,24 +7733,24 @@ export const VOCABULARY: Word[] = [
     "id": "rev-21",
     "topic": "Revenue",
     "word": "projection",
-    "phonetic": "/pɹədʒˈɛkʃən/",
+    "phonetic": "/prəˈdʒɛkʃən/",
     "pos": "noun",
-    "meaning": "sự đặt kế hoạch",
-    "example": "The team discussed the projection during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đặt kế hoạch\" trong cuộc họp.",
+    "meaning": "sự dự báo, sự ước tính; sự trình chiếu",
+    "example": "The sales projection covers the next quarter.",
+    "exampleTranslation": "Dự báo doanh số bao gồm quý tới.",
     "translations": {
-      "vi": "sự đặt kế hoạch"
+      "vi": "sự dự báo, sự ước tính; sự trình chiếu"
     }
   },
   {
     "id": "rev-22",
     "topic": "Revenue",
     "word": "shift",
-    "phonetic": "/ʃˈɪft/",
+    "phonetic": "/ˈʃɪft/",
     "pos": "verb",
     "meaning": "chuyển, thay đổi",
-    "example": "The team plans to shift before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chuyển, thay đổi\" trước thời hạn.",
+    "example": "Please shift resources to the new project.",
+    "exampleTranslation": "Hãy chuyển nguồn lực sang dự án mới.",
     "translations": {
       "vi": "chuyển, thay đổi"
     }
@@ -7772,24 +7759,24 @@ export const VOCABULARY: Word[] = [
     "id": "rev-23",
     "topic": "Revenue",
     "word": "fee",
-    "phonetic": "/fˈiː/",
+    "phonetic": "/ˈfi/",
     "pos": "noun",
-    "meaning": "lệ phí, tiền thù lao",
-    "example": "The team discussed the fee during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lệ phí, tiền thù lao\" trong cuộc họp.",
+    "meaning": "phí, lệ phí",
+    "example": "We discussed the fee at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về phí tại cuộc họp.",
     "translations": {
-      "vi": "lệ phí, tiền thù lao"
+      "vi": "phí, lệ phí"
     }
   },
   {
     "id": "rev-24",
     "topic": "Revenue",
     "word": "improvement",
-    "phonetic": "/ɪmpɹˈuːvmənt/",
+    "phonetic": "/ɪmˈpruvmənt/",
     "pos": "noun",
     "meaning": "sự cải thiện, sự cải tiến",
-    "example": "The team discussed the improvement during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự cải thiện, sự cải tiến\" trong cuộc họp.",
+    "example": "We discussed the improvement at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự cải thiện tại cuộc họp.",
     "translations": {
       "vi": "sự cải thiện, sự cải tiến"
     }
@@ -7798,11 +7785,11 @@ export const VOCABULARY: Word[] = [
     "id": "rev-25",
     "topic": "Revenue",
     "word": "employer",
-    "phonetic": "/ɛmplˈɔɪɐ/",
+    "phonetic": "/ɛmˈplɔɪɚ/",
     "pos": "noun",
     "meaning": "chủ, người sử dụng lao động",
-    "example": "The team discussed the employer during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chủ, người sử dụng lao động\" trong cuộc họp.",
+    "example": "The employer answered our questions.",
+    "exampleTranslation": "Chủ đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "chủ, người sử dụng lao động"
     }
@@ -7811,11 +7798,11 @@ export const VOCABULARY: Word[] = [
     "id": "rev-26",
     "topic": "Revenue",
     "word": "typically",
-    "phonetic": "/tˈɪpɪkli/",
-    "pos": "adv",
+    "phonetic": "/ˈtɪpɪkli/",
+    "pos": "adverb",
     "meaning": "điển hình, thông thường",
-    "example": "The team completed the task typically.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"điển hình, thông thường\".",
+    "example": "We typically send invoices by email.",
+    "exampleTranslation": "Thông thường chúng tôi gửi hóa đơn qua email.",
     "translations": {
       "vi": "điển hình, thông thường"
     }
@@ -7824,11 +7811,11 @@ export const VOCABULARY: Word[] = [
     "id": "rev-27",
     "topic": "Revenue",
     "word": "whole",
-    "phonetic": "/hˈəʊl/",
-    "pos": "adj",
+    "phonetic": "/ˈhoʊl/",
+    "pos": "adjective",
     "meaning": "toàn bộ, đầy đủ",
-    "example": "The manager described the proposal as whole.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"toàn bộ, đầy đủ\".",
+    "example": "The whole building needs repairs.",
+    "exampleTranslation": "Cả tòa nhà cần sửa chữa.",
     "translations": {
       "vi": "toàn bộ, đầy đủ"
     }
@@ -7837,24 +7824,24 @@ export const VOCABULARY: Word[] = [
     "id": "rev-28",
     "topic": "Revenue",
     "word": "assumption",
-    "phonetic": "/ɐsˈʌmpʃən/",
+    "phonetic": "/əˈsʌmpʃən/",
     "pos": "noun",
-    "meaning": "nhận định, điều giả định",
-    "example": "The team discussed the assumption during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nhận định, điều giả định\" trong cuộc họp.",
+    "meaning": "giả định, điều được giả định",
+    "example": "The estimate was based on an incorrect assumption.",
+    "exampleTranslation": "Ước tính dựa trên giả định sai.",
     "translations": {
-      "vi": "nhận định, điều giả định"
+      "vi": "giả định, điều được giả định"
     }
   },
   {
     "id": "rev-29",
     "topic": "Revenue",
     "word": "share",
-    "phonetic": "/ʃˈeə/",
+    "phonetic": "/ˈʃɛr/",
     "pos": "verb",
     "meaning": "chia sẻ, phân phát",
-    "example": "The team plans to share before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chia sẻ, phân phát\" trước thời hạn.",
+    "example": "Please share the results with your colleagues.",
+    "exampleTranslation": "Hãy chia sẻ kết quả với đồng nghiệp.",
     "translations": {
       "vi": "chia sẻ, phân phát"
     }
@@ -7863,24 +7850,24 @@ export const VOCABULARY: Word[] = [
     "id": "rev-30",
     "topic": "Revenue",
     "word": "reliant",
-    "phonetic": "/ɹɪlˈaɪənt/",
-    "pos": "adj",
-    "meaning": "dựav ào, nhờv ào",
-    "example": "The manager described the proposal as reliant.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"dựav ào, nhờv ào\".",
+    "phonetic": "/rɪˈlaɪənt/",
+    "pos": "adjective",
+    "meaning": "dựa vào, nhờ vào",
+    "example": "The company is reliant on imports.",
+    "exampleTranslation": "Công ty phụ thuộc vào hàng nhập khẩu.",
     "translations": {
-      "vi": "dựav ào, nhờv ào"
+      "vi": "dựa vào, nhờ vào"
     }
   },
   {
     "id": "acc-01",
     "topic": "Accounting",
     "word": "recently",
-    "phonetic": "/ɹˈiːsəntli/",
-    "pos": "adv",
+    "phonetic": "/ˈrisəntli/",
+    "pos": "adverb",
     "meaning": "gần đây",
-    "example": "The team completed the task recently.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"gần đây\".",
+    "example": "The company recently opened a new branch.",
+    "exampleTranslation": "Công ty gần đây mở chi nhánh mới.",
     "translations": {
       "vi": "gần đây"
     }
@@ -7889,24 +7876,24 @@ export const VOCABULARY: Word[] = [
     "id": "acc-02",
     "topic": "Accounting",
     "word": "substantially",
-    "phonetic": "/səbstˈænʃəlˌi/",
-    "pos": "adv",
-    "meaning": "đángk ể, nhìn chung",
-    "example": "The team completed the task substantially.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"đángk ể, nhìn chung\".",
+    "phonetic": "/səbˈstænʃəli/",
+    "pos": "adverb",
+    "meaning": "đáng kể, phần lớn",
+    "example": "The upgrade substantially reduced processing time.",
+    "exampleTranslation": "Bản nâng cấp làm giảm đáng kể thời gian xử lý.",
     "translations": {
-      "vi": "đángk ể, nhìn chung"
+      "vi": "đáng kể, phần lớn"
     }
   },
   {
     "id": "acc-03",
     "topic": "Accounting",
     "word": "frequently",
-    "phonetic": "/fɹˈiːkwəntli/",
-    "pos": "adv",
+    "phonetic": "/ˈfrikwəntli/",
+    "pos": "adverb",
     "meaning": "thường xuyên",
-    "example": "The team completed the task frequently.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"thường xuyên\".",
+    "example": "Customers frequently ask about delivery times.",
+    "exampleTranslation": "Khách hàng thường xuyên hỏi về thời gian giao hàng.",
     "translations": {
       "vi": "thường xuyên"
     }
@@ -7915,11 +7902,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-04",
     "topic": "Accounting",
     "word": "reimburse",
-    "phonetic": "/ɹˌiːɪmbˈɜːs/",
+    "phonetic": "/riɪmˈbɝs/",
     "pos": "verb",
     "meaning": "hoàn trả, trả lại",
-    "example": "The team plans to reimburse before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hoàn trả, trả lại\" trước thời hạn.",
+    "example": "Please reimburse employees for travel expenses.",
+    "exampleTranslation": "Hãy hoàn trả chi phí đi lại cho nhân viên.",
     "translations": {
       "vi": "hoàn trả, trả lại"
     }
@@ -7928,11 +7915,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-05",
     "topic": "Accounting",
     "word": "considerably",
-    "phonetic": "/kənsˈɪdəɹəbli/",
-    "pos": "adv",
+    "phonetic": "/kənˈsɪdɚəbli/",
+    "pos": "adverb",
     "meaning": "đáng kể",
-    "example": "The team completed the task considerably.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"đáng kể\".",
+    "example": "The new office is considerably larger.",
+    "exampleTranslation": "Văn phòng mới lớn hơn đáng kể.",
     "translations": {
       "vi": "đáng kể"
     }
@@ -7941,11 +7928,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-06",
     "topic": "Accounting",
     "word": "total",
-    "phonetic": "/tˈəʊtəl/",
-    "pos": "adj",
+    "phonetic": "/ˈtoʊtəl/",
+    "pos": "adjective",
     "meaning": "tổng, toàn bộ",
-    "example": "The manager described the proposal as total.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tổng, toàn bộ\".",
+    "example": "The total cost includes delivery.",
+    "exampleTranslation": "Tổng chi phí bao gồm giao hàng.",
     "translations": {
       "vi": "tổng, toàn bộ"
     }
@@ -7954,11 +7941,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-07",
     "topic": "Accounting",
     "word": "allocate",
-    "phonetic": "/ˈæləkˌeɪt/",
+    "phonetic": "/ˈæləkeɪt/",
     "pos": "verb",
     "meaning": "phân bổ, phân chia",
-    "example": "The team plans to allocate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phân bổ, phân chia\" trước thời hạn.",
+    "example": "Please allocate funds to staff training.",
+    "exampleTranslation": "Hãy phân bổ kinh phí cho đào tạo nhân viên.",
     "translations": {
       "vi": "phân bổ, phân chia"
     }
@@ -7967,11 +7954,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-08",
     "topic": "Accounting",
     "word": "quarter",
-    "phonetic": "/kwˈɔːtɐ/",
+    "phonetic": "/ˈkwɔrtɚ/",
     "pos": "noun",
     "meaning": "quý; một phần tư",
-    "example": "The team discussed the quarter during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"quý; một phần tư\" trong cuộc họp.",
+    "example": "We discussed the quarter at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về quý tại cuộc họp.",
     "translations": {
       "vi": "quý; một phần tư"
     }
@@ -7980,11 +7967,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-09",
     "topic": "Accounting",
     "word": "prompt",
-    "phonetic": "/pɹˈɒmpt/",
-    "pos": "adj",
+    "phonetic": "/ˈprɑmpt/",
+    "pos": "adjective",
     "meaning": "ngay lập tức; nhanh",
-    "example": "The manager described the proposal as prompt.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"ngay lập tức; nhanh\".",
+    "example": "Thank you for your prompt reply.",
+    "exampleTranslation": "Cảm ơn bạn đã trả lời nhanh chóng.",
     "translations": {
       "vi": "ngay lập tức; nhanh"
     }
@@ -7993,11 +7980,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-10",
     "topic": "Accounting",
     "word": "shorten",
-    "phonetic": "/ʃˈɔːtən/",
+    "phonetic": "/ˈʃɔrtən/",
     "pos": "verb",
     "meaning": "rút ngắn",
-    "example": "The team plans to shorten before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"rút ngắn\" trước thời hạn.",
+    "example": "Please shorten the waiting time.",
+    "exampleTranslation": "Hãy rút ngắn thời gian chờ.",
     "translations": {
       "vi": "rút ngắn"
     }
@@ -8006,11 +7993,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-11",
     "topic": "Accounting",
     "word": "calculate",
-    "phonetic": "/kˈælkjʊlˌeɪt/",
+    "phonetic": "/ˈkælkjəleɪt/",
     "pos": "verb",
     "meaning": "tính toán",
-    "example": "The team plans to calculate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tính toán\" trước thời hạn.",
+    "example": "Please calculate the final price.",
+    "exampleTranslation": "Hãy tính giá cuối cùng.",
     "translations": {
       "vi": "tính toán"
     }
@@ -8019,11 +8006,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-12",
     "topic": "Accounting",
     "word": "compare",
-    "phonetic": "/kəmpˈeə/",
+    "phonetic": "/kəmˈpɛr/",
     "pos": "verb",
     "meaning": "so sánh",
-    "example": "The team plans to compare before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"so sánh\" trước thời hạn.",
+    "example": "Please compare the two proposals.",
+    "exampleTranslation": "Hãy so sánh hai đề xuất.",
     "translations": {
       "vi": "so sánh"
     }
@@ -8032,11 +8019,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-13",
     "topic": "Accounting",
     "word": "fortunate",
-    "phonetic": "/fˈɔːtʃənət/",
-    "pos": "adj",
+    "phonetic": "/ˈfɔrtʃənət/",
+    "pos": "adjective",
     "meaning": "may mắn, thuận lợi",
-    "example": "The manager described the proposal as fortunate.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"may mắn, thuận lợi\".",
+    "example": "We were fortunate to find a suitable office.",
+    "exampleTranslation": "Chúng tôi may mắn tìm được văn phòng phù hợp.",
     "translations": {
       "vi": "may mắn, thuận lợi"
     }
@@ -8045,11 +8032,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-14",
     "topic": "Accounting",
     "word": "accurately",
-    "phonetic": "/ˈækjʊɹətli/",
-    "pos": "adv",
+    "phonetic": "/ˈækjɚətli/",
+    "pos": "adverb",
     "meaning": "chính xác",
-    "example": "The team completed the task accurately.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"chính xác\".",
+    "example": "Please record the measurements accurately.",
+    "exampleTranslation": "Hãy ghi số đo chính xác.",
     "translations": {
       "vi": "chính xác"
     }
@@ -8058,11 +8045,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-15",
     "topic": "Accounting",
     "word": "worth",
-    "phonetic": "/wˈɜːθ/",
-    "pos": "adj",
+    "phonetic": "/ˈwɝθ/",
+    "pos": "adjective",
     "meaning": "đáng giá, bỏ công",
-    "example": "The manager described the proposal as worth.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đáng giá, bỏ công\".",
+    "example": "The proposal is worth considering.",
+    "exampleTranslation": "Đề xuất đáng được cân nhắc.",
     "translations": {
       "vi": "đáng giá, bỏ công"
     }
@@ -8071,11 +8058,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-16",
     "topic": "Accounting",
     "word": "spend",
-    "phonetic": "/spˈɛnd/",
+    "phonetic": "/ˈspɛnd/",
     "pos": "verb",
     "meaning": "tiêu, chi tiêu, sử dụng (thời gian)",
-    "example": "The team plans to spend before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tiêu, chi tiêu, sử dụng (thời gian)\" trước thời hạn.",
+    "example": "Please spend the budget wisely.",
+    "exampleTranslation": "Hãy sử dụng ngân sách hợp lý.",
     "translations": {
       "vi": "tiêu, chi tiêu, sử dụng (thời gian)"
     }
@@ -8084,11 +8071,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-17",
     "topic": "Accounting",
     "word": "curtail",
-    "phonetic": "/kɜːtˈeɪl/",
+    "phonetic": "/kɚˈteɪl/",
     "pos": "verb",
     "meaning": "cắt bớt, rút ngắn",
-    "example": "The team plans to curtail before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cắt bớt, rút ngắn\" trước thời hạn.",
+    "example": "Please curtail nonessential spending.",
+    "exampleTranslation": "Hãy cắt giảm chi tiêu không thiết yếu.",
     "translations": {
       "vi": "cắt bớt, rút ngắn"
     }
@@ -8100,8 +8087,8 @@ export const VOCABULARY: Word[] = [
     "phonetic": "/kəˈmɪti/",
     "pos": "noun",
     "meaning": "uỷ ban",
-    "example": "The team discussed the committee during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"uỷ ban\" trong cuộc họp.",
+    "example": "We discussed the committee at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về uỷ ban tại cuộc họp.",
     "translations": {
       "vi": "uỷ ban"
     }
@@ -8110,11 +8097,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-19",
     "topic": "Accounting",
     "word": "capability",
-    "phonetic": "/kˌeɪpəbˈɪlɪti/",
+    "phonetic": "/keɪpəˈbɪləti/",
     "pos": "noun",
     "meaning": "khả năng, năng lực",
-    "example": "The team discussed the capability during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"khả năng, năng lực\" trong cuộc họp.",
+    "example": "We discussed the capability at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về khả năng tại cuộc họp.",
     "translations": {
       "vi": "khả năng, năng lực"
     }
@@ -8123,11 +8110,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-20",
     "topic": "Accounting",
     "word": "adequate",
-    "phonetic": "/ˈædɪkwət/",
-    "pos": "adj",
+    "phonetic": "/ˈædəkwət/",
+    "pos": "adjective",
     "meaning": "đủ, đầy đủ",
-    "example": "The manager described the proposal as adequate.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đủ, đầy đủ\".",
+    "example": "The room has adequate ventilation.",
+    "exampleTranslation": "Phòng được thông gió đầy đủ.",
     "translations": {
       "vi": "đủ, đầy đủ"
     }
@@ -8136,11 +8123,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-21",
     "topic": "Accounting",
     "word": "inspector",
-    "phonetic": "/ɪnspˈɛktɐ/",
+    "phonetic": "/ɪnˈspɛktɚ/",
     "pos": "noun",
     "meaning": "thanh tra viên",
-    "example": "The team discussed the inspector during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thanh tra viên\" trong cuộc họp.",
+    "example": "The inspector answered our questions.",
+    "exampleTranslation": "Thanh tra viên đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "thanh tra viên"
     }
@@ -8149,11 +8136,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-22",
     "topic": "Accounting",
     "word": "browse",
-    "phonetic": "/bɹˈaʊz/",
+    "phonetic": "/ˈbraʊz/",
     "pos": "verb",
     "meaning": "đọc lướt qua, xem qua",
-    "example": "The team plans to browse before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đọc lướt qua, xem qua\" trước thời hạn.",
+    "example": "Please browse the online catalog.",
+    "exampleTranslation": "Hãy xem danh mục trực tuyến.",
     "translations": {
       "vi": "đọc lướt qua, xem qua"
     }
@@ -8162,11 +8149,11 @@ export const VOCABULARY: Word[] = [
     "id": "acc-23",
     "topic": "Accounting",
     "word": "exempt",
-    "phonetic": "/ɛɡzˈɛmpt/",
-    "pos": "adj",
+    "phonetic": "/ɪɡˈzɛmpt/",
+    "pos": "adjective",
     "meaning": "được miễn (thuế)",
-    "example": "The manager described the proposal as exempt.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"được miễn (thuế)\".",
+    "example": "This purchase is exempt from tax.",
+    "exampleTranslation": "Khoản mua này được miễn thuế.",
     "translations": {
       "vi": "được miễn (thuế)"
     }
@@ -8175,37 +8162,37 @@ export const VOCABULARY: Word[] = [
     "id": "acc-24",
     "topic": "Accounting",
     "word": "incidental",
-    "phonetic": "/ˌɪnsɪdˈɛntəl/",
-    "pos": "adj",
-    "meaning": "phụ, thứy ếu; ngẫu nhiên",
-    "example": "The manager described the proposal as incidental.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"phụ, thứy ếu; ngẫu nhiên\".",
+    "phonetic": "/ɪnsɪˈdɛntəl/",
+    "pos": "adjective",
+    "meaning": "phụ, thứ yếu; ngẫu nhiên",
+    "example": "Please record any incidental expenses.",
+    "exampleTranslation": "Hãy ghi lại mọi chi phí phát sinh phụ.",
     "translations": {
-      "vi": "phụ, thứy ếu; ngẫu nhiên"
+      "vi": "phụ, thứ yếu; ngẫu nhiên"
     }
   },
   {
     "id": "tre-01",
     "topic": "Trend of Company",
     "word": "announce",
-    "phonetic": "/ɐnˈaʊns/",
+    "phonetic": "/əˈnaʊns/",
     "pos": "verb",
-    "meaning": "thông báo, tuy ên bố",
-    "example": "The team plans to announce before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thông báo, tuy ên bố\" trước thời hạn.",
+    "meaning": "thông báo, tuyên bố",
+    "example": "Please announce the results tomorrow.",
+    "exampleTranslation": "Hãy công bố kết quả vào ngày mai.",
     "translations": {
-      "vi": "thông báo, tuy ên bố"
+      "vi": "thông báo, tuyên bố"
     }
   },
   {
     "id": "tre-02",
     "topic": "Trend of Company",
     "word": "interested",
-    "phonetic": "/ˈɪntɹəstɪd/",
-    "pos": "adj",
+    "phonetic": "/ˈɪntrəstɪd/",
+    "pos": "adjective",
     "meaning": "quan tâm; có hứng thú",
-    "example": "The manager described the proposal as interested.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"quan tâm; có hứng thú\".",
+    "example": "She is interested in the vacant position.",
+    "exampleTranslation": "Cô ấy quan tâm đến vị trí còn trống.",
     "translations": {
       "vi": "quan tâm; có hứng thú"
     }
@@ -8215,10 +8202,10 @@ export const VOCABULARY: Word[] = [
     "topic": "Trend of Company",
     "word": "active",
     "phonetic": "/ˈæktɪv/",
-    "pos": "adj",
+    "pos": "adjective",
     "meaning": "tích cực, chủ động",
-    "example": "The manager described the proposal as active.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tích cực, chủ động\".",
+    "example": "She takes an active role in the project.",
+    "exampleTranslation": "Cô ấy đóng vai trò tích cực trong dự án.",
     "translations": {
       "vi": "tích cực, chủ động"
     }
@@ -8227,11 +8214,11 @@ export const VOCABULARY: Word[] = [
     "id": "tre-04",
     "topic": "Trend of Company",
     "word": "accept",
-    "phonetic": "/ɐksˈɛpt/",
+    "phonetic": "/ækˈsɛpt/",
     "pos": "verb",
     "meaning": "chấp nhận, thừa nhận",
-    "example": "The team plans to accept before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chấp nhận, thừa nhận\" trước thời hạn.",
+    "example": "Please accept the revised terms.",
+    "exampleTranslation": "Hãy chấp nhận các điều khoản đã sửa đổi.",
     "translations": {
       "vi": "chấp nhận, thừa nhận"
     }
@@ -8240,50 +8227,50 @@ export const VOCABULARY: Word[] = [
     "id": "tre-05",
     "topic": "Trend of Company",
     "word": "expansion",
-    "phonetic": "/ɛkspˈænʃən/",
+    "phonetic": "/ɪkˈspænʃən/",
     "pos": "noun",
-    "meaning": "sự mởr ộng, sự bành trướng",
-    "example": "The team discussed the expansion during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự mởr ộng, sự bành trướng\" trong cuộc họp.",
+    "meaning": "sự mở rộng, sự bành trướng",
+    "example": "We discussed the expansion at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự mở rộng tại cuộc họp.",
     "translations": {
-      "vi": "sự mởr ộng, sự bành trướng"
+      "vi": "sự mở rộng, sự bành trướng"
     }
   },
   {
     "id": "tre-06",
     "topic": "Trend of Company",
     "word": "relocate",
-    "phonetic": "/ɹɪləʊkˈeɪt/",
+    "phonetic": "/riˈloʊkeɪt/",
     "pos": "verb",
-    "meaning": "chuy ển chỗ",
-    "example": "The team plans to relocate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chuy ển chỗ\" trước thời hạn.",
+    "meaning": "chuyển chỗ",
+    "example": "Please relocate the office to a larger building.",
+    "exampleTranslation": "Hãy chuyển văn phòng sang tòa nhà lớn hơn.",
     "translations": {
-      "vi": "chuy ển chỗ"
+      "vi": "chuyển chỗ"
     }
   },
   {
     "id": "tre-07",
     "topic": "Trend of Company",
     "word": "competitor",
-    "phonetic": "/kəmpˈɛtɪtɐ/",
+    "phonetic": "/kəmˈpɛtətɚ/",
     "pos": "noun",
-    "meaning": "đối thủ, người cạnh tr anh",
-    "example": "The team discussed the competitor during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"đối thủ, người cạnh tr anh\" trong cuộc họp.",
+    "meaning": "đối thủ, người cạnh tranh",
+    "example": "The competitor answered our questions.",
+    "exampleTranslation": "Đối thủ đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
-      "vi": "đối thủ, người cạnh tr anh"
+      "vi": "đối thủ, người cạnh tranh"
     }
   },
   {
     "id": "tre-08",
     "topic": "Trend of Company",
     "word": "contribute",
-    "phonetic": "/kˈɒntɹɪbjˌuːt/",
+    "phonetic": "/kənˈtrɪbjut/",
     "pos": "verb",
     "meaning": "đóng góp, góp phần",
-    "example": "The team plans to contribute before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đóng góp, góp phần\" trước thời hạn.",
+    "example": "Please contribute ideas during the discussion.",
+    "exampleTranslation": "Hãy đóng góp ý tưởng trong cuộc thảo luận.",
     "translations": {
       "vi": "đóng góp, góp phần"
     }
@@ -8292,89 +8279,89 @@ export const VOCABULARY: Word[] = [
     "id": "tre-09",
     "topic": "Trend of Company",
     "word": "dedicated",
-    "phonetic": "/dˈɛdɪkˌeɪtɪd/",
-    "pos": "adj",
-    "meaning": "tậnt âm, nhiệt tình, cống hiến",
-    "example": "The manager described the proposal as dedicated.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tậnt âm, nhiệt tình, cống hiến\".",
+    "phonetic": "/ˈdɛdəkeɪtəd/",
+    "pos": "adjective",
+    "meaning": "tận tâm, nhiệt tình, cống hiến",
+    "example": "The employee seemed dedicated during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ tận tâm trong buổi phỏng vấn.",
     "translations": {
-      "vi": "tậnt âm, nhiệt tình, cống hiến"
+      "vi": "tận tâm, nhiệt tình, cống hiến"
     }
   },
   {
     "id": "tre-10",
     "topic": "Trend of Company",
     "word": "considerable",
-    "phonetic": "/kənsˈɪdəɹəbəl/",
-    "pos": "adj",
-    "meaning": "đángkể",
-    "example": "The manager described the proposal as considerable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đángkể\".",
+    "phonetic": "/kənˈsɪdɚəbəl/",
+    "pos": "adjective",
+    "meaning": "đáng kể",
+    "example": "The renovation required considerable effort.",
+    "exampleTranslation": "Việc cải tạo đòi hỏi nhiều nỗ lực.",
     "translations": {
-      "vi": "đángkể"
+      "vi": "đáng kể"
     }
   },
   {
     "id": "tre-11",
     "topic": "Trend of Company",
     "word": "last",
-    "phonetic": "/lˈɑːst/",
+    "phonetic": "/ˈlæst/",
     "pos": "verb",
-    "meaning": "kéo dài,t ồnt ại",
-    "example": "The team plans to last before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"kéo dài,t ồnt ại\" trước thời hạn.",
+    "meaning": "kéo dài, tồn tại",
+    "example": "The new battery can last for at least five years.",
+    "exampleTranslation": "Pin mới có thể bền được ít nhất năm năm.",
     "translations": {
-      "vi": "kéo dài,t ồnt ại"
+      "vi": "kéo dài, tồn tại"
     }
   },
   {
     "id": "tre-12",
     "topic": "Trend of Company",
     "word": "emerge",
-    "phonetic": "/ɪmˈɜːdʒ/",
+    "phonetic": "/ɪˈmɝdʒ/",
     "pos": "verb",
-    "meaning": "nổi lên,x ảyra",
-    "example": "The team plans to emerge before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nổi lên,x ảyra\" trước thời hạn.",
+    "meaning": "nổi lên, xảy ra",
+    "example": "The company hopes to emerge as a market leader.",
+    "exampleTranslation": "Công ty hy vọng vươn lên thành doanh nghiệp dẫn đầu thị trường.",
     "translations": {
-      "vi": "nổi lên,x ảyra"
+      "vi": "nổi lên, xảy ra"
     }
   },
   {
     "id": "tre-13",
     "topic": "Trend of Company",
     "word": "select",
-    "phonetic": "/sɪlˈɛkt/",
+    "phonetic": "/səˈlɛkt/",
     "pos": "verb",
-    "meaning": "lựa chọn, tuy ển chọn",
-    "example": "The team plans to select before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"lựa chọn, tuy ển chọn\" trước thời hạn.",
+    "meaning": "lựa chọn, tuyển chọn",
+    "example": "Please select the most suitable candidate.",
+    "exampleTranslation": "Hãy chọn ứng viên phù hợp nhất.",
     "translations": {
-      "vi": "lựa chọn, tuy ển chọn"
+      "vi": "lựa chọn, tuyển chọn"
     }
   },
   {
     "id": "tre-14",
     "topic": "Trend of Company",
     "word": "vital",
-    "phonetic": "/vˈaɪtəl/",
-    "pos": "adj",
-    "meaning": "sống còn, quan tr ọng",
-    "example": "The manager described the proposal as vital.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"sống còn, quan tr ọng\".",
+    "phonetic": "/ˈvaɪtəl/",
+    "pos": "adjective",
+    "meaning": "sống còn, quan trọng",
+    "example": "Accurate information is vital to the project.",
+    "exampleTranslation": "Thông tin chính xác rất quan trọng với dự án.",
     "translations": {
-      "vi": "sống còn, quan tr ọng"
+      "vi": "sống còn, quan trọng"
     }
   },
   {
     "id": "tre-15",
     "topic": "Trend of Company",
     "word": "persist",
-    "phonetic": "/pəsˈɪst/",
+    "phonetic": "/pɚˈsɪst/",
     "pos": "verb",
     "meaning": "kiên trì, vẫn còn",
-    "example": "The team plans to persist before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"kiên trì, vẫn còn\" trước thời hạn.",
+    "example": "Please persist despite the difficulties.",
+    "exampleTranslation": "Hãy kiên trì bất chấp khó khăn.",
     "translations": {
       "vi": "kiên trì, vẫn còn"
     }
@@ -8383,11 +8370,11 @@ export const VOCABULARY: Word[] = [
     "id": "tre-16",
     "topic": "Trend of Company",
     "word": "independent",
-    "phonetic": "/ˌɪndɪpˈɛndənt/",
-    "pos": "adj",
+    "phonetic": "/ɪndɪˈpɛndənt/",
+    "pos": "adjective",
     "meaning": "độc lập, không lệ thuộc",
-    "example": "The manager described the proposal as independent.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"độc lập, không lệ thuộc\".",
+    "example": "We hired an independent consultant.",
+    "exampleTranslation": "Chúng tôi thuê một tư vấn viên độc lập.",
     "translations": {
       "vi": "độc lập, không lệ thuộc"
     }
@@ -8396,24 +8383,24 @@ export const VOCABULARY: Word[] = [
     "id": "tre-17",
     "topic": "Trend of Company",
     "word": "force",
-    "phonetic": "/fˈɔːs/",
+    "phonetic": "/ˈfɔrs/",
     "pos": "noun",
-    "meaning": "lực, quy ền lực",
-    "example": "The team discussed the force during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lực, quy ền lực\" trong cuộc họp.",
+    "meaning": "lực, quyền lực",
+    "example": "The door opened with very little force.",
+    "exampleTranslation": "Cửa mở chỉ với một lực rất nhỏ.",
     "translations": {
-      "vi": "lực, quy ền lực"
+      "vi": "lực, quyền lực"
     }
   },
   {
     "id": "tre-18",
     "topic": "Trend of Company",
     "word": "renowned",
-    "phonetic": "/ɹɪnˈaʊnd/",
-    "pos": "adj",
+    "phonetic": "/rɪˈnaʊnd/",
+    "pos": "adjective",
     "meaning": "nổi tiếng, có tiếng",
-    "example": "The manager described the proposal as renowned.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"nổi tiếng, có tiếng\".",
+    "example": "The hotel is renowned for excellent service.",
+    "exampleTranslation": "Khách sạn nổi tiếng về dịch vụ xuất sắc.",
     "translations": {
       "vi": "nổi tiếng, có tiếng"
     }
@@ -8422,24 +8409,24 @@ export const VOCABULARY: Word[] = [
     "id": "tre-19",
     "topic": "Trend of Company",
     "word": "informed",
-    "phonetic": "/ɪnfˈɔːmd/",
-    "pos": "adj",
-    "meaning": "có hiểu biết, am hiểu",
-    "example": "The manager described the proposal as informed.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có hiểu biết, am hiểu\".",
+    "phonetic": "/ɪnˈfɔrmd/",
+    "pos": "adjective",
+    "meaning": "có hiểu biết, dựa trên thông tin đầy đủ",
+    "example": "We need to make an informed decision.",
+    "exampleTranslation": "Chúng ta cần đưa ra quyết định dựa trên đầy đủ thông tin.",
     "translations": {
-      "vi": "có hiểu biết, am hiểu"
+      "vi": "có hiểu biết, dựa trên thông tin đầy đủ"
     }
   },
   {
     "id": "tre-20",
     "topic": "Trend of Company",
     "word": "waive",
-    "phonetic": "/wˈeɪv/",
+    "phonetic": "/ˈweɪv/",
     "pos": "verb",
     "meaning": "miễn, từ bỏ",
-    "example": "The team plans to waive before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"miễn, từ bỏ\" trước thời hạn.",
+    "example": "Please waive the registration fee.",
+    "exampleTranslation": "Hãy miễn phí đăng ký.",
     "translations": {
       "vi": "miễn, từ bỏ"
     }
@@ -8448,11 +8435,11 @@ export const VOCABULARY: Word[] = [
     "id": "tre-21",
     "topic": "Trend of Company",
     "word": "reach",
-    "phonetic": "/ɹˈiːtʃ/",
+    "phonetic": "/ˈritʃ/",
     "pos": "verb",
     "meaning": "đạt tới; đi tới",
-    "example": "The team plans to reach before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đạt tới; đi tới\" trước thời hạn.",
+    "example": "Please reach an agreement by Friday.",
+    "exampleTranslation": "Hãy đạt thỏa thuận trước thứ Sáu.",
     "translations": {
       "vi": "đạt tới; đi tới"
     }
@@ -8461,11 +8448,11 @@ export const VOCABULARY: Word[] = [
     "id": "tre-22",
     "topic": "Trend of Company",
     "word": "acquire",
-    "phonetic": "/ɐkwˈaɪə/",
+    "phonetic": "/əˈkwaɪɚ/",
     "pos": "verb",
     "meaning": "giành được, thu được",
-    "example": "The team plans to acquire before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giành được, thu được\" trước thời hạn.",
+    "example": "Please acquire the necessary skills.",
+    "exampleTranslation": "Hãy tiếp thu các kỹ năng cần thiết.",
     "translations": {
       "vi": "giành được, thu được"
     }
@@ -8474,11 +8461,11 @@ export const VOCABULARY: Word[] = [
     "id": "tre-23",
     "topic": "Trend of Company",
     "word": "simultaneously",
-    "phonetic": "/sˌɪməltˈeɪniəsli/",
-    "pos": "adv",
+    "phonetic": "/saɪməlˈteɪniəsli/",
+    "pos": "adverb",
     "meaning": "đồng thời, cùng lúc",
-    "example": "The team completed the task simultaneously.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"đồng thời, cùng lúc\".",
+    "example": "The two workshops will run simultaneously.",
+    "exampleTranslation": "Hai hội thảo sẽ diễn ra cùng lúc.",
     "translations": {
       "vi": "đồng thời, cùng lúc"
     }
@@ -8487,11 +8474,11 @@ export const VOCABULARY: Word[] = [
     "id": "tre-24",
     "topic": "Trend of Company",
     "word": "reveal",
-    "phonetic": "/ɹɪvˈiːl/",
+    "phonetic": "/rɪˈvil/",
     "pos": "verb",
     "meaning": "hé lộ, tiết lộ, khám phá",
-    "example": "The team plans to reveal before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hé lộ, tiết lộ, khám phá\" trước thời hạn.",
+    "example": "Please reveal the survey findings.",
+    "exampleTranslation": "Hãy công bố kết quả khảo sát.",
     "translations": {
       "vi": "hé lộ, tiết lộ, khám phá"
     }
@@ -8500,11 +8487,11 @@ export const VOCABULARY: Word[] = [
     "id": "tre-25",
     "topic": "Trend of Company",
     "word": "uncertain",
-    "phonetic": "/ʌnsˈɜːtən/",
-    "pos": "adj",
+    "phonetic": "/ənˈsɝtən/",
+    "pos": "adjective",
     "meaning": "không chắc chắn",
-    "example": "The manager described the proposal as uncertain.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"không chắc chắn\".",
+    "example": "We are uncertain about the delivery date.",
+    "exampleTranslation": "Chúng tôi chưa chắc chắn về ngày giao hàng.",
     "translations": {
       "vi": "không chắc chắn"
     }
@@ -8515,22 +8502,22 @@ export const VOCABULARY: Word[] = [
     "word": "asset",
     "phonetic": "/ˈæsɛt/",
     "pos": "noun",
-    "meaning": "tàis ản, của cải",
-    "example": "The team discussed the asset during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tàis ản, của cải\" trong cuộc họp.",
+    "meaning": "tài sản, của cải",
+    "example": "We discussed the asset at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về tài sản tại cuộc họp.",
     "translations": {
-      "vi": "tàis ản, của cải"
+      "vi": "tài sản, của cải"
     }
   },
   {
     "id": "tre-27",
     "topic": "Trend of Company",
     "word": "misplace",
-    "phonetic": "/mɪsplˈeɪs/",
+    "phonetic": "/mɪˈspleɪs/",
     "pos": "verb",
     "meaning": "đặt nhầm chỗ, làm thất lạc",
-    "example": "The team plans to misplace before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đặt nhầm chỗ, làm thất lạc\" trước thời hạn.",
+    "example": "Do not misplace an important document.",
+    "exampleTranslation": "Đừng để thất lạc một tài liệu quan trọng.",
     "translations": {
       "vi": "đặt nhầm chỗ, làm thất lạc"
     }
@@ -8539,11 +8526,11 @@ export const VOCABULARY: Word[] = [
     "id": "tre-28",
     "topic": "Trend of Company",
     "word": "grow",
-    "phonetic": "/ɡɹˈəʊ/",
+    "phonetic": "/ˈɡroʊ/",
     "pos": "verb",
     "meaning": "mọc lên, lớn lên, phát triển",
-    "example": "The team plans to grow before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"mọc lên, lớn lên, phát triển\" trước thời hạn.",
+    "example": "Please grow the business gradually.",
+    "exampleTranslation": "Hãy phát triển doanh nghiệp dần dần.",
     "translations": {
       "vi": "mọc lên, lớn lên, phát triển"
     }
@@ -8552,11 +8539,11 @@ export const VOCABULARY: Word[] = [
     "id": "tre-29",
     "topic": "Trend of Company",
     "word": "merge",
-    "phonetic": "/mˈɜːdʒ/",
+    "phonetic": "/ˈmɝdʒ/",
     "pos": "verb",
     "meaning": "kết hợp, hợp nhất, sáp nhập",
-    "example": "The team plans to merge before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"kết hợp, hợp nhất, sáp nhập\" trước thời hạn.",
+    "example": "Please merge the two departments.",
+    "exampleTranslation": "Hãy sáp nhập hai phòng ban.",
     "translations": {
       "vi": "kết hợp, hợp nhất, sáp nhập"
     }
@@ -8565,24 +8552,24 @@ export const VOCABULARY: Word[] = [
     "id": "tre-30",
     "topic": "Trend of Company",
     "word": "imply",
-    "phonetic": "/ɪmplˈaɪ/",
+    "phonetic": "/ɪmˈplaɪ/",
     "pos": "verb",
-    "meaning": "ýnói, ngụý",
-    "example": "The team plans to imply before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"ýnói, ngụý\" trước thời hạn.",
+    "meaning": "ý nói, ngụ ý",
+    "example": "These findings imply that further changes are needed.",
+    "exampleTranslation": "Những phát hiện này ngụ ý rằng cần thêm thay đổi.",
     "translations": {
-      "vi": "ýnói, ngụý"
+      "vi": "ý nói, ngụ ý"
     }
   },
   {
     "id": "tre-31",
     "topic": "Trend of Company",
     "word": "initiate",
-    "phonetic": "/ˌɪˈnɪʃiˌeɪt/",
+    "phonetic": "/ɪˈnɪʃieɪt/",
     "pos": "verb",
     "meaning": "khởi đầu, bắt đầu",
-    "example": "The team plans to initiate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"khởi đầu, bắt đầu\" trước thời hạn.",
+    "example": "Please initiate the refund process.",
+    "exampleTranslation": "Hãy bắt đầu quy trình hoàn tiền.",
     "translations": {
       "vi": "khởi đầu, bắt đầu"
     }
@@ -8591,11 +8578,11 @@ export const VOCABULARY: Word[] = [
     "id": "tre-32",
     "topic": "Trend of Company",
     "word": "enhance",
-    "phonetic": "/ɛnhˈɑːns/",
+    "phonetic": "/ɛnˈhæns/",
     "pos": "verb",
     "meaning": "tăng cường, nâng cao",
-    "example": "The team plans to enhance before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tăng cường, nâng cao\" trước thời hạn.",
+    "example": "Please enhance the customer experience.",
+    "exampleTranslation": "Hãy cải thiện trải nghiệm khách hàng.",
     "translations": {
       "vi": "tăng cường, nâng cao"
     }
@@ -8604,11 +8591,11 @@ export const VOCABULARY: Word[] = [
     "id": "tre-33",
     "topic": "Trend of Company",
     "word": "minutes",
-    "phonetic": "/mˈɪnɪts/",
+    "phonetic": "/ˈmɪnɪts/",
     "pos": "noun",
     "meaning": "biên bản",
-    "example": "The team discussed the minutes during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"biên bản\" trong cuộc họp.",
+    "example": "Please send me the minutes of the meeting.",
+    "exampleTranslation": "Hãy gửi tôi biên bản cuộc họp.",
     "translations": {
       "vi": "biên bản"
     }
@@ -8617,26 +8604,26 @@ export const VOCABULARY: Word[] = [
     "id": "tre-34",
     "topic": "Trend of Company",
     "word": "surpass",
-    "phonetic": "/səpˈɑːs/",
+    "phonetic": "/sɚˈpæs/",
     "pos": "verb",
-    "meaning": "vượt, tr ội hơn",
-    "example": "The team plans to surpass before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"vượt, tr ội hơn\" trước thời hạn.",
+    "meaning": "vượt, trội hơn",
+    "example": "Please surpass last year's sales.",
+    "exampleTranslation": "Hãy vượt doanh số năm ngoái.",
     "translations": {
-      "vi": "vượt, tr ội hơn"
+      "vi": "vượt, trội hơn"
     }
   },
   {
     "id": "tre-35",
     "topic": "Trend of Company",
     "word": "run",
-    "phonetic": "/ɹˈʌn/",
+    "phonetic": "/ˈrʌn/",
     "pos": "verb",
-    "meaning": "quản lý,v ận hành",
-    "example": "The team plans to run before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"quản lý,v ận hành\" trước thời hạn.",
+    "meaning": "quản lý, vận hành",
+    "example": "Please run the department efficiently.",
+    "exampleTranslation": "Hãy điều hành phòng ban hiệu quả.",
     "translations": {
-      "vi": "quản lý,v ận hành"
+      "vi": "quản lý, vận hành"
     }
   },
   {
@@ -8646,8 +8633,8 @@ export const VOCABULARY: Word[] = [
     "phonetic": "/ˈɛdʒ/",
     "pos": "noun",
     "meaning": "lợi thế; rìa, cạnh",
-    "example": "The team discussed the edge during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lợi thế; rìa, cạnh\" trong cuộc họp.",
+    "example": "Better service gives us a competitive edge.",
+    "exampleTranslation": "Dịch vụ tốt hơn tạo lợi thế cạnh tranh cho chúng tôi.",
     "translations": {
       "vi": "lợi thế; rìa, cạnh"
     }
@@ -8656,37 +8643,37 @@ export const VOCABULARY: Word[] = [
     "id": "mee-01",
     "topic": "Meeting",
     "word": "coordination",
-    "phonetic": "/kəʊˈɔːdɪnˈeɪʃən/",
-    "pos": "adj",
-    "meaning": "tích cực, chủ động",
-    "example": "The manager described the proposal as coordination.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tích cực, chủ động\".",
+    "phonetic": "/koʊɔrdəˈneɪʃən/",
+    "pos": "noun",
+    "meaning": "sự phối hợp, sự điều phối",
+    "example": "Good coordination helps the team work efficiently.",
+    "exampleTranslation": "Sự phối hợp tốt giúp đội làm việc hiệu quả.",
     "translations": {
-      "vi": "tích cực, chủ động"
+      "vi": "sự phối hợp, sự điều phối"
     }
   },
   {
     "id": "mee-02",
     "topic": "Meeting",
     "word": "unanimous",
-    "phonetic": "/juːnˈænɪməs/",
-    "pos": "adj",
-    "meaning": "nhất trí, nhấtt âm",
-    "example": "The manager described the proposal as unanimous.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"nhất trí, nhấtt âm\".",
+    "phonetic": "/juˈnænəməs/",
+    "pos": "adjective",
+    "meaning": "nhất trí, đồng lòng",
+    "example": "The committee reached a unanimous decision.",
+    "exampleTranslation": "Ủy ban đạt quyết định nhất trí.",
     "translations": {
-      "vi": "nhất trí, nhấtt âm"
+      "vi": "nhất trí, đồng lòng"
     }
   },
   {
     "id": "mee-03",
     "topic": "Meeting",
     "word": "consensus",
-    "phonetic": "/kənsˈɛnsəs/",
+    "phonetic": "/kənˈsɛnsəs/",
     "pos": "noun",
     "meaning": "sự đồng thuận, sự nhất trí",
-    "example": "The team discussed the consensus during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đồng thuận, sự nhất trí\" trong cuộc họp.",
+    "example": "We discussed the consensus at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự đồng thuận tại cuộc họp.",
     "translations": {
       "vi": "sự đồng thuận, sự nhất trí"
     }
@@ -8695,11 +8682,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-04",
     "topic": "Meeting",
     "word": "reschedule",
-    "phonetic": "/ɹɪstʃˈɛdjuːl/",
+    "phonetic": "/riˈskɛdʒul/",
     "pos": "verb",
     "meaning": "dời lịch, đổi lịch",
-    "example": "The team plans to reschedule before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"dời lịch, đổi lịch\" trước thời hạn.",
+    "example": "Please reschedule the interview for Monday.",
+    "exampleTranslation": "Hãy đổi lịch phỏng vấn sang thứ Hai.",
     "translations": {
       "vi": "dời lịch, đổi lịch"
     }
@@ -8708,11 +8695,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-05",
     "topic": "Meeting",
     "word": "determine",
-    "phonetic": "/dɪtˈɜːmɪn/",
+    "phonetic": "/dəˈtɝmən/",
     "pos": "verb",
     "meaning": "xác định, quyết định",
-    "example": "The team plans to determine before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"xác định, quyết định\" trước thời hạn.",
+    "example": "Please determine the cause of the problem.",
+    "exampleTranslation": "Hãy xác định nguyên nhân vấn đề.",
     "translations": {
       "vi": "xác định, quyết định"
     }
@@ -8721,11 +8708,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-06",
     "topic": "Meeting",
     "word": "approve",
-    "phonetic": "/ɐpɹˈuːv/",
+    "phonetic": "/əˈpruv/",
     "pos": "verb",
     "meaning": "chấp thuận, phê chuẩn",
-    "example": "The team plans to approve before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chấp thuận, phê chuẩn\" trước thời hạn.",
+    "example": "Please approve the purchase request.",
+    "exampleTranslation": "Hãy phê duyệt yêu cầu mua hàng.",
     "translations": {
       "vi": "chấp thuận, phê chuẩn"
     }
@@ -8734,11 +8721,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-07",
     "topic": "Meeting",
     "word": "enclosed",
-    "phonetic": "/ɛnklˈəʊzd/",
-    "pos": "adj",
+    "phonetic": "/ɛnˈkloʊzd/",
+    "pos": "adjective",
     "meaning": "được gửi kèm, kèm theo",
-    "example": "The manager described the proposal as enclosed.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"được gửi kèm, kèm theo\".",
+    "example": "Please read the enclosed document.",
+    "exampleTranslation": "Hãy đọc tài liệu được gửi kèm.",
     "translations": {
       "vi": "được gửi kèm, kèm theo"
     }
@@ -8747,11 +8734,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-08",
     "topic": "Meeting",
     "word": "easy",
-    "phonetic": "/ˈiːzi/",
-    "pos": "adj",
+    "phonetic": "/ˈizi/",
+    "pos": "adjective",
     "meaning": "dễ dàng, đơn giản",
-    "example": "The manager described the proposal as easy.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"dễ dàng, đơn giản\".",
+    "example": "The new software is easy to use.",
+    "exampleTranslation": "Phần mềm mới dễ sử dụng.",
     "translations": {
       "vi": "dễ dàng, đơn giản"
     }
@@ -8760,11 +8747,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-09",
     "topic": "Meeting",
     "word": "suggestion",
-    "phonetic": "/sədʒˈɛstʃən/",
+    "phonetic": "/səˈdʒɛstʃən/",
     "pos": "noun",
     "meaning": "sự đề nghị, đề xuất",
-    "example": "The team discussed the suggestion during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đề nghị, đề xuất\" trong cuộc họp.",
+    "example": "We discussed the suggestion at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự đề nghị tại cuộc họp.",
     "translations": {
       "vi": "sự đề nghị, đề xuất"
     }
@@ -8773,11 +8760,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-10",
     "topic": "Meeting",
     "word": "attention",
-    "phonetic": "/ɐtˈɛnʃən/",
+    "phonetic": "/əˈtɛnʃən/",
     "pos": "noun",
     "meaning": "sự chú ý, sự chăm sóc",
-    "example": "The team discussed the attention during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự chú ý, sự chăm sóc\" trong cuộc họp.",
+    "example": "We discussed the attention at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự chú ý tại cuộc họp.",
     "translations": {
       "vi": "sự chú ý, sự chăm sóc"
     }
@@ -8786,11 +8773,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-11",
     "topic": "Meeting",
     "word": "object",
-    "phonetic": "/ˈɑbdʒɛkt/",
+    "phonetic": "/əbˈdʒɛkt/",
     "pos": "verb",
     "meaning": "phản đối, chống",
-    "example": "The team plans to object before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"phản đối, chống\" trước thời hạn.",
+    "example": "Please object to the proposed changes.",
+    "exampleTranslation": "Hãy phản đối các thay đổi được đề xuất.",
     "translations": {
       "vi": "phản đối, chống"
     }
@@ -8799,11 +8786,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-12",
     "topic": "Meeting",
     "word": "undergo",
-    "phonetic": "/ˌʌndəɡˈəʊ/",
+    "phonetic": "/ʌndɚˈɡoʊ/",
     "pos": "verb",
     "meaning": "chịu, bị, trải qua",
-    "example": "The team plans to undergo before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chịu, bị, trải qua\" trước thời hạn.",
+    "example": "Please undergo a routine medical examination.",
+    "exampleTranslation": "Hãy trải qua một cuộc khám sức khỏe định kỳ.",
     "translations": {
       "vi": "chịu, bị, trải qua"
     }
@@ -8815,8 +8802,8 @@ export const VOCABULARY: Word[] = [
     "phonetic": "/ˈaʊtkʌm/",
     "pos": "noun",
     "meaning": "kết quả, hậu quả",
-    "example": "The team discussed the outcome during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"kết quả, hậu quả\" trong cuộc họp.",
+    "example": "We discussed the outcome at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về kết quả tại cuộc họp.",
     "translations": {
       "vi": "kết quả, hậu quả"
     }
@@ -8825,11 +8812,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-14",
     "topic": "Meeting",
     "word": "give",
-    "phonetic": "/ɡˈɪv/",
+    "phonetic": "/ˈɡɪv/",
     "pos": "verb",
     "meaning": "đưa ra, cho, tặng",
-    "example": "The team plans to give before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đưa ra, cho, tặng\" trước thời hạn.",
+    "example": "Please give customers clear instructions.",
+    "exampleTranslation": "Hãy đưa hướng dẫn rõ ràng cho khách hàng.",
     "translations": {
       "vi": "đưa ra, cho, tặng"
     }
@@ -8838,11 +8825,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-15",
     "topic": "Meeting",
     "word": "distract",
-    "phonetic": "/dɪstɹˈækt/",
+    "phonetic": "/dɪˈstrækt/",
     "pos": "verb",
     "meaning": "làm sao nhãng, gây phân tâm",
-    "example": "The team plans to distract before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm sao nhãng, gây phân tâm\" trước thời hạn.",
+    "example": "Do not distract the driver during the journey.",
+    "exampleTranslation": "Đừng làm tài xế mất tập trung trong chuyến đi.",
     "translations": {
       "vi": "làm sao nhãng, gây phân tâm"
     }
@@ -8851,11 +8838,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-16",
     "topic": "Meeting",
     "word": "emphasis",
-    "phonetic": "/ˈɛmfəsˌɪs/",
+    "phonetic": "/ˈɛmfəsəs/",
     "pos": "noun",
     "meaning": "sự nhấn mạnh",
-    "example": "The team discussed the emphasis during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự nhấn mạnh\" trong cuộc họp.",
+    "example": "We discussed the emphasis at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự nhấn mạnh tại cuộc họp.",
     "translations": {
       "vi": "sự nhấn mạnh"
     }
@@ -8864,11 +8851,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-17",
     "topic": "Meeting",
     "word": "organize",
-    "phonetic": "/ˈɔɹɡəˌnaɪz/",
+    "phonetic": "/ˈɔrɡənaɪz/",
     "pos": "verb",
     "meaning": "tổ chức, thiết lập",
-    "example": "The team plans to organize before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tổ chức, thiết lập\" trước thời hạn.",
+    "example": "Please organize the documents by date.",
+    "exampleTranslation": "Hãy sắp xếp tài liệu theo ngày.",
     "translations": {
       "vi": "tổ chức, thiết lập"
     }
@@ -8877,11 +8864,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-18",
     "topic": "Meeting",
     "word": "persuasive",
-    "phonetic": "/pəswˈeɪsɪv/",
-    "pos": "adj",
+    "phonetic": "/pɚˈsweɪsɪv/",
+    "pos": "adjective",
     "meaning": "có sức thuyết phục",
-    "example": "The manager described the proposal as persuasive.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có sức thuyết phục\".",
+    "example": "She gave a persuasive presentation.",
+    "exampleTranslation": "Cô ấy thuyết trình rất thuyết phục.",
     "translations": {
       "vi": "có sức thuyết phục"
     }
@@ -8890,24 +8877,24 @@ export const VOCABULARY: Word[] = [
     "id": "mee-19",
     "topic": "Meeting",
     "word": "constructive",
-    "phonetic": "/kənstɹˈʌktɪv/",
-    "pos": "adj",
-    "meaning": "mang tínhx ây dựng",
-    "example": "The manager described the proposal as constructive.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"mang tínhx ây dựng\".",
+    "phonetic": "/kənˈstrʌktɪv/",
+    "pos": "adjective",
+    "meaning": "mang tính xây dựng",
+    "example": "We welcome constructive feedback.",
+    "exampleTranslation": "Chúng tôi hoan nghênh phản hồi mang tính xây dựng.",
     "translations": {
-      "vi": "mang tínhx ây dựng"
+      "vi": "mang tính xây dựng"
     }
   },
   {
     "id": "mee-20",
     "topic": "Meeting",
     "word": "irrelevant",
-    "phonetic": "/ɪɹˈɛlɪvənt/",
-    "pos": "adj",
+    "phonetic": "/ɪˈrɛləvənt/",
+    "pos": "adjective",
     "meaning": "không liên quan",
-    "example": "The manager described the proposal as irrelevant.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"không liên quan\".",
+    "example": "The proposed plan is irrelevant.",
+    "exampleTranslation": "Kế hoạch được đề xuất không liên quan.",
     "translations": {
       "vi": "không liên quan"
     }
@@ -8916,11 +8903,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-21",
     "topic": "Meeting",
     "word": "refute",
-    "phonetic": "/ɹɪfjˈuːt/",
+    "phonetic": "/rɪˈfjut/",
     "pos": "verb",
     "meaning": "bác bỏ, bẻ lại",
-    "example": "The team plans to refute before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bác bỏ, bẻ lại\" trước thời hạn.",
+    "example": "Please refute the claim with evidence.",
+    "exampleTranslation": "Hãy bác bỏ nhận định bằng chứng cứ.",
     "translations": {
       "vi": "bác bỏ, bẻ lại"
     }
@@ -8929,11 +8916,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-22",
     "topic": "Meeting",
     "word": "defer",
-    "phonetic": "/dɪfˈɜː/",
+    "phonetic": "/dɪˈfɝ/",
     "pos": "verb",
     "meaning": "hoãn, trì hoãn",
-    "example": "The team plans to defer before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hoãn, trì hoãn\" trước thời hạn.",
+    "example": "Please defer the decision until next week.",
+    "exampleTranslation": "Hãy hoãn quyết định đến tuần sau.",
     "translations": {
       "vi": "hoãn, trì hoãn"
     }
@@ -8942,11 +8929,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-23",
     "topic": "Meeting",
     "word": "meeting",
-    "phonetic": "/mˈiːtɪŋ/",
+    "phonetic": "/ˈmitɪŋ/",
     "pos": "noun",
     "meaning": "cuộc họp, cuộc gặp",
-    "example": "The team discussed the meeting during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cuộc họp, cuộc gặp\" trong cuộc họp.",
+    "example": "We discussed the meeting at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về cuộc họp tại cuộc họp.",
     "translations": {
       "vi": "cuộc họp, cuộc gặp"
     }
@@ -8955,24 +8942,24 @@ export const VOCABULARY: Word[] = [
     "id": "mee-24",
     "topic": "Meeting",
     "word": "comment",
-    "phonetic": "/kˈɒmɛnt/",
+    "phonetic": "/ˈkɑmɛnt/",
     "pos": "verb",
-    "meaning": "bình luận, đưaraý kiến",
-    "example": "The team plans to comment before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bình luận, đưaraý kiến\" trước thời hạn.",
+    "meaning": "bình luận, đưa ra ý kiến",
+    "example": "Please comment on the proposed design.",
+    "exampleTranslation": "Hãy nhận xét về thiết kế được đề xuất.",
     "translations": {
-      "vi": "bình luận, đưaraý kiến"
+      "vi": "bình luận, đưa ra ý kiến"
     }
   },
   {
     "id": "mee-25",
     "topic": "Meeting",
     "word": "phase",
-    "phonetic": "/fˈeɪz/",
+    "phonetic": "/ˈfeɪz/",
     "pos": "noun",
     "meaning": "bước, giai đoạn",
-    "example": "The team discussed the phase during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bước, giai đoạn\" trong cuộc họp.",
+    "example": "We discussed the phase at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về bước tại cuộc họp.",
     "translations": {
       "vi": "bước, giai đoạn"
     }
@@ -8981,11 +8968,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-26",
     "topic": "Meeting",
     "word": "coincidentally",
-    "phonetic": "/kəʊˌɪnsɪdˈɛntəli/",
-    "pos": "adv",
+    "phonetic": "/koʊɪnsɪˈdɛntəli/",
+    "pos": "adverb",
     "meaning": "trùng hợp, ngẫu nhiên",
-    "example": "The team completed the task coincidentally.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"trùng hợp, ngẫu nhiên\".",
+    "example": "Coincidentally, we booked the same flight.",
+    "exampleTranslation": "Thật trùng hợp, chúng tôi đặt cùng một chuyến bay.",
     "translations": {
       "vi": "trùng hợp, ngẫu nhiên"
     }
@@ -8994,11 +8981,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-27",
     "topic": "Meeting",
     "word": "crowded",
-    "phonetic": "/kɹˈaʊdɪd/",
-    "pos": "adj",
+    "phonetic": "/ˈkraʊdəd/",
+    "pos": "adjective",
     "meaning": "đông đúc, chật ních",
-    "example": "The manager described the proposal as crowded.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đông đúc, chật ních\".",
+    "example": "The meeting room is crowded.",
+    "exampleTranslation": "Phòng họp đông đúc.",
     "translations": {
       "vi": "đông đúc, chật ních"
     }
@@ -9007,11 +8994,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-28",
     "topic": "Meeting",
     "word": "press",
-    "phonetic": "/pɹˈɛs/",
+    "phonetic": "/ˈprɛs/",
     "pos": "noun",
     "meaning": "báo chí",
-    "example": "The team discussed the press during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"báo chí\" trong cuộc họp.",
+    "example": "The company released a statement to the press.",
+    "exampleTranslation": "Công ty công bố thông cáo cho báo chí.",
     "translations": {
       "vi": "báo chí"
     }
@@ -9020,11 +9007,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-29",
     "topic": "Meeting",
     "word": "adjourn",
-    "phonetic": "/ɐdʒˈɜːn/",
+    "phonetic": "/əˈdʒɝn/",
     "pos": "verb",
     "meaning": "hoãn lại, ngừng",
-    "example": "The team plans to adjourn before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hoãn lại, ngừng\" trước thời hạn.",
+    "example": "Please adjourn the meeting until tomorrow.",
+    "exampleTranslation": "Hãy tạm ngừng cuộc họp đến ngày mai.",
     "translations": {
       "vi": "hoãn lại, ngừng"
     }
@@ -9033,11 +9020,11 @@ export const VOCABULARY: Word[] = [
     "id": "mee-30",
     "topic": "Meeting",
     "word": "preside",
-    "phonetic": "/pɹɪsˈaɪd/",
+    "phonetic": "/prɪˈzaɪd/",
     "pos": "verb",
     "meaning": "chủ trì, chủ toạ",
-    "example": "The team plans to preside before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chủ trì, chủ toạ\" trước thời hạn.",
+    "example": "Please preside over the annual meeting.",
+    "exampleTranslation": "Hãy chủ trì cuộc họp thường niên.",
     "translations": {
       "vi": "chủ trì, chủ toạ"
     }
@@ -9046,24 +9033,24 @@ export const VOCABULARY: Word[] = [
     "id": "ben-01",
     "topic": "Employee Benefits",
     "word": "purpose",
-    "phonetic": "/pˈɜːpəs/",
+    "phonetic": "/ˈpɝpəs/",
     "pos": "noun",
-    "meaning": "mục đích,ý định",
-    "example": "The team discussed the purpose during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"mục đích,ý định\" trong cuộc họp.",
+    "meaning": "mục đích, ý định",
+    "example": "We discussed the purpose at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về mục đích tại cuộc họp.",
     "translations": {
-      "vi": "mục đích,ý định"
+      "vi": "mục đích, ý định"
     }
   },
   {
     "id": "ben-02",
     "topic": "Employee Benefits",
     "word": "lecture",
-    "phonetic": "/lˈɛktʃɐ/",
+    "phonetic": "/ˈlɛktʃɚ/",
     "pos": "noun",
     "meaning": "bài giảng, bài diễn thuyết",
-    "example": "The team discussed the lecture during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bài giảng, bài diễn thuyết\" trong cuộc họp.",
+    "example": "The lecture starts at nine.",
+    "exampleTranslation": "Bài giảng bắt đầu lúc chín giờ.",
     "translations": {
       "vi": "bài giảng, bài diễn thuyết"
     }
@@ -9072,11 +9059,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-03",
     "topic": "Employee Benefits",
     "word": "participant",
-    "phonetic": "/pɑːtˈɪsɪpənt/",
+    "phonetic": "/pɑrˈtɪsəpənt/",
     "pos": "noun",
     "meaning": "người tham gia/tham dự",
-    "example": "The team discussed the participant during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"người tham gia/tham dự\" trong cuộc họp.",
+    "example": "The participant answered our questions.",
+    "exampleTranslation": "Người tham gia/tham dự đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "người tham gia/tham dự"
     }
@@ -9085,11 +9072,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-04",
     "topic": "Employee Benefits",
     "word": "attend",
-    "phonetic": "/ɐtˈɛnd/",
+    "phonetic": "/əˈtɛnd/",
     "pos": "verb",
     "meaning": "dự, có mặt",
-    "example": "The team plans to attend before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"dự, có mặt\" trước thời hạn.",
+    "example": "Please attend the training session.",
+    "exampleTranslation": "Hãy tham dự buổi đào tạo.",
     "translations": {
       "vi": "dự, có mặt"
     }
@@ -9098,11 +9085,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-05",
     "topic": "Employee Benefits",
     "word": "schedule",
-    "phonetic": "/ʃˈɛdjuːl/",
+    "phonetic": "/ˈskɛdʒʊl/",
     "pos": "verb",
     "meaning": "xếp lịch, lên lịch",
-    "example": "The team plans to schedule before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"xếp lịch, lên lịch\" trước thời hạn.",
+    "example": "Please schedule the inspection for Tuesday.",
+    "exampleTranslation": "Hãy xếp lịch kiểm tra vào thứ Ba.",
     "translations": {
       "vi": "xếp lịch, lên lịch"
     }
@@ -9111,11 +9098,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-06",
     "topic": "Employee Benefits",
     "word": "include",
-    "phonetic": "/ɪnklˈuːd/",
+    "phonetic": "/ɪnˈklud/",
     "pos": "verb",
     "meaning": "bao gồm",
-    "example": "The team plans to include before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bao gồm\" trước thời hạn.",
+    "example": "Please include all relevant documents.",
+    "exampleTranslation": "Hãy bao gồm mọi tài liệu liên quan.",
     "translations": {
       "vi": "bao gồm"
     }
@@ -9124,50 +9111,50 @@ export const VOCABULARY: Word[] = [
     "id": "ben-07",
     "topic": "Employee Benefits",
     "word": "require",
-    "phonetic": "/ɹɪkwˈaɪə/",
+    "phonetic": "/riˈkwaɪɚ/",
     "pos": "verb",
-    "meaning": "đòi hỏi,y êu cầu",
-    "example": "The team plans to require before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đòi hỏi,y êu cầu\" trước thời hạn.",
+    "meaning": "đòi hỏi, yêu cầu",
+    "example": "Please require written confirmation.",
+    "exampleTranslation": "Hãy yêu cầu xác nhận bằng văn bản.",
     "translations": {
-      "vi": "đòi hỏi,y êu cầu"
+      "vi": "đòi hỏi, yêu cầu"
     }
   },
   {
     "id": "ben-08",
     "topic": "Employee Benefits",
     "word": "responsibility",
-    "phonetic": "/ɹɪspˌɒnsəbˈɪlɪti/",
+    "phonetic": "/rispɑnsəˈbɪləti/",
     "pos": "noun",
-    "meaning": "tr ách nhiệm",
-    "example": "The team discussed the responsibility during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tr ách nhiệm\" trong cuộc họp.",
+    "meaning": "trách nhiệm",
+    "example": "We discussed the responsibility at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về trách nhiệm tại cuộc họp.",
     "translations": {
-      "vi": "tr ách nhiệm"
+      "vi": "trách nhiệm"
     }
   },
   {
     "id": "ben-09",
     "topic": "Employee Benefits",
     "word": "regard",
-    "phonetic": "/ɹɪɡˈɑːd/",
+    "phonetic": "/rɪˈɡɑrd/",
     "pos": "verb",
-    "meaning": "coi như, xem như",
-    "example": "The team plans to regard before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"coi như, xem như\" trước thời hạn.",
+    "meaning": "coi, xem như; quan tâm",
+    "example": "Please regard this issue as a priority.",
+    "exampleTranslation": "Hãy coi vấn đề này là ưu tiên.",
     "translations": {
-      "vi": "coi như, xem như"
+      "vi": "coi, xem như; quan tâm"
     }
   },
   {
     "id": "ben-10",
     "topic": "Employee Benefits",
     "word": "tentative",
-    "phonetic": "/tˈɛntətˌɪv/",
-    "pos": "adj",
+    "phonetic": "/ˈtɛntətɪv/",
+    "pos": "adjective",
     "meaning": "chưa chắc chắn, ướm thử",
-    "example": "The manager described the proposal as tentative.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"chưa chắc chắn, ướm thử\".",
+    "example": "This is a tentative schedule.",
+    "exampleTranslation": "Đây là lịch tạm thời, chưa chốt.",
     "translations": {
       "vi": "chưa chắc chắn, ướm thử"
     }
@@ -9176,11 +9163,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-11",
     "topic": "Employee Benefits",
     "word": "function",
-    "phonetic": "/fˈʌŋkʃən/",
+    "phonetic": "/ˈfʌŋkʃən/",
     "pos": "noun",
     "meaning": "chức năng, nhiệm vụ",
-    "example": "The team discussed the function during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chức năng, nhiệm vụ\" trong cuộc họp.",
+    "example": "We discussed the function at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về chức năng tại cuộc họp.",
     "translations": {
       "vi": "chức năng, nhiệm vụ"
     }
@@ -9189,37 +9176,37 @@ export const VOCABULARY: Word[] = [
     "id": "ben-12",
     "topic": "Employee Benefits",
     "word": "reimbursement",
-    "phonetic": "/ɹˌiːɪmbˈɜːsmənt/",
+    "phonetic": "/riɪmˈbɝsmənt/",
     "pos": "noun",
-    "meaning": "sự hoàn tiền, sự trả lại",
-    "example": "The team discussed the reimbursement during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự hoàn tiền, sự trả lại\" trong cuộc họp.",
+    "meaning": "sự hoàn trả chi phí",
+    "example": "We discussed the reimbursement at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự hoàn trả chi phí tại cuộc họp.",
     "translations": {
-      "vi": "sự hoàn tiền, sự trả lại"
+      "vi": "sự hoàn trả chi phí"
     }
   },
   {
     "id": "ben-13",
     "topic": "Employee Benefits",
     "word": "treatment",
-    "phonetic": "/tɹˈiːtmənt/",
+    "phonetic": "/ˈtritmənt/",
     "pos": "noun",
-    "meaning": "sự đối xửcư xử",
-    "example": "The team discussed the treatment during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đối xửcư xử\" trong cuộc họp.",
+    "meaning": "sự đối xử, cư xử; sự điều trị",
+    "example": "We discussed the treatment at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự đối xử tại cuộc họp.",
     "translations": {
-      "vi": "sự đối xửcư xử"
+      "vi": "sự đối xử, cư xử; sự điều trị"
     }
   },
   {
     "id": "ben-14",
     "topic": "Employee Benefits",
     "word": "honor",
-    "phonetic": "/ˈɒnɐ/",
+    "phonetic": "/ˈɑnɚ/",
     "pos": "noun",
     "meaning": "niềm vinh dự, danh dự",
-    "example": "The team discussed the honor during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"niềm vinh dự, danh dự\" trong cuộc họp.",
+    "example": "It is an honor to receive this award.",
+    "exampleTranslation": "Được nhận giải thưởng này là vinh dự.",
     "translations": {
       "vi": "niềm vinh dự, danh dự"
     }
@@ -9228,24 +9215,24 @@ export const VOCABULARY: Word[] = [
     "id": "ben-15",
     "topic": "Employee Benefits",
     "word": "bonus",
-    "phonetic": "/bˈəʊnəs/",
+    "phonetic": "/ˈboʊnəs/",
     "pos": "noun",
-    "meaning": "tiền thưởng, lợi tức thêmv ào",
-    "example": "The team discussed the bonus during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tiền thưởng, lợi tức thêmv ào\" trong cuộc họp.",
+    "meaning": "tiền thưởng, lợi tức thêm vào",
+    "example": "We discussed the bonus at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về tiền thưởng tại cuộc họp.",
     "translations": {
-      "vi": "tiền thưởng, lợi tức thêmv ào"
+      "vi": "tiền thưởng, lợi tức thêm vào"
     }
   },
   {
     "id": "ben-16",
     "topic": "Employee Benefits",
     "word": "salary",
-    "phonetic": "/sˈæləɹi/",
+    "phonetic": "/ˈsælɚi/",
     "pos": "noun",
     "meaning": "lương",
-    "example": "The team discussed the salary during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lương\" trong cuộc họp.",
+    "example": "Her salary is paid monthly.",
+    "exampleTranslation": "Lương của cô ấy được trả hằng tháng.",
     "translations": {
       "vi": "lương"
     }
@@ -9254,11 +9241,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-17",
     "topic": "Employee Benefits",
     "word": "labor",
-    "phonetic": "/lˈeɪbɐ/",
+    "phonetic": "/ˈleɪbɚ/",
     "pos": "noun",
     "meaning": "lao động, nhân công",
-    "example": "The team discussed the labor during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lao động, nhân công\" trong cuộc họp.",
+    "example": "The project requires skilled labor.",
+    "exampleTranslation": "Dự án cần lao động có tay nghề.",
     "translations": {
       "vi": "lao động, nhân công"
     }
@@ -9267,11 +9254,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-18",
     "topic": "Employee Benefits",
     "word": "existing",
-    "phonetic": "/ɛɡzˈɪstɪŋ/",
-    "pos": "adj",
+    "phonetic": "/ɪɡˈzɪstɪŋ/",
+    "pos": "adjective",
     "meaning": "hiện tại, hiện hành",
-    "example": "The manager described the proposal as existing.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"hiện tại, hiện hành\".",
+    "example": "We reviewed the existing procedures.",
+    "exampleTranslation": "Chúng tôi xem xét các quy trình hiện hành.",
     "translations": {
       "vi": "hiện tại, hiện hành"
     }
@@ -9280,11 +9267,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-19",
     "topic": "Employee Benefits",
     "word": "annual",
-    "phonetic": "/ˈænjuːəl/",
-    "pos": "adj",
+    "phonetic": "/ˈænjuəl/",
+    "pos": "adjective",
     "meaning": "hằng năm, thường niên",
-    "example": "The manager described the proposal as annual.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"hằng năm, thường niên\".",
+    "example": "The annual meeting takes place in June.",
+    "exampleTranslation": "Cuộc họp thường niên diễn ra vào tháng Sáu.",
     "translations": {
       "vi": "hằng năm, thường niên"
     }
@@ -9293,11 +9280,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-20",
     "topic": "Employee Benefits",
     "word": "enroll",
-    "phonetic": "/ɛnɹˈəʊl/",
+    "phonetic": "/ɛnˈroʊl/",
     "pos": "verb",
     "meaning": "ghi danh, đăng ký",
-    "example": "The team plans to enroll before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"ghi danh, đăng ký\" trước thời hạn.",
+    "example": "Please enroll in the training course.",
+    "exampleTranslation": "Hãy đăng ký khóa đào tạo.",
     "translations": {
       "vi": "ghi danh, đăng ký"
     }
@@ -9306,11 +9293,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-21",
     "topic": "Employee Benefits",
     "word": "leave",
-    "phonetic": "/lˈiːv/",
+    "phonetic": "/ˈliv/",
     "pos": "noun",
     "meaning": "sự nghỉ phép",
-    "example": "The team discussed the leave during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự nghỉ phép\" trong cuộc họp.",
+    "example": "She requested two days of leave.",
+    "exampleTranslation": "Cô ấy xin nghỉ phép hai ngày.",
     "translations": {
       "vi": "sự nghỉ phép"
     }
@@ -9319,11 +9306,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-22",
     "topic": "Employee Benefits",
     "word": "conference",
-    "phonetic": "/kˈɒnfɹəns/",
+    "phonetic": "/ˈkɑnfɚəns/",
     "pos": "noun",
     "meaning": "cuộc họp, hội nghị",
-    "example": "The team discussed the conference during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cuộc họp, hội nghị\" trong cuộc họp.",
+    "example": "We discussed the conference at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về cuộc họp tại cuộc họp.",
     "translations": {
       "vi": "cuộc họp, hội nghị"
     }
@@ -9332,11 +9319,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-23",
     "topic": "Employee Benefits",
     "word": "grateful",
-    "phonetic": "/ɡɹˈeɪtfəl/",
-    "pos": "adj",
+    "phonetic": "/ˈɡreɪtfəl/",
+    "pos": "adjective",
     "meaning": "biết ơn",
-    "example": "The manager described the proposal as grateful.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"biết ơn\".",
+    "example": "We are grateful for your support.",
+    "exampleTranslation": "Chúng tôi biết ơn sự hỗ trợ của bạn.",
     "translations": {
       "vi": "biết ơn"
     }
@@ -9345,11 +9332,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-24",
     "topic": "Employee Benefits",
     "word": "overtime",
-    "phonetic": "/ˈəʊvətˌaɪm/",
+    "phonetic": "/ˈoʊvɚtaɪm/",
     "pos": "noun",
     "meaning": "giờ làm thêm",
-    "example": "The team discussed the overtime during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"giờ làm thêm\" trong cuộc họp.",
+    "example": "We discussed the overtime at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về giờ làm thêm tại cuộc họp.",
     "translations": {
       "vi": "giờ làm thêm"
     }
@@ -9358,24 +9345,24 @@ export const VOCABULARY: Word[] = [
     "id": "ben-25",
     "topic": "Employee Benefits",
     "word": "assent",
-    "phonetic": "/ɐsˈɛnt/",
+    "phonetic": "/əˈsɛnt/",
     "pos": "verb",
-    "meaning": "tán thành, đồngý",
-    "example": "The team plans to assent before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tán thành, đồngý\" trước thời hạn.",
+    "meaning": "tán thành, đồng ý",
+    "example": "Please assent to the proposed agreement.",
+    "exampleTranslation": "Hãy tán thành thỏa thuận được đề xuất.",
     "translations": {
-      "vi": "tán thành, đồngý"
+      "vi": "tán thành, đồng ý"
     }
   },
   {
     "id": "ben-26",
     "topic": "Employee Benefits",
     "word": "commence",
-    "phonetic": "/kəmˈɛns/",
+    "phonetic": "/kəˈmɛns/",
     "pos": "verb",
     "meaning": "bắt đầu, khởi đầu",
-    "example": "The team plans to commence before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bắt đầu, khởi đầu\" trước thời hạn.",
+    "example": "Please commence work on the new project.",
+    "exampleTranslation": "Hãy bắt đầu thực hiện dự án mới.",
     "translations": {
       "vi": "bắt đầu, khởi đầu"
     }
@@ -9384,11 +9371,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-27",
     "topic": "Employee Benefits",
     "word": "excited",
-    "phonetic": "/ɛksˈaɪtɪd/",
-    "pos": "adj",
+    "phonetic": "/ɪkˈsaɪtəd/",
+    "pos": "adjective",
     "meaning": "hào hứng, phấn khích",
-    "example": "The manager described the proposal as excited.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"hào hứng, phấn khích\".",
+    "example": "The employee seemed excited during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ hào hứng trong buổi phỏng vấn.",
     "translations": {
       "vi": "hào hứng, phấn khích"
     }
@@ -9397,11 +9384,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-28",
     "topic": "Employee Benefits",
     "word": "emphasize",
-    "phonetic": "/ˈɛmfəˌsaɪz/",
+    "phonetic": "/ˈɛmfəsaɪz/",
     "pos": "verb",
     "meaning": "nhấn mạnh",
-    "example": "The team plans to emphasize before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nhấn mạnh\" trước thời hạn.",
+    "example": "Please emphasize the importance of safety.",
+    "exampleTranslation": "Hãy nhấn mạnh tầm quan trọng của an toàn.",
     "translations": {
       "vi": "nhấn mạnh"
     }
@@ -9410,24 +9397,24 @@ export const VOCABULARY: Word[] = [
     "id": "ben-29",
     "topic": "Employee Benefits",
     "word": "arise",
-    "phonetic": "/ɐɹˈaɪz/",
+    "phonetic": "/ɚˈaɪz/",
     "pos": "verb",
-    "meaning": "xuất hiện, phát sinh, xảyra",
-    "example": "The team plans to arise before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"xuất hiện, phát sinh, xảyra\" trước thời hạn.",
+    "meaning": "xuất hiện, phát sinh, xảy ra",
+    "example": "Problems can arise during the final inspection.",
+    "exampleTranslation": "Vấn đề có thể phát sinh trong lần kiểm tra cuối.",
     "translations": {
-      "vi": "xuất hiện, phát sinh, xảyra"
+      "vi": "xuất hiện, phát sinh, xảy ra"
     }
   },
   {
     "id": "ben-30",
     "topic": "Employee Benefits",
     "word": "exploit",
-    "phonetic": "/ˈɛksˌpɫɔɪt/",
+    "phonetic": "/ˈɛksplɔɪt/",
     "pos": "verb",
     "meaning": "khai thác, lợi dụng, bóc lột",
-    "example": "The team plans to exploit before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"khai thác, lợi dụng, bóc lột\" trước thời hạn.",
+    "example": "Please exploit the available opportunities.",
+    "exampleTranslation": "Hãy khai thác những cơ hội sẵn có.",
     "translations": {
       "vi": "khai thác, lợi dụng, bóc lột"
     }
@@ -9436,11 +9423,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-31",
     "topic": "Employee Benefits",
     "word": "appraisal",
-    "phonetic": "/ɐpɹˈeɪsəl/",
+    "phonetic": "/əˈpreɪzəl/",
     "pos": "noun",
     "meaning": "sự đánh giá, sự thẩm định",
-    "example": "The team discussed the appraisal during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đánh giá, sự thẩm định\" trong cuộc họp.",
+    "example": "We discussed the appraisal at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự đánh giá tại cuộc họp.",
     "translations": {
       "vi": "sự đánh giá, sự thẩm định"
     }
@@ -9449,24 +9436,24 @@ export const VOCABULARY: Word[] = [
     "id": "ben-32",
     "topic": "Employee Benefits",
     "word": "radically",
-    "phonetic": "/ɹˈædɪkli/",
-    "pos": "adv",
-    "meaning": "căn bản,t ận gốc, triệt để",
-    "example": "The team completed the task radically.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"căn bản,t ận gốc, triệt để\".",
+    "phonetic": "/ˈrædɪkli/",
+    "pos": "adverb",
+    "meaning": "căn bản, tận gốc, triệt để",
+    "example": "The new system radically changed our workflow.",
+    "exampleTranslation": "Hệ thống mới thay đổi căn bản quy trình làm việc.",
     "translations": {
-      "vi": "căn bản,t ận gốc, triệt để"
+      "vi": "căn bản, tận gốc, triệt để"
     }
   },
   {
     "id": "ben-33",
     "topic": "Employee Benefits",
     "word": "exceptional",
-    "phonetic": "/ɛksˈɛpʃənəl/",
-    "pos": "adj",
+    "phonetic": "/ɪkˈsɛpʃənəl/",
+    "pos": "adjective",
     "meaning": "xuất chúng, đặc biệt",
-    "example": "The manager described the proposal as exceptional.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"xuất chúng, đặc biệt\".",
+    "example": "The proposed plan is exceptional.",
+    "exampleTranslation": "Kế hoạch được đề xuất xuất chúng.",
     "translations": {
       "vi": "xuất chúng, đặc biệt"
     }
@@ -9475,11 +9462,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-34",
     "topic": "Employee Benefits",
     "word": "appreciation",
-    "phonetic": "/ɐpɹˌiːʃɪˈeɪʃən/",
+    "phonetic": "/əpriʃiˈeɪʃən/",
     "pos": "noun",
     "meaning": "sự đánh giá cao, sự cảm kích",
-    "example": "The team discussed the appreciation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đánh giá cao, sự cảm kích\" trong cuộc họp.",
+    "example": "We discussed the appreciation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự đánh giá cao tại cuộc họp.",
     "translations": {
       "vi": "sự đánh giá cao, sự cảm kích"
     }
@@ -9488,11 +9475,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-35",
     "topic": "Employee Benefits",
     "word": "evaluate",
-    "phonetic": "/ɪvˈæljuːˌeɪt/",
+    "phonetic": "/ɪˈvæljueɪt/",
     "pos": "verb",
     "meaning": "đánh giá",
-    "example": "The team plans to evaluate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đánh giá\" trước thời hạn.",
+    "example": "Please evaluate the supplier's performance.",
+    "exampleTranslation": "Hãy đánh giá hiệu quả làm việc của nhà cung cấp.",
     "translations": {
       "vi": "đánh giá"
     }
@@ -9501,24 +9488,24 @@ export const VOCABULARY: Word[] = [
     "id": "ben-36",
     "topic": "Employee Benefits",
     "word": "preference",
-    "phonetic": "/pɹˈɛfɹəns/",
+    "phonetic": "/ˈprɛfɚəns/",
     "pos": "noun",
-    "meaning": "sự thích hơn, sở thích",
-    "example": "The team discussed the preference during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự thích hơn, sở thích\" trong cuộc họp.",
+    "meaning": "sở thích, sự ưu tiên",
+    "example": "Please tell us your seating preference.",
+    "exampleTranslation": "Hãy cho chúng tôi biết chỗ ngồi bạn thích.",
     "translations": {
-      "vi": "sự thích hơn, sở thích"
+      "vi": "sở thích, sự ưu tiên"
     }
   },
   {
     "id": "ben-37",
     "topic": "Employee Benefits",
     "word": "predict",
-    "phonetic": "/pɹɪdˈɪkt/",
+    "phonetic": "/prɪˈdɪkt/",
     "pos": "verb",
     "meaning": "dự đoán",
-    "example": "The team plans to predict before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"dự đoán\" trước thời hạn.",
+    "example": "Please predict future demand.",
+    "exampleTranslation": "Hãy dự đoán nhu cầu trong tương lai.",
     "translations": {
       "vi": "dự đoán"
     }
@@ -9527,11 +9514,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-38",
     "topic": "Employee Benefits",
     "word": "award",
-    "phonetic": "/ɐwˈɔːd/",
+    "phonetic": "/əˈwɔrd/",
     "pos": "noun",
     "meaning": "giải thưởng, phần thưởng",
-    "example": "The team discussed the award during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"giải thưởng, phần thưởng\" trong cuộc họp.",
+    "example": "We discussed the award at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về giải thưởng tại cuộc họp.",
     "translations": {
       "vi": "giải thưởng, phần thưởng"
     }
@@ -9540,24 +9527,24 @@ export const VOCABULARY: Word[] = [
     "id": "ben-39",
     "topic": "Employee Benefits",
     "word": "performance",
-    "phonetic": "/pəfˈɔːməns/",
+    "phonetic": "/pɚˈfɔrməns/",
     "pos": "noun",
-    "meaning": "sự biểu diễn, trình diễn",
-    "example": "The team discussed the performance during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự biểu diễn, trình diễn\" trong cuộc họp.",
+    "meaning": "buổi biểu diễn; hiệu quả thực hiện công việc",
+    "example": "The theater announced a new performance.",
+    "exampleTranslation": "Nhà hát thông báo buổi biểu diễn mới.",
     "translations": {
-      "vi": "sự biểu diễn, trình diễn"
+      "vi": "buổi biểu diễn; hiệu quả thực hiện công việc"
     }
   },
   {
     "id": "ben-40",
     "topic": "Employee Benefits",
     "word": "reward",
-    "phonetic": "/ɹɪwˈɔːd/",
+    "phonetic": "/rɪˈwɔrd/",
     "pos": "verb",
     "meaning": "thưởng",
-    "example": "The team plans to reward before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thưởng\" trước thời hạn.",
+    "example": "Please reward employees for good performance.",
+    "exampleTranslation": "Hãy khen thưởng nhân viên làm việc tốt.",
     "translations": {
       "vi": "thưởng"
     }
@@ -9566,11 +9553,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-41",
     "topic": "Employee Benefits",
     "word": "search",
-    "phonetic": "/sˈɜːtʃ/",
+    "phonetic": "/ˈsɝtʃ/",
     "pos": "noun",
     "meaning": "sự tìm kiếm, sự điều tra",
-    "example": "The team discussed the search during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự tìm kiếm, sự điều tra\" trong cuộc họp.",
+    "example": "We discussed the search at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự tìm kiếm tại cuộc họp.",
     "translations": {
       "vi": "sự tìm kiếm, sự điều tra"
     }
@@ -9579,37 +9566,37 @@ export const VOCABULARY: Word[] = [
     "id": "ben-42",
     "topic": "Employee Benefits",
     "word": "early",
-    "phonetic": "/ˈɜːli/",
-    "pos": "adj",
-    "meaning": "sớm, gần đây",
-    "example": "The manager described the proposal as early.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"sớm, gần đây\".",
+    "phonetic": "/ˈɝli/",
+    "pos": "adjective",
+    "meaning": "sớm, đầu kỳ",
+    "example": "The early flight leaves at six.",
+    "exampleTranslation": "Chuyến bay sớm khởi hành lúc sáu giờ.",
     "translations": {
-      "vi": "sớm, gần đây"
+      "vi": "sớm, đầu kỳ"
     }
   },
   {
     "id": "ben-43",
     "topic": "Employee Benefits",
     "word": "dedication",
-    "phonetic": "/dˌɛdɪkˈeɪʃən/",
+    "phonetic": "/dɛdəˈkeɪʃən/",
     "pos": "noun",
-    "meaning": "chỉ định, bổ nhiệm",
-    "example": "The team discussed the dedication during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chỉ định, bổ nhiệm\" trong cuộc họp.",
+    "meaning": "sự tận tâm, sự cống hiến",
+    "example": "Her dedication to customer service impressed us.",
+    "exampleTranslation": "Sự tận tâm của cô ấy với dịch vụ khách hàng khiến chúng tôi ấn tượng.",
     "translations": {
-      "vi": "chỉ định, bổ nhiệm"
+      "vi": "sự tận tâm, sự cống hiến"
     }
   },
   {
     "id": "ben-44",
     "topic": "Employee Benefits",
     "word": "congratulate",
-    "phonetic": "/kənɡɹˈætʃʊlˌeɪt/",
+    "phonetic": "/kənˈɡrætʃəleɪt/",
     "pos": "verb",
     "meaning": "chúc mừng",
-    "example": "The team plans to congratulate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chúc mừng\" trước thời hạn.",
+    "example": "Please congratulate the team on its success.",
+    "exampleTranslation": "Hãy chúc mừng đội về thành công của họ.",
     "translations": {
       "vi": "chúc mừng"
     }
@@ -9618,24 +9605,24 @@ export const VOCABULARY: Word[] = [
     "id": "ben-45",
     "topic": "Employee Benefits",
     "word": "dismiss",
-    "phonetic": "/dɪsmˈɪs/",
+    "phonetic": "/dɪˈsmɪs/",
     "pos": "verb",
-    "meaning": "cho nghỉ,sa thải",
-    "example": "The team plans to dismiss before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cho nghỉ,sa thải\" trước thời hạn.",
+    "meaning": "sa thải; bác bỏ, bỏ qua",
+    "example": "Please dismiss the complaint without investigation.",
+    "exampleTranslation": "Hãy bác bỏ khiếu nại mà không điều tra.",
     "translations": {
-      "vi": "cho nghỉ,sa thải"
+      "vi": "sa thải; bác bỏ, bỏ qua"
     }
   },
   {
     "id": "ben-46",
     "topic": "Employee Benefits",
     "word": "participation",
-    "phonetic": "/pɑːtˈɪsɪpˈeɪʃən/",
+    "phonetic": "/pɑrtɪsəˈpeɪʃən/",
     "pos": "noun",
     "meaning": "sự tham gia, sự tham dự",
-    "example": "The team discussed the participation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự tham gia, sự tham dự\" trong cuộc họp.",
+    "example": "We discussed the participation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự tham gia tại cuộc họp.",
     "translations": {
       "vi": "sự tham gia, sự tham dự"
     }
@@ -9644,11 +9631,11 @@ export const VOCABULARY: Word[] = [
     "id": "ben-47",
     "topic": "Employee Benefits",
     "word": "retire",
-    "phonetic": "/ɹɪtˈaɪə/",
+    "phonetic": "/rɪˈtaɪr/",
     "pos": "verb",
     "meaning": "thôi việc, về hưu",
-    "example": "The team plans to retire before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thôi việc, về hưu\" trước thời hạn.",
+    "example": "Please retire at the age of sixty-five.",
+    "exampleTranslation": "Hãy nghỉ hưu ở tuổi sáu mươi lăm.",
     "translations": {
       "vi": "thôi việc, về hưu"
     }
@@ -9657,11 +9644,11 @@ export const VOCABULARY: Word[] = [
     "id": "rot-01",
     "topic": "Job Rotation",
     "word": "resignation",
-    "phonetic": "/ɹɪzɪɡnˈeɪʃən/",
+    "phonetic": "/rɛzəɡˈneɪʃən/",
     "pos": "noun",
     "meaning": "sự từ chức",
-    "example": "The team discussed the resignation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự từ chức\" trong cuộc họp.",
+    "example": "She submitted her resignation yesterday.",
+    "exampleTranslation": "Cô ấy nộp đơn từ chức hôm qua.",
     "translations": {
       "vi": "sự từ chức"
     }
@@ -9670,24 +9657,24 @@ export const VOCABULARY: Word[] = [
     "id": "rot-02",
     "topic": "Job Rotation",
     "word": "strictly",
-    "phonetic": "/stɹˈɪktli/",
-    "pos": "adv",
-    "meaning": "nghiêm khắc, hoànt oàn",
-    "example": "The team completed the task strictly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"nghiêm khắc, hoànt oàn\".",
+    "phonetic": "/ˈstrɪktli/",
+    "pos": "adverb",
+    "meaning": "nghiêm khắc, hoàn toàn",
+    "example": "Safety rules must be strictly followed.",
+    "exampleTranslation": "Phải tuân thủ nghiêm ngặt quy định an toàn.",
     "translations": {
-      "vi": "nghiêm khắc, hoànt oàn"
+      "vi": "nghiêm khắc, hoàn toàn"
     }
   },
   {
     "id": "rot-03",
     "topic": "Job Rotation",
     "word": "appoint",
-    "phonetic": "/ɐpˈɔɪnt/",
+    "phonetic": "/əˈpɔɪnt/",
     "pos": "verb",
     "meaning": "chỉ định, bổ nhiệm",
-    "example": "The team plans to appoint before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chỉ định, bổ nhiệm\" trước thời hạn.",
+    "example": "Please appoint a new department head.",
+    "exampleTranslation": "Hãy bổ nhiệm trưởng phòng mới.",
     "translations": {
       "vi": "chỉ định, bổ nhiệm"
     }
@@ -9696,11 +9683,11 @@ export const VOCABULARY: Word[] = [
     "id": "rot-04",
     "topic": "Job Rotation",
     "word": "management",
-    "phonetic": "/mˈænɪdʒmənt/",
+    "phonetic": "/ˈmænədʒmənt/",
     "pos": "noun",
     "meaning": "sự quản lý, ban quản lý",
-    "example": "The team discussed the management during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự quản lý, ban quản lý\" trong cuộc họp.",
+    "example": "We discussed the management at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự quản lý tại cuộc họp.",
     "translations": {
       "vi": "sự quản lý, ban quản lý"
     }
@@ -9709,24 +9696,24 @@ export const VOCABULARY: Word[] = [
     "id": "rot-05",
     "topic": "Job Rotation",
     "word": "transfer",
-    "phonetic": "/ˈtɹænsfɝ/",
+    "phonetic": "/trænˈsfɝ/",
     "pos": "verb",
-    "meaning": "chuy ển, dời; thuy ên chuyển",
-    "example": "The team plans to transfer before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chuy ển, dời; thuy ên chuyển\" trước thời hạn.",
+    "meaning": "chuyển, dời; thuyên chuyển",
+    "example": "Please transfer the funds electronically.",
+    "exampleTranslation": "Hãy chuyển tiền bằng phương thức điện tử.",
     "translations": {
-      "vi": "chuy ển, dời; thuy ên chuyển"
+      "vi": "chuyển, dời; thuyên chuyển"
     }
   },
   {
     "id": "rot-06",
     "topic": "Job Rotation",
     "word": "mandatory",
-    "phonetic": "/mˈændətəɹˌi/",
-    "pos": "adj",
+    "phonetic": "/ˈmændətɔri/",
+    "pos": "adjective",
     "meaning": "bắt buộc",
-    "example": "The manager described the proposal as mandatory.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"bắt buộc\".",
+    "example": "Attendance at the training is mandatory.",
+    "exampleTranslation": "Việc tham dự đào tạo là bắt buộc.",
     "translations": {
       "vi": "bắt buộc"
     }
@@ -9735,11 +9722,11 @@ export const VOCABULARY: Word[] = [
     "id": "rot-07",
     "topic": "Job Rotation",
     "word": "designate",
-    "phonetic": "/dˈɛzɪɡnˌeɪt/",
+    "phonetic": "/ˈdɛzəɡneɪt/",
     "pos": "verb",
     "meaning": "chỉ định, bổ nhiệm",
-    "example": "The team plans to designate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chỉ định, bổ nhiệm\" trước thời hạn.",
+    "example": "Please designate a person to lead the team.",
+    "exampleTranslation": "Hãy chỉ định một người lãnh đạo đội.",
     "translations": {
       "vi": "chỉ định, bổ nhiệm"
     }
@@ -9748,11 +9735,11 @@ export const VOCABULARY: Word[] = [
     "id": "rot-08",
     "topic": "Job Rotation",
     "word": "unanimously",
-    "phonetic": "/juːnˈænɪməsli/",
-    "pos": "adv",
+    "phonetic": "/juˈnænəməsli/",
+    "pos": "adverb",
     "meaning": "đồng thuận, nhất trí",
-    "example": "The team completed the task unanimously.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"đồng thuận, nhất trí\".",
+    "example": "The committee unanimously approved the proposal.",
+    "exampleTranslation": "Ủy ban nhất trí phê duyệt đề xuất.",
     "translations": {
       "vi": "đồng thuận, nhất trí"
     }
@@ -9761,11 +9748,11 @@ export const VOCABULARY: Word[] = [
     "id": "rot-09",
     "topic": "Job Rotation",
     "word": "independence",
-    "phonetic": "/ˌɪndɪpˈɛndəns/",
+    "phonetic": "/ɪndɪˈpɛndəns/",
     "pos": "noun",
     "meaning": "sự độc lập, nền độc lập",
-    "example": "The team discussed the independence during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự độc lập, nền độc lập\" trong cuộc họp.",
+    "example": "We discussed the independence at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự độc lập tại cuộc họp.",
     "translations": {
       "vi": "sự độc lập, nền độc lập"
     }
@@ -9774,11 +9761,11 @@ export const VOCABULARY: Word[] = [
     "id": "rot-10",
     "topic": "Job Rotation",
     "word": "praise",
-    "phonetic": "/pɹˈeɪz/",
+    "phonetic": "/ˈpreɪz/",
     "pos": "noun",
     "meaning": "sự khen ngợi, lời tán dương",
-    "example": "The team discussed the praise during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự khen ngợi, lời tán dương\" trong cuộc họp.",
+    "example": "The team received praise for its work.",
+    "exampleTranslation": "Đội được khen về công việc của mình.",
     "translations": {
       "vi": "sự khen ngợi, lời tán dương"
     }
@@ -9787,11 +9774,11 @@ export const VOCABULARY: Word[] = [
     "id": "rot-11",
     "topic": "Job Rotation",
     "word": "nomination",
-    "phonetic": "/nˌɒmɪnˈeɪʃən/",
+    "phonetic": "/nɑməˈneɪʃən/",
     "pos": "noun",
     "meaning": "sự bổ nhiệm, sự đề cử",
-    "example": "The team discussed the nomination during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự bổ nhiệm, sự đề cử\" trong cuộc họp.",
+    "example": "We discussed the nomination at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự bổ nhiệm tại cuộc họp.",
     "translations": {
       "vi": "sự bổ nhiệm, sự đề cử"
     }
@@ -9800,24 +9787,24 @@ export const VOCABULARY: Word[] = [
     "id": "rot-12",
     "topic": "Job Rotation",
     "word": "reorganize",
-    "phonetic": "/ɹiˈɔɹɡəˌnaɪz/",
+    "phonetic": "/riˈɔrɡənaɪz/",
     "pos": "verb",
-    "meaning": "tổ chức lại, cảitổ lại",
-    "example": "The team plans to reorganize before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tổ chức lại, cảitổ lại\" trước thời hạn.",
+    "meaning": "tổ chức lại, cải tổ lại",
+    "example": "Please reorganize the filing system.",
+    "exampleTranslation": "Hãy tổ chức lại hệ thống lưu hồ sơ.",
     "translations": {
-      "vi": "tổ chức lại, cảitổ lại"
+      "vi": "tổ chức lại, cải tổ lại"
     }
   },
   {
     "id": "tff-01",
     "topic": "Traffic",
     "word": "alleviate",
-    "phonetic": "/ɐlˈiːvɪˌeɪt/",
+    "phonetic": "/əˈlivieɪt/",
     "pos": "verb",
     "meaning": "làm dịu, làm giảm bớt",
-    "example": "The team plans to alleviate before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm dịu, làm giảm bớt\" trước thời hạn.",
+    "example": "Please alleviate the pressure on the team.",
+    "exampleTranslation": "Hãy giảm áp lực cho đội.",
     "translations": {
       "vi": "làm dịu, làm giảm bớt"
     }
@@ -9826,24 +9813,24 @@ export const VOCABULARY: Word[] = [
     "id": "tff-02",
     "topic": "Traffic",
     "word": "opportunity",
-    "phonetic": "/ɒpətjˈuːnɪti/",
+    "phonetic": "/ɑpɚˈtunəti/",
     "pos": "noun",
-    "meaning": "cơ hội, thờicơ",
-    "example": "The team discussed the opportunity during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cơ hội, thờicơ\" trong cuộc họp.",
+    "meaning": "cơ hội, thời cơ",
+    "example": "We discussed the opportunity at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về cơ hội tại cuộc họp.",
     "translations": {
-      "vi": "cơ hội, thờicơ"
+      "vi": "cơ hội, thời cơ"
     }
   },
   {
     "id": "tff-03",
     "topic": "Traffic",
     "word": "detailed",
-    "phonetic": "/dˈiːteɪld/",
-    "pos": "adj",
+    "phonetic": "/dɪˈteɪld/",
+    "pos": "adjective",
     "meaning": "chi tiết, cặn kẽ, tỉ mỉ",
-    "example": "The manager described the proposal as detailed.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"chi tiết, cặn kẽ, tỉ mỉ\".",
+    "example": "The proposed plan is detailed.",
+    "exampleTranslation": "Kế hoạch được đề xuất chi tiết.",
     "translations": {
       "vi": "chi tiết, cặn kẽ, tỉ mỉ"
     }
@@ -9852,11 +9839,11 @@ export const VOCABULARY: Word[] = [
     "id": "tff-04",
     "topic": "Traffic",
     "word": "alternative",
-    "phonetic": "/ɔːltˈɜːnətˌɪv/",
+    "phonetic": "/ɔlˈtɝnətɪv/",
     "pos": "noun",
     "meaning": "sự lựa chọn, phương án khác",
-    "example": "The team discussed the alternative during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự lựa chọn, phương án khác\" trong cuộc họp.",
+    "example": "We discussed the alternative at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự lựa chọn tại cuộc họp.",
     "translations": {
       "vi": "sự lựa chọn, phương án khác"
     }
@@ -9865,11 +9852,11 @@ export const VOCABULARY: Word[] = [
     "id": "tff-05",
     "topic": "Traffic",
     "word": "obtain",
-    "phonetic": "/ɒbtˈeɪn/",
+    "phonetic": "/əbˈteɪn/",
     "pos": "verb",
     "meaning": "đạt được, giành được",
-    "example": "The team plans to obtain before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đạt được, giành được\" trước thời hạn.",
+    "example": "Please obtain written permission first.",
+    "exampleTranslation": "Hãy xin phép bằng văn bản trước.",
     "translations": {
       "vi": "đạt được, giành được"
     }
@@ -9878,37 +9865,37 @@ export const VOCABULARY: Word[] = [
     "id": "tff-06",
     "topic": "Traffic",
     "word": "fare",
-    "phonetic": "/fˈeə/",
+    "phonetic": "/ˈfɛr/",
     "pos": "noun",
-    "meaning": "tiềnx e, tiềnvé",
-    "example": "The team discussed the fare during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tiềnx e, tiềnvé\" trong cuộc họp.",
+    "meaning": "tiền xe, tiền vé",
+    "example": "Please pay the bus fare.",
+    "exampleTranslation": "Hãy trả tiền xe buýt.",
     "translations": {
-      "vi": "tiềnx e, tiềnvé"
+      "vi": "tiền xe, tiền vé"
     }
   },
   {
     "id": "tff-07",
     "topic": "Traffic",
     "word": "expense",
-    "phonetic": "/ɛkspˈɛns/",
+    "phonetic": "/ɪkˈspɛns/",
     "pos": "noun",
-    "meaning": "chi phí, phít ổn",
-    "example": "The team discussed the expense during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chi phí, phít ổn\" trong cuộc họp.",
+    "meaning": "chi phí, phí tổn",
+    "example": "We discussed the expense at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về chi phí tại cuộc họp.",
     "translations": {
-      "vi": "chi phí, phít ổn"
+      "vi": "chi phí, phí tổn"
     }
   },
   {
     "id": "tff-08",
     "topic": "Traffic",
     "word": "trust",
-    "phonetic": "/tɹˈʌst/",
+    "phonetic": "/ˈtrʌst/",
     "pos": "noun",
     "meaning": "lòng tin, sự tin cậy",
-    "example": "The team discussed the trust during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lòng tin, sự tin cậy\" trong cuộc họp.",
+    "example": "We discussed the trust at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về lòng tin tại cuộc họp.",
     "translations": {
       "vi": "lòng tin, sự tin cậy"
     }
@@ -9917,11 +9904,11 @@ export const VOCABULARY: Word[] = [
     "id": "tff-09",
     "topic": "Traffic",
     "word": "securely",
-    "phonetic": "/sɪkjˈɔːli/",
-    "pos": "adv",
+    "phonetic": "/sɪˈkjʊrli/",
+    "pos": "adverb",
     "meaning": "chắc chắn, an toàn",
-    "example": "The team completed the task securely.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"chắc chắn, an toàn\".",
+    "example": "Store confidential files securely.",
+    "exampleTranslation": "Hãy lưu trữ tài liệu bí mật an toàn.",
     "translations": {
       "vi": "chắc chắn, an toàn"
     }
@@ -9930,11 +9917,11 @@ export const VOCABULARY: Word[] = [
     "id": "tff-10",
     "topic": "Traffic",
     "word": "prominently",
-    "phonetic": "/pɹˈɒmɪnəntli/",
-    "pos": "adv",
+    "phonetic": "/ˈprɑmənəntli/",
+    "pos": "adverb",
     "meaning": "dễ thấy, nổi bật",
-    "example": "The team completed the task prominently.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"dễ thấy, nổi bật\".",
+    "example": "The warning is prominently displayed.",
+    "exampleTranslation": "Cảnh báo được đặt ở vị trí dễ thấy.",
     "translations": {
       "vi": "dễ thấy, nổi bật"
     }
@@ -9943,11 +9930,11 @@ export const VOCABULARY: Word[] = [
     "id": "tff-11",
     "topic": "Traffic",
     "word": "reserved",
-    "phonetic": "/ɹiˈzɝvd/",
-    "pos": "adj",
+    "phonetic": "/rɪˈzɝvd/",
+    "pos": "adjective",
     "meaning": "dành riêng, được đặt trước",
-    "example": "The manager described the proposal as reserved.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"dành riêng, được đặt trước\".",
+    "example": "These seats are reserved for guests.",
+    "exampleTranslation": "Những chỗ này được dành trước cho khách.",
     "translations": {
       "vi": "dành riêng, được đặt trước"
     }
@@ -9956,24 +9943,24 @@ export const VOCABULARY: Word[] = [
     "id": "tff-12",
     "topic": "Traffic",
     "word": "congestion",
-    "phonetic": "/kəndʒˈɛstʃən/",
+    "phonetic": "/kənˈdʒɛstʃən/",
     "pos": "noun",
-    "meaning": "ngã tư, chỗ giao nhau",
-    "example": "The team discussed the congestion during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"ngã tư, chỗ giao nhau\" trong cuộc họp.",
+    "meaning": "sự tắc nghẽn, sự ùn tắc",
+    "example": "Traffic congestion caused a long delay.",
+    "exampleTranslation": "Ùn tắc giao thông gây chậm trễ kéo dài.",
     "translations": {
-      "vi": "ngã tư, chỗ giao nhau"
+      "vi": "sự tắc nghẽn, sự ùn tắc"
     }
   },
   {
     "id": "tff-13",
     "topic": "Traffic",
     "word": "inward",
-    "phonetic": "/ˈɪnwəd/",
-    "pos": "adv",
+    "phonetic": "/ˈɪnwɚd/",
+    "pos": "adverb",
     "meaning": "ở/về phía trung tâm, vào phía trong",
-    "example": "The team completed the task inward.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"ở/về phía trung tâm, vào phía trong\".",
+    "example": "The door opens inward for safety.",
+    "exampleTranslation": "Cửa mở vào phía trong để bảo đảm an toàn.",
     "translations": {
       "vi": "ở/về phía trung tâm, vào phía trong"
     }
@@ -9982,37 +9969,37 @@ export const VOCABULARY: Word[] = [
     "id": "tff-14",
     "topic": "Traffic",
     "word": "detour",
-    "phonetic": "/dˈiːtɔː/",
+    "phonetic": "/dɪˈtʊr/",
     "pos": "noun",
-    "meaning": "khúc ngoặt, đườngv òng",
-    "example": "The team discussed the detour during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"khúc ngoặt, đườngv òng\" trong cuộc họp.",
+    "meaning": "khúc ngoặt, đường vòng",
+    "example": "We inspected the detour yesterday.",
+    "exampleTranslation": "Chúng tôi kiểm tra khúc ngoặt hôm qua.",
     "translations": {
-      "vi": "khúc ngoặt, đườngv òng"
+      "vi": "khúc ngoặt, đường vòng"
     }
   },
   {
     "id": "tff-15",
     "topic": "Traffic",
     "word": "malfunction",
-    "phonetic": "/mˌælfˈʌŋkʃən/",
+    "phonetic": "/mælˈfʌŋkʃən/",
     "pos": "noun",
-    "meaning": "sự trục tr ặc, sựcố",
-    "example": "The team discussed the malfunction during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự trục tr ặc, sựcố\" trong cuộc họp.",
+    "meaning": "sự trục trặc, sự cố",
+    "example": "We discussed the malfunction at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự trục trặc tại cuộc họp.",
     "translations": {
-      "vi": "sự trục tr ặc, sựcố"
+      "vi": "sự trục trặc, sự cố"
     }
   },
   {
     "id": "tff-16",
     "topic": "Traffic",
     "word": "ongoing",
-    "phonetic": "/ˈɒŋɡəʊɪŋ/",
-    "pos": "adj",
+    "phonetic": "/ˈɑnɡoʊɪŋ/",
+    "pos": "adjective",
     "meaning": "liên tục, đang tiếp diễn",
-    "example": "The manager described the proposal as ongoing.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"liên tục, đang tiếp diễn\".",
+    "example": "The ongoing repairs will finish tomorrow.",
+    "exampleTranslation": "Việc sửa chữa đang diễn ra sẽ hoàn thành vào ngày mai.",
     "translations": {
       "vi": "liên tục, đang tiếp diễn"
     }
@@ -10021,11 +10008,11 @@ export const VOCABULARY: Word[] = [
     "id": "tff-17",
     "topic": "Traffic",
     "word": "intersection",
-    "phonetic": "/ˌɪntəsˈɛkʃən/",
+    "phonetic": "/ɪntɚˈsɛkʃən/",
     "pos": "noun",
     "meaning": "ngã tư, chỗ giao nhau",
-    "example": "The team discussed the intersection during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"ngã tư, chỗ giao nhau\" trong cuộc họp.",
+    "example": "We discussed the intersection at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về ngã tư tại cuộc họp.",
     "translations": {
       "vi": "ngã tư, chỗ giao nhau"
     }
@@ -10034,11 +10021,11 @@ export const VOCABULARY: Word[] = [
     "id": "tff-18",
     "topic": "Traffic",
     "word": "commute",
-    "phonetic": "/kəmjˈuːt/",
+    "phonetic": "/kəˈmjut/",
     "pos": "verb",
     "meaning": "đi lại đều đặn (đi làm)",
-    "example": "The team plans to commute before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đi lại đều đặn (đi làm)\" trước thời hạn.",
+    "example": "Please commute to work by train.",
+    "exampleTranslation": "Hãy đi làm bằng tàu.",
     "translations": {
       "vi": "đi lại đều đặn (đi làm)"
     }
@@ -10047,24 +10034,24 @@ export const VOCABULARY: Word[] = [
     "id": "tff-19",
     "topic": "Traffic",
     "word": "automotive",
-    "phonetic": "/ˌɔːtəʊmˈəʊtɪv/",
-    "pos": "adj",
-    "meaning": "tự động, (thuộc)ô tô",
-    "example": "The manager described the proposal as automotive.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tự động, (thuộc)ô tô\".",
+    "phonetic": "/ɔtəˈmoʊtɪv/",
+    "pos": "adjective",
+    "meaning": "thuộc về ô tô, ngành ô tô",
+    "example": "He works in the automotive industry.",
+    "exampleTranslation": "Anh ấy làm trong ngành ô tô.",
     "translations": {
-      "vi": "tự động, (thuộc)ô tô"
+      "vi": "thuộc về ô tô, ngành ô tô"
     }
   },
   {
     "id": "tff-20",
     "topic": "Traffic",
     "word": "closure",
-    "phonetic": "/klˈəʊʒɐ/",
+    "phonetic": "/ˈkloʊʒɚ/",
     "pos": "noun",
     "meaning": "sự đóng cửa",
-    "example": "The team discussed the closure during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đóng cửa\" trong cuộc họp.",
+    "example": "We discussed the closure at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự đóng cửa tại cuộc họp.",
     "translations": {
       "vi": "sự đóng cửa"
     }
@@ -10073,11 +10060,11 @@ export const VOCABULARY: Word[] = [
     "id": "tff-21",
     "topic": "Traffic",
     "word": "platform",
-    "phonetic": "/plˈætfɔːm/",
+    "phonetic": "/ˈplætfɔrm/",
     "pos": "noun",
     "meaning": "sân ga",
-    "example": "The team discussed the platform during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sân ga\" trong cuộc họp.",
+    "example": "We inspected the platform yesterday.",
+    "exampleTranslation": "Chúng tôi kiểm tra sân ga hôm qua.",
     "translations": {
       "vi": "sân ga"
     }
@@ -10086,24 +10073,24 @@ export const VOCABULARY: Word[] = [
     "id": "tff-22",
     "topic": "Traffic",
     "word": "head",
-    "phonetic": "/hˈɛd/",
+    "phonetic": "/ˈhɛd/",
     "pos": "verb",
-    "meaning": "dẫn đầu, hướngv ề, đivề phía",
-    "example": "The team plans to head before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"dẫn đầu, hướngv ề, đivề phía\" trước thời hạn.",
+    "meaning": "dẫn đầu, hướng về, đi về phía",
+    "example": "Please head toward the main entrance.",
+    "exampleTranslation": "Hãy đi về phía lối vào chính.",
     "translations": {
-      "vi": "dẫn đầu, hướngv ề, đivề phía"
+      "vi": "dẫn đầu, hướng về, đi về phía"
     }
   },
   {
     "id": "tff-23",
     "topic": "Traffic",
     "word": "pass",
-    "phonetic": "/pˈɑːs/",
+    "phonetic": "/ˈpæs/",
     "pos": "verb",
     "meaning": "đi qua, vượt qua",
-    "example": "The team plans to pass before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đi qua, vượt qua\" trước thời hạn.",
+    "example": "Please pass through the security checkpoint.",
+    "exampleTranslation": "Hãy đi qua chốt kiểm tra an ninh.",
     "translations": {
       "vi": "đi qua, vượt qua"
     }
@@ -10112,11 +10099,11 @@ export const VOCABULARY: Word[] = [
     "id": "tff-24",
     "topic": "Traffic",
     "word": "average",
-    "phonetic": "/ˈævɹɪdʒ/",
+    "phonetic": "/ˈævɚɪdʒ/",
     "pos": "noun",
     "meaning": "số trung bình, mức bình quân",
-    "example": "The team discussed the average during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"số trung bình, mức bình quân\" trong cuộc họp.",
+    "example": "We discussed the average at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về số trung bình tại cuộc họp.",
     "translations": {
       "vi": "số trung bình, mức bình quân"
     }
@@ -10125,24 +10112,24 @@ export const VOCABULARY: Word[] = [
     "id": "tff-25",
     "topic": "Traffic",
     "word": "tow",
-    "phonetic": "/tˈəʊ/",
+    "phonetic": "/ˈtoʊ/",
     "pos": "verb",
-    "meaning": "kéo, lai dắt (t àu, thuy ền)",
-    "example": "The team plans to tow before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"kéo, lai dắt (t àu, thuy ền)\" trước thời hạn.",
+    "meaning": "kéo, lai dắt (tàu, thuyền)",
+    "example": "Please tow the damaged vehicle to a garage.",
+    "exampleTranslation": "Hãy kéo chiếc xe bị hỏng đến xưởng sửa chữa.",
     "translations": {
-      "vi": "kéo, lai dắt (t àu, thuy ền)"
+      "vi": "kéo, lai dắt (tàu, thuyền)"
     }
   },
   {
     "id": "tff-26",
     "topic": "Traffic",
     "word": "reverse",
-    "phonetic": "/ɹɪvˈɜːs/",
-    "pos": "adj",
+    "phonetic": "/rɪˈvɝs/",
+    "pos": "adjective",
     "meaning": "đảo, ngược, trái lại",
-    "example": "The manager described the proposal as reverse.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đảo, ngược, trái lại\".",
+    "example": "Use reverse gear when backing up.",
+    "exampleTranslation": "Hãy dùng số lùi khi lùi xe.",
     "translations": {
       "vi": "đảo, ngược, trái lại"
     }
@@ -10151,11 +10138,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-01",
     "topic": "Bank",
     "word": "overdue",
-    "phonetic": "/ˌəʊvədjˈuː/",
-    "pos": "adj",
+    "phonetic": "/ˈoʊvɚˈdu/",
+    "pos": "adjective",
     "meaning": "quá hạn",
-    "example": "The manager described the proposal as overdue.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"quá hạn\".",
+    "example": "The payment is now overdue.",
+    "exampleTranslation": "Khoản thanh toán hiện đã quá hạn.",
     "translations": {
       "vi": "quá hạn"
     }
@@ -10164,11 +10151,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-02",
     "topic": "Bank",
     "word": "regrettably",
-    "phonetic": "/ɹɪɡɹˈɛtəbli/",
-    "pos": "adv",
+    "phonetic": "/rɪˈɡrɛtəbli/",
+    "pos": "adverb",
     "meaning": "thật đáng tiếc",
-    "example": "The team completed the task regrettably.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"thật đáng tiếc\".",
+    "example": "Regrettably, the flight has been canceled.",
+    "exampleTranslation": "Rất tiếc, chuyến bay đã bị hủy.",
     "translations": {
       "vi": "thật đáng tiếc"
     }
@@ -10177,24 +10164,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-03",
     "topic": "Bank",
     "word": "deposit",
-    "phonetic": "/dɪpˈɒsɪt/",
+    "phonetic": "/dəˈpɑzɪt/",
     "pos": "verb",
-    "meaning": "gởi, nộp (tiềnở ngân hàng)",
-    "example": "The team plans to deposit before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"gởi, nộp (tiềnở ngân hàng)\" trước thời hạn.",
+    "meaning": "gửi, nộp (tiền ở ngân hàng)",
+    "example": "Please deposit the money into your account.",
+    "exampleTranslation": "Hãy gửi tiền vào tài khoản.",
     "translations": {
-      "vi": "gởi, nộp (tiềnở ngân hàng)"
+      "vi": "gửi, nộp (tiền ở ngân hàng)"
     }
   },
   {
     "id": "ban-04",
     "topic": "Bank",
     "word": "previously",
-    "phonetic": "/pɹˈiːvɪəsli/",
-    "pos": "adv",
+    "phonetic": "/ˈpriviəsli/",
+    "pos": "adverb",
     "meaning": "trước, trước đây",
-    "example": "The team completed the task previously.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"trước, trước đây\".",
+    "example": "We previously used a different supplier.",
+    "exampleTranslation": "Trước đây chúng tôi dùng nhà cung cấp khác.",
     "translations": {
       "vi": "trước, trước đây"
     }
@@ -10203,11 +10190,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-05",
     "topic": "Bank",
     "word": "receive",
-    "phonetic": "/ɹɪsˈiːv/",
+    "phonetic": "/rəˈsiv/",
     "pos": "verb",
     "meaning": "nhận, lĩnh, thu",
-    "example": "The team plans to receive before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nhận, lĩnh, thu\" trước thời hạn.",
+    "example": "Please receive the delivery before noon.",
+    "exampleTranslation": "Hãy nhận hàng trước buổi trưa.",
     "translations": {
       "vi": "nhận, lĩnh, thu"
     }
@@ -10216,24 +10203,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-06",
     "topic": "Bank",
     "word": "expect",
-    "phonetic": "/ɛkspˈɛkt/",
+    "phonetic": "/ɪkˈspɛkt/",
     "pos": "verb",
-    "meaning": "tr ông đợi, dự đoán",
-    "example": "The team plans to expect before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tr ông đợi, dự đoán\" trước thời hạn.",
+    "meaning": "trông đợi, dự đoán",
+    "example": "Please expect a reply within two days.",
+    "exampleTranslation": "Hãy mong nhận được trả lời trong hai ngày.",
     "translations": {
-      "vi": "tr ông đợi, dự đoán"
+      "vi": "trông đợi, dự đoán"
     }
   },
   {
     "id": "ban-07",
     "topic": "Bank",
     "word": "study",
-    "phonetic": "/stˈʌdi/",
+    "phonetic": "/ˈstʌdi/",
     "pos": "noun",
     "meaning": "sự nghiên cứu, sự tìm tòi",
-    "example": "The team discussed the study during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự nghiên cứu, sự tìm tòi\" trong cuộc họp.",
+    "example": "The study examined consumer behavior.",
+    "exampleTranslation": "Nghiên cứu xem xét hành vi người tiêu dùng.",
     "translations": {
       "vi": "sự nghiên cứu, sự tìm tòi"
     }
@@ -10242,11 +10229,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-08",
     "topic": "Bank",
     "word": "lower",
-    "phonetic": "/ˈɫoʊɝ/",
+    "phonetic": "/ˈloʊɚ/",
     "pos": "verb",
     "meaning": "hạ thấp, giảm",
-    "example": "The team plans to lower before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hạ thấp, giảm\" trước thời hạn.",
+    "example": "Please lower the price slightly.",
+    "exampleTranslation": "Hãy giảm giá một chút.",
     "translations": {
       "vi": "hạ thấp, giảm"
     }
@@ -10255,37 +10242,37 @@ export const VOCABULARY: Word[] = [
     "id": "ban-09",
     "topic": "Bank",
     "word": "double",
-    "phonetic": "/dˈʌbəl/",
+    "phonetic": "/ˈdʌbəl/",
     "pos": "verb",
-    "meaning": "nhân đôi,t ăng gấp đôi",
-    "example": "The team plans to double before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nhân đôi,t ăng gấp đôi\" trước thời hạn.",
+    "meaning": "nhân đôi, tăng gấp đôi",
+    "example": "Please double the storage capacity.",
+    "exampleTranslation": "Hãy tăng gấp đôi sức chứa.",
     "translations": {
-      "vi": "nhân đôi,t ăng gấp đôi"
+      "vi": "nhân đôi, tăng gấp đôi"
     }
   },
   {
     "id": "ban-10",
     "topic": "Bank",
     "word": "interest",
-    "phonetic": "/ˈɪntɹəst/",
+    "phonetic": "/ˈɪntrəst/",
     "pos": "noun",
-    "meaning": "sự quant âm; lợi ích; tiền lãi",
-    "example": "The team discussed the interest during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự quant âm; lợi ích; tiền lãi\" trong cuộc họp.",
+    "meaning": "tiền lãi; sự quan tâm, lợi ích",
+    "example": "The bank pays interest on savings.",
+    "exampleTranslation": "Ngân hàng trả lãi cho tiền tiết kiệm.",
     "translations": {
-      "vi": "sự quant âm; lợi ích; tiền lãi"
+      "vi": "tiền lãi; sự quan tâm, lợi ích"
     }
   },
   {
     "id": "ban-11",
     "topic": "Bank",
     "word": "alternatively",
-    "phonetic": "/ɔːltˈɜːnətˌɪvli/",
-    "pos": "adv",
+    "phonetic": "/ɔlˈtɝnətɪvli/",
+    "pos": "adverb",
     "meaning": "hoặc, như một sự lựa chọn",
-    "example": "The team completed the task alternatively.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"hoặc, như một sự lựa chọn\".",
+    "example": "You can pay online or, alternatively, by check.",
+    "exampleTranslation": "Bạn có thể trả trực tuyến hoặc chọn trả bằng séc.",
     "translations": {
       "vi": "hoặc, như một sự lựa chọn"
     }
@@ -10294,11 +10281,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-12",
     "topic": "Bank",
     "word": "attentive",
-    "phonetic": "/ɐtˈɛntɪv/",
-    "pos": "adj",
+    "phonetic": "/əˈtɛntɪv/",
+    "pos": "adjective",
     "meaning": "chăm chú, lưu tâm",
-    "example": "The manager described the proposal as attentive.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"chăm chú, lưu tâm\".",
+    "example": "The employee seemed attentive during the interview.",
+    "exampleTranslation": "Nhân viên có vẻ chăm chú trong buổi phỏng vấn.",
     "translations": {
       "vi": "chăm chú, lưu tâm"
     }
@@ -10307,11 +10294,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-13",
     "topic": "Bank",
     "word": "heavily",
-    "phonetic": "/hˈɛvili/",
-    "pos": "adv",
+    "phonetic": "/ˈhɛvəli/",
+    "pos": "adverb",
     "meaning": "nặng, nặng nề",
-    "example": "The team completed the task heavily.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"nặng, nặng nề\".",
+    "example": "The company invested heavily in training.",
+    "exampleTranslation": "Công ty đầu tư nhiều vào đào tạo.",
     "translations": {
       "vi": "nặng, nặng nề"
     }
@@ -10320,24 +10307,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-14",
     "topic": "Bank",
     "word": "payable",
-    "phonetic": "/pˈeɪəbəl/",
-    "pos": "adj",
-    "meaning": "có thể tr ả, phải trả",
-    "example": "The manager described the proposal as payable.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có thể tr ả, phải trả\".",
+    "phonetic": "/ˈpeɪəbəl/",
+    "pos": "adjective",
+    "meaning": "có thể trả, phải trả",
+    "example": "The invoice is payable within thirty days.",
+    "exampleTranslation": "Hóa đơn phải được thanh toán trong ba mươi ngày.",
     "translations": {
-      "vi": "có thể tr ả, phải trả"
+      "vi": "có thể trả, phải trả"
     }
   },
   {
     "id": "ban-15",
     "topic": "Bank",
     "word": "personal",
-    "phonetic": "/pˈɜːsənəl/",
-    "pos": "adj",
+    "phonetic": "/ˈpɝsɪnəl/",
+    "pos": "adjective",
     "meaning": "riêng, cá nhân",
-    "example": "The manager described the proposal as personal.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"riêng, cá nhân\".",
+    "example": "Please update your personal information.",
+    "exampleTranslation": "Hãy cập nhật thông tin cá nhân.",
     "translations": {
       "vi": "riêng, cá nhân"
     }
@@ -10346,24 +10333,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-16",
     "topic": "Bank",
     "word": "balance",
-    "phonetic": "/bˈæləns/",
+    "phonetic": "/ˈbæləns/",
     "pos": "noun",
-    "meaning": "số dưt ài khoản",
-    "example": "The team discussed the balance during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"số dưt ài khoản\" trong cuộc họp.",
+    "meaning": "số dư tài khoản",
+    "example": "Please check your account balance.",
+    "exampleTranslation": "Hãy kiểm tra số dư tài khoản.",
     "translations": {
-      "vi": "số dưt ài khoản"
+      "vi": "số dư tài khoản"
     }
   },
   {
     "id": "ban-17",
     "topic": "Bank",
     "word": "investigation",
-    "phonetic": "/ɪnvˌɛstɪɡˈeɪʃən/",
+    "phonetic": "/ɪnvɛstəˈɡeɪʃən/",
     "pos": "noun",
     "meaning": "sự điều tra",
-    "example": "The team discussed the investigation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự điều tra\" trong cuộc họp.",
+    "example": "We discussed the investigation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự điều tra tại cuộc họp.",
     "translations": {
       "vi": "sự điều tra"
     }
@@ -10372,37 +10359,37 @@ export const VOCABULARY: Word[] = [
     "id": "ban-18",
     "topic": "Bank",
     "word": "amount",
-    "phonetic": "/ɐmˈaʊnt/",
+    "phonetic": "/əˈmaʊnt/",
     "pos": "noun",
-    "meaning": "lượng,số lượng,số tiền",
-    "example": "The team discussed the amount during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lượng,số lượng,số tiền\" trong cuộc họp.",
+    "meaning": "lượng, số lượng, số tiền",
+    "example": "We discussed the amount at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về lượng tại cuộc họp.",
     "translations": {
-      "vi": "lượng,số lượng,số tiền"
+      "vi": "lượng, số lượng, số tiền"
     }
   },
   {
     "id": "ban-19",
     "topic": "Bank",
     "word": "withdrawal",
-    "phonetic": "/wɪðdɹˈɔːl/",
+    "phonetic": "/wɪðˈdrɔəl/",
     "pos": "noun",
-    "meaning": "sự rútra",
-    "example": "The team discussed the withdrawal during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự rútra\" trong cuộc họp.",
+    "meaning": "sự rút ra, sự rút tiền",
+    "example": "The bank processed the cash withdrawal.",
+    "exampleTranslation": "Ngân hàng xử lý việc rút tiền mặt.",
     "translations": {
-      "vi": "sự rútra"
+      "vi": "sự rút ra, sự rút tiền"
     }
   },
   {
     "id": "ban-20",
     "topic": "Bank",
     "word": "pleasure",
-    "phonetic": "/plˈɛʒɐ/",
+    "phonetic": "/ˈplɛʒɚ/",
     "pos": "noun",
     "meaning": "niềm vui, sự hài lòng",
-    "example": "The team discussed the pleasure during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"niềm vui, sự hài lòng\" trong cuộc họp.",
+    "example": "She expressed pleasure in her message.",
+    "exampleTranslation": "Cô ấy bày tỏ niềm vui trong lời nhắn.",
     "translations": {
       "vi": "niềm vui, sự hài lòng"
     }
@@ -10411,24 +10398,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-21",
     "topic": "Bank",
     "word": "summary",
-    "phonetic": "/sˈʌməɹi/",
+    "phonetic": "/ˈsʌmɚi/",
     "pos": "noun",
-    "meaning": "bảnt ómt ắt",
-    "example": "The team discussed the summary during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bảnt ómt ắt\" trong cuộc họp.",
+    "meaning": "bản tóm tắt",
+    "example": "Please read the summary carefully.",
+    "exampleTranslation": "Hãy đọc bản tóm tắt cẩn thận.",
     "translations": {
-      "vi": "bảnt ómt ắt"
+      "vi": "bản tóm tắt"
     }
   },
   {
     "id": "ban-22",
     "topic": "Bank",
     "word": "temporary",
-    "phonetic": "/tˈɛmpɹəɹˌi/",
-    "pos": "adj",
+    "phonetic": "/ˈtɛmpɚɛri/",
+    "pos": "adjective",
     "meaning": "tạm thời, nhất thời",
-    "example": "The manager described the proposal as temporary.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"tạm thời, nhất thời\".",
+    "example": "We need temporary staff this summer.",
+    "exampleTranslation": "Chúng tôi cần nhân viên thời vụ vào mùa hè này.",
     "translations": {
       "vi": "tạm thời, nhất thời"
     }
@@ -10437,37 +10424,37 @@ export const VOCABULARY: Word[] = [
     "id": "ban-23",
     "topic": "Bank",
     "word": "transaction",
-    "phonetic": "/tɹænsˈækʃən/",
+    "phonetic": "/trænˈzækʃən/",
     "pos": "noun",
-    "meaning": "gsự giao dịch, thương vụ",
-    "example": "The team discussed the transaction during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"gsự giao dịch, thương vụ\" trong cuộc họp.",
+    "meaning": "sự giao dịch, thương vụ",
+    "example": "We discussed the transaction at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự giao dịch tại cuộc họp.",
     "translations": {
-      "vi": "gsự giao dịch, thương vụ"
+      "vi": "sự giao dịch, thương vụ"
     }
   },
   {
     "id": "ban-24",
     "topic": "Bank",
     "word": "reject",
-    "phonetic": "/ˈɹidʒɛkt/",
+    "phonetic": "/rɪˈdʒɛkt/",
     "pos": "verb",
-    "meaning": "đổi, biến đổi, chuyển",
-    "example": "The team plans to reject before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đổi, biến đổi, chuyển\" trước thời hạn.",
+    "meaning": "từ chối, bác bỏ, loại bỏ",
+    "example": "Please reject the incomplete application.",
+    "exampleTranslation": "Hãy từ chối hồ sơ chưa đầy đủ.",
     "translations": {
-      "vi": "đổi, biến đổi, chuyển"
+      "vi": "từ chối, bác bỏ, loại bỏ"
     }
   },
   {
     "id": "ban-25",
     "topic": "Bank",
     "word": "convert",
-    "phonetic": "/ˈkɑnvɝt/",
+    "phonetic": "/ˈkɑnvɚt/",
     "pos": "verb",
     "meaning": "đổi, biến đổi, chuyển",
-    "example": "The team plans to convert before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đổi, biến đổi, chuyển\" trước thời hạn.",
+    "example": "Please convert the price into dollars.",
+    "exampleTranslation": "Hãy đổi giá sang đô la.",
     "translations": {
       "vi": "đổi, biến đổi, chuyển"
     }
@@ -10476,11 +10463,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-26",
     "topic": "Bank",
     "word": "loan",
-    "phonetic": "/lˈəʊn/",
+    "phonetic": "/ˈloʊn/",
     "pos": "noun",
     "meaning": "sự cho vay, khoản vay",
-    "example": "The team discussed the loan during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự cho vay, khoản vay\" trong cuộc họp.",
+    "example": "We discussed the loan at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự cho vay tại cuộc họp.",
     "translations": {
       "vi": "sự cho vay, khoản vay"
     }
@@ -10489,11 +10476,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-27",
     "topic": "Bank",
     "word": "cash",
-    "phonetic": "/kˈæʃ/",
+    "phonetic": "/ˈkæʃ/",
     "pos": "verb",
     "meaning": "đổi sang tiền mặt",
-    "example": "The team plans to cash before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đổi sang tiền mặt\" trước thời hạn.",
+    "example": "Please cash the check at the bank.",
+    "exampleTranslation": "Hãy đổi séc thành tiền mặt tại ngân hàng.",
     "translations": {
       "vi": "đổi sang tiền mặt"
     }
@@ -10502,24 +10489,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-28",
     "topic": "Bank",
     "word": "investment",
-    "phonetic": "/ɪnvˈɛstmənt/",
+    "phonetic": "/ɪnˈvɛstmənt/",
     "pos": "noun",
-    "meaning": "sự đầu tư,v ốn đầu tư",
-    "example": "The team discussed the investment during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đầu tư,v ốn đầu tư\" trong cuộc họp.",
+    "meaning": "sự đầu tư, vốn đầu tư",
+    "example": "We discussed the investment at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự đầu tư tại cuộc họp.",
     "translations": {
-      "vi": "sự đầu tư,v ốn đầu tư"
+      "vi": "sự đầu tư, vốn đầu tư"
     }
   },
   {
     "id": "ban-29",
     "topic": "Bank",
     "word": "inherently",
-    "phonetic": "/ɪnhˈiəɹəntli/",
-    "pos": "adv",
+    "phonetic": "/ɪnˈhɪrəntli/",
+    "pos": "adverb",
     "meaning": "vốn dĩ, về bản chất",
-    "example": "The team completed the task inherently.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"vốn dĩ, về bản chất\".",
+    "example": "This process is inherently risky.",
+    "exampleTranslation": "Quy trình này vốn có rủi ro.",
     "translations": {
       "vi": "vốn dĩ, về bản chất"
     }
@@ -10528,11 +10515,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-30",
     "topic": "Bank",
     "word": "propose",
-    "phonetic": "/pɹəpˈəʊz/",
+    "phonetic": "/prəˈpoʊz/",
     "pos": "verb",
     "meaning": "đề xuất, đề nghị",
-    "example": "The team plans to propose before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đề xuất, đề nghị\" trước thời hạn.",
+    "example": "Please propose a more practical solution.",
+    "exampleTranslation": "Hãy đề xuất giải pháp thiết thực hơn.",
     "translations": {
       "vi": "đề xuất, đề nghị"
     }
@@ -10541,24 +10528,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-31",
     "topic": "Bank",
     "word": "support",
-    "phonetic": "/səpˈɔːt/",
+    "phonetic": "/səˈpɔrt/",
     "pos": "noun",
-    "meaning": "sự hỗ tr ợ, sự ủng hộ",
-    "example": "The team discussed the support during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự hỗ tr ợ, sự ủng hộ\" trong cuộc họp.",
+    "meaning": "sự hỗ trợ, sự ủng hộ",
+    "example": "We discussed the support at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự hỗ trợ tại cuộc họp.",
     "translations": {
-      "vi": "sự hỗ tr ợ, sự ủng hộ"
+      "vi": "sự hỗ trợ, sự ủng hộ"
     }
   },
   {
     "id": "ban-32",
     "topic": "Bank",
     "word": "consider",
-    "phonetic": "/kənsˈɪdɐ/",
+    "phonetic": "/kənˈsɪdɚ/",
     "pos": "verb",
     "meaning": "cân nhắc, suy xét",
-    "example": "The team plans to consider before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cân nhắc, suy xét\" trước thời hạn.",
+    "example": "Please consider all available options.",
+    "exampleTranslation": "Hãy cân nhắc mọi lựa chọn sẵn có.",
     "translations": {
       "vi": "cân nhắc, suy xét"
     }
@@ -10567,11 +10554,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-33",
     "topic": "Bank",
     "word": "nearly",
-    "phonetic": "/nˈiəli/",
-    "pos": "adv",
+    "phonetic": "/ˈnɪrli/",
+    "pos": "adverb",
     "meaning": "gần, sắp, suýt",
-    "example": "The team completed the task nearly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"gần, sắp, suýt\".",
+    "example": "The project is nearly complete.",
+    "exampleTranslation": "Dự án gần hoàn thành.",
     "translations": {
       "vi": "gần, sắp, suýt"
     }
@@ -10580,24 +10567,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-34",
     "topic": "Bank",
     "word": "consent",
-    "phonetic": "/kənsˈɛnt/",
+    "phonetic": "/kənˈsɛnt/",
     "pos": "noun",
-    "meaning": "sự đồng ý, sự tán thành",
-    "example": "The team discussed the consent during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đồng ý, sự tán thành\" trong cuộc họp.",
+    "meaning": "sự đồng ý, sự chấp thuận",
+    "example": "We need your written consent.",
+    "exampleTranslation": "Chúng tôi cần sự đồng ý bằng văn bản của bạn.",
     "translations": {
-      "vi": "sự đồng ý, sự tán thành"
+      "vi": "sự đồng ý, sự chấp thuận"
     }
   },
   {
     "id": "ban-35",
     "topic": "Bank",
     "word": "gratitude",
-    "phonetic": "/ɡɹˈætɪtjˌuːd/",
+    "phonetic": "/ˈɡrætətud/",
     "pos": "noun",
     "meaning": "lòng biết ơn, sự nhớ ơn",
-    "example": "The team discussed the gratitude during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lòng biết ơn, sự nhớ ơn\" trong cuộc họp.",
+    "example": "She expressed gratitude in her message.",
+    "exampleTranslation": "Cô ấy bày tỏ lòng biết ơn trong lời nhắn.",
     "translations": {
       "vi": "lòng biết ơn, sự nhớ ơn"
     }
@@ -10606,37 +10593,37 @@ export const VOCABULARY: Word[] = [
     "id": "ban-36",
     "topic": "Bank",
     "word": "consult",
-    "phonetic": "/kənˈsəɫt/",
+    "phonetic": "/kənˈsʌlt/",
     "pos": "verb",
-    "meaning": "hỏiý kiến, bàn bạc, tham khảo",
-    "example": "The team plans to consult before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"hỏiý kiến, bàn bạc, tham khảo\" trước thời hạn.",
+    "meaning": "hỏi ý kiến, bàn bạc, tham khảo",
+    "example": "Please consult a qualified accountant.",
+    "exampleTranslation": "Hãy tham khảo ý kiến kế toán viên có chuyên môn.",
     "translations": {
-      "vi": "hỏiý kiến, bàn bạc, tham khảo"
+      "vi": "hỏi ý kiến, bàn bạc, tham khảo"
     }
   },
   {
     "id": "ban-37",
     "topic": "Bank",
     "word": "advice",
-    "phonetic": "/ɐdvˈaɪs/",
+    "phonetic": "/ædˈvaɪs/",
     "pos": "noun",
-    "meaning": "lời khuy ên, sự tưv ấn",
-    "example": "The team discussed the advice during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lời khuy ên, sự tưv ấn\" trong cuộc họp.",
+    "meaning": "lời khuyên, sự tư vấn",
+    "example": "Please read the advice carefully.",
+    "exampleTranslation": "Hãy đọc lời khuyên cẩn thận.",
     "translations": {
-      "vi": "lời khuy ên, sự tưv ấn"
+      "vi": "lời khuyên, sự tư vấn"
     }
   },
   {
     "id": "ban-38",
     "topic": "Bank",
     "word": "partially",
-    "phonetic": "/pˈɑːʃəlˌi/",
-    "pos": "adv",
+    "phonetic": "/ˈpɑrʃəli/",
+    "pos": "adverb",
     "meaning": "một phần, cục bộ",
-    "example": "The team completed the task partially.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"một phần, cục bộ\".",
+    "example": "The invoice has been partially paid.",
+    "exampleTranslation": "Hóa đơn đã được thanh toán một phần.",
     "translations": {
       "vi": "một phần, cục bộ"
     }
@@ -10645,24 +10632,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-39",
     "topic": "Bank",
     "word": "cautious",
-    "phonetic": "/kˈɔːʃəs/",
-    "pos": "adj",
-    "meaning": "thận tr ọng, cẩn thận",
-    "example": "The manager described the proposal as cautious.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"thận tr ọng, cẩn thận\".",
+    "phonetic": "/ˈkɔʃəs/",
+    "pos": "adjective",
+    "meaning": "thận trọng, cẩn thận",
+    "example": "Be cautious when sharing personal information.",
+    "exampleTranslation": "Hãy thận trọng khi chia sẻ thông tin cá nhân.",
     "translations": {
-      "vi": "thận tr ọng, cẩn thận"
+      "vi": "thận trọng, cẩn thận"
     }
   },
   {
     "id": "ban-40",
     "topic": "Bank",
     "word": "possible",
-    "phonetic": "/pˈɒsəbəl/",
-    "pos": "adj",
+    "phonetic": "/ˈpɑsəbəl/",
+    "pos": "adjective",
     "meaning": "có thể, khả thi",
-    "example": "The manager described the proposal as possible.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có thể, khả thi\".",
+    "example": "We discussed a possible solution.",
+    "exampleTranslation": "Chúng tôi thảo luận một giải pháp có thể áp dụng.",
     "translations": {
       "vi": "có thể, khả thi"
     }
@@ -10671,11 +10658,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-41",
     "topic": "Bank",
     "word": "stability",
-    "phonetic": "/stəbˈɪlɪti/",
+    "phonetic": "/stəˈbɪlɪti/",
     "pos": "noun",
     "meaning": "sự ổn định, sự vững chắc",
-    "example": "The team discussed the stability during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự ổn định, sự vững chắc\" trong cuộc họp.",
+    "example": "We discussed the stability at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự ổn định tại cuộc họp.",
     "translations": {
       "vi": "sự ổn định, sự vững chắc"
     }
@@ -10684,11 +10671,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-42",
     "topic": "Bank",
     "word": "prevalent",
-    "phonetic": "/pɹˈɛvələnt/",
-    "pos": "adj",
+    "phonetic": "/ˈprɛvələnt/",
+    "pos": "adjective",
     "meaning": "phổ biến, thịnh hành",
-    "example": "The manager described the proposal as prevalent.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"phổ biến, thịnh hành\".",
+    "example": "Online shopping is prevalent among younger consumers.",
+    "exampleTranslation": "Mua sắm trực tuyến phổ biến ở người tiêu dùng trẻ.",
     "translations": {
       "vi": "phổ biến, thịnh hành"
     }
@@ -10697,11 +10684,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-43",
     "topic": "Bank",
     "word": "rapid",
-    "phonetic": "/ɹˈæpɪd/",
-    "pos": "adj",
+    "phonetic": "/ˈræpəd/",
+    "pos": "adjective",
     "meaning": "nhanh, nhanh chóng, mau lẹ",
-    "example": "The manager described the proposal as rapid.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"nhanh, nhanh chóng, mau lẹ\".",
+    "example": "The company experienced rapid growth.",
+    "exampleTranslation": "Công ty tăng trưởng nhanh chóng.",
     "translations": {
       "vi": "nhanh, nhanh chóng, mau lẹ"
     }
@@ -10710,11 +10697,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-44",
     "topic": "Bank",
     "word": "lucrative",
-    "phonetic": "/lˈuːkɹətˌɪv/",
-    "pos": "adj",
+    "phonetic": "/ˈlukrətɪv/",
+    "pos": "adjective",
     "meaning": "có lợi, sinh lời",
-    "example": "The manager described the proposal as lucrative.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"có lợi, sinh lời\".",
+    "example": "The company won a lucrative contract.",
+    "exampleTranslation": "Công ty giành được hợp đồng sinh lời cao.",
     "translations": {
       "vi": "có lợi, sinh lời"
     }
@@ -10723,11 +10710,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-45",
     "topic": "Bank",
     "word": "innate",
-    "phonetic": "/ɪnnˈeɪt/",
-    "pos": "adj",
+    "phonetic": "/ɪˈneɪt/",
+    "pos": "adjective",
     "meaning": "bẩm sinh",
-    "example": "The manager described the proposal as innate.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"bẩm sinh\".",
+    "example": "She has an innate ability to lead.",
+    "exampleTranslation": "Cô ấy có khả năng lãnh đạo bẩm sinh.",
     "translations": {
       "vi": "bẩm sinh"
     }
@@ -10736,24 +10723,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-46",
     "topic": "Bank",
     "word": "property",
-    "phonetic": "/pɹˈɒpəti/",
+    "phonetic": "/ˈprɑpɚti/",
     "pos": "noun",
-    "meaning": "quy ềnsở hữu,t àis ản",
-    "example": "The team discussed the property during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"quy ềnsở hữu,t àis ản\" trong cuộc họp.",
+    "meaning": "quyền sở hữu, tài sản",
+    "example": "We discussed the property at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về quyền sở hữu tại cuộc họp.",
     "translations": {
-      "vi": "quy ềnsở hữu,t àis ản"
+      "vi": "quyền sở hữu, tài sản"
     }
   },
   {
     "id": "ban-47",
     "topic": "Bank",
     "word": "lease",
-    "phonetic": "/lˈiːs/",
+    "phonetic": "/ˈlis/",
     "pos": "noun",
     "meaning": "hợp đồng cho thuê",
-    "example": "The team discussed the lease during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hợp đồng cho thuê\" trong cuộc họp.",
+    "example": "We discussed the lease at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về hợp đồng cho thuê tại cuộc họp.",
     "translations": {
       "vi": "hợp đồng cho thuê"
     }
@@ -10762,11 +10749,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-48",
     "topic": "Bank",
     "word": "sponsor",
-    "phonetic": "/spˈɒnsɐ/",
+    "phonetic": "/ˈspɑnsɚ/",
     "pos": "verb",
     "meaning": "nhà tài trợ",
-    "example": "The team plans to sponsor before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nhà tài trợ\" trước thời hạn.",
+    "example": "Please sponsor the community event.",
+    "exampleTranslation": "Hãy tài trợ sự kiện cộng đồng.",
     "translations": {
       "vi": "nhà tài trợ"
     }
@@ -10775,24 +10762,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-49",
     "topic": "Bank",
     "word": "evident",
-    "phonetic": "/ˈɛvɪdənt/",
-    "pos": "adj",
-    "meaning": "hiển nhiên,rõr àng,rõr ệt",
-    "example": "The manager described the proposal as evident.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"hiển nhiên,rõr àng,rõr ệt\".",
+    "phonetic": "/ˈɛvədənt/",
+    "pos": "adjective",
+    "meaning": "hiển nhiên, rõ ràng, rõ rệt",
+    "example": "The improvement was evident in the results.",
+    "exampleTranslation": "Sự cải thiện thể hiện rõ trong kết quả.",
     "translations": {
-      "vi": "hiển nhiên,rõr àng,rõr ệt"
+      "vi": "hiển nhiên, rõ ràng, rõ rệt"
     }
   },
   {
     "id": "ban-50",
     "topic": "Bank",
     "word": "reliability",
-    "phonetic": "/ɹɪlˌaɪəbˈɪlɪti/",
+    "phonetic": "/rilaɪəˈbɪləti/",
     "pos": "noun",
     "meaning": "sự đáng tin cậy",
-    "example": "The team discussed the reliability during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự đáng tin cậy\" trong cuộc họp.",
+    "example": "We discussed the reliability at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự đáng tin cậy tại cuộc họp.",
     "translations": {
       "vi": "sự đáng tin cậy"
     }
@@ -10801,11 +10788,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-51",
     "topic": "Bank",
     "word": "shareholder",
-    "phonetic": "/ʃˈeəhəʊldɐ/",
+    "phonetic": "/ˈʃɛrhoʊldɚ/",
     "pos": "noun",
     "meaning": "cổ đông",
-    "example": "The team discussed the shareholder during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cổ đông\" trong cuộc họp.",
+    "example": "The shareholder answered our questions.",
+    "exampleTranslation": "Cổ đông đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "cổ đông"
     }
@@ -10816,35 +10803,35 @@ export const VOCABULARY: Word[] = [
     "word": "outlook",
     "phonetic": "/ˈaʊtlʊk/",
     "pos": "noun",
-    "meaning": "viễn cảnh, triểnv ọng",
-    "example": "The team discussed the outlook during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"viễn cảnh, triểnv ọng\" trong cuộc họp.",
+    "meaning": "viễn cảnh, triển vọng",
+    "example": "We discussed the outlook at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về viễn cảnh tại cuộc họp.",
     "translations": {
-      "vi": "viễn cảnh, triểnv ọng"
+      "vi": "viễn cảnh, triển vọng"
     }
   },
   {
     "id": "ban-53",
     "topic": "Bank",
     "word": "bond",
-    "phonetic": "/bˈɒnd/",
+    "phonetic": "/ˈbɑnd/",
     "pos": "noun",
-    "meaning": "tr ái phiếu",
-    "example": "The team discussed the bond during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"tr ái phiếu\" trong cuộc họp.",
+    "meaning": "trái phiếu",
+    "example": "We discussed the bond at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về trái phiếu tại cuộc họp.",
     "translations": {
-      "vi": "tr ái phiếu"
+      "vi": "trái phiếu"
     }
   },
   {
     "id": "ban-54",
     "topic": "Bank",
     "word": "depreciation",
-    "phonetic": "/dɪpɹˌiːʃɪˈeɪʃən/",
+    "phonetic": "/dɪpriʃiˈeɪʃən/",
     "pos": "noun",
     "meaning": "sự sụt giá",
-    "example": "The team discussed the depreciation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự sụt giá\" trong cuộc họp.",
+    "example": "We discussed the depreciation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự sụt giá tại cuộc họp.",
     "translations": {
       "vi": "sự sụt giá"
     }
@@ -10853,115 +10840,115 @@ export const VOCABULARY: Word[] = [
     "id": "ban-55",
     "topic": "Bank",
     "word": "yield",
-    "phonetic": "/jˈiːld/",
+    "phonetic": "/ˈjild/",
     "pos": "verb",
-    "meaning": "tạor a, sinh lợi",
-    "example": "The team plans to yield before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tạor a, sinh lợi\" trước thời hạn.",
+    "meaning": "tạo ra, sinh lợi",
+    "example": "Please yield a reasonable profit.",
+    "exampleTranslation": "Hãy mang lại lợi nhuận hợp lý.",
     "translations": {
-      "vi": "tạor a, sinh lợi"
+      "vi": "tạo ra, sinh lợi"
     }
   },
   {
     "id": "ban-56",
     "topic": "Bank",
     "word": "residence",
-    "phonetic": "/ɹˈɛzɪdəns/",
+    "phonetic": "/ˈrɛzɪdəns/",
     "pos": "noun",
-    "meaning": "nơi cư trú, nhàở",
-    "example": "The team discussed the residence during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nơi cư trú, nhàở\" trong cuộc họp.",
+    "meaning": "nơi cư trú, nhà ở",
+    "example": "The residence is near the station.",
+    "exampleTranslation": "Nơi cư trú ở gần nhà ga.",
     "translations": {
-      "vi": "nơi cư trú, nhàở"
+      "vi": "nơi cư trú, nhà ở"
     }
   },
   {
     "id": "ban-57",
     "topic": "Bank",
     "word": "drape",
-    "phonetic": "/dɹˈeɪp/",
+    "phonetic": "/ˈdreɪp/",
     "pos": "verb",
-    "meaning": "tr eo màn, cher èm",
-    "example": "The team plans to drape before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"tr eo màn, cher èm\" trước thời hạn.",
+    "meaning": "treo màn, che rèm",
+    "example": "Please drape the curtain over the window.",
+    "exampleTranslation": "Hãy phủ rèm lên cửa sổ.",
     "translations": {
-      "vi": "tr eo màn, cher èm"
+      "vi": "treo màn, che rèm"
     }
   },
   {
     "id": "ban-58",
     "topic": "Bank",
     "word": "unoccupied",
-    "phonetic": "/ʌnˈɒkjʊpˌaɪd/",
-    "pos": "adj",
-    "meaning": "bỏ tr ống, không có ngườiở",
-    "example": "The manager described the proposal as unoccupied.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"bỏ tr ống, không có ngườiở\".",
+    "phonetic": "/ʌnˈɑkjəpaɪd/",
+    "pos": "adjective",
+    "meaning": "bỏ trống, không có người ở",
+    "example": "The office remained unoccupied for months.",
+    "exampleTranslation": "Văn phòng không có người sử dụng suốt nhiều tháng.",
     "translations": {
-      "vi": "bỏ tr ống, không có ngườiở"
+      "vi": "bỏ trống, không có người ở"
     }
   },
   {
     "id": "ban-59",
     "topic": "Bank",
     "word": "renovation",
-    "phonetic": "/ɹˌɛnəvˈeɪʃən/",
+    "phonetic": "/rɛnəˈveɪʃən/",
     "pos": "noun",
-    "meaning": "sự cảit ạo, sửas ang",
-    "example": "The team discussed the renovation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự cảit ạo, sửas ang\" trong cuộc họp.",
+    "meaning": "sự cải tạo, sửa sang",
+    "example": "We discussed the renovation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự cải tạo tại cuộc họp.",
     "translations": {
-      "vi": "sự cảit ạo, sửas ang"
+      "vi": "sự cải tạo, sửa sang"
     }
   },
   {
     "id": "ban-60",
     "topic": "Bank",
     "word": "construction",
-    "phonetic": "/kənstɹˈʌkʃən/",
+    "phonetic": "/kənˈstrʌkʃən/",
     "pos": "noun",
-    "meaning": "sựx ây dựng",
-    "example": "The team discussed the construction during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sựx ây dựng\" trong cuộc họp.",
+    "meaning": "sự xây dựng",
+    "example": "We discussed the construction at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự xây dựng tại cuộc họp.",
     "translations": {
-      "vi": "sựx ây dựng"
+      "vi": "sự xây dựng"
     }
   },
   {
     "id": "ban-61",
     "topic": "Bank",
     "word": "regularly",
-    "phonetic": "/ɹˈɛɡjuːləli/",
-    "pos": "adv",
-    "meaning": "đều đặn, thường xuy ên",
-    "example": "The team completed the task regularly.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"đều đặn, thường xuy ên\".",
+    "phonetic": "/ˈrɛɡjəlɚli/",
+    "pos": "adverb",
+    "meaning": "đều đặn, thường xuyên",
+    "example": "The equipment is inspected regularly.",
+    "exampleTranslation": "Thiết bị được kiểm tra thường xuyên.",
     "translations": {
-      "vi": "đều đặn, thường xuy ên"
+      "vi": "đều đặn, thường xuyên"
     }
   },
   {
     "id": "ban-62",
     "topic": "Bank",
     "word": "arrange",
-    "phonetic": "/ɐɹˈeɪndʒ/",
+    "phonetic": "/ɚˈeɪndʒ/",
     "pos": "verb",
-    "meaning": "sắpx ếp,s ắp đặt",
-    "example": "The team plans to arrange before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"sắpx ếp,s ắp đặt\" trước thời hạn.",
+    "meaning": "sắp xếp, sắp đặt",
+    "example": "Please arrange the chairs in rows.",
+    "exampleTranslation": "Hãy xếp ghế thành các hàng.",
     "translations": {
-      "vi": "sắpx ếp,s ắp đặt"
+      "vi": "sắp xếp, sắp đặt"
     }
   },
   {
     "id": "ban-63",
     "topic": "Bank",
     "word": "presently",
-    "phonetic": "/pɹˈɛzəntlˌi/",
-    "pos": "adv",
+    "phonetic": "/ˈprɛzəntli/",
+    "pos": "adverb",
     "meaning": "hiện giờ, chẳng mấy chóc",
-    "example": "The team completed the task presently.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"hiện giờ, chẳng mấy chóc\".",
+    "example": "The director is presently attending a conference.",
+    "exampleTranslation": "Hiện giám đốc đang dự hội nghị.",
     "translations": {
       "vi": "hiện giờ, chẳng mấy chóc"
     }
@@ -10970,11 +10957,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-64",
     "topic": "Bank",
     "word": "maintain",
-    "phonetic": "/meɪntˈeɪn/",
+    "phonetic": "/meɪnˈteɪn/",
     "pos": "verb",
     "meaning": "duy trì, bảo quản",
-    "example": "The team plans to maintain before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"duy trì, bảo quản\" trước thời hạn.",
+    "example": "Please maintain the equipment regularly.",
+    "exampleTranslation": "Hãy bảo dưỡng thiết bị thường xuyên.",
     "translations": {
       "vi": "duy trì, bảo quản"
     }
@@ -10983,91 +10970,91 @@ export const VOCABULARY: Word[] = [
     "id": "ban-65",
     "topic": "Bank",
     "word": "densely",
-    "phonetic": "/dˈɛnsli/",
-    "pos": "adv",
-    "meaning": "dày đặc, rậmr ạp",
-    "example": "The team completed the task densely.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"dày đặc, rậmr ạp\".",
+    "phonetic": "/ˈdɛnsli/",
+    "pos": "adverb",
+    "meaning": "dày đặc, rậm rạp",
+    "example": "The district is densely populated.",
+    "exampleTranslation": "Quận có mật độ dân cư cao.",
     "translations": {
-      "vi": "dày đặc, rậmr ạp"
+      "vi": "dày đặc, rậm rạp"
     }
   },
   {
     "id": "ban-66",
     "topic": "Bank",
     "word": "prepare",
-    "phonetic": "/pɹɪpˈeə/",
+    "phonetic": "/priˈpɛr/",
     "pos": "verb",
-    "meaning": "chuẩn bị, sửas oạn",
-    "example": "The team plans to prepare before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"chuẩn bị, sửas oạn\" trước thời hạn.",
+    "meaning": "chuẩn bị, sửa soạn",
+    "example": "Please prepare the agenda in advance.",
+    "exampleTranslation": "Hãy chuẩn bị chương trình họp trước.",
     "translations": {
-      "vi": "chuẩn bị, sửas oạn"
+      "vi": "chuẩn bị, sửa soạn"
     }
   },
   {
     "id": "ban-67",
     "topic": "Bank",
     "word": "renewal",
-    "phonetic": "/ɹɪnjˈuːəl/",
-    "pos": "adj",
-    "meaning": "sự đổi mới, sự phục hồi",
-    "example": "The manager described the proposal as renewal.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"sự đổi mới, sự phục hồi\".",
+    "phonetic": "/rɪˈnuəl/",
+    "pos": "noun",
+    "meaning": "sự gia hạn; sự đổi mới",
+    "example": "The contract renewal is due next month.",
+    "exampleTranslation": "Việc gia hạn hợp đồng đến hạn vào tháng tới.",
     "translations": {
-      "vi": "sự đổi mới, sự phục hồi"
+      "vi": "sự gia hạn; sự đổi mới"
     }
   },
   {
     "id": "ban-68",
     "topic": "Bank",
     "word": "interfere",
-    "phonetic": "/ˌɪntəfˈiə/",
+    "phonetic": "/ɪntɚˈfɪr/",
     "pos": "verb",
-    "meaning": "can thiệp, quấyr ầy",
-    "example": "The team plans to interfere before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"can thiệp, quấyr ầy\" trước thời hạn.",
+    "meaning": "can thiệp; gây trở ngại",
+    "example": "Please interfere with the work schedule.",
+    "exampleTranslation": "Hãy gây trở ngại cho lịch làm việc.",
     "translations": {
-      "vi": "can thiệp, quấyr ầy"
+      "vi": "can thiệp; gây trở ngại"
     }
   },
   {
     "id": "ban-69",
     "topic": "Bank",
     "word": "totally",
-    "phonetic": "/tˈəʊtəli/",
-    "pos": "adv",
-    "meaning": "hoànt oàn",
-    "example": "The team completed the task totally.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"hoànt oàn\".",
+    "phonetic": "/ˈtoʊtəli/",
+    "pos": "adverb",
+    "meaning": "hoàn toàn",
+    "example": "The figures are totally incorrect.",
+    "exampleTranslation": "Các số liệu hoàn toàn sai.",
     "translations": {
-      "vi": "hoànt oàn"
+      "vi": "hoàn toàn"
     }
   },
   {
     "id": "ban-70",
     "topic": "Bank",
     "word": "actually",
-    "phonetic": "/ˈæktʃuːəli/",
-    "pos": "adv",
-    "meaning": "thực sự, quả là, thựcra",
-    "example": "The team completed the task actually.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"thực sự, quả là, thựcra\".",
+    "phonetic": "/ˈæktʃuəli/",
+    "pos": "adverb",
+    "meaning": "thực sự, quả là, thực ra",
+    "example": "The repair actually took less than an hour.",
+    "exampleTranslation": "Thực tế việc sửa chữa mất chưa đến một giờ.",
     "translations": {
-      "vi": "thực sự, quả là, thựcra"
+      "vi": "thực sự, quả là, thực ra"
     }
   },
   {
     "id": "ban-71",
     "topic": "Bank",
     "word": "architect",
-    "phonetic": "/ˈɑːkɪtˌɛkt/",
+    "phonetic": "/ˈɑrkətɛkt/",
     "pos": "noun",
-    "meaning": "kiến trúcsư",
-    "example": "The team discussed the architect during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"kiến trúcsư\" trong cuộc họp.",
+    "meaning": "kiến trúc sư",
+    "example": "The architect answered our questions.",
+    "exampleTranslation": "Kiến trúc sư đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
-      "vi": "kiến trúcsư"
+      "vi": "kiến trúc sư"
     }
   },
   {
@@ -11076,22 +11063,22 @@ export const VOCABULARY: Word[] = [
     "word": "consist",
     "phonetic": "/kənˈsɪst/",
     "pos": "verb",
-    "meaning": "bao gồm, gồmcó",
-    "example": "The team plans to consist before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bao gồm, gồmcó\" trước thời hạn.",
+    "meaning": "bao gồm, gồm có",
+    "example": "Please consist of three main sections.",
+    "exampleTranslation": "Hãy gồm ba phần chính.",
     "translations": {
-      "vi": "bao gồm, gồmcó"
+      "vi": "bao gồm, gồm có"
     }
   },
   {
     "id": "ban-73",
     "topic": "Bank",
     "word": "community",
-    "phonetic": "/kəmjˈuːnɪtˌi/",
+    "phonetic": "/kəˈmjunəti/",
     "pos": "noun",
     "meaning": "cộng đồng, dân chúng",
-    "example": "The team discussed the community during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"cộng đồng, dân chúng\" trong cuộc họp.",
+    "example": "We discussed the community at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về cộng đồng tại cuộc họp.",
     "translations": {
       "vi": "cộng đồng, dân chúng"
     }
@@ -11100,11 +11087,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-74",
     "topic": "Bank",
     "word": "contractor",
-    "phonetic": "/kəntɹˈæktɐ/",
+    "phonetic": "/ˈkɑntræktɚ/",
     "pos": "noun",
     "meaning": "nhà thầu",
-    "example": "The team discussed the contractor during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nhà thầu\" trong cuộc họp.",
+    "example": "The contractor answered our questions.",
+    "exampleTranslation": "Nhà thầu đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "nhà thầu"
     }
@@ -11113,11 +11100,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-75",
     "topic": "Bank",
     "word": "district",
-    "phonetic": "/dˈɪstɹɪkt/",
+    "phonetic": "/ˈdɪstrɪkt/",
     "pos": "noun",
     "meaning": "quận, khu vực",
-    "example": "The team discussed the district during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"quận, khu vực\" trong cuộc họp.",
+    "example": "The district is near the station.",
+    "exampleTranslation": "Quận ở gần nhà ga.",
     "translations": {
       "vi": "quận, khu vực"
     }
@@ -11126,11 +11113,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-76",
     "topic": "Bank",
     "word": "compulsory",
-    "phonetic": "/kəmpˈʌlsəɹˌi/",
-    "pos": "adj",
+    "phonetic": "/kəmˈpʌlsɚi/",
+    "pos": "adjective",
     "meaning": "bắt buộc, cưỡng bách",
-    "example": "The manager described the proposal as compulsory.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"bắt buộc, cưỡng bách\".",
+    "example": "Safety training is compulsory for all staff.",
+    "exampleTranslation": "Đào tạo an toàn là bắt buộc với mọi nhân viên.",
     "translations": {
       "vi": "bắt buộc, cưỡng bách"
     }
@@ -11139,37 +11126,37 @@ export const VOCABULARY: Word[] = [
     "id": "ban-77",
     "topic": "Bank",
     "word": "relocation",
-    "phonetic": "/ɹɪləʊkˈeɪʃən/",
+    "phonetic": "/riˈloʊˈkeɪʃən/",
     "pos": "noun",
-    "meaning": "sự chuy ển chỗ",
-    "example": "The team discussed the relocation during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự chuy ển chỗ\" trong cuộc họp.",
+    "meaning": "sự chuyển chỗ",
+    "example": "We discussed the relocation at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự chuyển chỗ tại cuộc họp.",
     "translations": {
-      "vi": "sự chuy ển chỗ"
+      "vi": "sự chuyển chỗ"
     }
   },
   {
     "id": "ban-78",
     "topic": "Bank",
     "word": "enlarge",
-    "phonetic": "/ɛnlˈɑːdʒ/",
+    "phonetic": "/ɛnˈlɑrdʒ/",
     "pos": "verb",
-    "meaning": "mởr ộng, khuếch trương",
-    "example": "The team plans to enlarge before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"mởr ộng, khuếch trương\" trước thời hạn.",
+    "meaning": "mở rộng, khuếch trương",
+    "example": "Please enlarge the photograph slightly.",
+    "exampleTranslation": "Hãy phóng to bức ảnh một chút.",
     "translations": {
-      "vi": "mởr ộng, khuếch trương"
+      "vi": "mở rộng, khuếch trương"
     }
   },
   {
     "id": "ban-79",
     "topic": "Bank",
     "word": "install",
-    "phonetic": "/ɪnstˈɔːl/",
+    "phonetic": "/ɪnˈstɔl/",
     "pos": "verb",
     "meaning": "đặt, lắp đặt, cài đặt",
-    "example": "The team plans to install before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"đặt, lắp đặt, cài đặt\" trước thời hạn.",
+    "example": "Please install the latest software update.",
+    "exampleTranslation": "Hãy cài bản cập nhật phần mềm mới nhất.",
     "translations": {
       "vi": "đặt, lắp đặt, cài đặt"
     }
@@ -11178,37 +11165,37 @@ export const VOCABULARY: Word[] = [
     "id": "ban-80",
     "topic": "Bank",
     "word": "suppose",
-    "phonetic": "/sʌpˈəʊz/",
+    "phonetic": "/səˈpoʊz/",
     "pos": "verb",
-    "meaning": "giả sử, chor ằng",
-    "example": "The team plans to suppose before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giả sử, chor ằng\" trước thời hạn.",
+    "meaning": "giả sử, cho rằng",
+    "example": "Please suppose that the estimate is correct.",
+    "exampleTranslation": "Hãy giả sử ước tính là đúng.",
     "translations": {
-      "vi": "giả sử, chor ằng"
+      "vi": "giả sử, cho rằng"
     }
   },
   {
     "id": "ban-81",
     "topic": "Bank",
     "word": "adjacent",
-    "phonetic": "/ɐdʒˈeɪsənt/",
-    "pos": "adj",
-    "meaning": "liềnk ề,s át",
-    "example": "The manager described the proposal as adjacent.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"liềnk ề,s át\".",
+    "phonetic": "/əˈdʒeɪsənt/",
+    "pos": "adjective",
+    "meaning": "liền kề, sát",
+    "example": "The warehouse is adjacent to the factory.",
+    "exampleTranslation": "Nhà kho nằm liền kề nhà máy.",
     "translations": {
-      "vi": "liềnk ề,s át"
+      "vi": "liền kề, sát"
     }
   },
   {
     "id": "ban-82",
     "topic": "Bank",
     "word": "utility",
-    "phonetic": "/juːtˈɪlɪti/",
+    "phonetic": "/juˈtɪləti/",
     "pos": "noun",
     "meaning": "phương tiện dịch vụ công cộng",
-    "example": "The team discussed the utility during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"phương tiện dịch vụ công cộng\" trong cuộc họp.",
+    "example": "We discussed the utility at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về phương tiện dịch vụ công cộng tại cuộc họp.",
     "translations": {
       "vi": "phương tiện dịch vụ công cộng"
     }
@@ -11219,22 +11206,22 @@ export const VOCABULARY: Word[] = [
     "word": "conserve",
     "phonetic": "/kənˈsɝv/",
     "pos": "verb",
-    "meaning": "bảot ồn, duy trì",
-    "example": "The team plans to conserve before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"bảot ồn, duy trì\" trước thời hạn.",
+    "meaning": "bảo tồn, duy trì",
+    "example": "Please conserve water and electricity.",
+    "exampleTranslation": "Hãy tiết kiệm nước và điện.",
     "translations": {
-      "vi": "bảot ồn, duy trì"
+      "vi": "bảo tồn, duy trì"
     }
   },
   {
     "id": "ban-84",
     "topic": "Bank",
     "word": "chance",
-    "phonetic": "/tʃˈɑːns/",
+    "phonetic": "/ˈtʃæns/",
     "pos": "noun",
     "meaning": "khả năng, sự có khả năng",
-    "example": "The team discussed the chance during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"khả năng, sự có khả năng\" trong cuộc họp.",
+    "example": "We discussed the chance at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về khả năng tại cuộc họp.",
     "translations": {
       "vi": "khả năng, sự có khả năng"
     }
@@ -11243,11 +11230,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-85",
     "topic": "Bank",
     "word": "dispose",
-    "phonetic": "/dɪspˈəʊz/",
+    "phonetic": "/dɪˈspoʊz/",
     "pos": "verb",
     "meaning": "xử lý, vứt bỏ, thanh lý",
-    "example": "The team plans to dispose before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"xử lý, vứt bỏ, thanh lý\" trước thời hạn.",
+    "example": "Please dispose of the waste safely.",
+    "exampleTranslation": "Hãy xử lý chất thải an toàn.",
     "translations": {
       "vi": "xử lý, vứt bỏ, thanh lý"
     }
@@ -11256,24 +11243,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-86",
     "topic": "Bank",
     "word": "clear",
-    "phonetic": "/klˈiə/",
-    "pos": "adj",
-    "meaning": "trong, trong tr ẻo;rõr àng, dễ hiểu",
-    "example": "The manager described the proposal as clear.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"trong, trong tr ẻo;rõr àng, dễ hiểu\".",
+    "phonetic": "/ˈklɪr/",
+    "pos": "adjective",
+    "meaning": "trong, trong trẻo; rõ ràng, dễ hiểu",
+    "example": "The instructions are clear and concise.",
+    "exampleTranslation": "Hướng dẫn rõ ràng và ngắn gọn.",
     "translations": {
-      "vi": "trong, trong tr ẻo;rõr àng, dễ hiểu"
+      "vi": "trong, trong trẻo; rõ ràng, dễ hiểu"
     }
   },
   {
     "id": "ban-87",
     "topic": "Bank",
     "word": "solution",
-    "phonetic": "/səlˈuːʃən/",
+    "phonetic": "/səˈluʃən/",
     "pos": "noun",
     "meaning": "giải pháp, đáp án",
-    "example": "The team discussed the solution during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"giải pháp, đáp án\" trong cuộc họp.",
+    "example": "We need a practical solution to the problem.",
+    "exampleTranslation": "Chúng tôi cần giải pháp thiết thực cho vấn đề.",
     "translations": {
       "vi": "giải pháp, đáp án"
     }
@@ -11282,24 +11269,24 @@ export const VOCABULARY: Word[] = [
     "id": "ban-88",
     "topic": "Bank",
     "word": "preserve",
-    "phonetic": "/pɹɪsˈɜːv/",
+    "phonetic": "/prəˈzɝv/",
     "pos": "verb",
-    "meaning": "giữ gìn, bảot ồn",
-    "example": "The team plans to preserve before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"giữ gìn, bảot ồn\" trước thời hạn.",
+    "meaning": "giữ gìn, bảo tồn",
+    "example": "Please preserve the original documents.",
+    "exampleTranslation": "Hãy bảo quản tài liệu gốc.",
     "translations": {
-      "vi": "giữ gìn, bảot ồn"
+      "vi": "giữ gìn, bảo tồn"
     }
   },
   {
     "id": "ban-89",
     "topic": "Bank",
     "word": "consistent",
-    "phonetic": "/kənsˈɪstənt/",
-    "pos": "adj",
+    "phonetic": "/kənˈsɪstənt/",
+    "pos": "adjective",
     "meaning": "kiên định, nhất quán, phù hợp",
-    "example": "The manager described the proposal as consistent.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"kiên định, nhất quán, phù hợp\".",
+    "example": "The supplier provides consistent quality.",
+    "exampleTranslation": "Nhà cung cấp bảo đảm chất lượng ổn định.",
     "translations": {
       "vi": "kiên định, nhất quán, phù hợp"
     }
@@ -11308,11 +11295,11 @@ export const VOCABULARY: Word[] = [
     "id": "ban-90",
     "topic": "Bank",
     "word": "continually",
-    "phonetic": "/kəntˈɪnjuːəli/",
-    "pos": "adv",
+    "phonetic": "/kənˈtɪnjuəli/",
+    "pos": "adverb",
     "meaning": "liên tục, không ngớt",
-    "example": "The team completed the task continually.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"liên tục, không ngớt\".",
+    "example": "We continually review our safety procedures.",
+    "exampleTranslation": "Chúng tôi liên tục xem xét các quy trình an toàn.",
     "translations": {
       "vi": "liên tục, không ngớt"
     }
@@ -11321,50 +11308,50 @@ export const VOCABULARY: Word[] = [
     "id": "env-01",
     "topic": "Environment",
     "word": "intensively",
-    "phonetic": "/ɪntˈɛnsɪvli/",
-    "pos": "adv",
-    "meaning": "mạnh mẽ,s âus ắc",
-    "example": "The team completed the task intensively.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"mạnh mẽ,s âus ắc\".",
+    "phonetic": "/ɪnˈtɛnsɪvli/",
+    "pos": "adverb",
+    "meaning": "mạnh mẽ, tập trung cao độ",
+    "example": "The staff trained intensively for the launch.",
+    "exampleTranslation": "Nhân viên được đào tạo chuyên sâu để chuẩn bị ra mắt.",
     "translations": {
-      "vi": "mạnh mẽ,s âus ắc"
+      "vi": "mạnh mẽ, tập trung cao độ"
     }
   },
   {
     "id": "env-02",
     "topic": "Environment",
     "word": "disturb",
-    "phonetic": "/dɪstˈɜːb/",
+    "phonetic": "/dɪˈstɝb/",
     "pos": "verb",
-    "meaning": "quấyr ầy, làm phiền",
-    "example": "The team plans to disturb before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"quấyr ầy, làm phiền\" trước thời hạn.",
+    "meaning": "quấy rầy, làm phiền",
+    "example": "Do not disturb other passengers.",
+    "exampleTranslation": "Đừng làm phiền hành khách khác.",
     "translations": {
-      "vi": "quấyr ầy, làm phiền"
+      "vi": "quấy rầy, làm phiền"
     }
   },
   {
     "id": "env-03",
     "topic": "Environment",
     "word": "pollutant",
-    "phonetic": "/pəlˈuːtənt/",
+    "phonetic": "/pəˈlutənt/",
     "pos": "noun",
-    "meaning": "chất gâyô nhiễm",
-    "example": "The team discussed the pollutant during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"chất gâyô nhiễm\" trong cuộc họp.",
+    "meaning": "chất gây ô nhiễm",
+    "example": "The factory reduced emissions of this pollutant.",
+    "exampleTranslation": "Nhà máy giảm phát thải chất gây ô nhiễm này.",
     "translations": {
-      "vi": "chất gâyô nhiễm"
+      "vi": "chất gây ô nhiễm"
     }
   },
   {
     "id": "env-04",
     "topic": "Environment",
     "word": "dense",
-    "phonetic": "/dˈɛns/",
-    "pos": "adj",
+    "phonetic": "/ˈdɛns/",
+    "pos": "adjective",
     "meaning": "dày đặc, đông đúc",
-    "example": "The manager described the proposal as dense.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"dày đặc, đông đúc\".",
+    "example": "Dense fog delayed the flight.",
+    "exampleTranslation": "Sương mù dày đặc làm chậm chuyến bay.",
     "translations": {
       "vi": "dày đặc, đông đúc"
     }
@@ -11373,11 +11360,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-05",
     "topic": "Environment",
     "word": "environmental",
-    "phonetic": "/ɛnvˌaɪɹənmˈɛntəl/",
-    "pos": "adj",
+    "phonetic": "/ɪnvaɪrənˈmɛntəl/",
+    "pos": "adjective",
     "meaning": "thuộc về môi trường",
-    "example": "The manager described the proposal as environmental.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"thuộc về môi trường\".",
+    "example": "The project requires an environmental assessment.",
+    "exampleTranslation": "Dự án cần đánh giá tác động môi trường.",
     "translations": {
       "vi": "thuộc về môi trường"
     }
@@ -11386,11 +11373,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-06",
     "topic": "Environment",
     "word": "leak",
-    "phonetic": "/lˈiːk/",
+    "phonetic": "/ˈlik/",
     "pos": "noun",
     "meaning": "lỗ thủng, sự rò rỉ",
-    "example": "The team discussed the leak during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"lỗ thủng, sự rò rỉ\" trong cuộc họp.",
+    "example": "We discussed the leak at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về lỗ thủng tại cuộc họp.",
     "translations": {
       "vi": "lỗ thủng, sự rò rỉ"
     }
@@ -11399,11 +11386,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-07",
     "topic": "Environment",
     "word": "disaster",
-    "phonetic": "/dˌɪsˈɑːstɐ/",
+    "phonetic": "/dɪˈzæstɚ/",
     "pos": "noun",
     "meaning": "thảm hoạ",
-    "example": "The team discussed the disaster during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"thảm hoạ\" trong cuộc họp.",
+    "example": "We discussed the disaster at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về thảm hoạ tại cuộc họp.",
     "translations": {
       "vi": "thảm hoạ"
     }
@@ -11412,63 +11399,63 @@ export const VOCABULARY: Word[] = [
     "id": "env-08",
     "topic": "Environment",
     "word": "discharge",
-    "phonetic": "/ˈdɪsˌtʃɑɹdʒ/",
+    "phonetic": "/dɪsˈtʃɑrdʒ/",
     "pos": "verb",
-    "meaning": "thảir a, tuônr a, chảyra",
-    "example": "The team plans to discharge before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"thảir a, tuônr a, chảyra\" trước thời hạn.",
+    "meaning": "thải ra, xả ra; cho xuất viện",
+    "example": "Factories must not discharge waste into the river.",
+    "exampleTranslation": "Nhà máy không được xả chất thải ra sông.",
     "translations": {
-      "vi": "thảir a, tuônr a, chảyra"
+      "vi": "thải ra, xả ra; cho xuất viện"
     }
   },
   {
     "id": "env-09",
     "topic": "Environment",
     "word": "resource",
-    "phonetic": "/ɹɪzˈɔːs/",
+    "phonetic": "/ˈrisɔrs/",
     "pos": "noun",
-    "meaning": "nguồn, nguồnt ài nguyên",
-    "example": "The team discussed the resource during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"nguồn, nguồnt ài nguyên\" trong cuộc họp.",
+    "meaning": "nguồn, nguồn tài nguyên",
+    "example": "We discussed the resource at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về nguồn tại cuộc họp.",
     "translations": {
-      "vi": "nguồn, nguồnt ài nguyên"
+      "vi": "nguồn, nguồn tài nguyên"
     }
   },
   {
     "id": "env-10",
     "topic": "Environment",
     "word": "deplete",
-    "phonetic": "/dɪplˈiːt/",
+    "phonetic": "/dɪˈplit/",
     "pos": "verb",
-    "meaning": "làm suyy ếu, làm cạn kiệt",
-    "example": "The team plans to deplete before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm suyy ếu, làm cạn kiệt\" trước thời hạn.",
+    "meaning": "làm suy yếu, làm cạn kiệt",
+    "example": "Overuse can deplete the available resources.",
+    "exampleTranslation": "Sử dụng quá mức có thể làm cạn kiệt nguồn lực sẵn có.",
     "translations": {
-      "vi": "làm suyy ếu, làm cạn kiệt"
+      "vi": "làm suy yếu, làm cạn kiệt"
     }
   },
   {
     "id": "env-11",
     "topic": "Environment",
     "word": "purify",
-    "phonetic": "/pjˈʊɹɪfˌaɪ/",
+    "phonetic": "/ˈpjʊrəfaɪ/",
     "pos": "verb",
-    "meaning": "lọc, làms ạch",
-    "example": "The team plans to purify before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"lọc, làms ạch\" trước thời hạn.",
+    "meaning": "lọc, làm sạch",
+    "example": "Please purify the water before use.",
+    "exampleTranslation": "Hãy lọc sạch nước trước khi sử dụng.",
     "translations": {
-      "vi": "lọc, làms ạch"
+      "vi": "lọc, làm sạch"
     }
   },
   {
     "id": "env-12",
     "topic": "Environment",
     "word": "endangered",
-    "phonetic": "/ɛndˈeɪndʒəd/",
-    "pos": "adj",
+    "phonetic": "/ɛnˈdeɪndʒɚd/",
+    "pos": "adjective",
     "meaning": "bị đe doạ",
-    "example": "The manager described the proposal as endangered.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"bị đe doạ\".",
+    "example": "The reserve protects endangered species.",
+    "exampleTranslation": "Khu bảo tồn bảo vệ các loài có nguy cơ tuyệt chủng.",
     "translations": {
       "vi": "bị đe doạ"
     }
@@ -11477,11 +11464,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-13",
     "topic": "Environment",
     "word": "drought",
-    "phonetic": "/dɹˈaʊt/",
+    "phonetic": "/ˈdraʊt/",
     "pos": "noun",
     "meaning": "hạn hán",
-    "example": "The team discussed the drought during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hạn hán\" trong cuộc họp.",
+    "example": "We discussed the drought at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về hạn hán tại cuộc họp.",
     "translations": {
       "vi": "hạn hán"
     }
@@ -11490,50 +11477,50 @@ export const VOCABULARY: Word[] = [
     "id": "env-14",
     "topic": "Environment",
     "word": "migration",
-    "phonetic": "/maɪɡɹˈeɪʃən/",
+    "phonetic": "/maɪˈɡreɪʃən/",
     "pos": "noun",
-    "meaning": "sự di cư, sự chuy ển",
-    "example": "The team discussed the migration during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự di cư, sự chuy ển\" trong cuộc họp.",
+    "meaning": "sự di cư, sự chuyển dịch",
+    "example": "We discussed the migration at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự di cư tại cuộc họp.",
     "translations": {
-      "vi": "sự di cư, sự chuy ển"
+      "vi": "sự di cư, sự chuyển dịch"
     }
   },
   {
     "id": "env-15",
     "topic": "Environment",
     "word": "ecology",
-    "phonetic": "/ɛkˈɒlədʒi/",
+    "phonetic": "/ɪˈkɑlədʒi/",
     "pos": "noun",
-    "meaning": "hệ sinh thái, sinh thái học",
-    "example": "The team discussed the ecology during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"hệ sinh thái, sinh thái học\" trong cuộc họp.",
+    "meaning": "sinh thái học",
+    "example": "We discussed the ecology at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sinh thái học tại cuộc họp.",
     "translations": {
-      "vi": "hệ sinh thái, sinh thái học"
+      "vi": "sinh thái học"
     }
   },
   {
     "id": "env-16",
     "topic": "Environment",
     "word": "habitat",
-    "phonetic": "/hˈæbɪtˌæt/",
+    "phonetic": "/ˈhæbətæt/",
     "pos": "noun",
-    "meaning": "môi trườngs ống, nơis ống",
-    "example": "The team discussed the habitat during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"môi trườngs ống, nơis ống\" trong cuộc họp.",
+    "meaning": "môi trường sống, nơi sống",
+    "example": "The habitat is near the station.",
+    "exampleTranslation": "Môi trường sống ở gần nhà ga.",
     "translations": {
-      "vi": "môi trườngs ống, nơis ống"
+      "vi": "môi trường sống, nơi sống"
     }
   },
   {
     "id": "env-17",
     "topic": "Environment",
     "word": "checkup",
-    "phonetic": "/tʃˈɛkʌp/",
+    "phonetic": "/ˈtʃɛkʌp/",
     "pos": "noun",
     "meaning": "khám sức khoẻ",
-    "example": "The team discussed the checkup during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"khám sức khoẻ\" trong cuộc họp.",
+    "example": "We discussed the checkup at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về khám sức khoẻ tại cuộc họp.",
     "translations": {
       "vi": "khám sức khoẻ"
     }
@@ -11542,11 +11529,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-18",
     "topic": "Environment",
     "word": "physician",
-    "phonetic": "/fɪzˈɪʃən/",
+    "phonetic": "/fəˈzɪʃən/",
     "pos": "noun",
     "meaning": "bác sĩ",
-    "example": "The team discussed the physician during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"bác sĩ\" trong cuộc họp.",
+    "example": "The physician answered our questions.",
+    "exampleTranslation": "Bác sĩ đã trả lời các câu hỏi của chúng tôi.",
     "translations": {
       "vi": "bác sĩ"
     }
@@ -11555,24 +11542,24 @@ export const VOCABULARY: Word[] = [
     "id": "env-19",
     "topic": "Environment",
     "word": "diagnosis",
-    "phonetic": "/dˌaɪəɡnˈəʊsɪs/",
+    "phonetic": "/daɪəɡˈnoʊsəs/",
     "pos": "noun",
-    "meaning": "sự chuẩn đoán, lời chẩn đoán",
-    "example": "The team discussed the diagnosis during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự chuẩn đoán, lời chẩn đoán\" trong cuộc họp.",
+    "meaning": "sự chẩn đoán, kết quả chẩn đoán",
+    "example": "We discussed the diagnosis at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự chẩn đoán tại cuộc họp.",
     "translations": {
-      "vi": "sự chuẩn đoán, lời chẩn đoán"
+      "vi": "sự chẩn đoán, kết quả chẩn đoán"
     }
   },
   {
     "id": "env-20",
     "topic": "Environment",
     "word": "prescribe",
-    "phonetic": "/pɹɪskɹˈaɪb/",
+    "phonetic": "/prəˈskraɪb/",
     "pos": "verb",
     "meaning": "cho thuốc, kê đơn",
-    "example": "The team plans to prescribe before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"cho thuốc, kê đơn\" trước thời hạn.",
+    "example": "Please prescribe medicine for the patient.",
+    "exampleTranslation": "Hãy kê thuốc cho bệnh nhân.",
     "translations": {
       "vi": "cho thuốc, kê đơn"
     }
@@ -11581,11 +11568,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-21",
     "topic": "Environment",
     "word": "recognize",
-    "phonetic": "/ˈɹɛkəɡˌnaɪz/",
+    "phonetic": "/ˈrɛkəɡnaɪz/",
     "pos": "verb",
     "meaning": "nhận ra, công nhận",
-    "example": "The team plans to recognize before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nhận ra, công nhận\" trước thời hạn.",
+    "example": "Please recognize the warning signs.",
+    "exampleTranslation": "Hãy nhận biết các dấu hiệu cảnh báo.",
     "translations": {
       "vi": "nhận ra, công nhận"
     }
@@ -11594,11 +11581,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-22",
     "topic": "Environment",
     "word": "join",
-    "phonetic": "/dʒˈɔɪn/",
+    "phonetic": "/ˈdʒɔɪn/",
     "pos": "verb",
     "meaning": "nối liền, gia nhập, tham gia",
-    "example": "The team plans to join before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"nối liền, gia nhập, tham gia\" trước thời hạn.",
+    "example": "Please join the sales team.",
+    "exampleTranslation": "Hãy gia nhập đội bán hàng.",
     "translations": {
       "vi": "nối liền, gia nhập, tham gia"
     }
@@ -11607,37 +11594,37 @@ export const VOCABULARY: Word[] = [
     "id": "env-23",
     "topic": "Environment",
     "word": "recommend",
-    "phonetic": "/ɹˌɛkəmˈɛnd/",
+    "phonetic": "/rɛkəˈmɛnd/",
     "pos": "verb",
-    "meaning": "khuy ên, giới thiệu, tiến cử",
-    "example": "The team plans to recommend before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"khuy ên, giới thiệu, tiến cử\" trước thời hạn.",
+    "meaning": "khuyên, giới thiệu, tiến cử",
+    "example": "Please recommend a suitable product.",
+    "exampleTranslation": "Hãy giới thiệu sản phẩm phù hợp.",
     "translations": {
-      "vi": "khuy ên, giới thiệu, tiến cử"
+      "vi": "khuyên, giới thiệu, tiến cử"
     }
   },
   {
     "id": "env-24",
     "topic": "Environment",
     "word": "necessary",
-    "phonetic": "/nˈɛsəsəɹi/",
-    "pos": "adj",
-    "meaning": "cần thiế t, thiếty ếu",
-    "example": "The manager described the proposal as necessary.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"cần thiế t, thiếty ếu\".",
+    "phonetic": "/ˈnɛsəsɛri/",
+    "pos": "adjective",
+    "meaning": "cần thiết, thiết yếu",
+    "example": "The proposed plan is necessary.",
+    "exampleTranslation": "Kế hoạch được đề xuất cần thiết.",
     "translations": {
-      "vi": "cần thiế t, thiếty ếu"
+      "vi": "cần thiết, thiết yếu"
     }
   },
   {
     "id": "env-25",
     "topic": "Environment",
     "word": "reaction",
-    "phonetic": "/ɹɪˈækʃən/",
+    "phonetic": "/riˈækʃən/",
     "pos": "noun",
     "meaning": "sự phản ứng",
-    "example": "The team discussed the reaction during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự phản ứng\" trong cuộc họp.",
+    "example": "We discussed the reaction at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự phản ứng tại cuộc họp.",
     "translations": {
       "vi": "sự phản ứng"
     }
@@ -11646,11 +11633,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-26",
     "topic": "Environment",
     "word": "simple",
-    "phonetic": "/sˈɪmpəl/",
-    "pos": "adj",
+    "phonetic": "/ˈsɪmpəl/",
+    "pos": "adjective",
     "meaning": "đơn giản",
-    "example": "The manager described the proposal as simple.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"đơn giản\".",
+    "example": "The proposed plan is simple.",
+    "exampleTranslation": "Kế hoạch được đề xuất đơn giản.",
     "translations": {
       "vi": "đơn giản"
     }
@@ -11659,37 +11646,37 @@ export const VOCABULARY: Word[] = [
     "id": "env-27",
     "topic": "Environment",
     "word": "exposure",
-    "phonetic": "/ɛkspˈəʊʒɐ/",
+    "phonetic": "/ɪkˈspoʊʒɚ/",
     "pos": "noun",
-    "meaning": "sự phơi bày, sự bốc tr ần",
-    "example": "The team discussed the exposure during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự phơi bày, sự bốc tr ần\" trong cuộc họp.",
+    "meaning": "sự tiếp xúc, sự phơi nhiễm; sự phơi bày",
+    "example": "We discussed the exposure at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự tiếp xúc tại cuộc họp.",
     "translations": {
-      "vi": "sự phơi bày, sự bốc tr ần"
+      "vi": "sự tiếp xúc, sự phơi nhiễm; sự phơi bày"
     }
   },
   {
     "id": "env-28",
     "topic": "Environment",
     "word": "fatigue",
-    "phonetic": "/fɐtˈiːɡ/",
+    "phonetic": "/fəˈtiɡ/",
     "pos": "noun",
-    "meaning": "sự mệt mỏi, công việc mệt nhọc",
-    "example": "The team discussed the fatigue during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự mệt mỏi, công việc mệt nhọc\" trong cuộc họp.",
+    "meaning": "sự mệt mỏi, sự kiệt sức",
+    "example": "Long working hours can cause fatigue.",
+    "exampleTranslation": "Giờ làm việc kéo dài có thể gây mệt mỏi.",
     "translations": {
-      "vi": "sự mệt mỏi, công việc mệt nhọc"
+      "vi": "sự mệt mỏi, sự kiệt sức"
     }
   },
   {
     "id": "env-29",
     "topic": "Environment",
     "word": "symptom",
-    "phonetic": "/sˈɪmptəm/",
+    "phonetic": "/ˈsɪmptəm/",
     "pos": "noun",
     "meaning": "triệu chứng",
-    "example": "The team discussed the symptom during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"triệu chứng\" trong cuộc họp.",
+    "example": "We discussed the symptom at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về triệu chứng tại cuộc họp.",
     "translations": {
       "vi": "triệu chứng"
     }
@@ -11698,24 +11685,24 @@ export const VOCABULARY: Word[] = [
     "id": "env-30",
     "topic": "Environment",
     "word": "examination",
-    "phonetic": "/ɛɡzˌæmɪnˈeɪʃən/",
+    "phonetic": "/ɪɡzæməˈneɪʃən/",
     "pos": "noun",
-    "meaning": "sự kiểm tr a, sự thăm khám",
-    "example": "The team discussed the examination during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự kiểm tr a, sự thăm khám\" trong cuộc họp.",
+    "meaning": "sự kiểm tra, sự thăm khám",
+    "example": "We discussed the examination at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự kiểm tra tại cuộc họp.",
     "translations": {
-      "vi": "sự kiểm tr a, sự thăm khám"
+      "vi": "sự kiểm tra, sự thăm khám"
     }
   },
   {
     "id": "env-31",
     "topic": "Environment",
     "word": "easily",
-    "phonetic": "/ˈiːzɪli/",
-    "pos": "adv",
+    "phonetic": "/ˈizəli/",
+    "pos": "adverb",
     "meaning": "dễ dàng, thoải mái",
-    "example": "The team completed the task easily.",
-    "exampleTranslation": "Nhóm đã hoàn thành công việc theo cách \"dễ dàng, thoải mái\".",
+    "example": "You can easily update your account online.",
+    "exampleTranslation": "Bạn có thể dễ dàng cập nhật tài khoản trực tuyến.",
     "translations": {
       "vi": "dễ dàng, thoải mái"
     }
@@ -11724,24 +11711,24 @@ export const VOCABULARY: Word[] = [
     "id": "env-32",
     "topic": "Environment",
     "word": "dental",
-    "phonetic": "/dˈɛntəl/",
-    "pos": "adj",
-    "meaning": "thuộc về răng/nha khoa",
-    "example": "The manager described the proposal as dental.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"thuộc về răng/nha khoa\".",
+    "phonetic": "/ˈdɛntəl/",
+    "pos": "adjective",
+    "meaning": "thuộc răng, nha khoa",
+    "example": "The clinic provides dental care.",
+    "exampleTranslation": "Phòng khám cung cấp dịch vụ chăm sóc răng miệng.",
     "translations": {
-      "vi": "thuộc về răng/nha khoa"
+      "vi": "thuộc răng, nha khoa"
     }
   },
   {
     "id": "env-33",
     "topic": "Environment",
     "word": "pharmaceutical",
-    "phonetic": "/fˌɑːmɐsˈuːtɪkəl/",
-    "pos": "adj",
+    "phonetic": "/fɑrməˈsutɪkəl/",
+    "pos": "adjective",
     "meaning": "thuộc dược phẩm",
-    "example": "The manager described the proposal as pharmaceutical.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"thuộc dược phẩm\".",
+    "example": "The company produces pharmaceutical products.",
+    "exampleTranslation": "Công ty sản xuất dược phẩm.",
     "translations": {
       "vi": "thuộc dược phẩm"
     }
@@ -11750,11 +11737,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-34",
     "topic": "Environment",
     "word": "relieve",
-    "phonetic": "/ɹɪlˈiːv/",
+    "phonetic": "/rɪˈliv/",
     "pos": "verb",
     "meaning": "làm dịu, làm giảm bớt",
-    "example": "The team plans to relieve before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"làm dịu, làm giảm bớt\" trước thời hạn.",
+    "example": "Please relieve the patient's pain.",
+    "exampleTranslation": "Hãy giảm đau cho bệnh nhân.",
     "translations": {
       "vi": "làm dịu, làm giảm bớt"
     }
@@ -11763,11 +11750,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-35",
     "topic": "Environment",
     "word": "induce",
-    "phonetic": "/ɪndjˈuːs/",
+    "phonetic": "/ɪnˈdus/",
     "pos": "verb",
     "meaning": "gây ra, đem lại",
-    "example": "The team plans to induce before the deadline.",
-    "exampleTranslation": "Nhóm dự định thực hiện hành động \"gây ra, đem lại\" trước thời hạn.",
+    "example": "Please induce a change in consumer behavior.",
+    "exampleTranslation": "Hãy gây ra thay đổi trong hành vi tiêu dùng.",
     "translations": {
       "vi": "gây ra, đem lại"
     }
@@ -11776,11 +11763,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-36",
     "topic": "Environment",
     "word": "insurance",
-    "phonetic": "/ɪnʃˈɔːɹəns/",
+    "phonetic": "/ɪnˈʃʊrəns/",
     "pos": "noun",
     "meaning": "sự bảo hiểm",
-    "example": "The team discussed the insurance during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự bảo hiểm\" trong cuộc họp.",
+    "example": "We discussed the insurance at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự bảo hiểm tại cuộc họp.",
     "translations": {
       "vi": "sự bảo hiểm"
     }
@@ -11789,11 +11776,11 @@ export const VOCABULARY: Word[] = [
     "id": "env-37",
     "topic": "Environment",
     "word": "nutrition",
-    "phonetic": "/njuːtɹˈɪʃən/",
+    "phonetic": "/nuˈtrɪʃən/",
     "pos": "noun",
     "meaning": "sự nuôi dưỡng, dinh dưỡng",
-    "example": "The team discussed the nutrition during the meeting.",
-    "exampleTranslation": "Nhóm đã thảo luận về \"sự nuôi dưỡng, dinh dưỡng\" trong cuộc họp.",
+    "example": "We discussed the nutrition at the meeting.",
+    "exampleTranslation": "Chúng tôi thảo luận về sự nuôi dưỡng tại cuộc họp.",
     "translations": {
       "vi": "sự nuôi dưỡng, dinh dưỡng"
     }
@@ -11802,13 +11789,15 @@ export const VOCABULARY: Word[] = [
     "id": "env-38",
     "topic": "Environment",
     "word": "susceptible",
-    "phonetic": "/səsˈɛptəbəl/",
-    "pos": "adj",
+    "phonetic": "/səˈsɛptəbəl/",
+    "pos": "adjective",
     "meaning": "nhạy cảm, dễ bị, dễ mắc",
-    "example": "The manager described the proposal as susceptible.",
-    "exampleTranslation": "Người quản lý mô tả đề xuất là \"nhạy cảm, dễ bị, dễ mắc\".",
+    "example": "The material is susceptible to corrosion.",
+    "exampleTranslation": "Vật liệu dễ bị ăn mòn.",
     "translations": {
       "vi": "nhạy cảm, dễ bị, dễ mắc"
     }
   }
 ];
+
+export const VOCABULARY: Word[] = [...BASE_VOCABULARY, ...TOEIC_PDF_VOCABULARY];

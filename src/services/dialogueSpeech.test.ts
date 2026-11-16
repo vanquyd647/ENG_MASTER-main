@@ -1,0 +1,20 @@
+import { afterEach, expect, it, vi } from 'vitest';
+vi.mock('react-hot-toast', () => ({ toast: { error: vi.fn() } }));
+import { localEnglishVoices, speakDialogue, stopDialogue } from './dialogueSpeech';
+import { toast } from 'react-hot-toast';
+afterEach(() => { vi.unstubAllGlobals(); });
+it('only queues local voices and follows the speaker selection, rate and active-line callbacks', () => {
+  const voices = [{ name: 'Local A', lang: 'en-US', localService: true }, { name: 'Remote', lang: 'en-GB', localService: false }, { name: 'Local B', lang: 'en-GB', localService: true }];
+  const speak = vi.fn(); const line = vi.fn(), end = vi.fn();
+  vi.stubGlobal('SpeechSynthesisUtterance', class { text: string; constructor(text: string) { this.text = text; } });
+  Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: { getVoices: () => voices, speak, cancel: vi.fn() } });
+  expect(localEnglishVoices().map(voice => voice.name)).toEqual(['Local A', 'Local B']);
+  expect(speakDialogue(['one', 'two'], 0.7, { voiceNames: ['Local B', 'Remote'], onLine: line, onEnd: end })).toBe(true);
+  expect(speak.mock.calls[0][0]).toMatchObject({ voice: voices[2], rate: 0.7 });
+  expect(speak.mock.calls[1][0].voice.localService).toBe(true);
+  speak.mock.calls[0][0].onstart(); expect(line).toHaveBeenCalledWith(0);
+  speak.mock.calls[0][0].onend(); expect(end).not.toHaveBeenCalled();
+  speak.mock.calls[1][0].onend(); expect(end).toHaveBeenCalledTimes(1);
+  stopDialogue(); speak.mock.calls[1][0].onstart(); speak.mock.calls[1][0].onerror({ error: 'canceled' });
+  expect(line).toHaveBeenCalledTimes(1); expect(toast.error).not.toHaveBeenCalled();
+});

@@ -1,49 +1,26 @@
-import React, { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { reportError } from "../services/telemetry";
+import { useEffect } from "react";
+import { useSessionDraft } from "../features/study/useSessionDraft";
+import { getWordById } from "../domain/catalog";
+import { getStudySessionSize } from "../lib/productPreferences";
+import { shuffle } from "../domain/random";
+import { StudyCard } from "../features/study/StudyCard";
+import { RatingControls } from "../features/study/RatingControls";
+import { useActiveTime } from "../features/study/useActiveTime";
+import type { StudyEvidence } from "../types";
+import { speakEnglish } from "../services/speech";
+import React, { useRef, useState } from "react";
+import { motion } from "motion/react";
 import { toast } from "react-hot-toast";
-import ReactMarkdown from "react-markdown";
-import {
-  AlertCircle, Bell, BookOpen, Brain, Calendar, CalendarDays, CheckCircle2,
-  CheckSquare, ChevronRight, ClipboardList, ExternalLink, FileDown, Flame,
-  GraduationCap, History, Moon, RotateCcw, Settings, Sparkles, Sun, Target,
-  Trash2, TrendingUp, Trophy, User as UserIcon, Volume2,
-} from "lucide-react";
-import { VOCABULARY, type Word } from "../data/vocabulary";
-import { callAiApi } from "../lib/apiClient";
-import { createBackup, normalizeBackup } from "../lib/backup";
-import {
-  getLearningStatus, getLearningStatusLabel, getRemainingNewWordCount,
-  getReviewQueue, getSessionCorrectPercentage, getSessionStudiedCount,
-  getStartedWordCount, REVIEW_SESSION_SIZE,
-} from "../lib/learning";
+
+import { AlertCircle, Brain, CheckCircle2, Flame, RotateCcw, Target, Volume2 } from "lucide-react";
+import { getVocabulary, type Word } from "../domain/catalog";
+import { useCatalog } from "../domain/useCatalog";
+
 import { calculateNextReview, initialSRS } from "../lib/srs";
 import { cn } from "../lib/utils";
-import type {
-  BackupV2, DailyActivity, ProgressItem, UserProfile, UserProgress,
-} from "../types";
+import type { UserProgress } from "../types";
 import { Button, Card } from "./ui";
-
-type SyncAction = "tasks" | "calendar" | "drive";
-
-let studyReminderTimer: number | null = null;
-const scheduleStudyReminder = () => {
-  if (!("Notification" in window) || Notification.permission !== "granted") return;
-  if (studyReminderTimer) window.clearTimeout(studyReminderTimer);
-  const nextReminder = new Date();
-  nextReminder.setHours(20, 0, 0, 0);
-  if (nextReminder.getTime() <= Date.now()) nextReminder.setDate(nextReminder.getDate() + 1);
-  studyReminderTimer = window.setTimeout(() => {
-    new Notification("ENG_MASTER", {
-      body: "Đến giờ ôn lại kế hoạch từ vựng hôm nay.",
-      icon: "/favicon.ico",
-    });
-    scheduleStudyReminder();
-  }, nextReminder.getTime() - Date.now());
-};
-const clearStudyReminder = () => {
-  if (studyReminderTimer) window.clearTimeout(studyReminderTimer);
-  studyReminderTimer = null;
-};
 
 export function PracticeSession({ 
   progress, 
@@ -53,16 +30,31 @@ export function PracticeSession({
 }: { 
   progress: UserProgress;
   onCancel: () => void;
-  onFinish: (mode: string, wordIds: string[]) => void;
-  onUpdateProgress: (wordId: string, nextSRS: any) => void;
+  onFinish: (mode: string, wordIds: string[], sessionId: string) => Promise<void>;
+  onUpdateProgress: (wordId: string, nextSRS: ReturnType<typeof calculateNextReview> & { wrongCount: number }, operationId: string, evidence?: StudyEvidence) => Promise<unknown>;
 }) {
+  useCatalog();
   const [mode, setMode] = useState<'easy' | 'medium' | 'hard' | 'mistakes' | null>(null);
   const [practiceWords, setPracticeWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const sessionId = useRef<string>(crypto.randomUUID());
+  const takeActiveSeconds = useActiveTime();
+  const draft = useSessionDraft();
+  useEffect(() => {
+    let active = true;
+    void draft.load("practice", progress).then((existing) => {
+      if (!active || !existing) return;
+      sessionId.current = existing.id; setMode((existing.mode || "hard") as "easy" | "medium" | "hard" | "mistakes");
+      setPracticeWords(existing.wordIds.map((id) => getWordById(id)!)); setCurrentIndex(existing.cursor);
+    }).catch((error) => toast.error(error.message));
+    return () => { active = false; };
+  }, []);
+  const saving = useRef(false);
+  const [isSaving, setIsSaving] = useState(false);
 
-  const startPractice = (difficulty: 'easy' | 'medium' | 'hard' | 'mistakes') => {
-    let filtered = VOCABULARY.filter(w => {
+  const startPractice = async (difficulty: 'easy' | 'medium' | 'hard' | 'mistakes') => {
+    let filtered = getVocabulary().filter(w => {
       const p = progress[w.id];
       if (difficulty === 'easy') {
         return p && p.easiness > 2.8;
@@ -82,15 +74,15 @@ export function PracticeSession({
     if (filtered.length === 0) {
       if (difficulty === 'mistakes') {
          toast.success('Tuyệt vời! Bạn chưa có từ sai nào. Đang tải một số từ phức tạp...');
-         filtered = VOCABULARY.filter(w => {
+         filtered = getVocabulary().filter(w => {
            const p = progress[w.id];
            return p && p.easiness < 2.5;
          });
          if (filtered.length === 0) {
-            filtered = VOCABULARY.filter(w => !progress[w.id]);
+            filtered = getVocabulary().filter(w => !progress[w.id]);
          }
       } else if (difficulty === 'hard') {
-         filtered = VOCABULARY.filter(w => !progress[w.id]);
+         filtered = getVocabulary().filter(w => !progress[w.id]);
       } else {
          toast.error('Không có từ nào trong danh mục này! Hãy thử mức độ khác.');
          return;
@@ -105,16 +97,25 @@ export function PracticeSession({
         return countB - countA;
       });
     } else {
-      filtered = [...filtered].sort(() => Math.random() - 0.5);
+      filtered = shuffle(filtered);
     }
 
-    setPracticeWords(filtered.slice(0, 15));
+    const words = filtered.slice(0, getStudySessionSize());
+    try {
+    await draft.save({ id: sessionId.current, kind: "practice", wordIds: words.map((word) => word.id), cursor: 0, completedIds: [], mode: difficulty, updatedAt: new Date().toISOString() });
+    setPracticeWords(words);
+    takeActiveSeconds();
     setMode(difficulty);
     setCurrentIndex(0);
     setIsFlipped(false);
+    } catch (error) {toast.error((error as Error).message);}
   };
 
+  const finishEarly=async()=>{if(saving.current || !window.confirm('Kết thúc và ghi nhận các từ đã chấm?'))return;saving.current=true;setIsSaving(true);try{const ids=practiceWords.filter(word=>progress[word.id]?.lastOperationId===sessionId.current+':'+word.id).map(word=>word.id);if(ids.length)await onFinish(mode || 'practice',ids,sessionId.current);else onCancel();await draft.finish('practice');}catch(error){toast.error((error as Error).message);}finally{saving.current=false;setIsSaving(false);}};
   const handleRate = async (quality: number) => {
+    if (saving.current || !isFlipped) return;
+    saving.current = true;
+    setIsSaving(true);
     const word = practiceWords[currentIndex];
     const prevSRS = progress[word.id] || { 
       easiness: initialSRS.easiness, 
@@ -123,16 +124,10 @@ export function PracticeSession({
       nextReviewDate: new Date().toISOString()
     };
     
-    // Adjust quality slightly based on difficulty to influence interval correctly
-    let adjustedQuality = quality;
-    if (mode === 'hard' && quality >= 4) {
-       adjustedQuality = Math.min(5, quality + 1); // Reward more for getting hard words right
-    } else if (mode === 'easy' && quality < 4) {
-       adjustedQuality = Math.max(1, quality - 1); // Penalize more for getting easy words wrong
-    }
+    const adjustedQuality = quality;
 
     let newWrongCount = prevSRS.wrongCount || 0;
-    if (quality === 1) {
+    if (quality < 3) {
       newWrongCount += 1;
     } else if (quality >= 4 && newWrongCount > 0) {
       newWrongCount -= 1;
@@ -143,28 +138,27 @@ export function PracticeSession({
       nextReviewDate: new Date(prevSRS.nextReviewDate)
     });
 
-    onUpdateProgress(word.id, {
-      ...nextSRS,
-      wrongCount: newWrongCount
-    });
-
-    setIsFlipped(false);
-    if (currentIndex >= practiceWords.length - 1) {
-      onFinish(mode || 'practice', practiceWords.map((practiceWord) => practiceWord.id));
-    } else {
-      setTimeout(() => setCurrentIndex(prev => Math.min(prev + 1, practiceWords.length - 1)), 150);
-    }
+    try {
+      await onUpdateProgress(word.id, { ...nextSRS, wrongCount: newWrongCount }, `${sessionId.current}:${word.id}`, { sessionId: sessionId.current, mode: "practice", quality, durationSeconds: takeActiveSeconds() });
+      await draft.save({ id: sessionId.current, kind: "practice", wordIds: practiceWords.map((entry) => entry.id), cursor: Math.min(currentIndex + 1, practiceWords.length - 1), completedIds: practiceWords.slice(0, currentIndex + 1).map((entry) => entry.id), mode: mode || "hard", updatedAt: new Date().toISOString() });
+      if (currentIndex >= practiceWords.length - 1) {
+        await onFinish(mode || 'practice', practiceWords.map((entry) => entry.id), sessionId.current);
+        await draft.finish("practice");
+      } else {
+        await new Promise((resolve) => window.setTimeout(resolve, 150));
+        setCurrentIndex((index) => Math.min(index + 1, practiceWords.length - 1));
+        setIsFlipped(false);
+      }
+    } catch (error) {
+      reportError("PracticeSession",error);
+      toast.error('Chưa lưu được phiên luyện tập. Hãy thử lại trên thẻ này.');
+    } finally { saving.current = false; setIsSaving(false); }
   };
 
-  const speak = (e: any, text: string | undefined) => {
-    if (e) e.stopPropagation();
-    if (!text) return;
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-    window.speechSynthesis.speak(utterance);
-  };
+  const speak = (event: React.MouseEvent | null, text: string | undefined) => { event?.stopPropagation(); speakEnglish(text); };
 
   const flipCard = () => {
+    if (saving.current) return;
     if (!isFlipped && localStorage.getItem('app_sound') !== 'false') {
       speak(null, currentWord?.word);
     }
@@ -238,8 +232,8 @@ export function PracticeSession({
           </Card>
         </div>
         <div className="flex justify-center mt-10">
-          <Button onClick={onCancel} variant="ghost" className="text-zinc-500 hover:text-white uppercase tracking-widest text-xs font-black">
-            Quay lại Dashboard
+          <Button onClick={() => draft.pause(onCancel)} variant="ghost" className="text-zinc-500 hover:text-white uppercase tracking-widest text-xs font-black">
+            Quay lại tổng quan
           </Button>
         </div>
       </motion.div>
@@ -272,27 +266,10 @@ export function PracticeSession({
       </div>
 
       <div className="perspective-1000 w-full h-[min(420px,62vh)] sm:h-[450px]">
-        <motion.div
-            className="w-full h-full relative cursor-pointer rounded-[28px] sm:rounded-[32px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-4 focus-visible:ring-offset-zinc-950"
-           role="button"
-           tabIndex={0}
-           aria-pressed={isFlipped}
-           aria-label={isFlipped ? "Mặt sau thẻ từ. Nhấn để xem từ vựng" : "Mặt trước thẻ từ. Nhấn để xem nghĩa"}
-           animate={{ rotateY: isFlipped ? 180 : 0 }}
-           transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-           style={{ transformStyle: 'preserve-3d' }}
-           onClick={flipCard}
-           onKeyDown={(event) => {
-             if (event.key === 'Enter' || event.key === ' ') {
-               event.preventDefault();
-               flipCard();
-             }
-           }}
-        >
+        <StudyCard flipped={isFlipped} busy={isSaving} onFlip={flipCard} className="w-full h-full relative cursor-pointer rounded-[28px] sm:rounded-[32px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-4 focus-visible:ring-offset-zinc-950" style={{ transformStyle: 'preserve-3d' }}>
           {/* Front */}
-          <div 
-             className={cn(
-                "absolute inset-0 bg-[#0c0c0e] border border-zinc-800 rounded-[28px] sm:rounded-[32px] p-6 sm:p-10 flex flex-col items-center justify-center text-center shadow-2xl backface-hidden group",
+          <div inert={isFlipped} aria-hidden={isFlipped} className={cn(
+            "absolute inset-0 bg-[#0c0c0e] border border-zinc-800 rounded-[28px] sm:rounded-[32px] p-6 sm:p-10 flex flex-col items-center justify-center text-center shadow-2xl backface-hidden group",
                isFlipped ? "opacity-0 pointer-events-none" : "opacity-100"
              )}
           >
@@ -310,7 +287,7 @@ export function PracticeSession({
               <h2 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tighter text-white mb-6 px-2 sm:px-4 py-6 sm:py-8 break-words">
                 {currentWord?.word}
              </h2>
-             <p className="text-xl font-mono text-zinc-500 opacity-80">/{currentWord?.phonetic}/</p>
+             <p className="text-xl font-mono text-zinc-500 opacity-80">{currentWord?.phonetic}</p>
              <div className="absolute bottom-8 left-0 w-full flex justify-center">
                <span className="text-[10px] uppercase font-black tracking-widest text-zinc-600 flex items-center gap-2">
                   <RotateCcw className="w-3 h-3" />
@@ -320,9 +297,8 @@ export function PracticeSession({
           </div>
 
           {/* Back */}
-           <div 
-             className={cn(
-                "absolute inset-0 bg-indigo-600 rounded-[28px] sm:rounded-[32px] p-5 sm:p-10 flex flex-col items-center justify-center text-center shadow-2xl backface-hidden overflow-hidden",
+           <div inert={!isFlipped} aria-hidden={!isFlipped} className={cn(
+            "absolute inset-0 bg-indigo-600 rounded-[28px] sm:rounded-[32px] p-5 sm:p-10 flex flex-col items-center justify-center text-center shadow-2xl backface-hidden overflow-hidden",
                !isFlipped ? "opacity-0 pointer-events-none" : "opacity-100"
              )}
              style={{ transform: 'rotateY(180deg)' }}
@@ -335,13 +311,13 @@ export function PracticeSession({
                 <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-5 sm:mb-8 drop-shadow-md">
                   {currentWord?.meaning}
                 </h2>
-                <div className="space-y-3 sm:space-y-4 bg-white/10 p-4 sm:p-6 rounded-2xl border border-white/20 shadow-xl backdrop-blur-sm max-h-44 sm:max-h-none overflow-y-auto">
+                {currentWord?.example && <div className="space-y-3 sm:space-y-4 bg-white/10 p-4 sm:p-6 rounded-2xl border border-white/20 shadow-xl backdrop-blur-sm max-h-44 sm:max-h-none overflow-y-auto">
                   <p className="text-base sm:text-xl font-medium italic text-indigo-50 leading-snug">"{currentWord?.example}"</p>
                   <p className="text-[15px] text-indigo-200 font-medium leading-relaxed">{currentWord?.exampleTranslation}</p>
-                </div>
+                </div>}
               </div>
            </div>
-        </motion.div>
+        </StudyCard>
       </div>
 
       <div className={cn(
@@ -349,33 +325,12 @@ export function PracticeSession({
         !isFlipped ? "opacity-0 pointer-events-none translate-y-4" : "opacity-100 translate-y-0"
       )}>
         <p className="text-center text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-4">Đánh giá độ khó để cập nhật tiến độ (SRS)</p>
-        <div className="grid grid-cols-4 gap-2 md:gap-3">
-          {[
-            { q: 1, label: 'Học lại', color: 'border-rose-900/50 bg-rose-950/20 text-rose-400 hover:bg-rose-950/40' },
-            { q: 3, label: 'Khó', color: 'border-amber-900/50 bg-amber-950/20 text-amber-400 hover:bg-amber-950/40' },
-            { q: 4, label: 'Tốt', color: 'border-emerald-900/50 bg-emerald-950/20 text-emerald-400 hover:bg-emerald-950/40' },
-            { q: 5, label: 'Dễ', color: 'border-indigo-900/50 bg-indigo-950/20 text-indigo-400 hover:bg-indigo-950/40' },
-          ].map(btn => (
-            <button
-              key={btn.q}
-              onClick={(e) => {
-                e.stopPropagation();
-                handleRate(btn.q);
-              }}
-              className={cn(
-                "flex flex-col items-center gap-2 py-4 rounded-2xl transition-all active:scale-95 border",
-                btn.color,
-                "font-bold text-[10px] uppercase tracking-tighter shadow-lg"
-              )}
-            >
-              {btn.label}
-            </button>
-          ))}
-        </div>
+        <RatingControls disabled={isSaving || !isFlipped} previous={currentWord ? progress[currentWord.id] : undefined} onRate={(quality) => void handleRate(quality)} />
       </div>
 
       <div className="flex justify-center pt-8">
-        <Button onClick={onCancel} variant="ghost" className="text-zinc-500 font-black uppercase tracking-widest text-[10px] hover:text-rose-500 transition-colors">
+        <Button onClick={finishEarly} disabled={isSaving} variant="outline">Kết thúc sớm</Button>
+        <Button onClick={() => draft.pause(onCancel)} disabled={isSaving} variant="ghost" className="text-zinc-500 font-black uppercase tracking-widest text-[10px] hover:text-rose-500 transition-colors">
           Kết thúc ngay
         </Button>
       </div>

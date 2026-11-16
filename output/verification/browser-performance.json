@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-13T11:12:51.551Z",
+  "environment": "localhost production server, Chrome, fresh guest browser; route time until heading visible, offline precache may run concurrently; no mobile network throttling",
+  "initial": {
+    "navigation": [
+      {
+        "domContentLoadedMs": 59,
+        "loadMs": 60
+      }
+    ],
+    "paint": [
+      {
+        "name": "first-paint",
+        "ms": 1216
+      },
+      {
+        "name": "first-contentful-paint",
+        "ms": 1840
+      }
+    ]
+  },
+  "firstStatsMs": 1873,
+  "warmStatsMs": 31
+}

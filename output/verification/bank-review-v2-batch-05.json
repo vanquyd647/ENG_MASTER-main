@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "p2-v2-request-5",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Would you mind checking these figures? - Not at all. Let me take a look.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-request-6",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Can someone cover my shift on Saturday? - I can, if it is the morning shift.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-indirect-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Who is responsible for arranging the shipment? - Ask Ms. Chen in logistics.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-indirect-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Why has the presentation been postponed? - The client requested more time to review the data.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-indirect-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Do we need to print more brochures? - There are still several boxes in storage.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-indirect-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Has the conference room been booked? - Let me check the reservation calendar.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-indirect-5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "How will you get to the trade fair? - A colleague offered me a ride.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-indirect-6",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Is the application form available online? - The website is being updated; I can give you a paper copy.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-word-forms-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "An adverb is required to modify the verb completed.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-word-forms-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A noun is required as the direct object of requested following the determiner a clear.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-word-forms-3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "An adjective is required in parallel with attractive after the linking verb is.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-agreement-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject is 'The number of online orders', which takes a singular verb.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-agreement-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The plural subject 'Several members' requires the plural verb 'travel'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-agreement-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The singular subject 'Every employee' takes the singular present tense verb 'has'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-tenses-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The time marker 'Last month' requires the simple past tense 'exceeded'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-tenses-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The presence of 'since she graduated' indicates an action starting in the past and continuing into the present, requiring 'has worked'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-tenses-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "An ongoing past action interrupted by another requires the past continuous tense 'was checking'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-prepositions-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Specific times of the day use the preposition 'at'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-prepositions-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Specific days and dates use the preposition 'on'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-prepositions-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Continuing up to a specific time uses the preposition 'until'.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "grammar-v2-connectors-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "\"the heavy snow\" is a noun phrase, requiring a prepositional connector like \"Because of\".",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-connectors-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "\"the report is lengthy\" is a full clause containing a subject and verb, requiring the conjunction \"Although\".",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-connectors-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Conditional clause introduced by \"if\" matches \"you encounter any technical problems\".",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-passive-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "\"The office windows\" is plural and acts as the receiver of the action; present passive \"are cleaned\" is correct.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-passive-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Modal verb \"must\" is followed by the passive infinitive \"be changed\".",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-passive-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Action occurred prior to another past event (\"changed last week\"), requiring past perfect passive \"had been sent\".",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-delivery-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Modal verb \"will\" must be followed by the base verb form \"deliver\".",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-delivery-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The noun \"shipment\" matches the context of signing for delivered goods.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-delivery-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "\"by 4 p.m. today\" indicates the deadline by which to contact them.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-delivery-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "\"We look forward to completing your delivery\" fits naturally as a closing sentence before the sign-off.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p5-v2-passive-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The subject 'The final invoice' receives the action of sending in the future, requiring the passive voice 'will be sent'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-passive-4",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The action of cleaning happened before another action in the past ('arrived'), requiring the past perfect passive 'had been cleaned'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-passive-5",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The past participle 'published' functions as an adjective after the linking verb 'are' to describe the state of the survey results.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-passive-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Plural subject 'Employees' requires the plural passive form 'are required' to express obligation.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a location. 'Beside the reception desk' correctly provides a location.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A 'Where' question requires a place as an answer. 'In the second-floor conference room' is the only location given.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a destination or place to put something. 'In the tray marked Human Resources' correctly answers where to leave the forms.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a location. 'In the underground garage' directly answers where the van was parked.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a place. 'At the security counter' provides the correct location.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-6",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a location. 'Across from the central station' correctly indicates a location.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

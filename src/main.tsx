@@ -1,16 +1,17 @@
+import { registerOfflinePack } from "./services/pwa";
 import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
 import App from './App.tsx';
+import { ErrorBoundary } from './app/ErrorBoundary';
+import { MotionConfig } from 'motion/react';
+import { scheduleStudyReminder } from './services/reminders';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <ErrorBoundary><MotionConfig reducedMotion="user"><App /></MotionConfig></ErrorBoundary>
   </StrictMode>,
 );
+scheduleStudyReminder();
 
-if ('serviceWorker' in navigator && import.meta.env.PROD) {
-  window.addEventListener('load', () => {
-    void navigator.serviceWorker.register('/sw.js');
-  });
-}
+window.addEventListener('load', () => void registerOfflinePack());

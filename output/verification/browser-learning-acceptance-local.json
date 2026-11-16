@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-10-15T03:40:29.170Z",
+  "origin": "http://localhost:3110",
+  "passed": true,
+  "checks": [
+    {
+      "name": "guest + offline pack",
+      "result": {
+        "offlineReady": true
+      }
+    },
+    {
+      "name": "practice filter and draft reload",
+      "result": {
+        "topic": "Giới từ",
+        "questions": 4,
+        "answerAndOrderRestored": true
+      }
+    },
+    {
+      "name": "shared notebook exact retry and resolution",
+      "result": {
+        "questionId": "p5-v1-12",
+        "resolved": true
+      }
+    },
+    {
+      "name": "exact vocabulary retry preserves the original mistake identity",
+      "result": {
+        "sameQuestionId": true,
+        "wrongAndCorrectAttempts": 2
+      }
+    },
+    {
+      "name": "today flow resumes without repeating a rated card",
+      "result": {
+        "resumedWord": "cooperatively",
+        "reviewStepComplete": true
+      }
+    },
+    {
+      "name": "today practice complete + topic statistics",
+      "result": {
+        "todayComplete": true,
+        "topicStatsVisible": true
+      }
+    },
+    {
+      "name": "offline first-visit routes + mobile overflow",
+      "result": {
+        "offlineRoutes": 4,
+        "widths": [
+          360,
+          390,
+          768,
+          1280
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "actual offline sentence playback, repeat and stop",
+      "result": {
+        "localVoice": true,
+        "sentenceRepeated": 3,
+        "startedAndEnded": true,
+        "stop": true
+      }
+    }
+  ]
+}

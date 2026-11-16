@@ -1,0 +1,135 @@
+{
+  "checkedAt": "2026-10-16T12:28:42.991Z",
+  "origin": "http://localhost:3121",
+  "passed": true,
+  "checks": [
+    {
+      "name": "guest and offline pack",
+      "result": {
+        "offlineReady": true,
+        "questions": 311,
+        "nativeEnglishVoices": [
+          "Albert",
+          "Bad News",
+          "Bahh",
+          "Bells",
+          "Boing",
+          "Bubbles",
+          "Cellos",
+          "Daniel",
+          "Eddy (Tiếng Anh (Vương quốc Anh))",
+          "Eddy (Tiếng Anh (Hoa Kỳ))",
+          "Flo (Tiếng Anh (Vương quốc Anh))",
+          "Flo (Tiếng Anh (Hoa Kỳ))",
+          "Fred",
+          "Good News",
+          "Grandma (Tiếng Anh (Vương quốc Anh))",
+          "Grandma (Tiếng Anh (Hoa Kỳ))",
+          "Grandpa (Tiếng Anh (Vương quốc Anh))",
+          "Grandpa (Tiếng Anh (Hoa Kỳ))",
+          "Jester",
+          "Junior",
+          "Karen",
+          "Kathy",
+          "Moira",
+          "Organ",
+          "Ralph",
+          "Reed (Tiếng Anh (Vương quốc Anh))",
+          "Reed (Tiếng Anh (Hoa Kỳ))",
+          "Rishi",
+          "Rocko (Tiếng Anh (Vương quốc Anh))",
+          "Rocko (Tiếng Anh (Hoa Kỳ))",
+          "Samantha",
+          "Sandy (Tiếng Anh (Vương quốc Anh))",
+          "Sandy (Tiếng Anh (Hoa Kỳ))",
+          "Shelley (Tiếng Anh (Vương quốc Anh))",
+          "Shelley (Tiếng Anh (Hoa Kỳ))",
+          "Superstar",
+          "Tessa",
+          "Trinoids",
+          "Whisper",
+          "Wobble",
+          "Zarvox"
+        ]
+      }
+    },
+    {
+      "name": "official and supplemental links",
+      "result": {
+        "nativeMp3Playback": true,
+        "offlineSeek": true,
+        "duration": 247.742721,
+        "sourceLinks": [
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample01.html",
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample03.html",
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample04.html",
+          "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson1/3960391.html"
+        ]
+      }
+    },
+    {
+      "name": "bundled audio remains available with no device English voices",
+      "result": {
+        "noSystemVoiceNeeded": true,
+        "speechMode": "bundled-kokoro-mp3"
+      }
+    },
+    {
+      "name": "Part 1 six images, hidden descriptions, scoring and transcript review",
+      "result": {
+        "questions": 6,
+        "uniqueImages": 6,
+        "correct": 6,
+        "answerHidden": true,
+        "spokenOptionsMatch": true,
+        "pauseAccessibleWhileScrolled": true
+      }
+    },
+    {
+      "name": "Part 3 ordered group, reload, deadline and actual speech start",
+      "result": {
+        "group": 3,
+        "order": true,
+        "deadlineRetained": true,
+        "answerRetained": true,
+        "wrong": 1,
+        "blanks": 2,
+        "nativeStarted": true
+      }
+    },
+    {
+      "name": "Part 3 exact mistake retry from notebook",
+      "result": {
+        "exactQuestion": "p3-exam-v1-hotel-q1",
+        "correct": 1
+      }
+    },
+    {
+      "name": "Part 4 entire talk and three questions",
+      "result": {
+        "correct": 3,
+        "group": 3
+      }
+    },
+    {
+      "name": "offline photos, saved answers and mobile widths",
+      "result": {
+        "offlinePhotos": 6,
+        "answerRetained": true,
+        "widths": [
+          360,
+          390,
+          768,
+          1280
+        ]
+      }
+    },
+    {
+      "name": "backup v4 roundtrip with new parts",
+      "result": {
+        "records": 5,
+        "mergeDeduplicated": true
+      }
+    }
+  ]
+}

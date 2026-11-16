@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-13T10:51:05.900Z",
+  "project": "engai-2c7fe",
+  "model": "gemini-3.5-flash-lite",
+  "authMethod": "temporary custom-token QA account",
+  "checks": [
+    {
+      "endpoint": "explain",
+      "status": 200,
+      "characters": 859
+    },
+    {
+      "endpoint": "quiz",
+      "status": 200,
+      "validatedQuestions": 2
+    },
+    {
+      "endpoint": "quiz-invalid",
+      "status": 400,
+      "code": "invalid_words"
+    }
+  ],
+  "cleanup": {
+    "auth": true,
+    "quota": true
+  },
+  "quota": {
+    "documents": 3,
+    "ttlTimestampsValid": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-13T11:03:16.621Z",
+  "deployments": [
+    {
+      "host": "eng-master-delta.vercel.app",
+      "status": 200,
+      "redirect": "https://eng-master-delta.vercel.app/",
+      "title": "My Google AI Studio App",
+      "lastModified": "Tue, 13 Oct 2026 11:03:15 GMT",
+      "etag": "\"70e5fe6583d931daa1cd79bef0f72e06\"",
+      "assets": [
+        "/assets/index-BO44Wp5w.js",
+        "/assets/index-gl4KnQNh.css"
+      ]
+    },
+    {
+      "host": "eng-master-main2.vercel.app",
+      "status": 200,
+      "redirect": "https://eng-master-main2.vercel.app/",
+      "title": "ENG_MASTER - Học từ vựng tiếng Anh",
+      "lastModified": "Tue, 13 Oct 2026 11:03:16 GMT",
+      "etag": "W/\"6b4764937f00d3028da9f493147be205\"",
+      "assets": [
+        "/assets/index-BDPjwD1W.js",
+        "/assets/react-D0UdWyz8.js",
+        "/assets/firebase-Cr3h3Unv.js",
+        "/assets/vocabulary-B_yv1PpC.js",
+        "/assets/charts-FRM-4n86.js",
+        "/assets/motion-BS2xIxQK.js",
+        "/assets/index-dUTCYiuz.css"
+      ]
+    }
+  ]
+}

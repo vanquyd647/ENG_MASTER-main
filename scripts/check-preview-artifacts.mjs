@@ -1,0 +1,9 @@
+import fs from'node:fs';import{spawnSync}from'node:child_process';import{createHash}from'node:crypto';
+const origin=process.argv[2],cli=process.argv[3];if(!/^https:\/\/eng-master-main2-[a-z0-9]+-quys-projects-d07a5005\.vercel\.app$/.test(origin||'')||!cli)throw Error('Approved preview and CLI required');
+const folder='output/verification/preview-public-'+Date.now();fs.mkdirSync(folder,{recursive:true});
+const download=(url,name)=>{const file=folder+'/'+name,r=spawnSync(process.execPath,[cli,'curl',origin+url,'--yes','--','--silent','--show-error','--output',file,'--write-out','%{http_code}','--max-time','60'],{encoding:'utf8',maxBuffer:1e6});if(r.status||!r.stdout.trim().endsWith('200'))throw Error('Preview public artifact failed '+url);return fs.readFileSync(file);};
+const pack=JSON.parse(download('/offline-pack.json','offline-pack.json')),local=JSON.parse(fs.readFileSync('dist/offline-pack.json','utf8'));
+if(pack.revision!==local.revision||JSON.stringify(pack.files)!==JSON.stringify(local.files))throw Error('Preview differs from local tested build');
+const manifest=JSON.parse(fs.readFileSync('src/data/listeningAudioManifest.json','utf8'));
+const verified=[];for(const asset of [manifest.exam,manifest.clips['p3-exam-v1-software'],manifest.clips['p4-exam-v1-shuttle']]){const bytes=download(asset.src,asset.src.split('/').at(-1));if(bytes.length!==asset.bytes||createHash('sha256').update(bytes).digest('hex')!==asset.sha256)throw Error('Remote audio differs '+asset.src);verified.push(asset.src);}
+const report={checkedAt:new Date().toISOString(),origin,passed:true,offlineRevision:pack.revision,assets:pack.files.length,entirePackMatchesTestedLocalBuild:true,remoteAudioHashesVerified:verified,evidence:folder};fs.writeFileSync('output/verification/accept95-preview-proof.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

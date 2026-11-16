@@ -1,0 +1,1231 @@
+{
+  "version": 2,
+  "scope": "Frozen 200 daily-learning teaching outputs across explain/simplify/examples/compare/practice/quiz/mistake-review; synthetic attempts only, no learner data. All service failures retained. Not a score-gain study or all 1575 words.",
+  "threshold": 95,
+  "requests": 88,
+  "expectedItems": 200,
+  "minimumRequestSpacingMs": 6000,
+  "catalogSha256": "32a0060b1c67c8b85db3f0c2e6af02c1e71a794c860167764102897950e6afac",
+  "cases": [
+    {
+      "id": "accept200-explain-opening",
+      "endpoint": "explain",
+      "word": "opening",
+      "action": "explain",
+      "level": "A1",
+      "expectedSense": "vị trí trống, sự mở cửa, lễ khai trương"
+    },
+    {
+      "id": "accept200-simplify-opening",
+      "endpoint": "explain",
+      "word": "opening",
+      "action": "simplify",
+      "level": "A2",
+      "expectedSense": "vị trí trống, sự mở cửa, lễ khai trương"
+    },
+    {
+      "id": "accept200-examples-opening",
+      "endpoint": "explain",
+      "word": "opening",
+      "action": "examples",
+      "level": "B1",
+      "expectedSense": "vị trí trống, sự mở cửa, lễ khai trương"
+    },
+    {
+      "id": "accept200-compare-opening",
+      "endpoint": "explain",
+      "word": "opening",
+      "action": "compare",
+      "level": "B2",
+      "expectedSense": "vị trí trống, sự mở cửa, lễ khai trương",
+      "other": "invoice"
+    },
+    {
+      "id": "accept200-practice-opening",
+      "endpoint": "explain",
+      "word": "opening",
+      "action": "practice",
+      "level": "A1",
+      "expectedSense": "vị trí trống, sự mở cửa, lễ khai trương"
+    },
+    {
+      "id": "accept200-explain-invoice",
+      "endpoint": "explain",
+      "word": "invoice",
+      "action": "explain",
+      "level": "A2",
+      "expectedSense": "hoá đơn"
+    },
+    {
+      "id": "accept200-simplify-invoice",
+      "endpoint": "explain",
+      "word": "invoice",
+      "action": "simplify",
+      "level": "B1",
+      "expectedSense": "hoá đơn"
+    },
+    {
+      "id": "accept200-examples-invoice",
+      "endpoint": "explain",
+      "word": "invoice",
+      "action": "examples",
+      "level": "B2",
+      "expectedSense": "hoá đơn"
+    },
+    {
+      "id": "accept200-compare-invoice",
+      "endpoint": "explain",
+      "word": "invoice",
+      "action": "compare",
+      "level": "A1",
+      "expectedSense": "hoá đơn",
+      "other": "highly"
+    },
+    {
+      "id": "accept200-practice-invoice",
+      "endpoint": "explain",
+      "word": "invoice",
+      "action": "practice",
+      "level": "A2",
+      "expectedSense": "hoá đơn"
+    },
+    {
+      "id": "accept200-explain-highly",
+      "endpoint": "explain",
+      "word": "highly",
+      "action": "explain",
+      "level": "B1",
+      "expectedSense": "rất, hết sức"
+    },
+    {
+      "id": "accept200-simplify-highly",
+      "endpoint": "explain",
+      "word": "highly",
+      "action": "simplify",
+      "level": "B2",
+      "expectedSense": "rất, hết sức"
+    },
+    {
+      "id": "accept200-examples-highly",
+      "endpoint": "explain",
+      "word": "highly",
+      "action": "examples",
+      "level": "A1",
+      "expectedSense": "rất, hết sức"
+    },
+    {
+      "id": "accept200-compare-highly",
+      "endpoint": "explain",
+      "word": "highly",
+      "action": "compare",
+      "level": "A2",
+      "expectedSense": "rất, hết sức",
+      "other": "employee"
+    },
+    {
+      "id": "accept200-practice-highly",
+      "endpoint": "explain",
+      "word": "highly",
+      "action": "practice",
+      "level": "B1",
+      "expectedSense": "rất, hết sức"
+    },
+    {
+      "id": "accept200-explain-employee",
+      "endpoint": "explain",
+      "word": "employee",
+      "action": "explain",
+      "level": "B2",
+      "expectedSense": "nhân viên, người lao động"
+    },
+    {
+      "id": "accept200-simplify-employee",
+      "endpoint": "explain",
+      "word": "employee",
+      "action": "simplify",
+      "level": "A1",
+      "expectedSense": "nhân viên, người lao động"
+    },
+    {
+      "id": "accept200-examples-employee",
+      "endpoint": "explain",
+      "word": "employee",
+      "action": "examples",
+      "level": "A2",
+      "expectedSense": "nhân viên, người lao động"
+    },
+    {
+      "id": "accept200-compare-employee",
+      "endpoint": "explain",
+      "word": "employee",
+      "action": "compare",
+      "level": "B1",
+      "expectedSense": "nhân viên, người lao động",
+      "other": "headquarters"
+    },
+    {
+      "id": "accept200-practice-employee",
+      "endpoint": "explain",
+      "word": "employee",
+      "action": "practice",
+      "level": "B2",
+      "expectedSense": "nhân viên, người lao động"
+    },
+    {
+      "id": "accept200-explain-headquarters",
+      "endpoint": "explain",
+      "word": "headquarters",
+      "action": "explain",
+      "level": "A1",
+      "expectedSense": "trụ sở chính"
+    },
+    {
+      "id": "accept200-simplify-headquarters",
+      "endpoint": "explain",
+      "word": "headquarters",
+      "action": "simplify",
+      "level": "A2",
+      "expectedSense": "trụ sở chính"
+    },
+    {
+      "id": "accept200-examples-headquarters",
+      "endpoint": "explain",
+      "word": "headquarters",
+      "action": "examples",
+      "level": "B1",
+      "expectedSense": "trụ sở chính"
+    },
+    {
+      "id": "accept200-compare-headquarters",
+      "endpoint": "explain",
+      "word": "headquarters",
+      "action": "compare",
+      "level": "B2",
+      "expectedSense": "trụ sở chính",
+      "other": "procrastinate"
+    },
+    {
+      "id": "accept200-practice-headquarters",
+      "endpoint": "explain",
+      "word": "headquarters",
+      "action": "practice",
+      "level": "A1",
+      "expectedSense": "trụ sở chính"
+    },
+    {
+      "id": "accept200-explain-procrastinate",
+      "endpoint": "explain",
+      "word": "procrastinate",
+      "action": "explain",
+      "level": "A2",
+      "expectedSense": "trì hoãn, chần chừ"
+    },
+    {
+      "id": "accept200-simplify-procrastinate",
+      "endpoint": "explain",
+      "word": "procrastinate",
+      "action": "simplify",
+      "level": "B1",
+      "expectedSense": "trì hoãn, chần chừ"
+    },
+    {
+      "id": "accept200-examples-procrastinate",
+      "endpoint": "explain",
+      "word": "procrastinate",
+      "action": "examples",
+      "level": "B2",
+      "expectedSense": "trì hoãn, chần chừ"
+    },
+    {
+      "id": "accept200-compare-procrastinate",
+      "endpoint": "explain",
+      "word": "procrastinate",
+      "action": "compare",
+      "level": "A1",
+      "expectedSense": "trì hoãn, chần chừ",
+      "other": "reliable"
+    },
+    {
+      "id": "accept200-practice-procrastinate",
+      "endpoint": "explain",
+      "word": "procrastinate",
+      "action": "practice",
+      "level": "A2",
+      "expectedSense": "trì hoãn, chần chừ"
+    },
+    {
+      "id": "accept200-explain-reliable",
+      "endpoint": "explain",
+      "word": "reliable",
+      "action": "explain",
+      "level": "B1",
+      "expectedSense": "đáng tin cậy"
+    },
+    {
+      "id": "accept200-simplify-reliable",
+      "endpoint": "explain",
+      "word": "reliable",
+      "action": "simplify",
+      "level": "B2",
+      "expectedSense": "đáng tin cậy"
+    },
+    {
+      "id": "accept200-examples-reliable",
+      "endpoint": "explain",
+      "word": "reliable",
+      "action": "examples",
+      "level": "A1",
+      "expectedSense": "đáng tin cậy"
+    },
+    {
+      "id": "accept200-compare-reliable",
+      "endpoint": "explain",
+      "word": "reliable",
+      "action": "compare",
+      "level": "A2",
+      "expectedSense": "đáng tin cậy",
+      "other": "occasionally"
+    },
+    {
+      "id": "accept200-practice-reliable",
+      "endpoint": "explain",
+      "word": "reliable",
+      "action": "practice",
+      "level": "B1",
+      "expectedSense": "đáng tin cậy"
+    },
+    {
+      "id": "accept200-explain-occasionally",
+      "endpoint": "explain",
+      "word": "occasionally",
+      "action": "explain",
+      "level": "B2",
+      "expectedSense": "thỉnh thoảng, đôi khi"
+    },
+    {
+      "id": "accept200-simplify-occasionally",
+      "endpoint": "explain",
+      "word": "occasionally",
+      "action": "simplify",
+      "level": "A1",
+      "expectedSense": "thỉnh thoảng, đôi khi"
+    },
+    {
+      "id": "accept200-examples-occasionally",
+      "endpoint": "explain",
+      "word": "occasionally",
+      "action": "examples",
+      "level": "A2",
+      "expectedSense": "thỉnh thoảng, đôi khi"
+    },
+    {
+      "id": "accept200-compare-occasionally",
+      "endpoint": "explain",
+      "word": "occasionally",
+      "action": "compare",
+      "level": "B1",
+      "expectedSense": "thỉnh thoảng, đôi khi",
+      "other": "reimburse"
+    },
+    {
+      "id": "accept200-practice-occasionally",
+      "endpoint": "explain",
+      "word": "occasionally",
+      "action": "practice",
+      "level": "B2",
+      "expectedSense": "thỉnh thoảng, đôi khi"
+    },
+    {
+      "id": "accept200-explain-reimburse",
+      "endpoint": "explain",
+      "word": "reimburse",
+      "action": "explain",
+      "level": "A1",
+      "expectedSense": "hoàn trả, trả lại"
+    },
+    {
+      "id": "accept200-simplify-reimburse",
+      "endpoint": "explain",
+      "word": "reimburse",
+      "action": "simplify",
+      "level": "A2",
+      "expectedSense": "hoàn trả, trả lại"
+    },
+    {
+      "id": "accept200-examples-reimburse",
+      "endpoint": "explain",
+      "word": "reimburse",
+      "action": "examples",
+      "level": "B1",
+      "expectedSense": "hoàn trả, trả lại"
+    },
+    {
+      "id": "accept200-compare-reimburse",
+      "endpoint": "explain",
+      "word": "reimburse",
+      "action": "compare",
+      "level": "B2",
+      "expectedSense": "hoàn trả, trả lại",
+      "other": "shipment"
+    },
+    {
+      "id": "accept200-practice-reimburse",
+      "endpoint": "explain",
+      "word": "reimburse",
+      "action": "practice",
+      "level": "A1",
+      "expectedSense": "hoàn trả, trả lại"
+    },
+    {
+      "id": "accept200-explain-shipment",
+      "endpoint": "explain",
+      "word": "shipment",
+      "action": "explain",
+      "level": "A2",
+      "expectedSense": "lô hàng; việc gửi hàng"
+    },
+    {
+      "id": "accept200-simplify-shipment",
+      "endpoint": "explain",
+      "word": "shipment",
+      "action": "simplify",
+      "level": "B1",
+      "expectedSense": "lô hàng; việc gửi hàng"
+    },
+    {
+      "id": "accept200-examples-shipment",
+      "endpoint": "explain",
+      "word": "shipment",
+      "action": "examples",
+      "level": "B2",
+      "expectedSense": "lô hàng; việc gửi hàng"
+    },
+    {
+      "id": "accept200-compare-shipment",
+      "endpoint": "explain",
+      "word": "shipment",
+      "action": "compare",
+      "level": "A1",
+      "expectedSense": "lô hàng; việc gửi hàng",
+      "other": "monitor"
+    },
+    {
+      "id": "accept200-practice-shipment",
+      "endpoint": "explain",
+      "word": "shipment",
+      "action": "practice",
+      "level": "A2",
+      "expectedSense": "lô hàng; việc gửi hàng"
+    },
+    {
+      "id": "accept200-explain-monitor",
+      "endpoint": "explain",
+      "word": "monitor",
+      "action": "explain",
+      "level": "B1",
+      "expectedSense": "giám sát, theo dõi"
+    },
+    {
+      "id": "accept200-simplify-monitor",
+      "endpoint": "explain",
+      "word": "monitor",
+      "action": "simplify",
+      "level": "B2",
+      "expectedSense": "giám sát, theo dõi"
+    },
+    {
+      "id": "accept200-examples-monitor",
+      "endpoint": "explain",
+      "word": "monitor",
+      "action": "examples",
+      "level": "A1",
+      "expectedSense": "giám sát, theo dõi"
+    },
+    {
+      "id": "accept200-compare-monitor",
+      "endpoint": "explain",
+      "word": "monitor",
+      "action": "compare",
+      "level": "A2",
+      "expectedSense": "giám sát, theo dõi",
+      "other": "professional"
+    },
+    {
+      "id": "accept200-practice-monitor",
+      "endpoint": "explain",
+      "word": "monitor",
+      "action": "practice",
+      "level": "B1",
+      "expectedSense": "giám sát, theo dõi"
+    },
+    {
+      "id": "accept200-explain-professional",
+      "endpoint": "explain",
+      "word": "professional",
+      "action": "explain",
+      "level": "B2",
+      "expectedSense": "có tính chuyên môn, chuyên nghiệp, lành nghề"
+    },
+    {
+      "id": "accept200-simplify-professional",
+      "endpoint": "explain",
+      "word": "professional",
+      "action": "simplify",
+      "level": "A1",
+      "expectedSense": "có tính chuyên môn, chuyên nghiệp, lành nghề"
+    },
+    {
+      "id": "accept200-examples-professional",
+      "endpoint": "explain",
+      "word": "professional",
+      "action": "examples",
+      "level": "A2",
+      "expectedSense": "có tính chuyên môn, chuyên nghiệp, lành nghề"
+    },
+    {
+      "id": "accept200-compare-professional",
+      "endpoint": "explain",
+      "word": "professional",
+      "action": "compare",
+      "level": "B1",
+      "expectedSense": "có tính chuyên môn, chuyên nghiệp, lành nghề",
+      "other": "opening"
+    },
+    {
+      "id": "accept200-practice-professional",
+      "endpoint": "explain",
+      "word": "professional",
+      "action": "practice",
+      "level": "B2",
+      "expectedSense": "có tính chuyên môn, chuyên nghiệp, lành nghề"
+    },
+    {
+      "id": "accept200-quiz-0",
+      "endpoint": "quiz",
+      "words": [
+        "applicant",
+        "eligible",
+        "consultant",
+        "proficiency",
+        "colleague"
+      ]
+    },
+    {
+      "id": "accept200-quiz-1",
+      "endpoint": "quiz",
+      "words": [
+        "immediately",
+        "adhere",
+        "submit",
+        "attentively",
+        "release"
+      ]
+    },
+    {
+      "id": "accept200-quiz-2",
+      "endpoint": "quiz",
+      "words": [
+        "leading",
+        "neutrality",
+        "contrary",
+        "announcement",
+        "apparently"
+      ]
+    },
+    {
+      "id": "accept200-quiz-3",
+      "endpoint": "quiz",
+      "words": [
+        "required",
+        "alumni",
+        "manuscript",
+        "examine",
+        "focus"
+      ]
+    },
+    {
+      "id": "accept200-quiz-4",
+      "endpoint": "quiz",
+      "words": [
+        "creative",
+        "steadily",
+        "aim",
+        "rapidly",
+        "likely"
+      ]
+    },
+    {
+      "id": "accept200-quiz-5",
+      "endpoint": "quiz",
+      "words": [
+        "costly",
+        "exactly",
+        "area",
+        "spare",
+        "increasingly"
+      ]
+    },
+    {
+      "id": "accept200-quiz-6",
+      "endpoint": "quiz",
+      "words": [
+        "indication",
+        "various",
+        "decision",
+        "damaged",
+        "launch"
+      ]
+    },
+    {
+      "id": "accept200-quiz-7",
+      "endpoint": "quiz",
+      "words": [
+        "inconvenience",
+        "observe",
+        "applaud",
+        "involve",
+        "locate"
+      ]
+    },
+    {
+      "id": "accept200-quiz-8",
+      "endpoint": "quiz",
+      "words": [
+        "seating",
+        "dispute",
+        "signature",
+        "short",
+        "represent"
+      ]
+    },
+    {
+      "id": "accept200-quiz-9",
+      "endpoint": "quiz",
+      "words": [
+        "quote",
+        "formerly",
+        "incorrect",
+        "impose",
+        "sequence"
+      ]
+    },
+    {
+      "id": "accept200-quiz-10",
+      "endpoint": "quiz",
+      "words": [
+        "cuisine",
+        "anticipate",
+        "inaccurate",
+        "whole",
+        "prompt"
+      ]
+    },
+    {
+      "id": "accept200-quiz-11",
+      "endpoint": "quiz",
+      "words": [
+        "adequate",
+        "competitor",
+        "renowned",
+        "merge",
+        "reschedule"
+      ]
+    },
+    {
+      "id": "accept200-quiz-12",
+      "endpoint": "quiz",
+      "words": [
+        "emphasis",
+        "crowded",
+        "responsibility",
+        "annual",
+        "exploit"
+      ]
+    },
+    {
+      "id": "accept200-quiz-13",
+      "endpoint": "quiz",
+      "words": [
+        "search",
+        "transfer",
+        "alternative",
+        "malfunction",
+        "reverse"
+      ]
+    },
+    {
+      "id": "accept200-review-0",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "attentive",
+          "userAnswer": "",
+          "correctAnswer": "attentive",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: chăm chú, lưu tâm"
+        },
+        {
+          "word": "transaction",
+          "userAnswer": "rtansaction",
+          "correctAnswer": "transaction",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự giao dịch, thương vụ"
+        },
+        {
+          "word": "consent",
+          "userAnswer": "ocnsent",
+          "correctAnswer": "consent",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự đồng ý, sự chấp thuận"
+        },
+        {
+          "word": "innate",
+          "userAnswer": "ninate",
+          "correctAnswer": "innate",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: bẩm sinh"
+        },
+        {
+          "word": "residence",
+          "userAnswer": "ersidence",
+          "correctAnswer": "residence",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: nơi cư trú, nhà ở"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-1",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "renewal",
+          "userAnswer": "",
+          "correctAnswer": "renewal",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự gia hạn; sự đổi mới"
+        },
+        {
+          "word": "enlarge",
+          "userAnswer": "nelarge",
+          "correctAnswer": "enlarge",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: mở rộng, khuếch trương"
+        },
+        {
+          "word": "consistent",
+          "userAnswer": "ocnsistent",
+          "correctAnswer": "consistent",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: kiên định, nhất quán, phù hợp"
+        },
+        {
+          "word": "deplete",
+          "userAnswer": "edplete",
+          "correctAnswer": "deplete",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: làm suy yếu, làm cạn kiệt"
+        },
+        {
+          "word": "recognize",
+          "userAnswer": "ercognize",
+          "correctAnswer": "recognize",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: nhận ra, công nhận"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-2",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "pharmaceutical",
+          "userAnswer": "",
+          "correctAnswer": "pharmaceutical",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: thuộc dược phẩm"
+        },
+        {
+          "word": "accomplish",
+          "userAnswer": "cacomplish",
+          "correctAnswer": "accomplish",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: hoàn thành, thực hiện"
+        },
+        {
+          "word": "advertise",
+          "userAnswer": "davertise",
+          "correctAnswer": "advertise",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: quảng cáo, thông báo"
+        },
+        {
+          "word": "alarm",
+          "userAnswer": "laarm",
+          "correctAnswer": "alarm",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: báo động, thiết bị báo động; sự hoảng sợ"
+        },
+        {
+          "word": "approximate",
+          "userAnswer": "paproximate",
+          "correctAnswer": "approximate",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: xấp xỉ, gần đúng"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-3",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "available",
+          "userAnswer": "",
+          "correctAnswer": "available",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: có sẵn để dùng"
+        },
+        {
+          "word": "beneficial",
+          "userAnswer": "ebneficial",
+          "correctAnswer": "beneficial",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: có ích, có lợi"
+        },
+        {
+          "word": "brand",
+          "userAnswer": "rband",
+          "correctAnswer": "brand",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: thương hiệu, nhãn hàng"
+        },
+        {
+          "word": "cancel",
+          "userAnswer": "acncel",
+          "correctAnswer": "cancel",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: hủy bỏ, xóa"
+        },
+        {
+          "word": "chair",
+          "userAnswer": "hcair",
+          "correctAnswer": "chair",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: ghế ngồi"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-4",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "commission",
+          "userAnswer": "",
+          "correctAnswer": "commission",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: tiền hoa hồng; ủy ban; sự ủy nhiệm"
+        },
+        {
+          "word": "concede",
+          "userAnswer": "ocncede",
+          "correctAnswer": "concede",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: thừa nhận"
+        },
+        {
+          "word": "continue",
+          "userAnswer": "ocntinue",
+          "correctAnswer": "continue",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: tiếp tục, duy trì"
+        },
+        {
+          "word": "criterion",
+          "userAnswer": "rciterion",
+          "correctAnswer": "criterion",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: tiêu chí đánh giá"
+        },
+        {
+          "word": "damage",
+          "userAnswer": "admage",
+          "correctAnswer": "damage",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: thiệt hại, sự hư hỏng"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-5",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "department",
+          "userAnswer": "",
+          "correctAnswer": "department",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: phòng ban, bộ phận; khoa"
+        },
+        {
+          "word": "disagree",
+          "userAnswer": "idsagree",
+          "correctAnswer": "disagree",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: bất đồng, không khớp với nhau"
+        },
+        {
+          "word": "disruption",
+          "userAnswer": "idsruption",
+          "correctAnswer": "disruption",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự gián đoạn, sự xáo trộn"
+        },
+        {
+          "word": "drastically",
+          "userAnswer": "rdastically",
+          "correctAnswer": "drastically",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: mạnh mẽ, quyết liệt"
+        },
+        {
+          "word": "effectively",
+          "userAnswer": "fefectively",
+          "correctAnswer": "effectively",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: có hiệu quả"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-6",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "enterprise",
+          "userAnswer": "",
+          "correctAnswer": "enterprise",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: xí nghiệp, doanh nghiệp"
+        },
+        {
+          "word": "exhibit",
+          "userAnswer": "xehibit",
+          "correctAnswer": "exhibit",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: trưng bày, triển lãm"
+        },
+        {
+          "word": "factory",
+          "userAnswer": "afctory",
+          "correctAnswer": "factory",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: nhà máy, xí nghiệp"
+        },
+        {
+          "word": "fill",
+          "userAnswer": "ifll",
+          "correctAnswer": "fill",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: làm đầy, nhồi nhét"
+        },
+        {
+          "word": "folder",
+          "userAnswer": "oflder",
+          "correctAnswer": "folder",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: bìa hồ sơ; thư mục"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-7",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "further",
+          "userAnswer": "",
+          "correctAnswer": "further",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: xa hơn, kỹ hơn"
+        },
+        {
+          "word": "harmful",
+          "userAnswer": "ahrmful",
+          "correctAnswer": "harmful",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: gây tai hại, có hại"
+        },
+        {
+          "word": "immediate",
+          "userAnswer": "mimediate",
+          "correctAnswer": "immediate",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: ngay lập tức, trực tiếp"
+        },
+        {
+          "word": "inflate",
+          "userAnswer": "niflate",
+          "correctAnswer": "inflate",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: bơm phồng, thổi phồng"
+        },
+        {
+          "word": "internship",
+          "userAnswer": "niternship",
+          "correctAnswer": "internship",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: kỳ thực tập"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-8",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "jobless",
+          "userAnswer": "",
+          "correctAnswer": "jobless",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: thất nghiệp, không có việc làm"
+        },
+        {
+          "word": "knowledgeable",
+          "userAnswer": "nkowledgeable",
+          "correctAnswer": "knowledgeable",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: thông thạo, thành thạo, am tường"
+        },
+        {
+          "word": "lie",
+          "userAnswer": "ile",
+          "correctAnswer": "lie",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự nói dối, sự nói láo, sự nói điêu, sự dối trá"
+        },
+        {
+          "word": "manufacture",
+          "userAnswer": "amnufacture",
+          "correctAnswer": "manufacture",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự sản xuất, chế tạo"
+        },
+        {
+          "word": "merger",
+          "userAnswer": "emrger",
+          "correctAnswer": "merger",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự sáp nhập, hợp nhất (doanh nghiệp)"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-9",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "motivation",
+          "userAnswer": "",
+          "correctAnswer": "motivation",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự thúc đẩy, động cơ thúc đẩy"
+        },
+        {
+          "word": "officer",
+          "userAnswer": "foficer",
+          "correctAnswer": "officer",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: viên chức, cán bộ; sĩ quan"
+        },
+        {
+          "word": "parcel",
+          "userAnswer": "aprcel",
+          "correctAnswer": "parcel",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: gói; bưu kiện"
+        },
+        {
+          "word": "plow",
+          "userAnswer": "lpow",
+          "correctAnswer": "plow",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: cái cày; công cụ giống như cái cày"
+        },
+        {
+          "word": "popularity",
+          "userAnswer": "oppularity",
+          "correctAnswer": "popularity",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: tính đại chúng; tính phổ biến"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-10",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "probability",
+          "userAnswer": "",
+          "correctAnswer": "probability",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự có thể có, khả năng có thể xảy ra"
+        },
+        {
+          "word": "promote",
+          "userAnswer": "rpomote",
+          "correctAnswer": "promote",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: thăng chức, thăng cấp; đề bạt"
+        },
+        {
+          "word": "rare",
+          "userAnswer": "arre",
+          "correctAnswer": "rare",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: hiếm, hiếm có, ít có"
+        },
+        {
+          "word": "recruitment",
+          "userAnswer": "ercruitment",
+          "correctAnswer": "recruitment",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự tuyển dụng"
+        },
+        {
+          "word": "regret",
+          "userAnswer": "ergret",
+          "correctAnswer": "regret",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự hối tiếc, sự ân hận"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-11",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "repayment",
+          "userAnswer": "",
+          "correctAnswer": "repayment",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự hoàn trả tiền, sự trả nợ"
+        },
+        {
+          "word": "restructure",
+          "userAnswer": "erstructure",
+          "correctAnswer": "restructure",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: cơ cấu lại; tổ chức lại; sắp xếp lại"
+        },
+        {
+          "word": "sale",
+          "userAnswer": "asle",
+          "correctAnswer": "sale",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sự bán, việc bán"
+        },
+        {
+          "word": "secretarial",
+          "userAnswer": "escretarial",
+          "correctAnswer": "secretarial",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: (thuộc) thư ký"
+        },
+        {
+          "word": "sharp",
+          "userAnswer": "hsarp",
+          "correctAnswer": "sharp",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: sắc, nhọn, bén"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-12",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "spacious",
+          "userAnswer": "",
+          "correctAnswer": "spacious",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: rộng rãi"
+        },
+        {
+          "word": "steep",
+          "userAnswer": "tseep",
+          "correctAnswer": "steep",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: dốc; tăng hoặc giảm mạnh; quá cao (giá)"
+        },
+        {
+          "word": "suit",
+          "userAnswer": "usit",
+          "correctAnswer": "suit",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: bộ vest"
+        },
+        {
+          "word": "tax",
+          "userAnswer": "atx",
+          "correctAnswer": "tax",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: thuế"
+        },
+        {
+          "word": "tourism",
+          "userAnswer": "oturism",
+          "correctAnswer": "tourism",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: ngành du lịch, hoạt động du lịch"
+        }
+      ]
+    },
+    {
+      "id": "accept200-review-13",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "trend",
+          "userAnswer": "",
+          "correctAnswer": "trend",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: xu hướng"
+        },
+        {
+          "word": "upset",
+          "userAnswer": "puset",
+          "correctAnswer": "upset",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: làm xáo trộn; làm buồn, làm lo lắng"
+        },
+        {
+          "word": "venue",
+          "userAnswer": "evnue",
+          "correctAnswer": "venue",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: địa điểm"
+        },
+        {
+          "word": "weight",
+          "userAnswer": "ewight",
+          "correctAnswer": "weight",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: cân nặng"
+        },
+        {
+          "word": "zone",
+          "userAnswer": "ozne",
+          "correctAnswer": "zone",
+          "questionType": "fill",
+          "questionText": "Điền từ tiếng Anh có nghĩa: vùng, khu vực"
+        }
+      ]
+    }
+  ]
+}

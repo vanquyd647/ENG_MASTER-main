@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-13T12:45:06.118Z",
+  "id": "dpl_9B7x4Z4AQhRdzcZ6ca7nA8YBZGTv",
+  "url": "eng-master-main2-pzq5fodxa-quys-projects-d07a5005.vercel.app",
+  "readyState": "READY",
+  "target": "production",
+  "nodeVersion": "22.x",
+  "alias": [
+    "eng-master-main2-quys-projects-d07a5005.vercel.app"
+  ],
+  "explicitUserApproval": true,
+  "previousProductionDeployment": "dpl_7dJrAHi9M38Cygf8FLJAVCoKoMqh",
+  "aiAcceptance": "passed",
+  "quotaRetention": "backend hourly cleanup without billing change"
+}

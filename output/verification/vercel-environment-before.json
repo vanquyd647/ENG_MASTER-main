@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-10-13T11:30:42.967Z",
+  "project": "eng-master-main2",
+  "variables": [
+    {
+      "key": "GEMINI_API_KEY",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ],
+      "gitBranch": null
+    },
+    {
+      "key": "APP_URL",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ],
+      "gitBranch": null
+    },
+    {
+      "key": "VITE_FIREBASE_API_KEY",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ],
+      "gitBranch": null
+    },
+    {
+      "key": "VITE_FIREBASE_AUTH_DOMAIN",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ],
+      "gitBranch": null
+    },
+    {
+      "key": "VITE_FIREBASE_PROJECT_ID",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ],
+      "gitBranch": null
+    },
+    {
+      "key": "VITE_FIREBASE_STORAGE_BUCKET",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ],
+      "gitBranch": null
+    },
+    {
+      "key": "VITE_FIREBASE_MESSAGING_SENDER_ID",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ],
+      "gitBranch": null
+    },
+    {
+      "key": "VITE_FIREBASE_APP_ID",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ],
+      "gitBranch": null
+    },
+    {
+      "key": "VITE_FIREBASE_MEASUREMENT_ID",
+      "type": "sensitive",
+      "target": [
+        "production",
+        "preview"
+      ],
+      "gitBranch": null
+    }
+  ]
+}

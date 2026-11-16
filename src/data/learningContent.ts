@@ -1,0 +1,12 @@
+import { PRACTICE_BANK, WORKPLACE_LESSONS } from './workplacePractice';
+import { EXTENDED_PRACTICE_BANK, EXTRA_WORKPLACE_LESSONS, type LearningQuestion } from './extendedPractice';
+import { LISTENING_QUESTIONS } from './listeningPractice';
+import { EXPANSION_QUESTIONS } from './examExpansion';
+import { PRACTICE_REVISIONS,PRACTICE_REPLACEMENTS } from './practiceRevisions';
+import { EXAM_SUPPLEMENT_QUESTIONS } from './examReadingSupplement';
+import {CALIBRATED_READING_QUESTIONS} from './readingCalibration';
+const historicalQuestions:readonly LearningQuestion[]=[...PRACTICE_BANK.map(question=>({...question,difficulty:1 as const})),...EXTENDED_PRACTICE_BANK,...LISTENING_QUESTIONS,...EXPANSION_QUESTIONS];
+export const ALL_PRACTICE_QUESTIONS:readonly LearningQuestion[]=[...historicalQuestions.map(q=>PRACTICE_REPLACEMENTS.get(q.id)||q),...EXAM_SUPPLEMENT_QUESTIONS,...CALIBRATED_READING_QUESTIONS];
+export const ALL_WORKPLACE_LESSONS=[...WORKPLACE_LESSONS,...EXTRA_WORKPLACE_LESSONS];
+export const questionById=new Map([...historicalQuestions,...PRACTICE_REVISIONS,...EXAM_SUPPLEMENT_QUESTIONS,...CALIBRATED_READING_QUESTIONS].map(question=>[question.id,question]));
+export const practiceKindLabel=(kind:LearningQuestion['kind'])=>({part1:'Part 1',part2:'Part 2',part3:'Part 3',part4:'Part 4',part5:'Part 5',part6:'Part 6',part7:'Part 7',grammar:'Ngữ pháp',context:'Ngữ cảnh'})[kind];

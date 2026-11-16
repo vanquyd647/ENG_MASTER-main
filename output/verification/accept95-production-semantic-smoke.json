@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-16T16:19:34.408Z",
+  "reviewer": "Codex",
+  "input": "output/verification/hosted-ai-production.json",
+  "inputSha256": "f052cfa36fb3f18317bd816efdb0fffa4cf7777c18210ff3661b7a54f0374c0c",
+  "passed": true,
+  "reviewed": [
+    "calculation practice: English, translation and source meaning agree",
+    "onboarding checklist: definition, collocations and bilingual example consistent; user-source label retained",
+    "agreement/invoice quiz: both accept target recall with source hint; no uniqueness of distractors claimed",
+    "five review items: real synthetic answers retained; grammar, bilingual examples and new blanks match target"
+  ],
+  "limits": [
+    "Small release smoke, not an additional 200-output benchmark",
+    "Quiz contexts repeat; this check does not establish exercise diversity"
+  ]
+}

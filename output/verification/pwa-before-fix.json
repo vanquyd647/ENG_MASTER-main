@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-15T05:31:54.996Z",
+  "fixture": "production assets with controlled worker revision update on isolated localhost origin",
+  "checks": [
+    "confirmed update preserves saved study draft, progress and offline reload",
+    "cancel and defer keep the current study session"
+  ],
+  "passed": false,
+  "updateConfirmed": true,
+  "draftPreserved": true,
+  "offlineAfterUpdate": true,
+  "repetitions": 1,
+  "cursor": 1,
+  "completed": 1
+}

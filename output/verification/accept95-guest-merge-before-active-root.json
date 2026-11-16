@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-10-16T11:52:13.415Z",
+  "origin": "http://localhost:3120",
+  "authMethod": "two temporary custom-token identities in isolated browser",
+  "checks": [
+    "guest stores two graded words before authentication"
+  ],
+  "cleanup": true
+}

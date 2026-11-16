@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-16T12:11:42.984Z",
+  "origin": "http://localhost:3121",
+  "authMethod": "two temporary custom-token identities in isolated browser",
+  "checks": [
+    "device B grades offline and reload retains both cached rec-03 and unsent rec-01",
+    "device A replaces progress through the actual CSV preview/import UI",
+    "device B is blocked on reconnect, exports old work, adopts Cloud, and exposes a preserved archive in Settings",
+    "browser interruption after 400 staged writes leaves active data intact; reload releases its unfinished job",
+    "rollback UI restores rec-03 under a fresh generation"
+  ],
+  "cleanup": true,
+  "beforeReplacement": {
+    "started": 1,
+    "active": "legacy",
+    "pending": null,
+    "previous": null,
+    "progress": {
+      "rec-03": 2
+    },
+    "stagedProgress": 0
+  },
+  "replacedObserved": {
+    "started": 1,
+    "active": "0b53103a-5865-4feb-b1c4-b5d79c6ab4af",
+    "pending": null,
+    "previous": "legacy",
+    "progress": {
+      "rec-02": 4
+    },
+    "stagedProgress": 0
+  },
+  "interrupted": {
+    "stagedWords": 400,
+    "activeGenerationUnchanged": true
+  },
+  "beforeRollback": {
+    "started": 1,
+    "active": "0b53103a-5865-4feb-b1c4-b5d79c6ab4af",
+    "pending": null,
+    "previous": "legacy",
+    "progress": {
+      "rec-02": 4
+    },
+    "stagedProgress": 0
+  },
+  "rollbackObserved": {
+    "started": 1,
+    "active": "e8c34054-6ba1-40ed-9d47-7d6a1584f8ba",
+    "pending": null,
+    "previous": "0b53103a-5865-4feb-b1c4-b5d79c6ab4af",
+    "progress": {
+      "rec-03": 2
+    },
+    "stagedProgress": 0
+  },
+  "passed": true
+}

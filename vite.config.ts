@@ -23,15 +23,12 @@ export default defineConfig(() => {
       rollupOptions: {
         output: {
           manualChunks(id) {
+            if (id.includes('/src/data/toeic-pdf')) return 'vocabulary-pdf';
             if (id.includes('/src/data/vocabulary')) return 'vocabulary';
             if (id.includes('/node_modules/firebase/') || id.includes('/node_modules/@firebase/')) {
               return 'firebase';
             }
-            if (id.includes('/node_modules/recharts/')) return 'charts';
-            if (id.includes('/node_modules/motion/')) return 'motion';
-            if (id.includes('/node_modules/react') || id.includes('/node_modules/scheduler/')) {
-              return 'react';
-            }
+
           },
         },
       },

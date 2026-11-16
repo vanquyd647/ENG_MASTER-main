@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p6-v2-membership-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Please update [them] before completing payment, referring back to contact details.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p6-v2-membership-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Our membership team can help if you have trouble with the renewal process.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-workshop-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The Customer Service Workshop will now be held in Room B, rather than Room A.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-workshop-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Please arrive fifteen minutes before the opening session (9:00), so 8:45 a.m.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-workshop-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "email me by Wednesday if you would like to attend it.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-store-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "You will receive an email when your items are ready; please wait for this message before visiting the store.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-store-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A friend may collect an order on your behalf if you enter their name in your account before collection.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-store-3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Orders not collected within seven days will be canceled and refunded.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-invoice-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Total due: $900",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-v2-invoice-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Printed brochures and printing services are not included in this invoice.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

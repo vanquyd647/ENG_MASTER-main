@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-16T12:32:35.148Z",
+  "origin": "https://eng-master-main2-bve9l07ol-quys-projects-d07a5005.vercel.app",
+  "passed": true,
+  "offlineRevision": "e9b3a74a721297f8",
+  "assets": 122,
+  "entirePackMatchesTestedLocalBuild": true,
+  "remoteAudioHashesVerified": [
+    "/learning/audio-v1/exam-200-v1-listening.mp3",
+    "/learning/audio-v1/p3-exam-v1-software.mp3",
+    "/learning/audio-v1/p4-exam-v1-shuttle.mp3"
+  ],
+  "evidence": "output/verification/preview-public-1792153937294"
+}

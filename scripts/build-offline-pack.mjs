@@ -1,0 +1,11 @@
+import { mediaRangeResponse } from './offline-media-response.mjs';
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+const root = path.resolve('dist');
+const files = fs.readdirSync(root, {recursive:true}).filter(file => fs.statSync(path.join(root,file)).isFile() && /\.(html|js|mjs|css|woff2|svg|png|jpg|mp3|webmanifest)$/.test(file) && !file.startsWith('server.') && file !== 'sw.js');
+const revision = crypto.createHash('sha256').update(files.map(file=>file+crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file))).digest('hex')).join('\n')).digest('hex').slice(0,16);
+const urls = files.map(file=>'/'+file.replaceAll(path.sep,'/'));
+const worker = `const mediaRangeResponse=${mediaRangeResponse.toString()};\nconst CACHE_PREFIX='eng-master-pack-';\nconst CACHE_NAME=CACHE_PREFIX+${JSON.stringify(revision)};\nconst FILES=${JSON.stringify(urls)};\nself.addEventListener('install',event=>event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(FILES))));\nself.addEventListener('message',event=>{if(event.data?.type==='SKIP_WAITING')self.skipWaiting();});\nself.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('eng-master-')&&key!==CACHE_NAME).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));\nself.addEventListener('fetch',event=>{const url=new URL(event.request.url);if(event.request.method!=='GET'||url.origin!==self.location.origin||url.pathname.startsWith('/api/'))return;\nif(event.request.mode==='navigate'){event.respondWith(fetch(event.request).catch(()=>caches.open(CACHE_NAME).then(cache=>cache.match('/index.html')).then(response=>response||Response.error())));return;}\nif(FILES.includes(url.pathname))event.respondWith(caches.open(CACHE_NAME).then(async cache=>{const response=(await cache.match(url.pathname))||await fetch(event.request);return url.pathname.endsWith('.mp3')&&event.request.headers.has('range')&&response.status===200?mediaRangeResponse(response,event.request.headers.get('range')):response;}));});\n`;
+fs.writeFileSync(path.join(root,'sw.js'),worker);fs.writeFileSync(path.join(root,'offline-pack.json'),JSON.stringify({revision,files:urls},null,2));
+console.log(`Offline pack: ${files.length} assets, revision ${revision}`);

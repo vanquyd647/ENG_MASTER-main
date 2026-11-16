@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p5-v2-agree-5",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The subject is 'One of the meeting rooms', which is singular ('One'). Therefore, the singular verb 'has' is required.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-agree-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject 'The manager and her assistant' is compound connected by 'and', taking a plural verb. The time marker 'now' indicates the present continuous tense ('are').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The time marker 'in 2019' specifies a completed action in the past, requiring the simple past tense ('opened').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The phrase 'since 2021' indicates an action that started in the past and continues into the present, requiring the present perfect tense ('have used').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The time marker 'At the moment' requires the present continuous tense ('are testing').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-4",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "In a past time clause ('By the time the guests arrived yesterday'), an action completed prior to another past action requires the past perfect tense ('had prepared').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The sentence expresses a regular schedule ('every weekday'), requiring the simple present tense with a third-person singular subject ('The train'), hence 'leaves'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-6",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The time marker 'tomorrow' indicates a future action, requiring the future simple tense ('will review').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-passive-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Modal verbs ('must') are followed by the base form of the passive voice ('be approved').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-passive-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject ('The damaged items') receives the action of returning, and the time marker 'yesterday' requires the past passive tense ('were returned').",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

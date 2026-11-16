@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-14T16:21:55.881Z",
+  "origin": "https://eng-master-main2.vercel.app",
+  "checks": [
+    "guest enters latest offline pack",
+    "roadmap validation and persist after reload",
+    "wrong cloze records actual answer and notebook survives reload",
+    "notebook shows the saved mistake",
+    "Part 5 actual answer, omitted count and result persistence",
+    "Part 5 results are independent of vocabulary and stored",
+    "timed test automatically submits at deadline",
+    "CSV preview issues and personal deck import",
+    "real source PDF reads all 23 pages through shipped worker",
+    "offline worker import and mobile layouts",
+    "backup includes roadmap, mistake snapshots and separate practice results"
+  ],
+  "passed": true
+}

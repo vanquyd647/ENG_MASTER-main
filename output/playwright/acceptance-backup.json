@@ -1,0 +1,321 @@
+{
+  "version": 3,
+  "catalogVersion": "toeic-1575-v1",
+  "exportedAt": "2026-10-13T11:13:06.329Z",
+  "profile": {
+    "displayName": "Khách (Guest)",
+    "studyTimeMinutes": 0,
+    "streak": 1,
+    "dailyGoal": 15,
+    "lastStudyDate": "2026-10-13",
+    "history": [
+      {
+        "id": "970a044a-13e6-4dca-9240-fdeae2e94b76",
+        "date": "2026-10-13T11:13:00.874Z",
+        "type": "review",
+        "details": "Luyện tập tự do (hard)",
+        "score": "1 từ",
+        "wordIds": [
+          "lei-20"
+        ],
+        "studiedCount": 1,
+        "durationSeconds": 0
+      },
+      {
+        "id": "ad0aebf2-760f-450b-9caf-6e95731e0d08",
+        "date": "2026-10-13T11:12:57.816Z",
+        "type": "quiz",
+        "details": "Hoàn thành bài kiểm tra (100%)",
+        "score": "5/5",
+        "wordIds": [
+          "ttp-27",
+          "ban-55",
+          "pdf-toeic-0694",
+          "rec-31",
+          "pdf-toeic-0306"
+        ],
+        "studiedCount": 5,
+        "correctCount": 5,
+        "totalQuestions": 5,
+        "durationSeconds": 3
+      },
+      {
+        "id": "3e6a6a86-e957-47d7-9827-03761cbfa225",
+        "date": "2026-10-13T11:12:51.690Z",
+        "type": "review",
+        "details": "Hoàn thành học từ mới (1 thẻ)",
+        "score": "1 từ",
+        "wordIds": [
+          "rec-01"
+        ],
+        "studiedCount": 1,
+        "durationSeconds": 0
+      }
+    ]
+  },
+  "progress": {
+    "rec-01": {
+      "easiness": 2.5,
+      "interval": 1,
+      "repetitions": 1,
+      "nextReviewDate": "2026-10-14T11:12:46.603Z",
+      "lastReviewDate": "2026-10-13T11:12:46.603Z",
+      "wrongCount": 0,
+      "lastOperationId": "3e6a6a86-e957-47d7-9827-03761cbfa225:rec-01",
+      "revision": 1
+    },
+    "ttp-27": {
+      "easiness": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "nextReviewDate": "2026-10-13T11:12:54.098Z",
+      "lastReviewDate": "2026-10-13T11:12:54.099Z",
+      "wrongCount": 0,
+      "lastOperationId": "ad0aebf2-760f-450b-9caf-6e95731e0d08:ttp-27",
+      "revision": 1
+    },
+    "ban-55": {
+      "easiness": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "nextReviewDate": "2026-10-13T11:12:54.936Z",
+      "lastReviewDate": "2026-10-13T11:12:54.936Z",
+      "wrongCount": 0,
+      "lastOperationId": "ad0aebf2-760f-450b-9caf-6e95731e0d08:ban-55",
+      "revision": 1
+    },
+    "pdf-toeic-0694": {
+      "easiness": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "nextReviewDate": "2026-10-13T11:12:55.771Z",
+      "lastReviewDate": "2026-10-13T11:12:55.772Z",
+      "wrongCount": 0,
+      "lastOperationId": "ad0aebf2-760f-450b-9caf-6e95731e0d08:pdf-toeic-0694",
+      "revision": 1
+    },
+    "rec-31": {
+      "easiness": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "nextReviewDate": "2026-10-13T11:12:56.598Z",
+      "lastReviewDate": "2026-10-13T11:12:56.598Z",
+      "wrongCount": 0,
+      "lastOperationId": "ad0aebf2-760f-450b-9caf-6e95731e0d08:rec-31",
+      "revision": 1
+    },
+    "pdf-toeic-0306": {
+      "easiness": 2.5,
+      "interval": 0,
+      "repetitions": 0,
+      "nextReviewDate": "2026-10-13T11:12:57.431Z",
+      "lastReviewDate": "2026-10-13T11:12:57.432Z",
+      "wrongCount": 0,
+      "lastOperationId": "ad0aebf2-760f-450b-9caf-6e95731e0d08:pdf-toeic-0306",
+      "revision": 1
+    },
+    "lei-20": {
+      "easiness": 2.5,
+      "interval": 1,
+      "repetitions": 1,
+      "nextReviewDate": "2026-10-14T11:13:00.648Z",
+      "lastReviewDate": "2026-10-13T11:13:00.648Z",
+      "wrongCount": 0,
+      "lastOperationId": "970a044a-13e6-4dca-9240-fdeae2e94b76:lei-20",
+      "revision": 1
+    }
+  },
+  "customWords": [
+    {
+      "id": "custom-cb495451-95fc-4cf4-bcc9-02362681d7cb",
+      "word": "qa-workflow-term",
+      "meaning": "từ kiểm tra luồng",
+      "topic": "Từ cá nhân",
+      "phonetic": "",
+      "pos": "noun",
+      "example": "",
+      "exampleTranslation": ""
+    }
+  ],
+  "favorites": [],
+  "preferences": {
+    "sound": false,
+    "notifications": false,
+    "studySessionSize": 15,
+    "reminderHour": 20
+  },
+  "decks": [
+    {
+      "id": "deck-24daa615-bbd8-4059-9535-7bd876f7b9ea",
+      "name": "QA deck",
+      "wordIds": [
+        "custom-cb495451-95fc-4cf4-bcc9-02362681d7cb"
+      ]
+    }
+  ],
+  "dailyActivity": {
+    "2026-10-13": {
+      "dateKey": "2026-10-13",
+      "timeZone": "Asia/Saigon",
+      "updatedAt": "2026-10-13T11:13:00.878Z",
+      "wordIds": [
+        "rec-01",
+        "ttp-27",
+        "ban-55",
+        "pdf-toeic-0694",
+        "rec-31",
+        "pdf-toeic-0306",
+        "lei-20"
+      ]
+    }
+  },
+  "events": [
+    {
+      "id": "3e6a6a86-e957-47d7-9827-03761cbfa225:rec-01",
+      "wordId": "rec-01",
+      "sessionId": "3e6a6a86-e957-47d7-9827-03761cbfa225",
+      "occurredAt": "2026-10-13T11:12:46.603Z",
+      "timeZone": "Asia/Saigon",
+      "mode": "review",
+      "durationSeconds": 0,
+      "before": null,
+      "after": {
+        "easiness": 2.5,
+        "interval": 1,
+        "repetitions": 1,
+        "nextReviewDate": "2026-10-14T11:12:46.603Z",
+        "lastReviewDate": "2026-10-13T11:12:46.603Z",
+        "wrongCount": 0,
+        "lastOperationId": "3e6a6a86-e957-47d7-9827-03761cbfa225:rec-01",
+        "revision": 1
+      },
+      "quality": 4
+    },
+    {
+      "id": "970a044a-13e6-4dca-9240-fdeae2e94b76:lei-20",
+      "wordId": "lei-20",
+      "sessionId": "970a044a-13e6-4dca-9240-fdeae2e94b76",
+      "occurredAt": "2026-10-13T11:13:00.648Z",
+      "timeZone": "Asia/Saigon",
+      "mode": "practice",
+      "durationSeconds": 0,
+      "before": null,
+      "after": {
+        "easiness": 2.5,
+        "interval": 1,
+        "repetitions": 1,
+        "nextReviewDate": "2026-10-14T11:13:00.648Z",
+        "lastReviewDate": "2026-10-13T11:13:00.648Z",
+        "wrongCount": 0,
+        "lastOperationId": "970a044a-13e6-4dca-9240-fdeae2e94b76:lei-20",
+        "revision": 1
+      },
+      "quality": 4
+    },
+    {
+      "id": "ad0aebf2-760f-450b-9caf-6e95731e0d08:ban-55",
+      "wordId": "ban-55",
+      "sessionId": "ad0aebf2-760f-450b-9caf-6e95731e0d08",
+      "occurredAt": "2026-10-13T11:12:54.936Z",
+      "timeZone": "Asia/Saigon",
+      "mode": "cloze",
+      "durationSeconds": 1,
+      "before": null,
+      "after": {
+        "easiness": 2.5,
+        "interval": 0,
+        "repetitions": 0,
+        "nextReviewDate": "2026-10-13T11:12:54.936Z",
+        "lastReviewDate": "2026-10-13T11:12:54.936Z",
+        "wrongCount": 0,
+        "lastOperationId": "ad0aebf2-760f-450b-9caf-6e95731e0d08:ban-55",
+        "revision": 1
+      },
+      "correct": true
+    },
+    {
+      "id": "ad0aebf2-760f-450b-9caf-6e95731e0d08:pdf-toeic-0306",
+      "wordId": "pdf-toeic-0306",
+      "sessionId": "ad0aebf2-760f-450b-9caf-6e95731e0d08",
+      "occurredAt": "2026-10-13T11:12:57.432Z",
+      "timeZone": "Asia/Saigon",
+      "mode": "cloze",
+      "durationSeconds": 0,
+      "before": null,
+      "after": {
+        "easiness": 2.5,
+        "interval": 0,
+        "repetitions": 0,
+        "nextReviewDate": "2026-10-13T11:12:57.431Z",
+        "lastReviewDate": "2026-10-13T11:12:57.432Z",
+        "wrongCount": 0,
+        "lastOperationId": "ad0aebf2-760f-450b-9caf-6e95731e0d08:pdf-toeic-0306",
+        "revision": 1
+      },
+      "correct": true
+    },
+    {
+      "id": "ad0aebf2-760f-450b-9caf-6e95731e0d08:pdf-toeic-0694",
+      "wordId": "pdf-toeic-0694",
+      "sessionId": "ad0aebf2-760f-450b-9caf-6e95731e0d08",
+      "occurredAt": "2026-10-13T11:12:55.772Z",
+      "timeZone": "Asia/Saigon",
+      "mode": "cloze",
+      "durationSeconds": 1,
+      "before": null,
+      "after": {
+        "easiness": 2.5,
+        "interval": 0,
+        "repetitions": 0,
+        "nextReviewDate": "2026-10-13T11:12:55.771Z",
+        "lastReviewDate": "2026-10-13T11:12:55.772Z",
+        "wrongCount": 0,
+        "lastOperationId": "ad0aebf2-760f-450b-9caf-6e95731e0d08:pdf-toeic-0694",
+        "revision": 1
+      },
+      "correct": true
+    },
+    {
+      "id": "ad0aebf2-760f-450b-9caf-6e95731e0d08:rec-31",
+      "wordId": "rec-31",
+      "sessionId": "ad0aebf2-760f-450b-9caf-6e95731e0d08",
+      "occurredAt": "2026-10-13T11:12:56.598Z",
+      "timeZone": "Asia/Saigon",
+      "mode": "cloze",
+      "durationSeconds": 1,
+      "before": null,
+      "after": {
+        "easiness": 2.5,
+        "interval": 0,
+        "repetitions": 0,
+        "nextReviewDate": "2026-10-13T11:12:56.598Z",
+        "lastReviewDate": "2026-10-13T11:12:56.598Z",
+        "wrongCount": 0,
+        "lastOperationId": "ad0aebf2-760f-450b-9caf-6e95731e0d08:rec-31",
+        "revision": 1
+      },
+      "correct": true
+    },
+    {
+      "id": "ad0aebf2-760f-450b-9caf-6e95731e0d08:ttp-27",
+      "wordId": "ttp-27",
+      "sessionId": "ad0aebf2-760f-450b-9caf-6e95731e0d08",
+      "occurredAt": "2026-10-13T11:12:54.099Z",
+      "timeZone": "Asia/Saigon",
+      "mode": "cloze",
+      "durationSeconds": 0,
+      "before": null,
+      "after": {
+        "easiness": 2.5,
+        "interval": 0,
+        "repetitions": 0,
+        "nextReviewDate": "2026-10-13T11:12:54.098Z",
+        "lastReviewDate": "2026-10-13T11:12:54.099Z",
+        "wrongCount": 0,
+        "lastOperationId": "ad0aebf2-760f-450b-9caf-6e95731e0d08:ttp-27",
+        "revision": 1
+      },
+      "correct": true
+    }
+  ]
+}

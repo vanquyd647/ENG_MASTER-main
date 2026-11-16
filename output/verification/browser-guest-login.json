@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-10-14T12:42:21.679Z",
+  "origin": "https://eng-master-main2.vercel.app",
+  "checks": [
+    "direct login CTA visible after entering guest",
+    "CTA visible in Settings and no horizontal overflow at 360/390/768/1280px",
+    "Google popup opens; closing it preserves guest profile/progress and resumable draft"
+  ],
+  "googleAccountAuthenticated": false,
+  "passed": true
+}

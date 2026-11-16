@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-16T12:10:52.469Z",
+  "origin": "http://localhost:3121",
+  "authMethod": "two temporary custom-token identities in isolated browser",
+  "checks": [
+    "account A restored through Firebase browser persistence",
+    "Cloud offline grade, reload/draft, reconnect and exactly one learned word",
+    "live account switch to B does not leak A personal word",
+    "switch back to A restores its personal catalog"
+  ],
+  "cleanup": true,
+  "passed": true
+}

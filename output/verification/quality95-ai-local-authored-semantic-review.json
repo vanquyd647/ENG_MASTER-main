@@ -1,0 +1,256 @@
+{
+  "checkedAt": "2026-10-15T13:38:11.309Z",
+  "reviewer": "Codex content inspection; not independent teacher validation",
+  "scope": "Known AI failures and daily vocabulary learning. Not full TOEIC coverage or a learning-effectiveness estimate.",
+  "outputSha256": "06dffc447be5989be59c2dccad825809184550867617b253acd59fc7fe4df1f4",
+  "rubric": [
+    "Bám nghĩa/ngữ cảnh đã chọn",
+    "Quy tắc ngữ pháp đúng chiều/cấu trúc",
+    "Tiếng Việt rõ, có dấu, dịch giữ nghĩa",
+    "Không kết luận quá phạm vi",
+    "Đáp án đúng từ mục tiêu, không chấm distractor AI chưa duyệt",
+    "Nhận xét người học chỉ dựa dữ liệu câu trả lời"
+  ],
+  "items": [
+    {
+      "id": "explain-opening",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "explain-meet",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "explain-qualified",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "explain-invoice",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "explain-dependence",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "simplify-opening",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "simplify-meet",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "simplify-qualified",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "simplify-invoice",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "simplify-dependence",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "examples-opening",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "examples-meet",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "examples-qualified",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "examples-invoice",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "examples-dependence",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "practice-opening",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "practice-meet",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "practice-qualified",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "practice-invoice",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "practice-dependence",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "compare-opening-vacancy",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "compare-applicant-application",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "compare-dependence-independence",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "compare-invoice-receipt",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "compare-calculation-correspondence",
+      "passed": true,
+      "note": "Ghi chú/ví dụ biên soạn: đúng nghĩa đang chọn, có dấu, cấu trúc và phạm vi phù hợp."
+    },
+    {
+      "id": "quiz-10-targets:pdf-toeic-0043",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "quiz-10-targets:tra-19",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "quiz-10-targets:rec-01",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "quiz-10-targets:rec-03",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "quiz-10-targets:rec-04",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "quiz-10-targets:rec-02",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "quiz-10-targets:pdf-toeic-0280",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "quiz-10-targets:sho-22",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "quiz-10-targets:acc-11",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "quiz-10-targets:ttp-30",
+      "passed": true,
+      "note": "Câu AI hiển thị có nghĩa gợi đúng từ mục tiêu; ngữ pháp, bản dịch và giải thích dùng được trong mẫu đã đọc."
+    },
+    {
+      "id": "review-batch-1:invoice",
+      "passed": true,
+      "note": "Đối chiếu câu trả lời giữ nguyên; cách dùng/ví dụ từ ghi chú, câu ôn AI dùng được."
+    },
+    {
+      "id": "review-batch-1:receipt",
+      "passed": true,
+      "note": "Đối chiếu câu trả lời giữ nguyên; cách dùng/ví dụ từ ghi chú, câu ôn AI dùng được."
+    },
+    {
+      "id": "review-batch-1:qualified",
+      "passed": true,
+      "note": "Đối chiếu câu trả lời giữ nguyên; cách dùng/ví dụ từ ghi chú, câu ôn AI dùng được."
+    },
+    {
+      "id": "review-batch-1:meet",
+      "passed": true,
+      "note": "Đối chiếu câu trả lời giữ nguyên; cách dùng/ví dụ từ ghi chú, câu ôn AI dùng được."
+    },
+    {
+      "id": "review-batch-1:dependence",
+      "passed": true,
+      "note": "Đối chiếu câu trả lời giữ nguyên; cách dùng/ví dụ từ ghi chú, câu ôn AI dùng được."
+    },
+    {
+      "id": "review-batch-2:calculation",
+      "passed": true,
+      "note": "Đối chiếu câu trả lời giữ nguyên; cách dùng/ví dụ từ ghi chú, câu ôn AI dùng được."
+    },
+    {
+      "id": "review-batch-2:applicant",
+      "passed": true,
+      "note": "Đối chiếu câu trả lời giữ nguyên; cách dùng/ví dụ từ ghi chú, câu ôn AI dùng được."
+    },
+    {
+      "id": "review-batch-2:opening",
+      "passed": true,
+      "note": "Đối chiếu câu trả lời giữ nguyên; cách dùng/ví dụ từ ghi chú, câu ôn AI dùng được."
+    },
+    {
+      "id": "review-batch-2:agreement",
+      "passed": true,
+      "note": "Đối chiếu câu trả lời giữ nguyên; cách dùng/ví dụ từ ghi chú, câu ôn AI dùng được."
+    },
+    {
+      "id": "review-batch-2:correspondence",
+      "passed": true,
+      "note": "Đối chiếu câu trả lời giữ nguyên; cách dùng/ví dụ từ ghi chú, câu ôn AI dùng được."
+    }
+  ],
+  "passed": 45,
+  "total": 45,
+  "percent": 100,
+  "thresholdMet": true,
+  "sourceBreakdown": {
+    "authoredExplanations": 20,
+    "aiPracticeAndQuiz": 15,
+    "mixedReviews": 10,
+    "modelRequests": 8
+  },
+  "limitations": [
+    "Đọc nội dung bởi Codex; chưa phải nghiệm thu giáo viên độc lập.",
+    "Mẫu hẹp tập trung lỗi đã biết; có câu quiz dựa câu gốc, không chứng minh khả năng tạo câu đa dạng.",
+    "Không dùng tỷ lệ này làm độ sẵn sàng toàn hệ thống hoặc hiệu quả học."
+  ]
+}

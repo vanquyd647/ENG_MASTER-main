@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-10-15T12:04:32.820Z",
+  "release": "2026.10.15-learning.6",
+  "deployment": "dpl_52TyUZfxB5cxsMrsQTDFSpNHNSSE",
+  "origin": "https://eng-master-main2.vercel.app",
+  "candidate": "https://eng-master-main2-53l22qk0k-quys-projects-d07a5005.vercel.app",
+  "promoted": true,
+  "previousDeployment": "dpl_5Jbj8PBoqngsL2YiXdyBaNfwCJjx",
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "catalog": true,
+    "unit": 165,
+    "newTests": 19,
+    "nativeApiImports": 4,
+    "browserLocal": 10,
+    "browserProduction": 10,
+    "liveAiLocal": 12,
+    "liveAiCandidate": 12,
+    "publicBuild": true,
+    "emulatorRerun": false
+  },
+  "features": {
+    "structuredExplainAndReview": true,
+    "legacyMarkdownReadable": true,
+    "serverApprovedLookup": 1575,
+    "selectedMeaningValidated": true,
+    "personalSourceLabeled": true,
+    "followupActions": [
+      "simplify",
+      "examples",
+      "compare",
+      "practice"
+    ],
+    "quickCheckGradesWithoutProgressWrites": true,
+    "reviewBatchSize": 5,
+    "originalQuestionInReview": true,
+    "ownerScopedCacheAndCancel": true
+  },
+  "build": {
+    "localInitialReferencedGzip": 398637,
+    "productionInitialReferencedGzip": 399061,
+    "budget": 420000,
+    "offlineAssets": 42,
+    "offlineRevision": "b27ad387aad9440e",
+    "serverSecretsAbsent": true,
+    "hashes": {
+      "src/data/workplacePractice.ts": "e389a541dcdaca6ce75ab4889162f630e7dfb126d06a94848a36ad2dd2eb3bb0",
+      "src/data/vocabulary.ts": "a3d6a89214fa682552664dfedb6644ef984de9aed5c215bb8b072c7127f80598",
+      "src/data/toeic-pdf.ts": "f3f6db312ce9fdcc1bc52e887a30ab76df51a3bbd8adcc303e46f9efa314bb2b",
+      "new/vocabulary-reviewed.json": "32a0060b1c67c8b85db3f0c2e6af02c1e71a794c860167764102897950e6afac"
+    }
+  },
+  "cleanup": {
+    "local": true,
+    "production": true,
+    "liveAiAuth": true,
+    "liveAiQuota": true
+  },
+  "vocabulary": 1575,
+  "practiceQuestions": 166,
+  "promptVersion": "toeic-vi-v3",
+  "model": "gemini-3.5-flash-lite",
+  "dailyRequestLimit": 100,
+  "aiAvatarEnabled": false,
+  "nativeTtlEnabled": false,
+  "billingChanged": false,
+  "cloudSchemaOrRulesChanged": false,
+  "gitCommittedOrPushed": false,
+  "manualContentReview": "ai-content-manual-content-review.json",
+  "limits": [
+    "UI browser tests use deterministic HTTP fixtures, while local/candidate AI/API tests call the real provider.",
+    "Schema and ID validation do not prove all AI explanations or distractors are correct; observed semantic issues remain documented.",
+    "Follow-ups retain current word/meaning and one latest answer in the dialog, without synced conversation history.",
+    "Quick checks do not update learning progress or enter normal backup.",
+    "Server accepts up to 20 legacy review entries; current UI requests at most 5 per action under the existing deadline."
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "workplace-v2-supplier-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Our maintenance team needs them for the weekend inspection.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "workplace-v2-supplier-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "I will send the tracking number this afternoon",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "workplace-v2-supplier-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "let you know immediately if the delivery date changes",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "workplace-v2-onboarding-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "please collect your identification badge from reception",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "workplace-v2-onboarding-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The orientation session starts at ten",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "workplace-v2-onboarding-3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "You only need the welcome email",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p1-listening-v1-forklift-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A forklift is positioned beside a truck.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p1-listening-v1-desk-q1",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "A small bust is displayed in front of the windows.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p1-listening-v1-home-office-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "An open laptop is sitting on a wooden table.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p1-listening-v1-conference-q1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Chairs are arranged around a white table.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p1-listening-v1-bicycle-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A bicycle is standing beside a blue wall.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p1-listening-v1-cyclist-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A person is riding a bicycle along a path.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-meeting-q1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "the projector in room three hundred four has stopped working",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-meeting-q2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Shall we move the meeting there? / Room two hundred eighteen",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-meeting-q3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "I will email everyone the new room number now.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-delivery-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "We ordered twelve desk lamps, but only ten arrived this morning.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-delivery-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "They will arrive tomorrow",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-delivery-q3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Could you email me the tracking number today?",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-listening-v1-museum-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Here is some information for your visit.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-listening-v1-museum-q2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The photography gallery is closed today",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "startedAt": "2026-10-16T16:16:08.815Z",
+  "origin": "https://eng-master-main2.vercel.app",
+  "planSha256": "437fad1b0dafb3d0792cd378db7eb7abc99398732241849b80b2882162d2c05d",
+  "offlineRevision": "e9b3a74a721297f8",
+  "serverBundleSha256": "1c0fdb9af14978766f998240608a5118379b56f4042444e46b6cf5a3319467be",
+  "releaseInputsSha256": "999abccd23c2396822fa1dbd7a6509cf48f6e3fed848d063a33ab03dd4d224be",
+  "checks": [
+    {
+      "script": "scripts/browser-full-exam.mjs",
+      "scriptSha256": "01fcabb37364401f281ee265910ec1ffc6a75de466e22b336217ad17ac96be64",
+      "file": "exam200-browser.json",
+      "exitCode": 1,
+      "passed": false,
+      "checks": 0,
+      "artifactSha256": "696f468b41baeb27a56e2680a2f01da494122dec0e1077caff0a82dea0fc2d87"
+    }
+  ],
+  "passed": false,
+  "finishedAt": "2026-10-16T16:16:45.929Z"
+}

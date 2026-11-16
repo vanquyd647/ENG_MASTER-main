@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p5-v1-21",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The passive voice structure requires the past participle 'scheduled' after 'has been'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-22",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The relative pronoun 'that' is used for things/rooms as the subject of the subordinate clause.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-23",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The possessive adjective 'their' is needed to modify the noun 'skills'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-24",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The noun 'attachment' is required after the determiner 'an'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The question asks 'When', and 'On Thursday morning' provides a valid time.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The question asks 'Where', and 'In the top drawer' provides a location.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The question asks 'Who', and 'The operations manager' names a person.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The request asks to send the schedule, and 'Certainly, I will email it now' is an appropriate polite acceptance.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-5",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The question asks 'Why', and 'Because the road was closed' provides a reason.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The question asks 'How often', and 'Once a month' answers regarding frequency.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

@@ -1,0 +1,587 @@
+{
+  "checkedAt": "2026-10-16T12:03:06.531Z",
+  "reviewer": "Codex second-pass source/text/options review; no teacher certification or new Gemini claim",
+  "sourceSha256": "337287893daab1f1fc8340fc8368ab8db70c33f690c439aa102854e43ae60da8",
+  "items": [
+    {
+      "id": "p6-calibrated-v1-delivery-1",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Sau will cần động từ nguyên mẫu deliver: giao các bàn làm việc. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-delivery-2",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Sign for the shipment nghĩa là ký nhận lô hàng; cần danh từ shipment. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-delivery-3",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: By 4 p.m. nêu hạn chót cần liên hệ để thay lịch. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-delivery-4",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Đoạn thư đang xác nhận lịch giao hàng; lời kết về việc hoàn tất giao hàng nối đúng chủ đề. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-training-1",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: A training session là buổi học được tổ chức; will be held là bị động tương lai. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-training-2",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Sau can cần động từ nguyên mẫu practice: thực hành quy trình đặt phòng. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-training-3",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Không cần cài phần mềm, tuy nhiên vẫn phải kiểm tra kết nối mạng; However thể hiện chuyển ý phù hợp. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-training-4",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Câu nhắc thông báo buổi sẽ tham dự nối hợp lý với thông tin có buổi học thứ hai ở câu sau. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-renovation-1",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Sau side cần danh từ entryway: lối vào bên hông tòa nhà. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-renovation-2",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Sau chỗ trống là mệnh đề some noise is unavoidable, dùng Although để diễn tả nhượng bộ. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-renovation-3",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Your patience là cụm danh từ: sự kiên nhẫn của quý khách. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-renovation-4",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Câu kết nói lợi ích của sảnh sau sửa chữa, phù hợp toàn bộ thông báo. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-membership-1",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Membership sẽ hết hạn vào June 30; expire là động từ đúng nghĩa. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-membership-2",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Automatically là trạng từ bổ nghĩa will be sent: được gửi tự động. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-membership-3",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Them là đại từ tân ngữ thay cho contact details sau update. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p6-calibrated-v1-membership-4",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Câu đề nghị hỗ trợ gia hạn tiếp nối hướng dẫn thanh toán; không mâu thuẫn với quyền truy cập đã nêu. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-store-1",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Thông báo yêu cầu đợi email xác nhận hàng sẵn sàng trước khi đến. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-store-2",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Người mua phải nhập tên người nhận thay trong tài khoản trước lúc nhận hàng. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-store-3",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Thông báo nêu rõ orders not collected within seven days will be canceled and refunded. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-invoice-1",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Total due trên hóa đơn là $900, bằng 360 + 540. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-invoice-2",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Ghi chú loại trừ printed brochures và dịch vụ in; các mục thiết kế có trên hóa đơn. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-invoice-3",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Ghi chú yêu cầu dùng CD-418 làm payment reference khi chuyển khoản. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-recruitment-1",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Thông báo yêu cầu comfortable using spreadsheets và giao tiếp tiếng Anh. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-recruitment-2",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Đôi khi phải làm thứ Bảy khi có sự kiện lớn và được nghỉ bù ngày thường. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-recruitment-3",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Hướng dẫn ứng tuyển yêu cầu résumé và short cover letter trước hạn 18 tháng Tư. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-train-1",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Thông báo ngừng tàu Easton–Mill Park trước trưa; đoạn Mill Park–Harbor vẫn bình thường. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-train-2",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Regular rail tickets được chấp nhận trên xe buýt mà không thu thêm phí. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-calibrated-v1-train-3",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Hành trình xe buýt dự kiến lâu hơn tàu thông thường 20 phút. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-fitness-q1",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Thông báo yêu cầu dọn trống tủ sau mỗi lần sử dụng. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-fitness-q2",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Đồ được chuyển về lễ tân và giữ bảy ngày. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-fitness-q3",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Hội viên cần tự mang ổ khóa vì quầy không có khóa dự phòng. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-course-q1",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Email nêu tòa nhà đóng cửa để bảo trì. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-course-q2",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Học bù ngày 13/6 cùng giờ bắt đầu thường lệ là 18:00. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-course-q3",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Phí bao gồm phiếu bài tập; laptop không được nói là cấp miễn phí. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-returns-q1",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Tai nghe đã mở chỉ được nhận trả khi bị lỗi. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-returns-q2",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Đơn trực tuyến được trả tại bất kỳ chi nhánh hoặc qua bưu điện. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-returns-q3",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Chính sách miễn phí trả hàng qua bưu điện cho hàng lỗi. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-appointment-q1",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Lịch 10:20, đến sớm 15 phút là 10:05. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-appointment-q2",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Thư chấp thuận do cơ quan cung cấp. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-venue-q1",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Cedar đủ cho 32 người và rẻ hơn Oak; Elm chỉ chứa 20 người. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-venue-q2",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Thời gian 13–17 là một nửa ngày; Cedar giá 260 đô. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-venue-q3",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Bảng giá gồm máy chiếu; ăn uống tính riêng. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-venue-q4",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Email nói khách tự lo bữa trưa. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-venue-q5",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Email yêu cầu gửi hóa đơn cho nhóm tài chính. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-shipment-q1",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Email xác nhận giao tám ghế trước. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-shipment-q2",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Các tủ vẫn đang được kiểm tra nên chưa đưa lên xe. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-shipment-q3",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Email cho biết giao tủ ngày 7/10, sau lịch ban đầu một ngày. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-shipment-q4",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Địa chỉ trong xác nhận yêu cầu bến bốc dỡ phía sau. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-shipment-q5",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Tám ghế: 8×90=720; hai tủ: 2×150=300; cộng 1.020 đô. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-volunteer-q1",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Người đăng ký xin ca sáng; thư trả lời xác nhận ca được yêu cầu. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-volunteer-q2",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Người đăng ký muốn trực quầy thông tin và được chấp thuận. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-volunteer-q3",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Thông báo yêu cầu người trực quầy thông tin dự họp trực tuyến 6/11. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-volunteer-q4",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Ca bắt đầu 8 giờ; đến trước 15 phút là 7:45. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-volunteer-q5",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Thông báo nêu mỗi tình nguyện viên nhận một phiếu ăn. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-conference-q1",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Email đổi riêng phòng thực hành dữ liệu từ 5 sang 8. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-conference-q2",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Đổi phòng nhưng giữ giờ ban đầu, tức 10:15. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-conference-q3",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Email yêu cầu laptop có các file mẫu đã tải. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-conference-q4",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Khách hẹn ở buổi thảo luận tiếp thị; lịch ghi Hall B. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-conference-q5",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Thư trả lời chỉ rõ biển cập nhật cạnh quầy đăng ký. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-supplier-q1",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Từ thứ Hai đến thứ Tư cần dịch vụ nhanh hai ngày làm việc. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-supplier-q2",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Phụ phí nhanh 60 đô làm tổng thành 300; giao nội thành đã gồm. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-supplier-q3",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Báo giá ghi số lượng 500 tờ, các số khác là giá/phụ phí. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-supplier-q4",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Thư trả lời yêu cầu nhận thanh toán trước khi sản xuất. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    },
+    {
+      "id": "p7-exam-v1-supplier-q5",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Codex đọc toàn văn và cả bốn lựa chọn: Nhà in yêu cầu kiểm tra số điện thoại liên hệ giao hàng trên phiếu. Phần bổ sung không đổi sự kiện dùng chấm và không làm phương án nhiễu thành đúng."
+    }
+  ],
+  "summary": {
+    "reviewed": 64,
+    "failedBatches": 0
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "p5-v2-forms-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "An adverb is needed to modify the verb inspected.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-forms-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A noun is needed as the object of need after the adjective written.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-forms-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "An adjective is required after the linking verb is and the adverb more.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-forms-4",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "A noun is needed to form the compound noun subject Customer satisfaction.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-forms-5",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "An adjective is needed to modify the noun analysis.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-forms-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "An adverb is needed to modify the verb reached.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-agree-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The head of the subject phrase is the singular noun package, requiring a singular verb (is).",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-agree-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject Both branches is plural, requiring the plural base form offer.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-agree-3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Each is singular and takes a singular verb form (needs).",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-agree-4",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The head noun of the subject is instructions, which is plural, taking the plural verb are.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-agree-5",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "One is singular, requiring the singular verb has.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-agree-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Connected by and referring to two distinct people, the compound subject takes a plural verb are.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The specific past time marker in 2019 requires the simple past tense (opened).",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Since 2021 indicates an action starting in the past and continuing into the present, requiring the present perfect tense (have used).",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "At the moment signals an action happening right now, requiring the present continuous tense (are testing).",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-4",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "An action completed before another past action (arrived) requires the past perfect tense (had prepared).",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Habitual or scheduled actions use the simple present tense with a singular subject (leaves).",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-tense-6",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The future time marker tomorrow requires the future tense (will review).",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-passive-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Modal verbs like must are followed by the passive infinitive be + past participle (be approved).",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-passive-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject items receives the action, requiring a passive form in the past tense (were returned).",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

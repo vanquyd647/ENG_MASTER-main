@@ -1,0 +1,112 @@
+{
+  "version": 4,
+  "extendedPracticeRecords": [
+    {
+      "id": "4b5b37ea-fb28-4486-b575-e9dbe3f2f4d1",
+      "bankVersion": 2,
+      "kind": "part7",
+      "startedAt": "2026-10-16T16:20:30.363Z",
+      "finishedAt": "2026-10-16T16:20:30.407Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p7-v2-workshop-1",
+          "selectedIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "6bfe9fb1-4001-4767-ba24-8f93656a6c1b",
+      "bankVersion": 2,
+      "kind": "part7",
+      "startedAt": "2026-10-16T16:20:28.624Z",
+      "finishedAt": "2026-10-16T16:20:28.665Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p7-v2-workshop-1",
+          "selectedIndex": 2
+        },
+        {
+          "questionId": "p7-v2-workshop-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p7-v2-workshop-3",
+          "selectedIndex": null
+        }
+      ]
+    },
+    {
+      "id": "6f8c4c77-2859-48f0-a8f6-d47e9331aa94",
+      "bankVersion": 2,
+      "kind": "part6",
+      "startedAt": "2026-10-16T16:20:27.298Z",
+      "finishedAt": "2026-10-16T16:20:27.590Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p6-v2-delivery-1",
+          "selectedIndex": 0
+        },
+        {
+          "questionId": "p6-v2-delivery-2",
+          "selectedIndex": 1
+        },
+        {
+          "questionId": "p6-v2-delivery-3",
+          "selectedIndex": 2
+        },
+        {
+          "questionId": "p6-v2-delivery-4",
+          "selectedIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "09af086a-7e19-4049-ab90-8c2adee54d12",
+      "bankVersion": 2,
+      "kind": "grammar",
+      "startedAt": "2026-10-16T16:20:22.658Z",
+      "finishedAt": "2026-10-16T16:20:22.699Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "grammar-v2-passive-3",
+          "selectedIndex": 2
+        },
+        {
+          "questionId": "grammar-v2-passive-2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "grammar-v2-passive-1",
+          "selectedIndex": null
+        }
+      ]
+    }
+  ],
+  "catalogVersion": "toeic-1575-v1",
+  "exportedAt": "2026-10-16T16:20:36.531Z",
+  "profile": {
+    "displayName": "Khách (Guest)",
+    "studyTimeMinutes": 0,
+    "streak": 0,
+    "dailyGoal": 15,
+    "history": []
+  },
+  "progress": {},
+  "practiceRecords": [],
+  "roadmap": null,
+  "customWords": [],
+  "favorites": [],
+  "preferences": {
+    "sound": false,
+    "notifications": false,
+    "studySessionSize": 15,
+    "reminderHour": 20
+  },
+  "decks": [],
+  "dailyActivity": {},
+  "events": []
+}

@@ -1,0 +1,120 @@
+{
+  "checkedAt": "2026-10-16T11:41:40.838Z",
+  "reviewer": "Codex second-pass source verification; not a new Gemini or teacher review",
+  "model": null,
+  "sourceSha256": "cb36ae9655ffbe2cd49ab666366f42c2c94b849d358ab2398123da7ac29d9fc2",
+  "items": [
+    {
+      "id": "p7-accept-v1-handover-q1",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Email phân công công việc trong thời gian Nina đi học và đổi cuộc họp; các phương án quảng cáo/đánh giá Omar/ngừng hỗ trợ đều sai."
+    },
+    {
+      "id": "p7-accept-v1-handover-q2",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Nguồn giữ yêu cầu thường cho nhân viên được phân công; chỉ khiếu nại khẩn chuyển Omar."
+    },
+    {
+      "id": "p7-accept-v1-handover-q3",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "9:30 bắt đầu họp; dành đủ 10 phút đọc trước đó thì chậm nhất bắt đầu 9:20."
+    },
+    {
+      "id": "p7-accept-v1-parking-q1",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Đúng ba giờ nằm trong hơn một giờ đến tối đa ba giờ, phí4; câu hỏi nêu rõ không có voucher."
+    },
+    {
+      "id": "p7-accept-v1-parking-q2",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Thông báo cấp voucher cho người đón là nhân viên, không cấp trực tiếp khách; phí đã trả không hoàn."
+    },
+    {
+      "id": "p7-accept-v1-parking-q3",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Ngày6/11 chỉ lối West Street đóng; cả khách/nhân viên dùng South Road, lễ tân/lối bộ không đổi."
+    },
+    {
+      "id": "p3-exam-v1-software-q1",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Lời A bỏ lỡ khóa học, xin buổi khác; thêm ngườiC hỏi cài đặt không đổi ý nghĩa."
+    },
+    {
+      "id": "p3-exam-v1-software-q2",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Lời B nói rõ buổi thứNăm trực tuyến. Ba người A/B/C được gán ba giọng, không đổi đáp án."
+    },
+    {
+      "id": "p3-exam-v1-software-q3",
+      "chosenIndex": 3,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "B yêu cầu cài đặt theo email; câu hỏi C là chuẩn bị trước đào tạo."
+    },
+    {
+      "id": "p4-exam-v1-shuttle-q1",
+      "chosenIndex": 2,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Audio cho biết chuyến đi Airport; bảng Airport→4, CityCenter→1, Harbor→3. Bay2 cũ đóng, hai đáp án khác không phải ô đón."
+    },
+    {
+      "id": "p4-exam-v1-shuttle-q2",
+      "chosenIndex": 1,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Audio vẫn yêu cầu mua vé tại kiosk trước khi lên xe."
+    },
+    {
+      "id": "p4-exam-v1-shuttle-q3",
+      "chosenIndex": 0,
+      "answerMatches": true,
+      "ambiguous": false,
+      "issue": "",
+      "translationIssue": "",
+      "reason": "Audio vẫn nêu thời gian khoảng40 phút; bảng chỉ đổi dữ liệu bay theo đích đến."
+    }
+  ],
+  "summary": {
+    "reviewed": 12,
+    "failedBatches": 0
+  }
+}

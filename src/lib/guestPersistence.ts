@@ -3,11 +3,16 @@ import {
   createDailyActivity,
   getLocalDateKey,
 } from "./learning";
+import { parseSessionLog } from "./dataValidation";
+import { normalizeBackup } from "./backup";
+import { getBackupPreferenceChanges, refreshCustomVocabulary } from "./productPreferences";
+import { writeLocalChanges } from "./localTransaction";
 import type {
   DailyActivity,
   StudySessionLog,
   UserProfile,
   UserProgress,
+  StudyBackup,
 } from "../types";
 
 const GUEST_PROFILE_KEY = "guest_profile";
@@ -58,6 +63,26 @@ export const saveGuestProgress = (progress: UserProgress) => {
   localStorage.setItem(GUEST_PROGRESS_KEY, JSON.stringify(progress));
 };
 
+export const saveGuestStudyState = (profile: UserProfile, progress: UserProgress) => writeLocalChanges({
+  [GUEST_PROFILE_KEY]: JSON.stringify(profile), [GUEST_PROGRESS_KEY]: JSON.stringify(progress),
+});
+
+export const replaceGuestBackup = (profile: UserProfile, input: StudyBackup) => {
+  const backup = normalizeBackup(input);
+  const nextProfile: UserProfile = { ...profile, ...(backup.profile || {}), uid: profile.uid, email: profile.email, totalWordsLearned: Object.keys(backup.progress).length };
+  if (backup.version !== 2) {
+    nextProfile.history = backup.profile?.history || [];
+    nextProfile.streak = backup.profile?.streak || 0;
+    if (!backup.profile?.lastStudyDate) delete nextProfile.lastStudyDate;
+  }
+  writeLocalChanges({
+    [GUEST_PROFILE_KEY]: JSON.stringify(nextProfile), [GUEST_PROGRESS_KEY]: JSON.stringify(backup.progress),
+    ...(backup.version !== 2 ? { ...getBackupPreferenceChanges(backup), [GUEST_ACTIVITY_KEY]: JSON.stringify(backup.dailyActivity) } : {}),
+  });
+  if (backup.version !== 2) refreshCustomVocabulary();
+  return nextProfile;
+};
+
 export const clearGuestProgress = () => {
   localStorage.removeItem(GUEST_PROGRESS_KEY);
   localStorage.removeItem(GUEST_ACTIVITY_KEY);
@@ -76,8 +101,13 @@ export const recordGuestSession = ({
   wordIds,
   timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone,
 }: SessionRecordInput) => {
+  log = parseSessionLog({ ...log, wordIds: log.wordIds || wordIds });
+  wordIds = log.wordIds || [];
   const dateKey = getLocalDateKey(new Date(log.date), timeZone);
   const activities = loadGuestSession().activities;
+  if (profile.history?.some((session) => session.id === log.id)) {
+    return { profile, activity: activities[dateKey] || createDailyActivity(dateKey, timeZone, [], wordIds) };
+  }
   const activity = createDailyActivity(
     dateKey,
     timeZone,
@@ -96,7 +126,6 @@ export const recordGuestSession = ({
     ),
     lastStudyDate: dateKey,
   };
-  saveGuestProfile(nextProfile);
-  localStorage.setItem(GUEST_ACTIVITY_KEY, JSON.stringify(activities));
+  writeLocalChanges({ [GUEST_PROFILE_KEY]: JSON.stringify(nextProfile), [GUEST_ACTIVITY_KEY]: JSON.stringify(activities) });
   return { profile: nextProfile, activity };
 };

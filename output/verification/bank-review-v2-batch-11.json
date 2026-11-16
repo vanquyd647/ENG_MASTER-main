@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "p4-exam-v1-opening-q1",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Starting next Monday, our weekday opening time will change from eight to seven thirty.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-opening-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "We are making this change to serve customers who need supplies before work.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-opening-q3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Our closing time remains six, and weekend hours will not change.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-safety-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "please put on the yellow safety vest provided at reception.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-safety-q2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Photography is permitted in the packing area, but it is not allowed near the loading dock.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-safety-q3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Stay with your guide at all times, because forklifts operate along several routes.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-order-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The business dictionaries you ordered are ready for collection.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-order-q2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Please bring your order number when you collect them.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-order-q3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "If you prefer delivery, call us by Friday afternoon so that we can arrange it.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-presentation-q1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "She will discuss how companies can reduce delivery delays by using better route planning.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-presentation-q2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Her presentation will last thirty minutes, followed by a ten-minute question period. Please keep your questions until the end.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-presentation-q3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "printed copies of the presentation will be available at the information desk",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-maintenance-q1",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Water service will be temporarily interrupted this Wednesday",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-maintenance-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "from two to four in the afternoon",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-maintenance-q3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Drinking water will be available in bottles at reception.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-recruitment-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Volunteers will welcome visitors and help exhibitors find their assigned booths.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-recruitment-q2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "All volunteers must attend a short briefing at eight thirty on the morning of the fair.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-recruitment-q3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "To register, complete the form on the town website by Thursday.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-lost-property-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A black laptop bag has been found in the second-floor conference room.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-lost-property-q2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "To claim the bag, please describe what is inside and show identification.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

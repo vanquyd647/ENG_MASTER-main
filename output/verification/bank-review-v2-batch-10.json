@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "p3-exam-v1-catering-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "B: Yes. I will prepare forty-five lunches.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-catering-q3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A: Yes. Please use the east entrance...",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-software-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A: I could not attend yesterday's training on the new inventory system. Is there another session?",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-software-q2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "B: There is a repeat session on Thursday at nine. It will be online...",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-software-q3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "B: Yes. Follow the installation guide in the welcome email.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-bicycle-repair-q1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A: I left my bicycle here yesterday. Have you finished replacing the brakes?\nB: Yes, the brakes are ready.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-bicycle-repair-q2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "B: ...Would you like us to replace it too?\nA: Yes, please.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-bicycle-repair-q3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "B: It will be ready at four.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-supplies-q1",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "A: The order form says we requested blue folders, but the delivery contains green ones.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-supplies-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "B: They can exchange them on Monday.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-supplies-q3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "B: I will contact the supplier now and ask them to collect the green folders when they deliver the replacements.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-travel-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A: Our flight to the trade fair has been moved to eight in the morning.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-travel-q2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "B: I will book a taxi for five thirty.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-travel-q3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A: Please email our new arrival time to the hotel.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-library-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "B: I am sorry, but another member has reserved that copy.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-library-q2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "B: You need to return it by Friday.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-library-q3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "B: Sign in to the member portal and open the digital resources page. You can access it there.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-shuttle-q1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Speaker: The next shuttle will leave from bay four at ten fifteen.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-shuttle-q2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Speaker: Please purchase your ticket at the kiosk before boarding.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-exam-v1-shuttle-q3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Speaker: The journey will take approximately forty minutes.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

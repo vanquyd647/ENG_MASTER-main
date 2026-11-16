@@ -5,6 +5,7 @@ import {
   initializeApp,
 } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
+import { getStorage } from "firebase-admin/storage";
 import { getFirestore } from "firebase-admin/firestore";
 
 const getAdminApp = () => {
@@ -19,14 +20,18 @@ const getAdminApp = () => {
     return initializeApp({
       credential: cert({ projectId, clientEmail, privateKey }),
       projectId,
+      storageBucket: process.env.FIREBASE_STORAGE_BUCKET || process.env.VITE_FIREBASE_STORAGE_BUCKET,
     });
   }
 
   return initializeApp({
     credential: applicationDefault(),
     ...(projectId ? { projectId } : {}),
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET || process.env.VITE_FIREBASE_STORAGE_BUCKET,
   });
 };
 
 export const getAdminAuth = () => getAuth(getAdminApp());
 export const getAdminFirestore = () => getFirestore(getAdminApp());
+
+export const getAdminStorage = () => getStorage(getAdminApp());

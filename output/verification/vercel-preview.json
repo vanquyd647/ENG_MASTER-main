@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-13T11:53:21.271Z",
+  "id": "dpl_H33MPdCxPgNJ2wjevJV9oBcXVH2W",
+  "url": "eng-master-main2-d5s4kivfo-quys-projects-d07a5005.vercel.app",
+  "projectId": "prj_rSRGXYnCqYBKrKLubgzclP7OkuAJ",
+  "target": "preview",
+  "readyState": "READY",
+  "nodeVersion": "22.x",
+  "credentialFilesAbsent": true,
+  "http": {
+    "frontend": 200,
+    "title": "ENG_MASTER - Học từ vựng tiếng Anh",
+    "unauthenticatedApi": 401,
+    "apiCode": "auth_required",
+    "missingJs": 404,
+    "serverSource": 404
+  },
+  "authenticatedApi": "passed: explain/quiz/mistake-review/invalid IDs/quota/avatar flag",
+  "report": "output/verification/hosted-ai-preview.json"
+}

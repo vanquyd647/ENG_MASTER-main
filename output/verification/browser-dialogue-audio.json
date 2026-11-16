@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-14T18:00:29.091Z",
+  "origin": "https://eng-master-main2.vercel.app",
+  "identity": "isolated guest browser",
+  "passed": true,
+  "offline": true,
+  "utterances": [
+    {
+      "voice": "Daniel",
+      "local": true,
+      "started": true,
+      "ended": true,
+      "error": null
+    },
+    {
+      "voice": "Karen",
+      "local": true,
+      "started": true,
+      "ended": true,
+      "error": null
+    }
+  ]
+}

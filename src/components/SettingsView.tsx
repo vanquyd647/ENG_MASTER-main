@@ -1,55 +1,28 @@
+import WorkspaceCheck from '../features/auth/WorkspaceCheck';
+import { removeUnusedDatasets } from '../repositories/datasetRetention';
+import { getCompleteCloudEvents } from '../repositories/cloudHistory';
+import { getCachedEvents } from '../repositories/localRepository';
+import { reportError } from "../services/telemetry";
+import { readOwnerItem, writeOwnerItem } from "../repositories/ownerStorage";
+import { scheduleStudyReminder, clearStudyReminder } from "../services/reminders";
 import React, { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { toast } from "react-hot-toast";
-import ReactMarkdown from "react-markdown";
-import {
-  AlertCircle, Bell, BookOpen, Brain, Calendar, CalendarDays, CheckCircle2,
-  CheckSquare, ChevronRight, ClipboardList, ExternalLink, FileDown, Flame,
-  GraduationCap, History, Moon, RotateCcw, Settings, Sparkles, Sun, Target,
-  Trash2, TrendingUp, Trophy, User as UserIcon, Volume2,
-} from "lucide-react";
-import { VOCABULARY, type Word } from "../data/vocabulary";
+
+import { Bell, Moon, Settings, Sparkles, Trash2, User as UserIcon, Volume2 } from "lucide-react";
+
+import { useCatalog } from "../domain/useCatalog";
 import { callAiApi } from "../lib/apiClient";
-import { createBackup, normalizeBackup } from "../lib/backup";
-import {
-  getLearningStatus, getLearningStatusLabel, getRemainingNewWordCount,
-  getReviewQueue, getSessionCorrectPercentage, getSessionStudiedCount,
-  getStartedWordCount, REVIEW_SESSION_SIZE,
-} from "../lib/learning";
-import { calculateNextReview, initialSRS } from "../lib/srs";
+import { createBackup, mergeBackup, MAX_BACKUP_BYTES, parseBackupText, parseProgressCsv } from "../lib/backup";
+import { getCloudActivities, loadGuestSession } from "../lib/persistence";
+import { loadLocalState, getLocalArchives, type LocalArchive } from "../repositories/localRepository";
+import { downloadLocalArchive } from '../lib/localArchives';
+import { getActiveOwner } from "../repositories/ownerStorage";
+
 import { cn } from "../lib/utils";
-import {
-  getReminderHour,
-  getStudySessionSize,
-  setReminderHour as persistReminderHour,
-  setStudySessionSize as persistStudySessionSize,
-} from "../lib/productPreferences";
-import type {
-  BackupV2, DailyActivity, ProgressItem, UserProfile, UserProgress,
-} from "../types";
-import { Button, Card } from "./ui";
-
-type SyncAction = "tasks" | "calendar" | "drive";
-
-let studyReminderTimer: number | null = null;
-const scheduleStudyReminder = (hour = getReminderHour()) => {
-  if (!("Notification" in window) || Notification.permission !== "granted") return;
-  if (studyReminderTimer) window.clearTimeout(studyReminderTimer);
-  const nextReminder = new Date();
-  nextReminder.setHours(hour, 0, 0, 0);
-  if (nextReminder.getTime() <= Date.now()) nextReminder.setDate(nextReminder.getDate() + 1);
-  studyReminderTimer = window.setTimeout(() => {
-    new Notification("ENG_MASTER", {
-      body: "Đến giờ ôn lại kế hoạch từ vựng hôm nay.",
-      icon: "/favicon.ico",
-    });
-    scheduleStudyReminder();
-  }, nextReminder.getTime() - Date.now());
-};
-const clearStudyReminder = () => {
-  if (studyReminderTimer) window.clearTimeout(studyReminderTimer);
-  studyReminderTimer = null;
-};
+import { getReminderHour, getStudySessionSize, setReminderHour as persistReminderHour, setStudySessionSize as persistStudySessionSize } from "../lib/productPreferences";
+import type { StudyBackup, UserProfile, UserProgress } from "../types";
+import { Button, Card, Modal } from "./ui";
 
 export function SettingsView({ 
   profile,
@@ -58,16 +31,27 @@ export function SettingsView({
   onResetProgress,
   onCancel,
   onImportBackup,
-  onUpdateProfile
+  onUpdateProfile,
+  onRollbackDataset,
 }: { 
   profile: UserProfile | null;
   progress: UserProgress;
   isGuest: boolean;
   onResetProgress: () => void;
   onCancel: () => void;
-  onImportBackup: (backup: BackupV2) => Promise<void>;
-  onUpdateProfile: (updates: Partial<UserProfile>) => void;
+  onImportBackup: (backup: StudyBackup) => Promise<void>;
+  onUpdateProfile: (updates: Partial<UserProfile>) => Promise<void>;
+  onRollbackDataset?: () => Promise<void>;
 }) {
+  useCatalog();
+  const [aiLevel,setAiLevel]=useState(readOwnerItem("ai_level") || "A2");
+  const [cleaningDatasets,setCleaningDatasets]=useState(false);
+  const [archives,setArchives]=useState<LocalArchive[]>([]);
+  useEffect(()=>{let active=true;void getLocalArchives(getActiveOwner()).then(value=>{if(active)setArchives(value);}).catch(error=>reportError('local-archives',error));return()=>{active=false;};},[profile?.uid]);
+  const [speechRate,setSpeechRate]=useState(Number(readOwnerItem("speech_rate")) || 0.9);
+  const [speechVoice,setSpeechVoice]=useState(readOwnerItem("speech_voice") || "");
+  const [voices,setVoices]=useState<SpeechSynthesisVoice[]>([]);
+  useEffect(()=>{if (!("speechSynthesis" in window)) return;const changed=()=>setVoices(speechSynthesis.getVoices().filter(voice=>voice.lang.startsWith("en")));changed();speechSynthesis.addEventListener("voiceschanged",changed);return()=>speechSynthesis.removeEventListener("voiceschanged",changed);},[]);
   const [notifications, setNotifications] = useState(
     localStorage.getItem('app_notifications') === 'true'
   );
@@ -80,18 +64,29 @@ export function SettingsView({
   const [isGeneratingAvatar, setIsGeneratingAvatar] = useState(false);
   const [sessionSize, setSessionSize] = useState(getStudySessionSize);
   const [reminderHour, setReminderHour] = useState(getReminderHour);
+  const [pendingImport, setPendingImport] = useState<{ backup: StudyBackup; filename: string } | null>(null);
+  const [importMode, setImportMode] = useState<'merge' | 'replace'>('merge');
+  const [importError, setImportError] = useState<string | null>(null);
+  const [isImporting, setIsImporting] = useState(false);
+  const [isUpdating, setIsUpdating] = useState(false);
+  const updateLock = useRef(false);
+  const importLock = useRef(false);
+  useEffect(() => setGoalInput(String(profile?.dailyGoal || 15)), [profile?.dailyGoal]);
 
   useEffect(() => {
     if (notifications && 'Notification' in window && Notification.permission === 'granted') {
       scheduleStudyReminder(reminderHour);
-    }
+    } else clearStudyReminder();
   }, [notifications, reminderHour]);
 
   const handleGenerateAvatar = async () => {
+    if (updateLock.current) return;
     if (isGuest) {
       toast.error('Chức năng tạo avatar AI chỉ dành cho tài khoản đăng nhập.');
       return;
     }
+    updateLock.current = true;
+    setIsUpdating(true);
     setIsGeneratingAvatar(true);
     const toastId = toast.loading('Đang tạo avatar với AI...');
     try {
@@ -99,37 +94,51 @@ export function SettingsView({
         prompt: "A minimal, clean vector avatar for a professional profile, solid bright background, simple geometric shapes, very cute",
       });
       if (data.image) {
-        onUpdateProfile({ photoURL: data.image });
+        await onUpdateProfile({ photoURL: data.image });
         toast.success('Đã tạo avatar thành công!', { id: toastId });
       } else {
          throw new Error("No image");
       }
     } catch(err) {
-      console.error(err);
+      reportError("SettingsView",err);
       toast.error(err instanceof Error ? err.message : 'Không thể tạo avatar, vui lòng thử lại sau.', { id: toastId });
     } finally {
       setIsGeneratingAvatar(false);
+      updateLock.current = false;
+      setIsUpdating(false);
     }
   };
 
-  const handleSaveProfile = () => {
-    if (!editName.trim()) {
-      toast.error('Tên không được để trống');
+  const handleSaveProfile = async () => {
+    if (updateLock.current) return;
+    if (!editName.trim() || editName.trim().length > 120) {
+      toast.error('Tên cần có 1–120 ký tự');
       return;
     }
-    onUpdateProfile({ displayName: editName });
-    setIsEditingProfile(false);
-    toast.success('Đã cập nhật hồ sơ!');
+    updateLock.current = true;
+    setIsUpdating(true);
+    try {
+      await onUpdateProfile({ displayName: editName.trim() });
+      setIsEditingProfile(false);
+      toast.success('Đã cập nhật hồ sơ!');
+    } catch { toast.error('Chưa lưu được hồ sơ. Hãy thử lại.'); }
+    finally { updateLock.current = false; setIsUpdating(false); }
   };
 
-  const handleSaveGoal = () => {
+  const handleSaveGoal = async () => {
+    if (updateLock.current) return;
     const nextGoal = Number(goalInput);
     if (!Number.isInteger(nextGoal) || nextGoal < 5 || nextGoal > 50) {
       toast.error('Mục tiêu mỗi ngày cần nằm trong khoảng 5-50 từ.');
       return;
     }
-    onUpdateProfile({ dailyGoal: nextGoal });
-    toast.success('Đã cập nhật mục tiêu học tập!');
+    updateLock.current = true;
+    setIsUpdating(true);
+    try {
+      await onUpdateProfile({ dailyGoal: nextGoal });
+      toast.success('Đã cập nhật mục tiêu học tập!');
+    } catch { toast.error('Chưa lưu được mục tiêu. Hãy thử lại.'); }
+    finally { updateLock.current = false; setIsUpdating(false); }
   };
 
   const downloadFile = (filename: string, content: string, type: string) => {
@@ -142,12 +151,23 @@ export function SettingsView({
     URL.revokeObjectURL(url);
   };
 
-  const exportBackup = () => {
-    downloadFile(
+  const getActivities = async () => {
+    if ("indexedDB" in globalThis) { const local = await loadLocalState(getActiveOwner()); if (local) return local.activities; }
+    return isGuest ? loadGuestSession().activities : profile ? getCloudActivities(profile.uid) : {};
+  };
+
+  const exportBackup = async () => {
+    try {
+      const activities=await getActivities();
+      const backup=createBackup(profile,progress,activities);
+      if(!isGuest&&profile){const all=await getCompleteCloudEvents(profile.uid,profile.datasetGeneration || "legacy");backup.events=[...new Map([...all,...getCachedEvents()].map(row=>[row.id,row])).values()];}
+      const content = JSON.stringify(backup, null, 2);
+      if (new Blob([content]).size > MAX_BACKUP_BYTES) throw new Error('Backup vượt quá giới hạn 20 MB.');
+      downloadFile(
       `toeic-master-backup-${new Date().toISOString().slice(0, 10)}.json`,
-      JSON.stringify(createBackup(profile, progress), null, 2),
+      content,
       'application/json'
-    );
+    ); } catch (error) { toast.error(`Chưa xuất được backup: ${(error as Error).message}`); }
   };
 
   const exportCsv = () => {
@@ -170,59 +190,48 @@ export function SettingsView({
     );
   };
 
-  const importBackup = async (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
+  const prepareImport = async (event: React.ChangeEvent<HTMLInputElement>, format: 'json' | 'csv') => {
+    const input = event.currentTarget;
+    const file = input.files?.[0];
     if (!file) return;
 
     try {
-      if (!window.confirm('Nhập backup sẽ thay thế toàn bộ tiến độ hiện tại. Tiếp tục?')) {
-        return;
-      }
-      const backup = normalizeBackup(JSON.parse(await file.text()));
-      await onImportBackup(backup);
-      toast.success('Đã nhập dữ liệu học tập!');
+      if (file.size > MAX_BACKUP_BYTES) throw new Error('File vượt quá giới hạn 20 MB.');
+      const text = await file.text();
+      const backup = format === 'json' ? parseBackupText(text) : parseProgressCsv(text);
+      if (!Object.keys(backup.progress).length && !(backup.version !== 2 && (backup.customWords.length || backup.practiceRecords?.length || backup.extendedPracticeRecords?.length || backup.roadmap || backup.favorites.length || backup.decks?.length || backup.events?.length))) throw new Error('File không có dữ liệu học tập để nhập.');
+      setImportMode('merge');
+      setImportError(null);
+      setPendingImport({ backup, filename: file.name });
     } catch (err) {
-      console.error(err);
-      toast.error('File backup không hợp lệ.');
+      toast.error(`File không hợp lệ: ${(err as Error).message}`);
     } finally {
-      event.target.value = '';
+      input.value = '';
     }
   };
 
-  const importCsv = async (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (!file) return;
+  const confirmImport = async () => {
+    if (!pendingImport || importLock.current) return;
+    importLock.current = true;
+    setIsImporting(true);
+    setImportError(null);
     try {
-      const lines = (await file.text()).split(/\r?\n/).filter(Boolean);
-      const progressFromCsv: UserProgress = {};
-      for (const line of lines.slice(1)) {
-        const cells = line.match(/(?:^|,)("(?:[^"]|"")*"|[^,]*)/g)?.map((cell) =>
-          cell.replace(/^,/, '').replace(/^"|"$/g, '').replace(/""/g, '"'),
-        );
-        if (!cells || cells.length < 5) continue;
-        const [wordId, easiness, interval, repetitions, nextReviewDate, lastReviewDate, wrongCount] = cells;
-        if (!VOCABULARY.some((word) => word.id === wordId)) continue;
-        progressFromCsv[wordId] = {
-          easiness: Number(easiness),
-          interval: Number(interval),
-          repetitions: Number(repetitions),
-          nextReviewDate,
-          lastReviewDate: lastReviewDate || undefined,
-          wrongCount: Number(wrongCount || 0),
-        };
-      }
-      await onImportBackup({
-        version: 2,
-        exportedAt: new Date().toISOString(),
-        profile,
-        progress: progressFromCsv,
-      });
-      toast.success(`Đã nhập ${Object.keys(progressFromCsv).length} từ từ CSV.`);
+      const backup = importMode === 'merge'
+        ? mergeBackup(createBackup(profile, progress, await getActivities()), pendingImport.backup)
+        : pendingImport.backup;
+      await onImportBackup(backup);
+      setSessionSize(getStudySessionSize());
+      setReminderHour(getReminderHour());
+      setSound(localStorage.getItem('app_sound') !== 'false');
+      setNotifications(localStorage.getItem('app_notifications') === 'true');
+      setPendingImport(null);
+      toast.success('Đã nhập dữ liệu học tập!');
     } catch (error) {
-      console.error(error);
-      toast.error('File CSV không hợp lệ.');
+      reportError("SettingsView",error);
+      setImportError(`Chưa nhập được dữ liệu: ${(error as Error).message}`);
     } finally {
-      event.target.value = '';
+      importLock.current = false;
+      setIsImporting(false);
     }
   };
 
@@ -241,8 +250,9 @@ export function SettingsView({
             localStorage.setItem('app_notifications', 'false');
             toast.error('Bạn cần cho phép quyền thông báo trong trình duyệt.');
           }
-        });
+        }).catch(()=>{setNotifications(false);localStorage.setItem("app_notifications","false");toast.error("Chưa cấp được quyền thông báo.");});
       } else {
+        setNotifications(false);localStorage.setItem("app_notifications","false");
         toast.error('Trình duyệt không hỗ trợ thông báo.');
       }
     } else {
@@ -275,6 +285,9 @@ export function SettingsView({
       </div>
 
       <div className="space-y-6">
+        {!isGuest&&profile&&<WorkspaceCheck />}
+        {!isGuest&&profile&&<Card className="space-y-3"><h3 className="font-bold text-white">Dọn các lần khôi phục cũ</h3><p className="text-sm text-zinc-400">Giữ dữ liệu đang dùng và bản ngay trước đó để rollback. Các bản xa hơn và lần nhập bỏ dở sẽ được xóa. Tải backup nếu cần lưu lâu hơn.</p><Button disabled={cleaningDatasets||isImporting||isUpdating} variant="outline" onClick={()=>{if(!window.confirm('Xóa các phiên bản Cloud cũ, giữ bản hiện tại và bản trước đó? Thao tác này không khôi phục được.'))return;setCleaningDatasets(true);void removeUnusedDatasets(profile.uid).then(count=>toast.success(`Đã dọn ${count} phiên bản cũ.`)).catch(error=>toast.error(error.message)).finally(()=>setCleaningDatasets(false));}}>{cleaningDatasets?'Đang dọn…':'Dọn phiên bản Cloud cũ'}</Button></Card>}
+        {archives.length>0 && <Card className="bg-[#0c0c0e] border-zinc-800 space-y-3"><h3 className="font-bold text-white">Bản sao trước khôi phục</h3><p className="text-sm text-zinc-400">Dữ liệu và thao tác chưa gửi của thiết bị được giữ riêng khi Cloud thay đổi. Tải bản sao để xem hoặc nhập lại có chọn lọc.</p>{archives.map(archive=><div key={archive.owner} className="flex flex-wrap items-center justify-between gap-3"><span className="text-sm text-zinc-400">{new Date(archive.archivedAt).toLocaleString('vi-VN')} · {Object.keys(archive.progress).length} từ</span><Button variant="outline" onClick={()=>void downloadLocalArchive(archive).catch(error=>toast.error(error.message))}>Tải bản sao</Button></div>)}</Card>}
         <Card className="bg-[#0c0c0e] border-zinc-800 p-0 overflow-hidden">
           <div className="p-6 border-b border-zinc-800 flex justify-between items-center">
             <div>
@@ -284,6 +297,7 @@ export function SettingsView({
             {!isGuest && (
               <Button 
                 variant="outline" 
+                disabled={isUpdating || isImporting}
                 onClick={() => {
                   if (isEditingProfile) handleSaveProfile();
                   else setIsEditingProfile(true);
@@ -312,7 +326,7 @@ export function SettingsView({
               </div>
               <Button 
                 onClick={handleGenerateAvatar} 
-                disabled={isGeneratingAvatar || isGuest}
+                disabled={isUpdating || isGuest || isImporting}
                 variant="ghost" 
                 className="text-[10px] uppercase font-black tracking-widest text-indigo-400 hover:text-indigo-300 hover:bg-indigo-500/10"
               >
@@ -325,6 +339,7 @@ export function SettingsView({
                   <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 block mb-1">Tên hiển thị</label>
                   {isEditingProfile ? (
                      <input 
+                       aria-label="Tên hiển thị"
                        type="text" 
                        value={editName}
                        onChange={e => setEditName(e.target.value)}
@@ -370,7 +385,7 @@ export function SettingsView({
                 className="bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 text-white font-bold w-full focus:outline-none focus:border-indigo-500 transition-colors"
               />
             </label>
-            <Button onClick={handleSaveGoal} className="py-3 px-6">
+            <Button onClick={handleSaveGoal} disabled={isUpdating || isImporting} className="py-3 px-6">
               Lưu mục tiêu
             </Button>
           </div>
@@ -436,6 +451,10 @@ export function SettingsView({
               </select>
             </label>
 
+            <label className="block text-sm">Trình độ cho giải thích AI <select aria-label="Trình độ AI" value={aiLevel} onChange={event=>{setAiLevel(event.target.value);writeOwnerItem("ai_level",event.target.value);}} className="ml-2 bg-zinc-900 border border-zinc-700 rounded-xl p-2">{["A1","A2","B1","B2"].map(level=><option key={level} value={level}>{level}</option>)}</select></label>
+            <label className="block text-sm">Tốc độ phát âm <select aria-label="Tốc độ phát âm" value={speechRate} onChange={event=>{const rate=Number(event.target.value);setSpeechRate(rate);writeOwnerItem("speech_rate",String(rate));}} className="ml-2 bg-zinc-900 border border-zinc-700 rounded-xl p-2">{[0.5,0.75,0.9,1,1.25,1.5].map(rate=><option key={rate} value={rate}>{rate}×</option>)}</select></label>
+            <label className="block text-sm">Giọng tiếng Anh trên thiết bị <select aria-label="Giọng tiếng Anh" value={speechVoice} onChange={event=>{setSpeechVoice(event.target.value);writeOwnerItem("speech_voice",event.target.value);}} className="block w-full mt-2 bg-zinc-900 border border-zinc-700 rounded-xl p-2"><option value="">Mặc định của thiết bị</option>{voices.map(voice=><option key={voice.voiceURI} value={voice.name}>{voice.name} ({voice.lang})</option>)}</select></label>
+            <p className="text-xs text-zinc-400">Âm thanh, giọng đọc và quyền thông báo theo thiết bị. Mục tiêu, cỡ phiên, giờ nhắc, bộ từ và yêu thích theo tài khoản.</p>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-xl bg-zinc-800 flex items-center justify-center text-zinc-400">
@@ -471,7 +490,7 @@ export function SettingsView({
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-300">Thông báo nhắc nhở</h4>
-                  <p className="text-xs text-zinc-500">Nhắc nhở ôn tập từ vựng mỗi ngày</p>
+                  <p className="text-xs text-zinc-500">Nhắc khi trang đang mở và có quyền thông báo; chưa hỗ trợ nhắc khi đóng ứng dụng.</p>
                 </div>
               </div>
               <button 
@@ -497,6 +516,7 @@ export function SettingsView({
         <Card className="bg-[#0c0c0e] border-zinc-800 p-0 overflow-hidden">
           <div className="p-6 border-b border-zinc-800">
             <h3 className="font-bold text-lg text-white mb-1">Sao lưu dữ liệu</h3>
+            {!isGuest && onRollbackDataset && <Button variant="outline" disabled={isImporting || isUpdating} onClick={()=>void onRollbackDataset().catch(error=>toast.error(error.message))}>Phục hồi bản Cloud trước</Button>}
             <p className="text-sm text-zinc-500">Xuất hoặc nhập lại tiến độ học tập ngoài Firebase.</p>
           </div>
           <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -508,11 +528,11 @@ export function SettingsView({
             </Button>
             <label className="px-4 py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2 cursor-pointer border border-zinc-700 text-slate-300 hover:bg-zinc-800 hover:text-white">
               Nhập JSON
-              <input type="file" accept="application/json,.json" onChange={importBackup} className="sr-only" />
+              <input type="file" accept="application/json,.json" onChange={(event) => void prepareImport(event, 'json')} disabled={isImporting} className="sr-only" />
             </label>
             <label className="px-4 py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2 cursor-pointer border border-zinc-700 text-slate-300 hover:bg-zinc-800 hover:text-white">
               Nhập CSV
-              <input type="file" accept="text/csv,.csv" onChange={importCsv} className="sr-only" />
+              <input type="file" accept="text/csv,.csv" onChange={(event) => void prepareImport(event, 'csv')} disabled={isImporting} className="sr-only" />
             </label>
           </div>
         </Card>
@@ -523,15 +543,15 @@ export function SettingsView({
               <Trash2 className="w-5 h-5" />
               Khu vực nguy hiểm
             </h3>
-            <p className="text-sm text-rose-500/70">Các hành động không thể khôi phục</p>
+            <p className="text-sm text-rose-500/70">Thiết lập lại tiến độ từ vựng</p>
           </div>
           <div className="p-6">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
                  <h4 className="font-bold text-slate-300">Xóa tiến trình học tập</h4>
-                 <p className="text-xs text-zinc-500 mt-1 max-w-sm">Hành động này sẽ thiết lập lại toàn bộ tiến độ, SRS, lịch sử và chuỗi ngày học của bạn.</p>
+                 <p className="text-xs text-zinc-500 mt-1 max-w-sm">Hành động này sẽ thiết lập lại tiến độ từ vựng, SRS, lịch sử học từ và chuỗi ngày học của bạn.</p>
               </div>
-              <Button onClick={onResetProgress} variant="outline" className="border-rose-500/50 text-rose-500 hover:bg-rose-500 hover:text-white transition-colors shrink-0">
+              <Button onClick={onResetProgress} disabled={isImporting || isUpdating} variant="outline" className="border-rose-500/50 text-rose-500 hover:bg-rose-500 hover:text-white transition-colors shrink-0">
                 Xóa tiến độ
               </Button>
             </div>
@@ -540,10 +560,22 @@ export function SettingsView({
       </div>
 
       <div className="flex justify-center pt-8">
-        <Button onClick={onCancel} variant="ghost" className="text-zinc-500 font-black uppercase tracking-widest text-[10px] hover:text-white transition-colors">
-          Quay lại Dashboard
+        <Button onClick={onCancel} disabled={isImporting || isUpdating} variant="ghost" className="text-zinc-500 font-black uppercase tracking-widest text-[10px] hover:text-white transition-colors">
+          Quay lại tổng quan
         </Button>
       </div>
+      <Modal isOpen={Boolean(pendingImport)} onClose={() => { if (!importLock.current) setPendingImport(null); }} title="Kiểm tra dữ liệu trước khi nhập">
+        {pendingImport && <div className="space-y-4">
+          <p className="break-words">{pendingImport.filename}</p>
+          <p><strong>{Object.keys(pendingImport.backup.progress).length} từ có tiến độ</strong>; {pendingImport.backup.version !== 2 ? pendingImport.backup.customWords.length : 0} từ cá nhân trong file.</p>
+          {pendingImport.backup.version!==2&&<p>{(pendingImport.backup.practiceRecords?.length||0)+(pendingImport.backup.extendedPracticeRecords?.length||0)} kết quả bài luyện trong file, gồm ngữ pháp và bài đọc nếu có.</p>}
+          <label className="block"><input type="radio" name="import-mode" checked={importMode === 'merge'} disabled={isImporting} onChange={() => setImportMode('merge')} /> Gộp với dữ liệu hiện tại; tiến độ trùng ID dùng giá trị trong file.</label>
+          <label className="block"><input type="radio" name="import-mode" checked={importMode === 'replace'} disabled={isImporting} onChange={() => setImportMode('replace')} /> Thay thế tiến độ hiện tại{pendingImport.backup.version !== 2 ? ', từ cá nhân, yêu thích và cài đặt bằng dữ liệu trong file' : '; giữ từ cá nhân, cài đặt và hoạt động ngày hiện có'}.</label>
+          {importError && <p role="alert" className="text-rose-400">{importError}</p>}
+          <Button onClick={confirmImport} disabled={isImporting || isUpdating} className="w-full">{isImporting ? 'Đang nhập dữ liệu...' : 'Xác nhận nhập dữ liệu'}</Button>
+          <Button onClick={() => setPendingImport(null)} disabled={isImporting} variant="outline" className="w-full">Hủy</Button>
+        </div>}
+      </Modal>
     </motion.div>
   );
 }

@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p5-v1-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The preposition 'by' is used to indicate a deadline (by Friday).",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "An adverb ('efficiently') is needed to modify the verb 'works'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Modal verb 'must' is followed by a base verb ('register').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-4",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "'Since' is used with the present perfect tense to indicate a starting point in time ('2022').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-5",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A singular noun ('discount') is required after the article 'a'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-6",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "'Because' introduces a clause expressing the reason for the postponement.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-7",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The verb 'encourage' takes an infinitive with 'to' in the passive structure ('are encouraged to provide').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-8",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A plural noun ('requirements') is needed after the possessive pronoun 'our'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-9",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "First conditional sentence structure uses 'If + present simple' ('arrives'), followed by 'will + verb' ('will inspect') in the main clause.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-10",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The past time marker 'yesterday' combined with the passive subject 'The documents' requires the past passive form ('were reviewed').",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

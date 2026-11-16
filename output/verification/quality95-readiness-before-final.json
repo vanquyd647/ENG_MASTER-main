@@ -1,0 +1,454 @@
+{
+  "checkedAt": "2026-10-16T07:18:04.710Z",
+  "targetPercent": 95,
+  "scope": "All: học hằng ngày và TOEIC Listening & Reading đủ 7 Part",
+  "overall95Ready": false,
+  "overallPercent": null,
+  "completionMilestone": {
+    "required": true,
+    "targetPercent": 95,
+    "minimumPercentPerArea": 95,
+    "aggregation": "all-areas-pass-no-average",
+    "criticalFailuresAllowed": 0,
+    "areas": [
+      "content",
+      "ai",
+      "data-sync",
+      "offline-resume",
+      "ui-accessibility",
+      "security-release"
+    ],
+    "areaAcceptanceStatus": "pending-evidence",
+    "intermediateReleaseCompletesMilestone": false,
+    "criteria": "docs/QUALITY_TARGET_95.md"
+  },
+  "minimumQuestionGaps": {
+    "byPart": {
+      "part1": 0,
+      "part2": 0,
+      "part3": 0,
+      "part4": 0,
+      "part5": 0,
+      "part6": 0,
+      "part7": 0
+    },
+    "total": 0,
+    "interpretation": "Đủ số lượng để ghép một đề; không đồng nghĩa nội dung hoặc audio đã nghiệm thu."
+  },
+  "integratedExam": {
+    "id": "eng-master-200-v1",
+    "questions": 200,
+    "listeningMinutes": 45,
+    "readingMinutes": 75,
+    "independentlyAccepted": false,
+    "normalizedAudio": false,
+    "documentation": "docs/FULL_EXAM.md"
+  },
+  "contentReview": {
+    "path": "output/verification/bank-review-adjudicated.json",
+    "hashValid": true,
+    "questions": 277,
+    "reviewer": "Codex, assigned by user",
+    "audioAccepted": false,
+    "overall95Accepted": false
+  },
+  "officialBlueprint": {
+    "source": "https://www.ets.org/content/dam/ets-org/fr/pdfs/toeic/toeic-listening-reading-test.pdf",
+    "questionCounts": {
+      "part1": 6,
+      "part2": 25,
+      "part3": 39,
+      "part4": 30,
+      "part5": 30,
+      "part6": 16,
+      "part7": 54
+    },
+    "total": 200,
+    "listeningMinutes": 45,
+    "readingMinutes": 75
+  },
+  "availableQuestions": {
+    "part1": 6,
+    "part2": 42,
+    "part3": 39,
+    "part4": 30,
+    "part5": 48,
+    "part6": 16,
+    "part7": 54
+  },
+  "coveredParts": [
+    "part1",
+    "part2",
+    "part3",
+    "part4",
+    "part5",
+    "part6",
+    "part7"
+  ],
+  "listeningPilot": {
+    "questions": 18,
+    "delivery": "local-device-speech-synthesis",
+    "independentContentAccepted": false,
+    "normalizedExamAudio": false,
+    "note": "Có câu để luyện không đồng nghĩa phần thi đã hoàn thiện."
+  },
+  "baseline": {
+    "questions": 20,
+    "parts": [
+      "part2",
+      "part5",
+      "part6",
+      "part7"
+    ],
+    "mapsToToeicOrCefr": false
+  },
+  "sourceAudio": {
+    "status": "unmatched-not-used-for-scoring",
+    "requiredForReadiness": false,
+    "note": "Có thể dùng học liệu mới do dự án biên soạn và nghiệm thu; không bắt buộc khôi phục bộ gốc chưa rõ nguồn.",
+    "files": 48,
+    "mp3": 47,
+    "pairedForScoring": 0,
+    "inventory": [
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 1.mp3",
+        "bytes": 301323,
+        "sha256": "040e429f563322bfee0e887871dfa0d36bbae29b800817682f639821e17f4743",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 10.mp3",
+        "bytes": 313043,
+        "sha256": "d5b2a0439a968467706d8b4a78d8d97c99126973e9fb71d355c73f685f38a320",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 11.mp3",
+        "bytes": 293276,
+        "sha256": "2009fecc3366bf1576fc9e19c6800cdf6e592b0115d9c79e828fa88203fc796e",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 11.wav",
+        "bytes": 1863084,
+        "sha256": "4eac2bf165007d6f6df561fd9b3e046ebc8a83562af16b8963046679a9731266",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 12.mp3",
+        "bytes": 262035,
+        "sha256": "ac5984d2639795b520b63e9cfc43fc61ff72c769e647d4e7e33979aa368a800b",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 13.mp3",
+        "bytes": 310259,
+        "sha256": "3efc48e32a8a1de09a5f48a191d040dad5e1bd080f192bfde9150251f7080205",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 2.mp3",
+        "bytes": 358841,
+        "sha256": "f2b6aa61a4e8b397efbeb6fab9bd4ac43bd0a96e263d20ca2412bec894826167",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 3.mp3",
+        "bytes": 374765,
+        "sha256": "c42f8e8df112c204ce1e9a96ed924c68e45c782b8bd4138853a0da089437f47d",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 4.mp3",
+        "bytes": 431882,
+        "sha256": "9d9c7c18c5f788cc2c3e938fb8f03d1a35a7d9af23d580ca5631b3c078f85d18",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 5.mp3",
+        "bytes": 314682,
+        "sha256": "86296c4903aea650fe10352e51e9b86664bafad0dde944779e92dd303f0c441f",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 6.mp3",
+        "bytes": 318724,
+        "sha256": "62f1a5d07e00cc5c8805e2d6a3bf58c60455d2ec06aef812dc2339050f293f5a",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 7.mp3",
+        "bytes": 322000,
+        "sha256": "c005ecccb670c4a4d3702333ed957cb547d13b9c0b8c0e52697eeb8bee38ca68",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 8.mp3",
+        "bytes": 333489,
+        "sha256": "bda47a52f09824f4ef954236833e71cbd3a02268c69931571b9b7f7468dc81dd",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 1/Part 1, File 9.mp3",
+        "bytes": 318158,
+        "sha256": "cb69f7bafce20c1f5024740491943c5c89f090e6820e0cac467d7384ca20d3ff",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 2/Part 2, File 1.mp3",
+        "bytes": 3663501,
+        "sha256": "b38ba924feeb54a30f08dbe723482b8da091ea0312359d47c436478e8cd88c6f",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 2/Part 2, File 2.mp3",
+        "bytes": 3787754,
+        "sha256": "500fd4d0ab7db96b76fc64bdc43c62ee97665347bb813e69725acd22983013f4",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 2/Part 2, File 3.mp3",
+        "bytes": 3978970,
+        "sha256": "fd5dfb592b4439c9cd8ea0c9dd719f238e23a9bce20660d54ca2d4d832ec3ebe",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 2/Part 2, File 4.mp3",
+        "bytes": 2540146,
+        "sha256": "1966040e8a244fecc5c0f4ea9139e5284a28aa7c95746f199fda57370541f345",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 2/Part 2, File 5.mp3",
+        "bytes": 3541158,
+        "sha256": "e7ab8d779a14d6ce54b0d6412acfb7c309ed54b530e88b0ebe2fff96068ad938",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 2/Part 2, File 6.mp3",
+        "bytes": 3640423,
+        "sha256": "63fa2c81745d93d667ed214b1d6c3c133d7af778463fa16717d5befe4fd9ab29",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 2/Part 2, File 8.mp3",
+        "bytes": 3099166,
+        "sha256": "b7b4865aa81bb8269acbcde4c1f2f26d80e74cadcc72be703cf4340839007e1f",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 2/part 2, file 7.mp3",
+        "bytes": 2851718,
+        "sha256": "9ed10b13920ad8444669933bc9db84ca7452f816285d4ea27eb17006170e24f6",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 3/Part 3, File 1.mp3",
+        "bytes": 5427199,
+        "sha256": "0729b6baf48a235a78562d1b83ecda3db63a3ac5d63ec3d69715a0b7b4f07411",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 3/Part 3, File 2.mp3",
+        "bytes": 5311215,
+        "sha256": "668b370d6fdc7befd12f11398ea4f4c8f869ac4755dd10e1d82ddbd48df8671c",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 3/Part 3, File 3.mp3",
+        "bytes": 3897468,
+        "sha256": "0fe152f4a011a813be81a7331fc001a9362f8d08693c0b2446778fda67c16fa6",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 3/Part 3, File 4.mp3",
+        "bytes": 2252799,
+        "sha256": "04337619cce250c5589f35fc3fa1c13242b16b6c5a8972140026bd1acb825700",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 3/Part 3, File 5.mp3",
+        "bytes": 3186120,
+        "sha256": "81f8e4033f4ebe77c95a21ee600f1b14ff65355b10dd6c7025c178362ed0926c",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 3/Part 3, File 6.mp3",
+        "bytes": 5246431,
+        "sha256": "8d82fac8053d1fac0e994a53ec7fee3fe9c5adca13418ad899673c6b69c506e4",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 3/Part 3, File 7.mp3",
+        "bytes": 2761664,
+        "sha256": "172b4b27d485ecab672140b22d8e932026566c147bc364e1bf7f78cdae3cfc81",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 3/Part 3, File 8.mp3",
+        "bytes": 5182693,
+        "sha256": "179674d6fb4f464f2dad3251a778c4d61f2e0b80ab5b1b9a66d8df89e2f9b729",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 1.mp3",
+        "bytes": 1077675,
+        "sha256": "f3f341d9a6ab3546cd8838c017f03c7d9cc3ddf8e936518944f0cb6d8f29630f",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 10.mp3",
+        "bytes": 785940,
+        "sha256": "622372b2e91c4d29ce30fa396e4db9ddbc20524299e66f5d40ab72ca5e85e437",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 11.mp3",
+        "bytes": 1295014,
+        "sha256": "d41090585f8e78f3d5bf63300f8abaaea81ca1d607506581cae31fe46eeb20fb",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 12.mp3",
+        "bytes": 1023317,
+        "sha256": "95d75e2913a07a071abf555d8a59e9a430b12cc2283ec589bf37ca77e9477c0c",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 13.mp3",
+        "bytes": 1822301,
+        "sha256": "d496305d49022513a6d179577ca0237b03225f81011990b2ce7fd0de0e44a73c",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 14.mp3",
+        "bytes": 1816031,
+        "sha256": "2a07449fda652edd8fee538d611044d868f14be4e7c48909041366a440e2e52f",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 15.mp3",
+        "bytes": 1539133,
+        "sha256": "150b707a5b0eece9bd38a35e66aff544e8db1ed0d315216f1e272d3710074717",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 16.mp3",
+        "bytes": 1302986,
+        "sha256": "c83077611478f03f87fba22d06b1c0e7237ed52803d52f5fd7b23e400ccadfdf",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 17.mp3",
+        "bytes": 1352097,
+        "sha256": "7d0957c421e80418995fd3ea8065c5f1134bbdfc6623d5b1448707940c277807",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 18.mp3",
+        "bytes": 2114872,
+        "sha256": "c998a09952db80cda4738d7343a07d5b9c02bf42d25d437e0d123b528a44d958",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 2.mp3",
+        "bytes": 1043403,
+        "sha256": "392db4eb91bc984a984f1a7138bd94a5c46508f35a34bd3631e22ae1852e7225",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 3.mp3",
+        "bytes": 1498382,
+        "sha256": "64d1434f5c05692d90b488f05a10632daebb54c799ca6164a8de885d58fca11d",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 4.mp3",
+        "bytes": 976770,
+        "sha256": "68902c2a49c23846752e02e35e20744b2024501589fa83803a78ac27d9f1bf12",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 5.mp3",
+        "bytes": 1995754,
+        "sha256": "03ec8fb0697ca484d7fbed4fe27d40e4a1a7de5a34ef100cfa7961d0efee01a4",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 6.mp3",
+        "bytes": 370119,
+        "sha256": "a50aa97824e8eb668f4f932183753a41462bc8d714012dde624bc97e1fb4a038",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 7.mp3",
+        "bytes": 999076,
+        "sha256": "63cae970a83822053b7b86f9d14132a86f0a9092aae5566f7fd7529048ec1517",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 8.mp3",
+        "bytes": 2259068,
+        "sha256": "0a375df00c331e580904a07142954a58ce68eb9e008425e5a1b03f88ed66e911",
+        "verifiedQuestionImageAnswerMapping": false
+      },
+      {
+        "path": "new/drive-download-20261013T040705Z-1-001/Part 4/Part 4, File 9.mp3",
+        "bytes": 1369411,
+        "sha256": "92d7033a88c1b3325124a9493803c0c8e928306e5b70f0127e22f5815d2a274d",
+        "verifiedQuestionImageAnswerMapping": false
+      }
+    ]
+  },
+  "aiFixture": {
+    "path": "output/verification/quality95-ai-local.json",
+    "minimumOutputs": 200,
+    "minimumMet": false,
+    "scope": "Known AI failures and daily vocabulary learning. Not full TOEIC coverage or a learning-effectiveness estimate.",
+    "sourceBreakdown": {
+      "authoredExplanations": 20,
+      "aiPracticeAndQuiz": 15,
+      "mixedReviews": 10,
+      "modelRequests": 8
+    },
+    "interpretation": "Mẫu nguồn hỗn hợp; không phải độ chính xác model trên toàn bộ từ vựng hoặc mức sẵn sàng toàn hệ thống.",
+    "automated": {
+      "passed": 45,
+      "total": 45,
+      "percent": 100,
+      "thresholdMet": true
+    },
+    "semantic": {
+      "path": "output/verification/quality95-ai-local-semantic-review.json",
+      "percent": 100,
+      "thresholdMet": true,
+      "hashValid": true
+    }
+  },
+  "learningEffectiveness": {
+    "measured": false,
+    "note": "Chưa có dữ liệu thử nghiệm người học để đo mức tăng điểm; không suy ra từ phần trăm test đạt."
+  },
+  "blockers": [
+    {
+      "id": "exam-audio-acceptance",
+      "status": "pending",
+      "detail": "Có đủ số câu và engine 200 câu; giọng thiết bị cho phép phát lại, chưa có track nghe chuẩn hóa hoặc nghiệm thu audio toàn đề."
+    },
+    {
+      "id": "ai-200-output-benchmark",
+      "status": "pending",
+      "detail": "Bộ 45 mục chưa đạt mẫu số ít nhất 200 đầu ra; rà soát ngân hàng câu hỏi không thay thế đánh giá phản hồi AI."
+    },
+    {
+      "id": "exam-content-calibration",
+      "status": "pending",
+      "detail": "Đã rà soát đáp án/văn bản/ảnh bởi Codex và checker mù; chưa chuẩn hóa tiểu dạng, độ dài/độ khó và nghiệm thu audio toàn đề. Codex chịu trách nhiệm, không chờ tìm giáo viên."
+    },
+    {
+      "id": "six-area-release-acceptance",
+      "status": "pending",
+      "detail": "Chưa chốt đủ bằng chứng của sáu nhóm cho cùng bản ứng viên và production; không suy ngưỡng từ tổng số tests."
+    }
+  ]
+}

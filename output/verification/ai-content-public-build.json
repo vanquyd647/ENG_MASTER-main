@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-15T12:02:31.630Z",
+  "origin": "https://eng-master-main2.vercel.app",
+  "release": "2026.10.15-learning.6",
+  "checks": [
+    "HTML/worker/manifest/offline-pack 200",
+    "all offline assets 200 including PDF worker",
+    "all public assets scanned; server secrets absent",
+    "release label matches",
+    "missing JS 404",
+    "unauthenticated AI 401"
+  ],
+  "initialReferencedGzip": 399061,
+  "offlineAssets": 42,
+  "offlineRevision": "b27ad387aad9440e",
+  "initialAssets": [
+    {
+      "path": "/assets/firebase-DFaKbn1P.js",
+      "sha256": "fc9adc7ed4c57e8ee7044a0c889c1f0ee3c7d0499ff9b41d861a356e3ea5e9d2"
+    },
+    {
+      "path": "/assets/index-DZ6LSUFv.css",
+      "sha256": "c7188e095e9a55ab0494aab3d0ec2bed3676bf3a7c527340006f634d676f6c21"
+    },
+    {
+      "path": "/assets/index-G1PvMy80.js",
+      "sha256": "953e5ec62ea69c9a660c6d84baa028e1f8668157f78ebdfd49c826930e8a0958"
+    },
+    {
+      "path": "/assets/vocabulary-CkEYtlix.js",
+      "sha256": "9a16124888a920cec62b8d5a79c4bfc6589e4e3949700e8b45eb42647bfbb527"
+    },
+    {
+      "path": "/assets/vocabulary-pdf-CqKjsr25.js",
+      "sha256": "4c9e0cd4daf43f3829f8a8f8b3a401ebe2d16b2e745b23c5fae1ee35273c1c04"
+    }
+  ],
+  "passed": true
+}

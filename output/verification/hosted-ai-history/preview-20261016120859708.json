@@ -1,0 +1,219 @@
+{
+  "checkedAt": "2026-10-16T12:08:59.708Z",
+  "stage": "preview",
+  "deployment": "https://eng-master-main2-lq0p0gtcd-quys-projects-d07a5005.vercel.app",
+  "project": "engai-2c7fe",
+  "authMethod": "temporary custom-token account",
+  "checks": [
+    {
+      "endpoint": "explain",
+      "status": 200,
+      "characters": 512,
+      "model": null
+    },
+    {
+      "endpoint": "simplify",
+      "status": 200,
+      "characters": 395,
+      "model": null
+    },
+    {
+      "endpoint": "examples",
+      "status": 200,
+      "characters": 663,
+      "model": null
+    },
+    {
+      "endpoint": "compare",
+      "status": 200,
+      "characters": 932,
+      "model": null
+    },
+    {
+      "endpoint": "practice",
+      "status": 503,
+      "characters": 0,
+      "code": "ai_unavailable"
+    }
+  ],
+  "cleanup": {
+    "auth": true,
+    "quota": true
+  },
+  "samples": {
+    "explain": {
+      "version": "toeic-vi-v6",
+      "action": "explain",
+      "source": {
+        "kind": "catalog",
+        "wordId": "rec-01",
+        "word": "opening",
+        "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+        "pos": "noun",
+        "topic": "Recruitment",
+        "example": "There is an opening in the sales department.",
+        "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+      },
+      "lesson": {
+        "summary": "Trong tuyển dụng, opening là vị trí việc làm còn trống.",
+        "usage": "Dùng an opening for + vị trí hoặc an opening in + bộ phận.",
+        "caution": "Opening còn có nghĩa khác; ví dụ tuyển dụng ở đây dùng nghĩa vị trí trống.",
+        "collocations": [
+          {
+            "phrase": "job opening",
+            "meaning": "vị trí tuyển dụng"
+          },
+          {
+            "phrase": "an opening for an accountant",
+            "meaning": "vị trí đang tuyển kế toán"
+          },
+          {
+            "phrase": "an opening in sales",
+            "meaning": "vị trí trống ở bộ phận bán hàng"
+          }
+        ],
+        "examples": [
+          {
+            "english": "We have an opening for an accountant.",
+            "vietnamese": "Chúng tôi đang tuyển một kế toán."
+          }
+        ],
+        "questions": []
+      },
+      "quality": {
+        "mode": "reviewed"
+      }
+    },
+    "simplify": {
+      "version": "toeic-vi-v6",
+      "action": "simplify",
+      "source": {
+        "kind": "catalog",
+        "wordId": "rec-01",
+        "word": "opening",
+        "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+        "pos": "noun",
+        "topic": "Recruitment",
+        "example": "There is an opening in the sales department.",
+        "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+      },
+      "lesson": {
+        "summary": "Trong tuyển dụng, opening là vị trí việc làm còn trống.",
+        "usage": "Dùng an opening for + vị trí hoặc an opening in + bộ phận.",
+        "caution": "Opening còn có nghĩa khác; ví dụ tuyển dụng ở đây dùng nghĩa vị trí trống.",
+        "collocations": [
+          {
+            "phrase": "job opening",
+            "meaning": "vị trí tuyển dụng"
+          }
+        ],
+        "examples": [
+          {
+            "english": "We have an opening for an accountant.",
+            "vietnamese": "Chúng tôi đang tuyển một kế toán."
+          }
+        ],
+        "questions": []
+      },
+      "quality": {
+        "mode": "reviewed"
+      }
+    },
+    "examples": {
+      "version": "toeic-vi-v6",
+      "action": "examples",
+      "source": {
+        "kind": "catalog",
+        "wordId": "rec-01",
+        "word": "opening",
+        "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+        "pos": "noun",
+        "topic": "Recruitment",
+        "example": "There is an opening in the sales department.",
+        "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+      },
+      "lesson": {
+        "summary": "Trong tuyển dụng, opening là vị trí việc làm còn trống.",
+        "usage": "Dùng an opening for + vị trí hoặc an opening in + bộ phận.",
+        "caution": "Opening còn có nghĩa khác; ví dụ tuyển dụng ở đây dùng nghĩa vị trí trống.",
+        "collocations": [
+          {
+            "phrase": "job opening",
+            "meaning": "vị trí tuyển dụng"
+          }
+        ],
+        "examples": [
+          {
+            "english": "The company has two openings in its sales department.",
+            "vietnamese": "Công ty có hai vị trí còn trống trong bộ phận bán hàng."
+          },
+          {
+            "english": "She applied for a job opening at the bank.",
+            "vietnamese": "Cô ấy đã ứng tuyển vào một vị trí còn trống tại ngân hàng."
+          },
+          {
+            "english": "There are no job openings at our branch this month.",
+            "vietnamese": "Chi nhánh của chúng tôi không có vị trí tuyển dụng nào trong tháng này."
+          }
+        ],
+        "questions": []
+      },
+      "quality": {
+        "mode": "reviewed"
+      }
+    },
+    "compare": {
+      "version": "toeic-vi-v6",
+      "action": "compare",
+      "source": {
+        "kind": "catalog",
+        "wordId": "pdf-toeic-0145",
+        "word": "calculation",
+        "meaning": "sự tính toán, phép tính",
+        "pos": "noun",
+        "topic": "TOEIC bổ sung (PDF)",
+        "example": "We discussed the calculation at the meeting.",
+        "exampleTranslation": "Chúng tôi thảo luận về sự tính toán tại cuộc họp."
+      },
+      "comparison": {
+        "kind": "catalog",
+        "wordId": "ttp-30",
+        "word": "correspondence",
+        "meaning": "thư từ, quan hệ thư từ",
+        "pos": "noun",
+        "topic": "Trading Transport",
+        "example": "Please read the correspondence carefully.",
+        "exampleTranslation": "Hãy đọc thư từ cẩn thận."
+      },
+      "lesson": {
+        "summary": "calculation: Calculation là danh từ chỉ việc tính toán hoặc một phép tính. correspondence: Trong công việc, correspondence chỉ thư từ hoặc việc trao đổi thư tín.",
+        "usage": "calculation: Dùng make a calculation, check a calculation hoặc cost calculation. Có thể dùng đếm được hay không đếm được tùy nghĩa. correspondence: Với nghĩa thư từ nói chung, correspondence thường là danh từ không đếm được; dùng business correspondence hoặc correspondence with + đối tác.",
+        "caution": "So sánh này chỉ áp dụng cho nghĩa và ví dụ đang học. Khả năng thay thế từ cần được xét trong từng câu cụ thể.",
+        "collocations": [
+          {
+            "phrase": "make a calculation",
+            "meaning": "thực hiện phép tính"
+          },
+          {
+            "phrase": "business correspondence",
+            "meaning": "thư từ công việc"
+          }
+        ],
+        "examples": [
+          {
+            "english": "Please check the calculation before submission.",
+            "vietnamese": "Vui lòng kiểm tra phép tính trước khi nộp."
+          },
+          {
+            "english": "She handles correspondence with clients.",
+            "vietnamese": "Cô ấy phụ trách trao đổi thư từ với khách hàng."
+          }
+        ],
+        "questions": []
+      },
+      "quality": {
+        "mode": "reviewed"
+      }
+    }
+  }
+}

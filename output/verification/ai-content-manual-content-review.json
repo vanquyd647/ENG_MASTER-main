@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-15T12:02:02.406Z",
+  "sampleReport": "ai-content-hosted-ai-candidate.json",
+  "reviewedBy": "Codex inspection of generated QA samples",
+  "checks": {
+    "sourceFieldsMatchApprovedCatalog": true,
+    "openingUsesEmploymentContext": true,
+    "simplifiedReplyConcise": true,
+    "threeDistinctNewExamples": true,
+    "comparisonExplainsSelectedMeanings": true,
+    "practiceTargetAndGrammarUsable": true,
+    "reviewPreservesFiveAttempts": true,
+    "reviewTargetsAndBilingualExamplesUsable": true
+  },
+  "limits": [
+    "Spelling explanation for invioce says two final letters; the observed transposition is internal. AI analysis is not canonical data.",
+    "Comparison uses absolute wording beyond the selected senses.",
+    "Generated agreement MCQ includes report, which can fit in some contexts. Structural and target checks cannot prove semantic uniqueness."
+  ],
+  "conclusion": "The three accepted product changes work. These samples do not establish that all generated prose or distractors are correct. Keep AI labeling and no catalog/progress writes for quick checks; further semantic calibration remains a backlog item."
+}

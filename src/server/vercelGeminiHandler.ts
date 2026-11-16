@@ -1,17 +1,18 @@
+import { randomUUID } from "node:crypto";
 import type { IncomingMessage, ServerResponse } from "node:http";
-import type { ApiResult } from "./gemini";
+import type { ApiResult, AiContext } from "./gemini.js";
 import {
   ApiSecurityError,
   authorizeAiRequest,
   type AiEndpoint,
-} from "./apiSecurity";
+} from "./apiSecurity.js";
 
 type VercelRequest = IncomingMessage & {
   body?: unknown;
   socket?: IncomingMessage["socket"];
 };
 
-type GeminiAction = (body: unknown) => Promise<ApiResult>;
+type GeminiAction = (body: unknown, context?: AiContext) => Promise<ApiResult>;
 type AuthorizeRequest = (
   authorization: string | undefined,
   endpoint: AiEndpoint,
@@ -91,7 +92,8 @@ export async function handleGeminiApi(
     const authorization = Array.isArray(req.headers.authorization)
       ? req.headers.authorization[0]
       : req.headers.authorization;
-    await authorize(authorization, endpoint);
+    const actor = await authorize(authorization, endpoint);
+    const requestId = randomUUID();
 
     let body: unknown;
     try {
@@ -104,12 +106,12 @@ export async function handleGeminiApi(
         });
         return;
       }
-      console.warn("Invalid Gemini API request body:", error instanceof Error ? error.message : String(error));
+      console.warn(JSON.stringify({ service: "api", code: "invalid_json", requestId }));
       sendJson(res, 400, { error: "Request body must be valid JSON.", code: "invalid_json" });
       return;
     }
 
-    const result = await action(body);
+    const result = await action(body, { uid: actor.uid, requestId });
     sendJson(res, result.status, result.body);
   } catch (error) {
     if (error instanceof ApiSecurityError) {
@@ -123,7 +125,8 @@ export async function handleGeminiApi(
       );
       return;
     }
-    console.error("Gemini API handler error:", error);
+    if (error instanceof Error && /default credentials|credential implementation|private key|service account|metadata server/i.test(error.message)) {sendJson(res,503,{error:"Máy chủ chưa cấu hình Firebase Admin để kiểm tra hạn mức AI.",code:"admin_not_configured"});return;}
+    console.error(JSON.stringify({ service: "api", code: "api_handler_failed" }));
     sendJson(res, 500, { error: "AI endpoint failed before completing the request.", code: "api_handler_failed" });
   }
 }

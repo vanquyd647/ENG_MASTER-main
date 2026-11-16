@@ -1,0 +1,39 @@
+{
+  "version": 3,
+  "catalogVersion": "toeic-1575-v1",
+  "exportedAt": "2026-10-13T00:00:00.000Z",
+  "profile": {
+    "displayName": "Kiểm thử đợt 1",
+    "dailyGoal": 10
+  },
+  "progress": {
+    "custom-qa-phase1": {
+      "easiness": 2.5,
+      "interval": 1,
+      "repetitions": 1,
+      "nextReviewDate": "2026-10-14T00:00:00.000Z"
+    }
+  },
+  "customWords": [
+    {
+      "id": "custom-qa-phase1",
+      "topic": "Từ cá nhân",
+      "word": "handover note",
+      "phonetic": "",
+      "pos": "noun",
+      "meaning": "ghi chú bàn giao",
+      "example": "Please read the handover note.",
+      "exampleTranslation": "Vui lòng đọc ghi chú bàn giao."
+    }
+  ],
+  "favorites": [
+    "custom-qa-phase1"
+  ],
+  "preferences": {
+    "sound": false,
+    "notifications": false,
+    "studySessionSize": 5,
+    "reminderHour": 20
+  },
+  "dailyActivity": {}
+}

@@ -1,0 +1,153 @@
+{
+  "version": 4,
+  "extendedPracticeRecords": [
+    {
+      "id": "f81d88d8-25dc-4f84-884a-9525f9b73d55",
+      "bankVersion": 2,
+      "kind": "part1",
+      "startedAt": "2026-10-16T16:19:38.299Z",
+      "finishedAt": "2026-10-16T16:19:38.731Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p1-listening-v1-forklift-q1",
+          "selectedIndex": 1
+        },
+        {
+          "questionId": "p1-listening-v1-desk-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p1-listening-v1-conference-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p1-listening-v1-home-office-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p1-listening-v1-cyclist-q1",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p1-listening-v1-bicycle-q1",
+          "selectedIndex": null
+        }
+      ]
+    },
+    {
+      "id": "0534c218-e0b2-468f-8806-f7b34026df3c",
+      "bankVersion": 2,
+      "kind": "part4",
+      "startedAt": "2026-10-16T16:19:36.549Z",
+      "finishedAt": "2026-10-16T16:19:36.722Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p4-listening-v1-repair-q1",
+          "selectedIndex": 0
+        },
+        {
+          "questionId": "p4-listening-v1-repair-q2",
+          "selectedIndex": 2
+        },
+        {
+          "questionId": "p4-listening-v1-repair-q3",
+          "selectedIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "a37ad6d5-358b-4b66-9cd4-2f5b36ad8fba",
+      "bankVersion": 2,
+      "kind": "part3",
+      "startedAt": "2026-10-16T16:19:34.916Z",
+      "finishedAt": "2026-10-16T16:19:35.024Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p3-exam-v1-travel-q1",
+          "selectedIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "f4ca20e2-538b-48e3-8e8c-63389a51da9c",
+      "bankVersion": 2,
+      "kind": "part3",
+      "startedAt": "2026-10-16T16:19:31.691Z",
+      "finishedAt": "2026-10-16T16:19:32.083Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p3-exam-v1-travel-q1",
+          "selectedIndex": 1
+        },
+        {
+          "questionId": "p3-exam-v1-travel-q2",
+          "selectedIndex": null
+        },
+        {
+          "questionId": "p3-exam-v1-travel-q3",
+          "selectedIndex": null
+        }
+      ]
+    },
+    {
+      "id": "ee9e74e6-e7f5-4b23-af20-de69ceddb9fb",
+      "bankVersion": 2,
+      "kind": "part1",
+      "startedAt": "2026-10-16T16:19:29.275Z",
+      "finishedAt": "2026-10-16T16:19:30.125Z",
+      "durationSeconds": 0,
+      "answers": [
+        {
+          "questionId": "p1-listening-v1-bicycle-q1",
+          "selectedIndex": 1
+        },
+        {
+          "questionId": "p1-listening-v1-conference-q1",
+          "selectedIndex": 2
+        },
+        {
+          "questionId": "p1-listening-v1-forklift-q1",
+          "selectedIndex": 1
+        },
+        {
+          "questionId": "p1-listening-v1-desk-q1",
+          "selectedIndex": 3
+        },
+        {
+          "questionId": "p1-listening-v1-home-office-q1",
+          "selectedIndex": 0
+        },
+        {
+          "questionId": "p1-listening-v1-cyclist-q1",
+          "selectedIndex": 0
+        }
+      ]
+    }
+  ],
+  "catalogVersion": "toeic-1575-v1",
+  "exportedAt": "2026-10-16T16:19:40.507Z",
+  "profile": {
+    "displayName": "Khách (Guest)",
+    "studyTimeMinutes": 0,
+    "streak": 0,
+    "dailyGoal": 15
+  },
+  "progress": {},
+  "practiceRecords": [],
+  "roadmap": null,
+  "customWords": [],
+  "favorites": [],
+  "preferences": {
+    "sound": true,
+    "notifications": false,
+    "studySessionSize": 15,
+    "reminderHour": 20
+  },
+  "decks": [],
+  "dailyActivity": {},
+  "events": []
+}

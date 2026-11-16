@@ -1,0 +1,292 @@
+{
+  "version": 1,
+  "scope": "Known AI failures and daily vocabulary learning. Not full TOEIC coverage or a learning-effectiveness estimate.",
+  "threshold": 95,
+  "requests": 28,
+  "expectedItems": 45,
+  "cases": [
+    {
+      "id": "explain-opening",
+      "endpoint": "explain",
+      "action": "explain",
+      "word": "opening",
+      "level": "A2",
+      "expectedSense": "Vị trí tuyển dụng trong ví dụ nguồn."
+    },
+    {
+      "id": "explain-meet",
+      "endpoint": "explain",
+      "action": "explain",
+      "word": "meet",
+      "level": "A2",
+      "expectedSense": "Đáp ứng yêu cầu, phân biệt với gặp gỡ."
+    },
+    {
+      "id": "explain-qualified",
+      "endpoint": "explain",
+      "action": "explain",
+      "word": "qualified",
+      "level": "A2",
+      "expectedSense": "Đủ điều kiện/trình độ, tính từ."
+    },
+    {
+      "id": "explain-invoice",
+      "endpoint": "explain",
+      "action": "explain",
+      "word": "invoice",
+      "level": "A2",
+      "expectedSense": "Hóa đơn yêu cầu thanh toán."
+    },
+    {
+      "id": "explain-dependence",
+      "endpoint": "explain",
+      "action": "explain",
+      "word": "dependence",
+      "level": "A2",
+      "expectedSense": "Sự phụ thuộc, phân biệt độc lập."
+    },
+    {
+      "id": "simplify-opening",
+      "endpoint": "explain",
+      "action": "simplify",
+      "word": "opening",
+      "level": "A1",
+      "expectedSense": "Vị trí tuyển dụng trong ví dụ nguồn."
+    },
+    {
+      "id": "simplify-meet",
+      "endpoint": "explain",
+      "action": "simplify",
+      "word": "meet",
+      "level": "A1",
+      "expectedSense": "Đáp ứng yêu cầu, phân biệt với gặp gỡ."
+    },
+    {
+      "id": "simplify-qualified",
+      "endpoint": "explain",
+      "action": "simplify",
+      "word": "qualified",
+      "level": "A1",
+      "expectedSense": "Đủ điều kiện/trình độ, tính từ."
+    },
+    {
+      "id": "simplify-invoice",
+      "endpoint": "explain",
+      "action": "simplify",
+      "word": "invoice",
+      "level": "A1",
+      "expectedSense": "Hóa đơn yêu cầu thanh toán."
+    },
+    {
+      "id": "simplify-dependence",
+      "endpoint": "explain",
+      "action": "simplify",
+      "word": "dependence",
+      "level": "A1",
+      "expectedSense": "Sự phụ thuộc, phân biệt độc lập."
+    },
+    {
+      "id": "examples-opening",
+      "endpoint": "explain",
+      "action": "examples",
+      "word": "opening",
+      "level": "B1",
+      "expectedSense": "Vị trí tuyển dụng trong ví dụ nguồn."
+    },
+    {
+      "id": "examples-meet",
+      "endpoint": "explain",
+      "action": "examples",
+      "word": "meet",
+      "level": "B1",
+      "expectedSense": "Đáp ứng yêu cầu, phân biệt với gặp gỡ."
+    },
+    {
+      "id": "examples-qualified",
+      "endpoint": "explain",
+      "action": "examples",
+      "word": "qualified",
+      "level": "B1",
+      "expectedSense": "Đủ điều kiện/trình độ, tính từ."
+    },
+    {
+      "id": "examples-invoice",
+      "endpoint": "explain",
+      "action": "examples",
+      "word": "invoice",
+      "level": "B1",
+      "expectedSense": "Hóa đơn yêu cầu thanh toán."
+    },
+    {
+      "id": "examples-dependence",
+      "endpoint": "explain",
+      "action": "examples",
+      "word": "dependence",
+      "level": "B1",
+      "expectedSense": "Sự phụ thuộc, phân biệt độc lập."
+    },
+    {
+      "id": "practice-opening",
+      "endpoint": "explain",
+      "action": "practice",
+      "word": "opening",
+      "level": "A2",
+      "expectedSense": "Vị trí tuyển dụng trong ví dụ nguồn."
+    },
+    {
+      "id": "practice-meet",
+      "endpoint": "explain",
+      "action": "practice",
+      "word": "meet",
+      "level": "A2",
+      "expectedSense": "Đáp ứng yêu cầu, phân biệt với gặp gỡ."
+    },
+    {
+      "id": "practice-qualified",
+      "endpoint": "explain",
+      "action": "practice",
+      "word": "qualified",
+      "level": "A2",
+      "expectedSense": "Đủ điều kiện/trình độ, tính từ."
+    },
+    {
+      "id": "practice-invoice",
+      "endpoint": "explain",
+      "action": "practice",
+      "word": "invoice",
+      "level": "A2",
+      "expectedSense": "Hóa đơn yêu cầu thanh toán."
+    },
+    {
+      "id": "practice-dependence",
+      "endpoint": "explain",
+      "action": "practice",
+      "word": "dependence",
+      "level": "A2",
+      "expectedSense": "Sự phụ thuộc, phân biệt độc lập."
+    },
+    {
+      "id": "compare-opening-vacancy",
+      "endpoint": "explain",
+      "action": "compare",
+      "word": "opening",
+      "other": "vacancy",
+      "level": "B1",
+      "expectedSense": "Phân biệt hai nghĩa theo nguồn; không kết luận cho mọi ngữ cảnh."
+    },
+    {
+      "id": "compare-applicant-application",
+      "endpoint": "explain",
+      "action": "compare",
+      "word": "applicant",
+      "other": "application",
+      "level": "B1",
+      "expectedSense": "Phân biệt hai nghĩa theo nguồn; không kết luận cho mọi ngữ cảnh."
+    },
+    {
+      "id": "compare-dependence-independence",
+      "endpoint": "explain",
+      "action": "compare",
+      "word": "dependence",
+      "other": "independence",
+      "level": "B1",
+      "expectedSense": "Phân biệt hai nghĩa theo nguồn; không kết luận cho mọi ngữ cảnh."
+    },
+    {
+      "id": "compare-invoice-receipt",
+      "endpoint": "explain",
+      "action": "compare",
+      "word": "invoice",
+      "other": "receipt",
+      "level": "B1",
+      "expectedSense": "Phân biệt hai nghĩa theo nguồn; không kết luận cho mọi ngữ cảnh."
+    },
+    {
+      "id": "compare-calculation-correspondence",
+      "endpoint": "explain",
+      "action": "compare",
+      "word": "calculation",
+      "other": "correspondence",
+      "level": "B1",
+      "expectedSense": "Phân biệt hai nghĩa theo nguồn; không kết luận cho mọi ngữ cảnh."
+    },
+    {
+      "id": "quiz-10-targets",
+      "endpoint": "quiz",
+      "words": [
+        "agreement",
+        "invoice",
+        "opening",
+        "meet",
+        "qualified",
+        "applicant",
+        "dependence",
+        "receipt",
+        "calculate",
+        "correspondence"
+      ]
+    },
+    {
+      "id": "review-batch-1",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "invoice",
+          "userAnswer": "invioce",
+          "questionText": "The client received the _____."
+        },
+        {
+          "word": "receipt",
+          "userAnswer": "reciept",
+          "questionText": "Keep your _____ as proof of payment."
+        },
+        {
+          "word": "qualified",
+          "userAnswer": "qualify",
+          "questionText": "Only _____ candidates will be interviewed."
+        },
+        {
+          "word": "meet",
+          "userAnswer": "gặp gỡ",
+          "questionText": "Trong Please meet the requirements., meet có nghĩa gì?"
+        },
+        {
+          "word": "dependence",
+          "userAnswer": "sự độc lập",
+          "questionText": "Reduce _____ on one supplier."
+        }
+      ]
+    },
+    {
+      "id": "review-batch-2",
+      "endpoint": "mistake-review",
+      "mistakes": [
+        {
+          "word": "calculation",
+          "userAnswer": "thư từ",
+          "questionText": "Nghĩa của calculation là gì?"
+        },
+        {
+          "word": "applicant",
+          "userAnswer": "application",
+          "questionText": "The _____ sent her résumé."
+        },
+        {
+          "word": "opening",
+          "userAnswer": "lễ khai trương",
+          "questionText": "There is an _____ in our sales team."
+        },
+        {
+          "word": "agreement",
+          "userAnswer": "",
+          "questionText": "Please sign the _____."
+        },
+        {
+          "word": "correspondence",
+          "userAnswer": "tính toán",
+          "questionText": "Please handle the business _____."
+        }
+      ]
+    }
+  ]
+}

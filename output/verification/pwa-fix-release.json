@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-15T05:40:11.797Z",
+  "release": "2026.10.15-learning.3",
+  "deployment": "dpl_GDsELjHYofnWQK4c8rKXsMukbQGC",
+  "origin": "https://eng-master-main2.vercel.app",
+  "promoted": true,
+  "previousRelease": "2026.10.15-learning.2",
+  "previousDeployment": "dpl_13mQPZCec98JxX4emQ2x5hPi6Uxv",
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "catalog": true,
+    "unit": 133,
+    "newPwaUnitAndUi": 10,
+    "nativeApiImports": 4,
+    "pwaBrowserLocal": 4,
+    "productionStaleNotice": true,
+    "productionPublicBuild": true
+  },
+  "beforeFix": {
+    "staleNoticeReproduced": true,
+    "regressionPassed": false,
+    "evidence": "pwa-before-fix.json"
+  },
+  "production": {
+    "fixture": "isolated guest on actual production; dispatch stale notice with real registration.waiting null",
+    "bannerGone": true,
+    "offlineAfterUpdate": true,
+    "savedCursor": 1,
+    "repetitions": 1,
+    "completedIds": 1,
+    "browserClosed": true
+  },
+  "oldTabTransitionProbe": {
+    "passed": false,
+    "status": "timed out awaiting entry change on the already-open learning.2 client; not counted as acceptance",
+    "evidence": "pwa-production-transition-first-attempt.json",
+    "recovery": "Reload the old page once to receive the fixed handler; do not clear site data."
+  },
+  "build": {
+    "localInitialReferencedGzip": 394781,
+    "productionInitialReferencedGzip": 395226,
+    "offlineAssets": 42,
+    "offlineRevision": "bf222bee6d712afa",
+    "serverSecretsAbsent": true
+  },
+  "catalogAndOriginalBankUnchanged": true,
+  "vocabulary": 1575,
+  "practiceQuestions": 166,
+  "backendChanged": false,
+  "rulesChanged": false,
+  "billingChanged": false,
+  "avatarEnabled": false,
+  "nativeTtlEnabled": false,
+  "gitCommitted": false,
+  "evidence": [
+    "pwa-fix-unit.log",
+    "pwa-fix-browser.json",
+    "pwa-fix-production-browser.json",
+    "pwa-fix-public-build.json",
+    "pwa-fix-build-metrics.json",
+    "pwa-fix-promote.log"
+  ]
+}

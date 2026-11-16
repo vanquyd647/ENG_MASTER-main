@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-16T06:07:25.967Z",
+  "origin": "http://localhost:3118",
+  "passed": false,
+  "checks": [
+    {
+      "name": "guest and offline pack",
+      "result": {
+        "offlineReady": true,
+        "questions": 184,
+        "nativeEnglishVoices": []
+      }
+    },
+    {
+      "name": "official and supplemental links",
+      "result": {
+        "nativeMp3Playback": true,
+        "offlineSeek": true,
+        "duration": 247.742721,
+        "sourceLinks": [
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample01.html",
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample03.html",
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample04.html",
+          "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson1/3960391.html"
+        ]
+      }
+    },
+    {
+      "name": "missing voice gate, then native or explicit UI-only speech fallback",
+      "result": {
+        "missingVoiceBlocked": true,
+        "speechMode": "native-device-speech"
+      }
+    },
+    {
+      "name": "Part 1 six images, hidden descriptions, scoring and transcript review",
+      "result": {
+        "questions": 6,
+        "uniqueImages": 6,
+        "correct": 6,
+        "answerHidden": true,
+        "spokenOptionsMatch": true
+      }
+    }
+  ],
+  "error": "### Error\nTimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Nghe toàn bộ bài' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" class=\"px-4 py-2 rounded-xl font-medium transition-all active:scale-95 disabled:opacity-50 disabled:active:scale-100 flex items-center justify-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg shadow-indigo-500/20\">Nghe toàn bộ bài</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n"
+}

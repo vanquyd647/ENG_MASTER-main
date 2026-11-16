@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-16T12:24:22.576Z",
+  "fixture": "production assets with controlled worker revision update on isolated localhost origin",
+  "checks": [
+    "initial installation does not advertise a false update",
+    "confirmed update preserves saved study draft, progress and offline reload",
+    "cancel and defer keep the current study session",
+    "already activated worker: OK still reloads once, removes notice and resumes draft"
+  ],
+  "passed": true,
+  "updateConfirmed": true,
+  "draftPreserved": true,
+  "offlineAfterUpdate": true,
+  "repetitions": 1,
+  "cursor": 1,
+  "completed": 1,
+  "staleWorker": {
+    "waiting": true,
+    "active": "activated",
+    "controller": "activated"
+  }
+}

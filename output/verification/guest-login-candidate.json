@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-10-14T12:41:23.621Z",
+  "origin": "https://eng-master-main2-845frq3za-quys-projects-d07a5005.vercel.app",
+  "release": "2026.10.14-upgrade.2",
+  "entryScript": "/assets/index-DXPBZ3vM.js",
+  "guestCta": true,
+  "serverCredentialsAbsent": true,
+  "apiMissingAuth": 401,
+  "passed": true
+}

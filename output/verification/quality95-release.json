@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-10-15T13:49:09.727Z",
+  "release": "2026.10.15-learning.7",
+  "origin": "https://eng-master-main2.vercel.app",
+  "candidate": "https://eng-master-main2-9x9l9uek0-quys-projects-d07a5005.vercel.app",
+  "deployment": "dpl_EXuHgSHHuJrWgAA4F8nZmdCnaXDR",
+  "promoted": true,
+  "previousStableDeployment": "dpl_52TyUZfxB5cxsMrsQTDFSpNHNSSE",
+  "releasedMilestoneComplete": true,
+  "allTasksComplete": false,
+  "overall95Ready": false,
+  "overallPercent": null,
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "catalogEntries": 1575,
+    "unit": 184,
+    "emulatorNotRerun": 14,
+    "nativeApiImports": 4,
+    "browserLocal": 13,
+    "browserProduction": 13,
+    "finalCandidateApiRegressions": 12,
+    "catalogHashesUnchanged": true,
+    "qaCleanup": true,
+    "publicBuild": {
+      "checkedAt": "2026-10-15T13:47:53.743Z",
+      "origin": "https://eng-master-main2.vercel.app",
+      "release": "2026.10.15-learning.7",
+      "checks": [
+        "HTML/worker/manifest/offline-pack 200",
+        "all offline assets 200 including PDF worker",
+        "all public assets scanned; server secrets absent",
+        "release label matches",
+        "missing JS 404",
+        "unauthenticated AI 401"
+      ],
+      "initialReferencedGzip": 399299,
+      "offlineAssets": 42,
+      "offlineRevision": "f1bbdc64a36c2ee4",
+      "initialAssets": [
+        {
+          "path": "/assets/firebase-DFaKbn1P.js",
+          "sha256": "fc9adc7ed4c57e8ee7044a0c889c1f0ee3c7d0499ff9b41d861a356e3ea5e9d2"
+        },
+        {
+          "path": "/assets/index-BhB0STvG.css",
+          "sha256": "058a2eb1046e46e45219a5a50b59544ba024230dc47d05a10df51d80e12474a5"
+        },
+        {
+          "path": "/assets/index-CrfZocg3.js",
+          "sha256": "c39333f4f90efced452b4a6773fb8a7fc485e3605c5e89fc76a26d8438e689a2"
+        },
+        {
+          "path": "/assets/vocabulary-CkEYtlix.js",
+          "sha256": "9a16124888a920cec62b8d5a79c4bfc6589e4e3949700e8b45eb42647bfbb527"
+        },
+        {
+          "path": "/assets/vocabulary-pdf-CqKjsr25.js",
+          "sha256": "4c9e0cd4daf43f3829f8a8f8b3a401ebe2d16b2e745b23c5fae1ee35273c1c04"
+        }
+      ],
+      "passed": true
+    }
+  },
+  "pilot": {
+    "fixture": "scripts/fixtures/learning-quality-v1.json",
+    "apiCandidate": "dpl_AGpXHGf8FTKB7wLw7VMbKjKwumDJ",
+    "finalCandidateBackendUnchanged": true,
+    "sourceHashes": "quality95-ai-source-hashes.json",
+    "automated": {
+      "local": {
+        "passed": 45,
+        "total": 45,
+        "percent": 100,
+        "thresholdMet": true
+      },
+      "candidate": {
+        "passed": 45,
+        "total": 45,
+        "percent": 100,
+        "thresholdMet": true
+      }
+    },
+    "semanticReview": {
+      "local": "quality95-ai-local-semantic-review.json",
+      "candidate": "quality95-ai-candidate-semantic-review.json",
+      "reviewer": "Codex content inspection; not independent teacher validation",
+      "passed": 45,
+      "total": 45,
+      "sourceBreakdown": {
+        "authoredExplanations": 20,
+        "aiPracticeAndQuiz": 15,
+        "mixedReviews": 10,
+        "modelRequests": 8
+      }
+    },
+    "notOverallReadiness": true
+  },
+  "delivered": [
+    "Khảo sát nền tảng 20 câu/4 bước, lưu kết quả/tiếp tục/ôn theo câu sai",
+    "Đối chiếu lỗi gõ theo câu trả lời thật, không đoán nguyên nhân",
+    "Bài AI điền từ có nghĩa mục tiêu, không chấm distractor chưa duyệt",
+    "Ghi chú biên soạn và ví dụ song ngữ có nhãn nguồn, không sửa catalog",
+    "Sửa nút Tạm dừng bị che bởi nút tài khoản trên mobile"
+  ],
+  "remaining": [
+    {
+      "id": "content-part1",
+      "status": "missing",
+      "detail": "Chưa có câu, học liệu và đáp án đã đối chiếu cho part1"
+    },
+    {
+      "id": "content-part3",
+      "status": "missing",
+      "detail": "Chưa có câu, học liệu và đáp án đã đối chiếu cho part3"
+    },
+    {
+      "id": "content-part4",
+      "status": "missing",
+      "detail": "Chưa có câu, học liệu và đáp án đã đối chiếu cho part4"
+    },
+    {
+      "id": "full-exam",
+      "status": "missing",
+      "detail": "Chưa có đề tích hợp 200 câu, 100 Listening/100 Reading, thời gian 45/75 phút và media/đáp án khớp từng nhóm."
+    },
+    {
+      "id": "independent-content-acceptance",
+      "status": "pending",
+      "detail": "Chưa có nghiệm thu độc lập toàn bộ các phần và đối chiếu đáp án duy nhất cho bộ luyện thi đầy đủ."
+    }
+  ],
+  "sourceAudio": {
+    "files": 48,
+    "pairedForScoring": 0,
+    "requiredForReadiness": false,
+    "status": "unmatched-not-used-for-scoring"
+  },
+  "limitations": [
+    "Đọc nội dung bởi Codex; chưa phải nghiệm thu giáo viên độc lập.",
+    "Mẫu hẹp tập trung lỗi đã biết; có câu quiz dựa câu gốc, không chứng minh khả năng tạo câu đa dạng.",
+    "Không dùng tỷ lệ này làm độ sẵn sàng toàn hệ thống hoặc hiệu quả học."
+  ],
+  "preserved": {
+    "model": "gemini-3.5-flash-lite",
+    "billingUnchanged": true,
+    "avatarEnabled": false,
+    "nativeTtlEnabled": false,
+    "cloudSchemaAndRulesUnchanged": true,
+    "gitCommittedOrPushed": false
+  }
+}

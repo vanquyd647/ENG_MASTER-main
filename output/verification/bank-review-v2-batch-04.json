@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "p5-v2-passive-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The subject 'The final invoice' receives the action, requiring a future passive structure 'will be sent'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-passive-4",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "An action completed in the past before another past action ('arrived') requires the past perfect passive 'had been cleaned'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-passive-5",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The linking verb 'are' is followed by the past participle 'published' functioning as a predicate adjective/passive state.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-passive-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Employees are required to do something, demanding the present passive 'are required'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a location. 'Beside the reception desk' correctly provides a location.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a location. 'In the second-floor conference room' correctly specifies a place.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a destination or place to leave something. 'In the tray marked Human Resources' answers appropriately.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a location. 'In the underground garage' correctly answers where the van was parked.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A 'Where' question inquires about a place. 'At the security counter' provides the correct location.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-where-6",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A 'Where' question asks for a location. 'Across from the central station' gives the correct location.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-when-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A 'When' question asks for a time. 'By noon on Thursday' provides a deadline/time.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-when-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A 'When' question asks about a time. 'At six in the evening' answers with a closing time.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-when-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A 'When' question asks for a time. 'It is scheduled for Monday morning' correctly provides the arrival time.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-when-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "A 'When' question asks for a time. 'Yesterday afternoon' correctly specifies when the update occurred.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-when-5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A 'When' question asks for a time. 'I have some time after lunch' offers an appropriate time to discuss.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-when-6",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A 'When' question asks for a deadline or time. 'No later than Friday' directly answers when to confirm.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-request-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A polite request 'Could you email me...' is appropriately accepted with 'Certainly, I will send it now.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-request-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "An offer 'Would you like me to reserve a taxi?' is properly answered with 'Yes, that would be helpful.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-request-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A suggestion 'Shall we review the contract together?' is accepted by 'Yes, let us meet at three.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v2-request-4",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "A polite request 'Could you hold the elevator...' is fittingly responded to with 'Of course, take your time.'",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p5-v2-forms-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "An adverb is needed to modify the verb inspected.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-forms-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "A noun is required as the direct object of need.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-forms-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "An adjective is required after the linking verb is and comparative more.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-forms-4",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "A noun is required as the head of the compound subject Customer satisfaction.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-forms-5",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "An adjective in past participle form is needed to modify the noun analysis.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-forms-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "An adverb is needed to modify the verb reached.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-agree-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The subject is 'The package' (singular), so it requires the singular verb 'is'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-agree-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject is 'Both branches' (plural), so it requires the plural base verb 'offer'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-agree-3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The subject is 'Each applicant' (singular), so it requires the singular verb 'needs'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v2-agree-4",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The subject is 'The instructions' (plural), so it requires the plural verb 'are'.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

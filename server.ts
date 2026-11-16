@@ -5,8 +5,8 @@ import dotenv from "dotenv";
 import { explainWord, generateAvatar, generateMistakeReview, generateQuiz } from "./src/server/gemini";
 import { handleGeminiApi } from "./src/server/vercelGeminiHandler";
 
-dotenv.config({ path: ".env.local" });
-dotenv.config();
+dotenv.config({ path: ".env.local", quiet: true });
+dotenv.config({quiet:true});
 
 async function startServer() {
   const app = express();
@@ -15,7 +15,7 @@ async function startServer() {
     process.env.NODE_ENV === "production" ||
     process.env.npm_lifecycle_event === "start";
 
-  app.use(express.json({ limit: "64kb" }));
+  // Shared handler parses the bounded stream after auth in Express and Vercel.
 
   app.all("/api/gemini/explain", (req, res) =>
     handleGeminiApi(req, res, explainWord, "explain"),
@@ -45,6 +45,7 @@ async function startServer() {
       });
       return;
     }
+    if(error instanceof SyntaxError && "body" in error) {res.status(400).json({error:"Request body must be valid JSON.",code:"invalid_json"});return;}
     next(error);
   });
 
@@ -57,8 +58,10 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     const distPath = path.join(process.cwd(), 'dist');
+    app.get("/sw.js", (_req,res)=>{res.set("Cache-Control","no-cache");res.sendFile(path.join(distPath,"sw.js"));});
     app.use(express.static(distPath));
     app.get('*', (req, res) => {
+      if (path.extname(req.path) || !req.accepts('html')) {res.status(404).end();return;}
       res.sendFile(path.join(distPath, 'index.html'));
     });
   }

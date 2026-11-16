@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p1-listening-v1-bicycle-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The photograph clearly shows a white bicycle standing beside a blue wall.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p1-listening-v1-cyclist-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The photograph depicts a person riding a bicycle along a path in foggy weather.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-meeting-q1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Maya: '...the projector in room three hundred four has stopped working.' -> Ben: 'Shall we move the meeting there?'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-meeting-q2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Ben: 'Room two hundred eighteen is available.' -> Maya: 'Yes. I will email everyone the new room number now.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-meeting-q3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Maya: 'I will email everyone the new room number now.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-delivery-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Nora: 'We ordered twelve desk lamps, but only ten arrived this morning.' -> 12 - 10 = 1 missing lamp package/two lamps total? Wait, 'We ordered twelve... but only ten arrived', so 2 are missing. Let's check options: One, Two, Ten, Twelve. 12 - 10 = 2, so Two lamps are missing.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-delivery-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Leo: 'They will arrive tomorrow'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-listening-v1-delivery-q3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Nora: 'Could you email me the tracking number today?'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-listening-v1-museum-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Announcer: 'Welcome to the City Museum. Here is some information for your visit.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-listening-v1-museum-q2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Announcer: 'The photography gallery is closed today, Thursday, for maintenance.'",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

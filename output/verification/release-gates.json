@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-10-13T11:58:21.070Z",
+  "node": "22.23.3",
+  "typecheck": "passed",
+  "lint": "passed",
+  "vocabulary": {
+    "entries": 1575,
+    "warnings": 0
+  },
+  "unit": {
+    "passed": 70,
+    "emulatorSkippedInUnit": 7
+  },
+  "emulator": {
+    "passed": 7,
+    "project": "demo-eng-master"
+  },
+  "browser": {
+    "passed": 9,
+    "responsiveWidths": [
+      360,
+      390,
+      768,
+      1280
+    ],
+    "pwaUpdate": "passed with isolated worker revision fixture"
+  },
+  "audit": {
+    "vulnerabilities": 0
+  },
+  "deployment": {
+    "release": "2026.10.13-upgrade.1",
+    "domain": "https://eng-master-main2.vercel.app",
+    "deploymentId": "dpl_9B7x4Z4AQhRdzcZ6ca7nA8YBZGTv",
+    "published": true
+  },
+  "gitDiffCheck": "passed",
+  "credentialFiles": {
+    "tracked": false,
+    "ignored": true,
+    "mode": "0600"
+  },
+  "apiNativeRuntime": {
+    "endpointsPassed": 4,
+    "requireEsm": false
+  },
+  "hostedAi": {
+    "candidate": "passed before promotion",
+    "production": "intermittent provider 502/504 after promotion; not accepted as stable",
+    "directProvider": "504 deadline; SDK 2 Interactions also timed out",
+    "diagnosticSdk": "2.29.0 temporary installation; runtime remains 1.52.0"
+  },
+  "clientRules": "passed: two disposable accounts, ownership/bounds/immutable events; all QA data cleaned",
+  "quotaRetention": "backend cleanup, native TTL unavailable on current billing configuration",
+  "statusUpdatedAt": "2026-10-13T13:28:42.167Z",
+  "browserCloud": {
+    "passed": true,
+    "origin": "https://eng-master-main2.vercel.app",
+    "checks": [
+      "offline reload and reconnect",
+      "live account switch A/B/A"
+    ],
+    "qaCleanup": true
+  },
+  "pending": [
+    "Google OAuth popup and Workspace consent/API actions",
+    "avatar flag remains disabled",
+    "browser restore failure and full rollback acceptance"
+  ],
+  "latestGuestLoginRelease": {
+    "checkedAt": "2026-10-14T12:44:21.320Z",
+    "release": "2026.10.14-upgrade.2",
+    "deployment": {
+      "published": true,
+      "domain": "https://eng-master-main2.vercel.app",
+      "id": "dpl_91LU7ikA2e8N5aSr25MpNFY6DK5h",
+      "rollback": "dpl_9B7x4Z4AQhRdzcZ6ca7nA8YBZGTv"
+    },
+    "unitPassed": 74,
+    "browserGuest": "passed production",
+    "browserMerge": "passed production; temporary custom-token identities",
+    "report": "output/verification/guest-login-release.json"
+  }
+}

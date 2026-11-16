@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-16T06:52:41.464Z",
+  "origin": "http://localhost:3119",
+  "passed": false,
+  "checks": [
+    {
+      "name": "guest, full offline pack, exam disclosure and exact blueprint",
+      "result": {
+        "questions": 277,
+        "formQuestions": 200,
+        "offlineReady": true,
+        "writeLock": true
+      }
+    },
+    {
+      "name": "listening answer, hidden text and leave/resume without resetting time",
+      "result": {
+        "answerRetained": true,
+        "startRetained": true,
+        "readingLocked": true
+      }
+    },
+    {
+      "name": "new conversation source, shared group and mobile/keyboard access",
+      "result": {
+        "groupQuestions": 3,
+        "transcriptHidden": true,
+        "widths": [
+          360,
+          390,
+          768,
+          1280
+        ],
+        "keyboard": true
+      }
+    },
+    {
+      "name": "same-owner second tab receives current answers and cursor",
+      "result": {
+        "sameDraft": true,
+        "remoteCursorUpdate": true
+      }
+    },
+    {
+      "name": "offline reload restores draft, picture and original deadline",
+      "result": {
+        "offline": true,
+        "answersRetained": true,
+        "deadlineRetained": true
+      }
+    },
+    {
+      "name": "45-minute boundary locks Listening and opens 100 Reading questions",
+      "result": {
+        "listeningLocked": true,
+        "readingOpened": true,
+        "readingOptions": 100
+      }
+    },
+    {
+      "name": "multi-document final question and 75-minute auto-submit",
+      "result": {
+        "correct": 4,
+        "blank": 196,
+        "total": 200,
+        "partRecords": 7,
+        "durationSeconds": 7200
+      }
+    }
+  ],
+  "timeMethod": "Playwright clock fast-forward, not a two-hour wall-clock test",
+  "error": "### Error\nTimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Ngữ pháp', exact: true })\u001b[22m\n\n"
+}

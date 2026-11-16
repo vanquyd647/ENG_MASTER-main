@@ -1,0 +1,3120 @@
+{
+  "version": 1,
+  "model": "hexgrad/Kokoro-82M",
+  "voices": [
+    "am_michael",
+    "af_heart",
+    "bf_emma"
+  ],
+  "sampleRate": 24000,
+  "speed": 0.95,
+  "examSeconds": 2700,
+  "examIds": [
+    "p1-listening-v1-forklift",
+    "p1-listening-v1-desk",
+    "p1-listening-v1-home-office",
+    "p1-listening-v1-conference",
+    "p1-listening-v1-bicycle",
+    "p1-listening-v1-cyclist",
+    "p2-v1-1",
+    "p2-v1-2",
+    "p2-v1-3",
+    "p2-v1-4",
+    "p2-v1-5",
+    "p2-v1-6",
+    "p2-v1-7",
+    "p2-v1-8",
+    "p2-v1-9",
+    "p2-v1-10",
+    "p2-v1-11",
+    "p2-v1-12",
+    "p2-v1-13",
+    "p2-v1-14",
+    "p2-v1-15",
+    "p2-v1-16",
+    "p2-v1-17",
+    "p2-v1-18",
+    "p2-v2-where-1",
+    "p2-v2-where-2",
+    "p2-v2-where-3",
+    "p2-v2-where-4",
+    "p2-v2-where-5",
+    "p2-v2-where-6",
+    "p2-v2-when-1",
+    "p3-listening-v1-meeting",
+    "p3-listening-v1-delivery",
+    "p3-exam-v1-registration",
+    "p3-exam-v1-restaurant",
+    "p3-exam-v1-printer",
+    "p3-exam-v1-hotel",
+    "p3-exam-v1-interview",
+    "p3-exam-v1-catering",
+    "p3-exam-v1-software",
+    "p3-exam-v1-bicycle-repair",
+    "p3-exam-v1-supplies",
+    "p3-exam-v1-travel",
+    "p3-exam-v1-library",
+    "p4-listening-v1-museum",
+    "p4-listening-v1-repair",
+    "p4-exam-v1-shuttle",
+    "p4-exam-v1-opening",
+    "p4-exam-v1-safety",
+    "p4-exam-v1-order",
+    "p4-exam-v1-presentation",
+    "p4-exam-v1-maintenance",
+    "p4-exam-v1-recruitment",
+    "p4-exam-v1-lost-property"
+  ],
+  "rows": [
+    {
+      "id": "p2-v1-1",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-1"
+      ],
+      "segments": [
+        {
+          "text": "When will the replacement parts arrive?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "On Thursday morning.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "They are on the shelf.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Yes, they fit well.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-2",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-2"
+      ],
+      "segments": [
+        {
+          "text": "Where did you put the signed contract?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "I signed it yesterday.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It expires next month.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "In the top drawer.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-3",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-3"
+      ],
+      "segments": [
+        {
+          "text": "Who is leading the safety workshop?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "In the main hall.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The operations manager.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It starts at nine.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-4",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-4"
+      ],
+      "segments": [
+        {
+          "text": "Could you send me the updated schedule?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Certainly, I will email it now.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It was last month.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The office is upstairs.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-5",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-5"
+      ],
+      "segments": [
+        {
+          "text": "Why was the shipment delayed?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "At the loading dock.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "About twenty boxes.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Because the road was closed.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-6",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-6"
+      ],
+      "segments": [
+        {
+          "text": "How often do you inspect the equipment?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "By the entrance.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Once a month.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "For the new office.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-7",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-7"
+      ],
+      "segments": [
+        {
+          "text": "Would you prefer a window seat or an aisle seat?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "An aisle seat, please.",
+          "voice": "af_heart",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The flight is late.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "I arrived yesterday.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-8",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-8"
+      ],
+      "segments": [
+        {
+          "text": "Have you finished reviewing the budget?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It is next to the door.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Yes, the room is large.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Not yet, I need another hour.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-9",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-9"
+      ],
+      "segments": [
+        {
+          "text": "How much does the delivery service cost?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "At the front desk.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Twelve dollars per order.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Three times a week.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-10",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-10"
+      ],
+      "segments": [
+        {
+          "text": "Should we reserve the larger conference room?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Yes, we are expecting thirty guests.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It is on the third floor.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "I reserved a table yesterday.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-11",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-11"
+      ],
+      "segments": [
+        {
+          "text": "Is the supervisor in the office today?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "At half past two.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The office is newly painted.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "No, she is visiting a client.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-12",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-12"
+      ],
+      "segments": [
+        {
+          "text": "Which folder contains the invoice copies?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Please sign the invoice.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The one labeled April.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "We copied them twice.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-13",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-13"
+      ],
+      "segments": [
+        {
+          "text": "Can we move the meeting to two o’clock?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "That works for me.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It was two kilometers away.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "There are two chairs.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-14",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-14"
+      ],
+      "segments": [
+        {
+          "text": "Where can I get a visitor badge?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It is a useful visit.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The visitors left early.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Ask the receptionist.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-15",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-15"
+      ],
+      "segments": [
+        {
+          "text": "Why don’t we order lunch for the team?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The team is on page two.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Good idea, I will check the menu.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Because lunch was delicious.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-16",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-16"
+      ],
+      "segments": [
+        {
+          "text": "How long does the installation take?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "About forty minutes.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "At the service counter.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It costs forty dollars.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-17",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-17"
+      ],
+      "segments": [
+        {
+          "text": "You have already booked the hotel, haven’t you?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The hotel has five floors.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "I work at the restaurant.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Yes, I received the confirmation.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v1-18",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v1-18"
+      ],
+      "segments": [
+        {
+          "text": "Would you mind closing the door?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "That is the door number.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Of course not, I will close it.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It closes at six.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-where-1",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-where-1"
+      ],
+      "segments": [
+        {
+          "text": "Where is the nearest photocopier?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "At half past ten.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Beside the reception desk.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "I printed three copies.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-where-2",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-where-2"
+      ],
+      "segments": [
+        {
+          "text": "Where will the training session take place?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "In the second-floor conference room.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "For two hours.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The trainers arrived early.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-where-3",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-where-3"
+      ],
+      "segments": [
+        {
+          "text": "Where should I leave these signed forms?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "They need your signature.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Before the deadline.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "In the tray marked Human Resources.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-where-4",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-where-4"
+      ],
+      "segments": [
+        {
+          "text": "Where did you park the company van?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "In the underground garage.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It needs new tires.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The company has two vans.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-where-5",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-where-5"
+      ],
+      "segments": [
+        {
+          "text": "Where can visitors pick up a temporary badge?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "They are visiting tomorrow.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "At the security counter.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The badges are blue.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-where-6",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-where-6"
+      ],
+      "segments": [
+        {
+          "text": "Where will the new branch be located?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It opened last month.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "About twenty employees.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Across from the central station.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-when-1",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-when-1"
+      ],
+      "segments": [
+        {
+          "text": "When is the revised budget due?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "By noon on Thursday.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It is under budget.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The finance department.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-when-2",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-when-2"
+      ],
+      "segments": [
+        {
+          "text": "When does the visitor center close?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A map of the center.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "At six in the evening.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Near the east entrance.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-when-3",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-when-3"
+      ],
+      "segments": [
+        {
+          "text": "When will the replacement printer arrive?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The old one is broken.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "We ordered two cartridges.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It is scheduled for Monday morning.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-when-4",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-when-4"
+      ],
+      "segments": [
+        {
+          "text": "When did you last update the contact list?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Yesterday afternoon.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "There are fifty contacts.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The new office number.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-when-5",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-when-5"
+      ],
+      "segments": [
+        {
+          "text": "When can we discuss the proposal?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It proposes a new service.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "I have some time after lunch.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The document is six pages long.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-when-6",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-when-6"
+      ],
+      "segments": [
+        {
+          "text": "When should I confirm my attendance?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The seminar is popular.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The attendance sheet is full.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "No later than Friday.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-request-1",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-request-1"
+      ],
+      "segments": [
+        {
+          "text": "Could you email me the updated price list?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The prices increased recently.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Certainly, I will send it now.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "I bought it last week.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-request-2",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-request-2"
+      ],
+      "segments": [
+        {
+          "text": "Would you like me to reserve a taxi?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Yes, that would be helpful.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The taxi was yellow.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It is a reserved parking space.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-request-3",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-request-3"
+      ],
+      "segments": [
+        {
+          "text": "Shall we review the contract together?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The review was favorable.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It is a large conference.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Yes, let us meet at three.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-request-4",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-request-4"
+      ],
+      "segments": [
+        {
+          "text": "Could you hold the elevator for a moment?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The moment has passed.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Of course, take your time.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It is on the maintenance schedule.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-request-5",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-request-5"
+      ],
+      "segments": [
+        {
+          "text": "Would you mind checking these figures?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Not at all. Let me take a look.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "There are four figures in the report.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "I checked in yesterday.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-request-6",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-request-6"
+      ],
+      "segments": [
+        {
+          "text": "Can someone cover my shift on Saturday?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Saturday is my favorite day.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The cover is missing.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "I can, if it is the morning shift.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-indirect-1",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-indirect-1"
+      ],
+      "segments": [
+        {
+          "text": "Who is responsible for arranging the shipment?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Ask Ms. Chen in logistics.",
+          "voice": "bf_emma",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The shipment weighs twenty kilos.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It arrived yesterday.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-indirect-2",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-indirect-2"
+      ],
+      "segments": [
+        {
+          "text": "Why has the presentation been postponed?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The presenter is from Boston.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The client requested more time to review the data.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "At the downtown hotel.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-indirect-3",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-indirect-3"
+      ],
+      "segments": [
+        {
+          "text": "Do we need to print more brochures?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A colorful brochure.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The printer is on the third floor.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "There are still several boxes in storage.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-indirect-4",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-indirect-4"
+      ],
+      "segments": [
+        {
+          "text": "Has the conference room been booked?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Let me check the reservation calendar.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The book is on the table.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "For twelve participants.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-indirect-5",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-indirect-5"
+      ],
+      "segments": [
+        {
+          "text": "How will you get to the trade fair?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "It runs for three days.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A colleague offered me a ride.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The tickets were reasonably priced.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p2-v2-indirect-6",
+      "kind": "part2",
+      "questionIds": [
+        "p2-v2-indirect-6"
+      ],
+      "segments": [
+        {
+          "text": "Is the application form available online?",
+          "voice": "af_heart",
+          "pause": 1
+        },
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The applicant starts next week.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A line at the information desk.",
+          "voice": "bf_emma",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "The website is being updated; I can give you a paper copy.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p1-listening-v1-forklift",
+      "kind": "part1",
+      "questionIds": [
+        "p1-listening-v1-forklift-q1"
+      ],
+      "segments": [
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Several people are boarding a bus.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A forklift is positioned beside a truck.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A man is washing a car.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option D.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Boxes are floating on water.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p1-listening-v1-desk",
+      "kind": "part1",
+      "questionIds": [
+        "p1-listening-v1-desk-q1"
+      ],
+      "segments": [
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A woman is typing at a keyboard.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Some dishes are stacked in a sink.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A man is opening a suitcase.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option D.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A small bust is displayed in front of the windows.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p1-listening-v1-home-office",
+      "kind": "part1",
+      "questionIds": [
+        "p1-listening-v1-home-office-q1"
+      ],
+      "segments": [
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "An open laptop is sitting on a wooden table.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A worker is carrying a ladder.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Several chairs are stacked against a wall.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option D.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A printer is underneath a desk.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p1-listening-v1-conference",
+      "kind": "part1",
+      "questionIds": [
+        "p1-listening-v1-conference-q1"
+      ],
+      "segments": [
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Several people are attending a meeting.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A waiter is serving food.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Chairs are arranged around a white table.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option D.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A man is repairing a window.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p1-listening-v1-bicycle",
+      "kind": "part1",
+      "questionIds": [
+        "p1-listening-v1-bicycle-q1"
+      ],
+      "segments": [
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A man is riding a motorcycle.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A bicycle is standing beside a blue wall.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A mechanic is replacing a wheel.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option D.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Two bicycles are hanging from the ceiling.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p1-listening-v1-cyclist",
+      "kind": "part1",
+      "questionIds": [
+        "p1-listening-v1-cyclist-q1"
+      ],
+      "segments": [
+        {
+          "text": "Option A.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A person is riding a bicycle along a path.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option B.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A person is carrying a bicycle upstairs.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option C.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "Several people are waiting at a counter.",
+          "voice": "am_michael",
+          "pause": 1.2
+        },
+        {
+          "text": "Option D.",
+          "voice": "am_michael",
+          "pause": 0.35
+        },
+        {
+          "text": "A person is rowing a boat.",
+          "voice": "am_michael",
+          "pause": 1.2
+        }
+      ]
+    },
+    {
+      "id": "p3-listening-v1-meeting",
+      "kind": "part3",
+      "questionIds": [
+        "p3-listening-v1-meeting-q1",
+        "p3-listening-v1-meeting-q2",
+        "p3-listening-v1-meeting-q3"
+      ],
+      "segments": [
+        {
+          "text": "Hi Ben, this is Maya. Our client meeting starts at eleven, but the projector in room three hundred four has stopped working.",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Room two hundred eighteen is available. Its projector was tested this morning. Shall we move the meeting there?",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Yes. I will email everyone the new room number now. Could you ask the technical team to repair the other projector?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Of course. I will call them as soon as we finish talking.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Why are the speakers moving the meeting?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Where will the meeting take place?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What will Maya do next?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-listening-v1-delivery",
+      "kind": "part3",
+      "questionIds": [
+        "p3-listening-v1-delivery-q1",
+        "p3-listening-v1-delivery-q2",
+        "p3-listening-v1-delivery-q3"
+      ],
+      "segments": [
+        {
+          "text": "Hello, this is Nora. We ordered twelve desk lamps, but only ten arrived this morning.",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "I am sorry about that. The other two are being packed now. They will arrive tomorrow, and there will be no additional delivery charge.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "That is fine. Could you email me the tracking number today?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Certainly. I will send it this afternoon when the package leaves our warehouse.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "How many lamps are missing from the delivery?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "When will the remaining lamps arrive?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What does Nora ask Leo to email?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p4-listening-v1-museum",
+      "kind": "part4",
+      "questionIds": [
+        "p4-listening-v1-museum-q1",
+        "p4-listening-v1-museum-q2",
+        "p4-listening-v1-museum-q3"
+      ],
+      "segments": [
+        {
+          "text": "Welcome to the City Museum. Here is some information for your visit. We are open from nine in the morning until six in the evening. The photography gallery is closed today, Thursday, for maintenance. All other galleries remain open. You can find our cafe on the first floor, beside the gift shop. Please ask at the information desk if you need a map.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "What is the main purpose of the announcement?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Which area is closed today?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Where is the cafe?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p4-listening-v1-repair",
+      "kind": "part4",
+      "questionIds": [
+        "p4-listening-v1-repair-q1",
+        "p4-listening-v1-repair-q2",
+        "p4-listening-v1-repair-q3"
+      ],
+      "segments": [
+        {
+          "text": "Hello, this is Jordan from Greenway Repairs. I am calling to confirm the appointment to repair your office air conditioner. Our technician will arrive this Friday between ten and eleven in the morning. Please arrange for someone to meet the technician at the rear entrance, because the front entrance is being painted. Call us by noon on Thursday to confirm that someone will be available. Thank you.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Why is Jordan calling?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "On which day will the technician arrive?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Where should someone meet the technician?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-exam-v1-registration",
+      "kind": "part3",
+      "questionIds": [
+        "p3-exam-v1-registration-q1",
+        "p3-exam-v1-registration-q2",
+        "p3-exam-v1-registration-q3"
+      ],
+      "segments": [
+        {
+          "text": "Hello. I registered for the sales workshop, but my confirmation email lists the online session. I wanted to attend in person.",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "There are still seats in the in-person session on Tuesday. I can change your registration without a fee.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Thank you. Should I bring a printed ticket?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "No. Just show the confirmation email on your phone at the reception desk. I will send an updated email now.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Why is the caller contacting the workshop organizer?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "When is the in-person session?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What should the caller show at reception?",
+          "voice": "af_heart",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-exam-v1-restaurant",
+      "kind": "part3",
+      "questionIds": [
+        "p3-exam-v1-restaurant-q1",
+        "p3-exam-v1-restaurant-q2",
+        "p3-exam-v1-restaurant-q3"
+      ],
+      "segments": [
+        {
+          "text": "I booked a table for six at seven tonight, but two colleagues cannot come. Could you change it to four people?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Certainly. Your table will still be ready at seven. Would you prefer a table near the window?",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Yes, please. One guest cannot eat peanuts. Can you inform the kitchen?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "I will add that note to the reservation and speak to the chef before you arrive.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "How many people will attend the dinner?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What will remain unchanged?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What will the restaurant employee do?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-exam-v1-printer",
+      "kind": "part3",
+      "questionIds": [
+        "p3-exam-v1-printer-q1",
+        "p3-exam-v1-printer-q2",
+        "p3-exam-v1-printer-q3"
+      ],
+      "segments": [
+        {
+          "text": "The printer on the second floor keeps leaving dark lines on our documents. We need clean copies for a client meeting tomorrow.",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "A technician can come at two this afternoon. Until then, you can use the printer in the ground-floor copy room.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "That will help. Should I send the technician a sample of the problem?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Yes, please email a scanned copy to our support address.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "What problem is reported?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Where can staff print documents temporarily?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What does the support employee request?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-exam-v1-hotel",
+      "kind": "part3",
+      "questionIds": [
+        "p3-exam-v1-hotel-q1",
+        "p3-exam-v1-hotel-q2",
+        "p3-exam-v1-hotel-q3"
+      ],
+      "segments": [
+        {
+          "text": "I have a room reservation for tonight. My flight arrives at eleven in the morning. Could I check in then?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Our regular check-in time is three. Early check-in depends on room availability, but we can store your luggage for free.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "That is useful. I have a meeting at one, so I will leave my bags and come back later.",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Of course. Please bring your booking confirmation and identification when you return to check in.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "What does the guest ask about?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Which service is offered without a fee?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What does the guest plan to do before the meeting?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-exam-v1-interview",
+      "kind": "part3",
+      "questionIds": [
+        "p3-exam-v1-interview-q1",
+        "p3-exam-v1-interview-q2",
+        "p3-exam-v1-interview-q3"
+      ],
+      "segments": [
+        {
+          "text": "We would like to interview you for the accounting position next Wednesday at ten. Are you available?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "I have another appointment that morning. Could we meet in the afternoon instead?",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Yes, two thirty is available. Please bring a copy of your resume and a list of two references.",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Thank you. I will be there at two thirty on Wednesday.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Which position is being discussed?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What time is agreed on for the interview?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What is the applicant asked to bring?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-exam-v1-catering",
+      "kind": "part3",
+      "questionIds": [
+        "p3-exam-v1-catering-q1",
+        "p3-exam-v1-catering-q2",
+        "p3-exam-v1-catering-q3"
+      ],
+      "segments": [
+        {
+          "text": "We ordered forty lunches for Friday, but five more participants have registered. Can you increase the order?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Yes. I will prepare forty-five lunches. Do you still want delivery at eleven thirty?",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Yes. Please use the east entrance, since the main hall will be crowded.",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Understood. I will send a revised invoice this afternoon.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Why is the order being changed?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "How many lunches will be prepared?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Which entrance should the delivery person use?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-exam-v1-software",
+      "kind": "part3",
+      "questionIds": [
+        "p3-exam-v1-software-q1",
+        "p3-exam-v1-software-q2",
+        "p3-exam-v1-software-q3"
+      ],
+      "segments": [
+        {
+          "text": "I could not attend yesterday's training on the new inventory system. Is there another session?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "There is a repeat session on Thursday at nine. It will be online, and I can send you the link.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Great. Do I need to install the software before the session?",
+          "voice": "bf_emma",
+          "pause": 0.5
+        },
+        {
+          "text": "Yes. Follow the installation guide in the welcome email. Contact the help desk if you cannot sign in.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "What does the employee want to do?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "How will the repeat session be held?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What should the employee do before training?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-exam-v1-bicycle-repair",
+      "kind": "part3",
+      "questionIds": [
+        "p3-exam-v1-bicycle-repair-q1",
+        "p3-exam-v1-bicycle-repair-q2",
+        "p3-exam-v1-bicycle-repair-q3"
+      ],
+      "segments": [
+        {
+          "text": "I left my bicycle here yesterday. Have you finished replacing the brakes?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Yes, the brakes are ready. However, I noticed a worn rear tire. Would you like us to replace it too?",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Yes, please. Can I collect the bicycle before the shop closes at six?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Certainly. It will be ready at four. We will text you when the work is complete.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Which repair has already been completed?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What additional work does the customer approve?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "When will the bicycle be ready?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-exam-v1-supplies",
+      "kind": "part3",
+      "questionIds": [
+        "p3-exam-v1-supplies-q1",
+        "p3-exam-v1-supplies-q2",
+        "p3-exam-v1-supplies-q3"
+      ],
+      "segments": [
+        {
+          "text": "The order form says we requested blue folders, but the delivery contains green ones.",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "I checked the order number. The supplier sent the wrong color. They can exchange them on Monday.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "That should work. We do not need the folders until the staff seminar on Wednesday.",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "I will contact the supplier now and ask them to collect the green folders when they deliver the replacements.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "What is wrong with the delivery?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "When can the folders be exchanged?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What will the employee ask the supplier to do?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-exam-v1-travel",
+      "kind": "part3",
+      "questionIds": [
+        "p3-exam-v1-travel-q1",
+        "p3-exam-v1-travel-q2",
+        "p3-exam-v1-travel-q3"
+      ],
+      "segments": [
+        {
+          "text": "Our flight to the trade fair has been moved to eight in the morning. We should leave the office earlier.",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "I will book a taxi for five thirty. Shall I ask the hotel to keep our rooms despite our earlier arrival?",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Our rooms have been reserved since last night, so they should already be available. Please email our new arrival time to the hotel.",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "I will do that after I reserve the taxi.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "What has changed?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What time will the taxi be booked for?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What will the hotel be informed about?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p3-exam-v1-library",
+      "kind": "part3",
+      "questionIds": [
+        "p3-exam-v1-library-q1",
+        "p3-exam-v1-library-q2",
+        "p3-exam-v1-library-q3"
+      ],
+      "segments": [
+        {
+          "text": "I borrowed the marketing handbook last week. Can I renew it for another seven days?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "I am sorry, but another member has reserved that copy. You need to return it by Friday.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Is there an electronic version I can read after I return the book?",
+          "voice": "am_michael",
+          "pause": 0.5
+        },
+        {
+          "text": "Yes. Sign in to the member portal and open the digital resources page. You can access it there.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Why can the handbook not be renewed?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "When must the printed book be returned?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Where can the member find the electronic version?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p4-exam-v1-shuttle",
+      "kind": "part4",
+      "questionIds": [
+        "p4-exam-v1-shuttle-q1",
+        "p4-exam-v1-shuttle-q2",
+        "p4-exam-v1-shuttle-q3"
+      ],
+      "segments": [
+        {
+          "text": "Attention, passengers traveling to the airport. The next shuttle will leave at ten fifteen. Please check the departure board for your bay. Bay two, our usual departure point, is closed for repairs today. Please purchase your ticket at the kiosk before boarding. Large suitcases must be placed in the luggage compartment. The journey will take approximately forty minutes.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Look at the departure board. Which bay should airport passengers use?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What should passengers do before boarding?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "How long is the journey expected to take?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p4-exam-v1-opening",
+      "kind": "part4",
+      "questionIds": [
+        "p4-exam-v1-opening-q1",
+        "p4-exam-v1-opening-q2",
+        "p4-exam-v1-opening-q3"
+      ],
+      "segments": [
+        {
+          "text": "This is a message for customers of Eastbank Hardware. Starting next Monday, our weekday opening time will change from eight to seven thirty. We are making this change to serve customers who need supplies before work. Our closing time remains six, and weekend hours will not change. The tool rental desk will continue to open at nine.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "What is the main purpose of the message?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Why is the change being made?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What will stay the same?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p4-exam-v1-safety",
+      "kind": "part4",
+      "questionIds": [
+        "p4-exam-v1-safety-q1",
+        "p4-exam-v1-safety-q2",
+        "p4-exam-v1-safety-q3"
+      ],
+      "segments": [
+        {
+          "text": "Before we begin the warehouse tour, please put on the yellow safety vest provided at reception. Keep your vest on throughout the tour. Photography is permitted in the packing area, but it is not allowed near the loading dock. Stay with your guide at all times, because forklifts operate along several routes. We will finish the tour in the training room.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "What should visitors put on?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Where is photography prohibited?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Why must visitors stay with the guide?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p4-exam-v1-order",
+      "kind": "part4",
+      "questionIds": [
+        "p4-exam-v1-order-q1",
+        "p4-exam-v1-order-q2",
+        "p4-exam-v1-order-q3"
+      ],
+      "segments": [
+        {
+          "text": "Hello, this is Clara from Oak Street Books. The business dictionaries you ordered are ready for collection. We will hold them at the front counter until we close at five on Saturday. Please bring your order number when you collect them. We close at five on Saturday. If you prefer delivery, call us by Friday afternoon so that we can arrange it. Delivery costs six dollars.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Why is Clara calling?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What should the customer bring?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What should the customer do to request delivery?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p4-exam-v1-presentation",
+      "kind": "part4",
+      "questionIds": [
+        "p4-exam-v1-presentation-q1",
+        "p4-exam-v1-presentation-q2",
+        "p4-exam-v1-presentation-q3"
+      ],
+      "segments": [
+        {
+          "text": "Our next speaker is Dr. Elena Park, a transportation researcher. She will discuss how companies can reduce delivery delays by using better route planning. Her presentation will last thirty minutes, followed by a ten-minute question period. Please keep your questions until the end. After the session, printed copies of the presentation will be available at the information desk, not at the exit.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "What is the presentation about?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "When should attendees ask questions?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Where can attendees obtain printed copies?",
+          "voice": "af_heart",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p4-exam-v1-maintenance",
+      "kind": "part4",
+      "questionIds": [
+        "p4-exam-v1-maintenance-q1",
+        "p4-exam-v1-maintenance-q2",
+        "p4-exam-v1-maintenance-q3"
+      ],
+      "segments": [
+        {
+          "text": "Attention, tenants of Riverside Offices. Water service will be temporarily interrupted this Wednesday from two to four in the afternoon while a pipe is replaced. The elevators and electricity will continue to operate normally. Please avoid using the kitchen taps during this period. Drinking water will be available in bottles at reception. If work finishes early, we will send an email to all tenants.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Which service will be interrupted?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "How long is the interruption scheduled to last?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Where can tenants obtain drinking water?",
+          "voice": "bf_emma",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p4-exam-v1-recruitment",
+      "kind": "part4",
+      "questionIds": [
+        "p4-exam-v1-recruitment-q1",
+        "p4-exam-v1-recruitment-q2",
+        "p4-exam-v1-recruitment-q3"
+      ],
+      "segments": [
+        {
+          "text": "The town business fair needs volunteers next Saturday. Volunteers will welcome visitors and help exhibitors find their assigned booths. No sales experience is required. All volunteers must attend a short briefing at eight thirty on the morning of the fair. Lunch will be provided, but you should bring a reusable water bottle. To register, complete the form on the town website by Thursday.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "What will volunteers help exhibitors do?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What must all volunteers attend?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "How should people register?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    },
+    {
+      "id": "p4-exam-v1-lost-property",
+      "kind": "part4",
+      "questionIds": [
+        "p4-exam-v1-lost-property-q1",
+        "p4-exam-v1-lost-property-q2",
+        "p4-exam-v1-lost-property-q3"
+      ],
+      "segments": [
+        {
+          "text": "May I have your attention, please? A black laptop bag has been found in the second-floor conference room. It is now at the security desk near the main entrance. To claim the bag, please describe what is inside and show identification. The security desk is staffed until eight this evening. After that time, call the building office tomorrow morning to arrange collection.",
+          "voice": "af_heart",
+          "pause": 0.5
+        },
+        {
+          "text": "Where was the bag found?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "What must the owner do to claim the bag?",
+          "voice": "am_michael",
+          "pause": 8
+        },
+        {
+          "text": "Until what time is the security desk staffed tonight?",
+          "voice": "am_michael",
+          "pause": 8
+        }
+      ]
+    }
+  ]
+}

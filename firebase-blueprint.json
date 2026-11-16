@@ -5,59 +5,316 @@
       "description": "User profile and global learning stats",
       "type": "object",
       "properties": {
-        "uid": { "type": "string" },
-        "email": { "type": "string" },
-        "displayName": { "type": "string" },
-        "totalWordsLearned": { "type": "integer" },
-        "studyTimeMinutes": { "type": "integer" },
-        "streak": { "type": "integer" },
-        "lastStudyDate": { "type": "string", "format": "date-time" }
+        "uid": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "totalWordsLearned": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "studyTimeMinutes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "streak": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "lastStudyDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "photoURL": {
+          "type": "string",
+          "maxLength": 900000
+        },
+        "dailyGoal": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 50
+        },
+        "history": {
+          "type": "array",
+          "maxItems": 50,
+          "items": {
+            "$ref": "#/entities/session"
+          }
+        }
       },
-      "required": ["uid", "email"]
+      "required": [
+        "uid",
+        "email"
+      ]
     },
     "word": {
       "title": "Vocabulary Word",
       "description": "Information about a specific vocabulary word",
       "type": "object",
       "properties": {
-        "id": { "type": "string" },
-        "topic": { "type": "string" },
-        "word": { "type": "string" },
-        "phonetic": { "type": "string" },
-        "pos": { "type": "string" },
-        "meaning": { "type": "string" },
-        "example": { "type": "string" },
-        "exampleTranslation": { "type": "string" }
+        "id": {
+          "type": "string"
+        },
+        "topic": {
+          "type": "string"
+        },
+        "word": {
+          "type": "string"
+        },
+        "phonetic": {
+          "type": "string"
+        },
+        "pos": {
+          "type": "string"
+        },
+        "meaning": {
+          "type": "string"
+        },
+        "example": {
+          "type": "string"
+        },
+        "exampleTranslation": {
+          "type": "string"
+        }
       },
-      "required": ["word", "meaning", "topic"]
+      "required": [
+        "word",
+        "meaning",
+        "topic"
+      ]
     },
     "userWordProgress": {
       "title": "User Word Progress",
       "description": "Spaced repetition state for a user and a word",
       "type": "object",
       "properties": {
-        "userId": { "type": "string" },
-        "wordId": { "type": "string" },
-        "easiness": { "type": "number" },
-        "interval": { "type": "integer" },
-        "repetitions": { "type": "integer" },
-        "nextReviewDate": { "type": "string", "format": "date-time" },
-        "lastReviewDate": { "type": "string", "format": "date-time" },
-        "status": { "type": "string", "enum": ["new", "learning", "learned", "mastered"] }
+        "userId": {
+          "type": "string"
+        },
+        "wordId": {
+          "type": "string"
+        },
+        "easiness": {
+          "type": "number",
+          "minimum": 1.3,
+          "maximum": 9007199254740991
+        },
+        "interval": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "repetitions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "nextReviewDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "lastReviewDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "lastOperationId": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "wrongCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0
+        }
       },
-      "required": ["userId", "wordId", "nextReviewDate"]
+      "required": [
+        "userId",
+        "wordId",
+        "easiness",
+        "interval",
+        "repetitions",
+        "nextReviewDate"
+      ]
     },
     "dailyActivity": {
       "title": "Daily Activity",
       "description": "Unique vocabulary words studied by a user on a local date",
       "type": "object",
       "properties": {
-        "dateKey": { "type": "string", "format": "date" },
-        "timeZone": { "type": "string" },
-        "wordIds": { "type": "array", "items": { "type": "string" }, "maxItems": 905 },
-        "updatedAt": { "type": "string", "format": "date-time" }
+        "dateKey": {
+          "type": "string",
+          "format": "date"
+        },
+        "timeZone": {
+          "type": "string"
+        },
+        "wordIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 10000
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
       },
-      "required": ["dateKey", "timeZone", "wordIds", "updatedAt"]
+      "required": [
+        "dateKey",
+        "timeZone",
+        "wordIds",
+        "updatedAt"
+      ]
+    },
+    "studyEvent": {
+      "type": "object",
+      "description": "Immutable owner study evidence; SRS snapshots are observed states, not reconstructed history",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "wordId": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "sessionId": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "review",
+            "practice",
+            "quiz",
+            "cloze",
+            "listening"
+          ]
+        },
+        "occurredAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timeZone": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "durationSeconds": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3600
+        },
+        "quality": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "correct": {
+          "type": "boolean"
+        },
+        "before": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "after": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "wordId",
+        "sessionId",
+        "mode",
+        "occurredAt",
+        "timeZone",
+        "durationSeconds",
+        "before",
+        "after"
+      ]
+    },
+    "session": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "review",
+            "quiz"
+          ]
+        },
+        "details": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "score": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "wordIds": {
+          "type": "array",
+          "maxItems": 10000,
+          "items": {
+            "type": "string"
+          }
+        },
+        "studiedCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "correctCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "totalQuestions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "durationSeconds": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "id",
+        "date",
+        "type",
+        "details"
+      ]
+    },
+    "preferences": {
+      "type": "object",
+      "description": "Owner account preferences encoded as validated local-compatible values; device permissions are not synced",
+      "properties": {
+        "values": {
+          "type": "object"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "values",
+        "updatedAt"
+      ]
     }
   },
   "firestore": {
@@ -78,7 +335,19 @@
       "description": "Owner-only unique daily learning activity"
     },
     "/_systemRateLimits/{documentId}": {
-      "description": "Server-only Firebase Admin rate limit counters"
+      "description": "Server-only window/day counters; expiresAt Timestamp TTL"
+    },
+    "/users/{userId}/events/{eventId}": {
+      "schema": "studyEvent",
+      "description": "Owner immutable evidence, idempotent event ID"
+    },
+    "/users/{userId}/sessions/{sessionId}": {
+      "schema": "session",
+      "description": "Owner session completion/partial summary"
+    },
+    "/users/{userId}/settings/preferences": {
+      "schema": "preferences",
+      "description": "Owner custom words, favorites, decks, study size and reminder hour"
     }
   }
 }

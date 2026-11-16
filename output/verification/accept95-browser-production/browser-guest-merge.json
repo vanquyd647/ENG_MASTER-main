@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-16T16:23:12.498Z",
+  "origin": "https://eng-master-main2.vercel.app",
+  "authMethod": "two temporary custom-token identities in isolated browser",
+  "checks": [
+    "guest stores two graded words before authentication",
+    "merge adds guest-only rec-02, preserves account rec-01 repetitions=3, and retains guest copy"
+  ],
+  "cleanup": true,
+  "cloud": {
+    "activeGeneration": "a819b1a0-8e06-4310-903e-df4198a20c29",
+    "progress": 2,
+    "existingRepetitions": 3,
+    "guestOnlyRepetitions": 1,
+    "totalWordsLearned": 2
+  },
+  "providerStep": "custom-token identity fixture; Google consent not exercised",
+  "passed": true
+}

@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-10-13T12:50:55.384Z",
+  "domain": "https://eng-master-main2.vercel.app",
+  "deploymentId": "dpl_9B7x4Z4AQhRdzcZ6ca7nA8YBZGTv",
+  "deploymentUrl": "eng-master-main2-pzq5fodxa-quys-projects-d07a5005.vercel.app",
+  "readyState": "READY",
+  "aliases": [
+    "eng-master-main2-quys-projects-d07a5005.vercel.app"
+  ],
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate",
+      "title": "ENG_MASTER - Học từ vựng tiếng Anh",
+      "assets": [
+        "/assets/index-BqSBNNt4.js",
+        "/assets/vocabulary-pdf-CqKjsr25.js",
+        "/assets/vocabulary-CkEYtlix.js",
+        "/assets/firebase-ByzxM11v.js",
+        "/assets/index-Vmm9bGEp.css"
+      ]
+    },
+    {
+      "path": "/sw.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "no-cache"
+    },
+    {
+      "path": "/manifest.webmanifest",
+      "status": 200,
+      "type": "application/manifest+json; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/assets/qa-missing.js",
+      "status": 404,
+      "type": "text/plain; charset=utf-8",
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/server.cjs",
+      "status": 404,
+      "type": "text/plain; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/api/gemini/explain",
+      "status": 401,
+      "type": "application/json",
+      "cache": "public, max-age=0, must-revalidate",
+      "code": "auth_required"
+    }
+  ]
+}

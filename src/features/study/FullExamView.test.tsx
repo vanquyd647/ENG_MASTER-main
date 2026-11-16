@@ -1,0 +1,32 @@
+import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { afterEach, expect, it, vi } from 'vitest';
+vi.mock('../../lib/firebase',()=>({auth:{currentUser:null},db:{}}));
+vi.mock('../../services/dialogueSpeech',()=>({localEnglishVoices:()=>[{name:'English fixture',lang:'en-US',localService:true}],speakDialogue:vi.fn(),stopDialogue:vi.fn()}));
+import { FullExamView } from './FullExamView';
+import { readExamDraft, startExam } from '../../repositories/examStore';
+import { setActiveOwner } from '../../repositories/ownerStorage';
+import { EXAM_FORM,createExamDraft,examRecords } from '../../domain/fullExam';
+import { questionById } from '../../data/learningContent';
+afterEach(()=>{cleanup();Object.defineProperty(navigator,'locks',{configurable:true,value:undefined});});
+it('captures the selected position before the async lock runs, preserves the question group and hides its transcript',async()=>{
+ localStorage.clear();setActiveOwner('guest');Object.defineProperty(navigator,'locks',{configurable:true,value:{request:(_key:string,action:()=>unknown)=>Promise.resolve().then(action)}});
+ await startExam();render(<FullExamView records={[]} onLeave={vi.fn()} onActiveChange={vi.fn()}/>);
+ fireEvent.change(screen.getByLabelText('Đi tới câu đề 200'),{target:{value:'37'}});
+ await screen.findByRole('heading',{name:'Câu 38/200 · Part 3'});expect(readExamDraft()?.cursor).toBe(37);
+ const q=questionById.get(EXAM_FORM.questionIds[37])!;
+ expect(screen.queryByText(/Hello. I registered for the sales workshop/)).not.toBeInTheDocument();
+ fireEvent.click(screen.getByRole('button',{name:String.fromCharCode(65+q.correctIndex)+'. '+q.options[q.correctIndex]}));
+ await waitFor(()=>expect(readExamDraft()?.answers[q.id]).toBe(q.correctIndex));
+});
+it('shows review by Part and ten questions per page, resetting the page when switching Part',()=>{
+ localStorage.clear();setActiveOwner('guest');
+ const started=Date.parse('2026-10-16T08:00:00Z'),records=examRecords(createExamDraft('test',started),started+7200000);
+ render(<FullExamView records={records} onLeave={vi.fn()} onActiveChange={vi.fn()}/>);
+ fireEvent.click(screen.getByRole('button',{name:/0\/200 đúng/}));
+ expect(document.querySelectorAll('summary')).toHaveLength(6);
+ fireEvent.change(screen.getByLabelText('Phần xem lại đề'),{target:{value:'part7'}});
+ expect(document.querySelectorAll('summary')).toHaveLength(10);expect(screen.getByText('Câu 1–10 / 54 trong phần này')).toBeInTheDocument();
+ fireEvent.click(screen.getByRole('button',{name:'Trang câu tiếp'}));expect(screen.getByText('Câu 11–20 / 54 trong phần này')).toBeInTheDocument();
+ fireEvent.change(screen.getByLabelText('Phần xem lại đề'),{target:{value:'part1'}});
+ expect(document.querySelectorAll('summary')).toHaveLength(6);expect(screen.queryByRole('button',{name:'Trang câu tiếp'})).not.toBeInTheDocument();
+});

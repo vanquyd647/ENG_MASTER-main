@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "p4-exam-v1-lost-property-q3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The security desk is staffed until eight this evening.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-fitness-q1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "lockers must be emptied at the end of each visit",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-fitness-q2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "kept for seven days",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-fitness-q3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Please bring your own padlock",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-course-q1",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "There will be no class on June 12 because the building will be closed for maintenance.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-course-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Classes meet on Tuesdays and Thursdays from 6 to 7:30 p.m... A replacement class will be held on Friday, June 13, at the same time.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-course-q3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "All worksheets are included in the course fee.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-returns-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Opened headphones may be returned only if faulty.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-returns-q2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Online orders can be returned by post or at any branch.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-returns-q3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Customers pay return postage unless the item is defective.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-appointment-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Your workplace health check is scheduled for August 14 at 10:20 a.m. Please arrive 15 minutes early",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-appointment-q2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "the authorization letter supplied by your employer",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-venue-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Cedar Room: up to 40 guests, $260 per half-day... We need a room for 32 people... least expensive room that can accommodate everyone.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-venue-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Cedar Room: up to 40 guests, $260 per half-day.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-venue-q3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "All prices include chairs, tables and a projector.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-venue-q4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "we will arrange lunch ourselves.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-venue-q5",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Send the invoice to our finance team",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-shipment-q1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "We delivered the eight chairs this morning.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-shipment-q2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The two cabinets were not loaded onto the truck because they were still being checked.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-shipment-q3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "They will arrive on October 7",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

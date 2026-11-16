@@ -1,0 +1,27 @@
+{
+  "updatedAt": "2026-10-14T18:02:20.402Z",
+  "userDate": "2026-10-15",
+  "release": "2026.10.14-upgrade.4",
+  "deploymentId": "dpl_HGYFgrQkjJWt3GbUfmUnQAfaGt8o",
+  "production": "https://eng-master-main2.vercel.app",
+  "promoted": true,
+  "unitTests": 93,
+  "emulatorTests": 13,
+  "nativeApiImports": 4,
+  "browserFeatureChecks": 11,
+  "browserDatasetChecks": 5,
+  "hostedAiChecks": 6,
+  "workspaceServices": [
+    "calendar",
+    "tasks",
+    "drive"
+  ],
+  "workspaceCleanup": true,
+  "catalogEntries": 1575,
+  "catalogUnchanged": true,
+  "avatarEnabled": false,
+  "billingChanged": false,
+  "nativeTtlEnabled": false,
+  "gitCommitted": false,
+  "offlineDialogueAudioVerified": true
+}

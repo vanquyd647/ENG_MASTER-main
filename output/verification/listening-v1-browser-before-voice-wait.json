@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-16T06:04:17.672Z",
+  "origin": "http://localhost:3118",
+  "passed": false,
+  "checks": [
+    {
+      "name": "guest and offline pack",
+      "result": {
+        "offlineReady": true,
+        "questions": 184,
+        "nativeEnglishVoices": []
+      }
+    },
+    {
+      "name": "official and supplemental links",
+      "result": {
+        "sourceLinks": [
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample01.html",
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample03.html",
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample04.html",
+          "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson1/3960391.html"
+        ]
+      }
+    }
+  ],
+  "error": "### Error\nError: Voice refresh failed\n"
+}

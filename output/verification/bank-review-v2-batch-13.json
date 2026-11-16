@@ -1,0 +1,140 @@
+{
+  "items": [
+    {
+      "id": "p7-exam-v1-shipment-q4",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Delivery address: 14 River Road, loading bay at rear.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-shipment-q5",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "8 desk chairs at $90 each; 2 filing cabinets at $150 each. (8 * 90 = 720; 2 * 150 = 300; 720 + 300 = 1020 ... wait, let's check: 8 * 90 = 720, 2 * 150 = 300. Total is 1020.)",
+      "issue": "Correct total is $1,020, so option index 2 is correct.",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-volunteer-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Morning volunteers work 8 a.m.–noon ... Please let me know whether I can work the morning shift. Your requested shift and assignment are confirmed.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-volunteer-q2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Volunteers assigned to the information desk...",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-volunteer-q3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Volunteers assigned to the information desk must attend an online briefing on November 6.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-volunteer-q4",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Morning shift starts at 8 a.m. Please report to the north gate 15 minutes before your shift begins (7:45 a.m.).",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-volunteer-q5",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Each volunteer receives a meal voucher.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-conference-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "The data workshop will now take place in Room 8 at its original time.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-conference-q2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "10:15–11:15: Data workshop, Room 5.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-conference-q3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Participants who registered for the data workshop should bring a laptop with the provided sample files downloaded.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-conference-q4",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Marketing panel, Hall B.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-conference-q5",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Updated signs will be displayed beside the registration counter.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-supplier-q1",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Express service: two business days for an additional $60.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-supplier-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Standard: $240, Express: additional $60, Total: $300.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-supplier-q3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "500 full-color brochures for $240.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-supplier-q4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Production will begin once we receive payment today.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p7-exam-v1-supplier-q5",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Please check that the delivery contact number on the order form is correct.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

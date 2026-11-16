@@ -1,0 +1,1842 @@
+{
+  "checkedAt": "2026-10-15T13:11:23.578Z",
+  "origin": "http://localhost:3115",
+  "stage": "local",
+  "fixture": "scripts/fixtures/learning-quality-v1.json",
+  "fixtureSha256": "4377005411af3579938e560c7c4e3f1757d5a3f5ec2f8edfed030a91ebb90046",
+  "threshold": 95,
+  "scope": "Known AI failures and daily vocabulary learning. Not full TOEIC coverage or a learning-effectiveness estimate.",
+  "items": [
+    {
+      "id": "explain-opening",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Vị trí tuyển dụng trong ví dụ nguồn.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "explain",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-01",
+          "word": "opening",
+          "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+          "pos": "noun",
+          "topic": "Recruitment",
+          "example": "There is an opening in the sales department.",
+          "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+        },
+        "lesson": {
+          "summary": "Opening là danh từ chỉ vị trí việc làm còn trống, sự mở cửa hoặc lễ khai trương. Trong bối cảnh tuyển dụng, từ này dùng để chỉ một cơ hội việc làm mới.",
+          "usage": "Thường đứng sau động từ to be hoặc đi kèm với các mạo từ như a, an, the để chỉ sự tồn tại của một vị trí công việc cần tuyển người.",
+          "caution": "Cần phân biệt nghĩa vị trí trống trong tuyển dụng với nghĩa lễ khai trương để dùng đúng ngữ cảnh công sở.",
+          "collocations": [
+            {
+              "phrase": "job opening",
+              "meaning": "vị trí tuyển dụng việc làm"
+            },
+            {
+              "phrase": "grand opening",
+              "meaning": "lễ khai trương lớn"
+            },
+            {
+              "phrase": "career opening",
+              "meaning": "cơ hội nghề nghiệp"
+            }
+          ],
+          "examples": [
+            {
+              "english": "We have an urgent opening for an accountant in our office.",
+              "vietnamese": "Chúng tôi có một vị trí kế toán đang trống cần tuyển gấp tại văn phòng."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "explain-meet",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Đáp ứng yêu cầu, phân biệt với gặp gỡ.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "explain",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-03",
+          "word": "meet",
+          "meaning": "đáp ứng (yêu cầu); gặp, gặp gỡ",
+          "pos": "verb",
+          "topic": "Recruitment",
+          "example": "Please meet the requirements.",
+          "exampleTranslation": "Hãy đáp ứng các yêu cầu."
+        },
+        "lesson": {
+          "summary": "Động từ meet mang nghĩa đáp ứng yêu cầu hoặc gặp gỡ trong môi trường tuyển dụng và công sở.",
+          "usage": "Được dùng trực tiếp với tân ngữ chỉ yêu cầu, tiêu chuẩn hoặc đối tượng cần gặp mà không cần giới từ đi kèm.",
+          "caution": "Tránh nhầm lẫn nghĩa gặp gỡ với nghĩa đáp ứng tiêu chuẩn công việc trong các thông báo tuyển dụng.",
+          "collocations": [
+            {
+              "phrase": "meet requirements",
+              "meaning": "đáp ứng các yêu cầu"
+            },
+            {
+              "phrase": "meet standards",
+              "meaning": "đáp ứng tiêu chuẩn"
+            },
+            {
+              "phrase": "meet a candidate",
+              "meaning": "gặp gỡ ứng viên"
+            }
+          ],
+          "examples": [
+            {
+              "english": "We need to ensure all applicants meet the company standards.",
+              "vietnamese": "Chúng ta cần đảm bảo tất cả ứng viên đáp ứng các tiêu chuẩn của công ty."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "explain-qualified",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Đủ điều kiện/trình độ, tính từ.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "explain",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-04",
+          "word": "qualified",
+          "meaning": "đủ khả năng, trình độ, điều kiện",
+          "pos": "adjective",
+          "topic": "Recruitment",
+          "example": "She is qualified for the position.",
+          "exampleTranslation": "Cô ấy đủ trình độ cho vị trí này."
+        },
+        "lesson": {
+          "summary": "Qualified là tính từ chỉ trạng thái đáp ứng đủ năng lực, bằng cấp hoặc kinh nghiệm cho một công việc hay yêu cầu cụ thể.",
+          "usage": "Thường đứng sau động từ to be hoặc trước danh từ để mô tả nhân sự đáp ứng tốt tiêu chí tuyển dụng. Hay đi kèm với giới từ for.",
+          "caution": "Cần phân biệt với danh từ qualification (chứng chỉ, văn bằng) để dùng đúng từ loại trong câu.",
+          "collocations": [
+            {
+              "phrase": "fully qualified",
+              "meaning": "đủ hoàn toàn bằng cấp và năng lực"
+            },
+            {
+              "phrase": "well qualified",
+              "meaning": "có chuyên môn rất tốt"
+            },
+            {
+              "phrase": "qualified candidate",
+              "meaning": "ứng viên đủ điều kiện"
+            }
+          ],
+          "examples": [
+            {
+              "english": "Only qualified applicants will be invited to the final interview.",
+              "vietnamese": "Chỉ những ứng viên đủ điều kiện mới được mời vào vòng phỏng vấn cuối cùng."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "explain-invoice",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Hóa đơn yêu cầu thanh toán.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "explain",
+        "source": {
+          "kind": "catalog",
+          "wordId": "tra-19",
+          "word": "invoice",
+          "meaning": "hoá đơn",
+          "pos": "noun",
+          "topic": "Trading",
+          "example": "Please read the invoice carefully.",
+          "exampleTranslation": "Hãy đọc hoá đơn cẩn thận."
+        },
+        "lesson": {
+          "summary": "Invoice là danh từ chỉ hóa đơn liệt kê các mặt hàng, dịch vụ và số tiền cần thanh toán trong giao dịch thương mại.",
+          "usage": "Thường dùng trong bối cảnh kế toán, mua sắm hoặc thanh toán khi yêu cầu khách hàng trả tiền cho sản phẩm hoặc dịch vụ đã cung cấp.",
+          "caution": "Phân biệt invoice (hóa đơn yêu cầu trả tiền) với receipt (biên lai xác nhận đã thanh toán tiền).",
+          "collocations": [
+            {
+              "phrase": "issue an invoice",
+              "meaning": "phát hành hóa đơn"
+            },
+            {
+              "phrase": "pay an invoice",
+              "meaning": "thanh toán hóa đơn"
+            },
+            {
+              "phrase": "send an invoice",
+              "meaning": "gửi hóa đơn"
+            }
+          ],
+          "examples": [
+            {
+              "english": "The supplier sent the invoice to our accounting department today.",
+              "vietnamese": "Nhà cung cấp đã gửi hóa đơn đến phòng kế toán của chúng tôi hôm nay."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "explain-dependence",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Sự phụ thuộc, phân biệt độc lập.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "explain",
+        "source": {
+          "kind": "catalog",
+          "wordId": "pdf-toeic-0280",
+          "word": "dependence",
+          "meaning": "sự phụ thuộc",
+          "pos": "noun",
+          "topic": "TOEIC bổ sung (PDF)",
+          "example": "We discussed the dependence at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về sự phụ thuộc tại cuộc họp."
+        },
+        "lesson": {
+          "summary": "Dependence là danh từ chỉ sự phụ thuộc hoặc dựa dẫm vào người hoặc vật khác trong công việc.",
+          "usage": "Thường đứng sau giới từ như on hoặc upon để chỉ đối tượng bị phụ thuộc vào.",
+          "caution": "Cần phân biệt với dependent là tính từ để tránh dùng sai từ loại trong câu.",
+          "collocations": [
+            {
+              "phrase": "reduce dependence",
+              "meaning": "giảm sự phụ thuộc"
+            },
+            {
+              "phrase": "heavy dependence",
+              "meaning": "sự phụ thuộc lớn"
+            },
+            {
+              "phrase": "economic dependence",
+              "meaning": "sự phụ thuộc kinh tế"
+            }
+          ],
+          "examples": [
+            {
+              "english": "The company wants to reduce its dependence on a single supplier.",
+              "vietnamese": "Công ty muốn giảm sự phụ thuộc vào một nhà cung cấp duy nhất."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "simplify-opening",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Vị trí tuyển dụng trong ví dụ nguồn.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "simplify",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-01",
+          "word": "opening",
+          "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+          "pos": "noun",
+          "topic": "Recruitment",
+          "example": "There is an opening in the sales department.",
+          "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+        },
+        "lesson": {
+          "summary": "Opening nghĩa là vị trí trống trong công ty, dùng khi tuyển dụng nhân sự.",
+          "usage": "Dùng danh từ opening để chỉ chỗ làm việc còn trống trong phòng ban.",
+          "caution": "Chỉ dùng với nghĩa vị trí công việc trống trong tuyển dụng, không dùng cho nghĩa khai trương.",
+          "collocations": [
+            {
+              "phrase": "job opening",
+              "meaning": "vị trí việc làm trống"
+            }
+          ],
+          "examples": [
+            {
+              "english": "There is a new job opening in marketing.",
+              "vietnamese": "Có một vị trí trống mới ở phòng marketing."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "simplify-meet",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Đáp ứng yêu cầu, phân biệt với gặp gỡ.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "simplify",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-03",
+          "word": "meet",
+          "meaning": "đáp ứng (yêu cầu); gặp, gặp gỡ",
+          "pos": "verb",
+          "topic": "Recruitment",
+          "example": "Please meet the requirements.",
+          "exampleTranslation": "Hãy đáp ứng các yêu cầu."
+        },
+        "lesson": {
+          "summary": "meet (v): đáp ứng yêu cầu hoặc tiêu chuẩn trong công việc.",
+          "usage": "Dùng khi nói về việc làm thỏa mãn một điều kiện hoặc yêu cầu nào đó.",
+          "caution": "Trong ngữ cảnh tuyển dụng, từ này tập trung vào việc thỏa mãn điều kiện chứ không chỉ là gặp gỡ thông thường.",
+          "collocations": [
+            {
+              "phrase": "meet requirements",
+              "meaning": "đáp ứng yêu cầu"
+            }
+          ],
+          "examples": [
+            {
+              "english": "Please meet the requirements.",
+              "vietnamese": "Hãy đáp ứng các yêu cầu."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "simplify-qualified",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Đủ điều kiện/trình độ, tính từ.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "simplify",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-04",
+          "word": "qualified",
+          "meaning": "đủ khả năng, trình độ, điều kiện",
+          "pos": "adjective",
+          "topic": "Recruitment",
+          "example": "She is qualified for the position.",
+          "exampleTranslation": "Cô ấy đủ trình độ cho vị trí này."
+        },
+        "lesson": {
+          "summary": "Qualified la tinh tu chi nguoi co du trinh do hoac ky nang de lam mot cong việc nao do.",
+          "usage": "Dung sau dong tu tobe hoac truoc danh tu de mieu ta nang lực cua ung vien trong tuyen dung.",
+          "caution": "Chi dung trong ngu cảnh nang lực va bang cap cong viec, khong dung cho cam xuc.",
+          "collocations": [
+            {
+              "phrase": "well qualified",
+              "meaning": "co trinh do rat tot"
+            }
+          ],
+          "examples": [
+            {
+              "english": "She is qualified for the position.",
+              "vietnamese": "Cô ấy đủ trình độ cho vị trí này."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "simplify-invoice",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Hóa đơn yêu cầu thanh toán.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "simplify",
+        "source": {
+          "kind": "catalog",
+          "wordId": "tra-19",
+          "word": "invoice",
+          "meaning": "hoá đơn",
+          "pos": "noun",
+          "topic": "Trading",
+          "example": "Please read the invoice carefully.",
+          "exampleTranslation": "Hãy đọc hoá đơn cẩn thận."
+        },
+        "lesson": {
+          "summary": "Hoá đơn là giấy ghi tiền hàng và dịch vụ phải trả.",
+          "usage": "Dùng trong mua bán thương mại khi thanh toán tiền.",
+          "caution": "Chỉ dùng trong ngữ cảnh mua bán, không dùng trong giao tiếp thông thường.",
+          "collocations": [
+            {
+              "phrase": "pay the invoice",
+              "meaning": "thanh toán hoá đơn"
+            }
+          ],
+          "examples": [
+            {
+              "english": "Please read the invoice carefully.",
+              "vietnamese": "Hãy đọc hoá đơn cẩn thận."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "simplify-dependence",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Sự phụ thuộc, phân biệt độc lập.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "simplify",
+        "source": {
+          "kind": "catalog",
+          "wordId": "pdf-toeic-0280",
+          "word": "dependence",
+          "meaning": "sự phụ thuộc",
+          "pos": "noun",
+          "topic": "TOEIC bổ sung (PDF)",
+          "example": "We discussed the dependence at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về sự phụ thuộc tại cuộc họp."
+        },
+        "lesson": {
+          "summary": "dependence (danh từ): sự phụ thuộc, dựa vào người hoặc vật khác.",
+          "usage": "Dùng để chỉ việc một bên cần sự hỗ trợ hoặc tài nguyên từ bên khác trong công việc.",
+          "caution": "Cần phân biệt với independent là tính từ độc lập.",
+          "collocations": [
+            {
+              "phrase": "reduce dependence",
+              "meaning": "giảm sự phụ thuộc"
+            }
+          ],
+          "examples": [
+            {
+              "english": "We discussed the dependence at the meeting.",
+              "vietnamese": "Chúng tôi thảo luận về sự phụ thuộc tại cuộc họp."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "examples-opening",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Vị trí tuyển dụng trong ví dụ nguồn.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "examples",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-01",
+          "word": "opening",
+          "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+          "pos": "noun",
+          "topic": "Recruitment",
+          "example": "There is an opening in the sales department.",
+          "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+        },
+        "lesson": {
+          "summary": "Danh từ opening trong tuyển dụng chỉ vị trí công việc còn trống đang cần tuyển nhân sự mới.",
+          "usage": "Dùng để thông báo hoặc tìm kiếm cơ hội việc làm khi một bộ phận thiếu nhân sự.",
+          "caution": "Cần phân biệt nghĩa vị trí trống trong tuyển dụng với nghĩa sự khai trương hay lỗ hổng trong ngữ cảnh khác.",
+          "collocations": [
+            {
+              "phrase": "job opening",
+              "meaning": "vị trí việc làm trống"
+            }
+          ],
+          "examples": [
+            {
+              "english": "Our company has an opening for a marketing manager.",
+              "vietnamese": "Công ty chúng tôi có một vị trí trống cho quản lý tiếp thị."
+            },
+            {
+              "english": "HR just posted a new opening on the portal.",
+              "vietnamese": "Phòng nhân sự vừa đăng một vị trí trống mới lên cổng thông tin."
+            },
+            {
+              "english": "She applied for the opening in accounting.",
+              "vietnamese": "Cô ấy đã ứng tuyển vào vị trí trống bên bộ phận kế toán."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "examples-meet",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Đáp ứng yêu cầu, phân biệt với gặp gỡ.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "examples",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-03",
+          "word": "meet",
+          "meaning": "đáp ứng (yêu cầu); gặp, gặp gỡ",
+          "pos": "verb",
+          "topic": "Recruitment",
+          "example": "Please meet the requirements.",
+          "exampleTranslation": "Hãy đáp ứng các yêu cầu."
+        },
+        "lesson": {
+          "summary": "Từ meet dùng ở đây với nghĩa đáp ứng các tiêu chuẩn tuyển dụng hoặc yêu cầu công việc.",
+          "usage": "Thường đứng trước các danh từ chỉ tiêu chí, yêu cầu hoặc điều kiện trong văn bản nhân sự.",
+          "caution": "Cần phân biệt nghĩa đáp ứng yêu cầu tuyển dụng với nghĩa gặp gỡ thông thường.",
+          "collocations": [
+            {
+              "phrase": "meet the criteria",
+              "meaning": "đáp ứng tiêu chí"
+            }
+          ],
+          "examples": [
+            {
+              "english": "All candidates must meet the qualification standards.",
+              "vietnamese": "Tất cả các ứng viên phải đáp ứng các tiêu chuẩn về trình độ."
+            },
+            {
+              "english": "The applicant failed to meet the necessary deadlines.",
+              "vietnamese": "Người nộp đơn không đáp ứng được thời hạn cần thiết."
+            },
+            {
+              "english": "We need to meet the company expectations for this role.",
+              "vietnamese": "Chúng ta cần đáp ứng kỳ vọng của công ty cho vị trí này."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "examples-qualified",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Đủ điều kiện/trình độ, tính từ.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "examples",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-04",
+          "word": "qualified",
+          "meaning": "đủ khả năng, trình độ, điều kiện",
+          "pos": "adjective",
+          "topic": "Recruitment",
+          "example": "She is qualified for the position.",
+          "exampleTranslation": "Cô ấy đủ trình độ cho vị trí này."
+        },
+        "lesson": {
+          "summary": "Qualified là tính từ chỉ trạng thái đạt chuẩn chuyên môn hoặc điều kiện cần thiết cho một công việc cụ thể.",
+          "usage": "Dùng tính từ qualified đứng sau động từ to be hoặc trước danh từ để mô tả nhân sự đáp ứng đủ năng lực yêu cầu.",
+          "caution": "Cần phân biệt với nghĩa bị hạn chế trong một số ngữ cảnh pháp lý để tránh dùng sai văn phong tuyển dụng.",
+          "collocations": [
+            {
+              "phrase": "fully qualified",
+              "meaning": "đạt toàn bộ tiêu chuẩn chuyên môn"
+            }
+          ],
+          "examples": [
+            {
+              "english": "The company hired a qualified engineer to manage the new project.",
+              "vietnamese": "Công ty đã thuê một kỹ sư đủ trình độ để quản lý dự án mới."
+            },
+            {
+              "english": "Only qualified candidates will be invited for the final interview.",
+              "vietnamese": "Chỉ những ứng viên đủ điều kiện mới được mời phỏng vấn vòng cuối."
+            },
+            {
+              "english": "He proved that he is qualified to lead the marketing department.",
+              "vietnamese": "Anh ấy đã chứng minh rằng mình đủ năng lực để lãnh đạo phòng tiếp thị."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "examples-invoice",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Hóa đơn yêu cầu thanh toán.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "examples",
+        "source": {
+          "kind": "catalog",
+          "wordId": "tra-19",
+          "word": "invoice",
+          "meaning": "hoá đơn",
+          "pos": "noun",
+          "topic": "Trading",
+          "example": "Please read the invoice carefully.",
+          "exampleTranslation": "Hãy đọc hoá đơn cẩn thận."
+        },
+        "lesson": {
+          "summary": "Invoice là danh từ chỉ hóa đơn thương mại trong giao dịch mua bán và thanh toán hàng hóa.",
+          "usage": "Dùng khi yêu cầu thanh toán, kiểm tra chi phí hoặc gửi chứng từ tài chính cho khách hàng hoặc nhà cung cấp.",
+          "caution": "Chỉ dùng trong ngữ cảnh tài chính thương mại, không dùng khi nói về biên lai bán lẻ thông thường.",
+          "collocations": [
+            {
+              "phrase": "pay an invoice",
+              "meaning": "thanh toán hóa đơn"
+            }
+          ],
+          "examples": [
+            {
+              "english": "The accounting department will process the invoice tomorrow morning.",
+              "vietnamese": "Phòng kế toán sẽ xử lý hóa đơn vào sáng mai."
+            },
+            {
+              "english": "Please send the signed invoice to the vendor before Friday.",
+              "vietnamese": "Vui lòng gửi hóa đơn đã ký cho nhà cung cấp trước thứ Sáu."
+            },
+            {
+              "english": "We checked every item on the invoice to ensure accuracy.",
+              "vietnamese": "Chúng tôi đã kiểm tra từng mục trên hóa đơn để đảm bảo tính chính xác."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "examples-dependence",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Sự phụ thuộc, phân biệt độc lập.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "examples",
+        "source": {
+          "kind": "catalog",
+          "wordId": "pdf-toeic-0280",
+          "word": "dependence",
+          "meaning": "sự phụ thuộc",
+          "pos": "noun",
+          "topic": "TOEIC bổ sung (PDF)",
+          "example": "We discussed the dependence at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về sự phụ thuộc tại cuộc họp."
+        },
+        "lesson": {
+          "summary": "Từ dependence là danh từ chỉ sự phụ thuộc của một đối tượng vào người hoặc vật khác trong môi trường công việc.",
+          "usage": "Thường đứng sau mạo từ hoặc giới từ để chỉ tình trạng cần sự hỗ trợ hoặc nguồn lực từ bên ngoài.",
+          "caution": "Cần phân biệt với tính từ dependent để dùng đúng vị trí danh từ trong câu TOEIC.",
+          "collocations": [
+            {
+              "phrase": "reduce dependence",
+              "meaning": "giảm sự phụ thuộc"
+            }
+          ],
+          "examples": [
+            {
+              "english": "The company aims to reduce its dependence on a single supplier.",
+              "vietnamese": "Công ty đặt mục tiêu giảm sự phụ thuộc vào một nhà cung cấp duy nhất."
+            },
+            {
+              "english": "Our team is trying to lower our dependence on legacy software.",
+              "vietnamese": "Nhóm của chúng tôi đang cố gắng giảm bớt sự phụ thuộc vào phần mềm cũ."
+            },
+            {
+              "english": "Management wants to decrease the department's dependence on temporary staff.",
+              "vietnamese": "Ban quản lý muốn giảm bớt sự phụ thuộc của bộ phận vào nhân viên tạm thời."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "practice-opening",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Vị trí tuyển dụng trong ví dụ nguồn.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "practice",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-01",
+          "word": "opening",
+          "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+          "pos": "noun",
+          "topic": "Recruitment",
+          "example": "There is an opening in the sales department.",
+          "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+        },
+        "lesson": {
+          "summary": "Danh từ opening dùng trong tuyển dụng chỉ vị trí công việc còn trống cần tuyển nhân sự mới.",
+          "usage": "Dùng opening để thông báo hoặc tìm kiếm vị trí việc làm chưa có người đảm nhận trong doanh nghiệp.",
+          "caution": "Từ này còn nghĩa là sự mở cửa hoặc lễ khai trương, nhưng trong ngữ cảnh tuyển dụng chỉ tập trung vào vị trí trống.",
+          "collocations": [
+            {
+              "phrase": "job opening",
+              "meaning": "vị trí việc làm trống"
+            }
+          ],
+          "examples": [
+            {
+              "english": "There is an opening in the sales department.",
+              "vietnamese": "Phòng bán hàng có một vị trí còn trống."
+            }
+          ],
+          "questions": [
+            {
+              "wordId": "rec-01",
+              "type": "fill",
+              "questionText": "There is an _____ in the sales department.",
+              "options": [],
+              "answer": "opening",
+              "hint": "Điền danh từ chỉ vị trí việc làm còn trống.",
+              "translation": "Phòng bán hàng có một vị trí còn trống.",
+              "explanation": "Đáp án là opening vì câu đề cập đến một vị trí công việc đang cần tuyển dụng trong phòng kinh doanh."
+            }
+          ]
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "practice-meet",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Đáp ứng yêu cầu, phân biệt với gặp gỡ.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "practice",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-03",
+          "word": "meet",
+          "meaning": "đáp ứng (yêu cầu); gặp, gặp gỡ",
+          "pos": "verb",
+          "topic": "Recruitment",
+          "example": "Please meet the requirements.",
+          "exampleTranslation": "Hãy đáp ứng các yêu cầu."
+        },
+        "lesson": {
+          "summary": "Từ meet đóng vai trò là động từ mang nghĩa đáp ứng các yêu cầu hoặc tiêu chuẩn trong công việc.",
+          "usage": "Được dùng trực tiếp với tân ngữ là các danh từ chỉ yêu cầu, tiêu chuẩn hoặc điều kiện mà một bên cần đạt được.",
+          "caution": "Trong bối cảnh tuyển dụng, từ này chủ yếu mang nghĩa đáp ứng tiêu chuẩn chứ không chỉ đơn thuần là gặp gỡ.",
+          "collocations": [
+            {
+              "phrase": "meet requirements",
+              "meaning": "đáp ứng các yêu cầu"
+            }
+          ],
+          "examples": [
+            {
+              "english": "Please meet the requirements.",
+              "vietnamese": "Hãy đáp ứng các yêu cầu."
+            }
+          ],
+          "questions": [
+            {
+              "wordId": "rec-03",
+              "type": "fill",
+              "questionText": "Please _____ the requirements.",
+              "options": [],
+              "answer": "meet",
+              "hint": "Điền động từ mang nghĩa đáp ứng yêu cầu.",
+              "translation": "Hãy đáp ứng các yêu cầu.",
+              "explanation": "Đáp án là meet vì kết hợp với requirements tạo thành cụm từ mang nghĩa đáp ứng yêu cầu."
+            }
+          ]
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "practice-qualified",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Đủ điều kiện/trình độ, tính từ.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "practice",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-04",
+          "word": "qualified",
+          "meaning": "đủ khả năng, trình độ, điều kiện",
+          "pos": "adjective",
+          "topic": "Recruitment",
+          "example": "She is qualified for the position.",
+          "exampleTranslation": "Cô ấy đủ trình độ cho vị trí này."
+        },
+        "lesson": {
+          "summary": "Từ qualified dùng để chỉ việc đáp ứng đầy đủ yêu cầu năng lực hoặc bằng cấp cho một công việc.",
+          "usage": "Tính từ đứng sau động từ to be hoặc trước danh từ để mô tả người đạt chuẩn tuyển dụng.",
+          "caution": "Cần phân biệt với các tính từ năng lực khác, ở đây dùng trong tuyển dụng và công việc.",
+          "collocations": [
+            {
+              "phrase": "fully qualified",
+              "meaning": "đạt đầy đủ mọi tiêu chuẩn"
+            }
+          ],
+          "examples": [
+            {
+              "english": "She is qualified for the position.",
+              "vietnamese": "Cô ấy đủ trình độ cho vị trí này."
+            }
+          ],
+          "questions": [
+            {
+              "wordId": "rec-04",
+              "type": "fill",
+              "questionText": "She is _____ for the position.",
+              "options": [],
+              "answer": "qualified",
+              "hint": "Điền tính từ chỉ sự đủ trình độ.",
+              "translation": "Cô ấy đủ trình độ cho vị trí này.",
+              "explanation": "Chỗ trống cần tính từ qualified đi sau động từ to be để tạo cụm chỉ năng lực."
+            }
+          ]
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "practice-invoice",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Hóa đơn yêu cầu thanh toán.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "practice",
+        "source": {
+          "kind": "catalog",
+          "wordId": "tra-19",
+          "word": "invoice",
+          "meaning": "hoá đơn",
+          "pos": "noun",
+          "topic": "Trading",
+          "example": "Please read the invoice carefully.",
+          "exampleTranslation": "Hãy đọc hoá đơn cẩn thận."
+        },
+        "lesson": {
+          "summary": "Invoice là danh từ chỉ hóa đơn liệt kê các mặt hàng và chi phí cần thanh toán trong giao dịch thương mại.",
+          "usage": "Dùng từ này khi đề cập đến yêu cầu thanh toán hoặc chứng từ mua bán hàng hóa, dịch vụ trong môi trường công sở.",
+          "caution": "Cần phân biệt invoice (hóa đơn thanh toán) với receipt (biên lai xác nhận đã trả tiền).",
+          "collocations": [
+            {
+              "phrase": "send an invoice",
+              "meaning": "gửi hóa đơn"
+            }
+          ],
+          "examples": [
+            {
+              "english": "Please read the invoice carefully.",
+              "vietnamese": "Hãy đọc hoá đơn cẩn thận."
+            }
+          ],
+          "questions": [
+            {
+              "wordId": "tra-19",
+              "type": "fill",
+              "questionText": "Please read the _____ carefully before making the payment.",
+              "options": [],
+              "answer": "invoice",
+              "hint": "Điền từ tiếng Anh chỉ chứng từ yêu cầu thanh toán tiền mua hàng.",
+              "translation": "Hãy đọc kỹ hóa đơn trước khi thực hiện thanh toán.",
+              "explanation": "Đáp án là invoice vì đây là danh từ phù hợp trong ngữ cảnh thương mại yêu cầu kiểm tra hóa đơn trước khi trả tiền."
+            }
+          ]
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "practice-dependence",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Sự phụ thuộc, phân biệt độc lập.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "practice",
+        "source": {
+          "kind": "catalog",
+          "wordId": "pdf-toeic-0280",
+          "word": "dependence",
+          "meaning": "sự phụ thuộc",
+          "pos": "noun",
+          "topic": "TOEIC bổ sung (PDF)",
+          "example": "We discussed the dependence at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về sự phụ thuộc tại cuộc họp."
+        },
+        "lesson": {
+          "summary": "Dependence là danh từ chỉ trạng thái cần sự hỗ trợ hoặc dựa dẫm vào người hoặc vật khác trong môi trường công việc.",
+          "usage": "Thường đứng sau mạo từ hoặc giới từ trong câu để chỉ mối quan hệ phụ thuộc giữa các yếu tố.",
+          "caution": "Cần phân biệt với tính từ dependent và động từ depend.",
+          "collocations": [
+            {
+              "phrase": "reduce dependence",
+              "meaning": "giảm sự phụ thuộc"
+            }
+          ],
+          "examples": [
+            {
+              "english": "The company aims to reduce its dependence on a single supplier.",
+              "vietnamese": "Công ty đặt mục tiêu giảm bớt sự phụ thuộc vào một nhà cung cấp duy nhất."
+            }
+          ],
+          "questions": [
+            {
+              "wordId": "pdf-toeic-0280",
+              "type": "fill",
+              "questionText": "We discussed the _____ at the meeting.",
+              "options": [],
+              "answer": "dependence",
+              "hint": "Danh từ chỉ sự dựa dẫm.",
+              "translation": "Chúng tôi thảo luận về sự phụ thuộc tại cuộc họp.",
+              "explanation": "Cần một danh từ đi sau mạo từ the để làm tân ngữ cho động từ discussed."
+            }
+          ]
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "compare-opening-vacancy",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Phân biệt hai nghĩa theo nguồn; không kết luận cho mọi ngữ cảnh.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "compare",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-01",
+          "word": "opening",
+          "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+          "pos": "noun",
+          "topic": "Recruitment",
+          "example": "There is an opening in the sales department.",
+          "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+        },
+        "comparison": {
+          "kind": "catalog",
+          "wordId": "pdf-toeic-0959",
+          "word": "vacancy",
+          "meaning": "vị trí bỏ trống",
+          "pos": "noun",
+          "topic": "TOEIC bổ sung (PDF)",
+          "example": "We discussed the vacancy at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về vị trí bỏ trống tại cuộc họp."
+        },
+        "lesson": {
+          "summary": "Opening chỉ vị trí trống trong công việc hoặc sự mở cửa, trong khi vacancy chuyên chỉ vị trí việc làm bỏ trống chưa có người làm.",
+          "usage": "Opening dùng cấu trúc have an opening hoặc position opening. Vacancy dùng cấu trúc fill a vacancy hoặc there is a vacancy.",
+          "caution": "So sánh này chỉ áp dụng cho nghĩa và ví dụ đang học. Khả năng thay thế từ cần được xét trong từng câu cụ thể.",
+          "collocations": [
+            {
+              "phrase": "job opening",
+              "meaning": "vị trí việc làm trống"
+            },
+            {
+              "phrase": "fill a vacancy",
+              "meaning": "lấp đầy một vị trí trống"
+            }
+          ],
+          "examples": [
+            {
+              "english": "We announced a new opening in the marketing team.",
+              "vietnamese": "Chúng tôi thông báo một vị trí trống mới trong nhóm tiếp thị."
+            },
+            {
+              "english": "The company needs to fill a vacancy soon.",
+              "vietnamese": "Công ty cần lấp đầy một vị trí trống sớm."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "compare-applicant-application",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Phân biệt hai nghĩa theo nguồn; không kết luận cho mọi ngữ cảnh.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "compare",
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-02",
+          "word": "applicant",
+          "meaning": "người ứng tuyển, ứng viên",
+          "pos": "noun",
+          "topic": "Recruitment",
+          "example": "The applicant answered our questions.",
+          "exampleTranslation": "Người ứng tuyển đã trả lời các câu hỏi của chúng tôi."
+        },
+        "comparison": {
+          "kind": "catalog",
+          "wordId": "pdf-toeic-0066",
+          "word": "application",
+          "meaning": "ứng dụng, sự áp dụng",
+          "pos": "noun",
+          "topic": "TOEIC bổ sung (PDF)",
+          "example": "We discussed the application at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về ứng dụng tại cuộc họp."
+        },
+        "lesson": {
+          "summary": "applicant chỉ người nộp hồ sơ xin việc, còn application chỉ đơn xin việc hoặc phần mềm ứng dụng.",
+          "usage": "Applicant là danh từ chỉ người, thường làm chủ ngữ hoặc tân ngữ (the applicant). Application là danh từ chỉ vật hoặc tài liệu, thường đi với các động từ như submit, review.",
+          "caution": "So sánh này chỉ áp dụng cho nghĩa và ví dụ đang học. Khả năng thay thế từ cần được xét trong từng câu cụ thể.",
+          "collocations": [
+            {
+              "phrase": "qualified applicant",
+              "meaning": "ứng viên có năng lực"
+            },
+            {
+              "phrase": "job application",
+              "meaning": "đơn xin việc"
+            }
+          ],
+          "examples": [
+            {
+              "english": "The qualified applicant was invited for an interview.",
+              "vietnamese": "Ứng viên có năng lực đã được mời phỏng vấn."
+            },
+            {
+              "english": "Please submit your job application before Friday.",
+              "vietnamese": "Vui lòng nộp đơn xin việc của bạn trước thứ Sáu."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "compare-dependence-independence",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Phân biệt hai nghĩa theo nguồn; không kết luận cho mọi ngữ cảnh.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "compare",
+        "source": {
+          "kind": "catalog",
+          "wordId": "pdf-toeic-0280",
+          "word": "dependence",
+          "meaning": "sự phụ thuộc",
+          "pos": "noun",
+          "topic": "TOEIC bổ sung (PDF)",
+          "example": "We discussed the dependence at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về sự phụ thuộc tại cuộc họp."
+        },
+        "comparison": {
+          "kind": "catalog",
+          "wordId": "rot-09",
+          "word": "independence",
+          "meaning": "sự độc lập, nền độc lập",
+          "pos": "noun",
+          "topic": "Job Rotation",
+          "example": "We discussed the independence at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về sự độc lập tại cuộc họp."
+        },
+        "lesson": {
+          "summary": "Dependence chỉ sự dựa dẫm hoặc phụ thuộc vào người khác hoặc cái gì đó, trong khi independence chỉ sự tự lập và không phụ thuộc vào ai.",
+          "usage": "Dependence thường đi với giới từ on hoặc upon để chỉ đối tượng bị phụ thuộc. Independence cũng dùng giới từ of hoặc from để chỉ việc tách rời sự kiểm soát.",
+          "caution": "So sánh này chỉ áp dụng cho nghĩa và ví dụ đang học. Khả năng thay thế từ cần được xét trong từng câu cụ thể.",
+          "collocations": [
+            {
+              "phrase": "reduce dependence",
+              "meaning": "giảm sự phụ thuộc"
+            },
+            {
+              "phrase": "gain independence",
+              "meaning": "giành được sự độc lập"
+            }
+          ],
+          "examples": [
+            {
+              "english": "We discussed the dependence at the meeting.",
+              "vietnamese": "Chúng tôi thảo luận về sự phụ thuộc tại cuộc họp."
+            },
+            {
+              "english": "We discussed the independence at the meeting.",
+              "vietnamese": "Chúng tôi thảo luận về sự độc lập tại cuộc họp."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "compare-invoice-receipt",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Phân biệt hai nghĩa theo nguồn; không kết luận cho mọi ngữ cảnh.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "compare",
+        "source": {
+          "kind": "catalog",
+          "wordId": "tra-19",
+          "word": "invoice",
+          "meaning": "hoá đơn",
+          "pos": "noun",
+          "topic": "Trading",
+          "example": "Please read the invoice carefully.",
+          "exampleTranslation": "Hãy đọc hoá đơn cẩn thận."
+        },
+        "comparison": {
+          "kind": "catalog",
+          "wordId": "sho-22",
+          "word": "receipt",
+          "meaning": "biên lai",
+          "pos": "noun",
+          "topic": "Shopping",
+          "example": "We discussed the receipt at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về biên lai tại cuộc họp."
+        },
+        "lesson": {
+          "summary": "Invoice la hoa don doi tien cho hang hoa hoac dich vu da cung cap, trong khi receipt la bien lai xac nhan khoan thanh toan da hoan tat.",
+          "usage": "Invoice thuong duoc dung voi dong tu send hoac issue (gui/phat hanh hoa don). Receipt thuong di voi dong tu get hoac keep (nhan/giu bien lai).",
+          "caution": "So sánh này chỉ áp dụng cho nghĩa và ví dụ đang học. Khả năng thay thế từ cần được xét trong từng câu cụ thể.",
+          "collocations": [
+            {
+              "phrase": "issue an invoice",
+              "meaning": "phat hanh hoa don"
+            },
+            {
+              "phrase": "keep a receipt",
+              "meaning": "giu bien lai"
+            }
+          ],
+          "examples": [
+            {
+              "english": "Please read the invoice carefully.",
+              "vietnamese": "Hay doc hoa don can than."
+            },
+            {
+              "english": "We discussed the receipt at the meeting.",
+              "vietnamese": "Chung toi thao luan ve bien lai tai cuoc hop."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "compare-calculation-correspondence",
+      "automatedPassed": true,
+      "sourceOnly": false,
+      "expectedSense": "Phân biệt hai nghĩa theo nguồn; không kết luận cho mọi ngữ cảnh.",
+      "response": {
+        "version": "toeic-vi-v4",
+        "action": "compare",
+        "source": {
+          "kind": "catalog",
+          "wordId": "pdf-toeic-0145",
+          "word": "calculation",
+          "meaning": "sự tính toán, phép tính",
+          "pos": "noun",
+          "topic": "TOEIC bổ sung (PDF)",
+          "example": "We discussed the calculation at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về sự tính toán tại cuộc họp."
+        },
+        "comparison": {
+          "kind": "catalog",
+          "wordId": "ttp-30",
+          "word": "correspondence",
+          "meaning": "thư từ, quan hệ thư từ",
+          "pos": "noun",
+          "topic": "Trading Transport",
+          "example": "Please read the correspondence carefully.",
+          "exampleTranslation": "Hãy đọc thư từ cẩn thận."
+        },
+        "lesson": {
+          "summary": "Calculation chỉ sự tính toán hoặc phép tính số liệu, trong khi correspondence chỉ thư từ hoặc sự trao đổi thư tín trong công việc.",
+          "usage": "Calculation dùng danh từ đếm được/không đếm được với giới từ of hoặc for để chỉ thao tác toán học hoặc ước tính. Correspondence dùng danh từ không đếm được để chỉ tài liệu thư từ, công văn trao đổi.",
+          "caution": "So sánh này chỉ áp dụng cho nghĩa và ví dụ đang học. Khả năng thay thế từ cần được xét trong từng câu cụ thể.",
+          "collocations": [
+            {
+              "phrase": "make a calculation",
+              "meaning": "thực hiện một phép tính"
+            },
+            {
+              "phrase": "business correspondence",
+              "meaning": "thư từ giao dịch kinh doanh"
+            }
+          ],
+          "examples": [
+            {
+              "english": "We discussed the calculation at the meeting.",
+              "vietnamese": "Chúng tôi thảo luận về sự tính toán tại cuộc họp."
+            },
+            {
+              "english": "Please read the correspondence carefully.",
+              "vietnamese": "Hãy đọc thư từ cẩn thận."
+            }
+          ],
+          "questions": []
+        },
+        "quality": {
+          "mode": "ai"
+        }
+      }
+    },
+    {
+      "id": "quiz-10-targets:pdf-toeic-0043",
+      "automatedPassed": true,
+      "response": {
+        "wordId": "pdf-toeic-0043",
+        "type": "fill",
+        "questionText": "Please read the _____ carefully.",
+        "options": [],
+        "answer": "agreement",
+        "hint": "Danh từ chỉ văn bản thỏa thuận pháp lý giữa hai bên.",
+        "translation": "Hãy đọc hợp đồng cẩn thận.",
+        "explanation": "Cần một danh từ điền vào sau mạo từ 'the' với nghĩa là hợp đồng, giao kèo."
+      }
+    },
+    {
+      "id": "quiz-10-targets:tra-19",
+      "automatedPassed": true,
+      "response": {
+        "wordId": "tra-19",
+        "type": "fill",
+        "questionText": "Please read the _____ carefully.",
+        "options": [],
+        "answer": "invoice",
+        "hint": "Danh từ chỉ chứng từ yêu cầu thanh toán tiền hàng.",
+        "translation": "Hãy đọc hoá đơn cẩn thận.",
+        "explanation": "Cần một danh từ chỉ hóa đơn để phù hợp với ngữ cảnh thanh toán trong công việc."
+      }
+    },
+    {
+      "id": "quiz-10-targets:rec-01",
+      "automatedPassed": true,
+      "response": {
+        "wordId": "rec-01",
+        "type": "fill",
+        "questionText": "There is an _____ in the sales department.",
+        "options": [],
+        "answer": "opening",
+        "hint": "Danh từ chỉ chỗ trống hoặc vị trí việc làm chưa có người làm.",
+        "translation": "Phòng bán hàng có một vị trí còn trống.",
+        "explanation": "Cần danh từ số ít bắt đầu bằng nguyên âm để chỉ vị trí công việc trống."
+      }
+    },
+    {
+      "id": "quiz-10-targets:rec-03",
+      "automatedPassed": true,
+      "response": {
+        "wordId": "rec-03",
+        "type": "fill",
+        "questionText": "Please _____ the requirements.",
+        "options": [],
+        "answer": "meet",
+        "hint": "Động từ mang nghĩa thỏa mãn hoặc đáp ứng các điều kiện.",
+        "translation": "Hãy đáp ứng các yêu cầu.",
+        "explanation": "Cần một động từ nguyên mẫu đứng đầu câu mệnh lệnh để kết hợp với từ 'requirements'."
+      }
+    },
+    {
+      "id": "quiz-10-targets:rec-04",
+      "automatedPassed": true,
+      "response": {
+        "wordId": "rec-04",
+        "type": "fill",
+        "questionText": "She is _____ for the position.",
+        "options": [],
+        "answer": "qualified",
+        "hint": "Tính từ chỉ người có đủ năng lực và văn bằng phù hợp.",
+        "translation": "Cô ấy đủ trình độ cho vị trí này.",
+        "explanation": "Cần một tính từ đứng sau động từ 'is' và đi với giới từ 'for' để chỉ sự đủ điều kiện."
+      }
+    },
+    {
+      "id": "quiz-10-targets:rec-02",
+      "automatedPassed": true,
+      "response": {
+        "wordId": "rec-02",
+        "type": "fill",
+        "questionText": "The _____ answered our questions.",
+        "options": [],
+        "answer": "applicant",
+        "hint": "Danh từ chỉ người nộp đơn xin việc.",
+        "translation": "Người ứng tuyển đã trả lời các câu hỏi của chúng tôi.",
+        "explanation": "Cần một danh từ chỉ người đóng vai trò chủ ngữ trong câu phỏng vấn việc làm."
+      }
+    },
+    {
+      "id": "quiz-10-targets:pdf-toeic-0280",
+      "automatedPassed": true,
+      "response": {
+        "wordId": "pdf-toeic-0280",
+        "type": "fill",
+        "questionText": "We discussed the _____ at the meeting.",
+        "options": [],
+        "answer": "dependence",
+        "hint": "Danh từ chỉ trạng thái cần sự hỗ trợ hoặc dựa dẫm vào cái khác.",
+        "translation": "Chúng tôi thảo luận về sự phụ thuộc tại cuộc họp.",
+        "explanation": "Cần một danh từ làm tân ngữ sau mạo từ 'the' trong buổi họp thảo luận."
+      }
+    },
+    {
+      "id": "quiz-10-targets:sho-22",
+      "automatedPassed": true,
+      "response": {
+        "wordId": "sho-22",
+        "type": "fill",
+        "questionText": "We discussed the _____ at the meeting.",
+        "options": [],
+        "answer": "receipt",
+        "hint": "Danh từ chỉ tờ giấy xác nhận đã thanh toán tiền mua hàng.",
+        "translation": "Chúng tôi thảo luận về biên lai tại cuộc họp.",
+        "explanation": "Cần một danh từ chỉ chứng từ mua sắm làm tân ngữ trong câu."
+      }
+    },
+    {
+      "id": "quiz-10-targets:acc-11",
+      "automatedPassed": true,
+      "response": {
+        "wordId": "acc-11",
+        "type": "fill",
+        "questionText": "Please _____ the final price.",
+        "options": [],
+        "answer": "calculate",
+        "hint": "Động từ chỉ hành động dùng toán học để tìm ra con số.",
+        "translation": "Hãy tính giá cuối cùng.",
+        "explanation": "Cần một động từ nguyên mẫu trong câu mệnh lệnh để thực hiện phép tính giá."
+      }
+    },
+    {
+      "id": "quiz-10-targets:ttp-30",
+      "automatedPassed": true,
+      "response": {
+        "wordId": "ttp-30",
+        "type": "fill",
+        "questionText": "Please read the _____ carefully.",
+        "options": [],
+        "answer": "correspondence",
+        "hint": "Danh từ chỉ các tài liệu trao đổi thông tin qua thư tín.",
+        "translation": "Hãy đọc thư từ cẩn thận.",
+        "explanation": "Cần một danh từ chỉ tài liệu thư tín làm tân ngữ sau động từ 'read'."
+      }
+    },
+    {
+      "id": "review-batch-1:invoice",
+      "automatedPassed": true,
+      "response": {
+        "source": {
+          "kind": "catalog",
+          "wordId": "tra-19",
+          "word": "invoice",
+          "meaning": "hoá đơn",
+          "pos": "noun",
+          "topic": "Trading",
+          "example": "Please read the invoice carefully.",
+          "exampleTranslation": "Hãy đọc hoá đơn cẩn thận."
+        },
+        "userAnswer": "invioce",
+        "correctAnswer": "invoice",
+        "feedback": {
+          "index": 0,
+          "explanation": "Hai ký tự ở vị trí 4 và 5 bị đảo thứ tự. Bạn nhập “invioce”; đáp án là “invoice”.\nInvoice là danh từ chỉ hoá đơn thương mại, dùng để yêu cầu thanh toán cho hàng hóa hoặc dịch vụ đã cung cấp.",
+          "english": "Please send the invoice to the accounting department.",
+          "vietnamese": "Hãy gửi hoá đơn đến phòng kế toán.",
+          "question": "The manager reviewed the _____ before approving the budget.",
+          "answer": "invoice"
+        }
+      }
+    },
+    {
+      "id": "review-batch-1:receipt",
+      "automatedPassed": true,
+      "response": {
+        "source": {
+          "kind": "catalog",
+          "wordId": "sho-22",
+          "word": "receipt",
+          "meaning": "biên lai",
+          "pos": "noun",
+          "topic": "Shopping",
+          "example": "We discussed the receipt at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về biên lai tại cuộc họp."
+        },
+        "userAnswer": "reciept",
+        "correctAnswer": "receipt",
+        "feedback": {
+          "index": 1,
+          "explanation": "Hai ký tự ở vị trí 4 và 5 bị đảo thứ tự. Bạn nhập “reciept”; đáp án là “receipt”.\nReceipt là danh từ chỉ biên lai hoặc giấy xác nhận đã nhận tiền hoặc hàng hóa trong giao dịch mua sắm.",
+          "english": "Do not throw away your receipt.",
+          "vietnamese": "Đừng vứt biên lai của bạn đi.",
+          "question": "Please attach the _____ to your expense report.",
+          "answer": "receipt"
+        }
+      }
+    },
+    {
+      "id": "review-batch-1:qualified",
+      "automatedPassed": true,
+      "response": {
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-04",
+          "word": "qualified",
+          "meaning": "đủ khả năng, trình độ, điều kiện",
+          "pos": "adjective",
+          "topic": "Recruitment",
+          "example": "She is qualified for the position.",
+          "exampleTranslation": "Cô ấy đủ trình độ cho vị trí này."
+        },
+        "userAnswer": "qualify",
+        "correctAnswer": "qualified",
+        "feedback": {
+          "index": 2,
+          "explanation": "Bạn chọn “qualify”; đáp án của bài này là “qualified”. Đối chiếu nghĩa và ngữ cảnh bên dưới.\nQualified là tính từ diễn tả sự đủ năng lực, bằng cấp hoặc kinh nghiệm để đảm nhận một công việc.",
+          "english": "He is highly qualified for this role.",
+          "vietnamese": "Anh ấy rất đủ trình độ cho vai trò này.",
+          "question": "Only fully _____ staff members can operate this machine.",
+          "answer": "qualified"
+        }
+      }
+    },
+    {
+      "id": "review-batch-1:meet",
+      "automatedPassed": true,
+      "response": {
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-03",
+          "word": "meet",
+          "meaning": "đáp ứng (yêu cầu); gặp, gặp gỡ",
+          "pos": "verb",
+          "topic": "Recruitment",
+          "example": "Please meet the requirements.",
+          "exampleTranslation": "Hãy đáp ứng các yêu cầu."
+        },
+        "userAnswer": "gặp gỡ",
+        "correctAnswer": "đáp ứng (yêu cầu); gặp, gặp gỡ",
+        "feedback": {
+          "index": 3,
+          "explanation": "Bạn chọn “gặp gỡ”; đáp án của bài này là “đáp ứng (yêu cầu); gặp, gặp gỡ”. Đối chiếu nghĩa và ngữ cảnh bên dưới.\nMeet trong ngữ cảnh công việc có nghĩa là đáp ứng hoặc thỏa mãn các yêu cầu, tiêu chuẩn được đề ra.",
+          "english": "We must meet the project deadline.",
+          "vietnamese": "Chúng ta phải đáp ứng thời hạn dự án.",
+          "question": "The new system will _____ all security standards.",
+          "answer": "meet"
+        }
+      }
+    },
+    {
+      "id": "review-batch-1:dependence",
+      "automatedPassed": true,
+      "response": {
+        "source": {
+          "kind": "catalog",
+          "wordId": "pdf-toeic-0280",
+          "word": "dependence",
+          "meaning": "sự phụ thuộc",
+          "pos": "noun",
+          "topic": "TOEIC bổ sung (PDF)",
+          "example": "We discussed the dependence at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về sự phụ thuộc tại cuộc họp."
+        },
+        "userAnswer": "sự độc lập",
+        "correctAnswer": "dependence",
+        "feedback": {
+          "index": 4,
+          "explanation": "Bạn chọn “sự độc lập”; đáp án của bài này là “dependence”. Đối chiếu nghĩa và ngữ cảnh bên dưới.\nDependence là danh từ chỉ tình trạng phụ thuộc vào đối tượng hoặc nguồn lực nào đó trong kinh doanh.",
+          "english": "We need to reduce our dependence on imported materials.",
+          "vietnamese": "Chúng ta cần giảm sự phụ thuộc vào nguyên liệu nhập khẩu.",
+          "question": "Minimizing economic _____ requires strategic planning.",
+          "answer": "dependence"
+        }
+      }
+    },
+    {
+      "id": "review-batch-2:calculation",
+      "automatedPassed": true,
+      "response": {
+        "source": {
+          "kind": "catalog",
+          "wordId": "pdf-toeic-0145",
+          "word": "calculation",
+          "meaning": "sự tính toán, phép tính",
+          "pos": "noun",
+          "topic": "TOEIC bổ sung (PDF)",
+          "example": "We discussed the calculation at the meeting.",
+          "exampleTranslation": "Chúng tôi thảo luận về sự tính toán tại cuộc họp."
+        },
+        "userAnswer": "thư từ",
+        "correctAnswer": "sự tính toán, phép tính",
+        "feedback": {
+          "index": 0,
+          "explanation": "Bạn chọn “thư từ”; đáp án của bài này là “sự tính toán, phép tính”. Đối chiếu nghĩa và ngữ cảnh bên dưới.\nCalculation là danh từ chỉ sự tính toán hoặc phép tính số liệu trong công việc. Thường dùng trong các buổi thảo luận tài chính hoặc báo cáo.",
+          "english": "We reviewed the calculation before submitting the report.",
+          "vietnamese": "Chúng tôi đã xem xét phép tính trước khi nộp báo cáo.",
+          "question": "The financial team completed the _____ for the new project.",
+          "answer": "calculation"
+        }
+      }
+    },
+    {
+      "id": "review-batch-2:applicant",
+      "automatedPassed": true,
+      "response": {
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-02",
+          "word": "applicant",
+          "meaning": "người ứng tuyển, ứng viên",
+          "pos": "noun",
+          "topic": "Recruitment",
+          "example": "The applicant answered our questions.",
+          "exampleTranslation": "Người ứng tuyển đã trả lời các câu hỏi của chúng tôi."
+        },
+        "userAnswer": "application",
+        "correctAnswer": "applicant",
+        "feedback": {
+          "index": 1,
+          "explanation": "Bạn chọn “application”; đáp án của bài này là “applicant”. Đối chiếu nghĩa và ngữ cảnh bên dưới.\nApplicant là danh từ chỉ người ứng tuyển hoặc ứng viên nộp hồ sơ xin việc vào một vị trí trong công ty. Thường xuất hiện trong quy trình tuyển dụng nhân sự.",
+          "english": "The applicant submitted a detailed résumé.",
+          "vietnamese": "Người ứng tuyển đã nộp một bản lý lịch chi tiết.",
+          "question": "Every qualified _____ must attend the interview tomorrow.",
+          "answer": "applicant"
+        }
+      }
+    },
+    {
+      "id": "review-batch-2:opening",
+      "automatedPassed": true,
+      "response": {
+        "source": {
+          "kind": "catalog",
+          "wordId": "rec-01",
+          "word": "opening",
+          "meaning": "vị trí trống, sự mở cửa, lễ khai trương",
+          "pos": "noun",
+          "topic": "Recruitment",
+          "example": "There is an opening in the sales department.",
+          "exampleTranslation": "Phòng bán hàng có một vị trí còn trống."
+        },
+        "userAnswer": "lễ khai trương",
+        "correctAnswer": "opening",
+        "feedback": {
+          "index": 2,
+          "explanation": "Bạn chọn “lễ khai trương”; đáp án của bài này là “opening”. Đối chiếu nghĩa và ngữ cảnh bên dưới.\nOpening trong ngữ cảnh tuyển dụng là danh từ chỉ vị trí việc làm còn trống cần tuyển nhân sự mới. Thường đi kèm với các bộ phận trong công ty.",
+          "english": "There is an opening in the marketing department.",
+          "vietnamese": "Phòng marketing đang có một vị trí còn trống.",
+          "question": "We have a job _____ available for experienced accountants.",
+          "answer": "opening"
+        }
+      }
+    },
+    {
+      "id": "review-batch-2:agreement",
+      "automatedPassed": true,
+      "response": {
+        "source": {
+          "kind": "catalog",
+          "wordId": "pdf-toeic-0043",
+          "word": "agreement",
+          "meaning": "hợp đồng, giao kèo",
+          "pos": "noun",
+          "topic": "TOEIC bổ sung (PDF)",
+          "example": "Please read the agreement carefully.",
+          "exampleTranslation": "Hãy đọc hợp đồng cẩn thận."
+        },
+        "userAnswer": "",
+        "correctAnswer": "agreement",
+        "feedback": {
+          "index": 3,
+          "explanation": "Bạn chưa nhập câu trả lời. Đáp án của bài này: agreement.\nAgreement là danh từ chỉ hợp đồng hoặc thỏa thuận chính thức giữa các bên. Thường dùng khi nhắc đến việc đọc hoặc ký kết văn bản pháp lý.",
+          "english": "Both parties signed the agreement yesterday.",
+          "vietnamese": "Cả hai bên đã ký hợp đồng ngày hôm qua.",
+          "question": "Please review the _____ carefully before signing.",
+          "answer": "agreement"
+        }
+      }
+    },
+    {
+      "id": "review-batch-2:correspondence",
+      "automatedPassed": true,
+      "response": {
+        "source": {
+          "kind": "catalog",
+          "wordId": "ttp-30",
+          "word": "correspondence",
+          "meaning": "thư từ, quan hệ thư từ",
+          "pos": "noun",
+          "topic": "Trading Transport",
+          "example": "Please read the correspondence carefully.",
+          "exampleTranslation": "Hãy đọc thư từ cẩn thận."
+        },
+        "userAnswer": "tính toán",
+        "correctAnswer": "correspondence",
+        "feedback": {
+          "index": 4,
+          "explanation": "Bạn chọn “tính toán”; đáp án của bài này là “correspondence”. Đối chiếu nghĩa và ngữ cảnh bên dưới.\nCorrespondence là danh từ chỉ thư từ, tài liệu trao đổi công việc qua lại giữa các đối tác hoặc phòng ban. Thường đi kèm với các từ chỉ xử lý hoặc quản lý tài liệu.",
+          "english": "She manages all business correspondence daily.",
+          "vietnamese": "Cô ấy quản lý tất cả thư từ kinh doanh hàng ngày.",
+          "question": "Please check the incoming _____ from our overseas clients.",
+          "answer": "correspondence"
+        }
+      }
+    }
+  ],
+  "requests": [
+    {
+      "id": "explain-opening",
+      "status": 200,
+      "latencyMs": 3503,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "explain-meet",
+      "status": 200,
+      "latencyMs": 2078,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "explain-qualified",
+      "status": 200,
+      "latencyMs": 5711,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "explain-invoice",
+      "status": 200,
+      "latencyMs": 8356,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "explain-dependence",
+      "status": 200,
+      "latencyMs": 5579,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "simplify-opening",
+      "status": 200,
+      "latencyMs": 5184,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "simplify-meet",
+      "status": 200,
+      "latencyMs": 2584,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "simplify-qualified",
+      "status": 200,
+      "latencyMs": 4318,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "simplify-invoice",
+      "status": 200,
+      "latencyMs": 8564,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "simplify-dependence",
+      "status": 200,
+      "latencyMs": 5483,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "examples-opening",
+      "status": 200,
+      "latencyMs": 2998,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "examples-meet",
+      "status": 200,
+      "latencyMs": 7442,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "examples-qualified",
+      "status": 200,
+      "latencyMs": 3935,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "examples-invoice",
+      "status": 200,
+      "latencyMs": 2345,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "examples-dependence",
+      "status": 200,
+      "latencyMs": 2896,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "practice-opening",
+      "status": 200,
+      "latencyMs": 3105,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "practice-meet",
+      "status": 200,
+      "latencyMs": 3547,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "practice-qualified",
+      "status": 200,
+      "latencyMs": 2788,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "practice-invoice",
+      "status": 200,
+      "latencyMs": 2573,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "practice-dependence",
+      "status": 200,
+      "latencyMs": 2178,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "compare-opening-vacancy",
+      "status": 200,
+      "latencyMs": 3664,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "compare-applicant-application",
+      "status": 200,
+      "latencyMs": 6083,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "compare-dependence-independence",
+      "status": 200,
+      "latencyMs": 1929,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "compare-invoice-receipt",
+      "status": 200,
+      "latencyMs": 3638,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "compare-calculation-correspondence",
+      "status": 200,
+      "latencyMs": 9204,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "quiz-10-targets",
+      "status": 200,
+      "latencyMs": 3988,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "review-batch-1",
+      "status": 200,
+      "latencyMs": 2911,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "review-batch-2",
+      "status": 200,
+      "latencyMs": 2664,
+      "model": "gemini-3.5-flash-lite"
+    }
+  ],
+  "cleanup": true,
+  "semanticReview": "pending",
+  "automated": {
+    "passed": 45,
+    "total": 45,
+    "percent": 100,
+    "thresholdMet": true
+  },
+  "sourceOnlyResponses": 0,
+  "overall95Ready": false,
+  "finishedAt": "2026-10-15T13:13:26.915Z"
+}

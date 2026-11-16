@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "grammar-v2-word-forms-3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "The adjective 'durable' coordinates grammatically with the adjective 'attractive' across the conjunction 'and'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-agreement-1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject phrase 'The number of...' takes a singular verb ('is').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-agreement-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The subject 'Several members' is plural, requiring the plural base verb 'travel'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-agreement-3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Indefinite pronouns starting with 'Every' (like 'Every employee') take singular verbs ('has').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-tenses-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The time marker 'Last month' requires the simple past tense ('exceeded').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-tenses-2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The presence of 'since she graduated' indicates an action starting in the past and continuing into the present, requiring the present perfect tense ('has worked').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-tenses-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "An ongoing past action interrupted by another uses the past continuous tense ('was checking').",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-prepositions-1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Specific times of the clock take the preposition 'at'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-prepositions-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Specific days and dates take the preposition 'on'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "grammar-v2-prepositions-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "To indicate an action or state continuing up to a specific time, 'until' is used.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

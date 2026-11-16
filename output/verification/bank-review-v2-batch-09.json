@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "p4-listening-v1-museum-q3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "You can find our cafe on the first floor, beside the gift shop.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-listening-v1-repair-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "I am calling to confirm the appointment to repair your office air conditioner.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-listening-v1-repair-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Our technician will arrive this Friday between ten and eleven in the morning.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p4-listening-v1-repair-q3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Please arrange for someone to meet the technician at the rear entrance",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-registration-q1",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "I registered for the sales workshop, but my confirmation email lists the online session. I wanted to attend in person.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-registration-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "There are still seats in the in-person session on Tuesday.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-registration-q3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Just show the confirmation email on your phone at the reception desk.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-restaurant-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Could you change it to four people?",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-restaurant-q2",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Your table will still be ready at seven.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-restaurant-q3",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "One guest cannot eat peanuts. Can you inform the kitchen? / I will add that note to the reservation and speak to the chef",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-printer-q1",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "The printer on the second floor keeps leaving dark lines on our documents.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-printer-q2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "you can use the printer in the ground-floor copy room.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-printer-q3",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "please email a scanned copy to our support address.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-hotel-q1",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "My flight arrives at eleven in the morning. Could I check in then?",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-hotel-q2",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "we can store your luggage for free.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-hotel-q3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "I have a meeting at one, so I will leave my bags and come back later.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-interview-q1",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "We would like to interview you for the accounting position",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-interview-q2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Yes, two thirty is available.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-interview-q3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Please bring a copy of your resume and a list of two references.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p3-exam-v1-catering-q1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "We ordered forty lunches for Friday, but five more participants have registered.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

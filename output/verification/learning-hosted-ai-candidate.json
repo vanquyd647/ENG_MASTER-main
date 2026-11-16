@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-15T03:46:39.294Z",
+  "stage": "production-candidate",
+  "deployment": "https://eng-master-main2-g7xkzmzcq-quys-projects-d07a5005.vercel.app",
+  "project": "engai-2c7fe",
+  "authMethod": "temporary custom-token account",
+  "checks": [
+    {
+      "endpoint": "explain",
+      "status": 200,
+      "characters": 1006,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "endpoint": "quiz",
+      "status": 200,
+      "validatedQuestions": 2,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "endpoint": "mistake-review",
+      "status": 200,
+      "characters": 1711
+    },
+    {
+      "endpoint": "quiz-invalid",
+      "status": 400,
+      "code": "invalid_words"
+    },
+    {
+      "endpoint": "avatar-flag",
+      "status": 503,
+      "code": "avatar_disabled"
+    },
+    {
+      "endpoint": "daily-quota",
+      "status": 429,
+      "code": "daily_quota"
+    }
+  ],
+  "cleanup": {
+    "auth": true,
+    "quota": true
+  },
+  "quota": {
+    "documents": 6,
+    "ttlTimestamps": true
+  },
+  "passed": true
+}

@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-16T12:22:11.210Z",
+  "stage": "preview",
+  "deployment": "https://eng-master-main2-psvyqae9w-quys-projects-d07a5005.vercel.app",
+  "project": "engai-2c7fe",
+  "authMethod": "temporary custom-token account",
+  "checks": [],
+  "cleanup": {
+    "auth": true,
+    "quota": true
+  },
+  "samples": {}
+}

@@ -8,19 +8,26 @@ export const Modal = ({
   onClose,
   title,
   children,
+  scrollBody = false,
+  className,
 }: {
   isOpen: boolean;
   onClose: () => void;
   title: string;
   children: ReactNode;
+  scrollBody?: boolean;
+  className?: string;
 }) => {
   const titleId = useId();
   const dialogRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef(onClose); closeRef.current = onClose;
 
   useEffect(() => {
     if (!isOpen) return;
 
     const previousFocus = document.activeElement as HTMLElement | null;
+    const previousOverflow = document.body.style.overflow;
+    if (scrollBody) document.body.style.overflow = 'hidden';
     const dialog = dialogRef.current;
     const focusableSelector =
       'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
@@ -30,7 +37,7 @@ export const Modal = ({
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         event.preventDefault();
-        onClose();
+        closeRef.current();
         return;
       }
       if (event.key !== "Tab" || !dialog) return;
@@ -55,9 +62,10 @@ export const Modal = ({
     document.addEventListener("keydown", handleKeyDown);
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
+      if (scrollBody) document.body.style.overflow = previousOverflow;
       previousFocus?.focus();
     };
-  }, [isOpen, onClose]);
+  }, [isOpen, scrollBody]);
 
   return (
     <AnimatePresence>
@@ -80,19 +88,19 @@ export const Modal = ({
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
-          className="relative bg-zinc-900 border border-zinc-800 w-full max-w-xl max-h-[calc(100dvh-2rem)] overflow-y-auto rounded-2xl sm:rounded-[32px] shadow-2xl p-5 sm:p-8 space-y-6"
+          className={cn("relative bg-zinc-900 border border-zinc-800 w-full max-w-xl max-h-[calc(100dvh-2rem)] overflow-y-auto rounded-2xl sm:rounded-[32px] shadow-2xl p-5 sm:p-8 space-y-6", scrollBody && 'flex flex-col overflow-hidden p-0 sm:p-0 space-y-0', className)}
         >
-          <div className="flex justify-between items-center text-white">
-            <h3 id={titleId} className="text-xl sm:text-2xl font-bold tracking-tight">{title}</h3>
+          <div className={cn("flex justify-between items-center gap-3 text-white", scrollBody && 'shrink-0 border-b border-zinc-800 px-5 py-4 sm:px-8 sm:py-5')}>
+            <h3 id={titleId} className="min-w-0 break-words text-xl sm:text-2xl font-bold tracking-tight">{title}</h3>
             <button
               onClick={onClose}
               aria-label="Đóng hộp thoại"
-              className="p-2 hover:bg-zinc-800 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+              className="shrink-0 p-2 hover:bg-zinc-800 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
             >
               <X className="w-5 h-5 text-zinc-400" />
             </button>
           </div>
-          <div className="prose prose-invert max-w-none prose-p:leading-relaxed prose-li:my-1 prose-h3:text-lg prose-h3:font-bold prose-h3:mt-4 text-slate-300">
+          <div className={cn("prose prose-invert max-w-none prose-p:leading-relaxed prose-li:my-1 prose-h3:text-lg prose-h3:font-bold prose-h3:mt-4 text-slate-300", scrollBody && 'min-h-0 overflow-y-auto overscroll-contain px-5 py-5 sm:px-8')}>
             {children}
           </div>
         </motion.div>

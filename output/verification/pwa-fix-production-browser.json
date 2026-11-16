@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-15T05:39:03.928Z",
+  "release": "2026.10.15-learning.3",
+  "origin": "https://eng-master-main2.vercel.app",
+  "fixture": "isolated guest on actual production; dispatch stale notice with real registration.waiting null",
+  "passed": true,
+  "repetitions": 1,
+  "cursor": 1,
+  "completed": 1,
+  "entry": "https://eng-master-main2.vercel.app/assets/index-D0Cxiri1.js",
+  "bannerGone": true,
+  "offlineAfterUpdate": true,
+  "browserClosed": true
+}

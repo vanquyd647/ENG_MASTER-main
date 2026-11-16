@@ -1,0 +1,1646 @@
+[
+  {
+    "id": "rec-25",
+    "word": "apprehensive",
+    "before": "lo lắng,e sợ",
+    "after": "lo lắng, e sợ"
+  },
+  {
+    "id": "reg-06",
+    "word": "policy",
+    "before": "quy chế, chínhs ách",
+    "after": "quy chế, chính sách"
+  },
+  {
+    "id": "reg-09",
+    "word": "access",
+    "before": "quy ền truy cập, sự luit ới, đường vào",
+    "after": "quyền truy cập, sự tiếp cận, đường vào"
+  },
+  {
+    "id": "reg-11",
+    "word": "revise",
+    "before": "sửa đổi, thay đổi (ý kiến,kế hoạch)",
+    "after": "sửa đổi, thay đổi (ý kiến, kế hoạch)"
+  },
+  {
+    "id": "reg-12",
+    "word": "approval",
+    "before": "sự chấp thuận, sự phê duy ệt",
+    "after": "sự chấp thuận, sự phê duyệt"
+  },
+  {
+    "id": "reg-17",
+    "word": "mandate",
+    "before": "ra lệnh, uỷ quy ền, uỷ thác",
+    "after": "ra lệnh, ủy quyền, ủy thác"
+  },
+  {
+    "id": "reg-21",
+    "word": "authorize",
+    "before": "uỷ quy ền, cho phép",
+    "after": "ủy quyền, cho phép"
+  },
+  {
+    "id": "reg-22",
+    "word": "habit",
+    "before": "thói quen,t ập quán",
+    "after": "thói quen, tập quán"
+  },
+  {
+    "id": "reg-25",
+    "word": "adhere",
+    "before": "báms át, tuân thủ",
+    "after": "bám sát, tuân thủ"
+  },
+  {
+    "id": "reg-28",
+    "word": "inspection",
+    "before": "sự kiểm tr a, sự thanh tra",
+    "after": "sự kiểm tra, sự thanh tra"
+  },
+  {
+    "id": "reg-29",
+    "word": "arrangement",
+    "before": "sựs ắp đặt, sựs ắpx ếp,",
+    "after": "sự sắp đặt, sự sắp xếp"
+  },
+  {
+    "id": "off-06",
+    "word": "request",
+    "before": "lờiy êu cầu, thỉnh cầu",
+    "after": "lời yêu cầu, thỉnh cầu"
+  },
+  {
+    "id": "off-14",
+    "word": "assignment",
+    "before": "công việc, nhiệm vụ, bàit ập",
+    "after": "công việc, nhiệm vụ, bài tập"
+  },
+  {
+    "id": "off-15",
+    "word": "entire",
+    "before": "tr ọnv ẹn, hoàn to àn",
+    "after": "trọn vẹn, hoàn toàn"
+  },
+  {
+    "id": "off-17",
+    "word": "absolutely",
+    "before": "hoànt oàn, chắc chắn,",
+    "after": "hoàn toàn, chắc chắn"
+  },
+  {
+    "id": "off-18",
+    "word": "attentively",
+    "before": "chăm chú, thận tr ọng",
+    "after": "chăm chú, thận trọng"
+  },
+  {
+    "id": "off-19",
+    "word": "supervision",
+    "before": "sự giáms át",
+    "after": "sự giám sát"
+  },
+  {
+    "id": "off-22",
+    "word": "convey",
+    "before": "truy ền đạt,v ận chuyển",
+    "after": "truyền đạt, vận chuyển"
+  },
+  {
+    "id": "off-23",
+    "word": "check",
+    "before": "kiểm tr a, xemxé t,x ác nhận",
+    "after": "kiểm tra, xem xét, xác nhận"
+  },
+  {
+    "id": "off-24",
+    "word": "oversee",
+    "before": "quans át, giáms át",
+    "after": "quan sát, giám sát"
+  },
+  {
+    "id": "off-25",
+    "word": "concentrate",
+    "before": "tập trung, chút âm",
+    "after": "tập trung, chú tâm"
+  },
+  {
+    "id": "off-27",
+    "word": "manage",
+    "before": "quản lý,x oays ở, giải quyết được",
+    "after": "quản lý, xoay sở, giải quyết được"
+  },
+  {
+    "id": "off-28",
+    "word": "monitor",
+    "before": "giáms át, theo dõi",
+    "after": "giám sát, theo dõi"
+  },
+  {
+    "id": "off-32",
+    "word": "workshop",
+    "before": "hội thảo, buổi đàot ạo",
+    "after": "hội thảo, buổi đào tạo"
+  },
+  {
+    "id": "off-33",
+    "word": "headquarters",
+    "before": "trụsở chính",
+    "after": "trụ sở chính"
+  },
+  {
+    "id": "off-34",
+    "word": "involved",
+    "before": "có tham giav ào, có liên quan",
+    "after": "có tham gia vào, có liên quan"
+  },
+  {
+    "id": "off-36",
+    "word": "combined",
+    "before": "đượckết hợp, chung,t ổng hợp",
+    "after": "được kết hợp, chung, tổng hợp"
+  },
+  {
+    "id": "off-40",
+    "word": "responsible",
+    "before": "có tr ách nhiệm,",
+    "after": "có trách nhiệm"
+  },
+  {
+    "id": "off-42",
+    "word": "agree",
+    "before": "đồngý",
+    "after": "đồng ý"
+  },
+  {
+    "id": "off-43",
+    "word": "supervise",
+    "before": "giáms át",
+    "after": "giám sát"
+  },
+  {
+    "id": "off-47",
+    "word": "formal",
+    "before": "tr ang tr ọng, chính thức",
+    "after": "trang trọng, chính thức"
+  },
+  {
+    "id": "off-49",
+    "word": "collect",
+    "before": "thu thập,t ập hợp",
+    "after": "thu thập, tập hợp"
+  },
+  {
+    "id": "off-50",
+    "word": "coordinate",
+    "before": "điều phối,kết hợp",
+    "after": "điều phối, kết hợp"
+  },
+  {
+    "id": "off-53",
+    "word": "exclusive",
+    "before": "riêng biệ t, độc quy ền",
+    "after": "riêng biệt, độc quyền"
+  },
+  {
+    "id": "off-54",
+    "word": "intention",
+    "before": "ýđịnh, mục đích,ý muốn",
+    "after": "ý định, mục đích, ý muốn"
+  },
+  {
+    "id": "off-55",
+    "word": "disturbing",
+    "before": "làm nhiễu loạn, làmx áo tr ộn",
+    "after": "làm nhiễu loạn, làm xáo trộn"
+  },
+  {
+    "id": "off-58",
+    "word": "widely",
+    "before": "rộng, nhiều,xa",
+    "after": "rộng, nhiều, xa"
+  },
+  {
+    "id": "off-64",
+    "word": "directory",
+    "before": "danh bạ,sổ địa chỉ",
+    "after": "danh bạ, sổ địa chỉ"
+  },
+  {
+    "id": "off-66",
+    "word": "respectful",
+    "before": "tôn tr ọng, lễ phép, kính cẩn",
+    "after": "tôn trọng, lễ phép, kính cẩn"
+  },
+  {
+    "id": "off-67",
+    "word": "duplicate",
+    "before": "bảns ao",
+    "after": "bản sao"
+  },
+  {
+    "id": "off-68",
+    "word": "contrary",
+    "before": "sự tr ái ngược, điều ngược lại",
+    "after": "sự trái ngược, điều ngược lại"
+  },
+  {
+    "id": "off-69",
+    "word": "engage",
+    "before": "tham gia, camkế t, thu hút",
+    "after": "tham gia, cam kết, thu hút"
+  },
+  {
+    "id": "off-73",
+    "word": "accessible",
+    "before": "có thể truy cập/ tiếp cận được,",
+    "after": "có thể truy cập, tiếp cận được"
+  },
+  {
+    "id": "off-75",
+    "word": "feedback",
+    "before": "phản hồi,ý kiến nhậnx ét",
+    "after": "phản hồi, ý kiến nhận xét"
+  },
+  {
+    "id": "off-76",
+    "word": "outstanding",
+    "before": "nội bật, đáng chú ý; cònt ồnt ại,",
+    "after": "nổi bật, đáng chú ý; còn tồn tại, chưa giải quyết"
+  },
+  {
+    "id": "off-91",
+    "word": "aware",
+    "before": "biế t, nhận thấy, nhận thức được",
+    "after": "biết, nhận thấy, nhận thức được"
+  },
+  {
+    "id": "off-92",
+    "word": "extended",
+    "before": "mởr ộng,k éo dài",
+    "after": "mở rộng, kéo dài"
+  },
+  {
+    "id": "off-93",
+    "word": "accidentally",
+    "before": "tình cờ, ngoàiý muốn",
+    "after": "tình cờ, ngoài ý muốn"
+  },
+  {
+    "id": "lei-02",
+    "word": "live",
+    "before": "pháts óng trực tiếp (r adio, tv),s ống",
+    "after": "phát sóng trực tiếp (radio, TV); sống"
+  },
+  {
+    "id": "lei-03",
+    "word": "donation",
+    "before": "sự quy ên góp, từ thiện, sựt ặng",
+    "after": "sự quyên góp, sự tặng, khoản đóng góp"
+  },
+  {
+    "id": "lei-05",
+    "word": "required",
+    "before": "cần thiế t, đượcy êu cầu, phải có",
+    "after": "cần thiết, được yêu cầu, phải có"
+  },
+  {
+    "id": "lei-08",
+    "word": "note",
+    "before": "ghi chú, lưuý",
+    "after": "ghi chú, lưu ý"
+  },
+  {
+    "id": "lei-09",
+    "word": "upcoming",
+    "before": "sắp đến,s ắpt ới",
+    "after": "sắp đến, sắp tới"
+  },
+  {
+    "id": "lei-10",
+    "word": "lend",
+    "before": "cho mượn, chov ay",
+    "after": "cho mượn, cho vay"
+  },
+  {
+    "id": "lei-14",
+    "word": "showing",
+    "before": "sự trình diễn, chứngcứ",
+    "after": "sự trình diễn, chứng cứ"
+  },
+  {
+    "id": "lei-21",
+    "word": "issue",
+    "before": "phát hành, chora mắt",
+    "after": "phát hành, cho ra mắt"
+  },
+  {
+    "id": "lei-22",
+    "word": "anonymous",
+    "before": "giấut ên, ẩn danh, nặc danh",
+    "after": "giấu tên, ẩn danh, nặc danh"
+  },
+  {
+    "id": "lei-23",
+    "word": "commit",
+    "before": "giao phó, uỷ thác, camkế t, hứa",
+    "after": "giao phó, ủy thác, cam kết, hứa"
+  },
+  {
+    "id": "mkt-01",
+    "word": "survey",
+    "before": "cuộc khảos át, cuộc thăm dò",
+    "after": "cuộc khảo sát, cuộc thăm dò"
+  },
+  {
+    "id": "mkt-03",
+    "word": "monopoly",
+    "before": "sự độc quy ền,v ật độc quy ền",
+    "after": "sự độc quyền, độc quyền kinh doanh"
+  },
+  {
+    "id": "mkt-04",
+    "word": "competition",
+    "before": "sự cạnh tr anh, cuộc thi",
+    "after": "sự cạnh tranh, cuộc thi"
+  },
+  {
+    "id": "mkt-06",
+    "word": "expand",
+    "before": "mởr ộng",
+    "after": "mở rộng"
+  },
+  {
+    "id": "mkt-09",
+    "word": "additional",
+    "before": "thêm vào, bổ sungv ào",
+    "after": "thêm vào, bổ sung vào"
+  },
+  {
+    "id": "mkt-10",
+    "word": "examine",
+    "before": "xemx ét, kiểm tra, điều tra",
+    "after": "xem xét, kiểm tra, điều tra"
+  },
+  {
+    "id": "mkt-14",
+    "word": "cooperate",
+    "before": "hợpt ác",
+    "after": "hợp tác"
+  },
+  {
+    "id": "mkt-17",
+    "word": "expectation",
+    "before": "sự mong muốn, kỳv ọng, dự kiến",
+    "after": "sự mong muốn, kỳ vọng, dự kiến"
+  },
+  {
+    "id": "mkt-18",
+    "word": "raise",
+    "before": "tăng lên, nâng lên, đề xuất, đưara",
+    "after": "tăng lên, nâng lên, đề xuất, đưa ra"
+  },
+  {
+    "id": "mkt-19",
+    "word": "extremely",
+    "before": "vô cùng, cựckỳ",
+    "after": "vô cùng, cực kỳ"
+  },
+  {
+    "id": "mkt-20",
+    "word": "probable",
+    "before": "nhiều khả năng, có thể,",
+    "after": "nhiều khả năng, có thể"
+  },
+  {
+    "id": "mkt-24",
+    "word": "gap",
+    "before": "lỗ hỏng, kẽ hở, khoảng trắng",
+    "after": "lỗ hổng, kẽ hở, khoảng trống"
+  },
+  {
+    "id": "mkt-27",
+    "word": "appreciate",
+    "before": "đánh giá cao, cảm kích,",
+    "after": "đánh giá cao, cảm kích"
+  },
+  {
+    "id": "mkt-28",
+    "word": "publicize",
+    "before": "quảng cáo, đưara công khai",
+    "after": "quảng cáo, đưa ra công khai"
+  },
+  {
+    "id": "mkt-30",
+    "word": "campaign",
+    "before": "chiến dịch, cuộcv ận động",
+    "after": "chiến dịch, cuộc vận động"
+  },
+  {
+    "id": "mkt-31",
+    "word": "marginal",
+    "before": "ởmép, ngoài lề, không đángkể",
+    "after": "ở mép, ngoài lề, không đáng kể"
+  },
+  {
+    "id": "mkt-33",
+    "word": "creative",
+    "before": "sángt ạo",
+    "after": "sáng tạo"
+  },
+  {
+    "id": "mkt-34",
+    "word": "aggressively",
+    "before": "xôngx áo, tích cực",
+    "after": "xông xáo, tích cực"
+  },
+  {
+    "id": "mkt-40",
+    "word": "advise",
+    "before": "khuy ên nhủ, tưv ấn",
+    "after": "khuyên nhủ, tư vấn"
+  },
+  {
+    "id": "mkt-45",
+    "word": "necessarily",
+    "before": "tấty ếu, nhất thiết",
+    "after": "tất yếu, nhất thiết"
+  },
+  {
+    "id": "mkt-46",
+    "word": "detect",
+    "before": "phát hiệnr a, khám phá ra",
+    "after": "phát hiện ra, khám phá ra"
+  },
+  {
+    "id": "mkt-47",
+    "word": "cover",
+    "before": "bao gồm, thanht oán, che phủ",
+    "after": "bao gồm, thanh toán, che phủ"
+  },
+  {
+    "id": "mkt-48",
+    "word": "less",
+    "before": "ít hơn,k ém hơn",
+    "after": "ít hơn, kém hơn"
+  },
+  {
+    "id": "mkt-49",
+    "word": "majority",
+    "before": "đas ố,số đông",
+    "after": "đa số, số đông"
+  },
+  {
+    "id": "mkt-51",
+    "word": "largely",
+    "before": "tr ên quy mô lớn, phần lớn",
+    "after": "trên quy mô lớn, phần lớn"
+  },
+  {
+    "id": "mkt-55",
+    "word": "aim",
+    "before": "nhắmt ới, có mục đích",
+    "after": "nhắm tới, có mục đích"
+  },
+  {
+    "id": "mkt-56",
+    "word": "introduce",
+    "before": "giới thiệu, đưara",
+    "after": "giới thiệu, đưa ra"
+  },
+  {
+    "id": "mkt-57",
+    "word": "absence",
+    "before": "sựv ắng mặt, nghỉ; sự thiếu, khôngcó",
+    "after": "sự vắng mặt, nghỉ; sự thiếu, không có"
+  },
+  {
+    "id": "mkt-60",
+    "word": "discussion",
+    "before": "sự thảo luận, sự tr anh luận",
+    "after": "sự thảo luận, sự tranh luận"
+  },
+  {
+    "id": "mkt-62",
+    "word": "resolve",
+    "before": "giải quyế t, kiên quy ết",
+    "after": "giải quyết, kiên quyết"
+  },
+  {
+    "id": "eco-07",
+    "word": "remain",
+    "before": "giữ nguy ên,v ẫn, còn nhưcũ",
+    "after": "giữ nguyên, vẫn, còn như cũ"
+  },
+  {
+    "id": "eco-09",
+    "word": "particular",
+    "before": "đặc biệ t, đặc thù, chi tiết",
+    "after": "đặc biệt, đặc thù, chi tiết"
+  },
+  {
+    "id": "eco-11",
+    "word": "prospect",
+    "before": "viễn cảnh, triểnv ọng",
+    "after": "viễn cảnh, triển vọng"
+  },
+  {
+    "id": "eco-14",
+    "word": "likely",
+    "before": "có khả năng, có thểx ảyra",
+    "after": "có khả năng, có thể xảy ra"
+  },
+  {
+    "id": "eco-16",
+    "word": "substitute",
+    "before": "ngườiv ật thay thế",
+    "after": "người hoặc vật thay thế"
+  },
+  {
+    "id": "eco-18",
+    "word": "economical",
+    "before": "tiết kiệm, kinhtế",
+    "after": "tiết kiệm, kinh tế"
+  },
+  {
+    "id": "eco-19",
+    "word": "implication",
+    "before": "sự liên quan, sự dính líu, hàmý",
+    "after": "sự liên quan, sự dính líu, hàm ý"
+  },
+  {
+    "id": "eco-21",
+    "word": "promising",
+    "before": "đầy hứa hẹn, nhiều triểnv ọng",
+    "after": "đầy hứa hẹn, nhiều triển vọng"
+  },
+  {
+    "id": "eco-22",
+    "word": "stagnant",
+    "before": "trì tr ệ, uể oải, lờ đờ",
+    "after": "trì trệ, uể oải, lờ đờ"
+  },
+  {
+    "id": "eco-23",
+    "word": "soar",
+    "before": "bay vút lên,t ăng vọt",
+    "after": "bay vút lên, tăng vọt"
+  },
+  {
+    "id": "eco-25",
+    "word": "costly",
+    "before": "tốnk ém, đắt tiền",
+    "after": "tốn kém, đắt tiền"
+  },
+  {
+    "id": "eco-30",
+    "word": "consequence",
+    "before": "hậu quả, hệ quả,kết quả",
+    "after": "hậu quả, hệ quả, kết quả"
+  },
+  {
+    "id": "eco-32",
+    "word": "depression",
+    "before": "sự sụt giá, tình tr ạng đình trệ",
+    "after": "suy thoái, tình trạng đình trệ; sự trầm cảm"
+  },
+  {
+    "id": "eco-34",
+    "word": "impede",
+    "before": "cản tr ở, ngăn cản",
+    "after": "cản trở, ngăn cản"
+  },
+  {
+    "id": "sho-03",
+    "word": "experienced",
+    "before": "có kinh nghiệm, lão luy ện",
+    "after": "có kinh nghiệm, lão luyện"
+  },
+  {
+    "id": "sho-05",
+    "word": "expert",
+    "before": "chuy ên gia",
+    "after": "chuyên gia"
+  },
+  {
+    "id": "sho-07",
+    "word": "carefully",
+    "before": "một cách cẩn thận, thận tr ọng",
+    "after": "một cách cẩn thận, thận trọng"
+  },
+  {
+    "id": "sho-09",
+    "word": "description",
+    "before": "sự miêut ả, sự môtả",
+    "after": "sự miêu tả, sự mô tả"
+  },
+  {
+    "id": "sho-14",
+    "word": "apply",
+    "before": "nộp đơn, ứng tuy ển, áp dụng",
+    "after": "nộp đơn, ứng tuyển, áp dụng"
+  },
+  {
+    "id": "sho-28",
+    "word": "devise",
+    "before": "phát minh,s ángt ạo",
+    "after": "phát minh, sáng tạo"
+  },
+  {
+    "id": "pde-01",
+    "word": "intend",
+    "before": "định, cóý định",
+    "after": "định, có ý định"
+  },
+  {
+    "id": "pde-08",
+    "word": "explore",
+    "before": "thám hiểm, tìmt òi, khám phá",
+    "after": "thám hiểm, tìm tòi, khám phá"
+  },
+  {
+    "id": "pde-09",
+    "word": "appearance",
+    "before": "sự xuất hiện,vẻ ngoài, diện mạo",
+    "after": "sự xuất hiện, vẻ ngoài, diện mạo"
+  },
+  {
+    "id": "pde-16",
+    "word": "accurate",
+    "before": "đúng, chínhx ác",
+    "after": "đúng, chính xác"
+  },
+  {
+    "id": "pde-17",
+    "word": "complicated",
+    "before": "phứct ạp,r ắcr ối",
+    "after": "phức tạp, rắc rối"
+  },
+  {
+    "id": "pde-21",
+    "word": "absolute",
+    "before": "tuyệt đối, hoànt oàn, thuần tuý",
+    "after": "tuyệt đối, hoàn toàn, thuần túy"
+  },
+  {
+    "id": "pde-22",
+    "word": "broaden",
+    "before": "mởr ộng",
+    "after": "mở rộng"
+  },
+  {
+    "id": "pde-26",
+    "word": "patent",
+    "before": "bằngs áng chế, giấy đăngký",
+    "after": "bằng sáng chế, giấy đăng ký"
+  },
+  {
+    "id": "pmf-02",
+    "word": "utilize",
+    "before": "dùng, sử dụng,t ận dụng, khai thác",
+    "after": "dùng, sử dụng, tận dụng, khai thác"
+  },
+  {
+    "id": "pmf-04",
+    "word": "renovate",
+    "before": "nâng cấp, cảit ạo (nhà cửa, nội thất)",
+    "after": "nâng cấp, cải tạo (nhà cửa, nội thất)"
+  },
+  {
+    "id": "pmf-06",
+    "word": "material",
+    "before": "chất liệu,t ài liệu, nguyên liệu",
+    "after": "chất liệu, tài liệu, nguyên liệu"
+  },
+  {
+    "id": "pmf-09",
+    "word": "limit",
+    "before": "giới hạn,r anh giới",
+    "after": "giới hạn, ranh giới"
+  },
+  {
+    "id": "pmf-12",
+    "word": "comparable",
+    "before": "có thểsos ánh",
+    "after": "có thể so sánh"
+  },
+  {
+    "id": "pmf-19",
+    "word": "equipment",
+    "before": "máy móc, tr ang thiết bị",
+    "after": "máy móc, trang thiết bị"
+  },
+  {
+    "id": "pmf-30",
+    "word": "coming",
+    "before": "sắpt ới",
+    "after": "sắp tới"
+  },
+  {
+    "id": "csv-02",
+    "word": "deal",
+    "before": "giải quyế t; buôn bán; phân phối",
+    "after": "giải quyết; buôn bán; phân phối"
+  },
+  {
+    "id": "csv-03",
+    "word": "argumentative",
+    "before": "thích tr anh cãi",
+    "after": "thích tranh cãi"
+  },
+  {
+    "id": "csv-10",
+    "word": "return",
+    "before": "trở lại, quayvề",
+    "after": "trở lại, quay về"
+  },
+  {
+    "id": "csv-15",
+    "word": "commitment",
+    "before": "sự camkế t, sựt ậnt âm",
+    "after": "sự cam kết, sự tận tâm"
+  },
+  {
+    "id": "csv-24",
+    "word": "politely",
+    "before": "lịch sự lễ phép",
+    "after": "lịch sự, lễ phép"
+  },
+  {
+    "id": "trv-09",
+    "word": "involve",
+    "before": "gồm,k éo theo; tham gia",
+    "after": "gồm, kéo theo; tham gia"
+  },
+  {
+    "id": "trv-10",
+    "word": "away",
+    "before": "xa, cáchx a, mất đi",
+    "after": "xa, cách xa, mất đi"
+  },
+  {
+    "id": "trv-11",
+    "word": "hospitality",
+    "before": "sự hiếu khách, sụ thân thiện",
+    "after": "sự hiếu khách, sự thân thiện"
+  },
+  {
+    "id": "trv-12",
+    "word": "unlimited",
+    "before": "vô hạn,vôt ận, không giới hạn",
+    "after": "vô hạn, vô tận, không giới hạn"
+  },
+  {
+    "id": "trv-16",
+    "word": "super",
+    "before": "nguy nga, tr áng lệ, tuyệt vời",
+    "after": "tuyệt vời, xuất sắc"
+  },
+  {
+    "id": "trv-23",
+    "word": "board",
+    "before": "lên (tàu,x e, máy bay)",
+    "after": "lên (tàu, xe, máy bay)"
+  },
+  {
+    "id": "trv-30",
+    "word": "indulge",
+    "before": "chiều theo;t ận hưởng,s ay mê",
+    "after": "chiều theo; tận hưởng, say mê"
+  },
+  {
+    "id": "trv-32",
+    "word": "seating",
+    "before": "chỗ ngồi; sựs ắp chỗ",
+    "after": "chỗ ngồi; sự sắp chỗ"
+  },
+  {
+    "id": "con-03",
+    "word": "review",
+    "before": "xemxé t, duyệt lại, phê bình",
+    "after": "xem xét, duyệt lại, phê bình"
+  },
+  {
+    "id": "con-08",
+    "word": "collaborate",
+    "before": "cộngt ác, hợpt ác",
+    "after": "cộng tác, hợp tác"
+  },
+  {
+    "id": "con-09",
+    "word": "dedicate",
+    "before": "cống hiến,t ậnt âm, dành cho",
+    "after": "cống hiến, tận tâm, dành cho"
+  },
+  {
+    "id": "con-17",
+    "word": "foundation",
+    "before": "nềnt ảng, sự thành lập",
+    "after": "nền tảng, sự thành lập"
+  },
+  {
+    "id": "con-27",
+    "word": "bid",
+    "before": "sự đắt giá, sự bỏ thầu",
+    "after": "sự đặt giá, sự bỏ thầu"
+  },
+  {
+    "id": "con-28",
+    "word": "settle",
+    "before": "giải quyế t, dàn xếp",
+    "after": "giải quyết, dàn xếp"
+  },
+  {
+    "id": "tra-06",
+    "word": "order",
+    "before": "đặt hàng,y êu cầu",
+    "after": "đặt hàng, yêu cầu"
+  },
+  {
+    "id": "tra-13",
+    "word": "payment",
+    "before": "việc trả tiền, khoản thanht oán",
+    "after": "việc trả tiền, khoản thanh toán"
+  },
+  {
+    "id": "tra-20",
+    "word": "move",
+    "before": "chuy ển động, di chuyển",
+    "after": "chuyển động, di chuyển"
+  },
+  {
+    "id": "ttp-02",
+    "word": "ensure",
+    "before": "bảo đảm, quả quy ết",
+    "after": "bảo đảm, quả quyết"
+  },
+  {
+    "id": "ttp-08",
+    "word": "careful",
+    "before": "cẩn thận, kỹ lượng, chu đáo",
+    "after": "cẩn thận, kỹ lưỡng, chu đáo"
+  },
+  {
+    "id": "ttp-12",
+    "word": "react",
+    "before": "phản ứng,t ác động lại",
+    "after": "phản ứng, tác động lại"
+  },
+  {
+    "id": "ttp-23",
+    "word": "fragile",
+    "before": "dễv ỡ, mỏng manh",
+    "after": "dễ vỡ, mỏng manh"
+  },
+  {
+    "id": "ttp-24",
+    "word": "deliver",
+    "before": "giao, phát; phát biểu, bàytỏ",
+    "after": "giao, phát; phát biểu, bày tỏ"
+  },
+  {
+    "id": "ttp-25",
+    "word": "courier",
+    "before": "người đưa thư, công ty vận chuy ển",
+    "after": "người đưa thư, công ty vận chuyển"
+  },
+  {
+    "id": "ttp-28",
+    "word": "carry",
+    "before": "mang,v ác, đem theo;có",
+    "after": "mang, vác, đem theo; có"
+  },
+  {
+    "id": "ttp-31",
+    "word": "remarkable",
+    "before": "đáng chý ý, xuấts ắc, đặc biệt",
+    "after": "đáng chú ý, xuất sắc, đặc biệt"
+  },
+  {
+    "id": "ttp-34",
+    "word": "obligate",
+    "before": "bắt buộc, giao tr ách nhiệm",
+    "after": "bắt buộc, giao trách nhiệm"
+  },
+  {
+    "id": "hot-01",
+    "word": "compensate",
+    "before": "sự tiếp đón, sự tiếp nhận",
+    "after": "đền bù, bồi thường"
+  },
+  {
+    "id": "hot-02",
+    "word": "complimentary",
+    "before": "miễn phí, biếu,t ặng",
+    "after": "miễn phí, biếu, tặng"
+  },
+  {
+    "id": "hot-04",
+    "word": "elegant",
+    "before": "sự đặt trước, sự bảot ồn",
+    "after": "thanh lịch, tao nhã, trang nhã"
+  },
+  {
+    "id": "hot-05",
+    "word": "make",
+    "before": "làm,t ạo, gâyr a, thực hiện",
+    "after": "làm, tạo, gây ra, thực hiện"
+  },
+  {
+    "id": "hot-10",
+    "word": "extensive",
+    "before": "rộngr ãi, bao quát",
+    "after": "rộng rãi, bao quát"
+  },
+  {
+    "id": "hot-13",
+    "word": "entirely",
+    "before": "tr ọnv ẹn, hoànt oàn",
+    "after": "trọn vẹn, hoàn toàn"
+  },
+  {
+    "id": "hot-17",
+    "word": "occupancy",
+    "before": "sự cư ngụsống tại",
+    "after": "sự cư trú, sự sử dụng phòng; tỷ lệ lấp đầy"
+  },
+  {
+    "id": "hot-19",
+    "word": "decorate",
+    "before": "tr ang trí",
+    "after": "trang trí"
+  },
+  {
+    "id": "hot-20",
+    "word": "information",
+    "before": "thông tin,t ài liệu",
+    "after": "thông tin, tài liệu"
+  },
+  {
+    "id": "rev-02",
+    "word": "markedly",
+    "before": "rõ ràng,rõ rệt",
+    "after": "rõ ràng, rõ rệt"
+  },
+  {
+    "id": "rev-07",
+    "word": "production",
+    "before": "sựs ản xuất,s ản lượng",
+    "after": "sự sản xuất, sản lượng"
+  },
+  {
+    "id": "rev-09",
+    "word": "recent",
+    "before": "gần đây, mớix ảy ra",
+    "after": "gần đây, mới xảy ra"
+  },
+  {
+    "id": "rev-11",
+    "word": "summarize",
+    "before": "tóm tắt, tổngk ết",
+    "after": "tóm tắt, tổng kết"
+  },
+  {
+    "id": "rev-12",
+    "word": "growth",
+    "before": "sựt ăng trưởng, sự lớn mạnh",
+    "after": "sự tăng trưởng, sự lớn mạnh"
+  },
+  {
+    "id": "rev-13",
+    "word": "frequent",
+    "before": "thường xuy ên",
+    "after": "thường xuyên"
+  },
+  {
+    "id": "rev-15",
+    "word": "illustrate",
+    "before": "minh hoạ, làmrõý",
+    "after": "minh họa, làm rõ ý"
+  },
+  {
+    "id": "rev-18",
+    "word": "reduce",
+    "before": "giảm, giảm bớt,hạ",
+    "after": "giảm, giảm bớt, hạ"
+  },
+  {
+    "id": "rev-21",
+    "word": "projection",
+    "before": "sự đặt kế hoạch",
+    "after": "sự dự báo, sự ước tính; sự trình chiếu"
+  },
+  {
+    "id": "rev-30",
+    "word": "reliant",
+    "before": "dựav ào, nhờv ào",
+    "after": "dựa vào, nhờ vào"
+  },
+  {
+    "id": "acc-02",
+    "word": "substantially",
+    "before": "đángk ể, nhìn chung",
+    "after": "đáng kể, phần lớn"
+  },
+  {
+    "id": "acc-24",
+    "word": "incidental",
+    "before": "phụ, thứy ếu; ngẫu nhiên",
+    "after": "phụ, thứ yếu; ngẫu nhiên"
+  },
+  {
+    "id": "tre-01",
+    "word": "announce",
+    "before": "thông báo, tuy ên bố",
+    "after": "thông báo, tuyên bố"
+  },
+  {
+    "id": "tre-05",
+    "word": "expansion",
+    "before": "sự mởr ộng, sự bành trướng",
+    "after": "sự mở rộng, sự bành trướng"
+  },
+  {
+    "id": "tre-06",
+    "word": "relocate",
+    "before": "chuy ển chỗ",
+    "after": "chuyển chỗ"
+  },
+  {
+    "id": "tre-07",
+    "word": "competitor",
+    "before": "đối thủ, người cạnh tr anh",
+    "after": "đối thủ, người cạnh tranh"
+  },
+  {
+    "id": "tre-09",
+    "word": "dedicated",
+    "before": "tậnt âm, nhiệt tình, cống hiến",
+    "after": "tận tâm, nhiệt tình, cống hiến"
+  },
+  {
+    "id": "tre-10",
+    "word": "considerable",
+    "before": "đángkể",
+    "after": "đáng kể"
+  },
+  {
+    "id": "tre-11",
+    "word": "last",
+    "before": "kéo dài,t ồnt ại",
+    "after": "kéo dài, tồn tại"
+  },
+  {
+    "id": "tre-12",
+    "word": "emerge",
+    "before": "nổi lên,x ảyra",
+    "after": "nổi lên, xảy ra"
+  },
+  {
+    "id": "tre-13",
+    "word": "select",
+    "before": "lựa chọn, tuy ển chọn",
+    "after": "lựa chọn, tuyển chọn"
+  },
+  {
+    "id": "tre-14",
+    "word": "vital",
+    "before": "sống còn, quan tr ọng",
+    "after": "sống còn, quan trọng"
+  },
+  {
+    "id": "tre-17",
+    "word": "force",
+    "before": "lực, quy ền lực",
+    "after": "lực, quyền lực"
+  },
+  {
+    "id": "tre-26",
+    "word": "asset",
+    "before": "tàis ản, của cải",
+    "after": "tài sản, của cải"
+  },
+  {
+    "id": "tre-30",
+    "word": "imply",
+    "before": "ýnói, ngụý",
+    "after": "ý nói, ngụ ý"
+  },
+  {
+    "id": "tre-34",
+    "word": "surpass",
+    "before": "vượt, tr ội hơn",
+    "after": "vượt, trội hơn"
+  },
+  {
+    "id": "tre-35",
+    "word": "run",
+    "before": "quản lý,v ận hành",
+    "after": "quản lý, vận hành"
+  },
+  {
+    "id": "mee-01",
+    "word": "coordination",
+    "before": "tích cực, chủ động",
+    "after": "sự phối hợp, sự điều phối"
+  },
+  {
+    "id": "mee-02",
+    "word": "unanimous",
+    "before": "nhất trí, nhấtt âm",
+    "after": "nhất trí, đồng lòng"
+  },
+  {
+    "id": "mee-19",
+    "word": "constructive",
+    "before": "mang tínhx ây dựng",
+    "after": "mang tính xây dựng"
+  },
+  {
+    "id": "mee-24",
+    "word": "comment",
+    "before": "bình luận, đưaraý kiến",
+    "after": "bình luận, đưa ra ý kiến"
+  },
+  {
+    "id": "ben-01",
+    "word": "purpose",
+    "before": "mục đích,ý định",
+    "after": "mục đích, ý định"
+  },
+  {
+    "id": "ben-07",
+    "word": "require",
+    "before": "đòi hỏi,y êu cầu",
+    "after": "đòi hỏi, yêu cầu"
+  },
+  {
+    "id": "ben-08",
+    "word": "responsibility",
+    "before": "tr ách nhiệm",
+    "after": "trách nhiệm"
+  },
+  {
+    "id": "ben-13",
+    "word": "treatment",
+    "before": "sự đối xửcư xử",
+    "after": "sự đối xử, cư xử; sự điều trị"
+  },
+  {
+    "id": "ben-15",
+    "word": "bonus",
+    "before": "tiền thưởng, lợi tức thêmv ào",
+    "after": "tiền thưởng, lợi tức thêm vào"
+  },
+  {
+    "id": "ben-25",
+    "word": "assent",
+    "before": "tán thành, đồngý",
+    "after": "tán thành, đồng ý"
+  },
+  {
+    "id": "ben-29",
+    "word": "arise",
+    "before": "xuất hiện, phát sinh, xảyra",
+    "after": "xuất hiện, phát sinh, xảy ra"
+  },
+  {
+    "id": "ben-32",
+    "word": "radically",
+    "before": "căn bản,t ận gốc, triệt để",
+    "after": "căn bản, tận gốc, triệt để"
+  },
+  {
+    "id": "ben-42",
+    "word": "early",
+    "before": "sớm, gần đây",
+    "after": "sớm, đầu kỳ"
+  },
+  {
+    "id": "ben-43",
+    "word": "dedication",
+    "before": "chỉ định, bổ nhiệm",
+    "after": "sự tận tâm, sự cống hiến"
+  },
+  {
+    "id": "ben-45",
+    "word": "dismiss",
+    "before": "cho nghỉ,sa thải",
+    "after": "cho nghỉ, sa thải"
+  },
+  {
+    "id": "rot-02",
+    "word": "strictly",
+    "before": "nghiêm khắc, hoànt oàn",
+    "after": "nghiêm khắc, hoàn toàn"
+  },
+  {
+    "id": "rot-05",
+    "word": "transfer",
+    "before": "chuy ển, dời; thuy ên chuyển",
+    "after": "chuyển, dời; thuyên chuyển"
+  },
+  {
+    "id": "rot-12",
+    "word": "reorganize",
+    "before": "tổ chức lại, cảitổ lại",
+    "after": "tổ chức lại, cải tổ lại"
+  },
+  {
+    "id": "tff-02",
+    "word": "opportunity",
+    "before": "cơ hội, thờicơ",
+    "after": "cơ hội, thời cơ"
+  },
+  {
+    "id": "tff-06",
+    "word": "fare",
+    "before": "tiềnx e, tiềnvé",
+    "after": "tiền xe, tiền vé"
+  },
+  {
+    "id": "tff-07",
+    "word": "expense",
+    "before": "chi phí, phít ổn",
+    "after": "chi phí, phí tổn"
+  },
+  {
+    "id": "tff-12",
+    "word": "congestion",
+    "before": "ngã tư, chỗ giao nhau",
+    "after": "sự tắc nghẽn, sự ùn tắc"
+  },
+  {
+    "id": "tff-14",
+    "word": "detour",
+    "before": "khúc ngoặt, đườngv òng",
+    "after": "khúc ngoặt, đường vòng"
+  },
+  {
+    "id": "tff-15",
+    "word": "malfunction",
+    "before": "sự trục tr ặc, sựcố",
+    "after": "sự trục trặc, sự cố"
+  },
+  {
+    "id": "tff-19",
+    "word": "automotive",
+    "before": "tự động, (thuộc)ô tô",
+    "after": "thuộc về ô tô, ngành ô tô"
+  },
+  {
+    "id": "tff-22",
+    "word": "head",
+    "before": "dẫn đầu, hướngv ề, đivề phía",
+    "after": "dẫn đầu, hướng về, đi về phía"
+  },
+  {
+    "id": "tff-25",
+    "word": "tow",
+    "before": "kéo, lai dắt (t àu, thuy ền)",
+    "after": "kéo, lai dắt (tàu, thuyền)"
+  },
+  {
+    "id": "ban-03",
+    "word": "deposit",
+    "before": "gởi, nộp (tiềnở ngân hàng)",
+    "after": "gửi, nộp (tiền ở ngân hàng)"
+  },
+  {
+    "id": "ban-06",
+    "word": "expect",
+    "before": "tr ông đợi, dự đoán",
+    "after": "trông đợi, dự đoán"
+  },
+  {
+    "id": "ban-09",
+    "word": "double",
+    "before": "nhân đôi,t ăng gấp đôi",
+    "after": "nhân đôi, tăng gấp đôi"
+  },
+  {
+    "id": "ban-10",
+    "word": "interest",
+    "before": "sự quant âm; lợi ích; tiền lãi",
+    "after": "sự quan tâm; lợi ích; tiền lãi"
+  },
+  {
+    "id": "ban-14",
+    "word": "payable",
+    "before": "có thể tr ả, phải trả",
+    "after": "có thể trả, phải trả"
+  },
+  {
+    "id": "ban-16",
+    "word": "balance",
+    "before": "số dưt ài khoản",
+    "after": "số dư tài khoản"
+  },
+  {
+    "id": "ban-18",
+    "word": "amount",
+    "before": "lượng,số lượng,số tiền",
+    "after": "lượng, số lượng, số tiền"
+  },
+  {
+    "id": "ban-19",
+    "word": "withdrawal",
+    "before": "sự rútra",
+    "after": "sự rút ra, sự rút tiền"
+  },
+  {
+    "id": "ban-21",
+    "word": "summary",
+    "before": "bảnt ómt ắt",
+    "after": "bản tóm tắt"
+  },
+  {
+    "id": "ban-23",
+    "word": "transaction",
+    "before": "gsự giao dịch, thương vụ",
+    "after": "sự giao dịch, thương vụ"
+  },
+  {
+    "id": "ban-24",
+    "word": "reject",
+    "before": "đổi, biến đổi, chuyển",
+    "after": "từ chối, bác bỏ, loại bỏ"
+  },
+  {
+    "id": "ban-28",
+    "word": "investment",
+    "before": "sự đầu tư,v ốn đầu tư",
+    "after": "sự đầu tư, vốn đầu tư"
+  },
+  {
+    "id": "ban-31",
+    "word": "support",
+    "before": "sự hỗ tr ợ, sự ủng hộ",
+    "after": "sự hỗ trợ, sự ủng hộ"
+  },
+  {
+    "id": "ban-36",
+    "word": "consult",
+    "before": "hỏiý kiến, bàn bạc, tham khảo",
+    "after": "hỏi ý kiến, bàn bạc, tham khảo"
+  },
+  {
+    "id": "ban-37",
+    "word": "advice",
+    "before": "lời khuy ên, sự tưv ấn",
+    "after": "lời khuyên, sự tư vấn"
+  },
+  {
+    "id": "ban-39",
+    "word": "cautious",
+    "before": "thận tr ọng, cẩn thận",
+    "after": "thận trọng, cẩn thận"
+  },
+  {
+    "id": "ban-46",
+    "word": "property",
+    "before": "quy ềnsở hữu,t àis ản",
+    "after": "quyền sở hữu, tài sản"
+  },
+  {
+    "id": "ban-49",
+    "word": "evident",
+    "before": "hiển nhiên,rõr àng,rõr ệt",
+    "after": "hiển nhiên, rõ ràng, rõ rệt"
+  },
+  {
+    "id": "ban-52",
+    "word": "outlook",
+    "before": "viễn cảnh, triểnv ọng",
+    "after": "viễn cảnh, triển vọng"
+  },
+  {
+    "id": "ban-53",
+    "word": "bond",
+    "before": "tr ái phiếu",
+    "after": "trái phiếu"
+  },
+  {
+    "id": "ban-55",
+    "word": "yield",
+    "before": "tạor a, sinh lợi",
+    "after": "tạo ra, sinh lợi"
+  },
+  {
+    "id": "ban-56",
+    "word": "residence",
+    "before": "nơi cư trú, nhàở",
+    "after": "nơi cư trú, nhà ở"
+  },
+  {
+    "id": "ban-57",
+    "word": "drape",
+    "before": "tr eo màn, cher èm",
+    "after": "treo màn, che rèm"
+  },
+  {
+    "id": "ban-58",
+    "word": "unoccupied",
+    "before": "bỏ tr ống, không có ngườiở",
+    "after": "bỏ trống, không có người ở"
+  },
+  {
+    "id": "ban-59",
+    "word": "renovation",
+    "before": "sự cảit ạo, sửas ang",
+    "after": "sự cải tạo, sửa sang"
+  },
+  {
+    "id": "ban-60",
+    "word": "construction",
+    "before": "sựx ây dựng",
+    "after": "sự xây dựng"
+  },
+  {
+    "id": "ban-61",
+    "word": "regularly",
+    "before": "đều đặn, thường xuy ên",
+    "after": "đều đặn, thường xuyên"
+  },
+  {
+    "id": "ban-62",
+    "word": "arrange",
+    "before": "sắpx ếp,s ắp đặt",
+    "after": "sắp xếp, sắp đặt"
+  },
+  {
+    "id": "ban-65",
+    "word": "densely",
+    "before": "dày đặc, rậmr ạp",
+    "after": "dày đặc, rậm rạp"
+  },
+  {
+    "id": "ban-66",
+    "word": "prepare",
+    "before": "chuẩn bị, sửas oạn",
+    "after": "chuẩn bị, sửa soạn"
+  },
+  {
+    "id": "ban-68",
+    "word": "interfere",
+    "before": "can thiệp, quấyr ầy",
+    "after": "can thiệp, quấy rầy"
+  },
+  {
+    "id": "ban-69",
+    "word": "totally",
+    "before": "hoànt oàn",
+    "after": "hoàn toàn"
+  },
+  {
+    "id": "ban-70",
+    "word": "actually",
+    "before": "thực sự, quả là, thựcra",
+    "after": "thực sự, quả là, thực ra"
+  },
+  {
+    "id": "ban-71",
+    "word": "architect",
+    "before": "kiến trúcsư",
+    "after": "kiến trúc sư"
+  },
+  {
+    "id": "ban-72",
+    "word": "consist",
+    "before": "bao gồm, gồmcó",
+    "after": "bao gồm, gồm có"
+  },
+  {
+    "id": "ban-77",
+    "word": "relocation",
+    "before": "sự chuy ển chỗ",
+    "after": "sự chuyển chỗ"
+  },
+  {
+    "id": "ban-78",
+    "word": "enlarge",
+    "before": "mởr ộng, khuếch trương",
+    "after": "mở rộng, khuếch trương"
+  },
+  {
+    "id": "ban-80",
+    "word": "suppose",
+    "before": "giả sử, chor ằng",
+    "after": "giả sử, cho rằng"
+  },
+  {
+    "id": "ban-81",
+    "word": "adjacent",
+    "before": "liềnk ề,s át",
+    "after": "liền kề, sát"
+  },
+  {
+    "id": "ban-83",
+    "word": "conserve",
+    "before": "bảot ồn, duy trì",
+    "after": "bảo tồn, duy trì"
+  },
+  {
+    "id": "ban-86",
+    "word": "clear",
+    "before": "trong, trong tr ẻo;rõr àng, dễ hiểu",
+    "after": "trong, trong trẻo; rõ ràng, dễ hiểu"
+  },
+  {
+    "id": "ban-88",
+    "word": "preserve",
+    "before": "giữ gìn, bảot ồn",
+    "after": "giữ gìn, bảo tồn"
+  },
+  {
+    "id": "env-01",
+    "word": "intensively",
+    "before": "mạnh mẽ,s âus ắc",
+    "after": "mạnh mẽ, tập trung cao độ"
+  },
+  {
+    "id": "env-02",
+    "word": "disturb",
+    "before": "quấyr ầy, làm phiền",
+    "after": "quấy rầy, làm phiền"
+  },
+  {
+    "id": "env-03",
+    "word": "pollutant",
+    "before": "chất gâyô nhiễm",
+    "after": "chất gây ô nhiễm"
+  },
+  {
+    "id": "env-08",
+    "word": "discharge",
+    "before": "thảir a, tuônr a, chảyra",
+    "after": "thải ra, tuôn ra, chảy ra"
+  },
+  {
+    "id": "env-09",
+    "word": "resource",
+    "before": "nguồn, nguồnt ài nguyên",
+    "after": "nguồn, nguồn tài nguyên"
+  },
+  {
+    "id": "env-10",
+    "word": "deplete",
+    "before": "làm suyy ếu, làm cạn kiệt",
+    "after": "làm suy yếu, làm cạn kiệt"
+  },
+  {
+    "id": "env-11",
+    "word": "purify",
+    "before": "lọc, làms ạch",
+    "after": "lọc, làm sạch"
+  },
+  {
+    "id": "env-14",
+    "word": "migration",
+    "before": "sự di cư, sự chuy ển",
+    "after": "sự di cư, sự chuyển dịch"
+  },
+  {
+    "id": "env-15",
+    "word": "ecology",
+    "before": "hệ sinh thái, sinh thái học",
+    "after": "sinh thái học"
+  },
+  {
+    "id": "env-16",
+    "word": "habitat",
+    "before": "môi trườngs ống, nơis ống",
+    "after": "môi trường sống, nơi sống"
+  },
+  {
+    "id": "env-19",
+    "word": "diagnosis",
+    "before": "sự chuẩn đoán, lời chẩn đoán",
+    "after": "sự chẩn đoán, kết quả chẩn đoán"
+  },
+  {
+    "id": "env-23",
+    "word": "recommend",
+    "before": "khuy ên, giới thiệu, tiến cử",
+    "after": "khuyên, giới thiệu, tiến cử"
+  },
+  {
+    "id": "env-24",
+    "word": "necessary",
+    "before": "cần thiế t, thiếty ếu",
+    "after": "cần thiết, thiết yếu"
+  },
+  {
+    "id": "env-27",
+    "word": "exposure",
+    "before": "sự phơi bày, sự bốc tr ần",
+    "after": "sự tiếp xúc, sự phơi nhiễm; sự phơi bày"
+  },
+  {
+    "id": "env-30",
+    "word": "examination",
+    "before": "sự kiểm tr a, sự thăm khám",
+    "after": "sự kiểm tra, sự thăm khám"
+  }
+]

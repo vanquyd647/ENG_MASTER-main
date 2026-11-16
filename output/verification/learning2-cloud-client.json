@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-15T04:18:16.599Z",
+  "project": "engai-2c7fe",
+  "authMethod": "two disposable custom-token accounts using Firebase client SDK",
+  "checks": [
+    {
+      "name": "actual quiz snapshot and isolated learning settings",
+      "passed": true
+    },
+    {
+      "name": "nonempty Part 2/5 records round-trip with exact-question resolution and blank counts",
+      "passed": true
+    },
+    {
+      "name": "extended reading records round-trip; old-client learning writes preserve separate document",
+      "passed": true
+    },
+    {
+      "name": "owner profile/progress/colon event/session/preferences",
+      "passed": true
+    },
+    {
+      "name": "cross-account profile/write/preferences denied",
+      "passed": true
+    },
+    {
+      "name": "invalid SRS/event mutation/server quota denied",
+      "passed": true
+    }
+  ],
+  "cleanup": true,
+  "passed": true
+}

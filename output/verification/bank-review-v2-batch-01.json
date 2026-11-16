@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "p5-v1-21",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Present perfect passive requires the past participle 'scheduled'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-22",
+      "chosenIndex": 3,
+      "ambiguous": false,
+      "evidence": "Relative pronoun 'that' (or 'which') is used for things/rooms.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-23",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Possessive determiner 'their' modifies the noun 'skills'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p5-v1-24",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Compound noun 'email attachment' or noun object after preposition 'as'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Question asks 'When', answer 'On Thursday morning' provides a time.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Question asks 'Where', answer 'In the top drawer' provides a location.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Question asks 'Who', answer names a person/role.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-4",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Polite request is appropriately accepted with 'Certainly, I will email it now.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-5",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Question asks 'Why', answer provides a reason starting with 'Because'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-6",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Question asks frequency ('How often'), answer 'Once a month' responds appropriately.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-7",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Alternative question offering a choice is answered by selecting one option.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-8",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Yes/No question about task completion is answered with 'Not yet'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-9",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Question asks cost ('How much'), answer states the price.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-10",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Suggestion question is answered affirmatively with supporting reason.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-11",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Yes/No question about a person's presence is answered with 'No'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-12",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Question asks 'Which folder', answer identifies the specific folder.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-13",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Proposal to reschedule is accepted with 'That works for me.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-14",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Question asks 'Where can I get', answer directs the person to someone.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-15",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Suggestion starting with 'Why don't we' is accepted with 'Good idea'.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-16",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Question asks duration ('How long'), answer states a time span.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

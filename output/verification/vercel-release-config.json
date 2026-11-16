@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-13T11:31:28.183Z",
+  "project": "eng-master-main2",
+  "nodeVersion": "22.x",
+  "values": {
+    "GEMINI_TEXT_MODELS": "gemini-3.5-flash-lite",
+    "GEMINI_TIMEOUT_MS": "30000",
+    "AI_DAILY_REQUEST_LIMIT": "100",
+    "AI_AVATAR_ENABLED": "false",
+    "RELEASE_VERSION": "2026.10.13-upgrade.1",
+    "VITE_RELEASE_VERSION": "2026.10.13-upgrade.1"
+  },
+  "credentialUpload": "not performed; automatic approval requires explicit user consent"
+}

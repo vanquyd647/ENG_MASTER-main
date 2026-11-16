@@ -1,0 +1,785 @@
+{
+  "method": "Actual final MP3 decode/ffprobe/signal inspection and independent local Whisper base segment ASR. Not human listening certification.",
+  "manifestSha256": "10393cd78d41183739291703970a043da407a11ec1e9046df3c92f001c95788b",
+  "asrSha256": "96cc7d4e3a9ece9199252ba8bb76877e4381fd96f05b245d148fcdfc464b6ba4",
+  "decoded": 72,
+  "clips": 71,
+  "asrMatched": 69,
+  "asrPercent": 97.1830985915493,
+  "flags": [
+    {
+      "id": "p2-v2-indirect-6",
+      "sha256": "4fe8e0c3f432fa8718821fa140a031cf628812164b728dfafb7ef4323bc6523f",
+      "duration": 24.5,
+      "peak": 0.8095898032188416,
+      "rms": 0.08576919883489609,
+      "decodePassed": true,
+      "asrPassed": false,
+      "flags": [
+        {
+          "source": "A line at the information desk.",
+          "transcript": " Align at the information desk.",
+          "similarity": 0.7272727272727273,
+          "flagged": true
+        }
+      ]
+    },
+    {
+      "id": "p4-exam-v1-maintenance",
+      "sha256": "18d1e024bf2753170f0329e38ee58167617721507449bf639a9e09d59dfe704b",
+      "duration": 59.35,
+      "peak": 0.8077819347381592,
+      "rms": 0.08841735124588013,
+      "decodePassed": true,
+      "asrPassed": false,
+      "flags": [
+        {
+          "source": "Where can tenants obtain drinking water?",
+          "transcript": " where contentants obtain drinking water.",
+          "similarity": 0.7272727272727273,
+          "flagged": true
+        }
+      ]
+    }
+  ],
+  "humanListeningCertified": false,
+  "criticalAnswerMismatchDetected": false,
+  "flagDisposition": "Retain two ASR discrepancies as non-passing clarity cases. A line/Align is a homophone in an incorrect Part 2 option; the other discrepancy is a written on-screen Part 4 question stem. Source scripts, graded answers and essential talk content match. No claim of human auditory judgment.",
+  "passed": true,
+  "items": [
+    {
+      "id": "p2-v1-1",
+      "sha256": "e1f18e18b0036b02a86997a814a9fd682189103b5a0c476cc58251e317d8e2f8",
+      "duration": 20.1,
+      "peak": 0.8142950534820557,
+      "rms": 0.08450061827898026,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-2",
+      "sha256": "1912ee293691e13cde55cf03bd8c7fb1fa7c15e380266af2a0397fcf6cf07427",
+      "duration": 20.075,
+      "peak": 0.8080316781997681,
+      "rms": 0.08216048032045364,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-3",
+      "sha256": "995f8be5beaaca190c706c167815f6699d4710491ac909cbf0f20030d3304c53",
+      "duration": 20.05,
+      "peak": 0.8112848401069641,
+      "rms": 0.0840165987610817,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-4",
+      "sha256": "94d42f6faf2754794ac726914ed07be3b208a0b179fcd9283df985acb80e45e3",
+      "duration": 20.925,
+      "peak": 0.8043467402458191,
+      "rms": 0.08242867887020111,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-5",
+      "sha256": "e50693811c36a3199a1d8eae3c23867b7a781a2fe15b9e9793ed4c7f17f842b0",
+      "duration": 20.025,
+      "peak": 0.8074766397476196,
+      "rms": 0.08248834311962128,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-6",
+      "sha256": "f9338e975a0e7f8f4caa3caffcc25946ef4f54c3c1008f233e57344340742a57",
+      "duration": 19.45,
+      "peak": 0.8099011778831482,
+      "rms": 0.08167260885238647,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-7",
+      "sha256": "3241553037fb3703c81bc8685f1c6ffd51e6afeec29a405ab20bd015fc2929ba",
+      "duration": 20.35,
+      "peak": 0.8062968850135803,
+      "rms": 0.08256441354751587,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-8",
+      "sha256": "a33a9fa03b9b9e34cab0d8d88467e3499f6db8d1390bd62c6a966c91fe1f3f11",
+      "duration": 21.0,
+      "peak": 0.8081013560295105,
+      "rms": 0.08360817283391953,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-9",
+      "sha256": "7764be8da453696cb9ce7044976ebd503337e5a8c4d9cf0b9854cf1b808fb8a3",
+      "duration": 20.325,
+      "peak": 0.8157240152359009,
+      "rms": 0.08391205221414566,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-10",
+      "sha256": "75b8a7905480caddaa96ffdfc7575761a0843c44b4271316aae2f76368d9448e",
+      "duration": 22.275,
+      "peak": 0.8181933760643005,
+      "rms": 0.08270308375358582,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-11",
+      "sha256": "0a09688b2f2da4b417c73113b64577f3a24934fca8b7a3fd6e364494dde3f2f0",
+      "duration": 21.225,
+      "peak": 0.8158648014068604,
+      "rms": 0.08310046046972275,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-12",
+      "sha256": "aa216f85c876afcb088f6674c5788ee1a37769d5622ee11c42d21585fff03571",
+      "duration": 20.7,
+      "peak": 0.8118213415145874,
+      "rms": 0.08322092890739441,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-13",
+      "sha256": "8f816efccf481334c4f359438225c2cc554616f9f462dfbc7b88553d7cd8bb86",
+      "duration": 20.2,
+      "peak": 0.8217529654502869,
+      "rms": 0.08292572945356369,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-14",
+      "sha256": "0eb95a2725789bb1f4f4ce05dc939eea3ded83691e7b8f979679636d86054f0d",
+      "duration": 20.15,
+      "peak": 0.8075520992279053,
+      "rms": 0.08537644892930984,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-15",
+      "sha256": "94bae94dd3965eaa46072ba23ed87d64f6ee58701f34cc1a1322b00d5047d74f",
+      "duration": 21.3,
+      "peak": 0.8195444941520691,
+      "rms": 0.08548310399055481,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-16",
+      "sha256": "d276d5c9f5b7831e59f4482e470daf10710f0e7d2d3d0f91c337a82197753d97",
+      "duration": 20.15,
+      "peak": 0.823162317276001,
+      "rms": 0.08337034285068512,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-17",
+      "sha256": "23d414111674fdb5b75ce4013ff3e31fda553363de3b7bc12da1d09664e4a2fc",
+      "duration": 21.8,
+      "peak": 0.8125235438346863,
+      "rms": 0.08274871110916138,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v1-18",
+      "sha256": "792afa24939afc4d32fdecf6c13ee54e35ea03f7ec71a98fe25cf25a3d2aeae6",
+      "duration": 20.4,
+      "peak": 0.8210926055908203,
+      "rms": 0.08468765765428543,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-where-1",
+      "sha256": "49f311aec8e8d695721a66b9b7ac08a345f1367318b0258620689414dde5521a",
+      "duration": 20.5,
+      "peak": 0.8141663074493408,
+      "rms": 0.08391749113798141,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-where-2",
+      "sha256": "344296aecc2d46adf1d8fa67e6e5847e0e214bd22faf8c3a25e1fd589c368f3d",
+      "duration": 21.125,
+      "peak": 0.8116908669471741,
+      "rms": 0.08351206034421921,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-where-3",
+      "sha256": "d7e21bffb4e770739d4272f4be96d7c494aa4bfa4fc2b26e0fd8a0149186b62e",
+      "duration": 21.125,
+      "peak": 0.8160065412521362,
+      "rms": 0.08480269461870193,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-where-4",
+      "sha256": "cc0c9de6430e10857dd512714c73f29a7a4da07bbb7100839df47babf4c23203",
+      "duration": 20.75,
+      "peak": 0.8504281640052795,
+      "rms": 0.08331748098134995,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-where-5",
+      "sha256": "253b20f86d62387e457672aada4dd641b9eb0c13c3387a6e243a9791bcb5ed31",
+      "duration": 20.975,
+      "peak": 0.8143566846847534,
+      "rms": 0.08406195789575577,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-where-6",
+      "sha256": "2b913f4d63374b6713a3709c454482ac099d9d2d8ae36dd7858af04a0c1b5ae5",
+      "duration": 21.05,
+      "peak": 0.8083476424217224,
+      "rms": 0.08439505100250244,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-when-1",
+      "sha256": "6192d248f6410b5fbda865410ce4371189bbd68dedb96167f8f91caf7949476b",
+      "duration": 20.3,
+      "peak": 0.8214439153671265,
+      "rms": 0.08228423446416855,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-when-2",
+      "sha256": "1b7538931a501e0f8459a075e7541575ae22732b0b306f62dab2102a7b471b03",
+      "duration": 20.3,
+      "peak": 0.8182031512260437,
+      "rms": 0.08438083529472351,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-when-3",
+      "sha256": "30b9201df6f32bad3454cd97c25b3ce4718a770c86fbf93d4a27bb84ed3ae667",
+      "duration": 21.525,
+      "peak": 0.804733395576477,
+      "rms": 0.08458927273750305,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-when-4",
+      "sha256": "d907b0646c71848d7b67568bc6975203b4dc39b19e93624d9c6bf2a52b501889",
+      "duration": 21.025958,
+      "peak": 0.8162832260131836,
+      "rms": 0.0845622718334198,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-when-5",
+      "sha256": "4e22bd85eef75ada05775370b14c54d8517427020c72f75121910cbabb804c8e",
+      "duration": 21.8,
+      "peak": 0.8143765330314636,
+      "rms": 0.08225450664758682,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-when-6",
+      "sha256": "10aea23db430a82d4e0cce259a56661fb9acba17c1a4e066f9c28d3f6d699495",
+      "duration": 20.825,
+      "peak": 0.8273894786834717,
+      "rms": 0.08425725251436234,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-request-1",
+      "sha256": "d86455681b95bd1c62b6f80095b4cbe66dc6ded6e8cf511408518c378ee389e6",
+      "duration": 21.675,
+      "peak": 0.81886225938797,
+      "rms": 0.0816418007016182,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-request-2",
+      "sha256": "e8a1ba12d1eeb1825de2efcb823d553e7fcd30ef38cd8899eceb46fe26e0dd77",
+      "duration": 20.975,
+      "peak": 0.8198384642601013,
+      "rms": 0.08343321830034256,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-request-3",
+      "sha256": "0c4301be30de3868f78583c3febd36bc8175c42beeca3524edc82d72d2c537f7",
+      "duration": 20.925,
+      "peak": 0.8218629956245422,
+      "rms": 0.08382418006658554,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-request-4",
+      "sha256": "6ed9f9992aa9c5f1016fd9e49d8a64f5a8df2aeae86c2b2229a17dd3303b0c02",
+      "duration": 20.8,
+      "peak": 0.8141602277755737,
+      "rms": 0.0851304903626442,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-request-5",
+      "sha256": "b5643e606b5f2165335ddc560d79dfcfc2ff97aebc03739caae7f5f0da2753a8",
+      "duration": 21.575,
+      "peak": 0.8075520992279053,
+      "rms": 0.0843336284160614,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-request-6",
+      "sha256": "cdbb670d0821a19703323f8515cf962dc9073538cd494983759d2c1dde47e028",
+      "duration": 21.85,
+      "peak": 0.8258731365203857,
+      "rms": 0.08187537640333176,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-indirect-1",
+      "sha256": "d52402e6a844bedf98c04c11da24d343e2c4fb451ba202a58731f962266849de",
+      "duration": 21.95,
+      "peak": 0.8180004358291626,
+      "rms": 0.0840180292725563,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-indirect-2",
+      "sha256": "5914d4a0bceb0299bfd3c76af6ae88017e946cfdd8840538949d26b9abf7dda8",
+      "duration": 23.35,
+      "peak": 0.8285430669784546,
+      "rms": 0.08311426639556885,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-indirect-3",
+      "sha256": "69953962e5f06e6a0483fca144119dfc71d0d300fcda81b2dfaa6123b059b402",
+      "duration": 21.825,
+      "peak": 0.8182031512260437,
+      "rms": 0.084491066634655,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-indirect-4",
+      "sha256": "3e05f0397323fe80bd9f56e67ea20b8675501326d1e7fc34370d25006cef07cd",
+      "duration": 21.3,
+      "peak": 0.8165391683578491,
+      "rms": 0.08437784016132355,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-indirect-5",
+      "sha256": "f5e65e6f6e39e048dd1918db9ba15a40122eb72450e5cb9be468fae54d241dd9",
+      "duration": 21.325,
+      "peak": 0.8111439943313599,
+      "rms": 0.08274620026350021,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p2-v2-indirect-6",
+      "sha256": "4fe8e0c3f432fa8718821fa140a031cf628812164b728dfafb7ef4323bc6523f",
+      "duration": 24.5,
+      "peak": 0.8095898032188416,
+      "rms": 0.08576919883489609,
+      "decodePassed": true,
+      "asrPassed": false,
+      "flags": [
+        {
+          "source": "A line at the information desk.",
+          "transcript": " Align at the information desk.",
+          "similarity": 0.7272727272727273,
+          "flagged": true
+        }
+      ]
+    },
+    {
+      "id": "p1-listening-v1-forklift",
+      "sha256": "31a368bb52a60375094d0f4ebc5c1aac09d55c7c74aabc0807103f16295c2fd6",
+      "duration": 25.0,
+      "peak": 0.8094273209571838,
+      "rms": 0.08035943657159805,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p1-listening-v1-desk",
+      "sha256": "ceb2a756167d2b2ba3dce70cba3e7580171970d8608ce82afd48af9d09520ce3",
+      "duration": 25.475,
+      "peak": 0.8073779344558716,
+      "rms": 0.08029349148273468,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p1-listening-v1-home-office",
+      "sha256": "1af79c38f56feb10136bfe80eec4004995a4ff7d514bc979163bf160c65aaade",
+      "duration": 25.825958,
+      "peak": 0.823162317276001,
+      "rms": 0.08122798055410385,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p1-listening-v1-conference",
+      "sha256": "9398dcfd7c7c2d7d5469c59322c0cd9589a011b5b4c8120d170f81e92056ed88",
+      "duration": 24.925,
+      "peak": 0.8141602277755737,
+      "rms": 0.07660822570323944,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p1-listening-v1-bicycle",
+      "sha256": "b61ae895432ceb535a05922116f9ddc99936b31654fcb1e8d72846ecbb5bc8ff",
+      "duration": 25.975,
+      "peak": 0.8099279999732971,
+      "rms": 0.0794227123260498,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p1-listening-v1-cyclist",
+      "sha256": "f692eda3ef3dc10f3bd6e14b0de6f86cd3d810eba982fafb998c09c03a680587",
+      "duration": 26.15,
+      "peak": 0.8116908669471741,
+      "rms": 0.08204986900091171,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-listening-v1-meeting",
+      "sha256": "823d18b6ccc8782f2986e16cdd40133a990f8491af7862c5fd87c883ae0d910d",
+      "duration": 62.15,
+      "peak": 0.8685775399208069,
+      "rms": 0.07985945791006088,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-listening-v1-delivery",
+      "sha256": "2496c1ca3096d0d42d76d8cf7413290b8525720fd90f8d6f796da82671f47e5a",
+      "duration": 58.95,
+      "peak": 0.8119552731513977,
+      "rms": 0.07897214591503143,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p4-listening-v1-museum",
+      "sha256": "2ca1ad3fddd2761086aed3d811dca92b8403f1976f52bd6abe2d7eb5cf49dbc9",
+      "duration": 54.475,
+      "peak": 0.8243759870529175,
+      "rms": 0.07873044908046722,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p4-listening-v1-repair",
+      "sha256": "a231a306422a981282f08d23472161b208a6f4b96cba40e68aa074f114407a92",
+      "duration": 56.85,
+      "peak": 0.8211478590965271,
+      "rms": 0.0808977335691452,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-exam-v1-registration",
+      "sha256": "57b608bf4be7356c096d8fea253a313a93cc0a80534a918271528ef4b10f1f3c",
+      "duration": 61.6,
+      "peak": 0.8184517621994019,
+      "rms": 0.08144251257181168,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-exam-v1-restaurant",
+      "sha256": "1a685aedbea2f4778bb74f2a93bf594b96facd439cd068f7b2d955281944e0b6",
+      "duration": 58.525,
+      "peak": 0.8315445780754089,
+      "rms": 0.07888784259557724,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-exam-v1-printer",
+      "sha256": "88313cc14d0d2f832902c671288b3741a1544413e274e9eccc67f1e4a3a10a41",
+      "duration": 59.75,
+      "peak": 0.8153761625289917,
+      "rms": 0.08358065783977509,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-exam-v1-hotel",
+      "sha256": "e8bc2140b712233d26fc9d25a14a2963b48dcf06f5167b15b7129f3370f11540",
+      "duration": 63.375,
+      "peak": 0.8167583346366882,
+      "rms": 0.08305485546588898,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-exam-v1-interview",
+      "sha256": "4121d50b504e20990b2d7c36a9b9c824487e557cd01043b917cd1d25eb64b331",
+      "duration": 57.15,
+      "peak": 0.8111791014671326,
+      "rms": 0.07751863449811935,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-exam-v1-catering",
+      "sha256": "7a3de7c1e71b2d9a55d96f94d71c008cdcc92a5c5bcd4cce1c38cb931a32a452",
+      "duration": 58.5,
+      "peak": 0.8222780823707581,
+      "rms": 0.07982659339904785,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-exam-v1-software",
+      "sha256": "18d144e95d3fe0feb5290fa39f8d0940cecc962e4a41428c754d03dc3cd8a10f",
+      "duration": 58.375,
+      "peak": 0.8222111463546753,
+      "rms": 0.08045824617147446,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-exam-v1-bicycle-repair",
+      "sha256": "198d243d401713117a653376f4f7a2059ff2c3847fcb089446cc23b3ff280d57",
+      "duration": 58.1,
+      "peak": 0.8372153043746948,
+      "rms": 0.07862606644630432,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-exam-v1-supplies",
+      "sha256": "69c16dcc32e4c7711bced8033ee67aff39755ec1b3591671c1af6f9901aebe45",
+      "duration": 61.6,
+      "peak": 0.8180657625198364,
+      "rms": 0.08356345444917679,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-exam-v1-travel",
+      "sha256": "5772a8614b72641b459ccbe5c8c2049582283a90ebca84210ca025d5e3f13019",
+      "duration": 60.25,
+      "peak": 0.812439501285553,
+      "rms": 0.07742371410131454,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p3-exam-v1-library",
+      "sha256": "dc404066dc341f2c8c4d364c1822dad0c1b3976f54a18df023ad6925c83cca63",
+      "duration": 59.9,
+      "peak": 0.8195825815200806,
+      "rms": 0.08088701218366623,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p4-exam-v1-shuttle",
+      "sha256": "fd208e46ebe50db84c213c1715db9a93ee25d9e47ceba35bc2f566f96fc931bd",
+      "duration": 59.075,
+      "peak": 0.8077418208122253,
+      "rms": 0.07931479066610336,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p4-exam-v1-opening",
+      "sha256": "4067fb0bd47be4d8dce7e919681a732ae4e2549de6b52ebc02eed92732908932",
+      "duration": 53.975,
+      "peak": 0.8162164688110352,
+      "rms": 0.0788925290107727,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p4-exam-v1-safety",
+      "sha256": "e38d370921bbf9bc8e38b3e832aa5e9e709b43b8b91daa130e7cb127a3d78a17",
+      "duration": 54.025958,
+      "peak": 0.8132896423339844,
+      "rms": 0.07866334915161133,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p4-exam-v1-order",
+      "sha256": "e5d0965208e154d1fe2b79d6b225f8e2742a053f6d6447bf080d33cb1be14d8f",
+      "duration": 55.825958,
+      "peak": 0.81238853931427,
+      "rms": 0.08178568631410599,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p4-exam-v1-presentation",
+      "sha256": "7ea1e02bebf148797cc50646de4cdca5ddb11c4fe563fab17b9f01954601f3cd",
+      "duration": 57.85,
+      "peak": 0.8073604702949524,
+      "rms": 0.08211354911327362,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p4-exam-v1-maintenance",
+      "sha256": "18d1e024bf2753170f0329e38ee58167617721507449bf639a9e09d59dfe704b",
+      "duration": 59.35,
+      "peak": 0.8077819347381592,
+      "rms": 0.08841735124588013,
+      "decodePassed": true,
+      "asrPassed": false,
+      "flags": [
+        {
+          "source": "Where can tenants obtain drinking water?",
+          "transcript": " where contentants obtain drinking water.",
+          "similarity": 0.7272727272727273,
+          "flagged": true
+        }
+      ]
+    },
+    {
+      "id": "p4-exam-v1-recruitment",
+      "sha256": "aac65dddc3fcb11e127ddbe8eda48f9b341d8343fa803fd1dcd01bd70ac68a4d",
+      "duration": 58.0,
+      "peak": 0.8144065737724304,
+      "rms": 0.0804879367351532,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "p4-exam-v1-lost-property",
+      "sha256": "7f564088056de82e276d53c5970218540f742e54f20ca56599645098cafad6a8",
+      "duration": 57.325,
+      "peak": 0.8001851439476013,
+      "rms": 0.08133575320243835,
+      "decodePassed": true,
+      "asrPassed": true,
+      "flags": []
+    },
+    {
+      "id": "exam-200-v1-listening",
+      "sha256": "6efc3b27b10232b869359d180dff81de144a712a5926352400a8926b5a4b3a4b",
+      "duration": 2700.0,
+      "peak": 0.8547775149345398,
+      "rms": 0.07209217548370361,
+      "decodePassed": true,
+      "asrPassed": null,
+      "flags": []
+    }
+  ]
+}

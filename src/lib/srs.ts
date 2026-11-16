@@ -7,9 +7,11 @@ export interface SRSData {
 
 export function calculateNextReview(
   quality: number, // 0 to 5
-  previousSRS: SRSData
+  previousSRS: SRSData,
+  now = new Date(),
 ): SRSData {
   let { easiness, interval, repetitions } = previousSRS;
+  if (!Number.isInteger(quality) || quality < 0 || quality > 5 || !Number.isFinite(easiness) || easiness < 1.3 || !Number.isSafeInteger(interval) || interval < 0 || !Number.isSafeInteger(repetitions) || repetitions < 0) throw new Error("Dữ liệu SRS không hợp lệ.");
 
   if (quality >= 3) {
     if (repetitions === 0) {
@@ -28,7 +30,7 @@ export function calculateNextReview(
   easiness = easiness + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
   if (easiness < 1.3) easiness = 1.3;
 
-  const nextReviewDate = new Date();
+  const nextReviewDate = new Date(now);
   nextReviewDate.setDate(nextReviewDate.getDate() + interval);
 
   return {

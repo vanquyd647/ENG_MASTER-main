@@ -1,0 +1,1408 @@
+{
+  "version": 1,
+  "model": "hexgrad/Kokoro-82M",
+  "license": "Apache-2.0",
+  "generatedLocally": true,
+  "sampleRate": 24000,
+  "clips": {
+    "p2-v1-1": {
+      "src": "/learning/audio-v1/p2-v1-1.mp3",
+      "duration": 13.825,
+      "sha256": "cdb1d53b90aa548e3d44129a283f5ef2a34fa51243287baba6359a3db7bdf2fc",
+      "bytes": 111405,
+      "sourceSha256": "0d06f79c6149b90d006c9e0cad5afe4477ca18cd9f07942d3809721e50bb0a23",
+      "questionIds": [
+        "p2-v1-1"
+      ]
+    },
+    "p2-v1-2": {
+      "src": "/learning/audio-v1/p2-v1-2.mp3",
+      "duration": 13.7,
+      "sha256": "7f043120ac10ddb65e7170be2b1a3130f6634a2cb62fcaf0622e952f5be10b69",
+      "bytes": 110253,
+      "sourceSha256": "7836e2c4673bba841f21c098b9effccd601a161a77be8958b780f90d077f22ee",
+      "questionIds": [
+        "p2-v1-2"
+      ]
+    },
+    "p2-v1-3": {
+      "src": "/learning/audio-v1/p2-v1-3.mp3",
+      "duration": 13.65,
+      "sha256": "2484d956d9a7a77cbe4d7168fbc5c7c79791679f86e2ad22919c4e3200b3bc2d",
+      "bytes": 109869,
+      "sourceSha256": "8d2077f792c1cfa642b6d150dcc7d1c7672fb4fe26dcb9ed251a202386d01e62",
+      "questionIds": [
+        "p2-v1-3"
+      ]
+    },
+    "p2-v1-4": {
+      "src": "/learning/audio-v1/p2-v1-4.mp3",
+      "duration": 14.825,
+      "sha256": "84b653f78eab4072444b049e2c6e85f16e08857709119b99fa6868dedcc7ce1f",
+      "bytes": 119277,
+      "sourceSha256": "ac793780e39192430246320c0304602a0e9c0bf145f0f239539649d1470eb248",
+      "questionIds": [
+        "p2-v1-4"
+      ]
+    },
+    "p2-v1-5": {
+      "src": "/learning/audio-v1/p2-v1-5.mp3",
+      "duration": 13.825,
+      "sha256": "d4fadabff295fa86fa3213e09cad67942e0e89c56acd9c5afbeec53044506601",
+      "bytes": 111405,
+      "sourceSha256": "aa4da20d0e38ca3c95cdb424bd396d92169fc32fcb6a12489b802515d4ba1a6c",
+      "questionIds": [
+        "p2-v1-5"
+      ]
+    },
+    "p2-v1-6": {
+      "src": "/learning/audio-v1/p2-v1-6.mp3",
+      "duration": 13.175,
+      "sha256": "0e1b59bccdde6c071607e602f15297e4132b074117e66afef629bc7bee1fa594",
+      "bytes": 106029,
+      "sourceSha256": "7d8bd254d2b5eef7e022fe34a44a57b3702c642706678ac49d1fef815e127887",
+      "questionIds": [
+        "p2-v1-6"
+      ]
+    },
+    "p2-v1-7": {
+      "src": "/learning/audio-v1/p2-v1-7.mp3",
+      "duration": 14.3,
+      "sha256": "7cd7f3baa17b5f69ec8e13c799eb7332e33daa5b697ba864bd98871b76a2050a",
+      "bytes": 115053,
+      "sourceSha256": "8d2acca2c6b67aab750c970ae65bc58d0f3245596bdc0b0b20d1f563fd9d4163",
+      "questionIds": [
+        "p2-v1-7"
+      ]
+    },
+    "p2-v1-8": {
+      "src": "/learning/audio-v1/p2-v1-8.mp3",
+      "duration": 14.675,
+      "sha256": "e75a3df7f0162656bb837cdff60880ce7413e396c86181f3abf81e0c9f865bf7",
+      "bytes": 118125,
+      "sourceSha256": "168ee23cf59aeb0098d61091520a1cecff8072c6f6ae43419a1faf3a25b7d5ce",
+      "questionIds": [
+        "p2-v1-8"
+      ]
+    },
+    "p2-v1-9": {
+      "src": "/learning/audio-v1/p2-v1-9.mp3",
+      "duration": 14.0,
+      "sha256": "d92d08e595d42eea36dfaae22b20b86d0eaeda488f95c90072c6d291cdb3c2f7",
+      "bytes": 112749,
+      "sourceSha256": "4d59c020b352d52932d157c6f1d07ad3ca12231237de47b705585592b5c55c66",
+      "questionIds": [
+        "p2-v1-9"
+      ]
+    },
+    "p2-v1-10": {
+      "src": "/learning/audio-v1/p2-v1-10.mp3",
+      "duration": 16.225,
+      "sha256": "cd12122644d7d2e91b4996c4da88a573f8d79a0bc71139f842381701cb15585a",
+      "bytes": 130605,
+      "sourceSha256": "38a4ba7cf99728803710477e89cddc60af62de121155c6d2e8c1fda774a98d9d",
+      "questionIds": [
+        "p2-v1-10"
+      ]
+    },
+    "p2-v1-11": {
+      "src": "/learning/audio-v1/p2-v1-11.mp3",
+      "duration": 15.15,
+      "sha256": "5679eca3616e83bf38d366600b42932b0c0a2ea837f9142a19c7c39d6a9a7bc1",
+      "bytes": 121965,
+      "sourceSha256": "1c5a05b3cc490bdb9a1a3b5254c1597e040225625a214ffc5ca9428d80143aec",
+      "questionIds": [
+        "p2-v1-11"
+      ]
+    },
+    "p2-v1-12": {
+      "src": "/learning/audio-v1/p2-v1-12.mp3",
+      "duration": 14.375,
+      "sha256": "7591d3cbfc19c65b067b7df93a9da6170a9a4f7ec1534b7bed83bd6767525066",
+      "bytes": 115629,
+      "sourceSha256": "046ca137410ad683c25ae1e8b39401698c225c8dd38fa50fe7b1c2db77f0b93d",
+      "questionIds": [
+        "p2-v1-12"
+      ]
+    },
+    "p2-v1-13": {
+      "src": "/learning/audio-v1/p2-v1-13.mp3",
+      "duration": 13.825,
+      "sha256": "128aea91783d300d94bda597bdeda9c4d38030f711fa614a6d8ccff4a36704f6",
+      "bytes": 111405,
+      "sourceSha256": "592643539d7a67c969210026de54c414a8229edc87016963f84ff58c6f594f89",
+      "questionIds": [
+        "p2-v1-13"
+      ]
+    },
+    "p2-v1-14": {
+      "src": "/learning/audio-v1/p2-v1-14.mp3",
+      "duration": 13.925,
+      "sha256": "77d32b981dbdbfce06d04ec751f9c3047fdb18e66940a6fc5ee324082688cd7f",
+      "bytes": 112173,
+      "sourceSha256": "36efde69d892986cb0c247bb624490ef06a8ec9f205a392e70b0c977d573a38e",
+      "questionIds": [
+        "p2-v1-14"
+      ]
+    },
+    "p2-v1-15": {
+      "src": "/learning/audio-v1/p2-v1-15.mp3",
+      "duration": 15.15,
+      "sha256": "bf63e87997e4a48ae94a0144361e489aba717239780e4417157a61d566c86764",
+      "bytes": 121965,
+      "sourceSha256": "7b5b40a1071444ad1df58f8be6e0aeffc015af41aa3eb82bfdec1e2e4a6e2fa9",
+      "questionIds": [
+        "p2-v1-15"
+      ]
+    },
+    "p2-v1-16": {
+      "src": "/learning/audio-v1/p2-v1-16.mp3",
+      "duration": 13.825,
+      "sha256": "8929dcdfd32da5eb1ffb03d2cd1dc4edbfb9155bfefca167ab4487cb44055cf5",
+      "bytes": 111405,
+      "sourceSha256": "560399020c9b4efa868ee2df472232067f2c8e76e5b395e1d73478d7176c5743",
+      "questionIds": [
+        "p2-v1-16"
+      ]
+    },
+    "p2-v1-17": {
+      "src": "/learning/audio-v1/p2-v1-17.mp3",
+      "duration": 15.425,
+      "sha256": "70e107c43c6cf28a6f5bf725d7b21b0b63ac1c0e0b40bad6c901f0584a63dc29",
+      "bytes": 124077,
+      "sourceSha256": "041c7e56f8faa7a21937bbdf14fe13bf710542741de512e945b6728a4ed3d7a9",
+      "questionIds": [
+        "p2-v1-17"
+      ]
+    },
+    "p2-v1-18": {
+      "src": "/learning/audio-v1/p2-v1-18.mp3",
+      "duration": 14.2,
+      "sha256": "ab7c8d085660bca2788bdaaa420eb4a39ef04163e3f334dab33970349e661e3f",
+      "bytes": 114285,
+      "sourceSha256": "7242b17bac53feda3f4f17c88e780358784632469734604169f0d1eb1395bee6",
+      "questionIds": [
+        "p2-v1-18"
+      ]
+    },
+    "p2-v2-where-1": {
+      "src": "/learning/audio-v1/p2-v2-where-1.mp3",
+      "duration": 14.275,
+      "sha256": "bf1fac1d1f36a01c4400f230529a0cae9358fd42ab27a93491f1235ed3f8375c",
+      "bytes": 114861,
+      "sourceSha256": "e4a8999dc4160ace34109c4ef66c7b2fb997506ddc3029fef2082c79564252f0",
+      "questionIds": [
+        "p2-v2-where-1"
+      ]
+    },
+    "p2-v2-where-2": {
+      "src": "/learning/audio-v1/p2-v2-where-2.mp3",
+      "duration": 14.85,
+      "sha256": "04605fe7da6d62321886a4865d69744c147fc503f36e44e9f1200cdf846157a9",
+      "bytes": 119469,
+      "sourceSha256": "ff4f94120a6c56548eadcdc764a23d0144e92e0a66a403ecebeb26b3288530db",
+      "questionIds": [
+        "p2-v2-where-2"
+      ]
+    },
+    "p2-v2-where-3": {
+      "src": "/learning/audio-v1/p2-v2-where-3.mp3",
+      "duration": 14.825,
+      "sha256": "9faf63923041aec8fc552564864eb8b3bf31a2975640b7449d3446bbb0394ba0",
+      "bytes": 119277,
+      "sourceSha256": "5f20ea1b85b2fa3d94941dd1670ea6487c9dfee850f697af622994f659385228",
+      "questionIds": [
+        "p2-v2-where-3"
+      ]
+    },
+    "p2-v2-where-4": {
+      "src": "/learning/audio-v1/p2-v2-where-4.mp3",
+      "duration": 14.25,
+      "sha256": "27ec756521dfe590604ab61961944c50394aad6921503a40a69f639b49787674",
+      "bytes": 114669,
+      "sourceSha256": "a882c8268d57b4a40298fe174500df93ea1a3a3cd00bcbc8af3396e8addc6009",
+      "questionIds": [
+        "p2-v2-where-4"
+      ]
+    },
+    "p2-v2-where-5": {
+      "src": "/learning/audio-v1/p2-v2-where-5.mp3",
+      "duration": 14.8,
+      "sha256": "4289a15f78f54d0840e3667a12e0f06ad8093825bcc4642ef6ce5eb428c9bf0c",
+      "bytes": 119085,
+      "sourceSha256": "15e365f009708c1800c1751253a52db7b2a76967b47fd2e106def0032b58bfe1",
+      "questionIds": [
+        "p2-v2-where-5"
+      ]
+    },
+    "p2-v2-where-6": {
+      "src": "/learning/audio-v1/p2-v2-where-6.mp3",
+      "duration": 14.6,
+      "sha256": "61e52b9601074d0a2a8afc6d08488cf638e87c325257279f9fbf3cd8f833d4a3",
+      "bytes": 117549,
+      "sourceSha256": "9b3d3148ea64b8d01c75a24a4435110cd9eb3b212448f837533e7bda3b47e38e",
+      "questionIds": [
+        "p2-v2-where-6"
+      ]
+    },
+    "p2-v2-when-1": {
+      "src": "/learning/audio-v1/p2-v2-when-1.mp3",
+      "duration": 13.975,
+      "sha256": "815459c1ed1124571332adffa70b4e1530f4d3a12b5d9672aa6037e4902173b0",
+      "bytes": 112557,
+      "sourceSha256": "3b1ddca76004f2f957e638998854abc34bba4d8ba96be6c3ab5fe760b715ee68",
+      "questionIds": [
+        "p2-v2-when-1"
+      ]
+    },
+    "p2-v2-when-2": {
+      "src": "/learning/audio-v1/p2-v2-when-2.mp3",
+      "duration": 13.95,
+      "sha256": "936c1716de9fe6be560ad4c2ca83e3fdd96652edfbd2055f2c4fb9bce5d8971a",
+      "bytes": 112365,
+      "sourceSha256": "1ff0cff25fe9d53b8c7efecff4db3582ab7ba664f6fa7fc0b1d2fe26e3a08e10",
+      "questionIds": [
+        "p2-v2-when-2"
+      ]
+    },
+    "p2-v2-when-3": {
+      "src": "/learning/audio-v1/p2-v2-when-3.mp3",
+      "duration": 15.2,
+      "sha256": "e47d99669cea3f3d2d8f98b6bcedf327e6389f237b31a772fff380921107747e",
+      "bytes": 122349,
+      "sourceSha256": "19c151079c99f4354a8bbe3d5eb3553095e1a6c37e09acf678cd6821054aa29e",
+      "questionIds": [
+        "p2-v2-when-3"
+      ]
+    },
+    "p2-v2-when-4": {
+      "src": "/learning/audio-v1/p2-v2-when-4.mp3",
+      "duration": 14.7,
+      "sha256": "da1040ffb4f2533daec0efd13070c95835f6250bd9dba95a2e3d47806f5ab31f",
+      "bytes": 118317,
+      "sourceSha256": "a77582f6bb3d617ed711618a6678c8e5a948dc68ec05fcbcdd5ca90dbabae2f0",
+      "questionIds": [
+        "p2-v2-when-4"
+      ]
+    },
+    "p2-v2-when-5": {
+      "src": "/learning/audio-v1/p2-v2-when-5.mp3",
+      "duration": 15.55,
+      "sha256": "9314b09215657b38dadd65bc463846aee52f2749ecda34e746b712e82d2c6df6",
+      "bytes": 125037,
+      "sourceSha256": "5acec6b82969204370c0511d682337b9fc9bcff2f4e45e575182e0b9c2970fad",
+      "questionIds": [
+        "p2-v2-when-5"
+      ]
+    },
+    "p2-v2-when-6": {
+      "src": "/learning/audio-v1/p2-v2-when-6.mp3",
+      "duration": 14.5,
+      "sha256": "52b5ed75399f981800c20ff7a7e2531781c0d86c926150917595b56ada796bb1",
+      "bytes": 116781,
+      "sourceSha256": "430818717e91bfe9729d5bcf889cc14cfd1b78748f9c8350ea86157f9787d6f6",
+      "questionIds": [
+        "p2-v2-when-6"
+      ]
+    },
+    "p2-v2-request-1": {
+      "src": "/learning/audio-v1/p2-v2-request-1.mp3",
+      "duration": 15.5,
+      "sha256": "c821e401391ca31775ab360ec3db4c665342a18c6694b964d0a6fc0e72ddffe0",
+      "bytes": 124653,
+      "sourceSha256": "f212a0ce3c19989b019cf4fece39b2ecc7bcf57726a803892c34c60641cc16f0",
+      "questionIds": [
+        "p2-v2-request-1"
+      ]
+    },
+    "p2-v2-request-2": {
+      "src": "/learning/audio-v1/p2-v2-request-2.mp3",
+      "duration": 14.75,
+      "sha256": "d49825100dc73f82651055f911e048233a76941392808d5deeda65c40d39e0f0",
+      "bytes": 118701,
+      "sourceSha256": "bcd81e0af2f1f8f747786b9f0bd29dd9bc349b19a0a0b2b1ba115944a00bf2b6",
+      "questionIds": [
+        "p2-v2-request-2"
+      ]
+    },
+    "p2-v2-request-3": {
+      "src": "/learning/audio-v1/p2-v2-request-3.mp3",
+      "duration": 14.6,
+      "sha256": "6a70a2a829ecaff67f2adea72068cb76682490a6944beff472f00d2b88deb325",
+      "bytes": 117549,
+      "sourceSha256": "bb476df56e38a7add1127d49f6d5e5e1db82947ab0e3565fcae619f798a09d06",
+      "questionIds": [
+        "p2-v2-request-3"
+      ]
+    },
+    "p2-v2-request-4": {
+      "src": "/learning/audio-v1/p2-v2-request-4.mp3",
+      "duration": 14.575,
+      "sha256": "1aeb571e108bc962ad4e19920f1c05180ecf3abe436da87792e957fd131dc56f",
+      "bytes": 117357,
+      "sourceSha256": "da61cad410bbd9b9cd254026f7ff904a2d6e140dde809f9fffd3ad65f0b0bfef",
+      "questionIds": [
+        "p2-v2-request-4"
+      ]
+    },
+    "p2-v2-request-5": {
+      "src": "/learning/audio-v1/p2-v2-request-5.mp3",
+      "duration": 15.525,
+      "sha256": "6a6d5ad961434697fceb6cdbd4e138eff94657e4ce969aeda8a60c70919a423a",
+      "bytes": 124845,
+      "sourceSha256": "94860ac87200abb31eb2979449685189ee873d1b2178f3dca2e1056912d1cdf4",
+      "questionIds": [
+        "p2-v2-request-5"
+      ]
+    },
+    "p2-v2-request-6": {
+      "src": "/learning/audio-v1/p2-v2-request-6.mp3",
+      "duration": 15.475,
+      "sha256": "f2e7936356bf1ef409e3655f4e130399bb38897927d33a59c3641264dfa9aa9a",
+      "bytes": 124461,
+      "sourceSha256": "9de00b44db0d9399fa25c7bdd1a7f4a44839762d6d28c637cdb738e919bd1859",
+      "questionIds": [
+        "p2-v2-request-6"
+      ]
+    },
+    "p2-v2-indirect-1": {
+      "src": "/learning/audio-v1/p2-v2-indirect-1.mp3",
+      "duration": 15.55,
+      "sha256": "610d68f93bade8d2a097e377a1523c94917569621acc451356c5ee69444ecc8e",
+      "bytes": 125037,
+      "sourceSha256": "63bf4e29ce2d5f8e7be6038c9f3ae93572a5dd9628180d1527ffca26a91b41a8",
+      "questionIds": [
+        "p2-v2-indirect-1"
+      ]
+    },
+    "p2-v2-indirect-2": {
+      "src": "/learning/audio-v1/p2-v2-indirect-2.mp3",
+      "duration": 17.15,
+      "sha256": "20c927e0cc3e90d1a00f75bf24c4f4f14c988ebd68c88ae7ff66e9bfc5f7a5f3",
+      "bytes": 137901,
+      "sourceSha256": "78dcfb561841dc8c52c2cb1437ab04ef3a0315fccc4b6297e90f0b890e0832d6",
+      "questionIds": [
+        "p2-v2-indirect-2"
+      ]
+    },
+    "p2-v2-indirect-3": {
+      "src": "/learning/audio-v1/p2-v2-indirect-3.mp3",
+      "duration": 15.55,
+      "sha256": "3856a1806229a5b2b90f5e394341f4b0d3d9095babcc3446c661c6c313d765cf",
+      "bytes": 125037,
+      "sourceSha256": "1957bb722cf2e8dbdae4b8dbeb5c63669735f7444e3384485c8ea4df7b758de1",
+      "questionIds": [
+        "p2-v2-indirect-3"
+      ]
+    },
+    "p2-v2-indirect-4": {
+      "src": "/learning/audio-v1/p2-v2-indirect-4.mp3",
+      "duration": 15.025,
+      "sha256": "aa39840772c43cbbf1151b5fea6d8756bcba74f3bb3dbdeaf5329f68c62928cf",
+      "bytes": 121005,
+      "sourceSha256": "21db5883e7f99a950fae62f4770b3b8809c71b8c077223151a91d2eb4053ab06",
+      "questionIds": [
+        "p2-v2-indirect-4"
+      ]
+    },
+    "p2-v2-indirect-5": {
+      "src": "/learning/audio-v1/p2-v2-indirect-5.mp3",
+      "duration": 15.1,
+      "sha256": "ee7b34cf27aa0be5b26dd09ee6dafcca22ebd847b34674d8753c73e7764aed27",
+      "bytes": 121581,
+      "sourceSha256": "13b10ac49a80bf245fc609dd661913c9b9062b96b989e8fa9571be3ab77f5582",
+      "questionIds": [
+        "p2-v2-indirect-5"
+      ]
+    },
+    "p2-v2-indirect-6": {
+      "src": "/learning/audio-v1/p2-v2-indirect-6.mp3",
+      "duration": 18.425,
+      "sha256": "c5fb3b31fc2447eb3968525a9b838606418e99ffda92c6f9072f7ec09c882761",
+      "bytes": 148077,
+      "sourceSha256": "cc2bfe88a6d56bea60f6a4a4f72ee8708341884cd5b1071b1bcdb68ffeb5bf1e",
+      "questionIds": [
+        "p2-v2-indirect-6"
+      ]
+    },
+    "p1-listening-v1-forklift": {
+      "src": "/learning/audio-v1/p1-listening-v1-forklift.mp3",
+      "duration": 17.45,
+      "sha256": "a5c6c50c490146e6684e08b2a91a20d2dadffe3a8b99197f58e7fbe02cbe5f62",
+      "bytes": 140397,
+      "sourceSha256": "5f85c37914bc7842ed8d4ea14e8eb40f8d5fd8a068a0f3c9a186bf3d84cdbd38",
+      "questionIds": [
+        "p1-listening-v1-forklift-q1"
+      ]
+    },
+    "p1-listening-v1-desk": {
+      "src": "/learning/audio-v1/p1-listening-v1-desk.mp3",
+      "duration": 18.175,
+      "sha256": "47cdbd9ab2234931b939eb25137c929668892f5664ae672383c9d041145551cb",
+      "bytes": 146157,
+      "sourceSha256": "49fcc1c77553815db56685f17bc86cb2401567cb1bb6c807082e415211ebffce",
+      "questionIds": [
+        "p1-listening-v1-desk-q1"
+      ]
+    },
+    "p1-listening-v1-home-office": {
+      "src": "/learning/audio-v1/p1-listening-v1-home-office.mp3",
+      "duration": 18.5,
+      "sha256": "af5af4e60920701b0bb5439fbd412cf9e4782e060ebfa9a8f16715c8ce611025",
+      "bytes": 148653,
+      "sourceSha256": "7933b81da90f0091c30e723e1c73a292f12e5a44ea80973000064813b5a70e58",
+      "questionIds": [
+        "p1-listening-v1-home-office-q1"
+      ]
+    },
+    "p1-listening-v1-conference": {
+      "src": "/learning/audio-v1/p1-listening-v1-conference.mp3",
+      "duration": 17.55,
+      "sha256": "02616f849e6e26e416ed7e0be99290733a96d3e5ff569da8fafb66a336a3ad58",
+      "bytes": 141165,
+      "sourceSha256": "233e6e6df037cb7057a578482851eebf263b5dc07e59bb918692fa38dbac245b",
+      "questionIds": [
+        "p1-listening-v1-conference-q1"
+      ]
+    },
+    "p1-listening-v1-bicycle": {
+      "src": "/learning/audio-v1/p1-listening-v1-bicycle.mp3",
+      "duration": 18.75,
+      "sha256": "79f634f06efabdf511721147c79ec530dbfd0fe44537500ef3f28e887f022e56",
+      "bytes": 150765,
+      "sourceSha256": "93592bdb69a1c72ad36dde138bc6ea36f2ab66434784df8056d64899db172c19",
+      "questionIds": [
+        "p1-listening-v1-bicycle-q1"
+      ]
+    },
+    "p1-listening-v1-cyclist": {
+      "src": "/learning/audio-v1/p1-listening-v1-cyclist.mp3",
+      "duration": 18.6,
+      "sha256": "e0216cb8cac6d28e977e278a26d4b6e04c020167958d2887a0cb47cb2e72456b",
+      "bytes": 149421,
+      "sourceSha256": "511e7185e4d704e966e73bbe08270ecdca8fa8d6857eb9d92d8b9c67395ea8e7",
+      "questionIds": [
+        "p1-listening-v1-cyclist-q1"
+      ]
+    },
+    "p3-listening-v1-meeting": {
+      "src": "/learning/audio-v1/p3-listening-v1-meeting.mp3",
+      "duration": 62.15,
+      "sha256": "823d18b6ccc8782f2986e16cdd40133a990f8491af7862c5fd87c883ae0d910d",
+      "bytes": 497901,
+      "sourceSha256": "7286b9de85ba6e2d2f09db5c46a5bb973e6c8333cd187cf7098dfddf69774a25",
+      "questionIds": [
+        "p3-listening-v1-meeting-q1",
+        "p3-listening-v1-meeting-q2",
+        "p3-listening-v1-meeting-q3"
+      ]
+    },
+    "p3-listening-v1-delivery": {
+      "src": "/learning/audio-v1/p3-listening-v1-delivery.mp3",
+      "duration": 58.95,
+      "sha256": "2496c1ca3096d0d42d76d8cf7413290b8525720fd90f8d6f796da82671f47e5a",
+      "bytes": 472365,
+      "sourceSha256": "6edcd7e8e972f45fc9078fed34806fd65058e5dc52d0525b6bbcd05b852fb990",
+      "questionIds": [
+        "p3-listening-v1-delivery-q1",
+        "p3-listening-v1-delivery-q2",
+        "p3-listening-v1-delivery-q3"
+      ]
+    },
+    "p4-listening-v1-museum": {
+      "src": "/learning/audio-v1/p4-listening-v1-museum.mp3",
+      "duration": 54.475,
+      "sha256": "2ca1ad3fddd2761086aed3d811dca92b8403f1976f52bd6abe2d7eb5cf49dbc9",
+      "bytes": 436461,
+      "sourceSha256": "45266fe8373c202bc8d29341a98a90652cf0a65570fc95a7c6c658981466815b",
+      "questionIds": [
+        "p4-listening-v1-museum-q1",
+        "p4-listening-v1-museum-q2",
+        "p4-listening-v1-museum-q3"
+      ]
+    },
+    "p4-listening-v1-repair": {
+      "src": "/learning/audio-v1/p4-listening-v1-repair.mp3",
+      "duration": 56.85,
+      "sha256": "a231a306422a981282f08d23472161b208a6f4b96cba40e68aa074f114407a92",
+      "bytes": 455469,
+      "sourceSha256": "b952c2d3c839c81cc9d146303d668d790d6e5caa4dfd28c67479f2be18720965",
+      "questionIds": [
+        "p4-listening-v1-repair-q1",
+        "p4-listening-v1-repair-q2",
+        "p4-listening-v1-repair-q3"
+      ]
+    },
+    "p3-exam-v1-registration": {
+      "src": "/learning/audio-v1/p3-exam-v1-registration.mp3",
+      "duration": 61.975,
+      "sha256": "f0654086f0af5606f860d119ba09e467014ef646e47db137277ec57fd060b100",
+      "bytes": 496557,
+      "sourceSha256": "222f44bf59929a2aa73eb0898a5e762014d68fe7c02d9ed8c3829f6804b09e01",
+      "questionIds": [
+        "p3-exam-v1-registration-q1",
+        "p3-exam-v1-registration-q2",
+        "p3-exam-v1-registration-q3"
+      ]
+    },
+    "p3-exam-v1-restaurant": {
+      "src": "/learning/audio-v1/p3-exam-v1-restaurant.mp3",
+      "duration": 58.525,
+      "sha256": "1a685aedbea2f4778bb74f2a93bf594b96facd439cd068f7b2d955281944e0b6",
+      "bytes": 468909,
+      "sourceSha256": "8676bf2431b52fa3128e154628aee44085b6a43b9c99ead1de4f45983557d74c",
+      "questionIds": [
+        "p3-exam-v1-restaurant-q1",
+        "p3-exam-v1-restaurant-q2",
+        "p3-exam-v1-restaurant-q3"
+      ]
+    },
+    "p3-exam-v1-printer": {
+      "src": "/learning/audio-v1/p3-exam-v1-printer.mp3",
+      "duration": 59.75,
+      "sha256": "88313cc14d0d2f832902c671288b3741a1544413e274e9eccc67f1e4a3a10a41",
+      "bytes": 478701,
+      "sourceSha256": "eb9c00d9b9e00beee54b68e80e70e3ec69180c4e207fb20918aecbab4d0d8b1d",
+      "questionIds": [
+        "p3-exam-v1-printer-q1",
+        "p3-exam-v1-printer-q2",
+        "p3-exam-v1-printer-q3"
+      ]
+    },
+    "p3-exam-v1-hotel": {
+      "src": "/learning/audio-v1/p3-exam-v1-hotel.mp3",
+      "duration": 63.375,
+      "sha256": "e8bc2140b712233d26fc9d25a14a2963b48dcf06f5167b15b7129f3370f11540",
+      "bytes": 507693,
+      "sourceSha256": "5a44ae15f6d7009569183a78121b1b4bc6f384f6f5a4d4ceed09e40139110cd4",
+      "questionIds": [
+        "p3-exam-v1-hotel-q1",
+        "p3-exam-v1-hotel-q2",
+        "p3-exam-v1-hotel-q3"
+      ]
+    },
+    "p3-exam-v1-interview": {
+      "src": "/learning/audio-v1/p3-exam-v1-interview.mp3",
+      "duration": 57.15,
+      "sha256": "4121d50b504e20990b2d7c36a9b9c824487e557cd01043b917cd1d25eb64b331",
+      "bytes": 457965,
+      "sourceSha256": "27ce98d675980b634c327f65d482dfe7a3993b9850362eae1a69fed6a3d213cb",
+      "questionIds": [
+        "p3-exam-v1-interview-q1",
+        "p3-exam-v1-interview-q2",
+        "p3-exam-v1-interview-q3"
+      ]
+    },
+    "p3-exam-v1-catering": {
+      "src": "/learning/audio-v1/p3-exam-v1-catering.mp3",
+      "duration": 58.5,
+      "sha256": "7a3de7c1e71b2d9a55d96f94d71c008cdcc92a5c5bcd4cce1c38cb931a32a452",
+      "bytes": 468717,
+      "sourceSha256": "bb27e8e1fdb058cff1888f2f780160c3bed08170f389491aa4d609a0567c6236",
+      "questionIds": [
+        "p3-exam-v1-catering-q1",
+        "p3-exam-v1-catering-q2",
+        "p3-exam-v1-catering-q3"
+      ]
+    },
+    "p3-exam-v1-software": {
+      "src": "/learning/audio-v1/p3-exam-v1-software.mp3",
+      "duration": 58.85,
+      "sha256": "67d85a9a091233e4a6f4fe71affb1a3c0dbae9be897b7ad8a77e4f527b3afd0a",
+      "bytes": 471597,
+      "sourceSha256": "0991eeddd9af4ea1fb1800de278cdee67db105c79fb78fe428027ff32f5ad04e",
+      "questionIds": [
+        "p3-exam-v1-software-q1",
+        "p3-exam-v1-software-q2",
+        "p3-exam-v1-software-q3"
+      ]
+    },
+    "p3-exam-v1-bicycle-repair": {
+      "src": "/learning/audio-v1/p3-exam-v1-bicycle-repair.mp3",
+      "duration": 58.1,
+      "sha256": "198d243d401713117a653376f4f7a2059ff2c3847fcb089446cc23b3ff280d57",
+      "bytes": 465453,
+      "sourceSha256": "446cbde52fc23bcd232228e38ab5d917b3af67177face7a5e5761257df3b8eaf",
+      "questionIds": [
+        "p3-exam-v1-bicycle-repair-q1",
+        "p3-exam-v1-bicycle-repair-q2",
+        "p3-exam-v1-bicycle-repair-q3"
+      ]
+    },
+    "p3-exam-v1-supplies": {
+      "src": "/learning/audio-v1/p3-exam-v1-supplies.mp3",
+      "duration": 61.6,
+      "sha256": "69c16dcc32e4c7711bced8033ee67aff39755ec1b3591671c1af6f9901aebe45",
+      "bytes": 493485,
+      "sourceSha256": "97d0ad4ba11bf088d7d54558ecf89684d4fcd7c51adf046a7e1e4e51dec68589",
+      "questionIds": [
+        "p3-exam-v1-supplies-q1",
+        "p3-exam-v1-supplies-q2",
+        "p3-exam-v1-supplies-q3"
+      ]
+    },
+    "p3-exam-v1-travel": {
+      "src": "/learning/audio-v1/p3-exam-v1-travel.mp3",
+      "duration": 60.25,
+      "sha256": "5772a8614b72641b459ccbe5c8c2049582283a90ebca84210ca025d5e3f13019",
+      "bytes": 482733,
+      "sourceSha256": "1c08e8f11cbe62057449c398352b0860e964e469010c8c5eb6b27c00ff103d06",
+      "questionIds": [
+        "p3-exam-v1-travel-q1",
+        "p3-exam-v1-travel-q2",
+        "p3-exam-v1-travel-q3"
+      ]
+    },
+    "p3-exam-v1-library": {
+      "src": "/learning/audio-v1/p3-exam-v1-library.mp3",
+      "duration": 59.9,
+      "sha256": "dc404066dc341f2c8c4d364c1822dad0c1b3976f54a18df023ad6925c83cca63",
+      "bytes": 479853,
+      "sourceSha256": "d31cef051fc52c3dd778cd275e7d3968b0db05b590b215f24088c7129581b668",
+      "questionIds": [
+        "p3-exam-v1-library-q1",
+        "p3-exam-v1-library-q2",
+        "p3-exam-v1-library-q3"
+      ]
+    },
+    "p4-exam-v1-shuttle": {
+      "src": "/learning/audio-v1/p4-exam-v1-shuttle.mp3",
+      "duration": 55.425,
+      "sha256": "0e50335375304085d20ef38d62d8a9b22245c1d5393e1b6d85d2bfc61ea90096",
+      "bytes": 444141,
+      "sourceSha256": "f0472bf293fe975876ae8fb9ceefaa833db417da6674bc4a02fa75641167f1fc",
+      "questionIds": [
+        "p4-exam-v1-shuttle-q1",
+        "p4-exam-v1-shuttle-q2",
+        "p4-exam-v1-shuttle-q3"
+      ]
+    },
+    "p4-exam-v1-opening": {
+      "src": "/learning/audio-v1/p4-exam-v1-opening.mp3",
+      "duration": 53.975,
+      "sha256": "4067fb0bd47be4d8dce7e919681a732ae4e2549de6b52ebc02eed92732908932",
+      "bytes": 432429,
+      "sourceSha256": "11ef01513ba3a83daeb3fcda71e1e792e13b2e3f8a8c2b26cab0ab0f1ae05ca8",
+      "questionIds": [
+        "p4-exam-v1-opening-q1",
+        "p4-exam-v1-opening-q2",
+        "p4-exam-v1-opening-q3"
+      ]
+    },
+    "p4-exam-v1-safety": {
+      "src": "/learning/audio-v1/p4-exam-v1-safety.mp3",
+      "duration": 54.025,
+      "sha256": "e38d370921bbf9bc8e38b3e832aa5e9e709b43b8b91daa130e7cb127a3d78a17",
+      "bytes": 433005,
+      "sourceSha256": "215b7a4eeb990c2feaca7da19b7abf1c5c4f99b88037512209054b8d021ac3ed",
+      "questionIds": [
+        "p4-exam-v1-safety-q1",
+        "p4-exam-v1-safety-q2",
+        "p4-exam-v1-safety-q3"
+      ]
+    },
+    "p4-exam-v1-order": {
+      "src": "/learning/audio-v1/p4-exam-v1-order.mp3",
+      "duration": 55.825,
+      "sha256": "e5d0965208e154d1fe2b79d6b225f8e2742a053f6d6447bf080d33cb1be14d8f",
+      "bytes": 447405,
+      "sourceSha256": "68f0a1d8e8638aeeee6eda1a0896452341028c57ebd232adcc6931ca3e3b1fb8",
+      "questionIds": [
+        "p4-exam-v1-order-q1",
+        "p4-exam-v1-order-q2",
+        "p4-exam-v1-order-q3"
+      ]
+    },
+    "p4-exam-v1-presentation": {
+      "src": "/learning/audio-v1/p4-exam-v1-presentation.mp3",
+      "duration": 58.275,
+      "sha256": "0378a00a478ba00f9bab7b5efdb136cb6b4ec7e41cf7751a2a87b8b2746e9d43",
+      "bytes": 466989,
+      "sourceSha256": "62c5013736e4e16fe9dc50d65bfb2ca644ff941ce18dcf70ee5a86def9c4dd64",
+      "questionIds": [
+        "p4-exam-v1-presentation-q1",
+        "p4-exam-v1-presentation-q2",
+        "p4-exam-v1-presentation-q3"
+      ]
+    },
+    "p4-exam-v1-maintenance": {
+      "src": "/learning/audio-v1/p4-exam-v1-maintenance.mp3",
+      "duration": 59.325,
+      "sha256": "e2e82d1bf3352d584919d557b86ff6ed6a292c6412be7b9736e683883af5e3ce",
+      "bytes": 475245,
+      "sourceSha256": "8ba7b880648d78bb8a68b9002a48f66c86c8d0f922d0e7a5d3916dedfda9cd76",
+      "questionIds": [
+        "p4-exam-v1-maintenance-q1",
+        "p4-exam-v1-maintenance-q2",
+        "p4-exam-v1-maintenance-q3"
+      ]
+    },
+    "p4-exam-v1-recruitment": {
+      "src": "/learning/audio-v1/p4-exam-v1-recruitment.mp3",
+      "duration": 58.0,
+      "sha256": "aac65dddc3fcb11e127ddbe8eda48f9b341d8343fa803fd1dcd01bd70ac68a4d",
+      "bytes": 464685,
+      "sourceSha256": "664d20fec02506d4b0fc2dbfa0b3700ebc6d054bf06c56f96cbe2bfcd085d70f",
+      "questionIds": [
+        "p4-exam-v1-recruitment-q1",
+        "p4-exam-v1-recruitment-q2",
+        "p4-exam-v1-recruitment-q3"
+      ]
+    },
+    "p4-exam-v1-lost-property": {
+      "src": "/learning/audio-v1/p4-exam-v1-lost-property.mp3",
+      "duration": 57.325,
+      "sha256": "7f564088056de82e276d53c5970218540f742e54f20ca56599645098cafad6a8",
+      "bytes": 459309,
+      "sourceSha256": "f64114d1469731af82c5e4dec2c425dcedc895ecb46fb9a2dafac99524bfd76b",
+      "questionIds": [
+        "p4-exam-v1-lost-property-q1",
+        "p4-exam-v1-lost-property-q2",
+        "p4-exam-v1-lost-property-q3"
+      ]
+    }
+  },
+  "exam": {
+    "src": "/learning/audio-v1/exam-200-v1-listening.mp3",
+    "duration": 2700.0,
+    "sha256": "9c0ccd595cf6dd9d623f6eec64afac122de998c7e6ae4106fe6888ad40ba5558",
+    "bytes": 21600621,
+    "cues": [
+      {
+        "id": "p1-listening-v1-forklift",
+        "start": 17.875,
+        "end": 44.47325,
+        "questionIds": [
+          "p1-listening-v1-forklift-q1"
+        ],
+        "announcement": "Question 1."
+      },
+      {
+        "id": "p1-listening-v1-desk",
+        "start": 44.47325,
+        "end": 71.7965,
+        "questionIds": [
+          "p1-listening-v1-desk-q1"
+        ],
+        "announcement": "Question 2."
+      },
+      {
+        "id": "p1-listening-v1-home-office",
+        "start": 71.7965,
+        "end": 99.49475,
+        "questionIds": [
+          "p1-listening-v1-home-office-q1"
+        ],
+        "announcement": "Question 3."
+      },
+      {
+        "id": "p1-listening-v1-conference",
+        "start": 99.49475,
+        "end": 126.218,
+        "questionIds": [
+          "p1-listening-v1-conference-q1"
+        ],
+        "announcement": "Question 4."
+      },
+      {
+        "id": "p1-listening-v1-bicycle",
+        "start": 126.218,
+        "end": 154.21625,
+        "questionIds": [
+          "p1-listening-v1-bicycle-q1"
+        ],
+        "announcement": "Question 5."
+      },
+      {
+        "id": "p1-listening-v1-cyclist",
+        "start": 154.21625,
+        "end": 181.9645,
+        "questionIds": [
+          "p1-listening-v1-cyclist-q1"
+        ],
+        "announcement": "Question 6."
+      },
+      {
+        "id": "p2-v1-1",
+        "start": 181.9645,
+        "end": 205.13775,
+        "questionIds": [
+          "p2-v1-1"
+        ],
+        "announcement": "Question 7."
+      },
+      {
+        "id": "p2-v1-2",
+        "start": 205.13775,
+        "end": 227.961,
+        "questionIds": [
+          "p2-v1-2"
+        ],
+        "announcement": "Question 8."
+      },
+      {
+        "id": "p2-v1-3",
+        "start": 227.961,
+        "end": 250.80925,
+        "questionIds": [
+          "p2-v1-3"
+        ],
+        "announcement": "Question 9."
+      },
+      {
+        "id": "p2-v1-4",
+        "start": 250.80925,
+        "end": 274.8575,
+        "questionIds": [
+          "p2-v1-4"
+        ],
+        "announcement": "Question 10."
+      },
+      {
+        "id": "p2-v1-5",
+        "start": 274.8575,
+        "end": 298.03075,
+        "questionIds": [
+          "p2-v1-5"
+        ],
+        "announcement": "Question 11."
+      },
+      {
+        "id": "p2-v1-6",
+        "start": 298.03075,
+        "end": 320.529,
+        "questionIds": [
+          "p2-v1-6"
+        ],
+        "announcement": "Question 12."
+      },
+      {
+        "id": "p2-v1-7",
+        "start": 320.529,
+        "end": 344.35225,
+        "questionIds": [
+          "p2-v1-7"
+        ],
+        "announcement": "Question 13."
+      },
+      {
+        "id": "p2-v1-8",
+        "start": 344.35225,
+        "end": 368.5005,
+        "questionIds": [
+          "p2-v1-8"
+        ],
+        "announcement": "Question 14."
+      },
+      {
+        "id": "p2-v1-9",
+        "start": 368.5005,
+        "end": 391.97375,
+        "questionIds": [
+          "p2-v1-9"
+        ],
+        "announcement": "Question 15."
+      },
+      {
+        "id": "p2-v1-10",
+        "start": 391.97375,
+        "end": 417.672,
+        "questionIds": [
+          "p2-v1-10"
+        ],
+        "announcement": "Question 16."
+      },
+      {
+        "id": "p2-v1-11",
+        "start": 417.672,
+        "end": 442.42025,
+        "questionIds": [
+          "p2-v1-11"
+        ],
+        "announcement": "Question 17."
+      },
+      {
+        "id": "p2-v1-12",
+        "start": 442.42025,
+        "end": 466.2185,
+        "questionIds": [
+          "p2-v1-12"
+        ],
+        "announcement": "Question 18."
+      },
+      {
+        "id": "p2-v1-13",
+        "start": 466.2185,
+        "end": 489.54175,
+        "questionIds": [
+          "p2-v1-13"
+        ],
+        "announcement": "Question 19."
+      },
+      {
+        "id": "p2-v1-14",
+        "start": 489.54175,
+        "end": 512.815,
+        "questionIds": [
+          "p2-v1-14"
+        ],
+        "announcement": "Question 20."
+      },
+      {
+        "id": "p2-v1-15",
+        "start": 512.815,
+        "end": 537.51325,
+        "questionIds": [
+          "p2-v1-15"
+        ],
+        "announcement": "Question 21."
+      },
+      {
+        "id": "p2-v1-16",
+        "start": 537.51325,
+        "end": 560.8865,
+        "questionIds": [
+          "p2-v1-16"
+        ],
+        "announcement": "Question 22."
+      },
+      {
+        "id": "p2-v1-17",
+        "start": 560.8865,
+        "end": 585.88475,
+        "questionIds": [
+          "p2-v1-17"
+        ],
+        "announcement": "Question 23."
+      },
+      {
+        "id": "p2-v1-18",
+        "start": 585.88475,
+        "end": 609.683,
+        "questionIds": [
+          "p2-v1-18"
+        ],
+        "announcement": "Question 24."
+      },
+      {
+        "id": "p2-v2-where-1",
+        "start": 609.683,
+        "end": 633.58125,
+        "questionIds": [
+          "p2-v2-where-1"
+        ],
+        "announcement": "Question 25."
+      },
+      {
+        "id": "p2-v2-where-2",
+        "start": 633.58125,
+        "end": 657.9295,
+        "questionIds": [
+          "p2-v2-where-2"
+        ],
+        "announcement": "Question 26."
+      },
+      {
+        "id": "p2-v2-where-3",
+        "start": 657.9295,
+        "end": 682.37775,
+        "questionIds": [
+          "p2-v2-where-3"
+        ],
+        "announcement": "Question 27."
+      },
+      {
+        "id": "p2-v2-where-4",
+        "start": 682.37775,
+        "end": 706.126,
+        "questionIds": [
+          "p2-v2-where-4"
+        ],
+        "announcement": "Question 28."
+      },
+      {
+        "id": "p2-v2-where-5",
+        "start": 706.126,
+        "end": 730.49925,
+        "questionIds": [
+          "p2-v2-where-5"
+        ],
+        "announcement": "Question 29."
+      },
+      {
+        "id": "p2-v2-where-6",
+        "start": 730.49925,
+        "end": 754.3975,
+        "questionIds": [
+          "p2-v2-where-6"
+        ],
+        "announcement": "Question 30."
+      },
+      {
+        "id": "p2-v2-when-1",
+        "start": 754.3975,
+        "end": 778.02075,
+        "questionIds": [
+          "p2-v2-when-1"
+        ],
+        "announcement": "Question 31."
+      },
+      {
+        "id": "p3-listening-v1-meeting",
+        "start": 778.02075,
+        "end": 865.3655,
+        "questionIds": [
+          "p3-listening-v1-meeting-q1",
+          "p3-listening-v1-meeting-q2",
+          "p3-listening-v1-meeting-q3"
+        ],
+        "announcement": "Questions 32 through 34."
+      },
+      {
+        "id": "p3-listening-v1-delivery",
+        "start": 865.3655,
+        "end": 949.56025,
+        "questionIds": [
+          "p3-listening-v1-delivery-q1",
+          "p3-listening-v1-delivery-q2",
+          "p3-listening-v1-delivery-q3"
+        ],
+        "announcement": "Questions 35 through 37."
+      },
+      {
+        "id": "p3-exam-v1-registration",
+        "start": 949.56025,
+        "end": 1036.355,
+        "questionIds": [
+          "p3-exam-v1-registration-q1",
+          "p3-exam-v1-registration-q2",
+          "p3-exam-v1-registration-q3"
+        ],
+        "announcement": "Questions 38 through 40."
+      },
+      {
+        "id": "p3-exam-v1-restaurant",
+        "start": 1036.355,
+        "end": 1120.24975,
+        "questionIds": [
+          "p3-exam-v1-restaurant-q1",
+          "p3-exam-v1-restaurant-q2",
+          "p3-exam-v1-restaurant-q3"
+        ],
+        "announcement": "Questions 41 through 43."
+      },
+      {
+        "id": "p3-exam-v1-printer",
+        "start": 1120.24975,
+        "end": 1205.1445,
+        "questionIds": [
+          "p3-exam-v1-printer-q1",
+          "p3-exam-v1-printer-q2",
+          "p3-exam-v1-printer-q3"
+        ],
+        "announcement": "Questions 44 through 46."
+      },
+      {
+        "id": "p3-exam-v1-hotel",
+        "start": 1205.1445,
+        "end": 1293.86425,
+        "questionIds": [
+          "p3-exam-v1-hotel-q1",
+          "p3-exam-v1-hotel-q2",
+          "p3-exam-v1-hotel-q3"
+        ],
+        "announcement": "Questions 47 through 49."
+      },
+      {
+        "id": "p3-exam-v1-interview",
+        "start": 1293.86425,
+        "end": 1375.884,
+        "questionIds": [
+          "p3-exam-v1-interview-q1",
+          "p3-exam-v1-interview-q2",
+          "p3-exam-v1-interview-q3"
+        ],
+        "announcement": "Questions 50 through 52."
+      },
+      {
+        "id": "p3-exam-v1-catering",
+        "start": 1375.884,
+        "end": 1459.65375,
+        "questionIds": [
+          "p3-exam-v1-catering-q1",
+          "p3-exam-v1-catering-q2",
+          "p3-exam-v1-catering-q3"
+        ],
+        "announcement": "Questions 53 through 55."
+      },
+      {
+        "id": "p3-exam-v1-software",
+        "start": 1459.65375,
+        "end": 1543.4985,
+        "questionIds": [
+          "p3-exam-v1-software-q1",
+          "p3-exam-v1-software-q2",
+          "p3-exam-v1-software-q3"
+        ],
+        "announcement": "Questions 56 through 58."
+      },
+      {
+        "id": "p3-exam-v1-bicycle-repair",
+        "start": 1543.4985,
+        "end": 1626.91825,
+        "questionIds": [
+          "p3-exam-v1-bicycle-repair-q1",
+          "p3-exam-v1-bicycle-repair-q2",
+          "p3-exam-v1-bicycle-repair-q3"
+        ],
+        "announcement": "Questions 59 through 61."
+      },
+      {
+        "id": "p3-exam-v1-supplies",
+        "start": 1626.91825,
+        "end": 1713.763,
+        "questionIds": [
+          "p3-exam-v1-supplies-q1",
+          "p3-exam-v1-supplies-q2",
+          "p3-exam-v1-supplies-q3"
+        ],
+        "announcement": "Questions 62 through 64."
+      },
+      {
+        "id": "p3-exam-v1-travel",
+        "start": 1713.763,
+        "end": 1799.40775,
+        "questionIds": [
+          "p3-exam-v1-travel-q1",
+          "p3-exam-v1-travel-q2",
+          "p3-exam-v1-travel-q3"
+        ],
+        "announcement": "Questions 65 through 67."
+      },
+      {
+        "id": "p3-exam-v1-library",
+        "start": 1799.40775,
+        "end": 1884.2275,
+        "questionIds": [
+          "p3-exam-v1-library-q1",
+          "p3-exam-v1-library-q2",
+          "p3-exam-v1-library-q3"
+        ],
+        "announcement": "Questions 68 through 70."
+      },
+      {
+        "id": "p4-listening-v1-museum",
+        "start": 1884.2275,
+        "end": 1964.14725,
+        "questionIds": [
+          "p4-listening-v1-museum-q1",
+          "p4-listening-v1-museum-q2",
+          "p4-listening-v1-museum-q3"
+        ],
+        "announcement": "Questions 71 through 73."
+      },
+      {
+        "id": "p4-listening-v1-repair",
+        "start": 1964.14725,
+        "end": 2046.217,
+        "questionIds": [
+          "p4-listening-v1-repair-q1",
+          "p4-listening-v1-repair-q2",
+          "p4-listening-v1-repair-q3"
+        ],
+        "announcement": "Questions 74 through 76."
+      },
+      {
+        "id": "p4-exam-v1-shuttle",
+        "start": 2046.217,
+        "end": 2127.18675,
+        "questionIds": [
+          "p4-exam-v1-shuttle-q1",
+          "p4-exam-v1-shuttle-q2",
+          "p4-exam-v1-shuttle-q3"
+        ],
+        "announcement": "Questions 77 through 79."
+      },
+      {
+        "id": "p4-exam-v1-opening",
+        "start": 2127.18675,
+        "end": 2205.9315,
+        "questionIds": [
+          "p4-exam-v1-opening-q1",
+          "p4-exam-v1-opening-q2",
+          "p4-exam-v1-opening-q3"
+        ],
+        "announcement": "Questions 80 through 82."
+      },
+      {
+        "id": "p4-exam-v1-safety",
+        "start": 2205.9315,
+        "end": 2285.10125,
+        "questionIds": [
+          "p4-exam-v1-safety-q1",
+          "p4-exam-v1-safety-q2",
+          "p4-exam-v1-safety-q3"
+        ],
+        "announcement": "Questions 83 through 85."
+      },
+      {
+        "id": "p4-exam-v1-order",
+        "start": 2285.10125,
+        "end": 2365.921,
+        "questionIds": [
+          "p4-exam-v1-order-q1",
+          "p4-exam-v1-order-q2",
+          "p4-exam-v1-order-q3"
+        ],
+        "announcement": "Questions 86 through 88."
+      },
+      {
+        "id": "p4-exam-v1-presentation",
+        "start": 2365.921,
+        "end": 2449.34075,
+        "questionIds": [
+          "p4-exam-v1-presentation-q1",
+          "p4-exam-v1-presentation-q2",
+          "p4-exam-v1-presentation-q3"
+        ],
+        "announcement": "Questions 89 through 91."
+      },
+      {
+        "id": "p4-exam-v1-maintenance",
+        "start": 2449.34075,
+        "end": 2534.0105,
+        "questionIds": [
+          "p4-exam-v1-maintenance-q1",
+          "p4-exam-v1-maintenance-q2",
+          "p4-exam-v1-maintenance-q3"
+        ],
+        "announcement": "Questions 92 through 94."
+      },
+      {
+        "id": "p4-exam-v1-recruitment",
+        "start": 2534.0105,
+        "end": 2617.48025,
+        "questionIds": [
+          "p4-exam-v1-recruitment-q1",
+          "p4-exam-v1-recruitment-q2",
+          "p4-exam-v1-recruitment-q3"
+        ],
+        "announcement": "Questions 95 through 97."
+      },
+      {
+        "id": "p4-exam-v1-lost-property",
+        "start": 2617.48025,
+        "end": 2700.0,
+        "questionIds": [
+          "p4-exam-v1-lost-property-q1",
+          "p4-exam-v1-lost-property-q2",
+          "p4-exam-v1-lost-property-q3"
+        ],
+        "announcement": "Questions 98 through 100."
+      }
+    ],
+    "seconds": 2700,
+    "questionIds": [
+      "p1-listening-v1-forklift-q1",
+      "p1-listening-v1-desk-q1",
+      "p1-listening-v1-home-office-q1",
+      "p1-listening-v1-conference-q1",
+      "p1-listening-v1-bicycle-q1",
+      "p1-listening-v1-cyclist-q1",
+      "p2-v1-1",
+      "p2-v1-2",
+      "p2-v1-3",
+      "p2-v1-4",
+      "p2-v1-5",
+      "p2-v1-6",
+      "p2-v1-7",
+      "p2-v1-8",
+      "p2-v1-9",
+      "p2-v1-10",
+      "p2-v1-11",
+      "p2-v1-12",
+      "p2-v1-13",
+      "p2-v1-14",
+      "p2-v1-15",
+      "p2-v1-16",
+      "p2-v1-17",
+      "p2-v1-18",
+      "p2-v2-where-1",
+      "p2-v2-where-2",
+      "p2-v2-where-3",
+      "p2-v2-where-4",
+      "p2-v2-where-5",
+      "p2-v2-where-6",
+      "p2-v2-when-1",
+      "p3-listening-v1-meeting-q1",
+      "p3-listening-v1-meeting-q2",
+      "p3-listening-v1-meeting-q3",
+      "p3-listening-v1-delivery-q1",
+      "p3-listening-v1-delivery-q2",
+      "p3-listening-v1-delivery-q3",
+      "p3-exam-v1-registration-q1",
+      "p3-exam-v1-registration-q2",
+      "p3-exam-v1-registration-q3",
+      "p3-exam-v1-restaurant-q1",
+      "p3-exam-v1-restaurant-q2",
+      "p3-exam-v1-restaurant-q3",
+      "p3-exam-v1-printer-q1",
+      "p3-exam-v1-printer-q2",
+      "p3-exam-v1-printer-q3",
+      "p3-exam-v1-hotel-q1",
+      "p3-exam-v1-hotel-q2",
+      "p3-exam-v1-hotel-q3",
+      "p3-exam-v1-interview-q1",
+      "p3-exam-v1-interview-q2",
+      "p3-exam-v1-interview-q3",
+      "p3-exam-v1-catering-q1",
+      "p3-exam-v1-catering-q2",
+      "p3-exam-v1-catering-q3",
+      "p3-exam-v1-software-q1",
+      "p3-exam-v1-software-q2",
+      "p3-exam-v1-software-q3",
+      "p3-exam-v1-bicycle-repair-q1",
+      "p3-exam-v1-bicycle-repair-q2",
+      "p3-exam-v1-bicycle-repair-q3",
+      "p3-exam-v1-supplies-q1",
+      "p3-exam-v1-supplies-q2",
+      "p3-exam-v1-supplies-q3",
+      "p3-exam-v1-travel-q1",
+      "p3-exam-v1-travel-q2",
+      "p3-exam-v1-travel-q3",
+      "p3-exam-v1-library-q1",
+      "p3-exam-v1-library-q2",
+      "p3-exam-v1-library-q3",
+      "p4-listening-v1-museum-q1",
+      "p4-listening-v1-museum-q2",
+      "p4-listening-v1-museum-q3",
+      "p4-listening-v1-repair-q1",
+      "p4-listening-v1-repair-q2",
+      "p4-listening-v1-repair-q3",
+      "p4-exam-v1-shuttle-q1",
+      "p4-exam-v1-shuttle-q2",
+      "p4-exam-v1-shuttle-q3",
+      "p4-exam-v1-opening-q1",
+      "p4-exam-v1-opening-q2",
+      "p4-exam-v1-opening-q3",
+      "p4-exam-v1-safety-q1",
+      "p4-exam-v1-safety-q2",
+      "p4-exam-v1-safety-q3",
+      "p4-exam-v1-order-q1",
+      "p4-exam-v1-order-q2",
+      "p4-exam-v1-order-q3",
+      "p4-exam-v1-presentation-q1",
+      "p4-exam-v1-presentation-q2",
+      "p4-exam-v1-presentation-q3",
+      "p4-exam-v1-maintenance-q1",
+      "p4-exam-v1-maintenance-q2",
+      "p4-exam-v1-maintenance-q3",
+      "p4-exam-v1-recruitment-q1",
+      "p4-exam-v1-recruitment-q2",
+      "p4-exam-v1-recruitment-q3",
+      "p4-exam-v1-lost-property-q1",
+      "p4-exam-v1-lost-property-q2",
+      "p4-exam-v1-lost-property-q3"
+    ]
+  }
+}

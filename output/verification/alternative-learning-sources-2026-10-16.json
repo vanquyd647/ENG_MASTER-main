@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-10-16T05:39:30.520Z",
+  "scope": "Public source/asset reachability only; not a listening accuracy or rehosting permission check",
+  "items": [
+    {
+      "id": "iibc-part1",
+      "url": "https://www.iibc-global.org/toeic/test/lr/about/format/sample01.html",
+      "status": 200,
+      "audioUrls": [
+        "https://www.iibc-global.org/hubfs/Part1Direction-1.mp3",
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part1No1.mp3",
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part1No2.mp3"
+      ],
+      "audioProbe": {
+        "url": "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part1No1.mp3",
+        "status": 206,
+        "contentType": "audio/mpeg",
+        "contentRange": "bytes 0-63/485585",
+        "signatureHex": "4944330200000000"
+      }
+    },
+    {
+      "id": "iibc-part3",
+      "url": "https://www.iibc-global.org/toeic/test/lr/about/format/sample03.html",
+      "status": 200,
+      "audioUrls": [
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part3Direction.mp3",
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part3No32_34.mp3",
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part3No35_37.mp3",
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part3No38_40.mp3",
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part3No41_43.mp3"
+      ],
+      "audioProbe": {
+        "url": "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part3No32_34.mp3",
+        "status": 206,
+        "contentType": "audio/mpeg",
+        "contentRange": "bytes 0-63/1733821",
+        "signatureHex": "4944330200000000"
+      }
+    },
+    {
+      "id": "iibc-part4",
+      "url": "https://www.iibc-global.org/toeic/test/lr/about/format/sample04.html",
+      "status": 200,
+      "audioUrls": [
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part4Direction.mp3",
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part4No71_73.mp3",
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part4No74_76.mp3",
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part4No77_79.mp3",
+        "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part4No80_82.mp3"
+      ],
+      "audioProbe": {
+        "url": "https://www.iibc-global.org/hubfs/library/common_migration/orjp/library/toeic_data/toeic/about/tests/media/Part4No71_73.mp3",
+        "status": 206,
+        "contentType": "audio/mpeg",
+        "contentRange": "bytes 0-63/1529438",
+        "signatureHex": "4944330200000000"
+      }
+    },
+    {
+      "id": "voa-budget-cuts",
+      "url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson1/3960391.html",
+      "status": 200,
+      "audioUrls": [
+        "https://voa-audio.voanews.eu/vle/2017/08/31/3bf697ff-3ef5-4d59-8dcd-52613e2e7e9d.mp3",
+        "https://voa-audio.voanews.eu/vle/2017/08/31/3bf697ff-3ef5-4d59-8dcd-52613e2e7e9d_hq.mp3",
+        "https://voa-audio.voanews.eu/vle/2017/08/31/3bf697ff-3ef5-4d59-8dcd-52613e2e7e9d_hq.mp3?download=1",
+        "https://voa-audio.voanews.eu/vle/2017/08/31/3bf697ff-3ef5-4d59-8dcd-52613e2e7e9d.mp3?download=1"
+      ],
+      "audioProbe": {
+        "url": "https://voa-audio.voanews.eu/vle/2017/08/31/3bf697ff-3ef5-4d59-8dcd-52613e2e7e9d.mp3",
+        "status": 206,
+        "contentType": "audio/mp3",
+        "contentRange": "bytes 0-63/1982461",
+        "signatureHex": "4944330400000000"
+      }
+    },
+    {
+      "id": "voa-lets-do-business",
+      "url": "https://learningenglish.voanews.com/a/words-and-their-stories-lets-do-business-110407639/118718.html",
+      "status": 200,
+      "audioUrls": [],
+      "audioProbe": null
+    }
+  ]
+}

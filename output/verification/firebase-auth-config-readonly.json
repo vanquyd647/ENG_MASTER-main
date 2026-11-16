@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-13T10:53:03.718Z",
+  "project": "engai-2c7fe",
+  "authConfig": {
+    "status": 200,
+    "authorizedDomains": [
+      "localhost",
+      "engai-2c7fe.firebaseapp.com",
+      "engai-2c7fe.web.app",
+      "ais-dev-megmq3zg3lpkqrbcm3qh2v-753315671856.asia-southeast1.run.app",
+      "ais-pre-megmq3zg3lpkqrbcm3qh2v-753315671856.asia-southeast1.run.app",
+      "eng-master-delta.vercel.app",
+      "eng-master-main2.vercel.app"
+    ]
+  },
+  "googleProvider": {
+    "status": 200,
+    "enabled": true
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "p2-v1-17",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "The question asks for confirmation of a hotel booking, and 'Yes, I received the confirmation.' directly answers and confirms the status.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-18",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "'Would you mind...' is politely answered by 'Of course not, I will close it.' indicating agreement to perform the action.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-meeting-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Context implies the speaker needs more time to complete an estimate.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-meeting-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Context specifies updating the invitation details for the rescheduled meeting.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-meeting-3",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Context indicates the conference room capacity is one hundred people.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-travel-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Context states the flight arrives at six in the evening.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-travel-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Context mentions the shuttle departs every thirty minutes.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-travel-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Context instructs the traveler to meet the driver outside Terminal Two.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-shipping-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Context states the tracking page shows no recent updates.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-shipping-2",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Context confirms the carrier collected the package last Friday.",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-16T06:50:21.703Z",
+  "origin": "http://localhost:3119",
+  "passed": false,
+  "checks": [
+    {
+      "name": "guest, full offline pack, exam disclosure and exact blueprint",
+      "result": {
+        "questions": 277,
+        "formQuestions": 200,
+        "offlineReady": true,
+        "writeLock": true
+      }
+    },
+    {
+      "name": "listening answer, hidden text and leave/resume without resetting time",
+      "result": {
+        "answerRetained": true,
+        "startRetained": true,
+        "readingLocked": true
+      }
+    }
+  ],
+  "timeMethod": "Playwright clock fast-forward, not a two-hour wall-clock test",
+  "error": "### Error\nTimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('heading', { name: 'Câu 38/200 · Part 3', exact: true }) to be visible\u001b[22m\n\n"
+}

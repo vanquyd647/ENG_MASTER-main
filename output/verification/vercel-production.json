@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-14T12:43:15.841Z",
+  "domain": "https://eng-master-main2.vercel.app",
+  "release": "2026.10.14-upgrade.2",
+  "deploymentId": "dpl_91LU7ikA2e8N5aSr25MpNFY6DK5h",
+  "deploymentUrl": "eng-master-main2-845frq3za-quys-projects-d07a5005.vercel.app",
+  "readyState": "READY",
+  "entryScript": "/assets/index-DXPBZ3vM.js",
+  "guestCta": true,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/sw.js",
+      "status": 200,
+      "cache": "no-cache"
+    },
+    {
+      "path": "/manifest.webmanifest",
+      "status": 200,
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/assets/qa-missing.js",
+      "status": 404,
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/server.cjs",
+      "status": 404,
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/api/gemini/explain",
+      "method": "POST",
+      "status": 401
+    }
+  ],
+  "passed": true
+}

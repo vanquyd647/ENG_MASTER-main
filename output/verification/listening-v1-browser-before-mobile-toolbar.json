@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-10-16T06:11:00.829Z",
+  "origin": "http://localhost:3118",
+  "passed": true,
+  "checks": [
+    {
+      "name": "guest and offline pack",
+      "result": {
+        "offlineReady": true,
+        "questions": 184,
+        "nativeEnglishVoices": []
+      }
+    },
+    {
+      "name": "official and supplemental links",
+      "result": {
+        "nativeMp3Playback": true,
+        "offlineSeek": true,
+        "duration": 247.742721,
+        "sourceLinks": [
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample01.html",
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample03.html",
+          "https://www.iibc-global.org/toeic/test/lr/about/format/sample04.html",
+          "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson1/3960391.html"
+        ]
+      }
+    },
+    {
+      "name": "missing voice gate, then native or explicit UI-only speech fallback",
+      "result": {
+        "missingVoiceBlocked": true,
+        "speechMode": "native-device-speech"
+      }
+    },
+    {
+      "name": "Part 1 six images, hidden descriptions, scoring and transcript review",
+      "result": {
+        "questions": 6,
+        "uniqueImages": 6,
+        "correct": 6,
+        "answerHidden": true,
+        "spokenOptionsMatch": true
+      }
+    },
+    {
+      "name": "Part 3 ordered group, reload, deadline and actual speech start",
+      "result": {
+        "group": 3,
+        "order": true,
+        "deadlineRetained": true,
+        "answerRetained": true,
+        "wrong": 1,
+        "blanks": 2,
+        "nativeStarted": true
+      }
+    },
+    {
+      "name": "Part 3 exact mistake retry from notebook",
+      "result": {
+        "exactQuestion": "p3-listening-v1-delivery-q1",
+        "correct": 1
+      }
+    },
+    {
+      "name": "Part 4 entire talk and three questions",
+      "result": {
+        "correct": 3,
+        "group": 3
+      }
+    },
+    {
+      "name": "offline photos, saved answers and mobile widths",
+      "result": {
+        "offlinePhotos": 6,
+        "answerRetained": true,
+        "widths": [
+          360,
+          390,
+          768,
+          1280
+        ]
+      }
+    },
+    {
+      "name": "backup v4 roundtrip with new parts",
+      "result": {
+        "records": 5,
+        "mergeDeduplicated": true
+      }
+    }
+  ]
+}

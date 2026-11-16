@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-10-13T11:53:22.708Z",
+  "project": "engai-2c7fe",
+  "release": "projects/engai-2c7fe/releases/cloud.firestore",
+  "ruleset": "projects/engai-2c7fe/rulesets/f7fa24b8-e1b2-46e4-af56-c5ec7286f0aa",
+  "activated": true,
+  "rollbackRuleset": "projects/engai-2c7fe/rulesets/380d4eda-bcc9-4fd8-9dd5-09de5da5dd41"
+}

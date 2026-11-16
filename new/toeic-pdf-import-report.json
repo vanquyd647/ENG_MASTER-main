@@ -1,0 +1,2607 @@
+{
+  "source": {
+    "file": "new/1250 từ vựng TOEIC.pdf",
+    "title": "1000 từ vựng TOEIC thông dụng nhất",
+    "publisher": "MochiMochi",
+    "document": "mochimochi-toeic-1000",
+    "sha256": "d1c6cfa45f1c6459321c9cca5620b726268d45c281b0706ace2445acf3bd6bd4",
+    "pages": 23
+  },
+  "counts": {
+    "original": 905,
+    "extractedRows": 1000,
+    "uniquePdfHeadwords": 999,
+    "overlappingHeadwords": 329,
+    "duplicatePdfRows": 1,
+    "added": 670,
+    "total": 1575,
+    "correctedExistingMeanings": 274
+  },
+  "examples": "The PDF supplies no examples. Every entry now has an authored bilingual example from the full linguistic review.",
+  "pronunciation": "Broad American IPA from CMUdict with reviewed phrase and homograph overrides; primary stress retained, secondary stress omitted.",
+  "overlaps": [
+    {
+      "entry": 3,
+      "word": "accept",
+      "existingId": "tre-04"
+    },
+    {
+      "entry": 4,
+      "word": "access",
+      "existingId": "reg-09"
+    },
+    {
+      "entry": 5,
+      "word": "accessible",
+      "existingId": "off-73"
+    },
+    {
+      "entry": 13,
+      "word": "accurate",
+      "existingId": "pde-16"
+    },
+    {
+      "entry": 14,
+      "word": "achieve",
+      "existingId": "rev-14"
+    },
+    {
+      "entry": 15,
+      "word": "acquire",
+      "existingId": "tre-22"
+    },
+    {
+      "entry": 16,
+      "word": "act",
+      "existingId": "reg-31"
+    },
+    {
+      "entry": 17,
+      "word": "actually",
+      "existingId": "ban-70"
+    },
+    {
+      "entry": 20,
+      "word": "additional",
+      "existingId": "mkt-09"
+    },
+    {
+      "entry": 21,
+      "word": "adjust",
+      "existingId": "off-61"
+    },
+    {
+      "entry": 27,
+      "word": "adopt",
+      "existingId": "mkt-50"
+    },
+    {
+      "entry": 28,
+      "word": "advance",
+      "existingId": "pde-11"
+    },
+    {
+      "entry": 29,
+      "word": "advanced",
+      "existingId": "mkt-07"
+    },
+    {
+      "entry": 30,
+      "word": "advantage",
+      "existingId": "mkt-43"
+    },
+    {
+      "entry": 33,
+      "word": "advertisement",
+      "existingId": "mkt-54"
+    },
+    {
+      "entry": 34,
+      "word": "advice",
+      "existingId": "ban-37"
+    },
+    {
+      "entry": 35,
+      "word": "advise",
+      "existingId": "mkt-40"
+    },
+    {
+      "entry": 39,
+      "word": "agency",
+      "existingId": "ttp-06"
+    },
+    {
+      "entry": 41,
+      "word": "agree",
+      "existingId": "off-42"
+    },
+    {
+      "entry": 46,
+      "word": "aim",
+      "existingId": "mkt-55"
+    },
+    {
+      "entry": 50,
+      "word": "allow",
+      "existingId": "pde-02"
+    },
+    {
+      "entry": 51,
+      "word": "alternative",
+      "existingId": "tff-04"
+    },
+    {
+      "entry": 54,
+      "word": "amount",
+      "existingId": "ban-18"
+    },
+    {
+      "entry": 56,
+      "word": "analysis",
+      "existingId": "mkt-02"
+    },
+    {
+      "entry": 57,
+      "word": "analyze",
+      "existingId": "mkt-39"
+    },
+    {
+      "entry": 58,
+      "word": "annual",
+      "existingId": "ben-19"
+    },
+    {
+      "entry": 59,
+      "word": "anticipate",
+      "existingId": "rev-05"
+    },
+    {
+      "entry": 61,
+      "word": "apologize",
+      "existingId": "csv-13"
+    },
+    {
+      "entry": 62,
+      "word": "appeal",
+      "existingId": "rec-23"
+    },
+    {
+      "entry": 65,
+      "word": "applicant",
+      "existingId": "rec-02"
+    },
+    {
+      "entry": 67,
+      "word": "apply",
+      "existingId": "sho-14"
+    },
+    {
+      "entry": 68,
+      "word": "appoint",
+      "existingId": "rot-03"
+    },
+    {
+      "entry": 71,
+      "word": "appreciate",
+      "existingId": "mkt-27"
+    },
+    {
+      "entry": 72,
+      "word": "appreciation",
+      "existingId": "ben-34"
+    },
+    {
+      "entry": 75,
+      "word": "approve",
+      "existingId": "mee-06"
+    },
+    {
+      "entry": 78,
+      "word": "area",
+      "existingId": "sho-12"
+    },
+    {
+      "entry": 81,
+      "word": "arrange",
+      "existingId": "ban-62"
+    },
+    {
+      "entry": 82,
+      "word": "arrangement",
+      "existingId": "reg-29"
+    },
+    {
+      "entry": 83,
+      "word": "assemble",
+      "existingId": "pmf-21"
+    },
+    {
+      "entry": 85,
+      "word": "asset",
+      "existingId": "tre-26"
+    },
+    {
+      "entry": 86,
+      "word": "assign",
+      "existingId": "off-45"
+    },
+    {
+      "entry": 87,
+      "word": "assignment",
+      "existingId": "off-14"
+    },
+    {
+      "entry": 88,
+      "word": "assist",
+      "existingId": "off-39"
+    },
+    {
+      "entry": 91,
+      "word": "attach",
+      "existingId": "ttp-09"
+    },
+    {
+      "entry": 93,
+      "word": "attend",
+      "existingId": "ben-04"
+    },
+    {
+      "entry": 94,
+      "word": "attendance",
+      "existingId": "off-16"
+    },
+    {
+      "entry": 95,
+      "word": "attract",
+      "existingId": "mkt-37"
+    },
+    {
+      "entry": 96,
+      "word": "audience",
+      "existingId": "lei-24"
+    },
+    {
+      "entry": 99,
+      "word": "authorize",
+      "existingId": "reg-21"
+    },
+    {
+      "entry": 109,
+      "word": "balance",
+      "existingId": "ban-16"
+    },
+    {
+      "entry": 113,
+      "word": "bargain",
+      "existingId": "tra-14"
+    },
+    {
+      "entry": 116,
+      "word": "belongings",
+      "existingId": "hot-12"
+    },
+    {
+      "entry": 119,
+      "word": "beverage",
+      "existingId": "hot-06"
+    },
+    {
+      "entry": 124,
+      "word": "board",
+      "existingId": "trv-23"
+    },
+    {
+      "entry": 127,
+      "word": "book",
+      "existingId": "hot-22"
+    },
+    {
+      "entry": 128,
+      "word": "boost",
+      "existingId": "eco-24"
+    },
+    {
+      "entry": 137,
+      "word": "broaden",
+      "existingId": "pde-22"
+    },
+    {
+      "entry": 144,
+      "word": "calculate",
+      "existingId": "acc-11"
+    },
+    {
+      "entry": 147,
+      "word": "campaign",
+      "existingId": "mkt-30"
+    },
+    {
+      "entry": 151,
+      "word": "candidate",
+      "existingId": "rec-05"
+    },
+    {
+      "entry": 152,
+      "word": "capacity",
+      "existingId": "pmf-01"
+    },
+    {
+      "entry": 156,
+      "word": "cash",
+      "existingId": "ban-27"
+    },
+    {
+      "entry": 158,
+      "word": "cause",
+      "existingId": "csv-27"
+    },
+    {
+      "entry": 159,
+      "word": "cautious",
+      "existingId": "ban-39"
+    },
+    {
+      "entry": 163,
+      "word": "certification",
+      "existingId": "rec-28"
+    },
+    {
+      "entry": 170,
+      "word": "charge",
+      "existingId": "sho-02"
+    },
+    {
+      "entry": 175,
+      "word": "chef",
+      "existingId": "hot-18"
+    },
+    {
+      "entry": 182,
+      "word": "commence",
+      "existingId": "ben-26"
+    },
+    {
+      "entry": 184,
+      "word": "committee",
+      "existingId": "acc-18"
+    },
+    {
+      "entry": 186,
+      "word": "commute",
+      "existingId": "tff-18"
+    },
+    {
+      "entry": 189,
+      "word": "compare",
+      "existingId": "acc-12"
+    },
+    {
+      "entry": 190,
+      "word": "compatible",
+      "existingId": "pde-19"
+    },
+    {
+      "entry": 191,
+      "word": "compensate",
+      "existingId": "hot-01"
+    },
+    {
+      "entry": 192,
+      "word": "compensation",
+      "existingId": "reg-32"
+    },
+    {
+      "entry": 195,
+      "word": "competitor",
+      "existingId": "tre-07"
+    },
+    {
+      "entry": 197,
+      "word": "complaint",
+      "existingId": "csv-01"
+    },
+    {
+      "entry": 198,
+      "word": "complete",
+      "existingId": "csv-09"
+    },
+    {
+      "entry": 202,
+      "word": "complimentary",
+      "existingId": "hot-02"
+    },
+    {
+      "entry": 203,
+      "word": "comply",
+      "existingId": "reg-04"
+    },
+    {
+      "entry": 205,
+      "word": "compromise",
+      "existingId": "con-20"
+    },
+    {
+      "entry": 206,
+      "word": "compulsory",
+      "existingId": "ban-76"
+    },
+    {
+      "entry": 208,
+      "word": "concern",
+      "existingId": "reg-02"
+    },
+    {
+      "entry": 212,
+      "word": "condition",
+      "existingId": "rec-35"
+    },
+    {
+      "entry": 213,
+      "word": "conduct",
+      "existingId": "off-41"
+    },
+    {
+      "entry": 217,
+      "word": "consequence",
+      "existingId": "eco-30"
+    },
+    {
+      "entry": 218,
+      "word": "considerable",
+      "existingId": "tre-10"
+    },
+    {
+      "entry": 219,
+      "word": "consignment",
+      "existingId": "tra-28"
+    },
+    {
+      "entry": 221,
+      "word": "constant",
+      "existingId": "reg-19"
+    },
+    {
+      "entry": 222,
+      "word": "consultant",
+      "existingId": "rec-26"
+    },
+    {
+      "entry": 227,
+      "word": "contribute",
+      "existingId": "tre-08"
+    },
+    {
+      "entry": 233,
+      "word": "corporation",
+      "existingId": "off-26"
+    },
+    {
+      "entry": 234,
+      "word": "cost",
+      "existingId": "tra-05"
+    },
+    {
+      "entry": 236,
+      "word": "courier",
+      "existingId": "ttp-25"
+    },
+    {
+      "entry": 244,
+      "word": "critical",
+      "existingId": "csv-17"
+    },
+    {
+      "entry": 247,
+      "word": "crowded",
+      "existingId": "mee-27"
+    },
+    {
+      "entry": 259,
+      "word": "deal",
+      "existingId": "csv-02"
+    },
+    {
+      "entry": 262,
+      "word": "decision",
+      "existingId": "pmf-05"
+    },
+    {
+      "entry": 263,
+      "word": "decorate",
+      "existingId": "hot-19"
+    },
+    {
+      "entry": 265,
+      "word": "dedicate",
+      "existingId": "con-09"
+    },
+    {
+      "entry": 269,
+      "word": "degree",
+      "existingId": "rec-38"
+    },
+    {
+      "entry": 272,
+      "word": "deliver",
+      "existingId": "ttp-24"
+    },
+    {
+      "entry": 273,
+      "word": "delivery",
+      "existingId": "sho-06"
+    },
+    {
+      "entry": 274,
+      "word": "demand",
+      "existingId": "mkt-05"
+    },
+    {
+      "entry": 275,
+      "word": "demanding",
+      "existingId": "off-02"
+    },
+    {
+      "entry": 277,
+      "word": "depart",
+      "existingId": "trv-24"
+    },
+    {
+      "entry": 281,
+      "word": "deposit",
+      "existingId": "ban-03"
+    },
+    {
+      "entry": 282,
+      "word": "description",
+      "existingId": "sho-09"
+    },
+    {
+      "entry": 283,
+      "word": "designate",
+      "existingId": "rot-07"
+    },
+    {
+      "entry": 285,
+      "word": "destination",
+      "existingId": "trv-18"
+    },
+    {
+      "entry": 287,
+      "word": "detailed",
+      "existingId": "tff-03"
+    },
+    {
+      "entry": 288,
+      "word": "detect",
+      "existingId": "mkt-46"
+    },
+    {
+      "entry": 290,
+      "word": "determine",
+      "existingId": "mee-05"
+    },
+    {
+      "entry": 294,
+      "word": "development",
+      "existingId": "pde-14"
+    },
+    {
+      "entry": 295,
+      "word": "device",
+      "existingId": "pmf-25"
+    },
+    {
+      "entry": 298,
+      "word": "diligent",
+      "existingId": "rec-36"
+    },
+    {
+      "entry": 299,
+      "word": "director",
+      "existingId": "eco-15"
+    },
+    {
+      "entry": 304,
+      "word": "discount",
+      "existingId": "tra-09"
+    },
+    {
+      "entry": 308,
+      "word": "discussion",
+      "existingId": "mkt-60"
+    },
+    {
+      "entry": 310,
+      "word": "dismiss",
+      "existingId": "ben-45"
+    },
+    {
+      "entry": 314,
+      "word": "dispose",
+      "existingId": "ban-85"
+    },
+    {
+      "entry": 315,
+      "word": "dispute",
+      "existingId": "con-11"
+    },
+    {
+      "entry": 319,
+      "word": "distribute",
+      "existingId": "tra-21"
+    },
+    {
+      "entry": 324,
+      "word": "donation",
+      "existingId": "lei-03"
+    },
+    {
+      "entry": 325,
+      "word": "double",
+      "existingId": "ban-09"
+    },
+    {
+      "entry": 339,
+      "word": "economical",
+      "existingId": "eco-18"
+    },
+    {
+      "entry": 340,
+      "word": "economize",
+      "existingId": "pmf-24"
+    },
+    {
+      "entry": 347,
+      "word": "efficiently",
+      "existingId": "off-05"
+    },
+    {
+      "entry": 351,
+      "word": "emergency",
+      "existingId": "trv-25"
+    },
+    {
+      "entry": 352,
+      "word": "emphasize",
+      "existingId": "ben-28"
+    },
+    {
+      "entry": 353,
+      "word": "employer",
+      "existingId": "rev-25"
+    },
+    {
+      "entry": 354,
+      "word": "employment",
+      "existingId": "rec-18"
+    },
+    {
+      "entry": 355,
+      "word": "enable",
+      "existingId": "reg-30"
+    },
+    {
+      "entry": 356,
+      "word": "enclose",
+      "existingId": "ttp-07"
+    },
+    {
+      "entry": 361,
+      "word": "enhance",
+      "existingId": "tre-32"
+    },
+    {
+      "entry": 363,
+      "word": "enroll",
+      "existingId": "ben-20"
+    },
+    {
+      "entry": 364,
+      "word": "ensure",
+      "existingId": "ttp-02"
+    },
+    {
+      "entry": 371,
+      "word": "environmental",
+      "existingId": "env-05"
+    },
+    {
+      "entry": 373,
+      "word": "essential",
+      "existingId": "off-85"
+    },
+    {
+      "entry": 374,
+      "word": "estimate",
+      "existingId": "rev-06"
+    },
+    {
+      "entry": 375,
+      "word": "evaluate",
+      "existingId": "ben-35"
+    },
+    {
+      "entry": 378,
+      "word": "evidence",
+      "existingId": "eco-27"
+    },
+    {
+      "entry": 380,
+      "word": "examination",
+      "existingId": "env-30"
+    },
+    {
+      "entry": 381,
+      "word": "examine",
+      "existingId": "mkt-10"
+    },
+    {
+      "entry": 383,
+      "word": "excellent",
+      "existingId": "rec-14"
+    },
+    {
+      "entry": 386,
+      "word": "expand",
+      "existingId": "mkt-06"
+    },
+    {
+      "entry": 387,
+      "word": "expansion",
+      "existingId": "tre-05"
+    },
+    {
+      "entry": 388,
+      "word": "expect",
+      "existingId": "ban-06"
+    },
+    {
+      "entry": 389,
+      "word": "expectation",
+      "existingId": "mkt-17"
+    },
+    {
+      "entry": 391,
+      "word": "expense",
+      "existingId": "tff-07"
+    },
+    {
+      "entry": 393,
+      "word": "experience",
+      "existingId": "mkt-38"
+    },
+    {
+      "entry": 394,
+      "word": "experienced",
+      "existingId": "sho-03"
+    },
+    {
+      "entry": 408,
+      "word": "fare",
+      "existingId": "tff-06"
+    },
+    {
+      "entry": 413,
+      "word": "feature",
+      "existingId": "pde-24"
+    },
+    {
+      "entry": 414,
+      "word": "fee",
+      "existingId": "rev-23"
+    },
+    {
+      "entry": 415,
+      "word": "feedback",
+      "existingId": "off-75"
+    },
+    {
+      "entry": 428,
+      "word": "focus",
+      "existingId": "mkt-21"
+    },
+    {
+      "entry": 432,
+      "word": "force",
+      "existingId": "tre-17"
+    },
+    {
+      "entry": 437,
+      "word": "form",
+      "existingId": "reg-13"
+    },
+    {
+      "entry": 438,
+      "word": "forward",
+      "existingId": "mkt-58"
+    },
+    {
+      "entry": 443,
+      "word": "function",
+      "existingId": "ben-11"
+    },
+    {
+      "entry": 445,
+      "word": "fundraising",
+      "existingId": "lei-20"
+    },
+    {
+      "entry": 454,
+      "word": "growth",
+      "existingId": "rev-12"
+    },
+    {
+      "entry": 455,
+      "word": "guarantee",
+      "existingId": "csv-32"
+    },
+    {
+      "entry": 458,
+      "word": "handle",
+      "existingId": "ttp-15"
+    },
+    {
+      "entry": 464,
+      "word": "headquarters",
+      "existingId": "off-33"
+    },
+    {
+      "entry": 469,
+      "word": "highly",
+      "existingId": "rec-07"
+    },
+    {
+      "entry": 471,
+      "word": "hire",
+      "existingId": "rec-09"
+    },
+    {
+      "entry": 475,
+      "word": "identify",
+      "existingId": "rec-16"
+    },
+    {
+      "entry": 478,
+      "word": "immediately",
+      "existingId": "reg-14"
+    },
+    {
+      "entry": 479,
+      "word": "impact",
+      "existingId": "mkt-22"
+    },
+    {
+      "entry": 482,
+      "word": "implement",
+      "existingId": "off-74"
+    },
+    {
+      "entry": 483,
+      "word": "imply",
+      "existingId": "tre-30"
+    },
+    {
+      "entry": 484,
+      "word": "impression",
+      "existingId": "con-12"
+    },
+    {
+      "entry": 486,
+      "word": "improve",
+      "existingId": "pde-04"
+    },
+    {
+      "entry": 487,
+      "word": "improvement",
+      "existingId": "rev-24"
+    },
+    {
+      "entry": 488,
+      "word": "incentive",
+      "existingId": "mkt-52"
+    },
+    {
+      "entry": 490,
+      "word": "include",
+      "existingId": "ben-06"
+    },
+    {
+      "entry": 493,
+      "word": "inconvenience",
+      "existingId": "csv-08"
+    },
+    {
+      "entry": 494,
+      "word": "increase",
+      "existingId": "rev-03"
+    },
+    {
+      "entry": 495,
+      "word": "indicate",
+      "existingId": "mkt-36"
+    },
+    {
+      "entry": 496,
+      "word": "indication",
+      "existingId": "pde-18"
+    },
+    {
+      "entry": 505,
+      "word": "information",
+      "existingId": "hot-20"
+    },
+    {
+      "entry": 508,
+      "word": "install",
+      "existingId": "ban-79"
+    },
+    {
+      "entry": 510,
+      "word": "insurance",
+      "existingId": "env-36"
+    },
+    {
+      "entry": 512,
+      "word": "intend",
+      "existingId": "pde-01"
+    },
+    {
+      "entry": 513,
+      "word": "intention",
+      "existingId": "off-54"
+    },
+    {
+      "entry": 517,
+      "word": "international",
+      "existingId": "trv-01"
+    },
+    {
+      "entry": 520,
+      "word": "interview",
+      "existingId": "rec-33"
+    },
+    {
+      "entry": 524,
+      "word": "inventory",
+      "existingId": "tra-17"
+    },
+    {
+      "entry": 525,
+      "word": "invest",
+      "existingId": "pde-06"
+    },
+    {
+      "entry": 526,
+      "word": "investigation",
+      "existingId": "ban-17"
+    },
+    {
+      "entry": 527,
+      "word": "investment",
+      "existingId": "ban-28"
+    },
+    {
+      "entry": 529,
+      "word": "invoice",
+      "existingId": "tra-19"
+    },
+    {
+      "entry": 533,
+      "word": "itinerary",
+      "existingId": "trv-14"
+    },
+    {
+      "entry": 538,
+      "word": "join",
+      "existingId": "env-22"
+    },
+    {
+      "entry": 551,
+      "word": "labor",
+      "existingId": "ben-17"
+    },
+    {
+      "entry": 552,
+      "word": "lack",
+      "existingId": "rec-19"
+    },
+    {
+      "entry": 555,
+      "word": "launch",
+      "existingId": "pmf-27"
+    },
+    {
+      "entry": 558,
+      "word": "leak",
+      "existingId": "env-06"
+    },
+    {
+      "entry": 560,
+      "word": "lease",
+      "existingId": "ban-47"
+    },
+    {
+      "entry": 562,
+      "word": "lend",
+      "existingId": "lei-10"
+    },
+    {
+      "entry": 567,
+      "word": "limited",
+      "existingId": "eco-08"
+    },
+    {
+      "entry": 571,
+      "word": "loan",
+      "existingId": "ban-26"
+    },
+    {
+      "entry": 573,
+      "word": "local",
+      "existingId": "lei-11"
+    },
+    {
+      "entry": 574,
+      "word": "locate",
+      "existingId": "trv-20"
+    },
+    {
+      "entry": 581,
+      "word": "maintain",
+      "existingId": "ban-64"
+    },
+    {
+      "entry": 583,
+      "word": "major",
+      "existingId": "off-87"
+    },
+    {
+      "entry": 584,
+      "word": "manage",
+      "existingId": "off-27"
+    },
+    {
+      "entry": 585,
+      "word": "managerial",
+      "existingId": "rec-20"
+    },
+    {
+      "entry": 586,
+      "word": "mandatory",
+      "existingId": "rot-06"
+    },
+    {
+      "entry": 588,
+      "word": "manufacturing",
+      "existingId": "pmf-22"
+    },
+    {
+      "entry": 594,
+      "word": "meeting",
+      "existingId": "mee-23"
+    },
+    {
+      "entry": 600,
+      "word": "merge",
+      "existingId": "tre-29"
+    },
+    {
+      "entry": 608,
+      "word": "monitor",
+      "existingId": "off-28"
+    },
+    {
+      "entry": 615,
+      "word": "narrow",
+      "existingId": "con-16"
+    },
+    {
+      "entry": 620,
+      "word": "nomination",
+      "existingId": "rot-11"
+    },
+    {
+      "entry": 622,
+      "word": "notify",
+      "existingId": "off-12"
+    },
+    {
+      "entry": 623,
+      "word": "objection",
+      "existingId": "con-24"
+    },
+    {
+      "entry": 625,
+      "word": "obligation",
+      "existingId": "reg-20"
+    },
+    {
+      "entry": 627,
+      "word": "obtain",
+      "existingId": "tff-05"
+    },
+    {
+      "entry": 629,
+      "word": "occupation",
+      "existingId": "rec-29"
+    },
+    {
+      "entry": 634,
+      "word": "operate",
+      "existingId": "pmf-20"
+    },
+    {
+      "entry": 637,
+      "word": "opportunity",
+      "existingId": "tff-02"
+    },
+    {
+      "entry": 639,
+      "word": "order",
+      "existingId": "tra-06"
+    },
+    {
+      "entry": 641,
+      "word": "organize",
+      "existingId": "mee-17"
+    },
+    {
+      "entry": 643,
+      "word": "outline",
+      "existingId": "off-80"
+    },
+    {
+      "entry": 644,
+      "word": "outlook",
+      "existingId": "ban-52"
+    },
+    {
+      "entry": 645,
+      "word": "outstanding",
+      "existingId": "off-76"
+    },
+    {
+      "entry": 648,
+      "word": "overtime",
+      "existingId": "ben-24"
+    },
+    {
+      "entry": 649,
+      "word": "overview",
+      "existingId": "off-82"
+    },
+    {
+      "entry": 651,
+      "word": "package",
+      "existingId": "ttp-11"
+    },
+    {
+      "entry": 655,
+      "word": "participant",
+      "existingId": "ben-03"
+    },
+    {
+      "entry": 656,
+      "word": "particularly",
+      "existingId": "ttp-03"
+    },
+    {
+      "entry": 657,
+      "word": "passenger",
+      "existingId": "trv-26"
+    },
+    {
+      "entry": 658,
+      "word": "patent",
+      "existingId": "pde-26"
+    },
+    {
+      "entry": 661,
+      "word": "payment",
+      "existingId": "tra-13"
+    },
+    {
+      "entry": 662,
+      "word": "perform",
+      "existingId": "off-13"
+    },
+    {
+      "entry": 663,
+      "word": "performance",
+      "existingId": "ben-39"
+    },
+    {
+      "entry": 665,
+      "word": "permission",
+      "existingId": "reg-26"
+    },
+    {
+      "entry": 667,
+      "word": "personal",
+      "existingId": "ban-15"
+    },
+    {
+      "entry": 669,
+      "word": "personnel",
+      "existingId": "off-62"
+    },
+    {
+      "entry": 673,
+      "word": "platform",
+      "existingId": "tff-21"
+    },
+    {
+      "entry": 680,
+      "word": "policy",
+      "existingId": "reg-06"
+    },
+    {
+      "entry": 688,
+      "word": "position",
+      "existingId": "rec-11"
+    },
+    {
+      "entry": 689,
+      "word": "postpone",
+      "existingId": "mkt-08"
+    },
+    {
+      "entry": 691,
+      "word": "potential",
+      "existingId": "eco-05"
+    },
+    {
+      "entry": 695,
+      "word": "predict",
+      "existingId": "ben-37"
+    },
+    {
+      "entry": 697,
+      "word": "prefer",
+      "existingId": "mkt-42"
+    },
+    {
+      "entry": 698,
+      "word": "preference",
+      "existingId": "ben-36"
+    },
+    {
+      "entry": 700,
+      "word": "present",
+      "existingId": "lei-04"
+    },
+    {
+      "entry": 701,
+      "word": "press",
+      "existingId": "mee-28"
+    },
+    {
+      "entry": 702,
+      "word": "prevent",
+      "existingId": "pmf-17"
+    },
+    {
+      "entry": 711,
+      "word": "process",
+      "existingId": "trv-22"
+    },
+    {
+      "entry": 713,
+      "word": "professional",
+      "existingId": "rec-08"
+    },
+    {
+      "entry": 723,
+      "word": "promptly",
+      "existingId": "off-72"
+    },
+    {
+      "entry": 724,
+      "word": "properly",
+      "existingId": "pde-32"
+    },
+    {
+      "entry": 725,
+      "word": "property",
+      "existingId": "ban-46"
+    },
+    {
+      "entry": 729,
+      "word": "publicize",
+      "existingId": "mkt-28"
+    },
+    {
+      "entry": 731,
+      "word": "purpose",
+      "existingId": "ben-01"
+    },
+    {
+      "entry": 734,
+      "word": "qualified",
+      "existingId": "rec-04"
+    },
+    {
+      "entry": 735,
+      "word": "qualify",
+      "existingId": "sho-16"
+    },
+    {
+      "entry": 738,
+      "word": "quote",
+      "existingId": "tra-27"
+    },
+    {
+      "entry": 741,
+      "word": "rate",
+      "existingId": "hot-07"
+    },
+    {
+      "entry": 744,
+      "word": "reach",
+      "existingId": "tre-21"
+    },
+    {
+      "entry": 749,
+      "word": "receipt",
+      "existingId": "sho-22"
+    },
+    {
+      "entry": 750,
+      "word": "receive",
+      "existingId": "ban-05"
+    },
+    {
+      "entry": 751,
+      "word": "recent",
+      "existingId": "rev-09"
+    },
+    {
+      "entry": 755,
+      "word": "recognize",
+      "existingId": "env-21"
+    },
+    {
+      "entry": 756,
+      "word": "recommend",
+      "existingId": "env-23"
+    },
+    {
+      "entry": 758,
+      "word": "recruit",
+      "existingId": "rec-40"
+    },
+    {
+      "entry": 760,
+      "word": "reduce",
+      "existingId": "rev-18"
+    },
+    {
+      "entry": 767,
+      "word": "refuse",
+      "existingId": "tra-01"
+    },
+    {
+      "entry": 774,
+      "word": "regularly",
+      "existingId": "ban-61"
+    },
+    {
+      "entry": 776,
+      "word": "reject",
+      "existingId": "ban-24"
+    },
+    {
+      "entry": 779,
+      "word": "release",
+      "existingId": "off-30"
+    },
+    {
+      "entry": 781,
+      "word": "remain",
+      "existingId": "eco-07"
+    },
+    {
+      "entry": 782,
+      "word": "remarkable",
+      "existingId": "ttp-31"
+    },
+    {
+      "entry": 783,
+      "word": "remind",
+      "existingId": "off-09"
+    },
+    {
+      "entry": 786,
+      "word": "remove",
+      "existingId": "off-48"
+    },
+    {
+      "entry": 788,
+      "word": "renovate",
+      "existingId": "pmf-04"
+    },
+    {
+      "entry": 789,
+      "word": "renovation",
+      "existingId": "ban-59"
+    },
+    {
+      "entry": 794,
+      "word": "replace",
+      "existingId": "csv-11"
+    },
+    {
+      "entry": 795,
+      "word": "replacement",
+      "existingId": "off-78"
+    },
+    {
+      "entry": 797,
+      "word": "represent",
+      "existingId": "tra-15"
+    },
+    {
+      "entry": 799,
+      "word": "request",
+      "existingId": "off-06"
+    },
+    {
+      "entry": 800,
+      "word": "require",
+      "existingId": "ben-07"
+    },
+    {
+      "entry": 801,
+      "word": "requirement",
+      "existingId": "rec-32"
+    },
+    {
+      "entry": 802,
+      "word": "reschedule",
+      "existingId": "mee-04"
+    },
+    {
+      "entry": 808,
+      "word": "resolve",
+      "existingId": "mkt-62"
+    },
+    {
+      "entry": 811,
+      "word": "respond",
+      "existingId": "csv-05"
+    },
+    {
+      "entry": 812,
+      "word": "responsibility",
+      "existingId": "ben-08"
+    },
+    {
+      "entry": 813,
+      "word": "responsible",
+      "existingId": "off-40"
+    },
+    {
+      "entry": 815,
+      "word": "resume",
+      "existingId": "rec-31"
+    },
+    {
+      "entry": 817,
+      "word": "retire",
+      "existingId": "ben-47"
+    },
+    {
+      "entry": 820,
+      "word": "revise",
+      "existingId": "reg-11"
+    },
+    {
+      "entry": 828,
+      "word": "salary",
+      "existingId": "ben-16"
+    },
+    {
+      "entry": 831,
+      "word": "sample",
+      "existingId": "off-11"
+    },
+    {
+      "entry": 839,
+      "word": "schedule",
+      "existingId": "ben-05"
+    },
+    {
+      "entry": 841,
+      "word": "search",
+      "existingId": "ben-41"
+    },
+    {
+      "entry": 845,
+      "word": "select",
+      "existingId": "tre-13"
+    },
+    {
+      "entry": 856,
+      "word": "shift",
+      "existingId": "rev-22"
+    },
+    {
+      "entry": 872,
+      "word": "specialize",
+      "existingId": "rec-24"
+    },
+    {
+      "entry": 875,
+      "word": "specify",
+      "existingId": "trv-05"
+    },
+    {
+      "entry": 885,
+      "word": "stock",
+      "existingId": "tra-22"
+    },
+    {
+      "entry": 887,
+      "word": "strategy",
+      "existingId": "mkt-35"
+    },
+    {
+      "entry": 892,
+      "word": "submit",
+      "existingId": "off-07"
+    },
+    {
+      "entry": 898,
+      "word": "suggestion",
+      "existingId": "mee-09"
+    },
+    {
+      "entry": 902,
+      "word": "supervise",
+      "existingId": "off-43"
+    },
+    {
+      "entry": 903,
+      "word": "supervision",
+      "existingId": "off-19"
+    },
+    {
+      "entry": 906,
+      "word": "support",
+      "existingId": "ban-31"
+    },
+    {
+      "entry": 916,
+      "word": "temporary",
+      "existingId": "ban-22"
+    },
+    {
+      "entry": 918,
+      "word": "terminate",
+      "existingId": "con-14"
+    },
+    {
+      "entry": 926,
+      "word": "tour",
+      "existingId": "trv-07"
+    },
+    {
+      "entry": 935,
+      "word": "training",
+      "existingId": "rec-34"
+    },
+    {
+      "entry": 936,
+      "word": "transfer",
+      "existingId": "rot-05"
+    },
+    {
+      "entry": 937,
+      "word": "transform",
+      "existingId": "off-65"
+    },
+    {
+      "entry": 944,
+      "word": "trust",
+      "existingId": "tff-08"
+    },
+    {
+      "entry": 953,
+      "word": "upcoming",
+      "existingId": "lei-09"
+    },
+    {
+      "entry": 954,
+      "word": "update",
+      "existingId": "pde-15"
+    },
+    {
+      "entry": 955,
+      "word": "upgrade",
+      "existingId": "pde-07"
+    },
+    {
+      "entry": 966,
+      "word": "various",
+      "existingId": "pde-29"
+    },
+    {
+      "entry": 971,
+      "word": "vital",
+      "existingId": "tre-14"
+    },
+    {
+      "entry": 973,
+      "word": "wage",
+      "existingId": "rec-30"
+    },
+    {
+      "entry": 975,
+      "word": "warehouse",
+      "existingId": "ttp-16"
+    },
+    {
+      "entry": 979,
+      "word": "warranty",
+      "existingId": "sho-21"
+    },
+    {
+      "entry": 989,
+      "word": "withdrawal",
+      "existingId": "ban-19"
+    },
+    {
+      "entry": 991,
+      "word": "workshop",
+      "existingId": "off-32"
+    },
+    {
+      "entry": 992,
+      "word": "worth",
+      "existingId": "acc-15"
+    },
+    {
+      "entry": 997,
+      "word": "yield",
+      "existingId": "ban-55"
+    }
+  ],
+  "duplicates": [
+    {
+      "entry": 652,
+      "word": "package",
+      "firstEntry": 651
+    }
+  ],
+  "reviewedCorrections": [
+    {
+      "entry": 7,
+      "word": "accommodate",
+      "changes": {
+        "meaning": "cung cấp chỗ ở; đáp ứng, hỗ trợ"
+      }
+    },
+    {
+      "entry": 10,
+      "word": "according (to)",
+      "changes": {
+        "word": "according to"
+      }
+    },
+    {
+      "entry": 12,
+      "word": "accounting",
+      "changes": {
+        "meaning": "kế toán, công việc kế toán"
+      }
+    },
+    {
+      "entry": 42,
+      "word": "agreeable",
+      "changes": {
+        "meaning": "dễ chịu; có thể chấp nhận được"
+      }
+    },
+    {
+      "entry": 48,
+      "word": "aisle",
+      "changes": {
+        "meaning": "lối đi giữa các dãy ghế hoặc kệ hàng"
+      }
+    },
+    {
+      "entry": 73,
+      "word": "appreciative of",
+      "changes": {
+        "phonetic": "/əˈpriːʃətɪv əv/"
+      }
+    },
+    {
+      "entry": 121,
+      "word": "binder",
+      "changes": {
+        "meaning": "bìa kẹp tài liệu, bìa còng"
+      }
+    },
+    {
+      "entry": 123,
+      "word": "block",
+      "changes": {
+        "meaning": "khối, tảng, chướng ngại vật; cản trở, phong tỏa"
+      }
+    },
+    {
+      "entry": 126,
+      "word": "boast",
+      "changes": {
+        "meaning": "sự khoe khoang; khoe khoang, tự hào có"
+      }
+    },
+    {
+      "entry": 164,
+      "word": "chain",
+      "changes": {
+        "meaning": "dây xích; chuỗi, hệ thống"
+      }
+    },
+    {
+      "entry": 172,
+      "word": "cheap",
+      "changes": {
+        "meaning": "rẻ, có giá thấp; kém chất lượng"
+      }
+    },
+    {
+      "entry": 173,
+      "word": "check in",
+      "changes": {
+        "meaning": "làm thủ tục nhận phòng hoặc lên máy bay"
+      }
+    },
+    {
+      "entry": 174,
+      "word": "check out",
+      "changes": {
+        "meaning": "làm thủ tục trả phòng; kiểm tra"
+      }
+    },
+    {
+      "entry": 183,
+      "word": "commission",
+      "changes": {
+        "meaning": "tiền hoa hồng; ủy ban; sự ủy nhiệm"
+      }
+    },
+    {
+      "entry": 187,
+      "word": "commuter",
+      "changes": {
+        "meaning": "người đi lại thường xuyên giữa nhà và nơi làm việc"
+      }
+    },
+    {
+      "entry": 204,
+      "word": "comprehensive",
+      "changes": {
+        "meaning": "toàn diện, bao quát"
+      }
+    },
+    {
+      "entry": 211,
+      "word": "concourse",
+      "changes": {
+        "meaning": "sảnh lớn ở nhà ga hoặc sân bay; đám đông tụ họp"
+      }
+    },
+    {
+      "entry": 232,
+      "word": "corporate",
+      "changes": {
+        "pos": "adj",
+        "meaning": "thuộc công ty, thuộc tập đoàn"
+      }
+    },
+    {
+      "entry": 237,
+      "word": "cover letter",
+      "changes": {
+        "meaning": "thư xin việc, thư giới thiệu kèm hồ sơ"
+      }
+    },
+    {
+      "entry": 238,
+      "word": "coverage",
+      "changes": {
+        "meaning": "phạm vi bao phủ; phạm vi bảo hiểm; việc đưa tin"
+      }
+    },
+    {
+      "entry": 250,
+      "word": "currency",
+      "changes": {
+        "meaning": "tiền tệ; sự lưu hành"
+      }
+    },
+    {
+      "entry": 257,
+      "word": "damage",
+      "changes": {
+        "pos": "n, v",
+        "meaning": "sự hư hại, thiệt hại; làm hư hại"
+      }
+    },
+    {
+      "entry": 260,
+      "word": "debit",
+      "changes": {
+        "pos": "n, v",
+        "meaning": "khoản ghi nợ; ghi nợ vào tài khoản"
+      }
+    },
+    {
+      "entry": 264,
+      "word": "decrease",
+      "changes": {
+        "pos": "n, v",
+        "meaning": "sự giảm, sự sụt giảm; giảm, làm giảm"
+      }
+    },
+    {
+      "entry": 278,
+      "word": "department",
+      "changes": {
+        "meaning": "phòng ban, bộ phận; khoa"
+      }
+    },
+    {
+      "entry": 311,
+      "word": "dismissive",
+      "changes": {
+        "meaning": "coi thường, xem nhẹ, không quan tâm"
+      }
+    },
+    {
+      "entry": 316,
+      "word": "disruption",
+      "changes": {
+        "meaning": "sự gián đoạn, sự xáo trộn"
+      }
+    },
+    {
+      "entry": 320,
+      "word": "distribution",
+      "changes": {
+        "meaning": "sự phân phối, sự phân phát"
+      }
+    },
+    {
+      "entry": 321,
+      "word": "dividend",
+      "changes": {
+        "meaning": "cổ tức; số bị chia"
+      }
+    },
+    {
+      "entry": 322,
+      "word": "document",
+      "changes": {
+        "pos": "n, v",
+        "meaning": "tài liệu, văn kiện; ghi chép, cung cấp tài liệu"
+      }
+    },
+    {
+      "entry": 329,
+      "word": "downward",
+      "changes": {
+        "meaning": "xuống dưới, theo chiều giảm"
+      }
+    },
+    {
+      "entry": 333,
+      "word": "drive",
+      "changes": {
+        "meaning": "chuyến đi bằng xe; nỗ lực, chiến dịch; lái xe"
+      }
+    },
+    {
+      "entry": 348,
+      "word": "elderly",
+      "changes": {
+        "meaning": "cao tuổi, lớn tuổi"
+      }
+    },
+    {
+      "entry": 360,
+      "word": "engineering",
+      "changes": {
+        "meaning": "kỹ thuật, ngành kỹ thuật"
+      }
+    },
+    {
+      "entry": 368,
+      "word": "entitlement",
+      "changes": {
+        "meaning": "quyền được hưởng, quyền lợi"
+      }
+    },
+    {
+      "entry": 369,
+      "word": "entrée",
+      "changes": {
+        "meaning": "món chính (trong cách dùng tiếng Anh Mỹ); quyền tiếp cận"
+      }
+    },
+    {
+      "entry": 384,
+      "word": "executive",
+      "changes": {
+        "pos": "adj, n",
+        "meaning": "thuộc điều hành; người điều hành, lãnh đạo"
+      }
+    },
+    {
+      "entry": 397,
+      "word": "express",
+      "changes": {
+        "pos": "v, adj, n",
+        "meaning": "diễn đạt, bày tỏ; nhanh, tốc hành; dịch vụ chuyển phát nhanh"
+      }
+    },
+    {
+      "entry": 401,
+      "word": "facility",
+      "changes": {
+        "meaning": "cơ sở, tiện nghi; khả năng, sự thuận tiện"
+      }
+    },
+    {
+      "entry": 416,
+      "word": "figure",
+      "changes": {
+        "meaning": "con số, số liệu; hình dáng, nhân vật; tính toán"
+      }
+    },
+    {
+      "entry": 422,
+      "word": "fix",
+      "changes": {
+        "pos": "v, n",
+        "meaning": "sửa chữa; gắn chặt, cố định; giải pháp"
+      }
+    },
+    {
+      "entry": 424,
+      "word": "flight",
+      "changes": {
+        "meaning": "chuyến bay; sự bay, sự bỏ chạy"
+      }
+    },
+    {
+      "entry": 442,
+      "word": "fulfill",
+      "changes": {
+        "meaning": "hoàn thành, thực hiện; đáp ứng (yêu cầu, lời hứa)"
+      }
+    },
+    {
+      "entry": 453,
+      "word": "grill",
+      "changes": {
+        "meaning": "vỉ nướng; món nướng; nướng"
+      }
+    },
+    {
+      "entry": 457,
+      "word": "haggle",
+      "changes": {
+        "pos": "v",
+        "meaning": "mặc cả, thương lượng giá"
+      }
+    },
+    {
+      "entry": 476,
+      "word": "imaginative",
+      "changes": {
+        "meaning": "giàu trí tưởng tượng, sáng tạo"
+      }
+    },
+    {
+      "entry": 497,
+      "word": "individual",
+      "changes": {
+        "pos": "n, adj",
+        "meaning": "cá nhân; riêng lẻ, riêng biệt"
+      }
+    },
+    {
+      "entry": 503,
+      "word": "influence",
+      "changes": {
+        "pos": "n, v",
+        "meaning": "sự ảnh hưởng, tác động; ảnh hưởng, tác động"
+      }
+    },
+    {
+      "entry": 507,
+      "word": "inquiry",
+      "changes": {
+        "meaning": "câu hỏi, sự hỏi thông tin; sự điều tra"
+      }
+    },
+    {
+      "entry": 511,
+      "word": "insure",
+      "changes": {
+        "meaning": "mua bảo hiểm, bảo hiểm"
+      }
+    },
+    {
+      "entry": 542,
+      "word": "judge",
+      "changes": {
+        "meaning": "thẩm phán, người phán xét; xét xử, đánh giá"
+      }
+    },
+    {
+      "entry": 554,
+      "word": "laptop",
+      "changes": {
+        "meaning": "máy tính xách tay"
+      }
+    },
+    {
+      "entry": 557,
+      "word": "lay",
+      "changes": {
+        "pos": "v, adj, n",
+        "meaning": "đặt, để; không chuyên; bài thơ hoặc bài hát ngắn"
+      }
+    },
+    {
+      "entry": 559,
+      "word": "lean",
+      "changes": {
+        "pos": "v, adj, n",
+        "meaning": "nghiêng, dựa; gầy, tinh gọn; độ nghiêng"
+      }
+    },
+    {
+      "entry": 564,
+      "word": "license",
+      "changes": {
+        "meaning": "giấy phép; sự cho phép"
+      }
+    },
+    {
+      "entry": 572,
+      "word": "lobby",
+      "changes": {
+        "meaning": "sảnh, tiền sảnh; nhóm vận động hành lang"
+      }
+    },
+    {
+      "entry": 575,
+      "word": "log on",
+      "changes": {
+        "phonetic": "/lɒɡ ɒn/",
+        "meaning": "đăng nhập, kết nối vào hệ thống"
+      }
+    },
+    {
+      "entry": 576,
+      "word": "log",
+      "changes": {
+        "pos": "n, v",
+        "meaning": "nhật ký, bản ghi; khúc gỗ; ghi lại"
+      }
+    },
+    {
+      "entry": 582,
+      "word": "maintenance",
+      "changes": {
+        "meaning": "sự bảo trì, bảo dưỡng; sự duy trì"
+      }
+    },
+    {
+      "entry": 587,
+      "word": "manufacture",
+      "changes": {
+        "pos": "n, v",
+        "meaning": "sự sản xuất, chế tạo; sản xuất, chế tạo"
+      }
+    },
+    {
+      "entry": 592,
+      "word": "medication",
+      "changes": {
+        "meaning": "thuốc, dược phẩm; việc dùng thuốc"
+      }
+    },
+    {
+      "entry": 593,
+      "word": "medicine",
+      "changes": {
+        "meaning": "thuốc; y học"
+      }
+    },
+    {
+      "entry": 597,
+      "word": "mention",
+      "changes": {
+        "pos": "n, v",
+        "meaning": "sự đề cập; đề cập, nhắc đến"
+      }
+    },
+    {
+      "entry": 599,
+      "word": "mere",
+      "changes": {
+        "pos": "adj, n",
+        "meaning": "chỉ là, đơn thuần; hồ nhỏ"
+      }
+    },
+    {
+      "entry": 601,
+      "word": "merger",
+      "changes": {
+        "meaning": "sự sáp nhập, hợp nhất (doanh nghiệp)"
+      }
+    },
+    {
+      "entry": 604,
+      "word": "mimic",
+      "changes": {
+        "pos": "v, n, adj",
+        "meaning": "bắt chước; người bắt chước; mô phỏng"
+      }
+    },
+    {
+      "entry": 606,
+      "word": "misleading",
+      "changes": {
+        "meaning": "gây hiểu lầm, gây nhầm lẫn"
+      }
+    },
+    {
+      "entry": 609,
+      "word": "monument",
+      "changes": {
+        "meaning": "đài tưởng niệm, tượng đài, công trình kỷ niệm"
+      }
+    },
+    {
+      "entry": 610,
+      "word": "moral",
+      "changes": {
+        "pos": "adj, n",
+        "meaning": "thuộc đạo đức; bài học, lời răn dạy"
+      }
+    },
+    {
+      "entry": 617,
+      "word": "neighborhood",
+      "changes": {
+        "meaning": "khu phố, vùng lân cận"
+      }
+    },
+    {
+      "entry": 618,
+      "word": "network",
+      "changes": {
+        "meaning": "mạng lưới, hệ thống kết nối"
+      }
+    },
+    {
+      "entry": 624,
+      "word": "objective",
+      "changes": {
+        "pos": "adj, n",
+        "meaning": "khách quan; mục tiêu"
+      }
+    },
+    {
+      "entry": 631,
+      "word": "officer",
+      "changes": {
+        "meaning": "viên chức, cán bộ; sĩ quan"
+      }
+    },
+    {
+      "entry": 632,
+      "word": "official",
+      "changes": {
+        "pos": "adj, n",
+        "meaning": "chính thức; viên chức, quan chức"
+      }
+    },
+    {
+      "entry": 635,
+      "word": "operation",
+      "changes": {
+        "meaning": "hoạt động, sự vận hành; cuộc phẫu thuật"
+      }
+    },
+    {
+      "entry": 640,
+      "word": "organization",
+      "changes": {
+        "meaning": "tổ chức; sự tổ chức, sắp xếp"
+      }
+    },
+    {
+      "entry": 668,
+      "word": "personalized",
+      "changes": {
+        "pos": "adj",
+        "meaning": "được cá nhân hóa, điều chỉnh cho từng người"
+      }
+    },
+    {
+      "entry": 672,
+      "word": "plant",
+      "changes": {
+        "meaning": "nhà máy; cây, thực vật"
+      }
+    },
+    {
+      "entry": 684,
+      "word": "poll",
+      "changes": {
+        "meaning": "cuộc thăm dò ý kiến; cuộc bỏ phiếu"
+      }
+    },
+    {
+      "entry": 693,
+      "word": "practical",
+      "changes": {
+        "meaning": "thiết thực, thực tế; thuộc thực hành"
+      }
+    },
+    {
+      "entry": 694,
+      "word": "practically",
+      "changes": {
+        "meaning": "hầu như, gần như; về mặt thực tế"
+      }
+    },
+    {
+      "entry": 699,
+      "word": "premises",
+      "changes": {
+        "meaning": "cơ sở, khuôn viên, nhà và đất của một tổ chức"
+      }
+    },
+    {
+      "entry": 705,
+      "word": "principle",
+      "changes": {
+        "meaning": "nguyên tắc, nguyên lý"
+      }
+    },
+    {
+      "entry": 715,
+      "word": "profit",
+      "changes": {
+        "meaning": "lợi nhuận; lợi ích"
+      }
+    },
+    {
+      "entry": 716,
+      "word": "profitability",
+      "changes": {
+        "meaning": "khả năng sinh lợi"
+      }
+    },
+    {
+      "entry": 717,
+      "word": "profitable",
+      "changes": {
+        "meaning": "có lợi nhuận, sinh lời"
+      }
+    },
+    {
+      "entry": 728,
+      "word": "publicity",
+      "changes": {
+        "meaning": "sự quảng bá, sự chú ý của công chúng"
+      }
+    },
+    {
+      "entry": 737,
+      "word": "quotation",
+      "changes": {
+        "meaning": "báo giá; câu trích dẫn, sự trích dẫn"
+      }
+    },
+    {
+      "entry": 739,
+      "word": "range",
+      "changes": {
+        "meaning": "phạm vi, khoảng; loạt, dòng sản phẩm"
+      }
+    },
+    {
+      "entry": 752,
+      "word": "reception",
+      "changes": {
+        "meaning": "sự tiếp đón; quầy lễ tân; tiệc chiêu đãi"
+      }
+    },
+    {
+      "entry": 759,
+      "word": "recruitment",
+      "changes": {
+        "meaning": "sự tuyển dụng, việc tuyển nhân sự"
+      }
+    },
+    {
+      "entry": 768,
+      "word": "regarding",
+      "changes": {
+        "pos": "prep",
+        "meaning": "về, liên quan đến"
+      }
+    },
+    {
+      "entry": 775,
+      "word": "regulate",
+      "changes": {
+        "meaning": "điều chỉnh, kiểm soát; quy định"
+      }
+    },
+    {
+      "entry": 784,
+      "word": "reminder",
+      "changes": {
+        "meaning": "lời nhắc, thông báo nhắc nhở"
+      }
+    },
+    {
+      "entry": 785,
+      "word": "remittance",
+      "changes": {
+        "meaning": "khoản tiền gửi, sự chuyển tiền"
+      }
+    },
+    {
+      "entry": 798,
+      "word": "representative",
+      "changes": {
+        "pos": "n, adj",
+        "meaning": "người đại diện; tiêu biểu, đại diện"
+      }
+    },
+    {
+      "entry": 805,
+      "word": "reservation",
+      "changes": {
+        "meaning": "sự đặt chỗ, đặt phòng; sự dè dặt"
+      }
+    },
+    {
+      "entry": 821,
+      "word": "revised",
+      "changes": {
+        "pos": "adj",
+        "meaning": "đã sửa đổi, đã chỉnh sửa"
+      }
+    },
+    {
+      "entry": 825,
+      "word": "roughly",
+      "changes": {
+        "meaning": "xấp xỉ, khoảng; một cách thô bạo"
+      }
+    },
+    {
+      "entry": 830,
+      "word": "salvage",
+      "changes": {
+        "pos": "n, v",
+        "meaning": "sự cứu hộ, tài sản được cứu; cứu vớt, tận dụng lại"
+      }
+    },
+    {
+      "entry": 835,
+      "word": "save",
+      "changes": {
+        "pos": "v",
+        "meaning": "tiết kiệm; lưu; cứu"
+      }
+    },
+    {
+      "entry": 853,
+      "word": "several",
+      "changes": {
+        "pos": "det, pron",
+        "meaning": "một vài, một số"
+      }
+    },
+    {
+      "entry": 857,
+      "word": "shine",
+      "changes": {
+        "pos": "v, n",
+        "meaning": "chiếu sáng, tỏa sáng; ánh sáng, độ bóng"
+      }
+    },
+    {
+      "entry": 859,
+      "word": "shipping",
+      "changes": {
+        "meaning": "sự vận chuyển hàng hóa, việc giao hàng"
+      }
+    },
+    {
+      "entry": 860,
+      "word": "shortage",
+      "changes": {
+        "meaning": "sự thiếu hụt, tình trạng thiếu"
+      }
+    },
+    {
+      "entry": 866,
+      "word": "slump",
+      "changes": {
+        "pos": "n, v",
+        "meaning": "sự sụt giảm mạnh; giảm mạnh, suy sụp"
+      }
+    },
+    {
+      "entry": 868,
+      "word": "solar",
+      "changes": {
+        "meaning": "thuộc mặt trời, sử dụng năng lượng mặt trời"
+      }
+    },
+    {
+      "entry": 874,
+      "word": "specification",
+      "changes": {
+        "meaning": "thông số kỹ thuật, yêu cầu chi tiết"
+      }
+    },
+    {
+      "entry": 880,
+      "word": "stapler",
+      "changes": {
+        "meaning": "dụng cụ bấm ghim, máy dập ghim"
+      }
+    },
+    {
+      "entry": 884,
+      "word": "steep",
+      "changes": {
+        "meaning": "dốc; tăng hoặc giảm mạnh; quá cao (giá)"
+      }
+    },
+    {
+      "entry": 888,
+      "word": "streamline",
+      "changes": {
+        "meaning": "tinh giản, cải tiến để hoạt động hiệu quả hơn"
+      }
+    },
+    {
+      "entry": 889,
+      "word": "strike",
+      "changes": {
+        "pos": "v, n",
+        "meaning": "đánh, va vào; đình công; cuộc đình công"
+      }
+    },
+    {
+      "entry": 895,
+      "word": "subsidiary",
+      "changes": {
+        "pos": "n, adj",
+        "meaning": "công ty con; phụ thuộc, phụ trợ"
+      }
+    },
+    {
+      "entry": 920,
+      "word": "terrific",
+      "changes": {
+        "meaning": "tuyệt vời, xuất sắc; rất lớn, dữ dội"
+      }
+    },
+    {
+      "entry": 923,
+      "word": "thorough",
+      "changes": {
+        "meaning": "kỹ lưỡng, cẩn thận, toàn diện"
+      }
+    },
+    {
+      "entry": 927,
+      "word": "tourism",
+      "changes": {
+        "meaning": "ngành du lịch, hoạt động du lịch"
+      }
+    },
+    {
+      "entry": 931,
+      "word": "track",
+      "changes": {
+        "meaning": "đường ray; dấu vết; tiến trình; đường chạy"
+      }
+    },
+    {
+      "entry": 945,
+      "word": "turnover",
+      "changes": {
+        "meaning": "doanh thu; sự luân chuyển nhân sự"
+      }
+    },
+    {
+      "entry": 949,
+      "word": "unfortunately",
+      "changes": {
+        "pos": "adv",
+        "meaning": "không may, đáng tiếc"
+      }
+    },
+    {
+      "entry": 957,
+      "word": "upstairs",
+      "changes": {
+        "pos": "adv, adj, n",
+        "meaning": "ở tầng trên, lên tầng trên; tầng trên"
+      }
+    },
+    {
+      "entry": 958,
+      "word": "utility bill",
+      "changes": {
+        "phonetic": "/juːˈtɪləti bɪl/"
+      }
+    },
+    {
+      "entry": 960,
+      "word": "vacant",
+      "changes": {
+        "pos": "adj",
+        "meaning": "trống, còn bỏ trống"
+      }
+    },
+    {
+      "entry": 968,
+      "word": "venture",
+      "changes": {
+        "meaning": "dự án hoặc hoạt động kinh doanh mạo hiểm"
+      }
+    },
+    {
+      "entry": 978,
+      "word": "warrant",
+      "changes": {
+        "pos": "v, n",
+        "meaning": "bảo đảm, làm cơ sở cho; lệnh, giấy ủy quyền"
+      }
+    },
+    {
+      "entry": 980,
+      "word": "wastage",
+      "changes": {
+        "pos": "n",
+        "meaning": "sự lãng phí, sự hao hụt"
+      }
+    },
+    {
+      "entry": 982,
+      "word": "wealth",
+      "changes": {
+        "pos": "n",
+        "meaning": "sự giàu có, của cải"
+      }
+    },
+    {
+      "entry": 986,
+      "word": "wholesale",
+      "changes": {
+        "pos": "n, adj, adv, v",
+        "meaning": "việc bán buôn; bán buôn, bán sỉ; trên quy mô lớn"
+      }
+    }
+  ]
+}

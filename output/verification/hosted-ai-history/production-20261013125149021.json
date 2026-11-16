@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-13T12:51:49.021Z",
+  "stage": "production",
+  "deployment": "https://eng-master-main2.vercel.app",
+  "project": "engai-2c7fe",
+  "authMethod": "temporary custom-token account",
+  "checks": [
+    {
+      "endpoint": "explain",
+      "status": 200,
+      "characters": 1132,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "endpoint": "quiz",
+      "status": 200,
+      "validatedQuestions": 2,
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "endpoint": "mistake-review",
+      "status": 502,
+      "characters": 0,
+      "code": "ai_failed"
+    }
+  ],
+  "cleanup": {
+    "auth": true,
+    "quota": true
+  }
+}

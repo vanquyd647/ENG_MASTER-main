@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-15T08:15:15.404Z",
+  "release": "2026.10.15-learning.5",
+  "deployment": "dpl_5Jbj8PBoqngsL2YiXdyBaNfwCJjx",
+  "origin": "https://eng-master-main2.vercel.app",
+  "candidate": "https://eng-master-main2-1quvwp4mx-quys-projects-d07a5005.vercel.app",
+  "promoted": true,
+  "previousDeployment": "dpl_2ut12FjLSgZ3zb7ZvnWGZKYQrbFY",
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "catalog": true,
+    "unit": 146,
+    "newDialogTests": 7,
+    "nativeApiImports": 4,
+    "browserLocal": 7,
+    "browserProduction": 7,
+    "publicBuild": true
+  },
+  "dialog": {
+    "separateFromWordCard": true,
+    "maxWidth": 768,
+    "headerAndCloseStayVisible": true,
+    "bodyScrolls": true,
+    "backgroundScrollLocked": true,
+    "filterAndScrollPreserved": true,
+    "focusRestored": true,
+    "cachedReopenAvoidsRequest": true,
+    "cancelledRequestsCannotReopen": true,
+    "errorsAndRetryInsideDialog": true
+  },
+  "fixture": "deterministic Markdown HTTP responses; real temporary Firebase identity; no Gemini requests",
+  "liveGeminiQualityChecked": false,
+  "cleanup": {
+    "local": true,
+    "production": true
+  },
+  "build": {
+    "localInitialReferencedGzip": 396076,
+    "productionInitialReferencedGzip": 396475,
+    "offlineAssets": 42,
+    "offlineRevision": "9c22753631c6998c",
+    "serverSecretsAbsent": true
+  },
+  "vocabulary": 1575,
+  "practiceQuestions": 166,
+  "catalogAndOriginalBankUnchanged": true,
+  "promptChanged": false,
+  "modelChanged": false,
+  "rulesChanged": false,
+  "schemaChanged": false,
+  "billingChanged": false,
+  "avatarEnabled": false,
+  "nativeTtlEnabled": false,
+  "gitCommitted": false,
+  "evidence": [
+    "library-dialog-unit.log",
+    "library-dialog-build-metrics.json",
+    "library-dialog-browser-local.json",
+    "library-dialog-browser-production.json",
+    "library-dialog-public-build.json",
+    "library-dialog-promote.log"
+  ]
+}

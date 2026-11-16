@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-10-13T11:30:42.372Z",
+  "project": "engai-2c7fe",
+  "currentRuleset": "projects/engai-2c7fe/rulesets/380d4eda-bcc9-4fd8-9dd5-09de5da5dd41",
+  "existingRulesHash": "6410c89804e0708a6a9e25aa76eef22e24f446e706c40a08cf38c79640eae15f",
+  "localRulesHash": "8b764baafc32b478b053b86841ea38fcaed9712d9f9dd9cfd579e9d5dd1e21b9",
+  "rateLimitTtl": {
+    "status": 200,
+    "state": "not enabled"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-10-16T16:26:42.725Z",
+  "targetPercent": 95,
+  "scope": "All learning areas: daily learning and original seven-Part Listening/Reading practice",
+  "overall95Ready": true,
+  "overallPercent": 95.6989247311828,
+  "completionMilestone": {
+    "required": true,
+    "targetPercent": 95,
+    "aggregation": "all-areas-pass-no-average",
+    "criticalFailuresAllowed": 0,
+    "areas": [
+      {
+        "id": "content",
+        "percent": 97.1830985915493,
+        "passed": true
+      },
+      {
+        "id": "ai",
+        "percent": 95.6989247311828,
+        "passed": true
+      },
+      {
+        "id": "data-sync",
+        "percent": 100,
+        "passed": true
+      },
+      {
+        "id": "offline-resume",
+        "percent": 100,
+        "passed": true
+      },
+      {
+        "id": "ui-accessibility",
+        "percent": 100,
+        "passed": true
+      },
+      {
+        "id": "security-release",
+        "percent": 100,
+        "passed": true
+      }
+    ],
+    "criteria": "docs/QUALITY_TARGET_95.md",
+    "plan": "scripts/fixtures/system-acceptance-v1.json"
+  },
+  "minimumQuestionGaps": {
+    "byPart": {
+      "part1": 0,
+      "part2": 0,
+      "part3": 0,
+      "part4": 0,
+      "part5": 0,
+      "part6": 0,
+      "part7": 0
+    },
+    "total": 0
+  },
+  "integratedExam": {
+    "id": "eng-master-200-v1",
+    "questions": 200,
+    "listeningMinutes": 45,
+    "readingMinutes": 75,
+    "normalizedAudio": true,
+    "contentWorkflowAccepted": true,
+    "empiricallyCalibrated": false,
+    "teacherCertified": false
+  },
+  "availableQuestions": {
+    "part1": 6,
+    "part2": 42,
+    "part3": 39,
+    "part4": 30,
+    "part5": 48,
+    "part6": 32,
+    "part7": 72
+  },
+  "contentReview": {
+    "path": "output/verification/bank-review-adjudicated.json",
+    "questions": 311,
+    "owner": "Codex, assigned by user",
+    "audioAccepted": true,
+    "asrPercent": 97.1830985915493,
+    "humanListeningCertified": false
+  },
+  "aiFixture": {
+    "path": "output/verification/accept95-ai-local-v3.json",
+    "minimumOutputs": 200,
+    "minimumMet": true,
+    "finalOutputPercent": 96.5,
+    "generatedSubset": {
+      "passed": 178,
+      "total": 186,
+      "percent": 95.6989247311828,
+      "includesRejectedAndReplacedModelOutputs": true,
+      "serviceFailuresOutsideGeneratedSubset": 7,
+      "serviceFailuresRemainInOverallDenominator": true
+    },
+    "criticalUnblocked": 0,
+    "sourceBreakdown": {
+      "unchanged-content-accepted": 113,
+      "declared-source-assisted-recall": 75,
+      "declared-source-only-fallback": 3,
+      "original-service-failure-retained": 7,
+      "declared-source-only-review-fallback": 2
+    },
+    "method": "200 live recorded app outputs plus current-handler replay with unchanged generation inputs. Raw model errors never become model successes after source substitution. This is not 200 fresh v7 live calls."
+  },
+  "baseline": {
+    "questions": 20,
+    "parts": [
+      "part2",
+      "part5",
+      "part6",
+      "part7"
+    ],
+    "mapsToToeicOrCefr": false
+  },
+  "sourceAudio": {
+    "status": "unmatched-not-used-for-scoring",
+    "requiredForReadiness": false,
+    "note": "Unidentified originals remain unused; the new mapped audio is original local synthetic rendering."
+  },
+  "learningEffectiveness": {
+    "measured": false,
+    "note": "Acceptance percentage does not measure learner score gains or future model accuracy."
+  },
+  "systemAcceptance": "output/verification/system-acceptance-final.json",
+  "blockers": []
+}

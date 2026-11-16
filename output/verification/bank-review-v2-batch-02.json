@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "p2-v1-17",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Prompt asks 'You have already booked the hotel, haven't you?'. Option 2 ('Yes, I received the confirmation.') is the appropriate direct acknowledgment.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "p2-v1-18",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Prompt asks 'Would you mind closing the door?'. Option 1 ('Of course not, I will close it.') is the correct polite response to a 'Would you mind' request.",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-meeting-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Speaker A states: 'I need another day to finish the cost estimate.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-meeting-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Speaker B states: 'I will update the invitation...'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-meeting-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Speaker B states: '...reserve a room for ten people.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-travel-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Speaker A states: 'My flight lands at six in the evening.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-travel-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Speaker B states: '...our shuttle leaves every thirty minutes.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-travel-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Speaker B states: 'Please meet the driver outside Terminal Two.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-shipping-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Speaker A states: '...the tracking page still shows no update.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-shipping-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Speaker B states: 'The carrier collected it this morning.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-shipping-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Speaker B states: '...delivery is expected on Friday.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-hiring-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Speaker A states: 'Thank you for applying for the analyst position.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-hiring-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Speaker A states: 'Could you attend an interview next Tuesday at ten?'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-hiring-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Speaker B asks: 'Should I bring copies of my résumé and references?'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-maintenance-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Speaker A states: 'The copier keeps stopping after a few pages.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-maintenance-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Speaker B states: 'I will inspect it this afternoon.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-maintenance-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Speaker B states: 'Please use the printer on the second floor...'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-payment-1",
+      "chosenIndex": 0,
+      "ambiguous": false,
+      "evidence": "Speaker A states: '...the purchase order number is missing.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-payment-2",
+      "chosenIndex": 2,
+      "ambiguous": false,
+      "evidence": "Speaker B states: '...send the revised invoice today.'",
+      "issue": "",
+      "translationIssue": ""
+    },
+    {
+      "id": "context-v1-payment-3",
+      "chosenIndex": 1,
+      "ambiguous": false,
+      "evidence": "Speaker B states: 'Payment is due within thirty days.'",
+      "issue": "",
+      "translationIssue": ""
+    }
+  ]
+}

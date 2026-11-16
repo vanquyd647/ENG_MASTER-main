@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import {
   activateGuestSession,
   clearGuestProgress,
@@ -7,8 +7,11 @@ import {
   recordGuestSession,
   saveGuestProfile,
   saveGuestProgress,
+  replaceGuestBackup,
 } from "./guestPersistence";
 import type { UserProfile } from "../types";
+import { createBackup } from "./backup";
+import { addCustomWord, deleteCustomWord, getCustomWords } from "./productPreferences";
 
 const profile: UserProfile = {
   uid: "guest_test",
@@ -88,5 +91,40 @@ describe("guest persistence", () => {
 
     expect(sameDay.activity.wordIds).toEqual(["rec-01", "rec-02", "rec-03"]);
     expect(sameDay.profile.streak).toBe(1);
+  });
+
+  it("records a stable session only once and omits undefined optional fields", () => {
+    const input = { profile, log: { id: "once", date: "2026-10-13T00:00:00.000Z", type: "review" as const, details: "Review", correctCount: undefined }, wordIds: ["rec-01"] };
+    const first = recordGuestSession(input);
+    const again = recordGuestSession({ ...input, profile: first.profile });
+    expect(again.profile.history!).toHaveLength(1);
+    expect(again.profile.history![0]).not.toHaveProperty("correctCount");
+  });
+
+  it("restores custom definitions before using their progress on a clean catalog", () => {
+    const word = addCustomWord({ word: "guest restore term", meaning: "từ cá nhân", phonetic: "", pos: "noun", example: "", exampleTranslation: "" });
+    const progress = { [word.id]: { easiness: 2.5, interval: 1, repetitions: 1, nextReviewDate: "2026-10-14T00:00:00.000Z" } };
+    const backup = createBackup(profile, progress);
+    deleteCustomWord(word.id);
+    localStorage.clear();
+    replaceGuestBackup(profile, backup);
+    expect(getCustomWords()[0]).toEqual(word);
+    expect(loadGuestSession().progress).toEqual(progress);
+    expect(loadGuestSession().profile!.totalWordsLearned).toBe(1);
+    deleteCustomWord(word.id);
+  });
+
+  it("rolls back the guest profile when the second local restore write fails", () => {
+    saveGuestProfile(profile);
+    const oldProgress = { "rec-02": { easiness: 2.5, interval: 1, repetitions: 1, nextReviewDate: "2026-10-14T00:00:00.000Z" } };
+    saveGuestProgress(oldProgress);
+    const backup = createBackup({ ...profile, displayName: "Imported" }, { "rec-01": oldProgress["rec-02"] });
+    const setter = localStorage.setItem.bind(localStorage);
+    const spy = vi.spyOn(localStorage, "setItem").mockImplementation(setter).mockImplementationOnce(setter).mockImplementationOnce(() => { throw new Error("storage full"); });
+    try {
+      expect(() => replaceGuestBackup(profile, backup)).toThrow(/storage full/);
+      expect(loadGuestSession().profile).toEqual(profile);
+      expect(loadGuestSession().progress).toEqual(oldProgress);
+    } finally { spy.mockRestore(); }
   });
 });

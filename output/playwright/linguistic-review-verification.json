@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-13",
+  "catalogSize": 1575,
+  "bilingualExampleCoverage": 1575,
+  "stableIdsAndHeadwords": 1575,
+  "typecheck": "passed",
+  "vocabularyValidation": "passed",
+  "tests": { "passed": 31, "files": 8 },
+  "build": "passed",
+  "pdfReimportPreservesReview": true,
+  "normalizationPreservesReview": true,
+  "reviewGenerationDeterministic": true,
+  "browser": {
+    "mode": "local guest session with demo Firebase configuration",
+    "verifiedFields": ["phonetic", "meaning", "example", "exampleTranslation"],
+    "checkedHeadwords": ["compensate", "elegant", "coordination", "refusal", "specialty", "consist", "severely", "ability"]
+  },
+  "onlineServicesTested": false,
+  "deployed": false
+}
