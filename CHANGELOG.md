@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-16 — Sửa bố cục mặt sau thẻ học
+
+- Tách nghĩa/ví dụ dài vào một vùng cuộn; nút giải thích AI và hàng đánh giá có vùng riêng không co, không chồng lên nhau. Điều chỉnh chiều cao thẻ theo màn hình và cỡ chữ nghĩa trên desktop.
+- Kiểm tra trình duyệt ở 360/390/768/854/1280 px: nút AI nhận click, không chồng nội dung hoặc tràn ngang. Nội dung dài tổng hợp cuộn được mà không dịch chuyển nút AI; phím 3 vẫn lưu và chuyển thẻ. Typecheck, ESLint và hai test lưu phiên đạt.
+- Phát hành qua Git/Vercel theo yêu cầu người dùng; kết quả kiểm tra lần phát hành ghi trong output/verification/review-layout-release.json. Kết quả nghiệm thu learning.8 là hồ sơ của bản trước, không tự áp dụng cho thay đổi mới.
+
 ## 2026-10-16 — learning.8, đạt nghiệm thu ≥95% và phát hành
 
 - Ngân hàng 311 câu, đề 200 câu đúng 29/25 Part 7; 28 bản đọc dài có ID mới giữ lịch sử cũ. Thêm hội thoại ba người và câu dùng bảng thông tin.

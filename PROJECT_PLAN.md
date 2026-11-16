@@ -1,5 +1,7 @@
 # Kế hoạch chỉnh sửa và nâng cấp ENG_MASTER
 
+Cập nhật 16/11/2026: sửa bố cục mặt sau thẻ học để vùng nghĩa/ví dụ cuộn độc lập, nút AI và hàng đánh giá không che nhau. Kiểm tra năm kích thước màn hình, nội dung dài và lưu bằng bàn phím đạt. Người dùng yêu cầu commit/push/phát hành; kết quả lần phát hành ghi tại output/verification/review-layout-release.json. Bằng chứng UI: output/verification/review-layout-browser.log và review-layout-long-browser.log. Trạng thái learning.8 dưới đây là hồ sơ phát hành trước.
+
 Ngày cập nhật: 16/10/2026. Trạng thái: **learning.8 đã phát hành và nghiệm thu sáu nhóm; mức thấp nhất 95,70%, mọi gate bắt buộc đạt. Ngân hàng 311 câu, đề 200 câu và audio đóng gói đã lên Production**. Google OAuth và Calendar/Tasks/Drive đã nghiệm thu ở đợt trước.
 Phạm vi đã xác nhận: độ ổn định/lưu dữ liệu, trải nghiệm/giao diện, tính năng học mới và AI.
 Cơ sở kỹ thuật: [báo cáo rà soát](docs/CODEBASE_AUDIT.md).

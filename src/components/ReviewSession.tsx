@@ -189,7 +189,7 @@ export function ReviewSession({
       <p className="text-center text-xs text-zinc-400">Enter/Space: lật thẻ · phím 1–4: chọn mức nhớ sau khi lật.</p>
       {/* Flashcard */}
       <div className="flex-grow flex items-center justify-center py-4 sm:py-10 perspective-1000">
-        <StudyCard flipped={isFlipped} busy={isSaving} onFlip={flipCard} className="relative w-full max-w-[440px] h-[min(420px,62vh)] sm:h-[480px] preserve-3d cursor-pointer shadow-2xl shadow-black/50 rounded-[32px] sm:rounded-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-4 focus-visible:ring-offset-zinc-950">
+        <StudyCard flipped={isFlipped} busy={isSaving} onFlip={flipCard} className="relative w-full max-w-[440px] h-[min(560px,74svh)] min-h-[420px] sm:h-[560px] preserve-3d cursor-pointer shadow-2xl shadow-black/50 rounded-[32px] sm:rounded-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-4 focus-visible:ring-offset-zinc-950">
           {/* Front */}
           <div inert={isFlipped} aria-hidden={isFlipped} className={cn(
             "absolute inset-0 bg-zinc-900 border border-zinc-800 text-white p-6 sm:p-12 flex flex-col items-center justify-center text-center backface-hidden rounded-[32px] sm:rounded-[48px]",
@@ -217,33 +217,36 @@ export function ReviewSession({
 
           {/* Back */}
           <div inert={!isFlipped} aria-hidden={!isFlipped} className={cn(
-            "absolute inset-0 bg-zinc-900 border border-zinc-800 p-6 sm:p-12 flex flex-col items-center justify-center text-center backface-hidden rounded-[32px] sm:rounded-[48px]",
+            "absolute inset-0 bg-zinc-900 border border-zinc-800 p-5 sm:p-8 flex flex-col gap-4 text-center backface-hidden rounded-[32px] sm:rounded-[48px] overflow-hidden",
             !isFlipped ? "rotate-y-180 opacity-0 pointer-events-none" : "rotate-y-180 opacity-100"
           )}>
-             <div className="flex-grow flex flex-col items-center justify-center gap-4 sm:gap-8 min-h-0">
-               <div className="space-y-3">
-                 <h2 className="text-2xl sm:text-4xl font-bold tracking-tighter text-white leading-tight">{currentWord?.meaning}</h2>
+             <div role="region" aria-label="Nghĩa và ví dụ" tabIndex={isFlipped ? 0 : -1} className="min-h-0 flex-1 w-full overflow-y-auto overscroll-contain px-1 py-2 [scrollbar-gutter:stable] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 rounded-xl">
+              <div className="min-h-full flex flex-col items-center justify-center gap-5 sm:gap-6">
+               <div className="w-full space-y-3">
+                 <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white leading-snug break-words">{currentWord?.meaning}</h2>
                  <p className="text-indigo-400 font-black uppercase text-[10px] tracking-[0.3em]">{currentWord?.pos}</p>
                </div>
-               {currentWord?.example && <div className="h-px w-24 bg-zinc-800" />}
-               <div className="space-y-3 sm:space-y-4 px-0 sm:px-2 overflow-y-auto">
+               {currentWord?.example && <div className="h-px w-24 shrink-0 bg-zinc-800" />}
+               <div className="w-full space-y-3 sm:space-y-4 break-words">
                  {currentWord?.example && <>
                    <p className="text-base sm:text-xl font-medium italic text-slate-300 leading-snug">"{currentWord.example}"</p>
                    <p className="text-[15px] text-zinc-500 font-medium leading-relaxed">{currentWord.exampleTranslation}</p>
                  </>}
-                 <button 
+               </div>
+              </div>
+            </div>
+            <button
                   onClick={(e) => {
                     e.stopPropagation();
                     onLearnMore(currentWord.word, currentWord.meaning);
                   }}
-                  className="mx-auto block mt-6 text-[10px] font-black uppercase text-indigo-400 bg-indigo-500/10 px-4 py-2 rounded-full border border-indigo-500/20 hover:bg-indigo-600 hover:text-white transition-all tracking-[0.2em]"
+                  className="mx-auto shrink-0 min-h-11 max-w-full text-[10px] font-black uppercase text-indigo-400 bg-indigo-500/10 px-5 py-3 rounded-full border border-indigo-500/20 hover:bg-indigo-600 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 transition-all tracking-[0.15em]"
                  >
                    Giải thích bằng AI
                  </button>
-               </div>
+            <div className="w-full shrink-0 border-t border-zinc-800 pt-4">
+              <RatingControls disabled={isSaving || !isFlipped} previous={progress[currentWord?.id]} onRate={(quality) => void handleRate(quality)} />
             </div>
-            
-            <RatingControls disabled={isSaving || !isFlipped} previous={progress[currentWord?.id]} onRate={(quality) => void handleRate(quality)} />
           </div>
         </StudyCard>
       </div>
